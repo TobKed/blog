@@ -14,18 +14,11 @@ git pb
 .git/hooks/pre-push
 ```shell
 #!/bin/sh
-while read local_ref local_sha remote_ref remote_sha
-do
-        if [ "$remote_ref" = "refs/heads/source" ]
-        then
-                echo 'pushing output folder (production version) to master...'
-                pelican content -o output -s publishconf.py
-                git subtree push --prefix output origin gh-pages
-                pelican content -o output
-        fi
-done
-
-exit 0
+echo 'pushing output folder (production version) to master...'
+pelican content -o output -s publishconf.py
+git push origin master || echo "Commit failed"
+git subtree push --prefix output origin gh-pages || echo "Commit failed"
+pelican content -o output
 ```
 
 
