@@ -1,3 +1,0 @@
-[alias]
-    pb = !git subtree push --prefix output origin gh-pages
-
