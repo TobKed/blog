@@ -242,8 +242,3 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.gitignore.io/api/linux,python,pycharm,windows
-
-[alias]
-    publishblog = git subtree push --prefix dist origin gh-pages
-
-
