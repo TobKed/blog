@@ -2,8 +2,11 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
+THEME = "pelican-chunk"
+
+
 AUTHOR = 'Tobiasz Kedzierski'
-SITENAME = 'ups and downs with Python'
+SITENAME = 'ups and downs'
 SITEURL = ''
 
 PATH = 'content'
@@ -20,10 +23,16 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+DEFAULT_DATE_FORMAT = ('%d-%m-%Y')
+SITESUBTITLE = 'by Tobiasz Kedzierski'
+FOOTER_TEXT = 'pelican theme: <a href=\"https://github.com/onlyhavecans/pelican-chunk\">pelican-chunk</a>'
+DISPLAY_CATEGORIES_ON_MENU = True
+SINGLE_AUTHOR = True
+MINT = True
+
+LINKS = (
+    ('tobked.github.io', 'https://tobked.github.io/'),
+)
 
 # Social widget
 SOCIAL = (('You can add links in your config file', '#'),

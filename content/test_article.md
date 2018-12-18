@@ -8,3 +8,9 @@ Tags: welcome, python, pelican
 
 
 monty python 2
+
+```python
+
+print("Hello world")
+
+```
