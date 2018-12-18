@@ -7,10 +7,10 @@ Tags: welcome, python, pelican
 ## pelican is great
 
 
-monty python 2
+monty python
 
 ```python
-
 print("Hello world")
-
 ```
+
+spam and ham
