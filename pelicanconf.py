@@ -28,7 +28,7 @@ SITESUBTITLE = 'by Tobiasz Kedzierski'
 FOOTER_TEXT = 'pelican theme: <a href=\"https://github.com/onlyhavecans/pelican-chunk\">pelican-chunk</a>'
 DISPLAY_CATEGORIES_ON_MENU = True
 SINGLE_AUTHOR = True
-MINT = True
+MINT = False
 
 LINKS = (
     ('tobked.github.io', 'https://tobked.github.io/'),
