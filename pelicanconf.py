@@ -2,14 +2,17 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-THEME = "pelican-chunk"
-
+THEME = "voce"
+PLUGIN_PATHS = ["voce/plugins"]
+PLUGINS = ["assets"]
 
 AUTHOR = 'Tobiasz Kedzierski'
 SITENAME = 'ups and downs'
 SITEURL = ''
 
+
 PATH = 'content'
+STATIC_PATHS = ['images']
 
 TIMEZONE = 'Europe/Warsaw'
 
@@ -23,22 +26,26 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-DEFAULT_DATE_FORMAT = ('%d-%m-%Y')
-SITESUBTITLE = 'by Tobiasz Kedzierski'
-FOOTER_TEXT = 'pelican theme: <a href=\"https://github.com/onlyhavecans/pelican-chunk\">pelican-chunk</a>'
-DISPLAY_CATEGORIES_ON_MENU = True
-SINGLE_AUTHOR = True
-MINT = False
-
 LINKS = (
+    ('Home','/index.html'),
+    ('about me', '/pages/about-me.html'),
     ('tobked.github.io', 'https://tobked.github.io/'),
 )
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (('LinkedIn', 'https://www.linkedin.com/in/tobiaszkedzierski/?locale=en_US'),
+          ('GitHub', 'https://github.com/TobKed'),)
 
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
+
+# theme settings
+DISPLAY_PAGES_ON_MENU = True
+USER_LOGO_URL = "images/qr.png"
+MANGLE_EMAILS = True
+FUZZY_DATES = True
+# TAGS_URL = 'tags.html'
+ARCHIVES_URL = 'archives.html'
+PAGES_URL = 'pages.html'

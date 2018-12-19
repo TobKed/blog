@@ -14,3 +14,5 @@ print("Hello world")
 ```
 
 spam and ham
+
+![Alt Text]({filename}/images/qr.png)
