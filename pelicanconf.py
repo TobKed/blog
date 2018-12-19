@@ -43,9 +43,8 @@ DEFAULT_PAGINATION = 10
 
 # theme settings
 DISPLAY_PAGES_ON_MENU = True
-USER_LOGO_URL = "images/qr.png"
+USER_LOGO_URL = "/images/qr.png"
 MANGLE_EMAILS = True
 FUZZY_DATES = True
-# TAGS_URL = 'tags.html'
+TAGS_URL = 'tags.html'
 ARCHIVES_URL = 'archives.html'
-PAGES_URL = 'pages.html'
