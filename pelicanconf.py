@@ -2,9 +2,7 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-THEME = "voce"
-PLUGIN_PATHS = ["voce/plugins"]
-PLUGINS = ["assets"]
+THEME = "pelican-clean-blog"
 
 AUTHOR = 'Tobiasz Kedzierski'
 SITENAME = 'ups and downs'
@@ -27,14 +25,17 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = (
-    ('Home','/index.html'),
+    ('Home', '/index.html'),
     ('about me', '/pages/about-me.html'),
     ('tobked.github.io', 'https://tobked.github.io/'),
 )
 
 # Social widget
-SOCIAL = (('LinkedIn', 'https://www.linkedin.com/in/tobiaszkedzierski/?locale=en_US'),
-          ('GitHub', 'https://github.com/TobKed'),)
+SOCIAL = (
+    ('user', 'https://tobked.github.io/'),
+    ('LinkedIn', 'https://www.linkedin.com/in/tobiaszkedzierski/?locale=en_US'),
+    ('GitHub', 'https://github.com/TobKed'),
+)
 
 DEFAULT_PAGINATION = 10
 
@@ -42,9 +43,4 @@ DEFAULT_PAGINATION = 10
 # RELATIVE_URLS = True
 
 # theme settings
-DISPLAY_PAGES_ON_MENU = True
-USER_LOGO_URL = "/images/qr.png"
-MANGLE_EMAILS = True
-FUZZY_DATES = True
-TAGS_URL = 'tags.html'
-ARCHIVES_URL = 'archives.html'
+# HEADER_COVER = '/images/qr.png'
