@@ -5,10 +5,11 @@ Tags: links, bookmarks
 
 ### Podcasts
 
-* https://talkpython.fm/
-* https://pythonbytes.fm/
+* [talkpython.fm](https://talkpython.fm/)
+* [pythonbytes.fm](https://pythonbytes.fm/)
+
 
 
 ### Blogs
 
-* http://blog.thedigitalcatonline.com/
+* [blog.thedigitalcatonline.com/](http://blog.thedigitalcatonline.com/)
