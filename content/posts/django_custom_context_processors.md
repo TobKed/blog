@@ -32,13 +32,16 @@ TEMPLATES = [
 
 ```python
 # my_app/my_context_processor.py
+from datetime import datetime
 def custom_context(request):
     return {"hello": "Hello World!"}
     
 def another_custom_context(request):
+    right_now = datetime.now().strftime("%b %d %Y %H:%M:%S")
     return {
         "bye": "Bye Bye!",
-        "bye_user": f"Bye Bye {request.user}!"
+        "bye_user": f"Bye Bye {request.user}!",
+        "right_now": right_now
     }
 ```
 
@@ -47,12 +50,14 @@ def another_custom_context(request):
 <p> {{ hello }} <p>
 <p> {{ bye }} <p>
 <p> {{ bye_user }} <p>
+<p> Today: {{ right_now }} <p>
 ```
 
 ```html
 <p> Hello World! <p>
 <p> Bye Bye! <p>
 <p> Bye Bye AnonymousUser! <p>
+<p> Today: Jan 05 2019 18:10:25 <p>
 ```
 
 [Django Documentation - Writing your own context processor](https://docs.djangoproject.com/en/2.1/ref/templates/api/#writing-your-own-context-processors)
