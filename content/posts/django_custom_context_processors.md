@@ -22,6 +22,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                # add your custom context processors here
                 'my_app.my_context_processor.custom_context'
                 'my_app.my_context_processor.another_custom_context'
             ],
@@ -33,7 +34,6 @@ TEMPLATES = [
 ```python
 # my_app/my_context_processor.py
 from datetime import datetime
-
 
 def custom_context(request):
     return {"hello": "Hello World!"}
