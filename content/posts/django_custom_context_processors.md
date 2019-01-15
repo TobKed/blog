@@ -1,5 +1,5 @@
 Title: Custom context processors in Django
-Date: 2019-01-05
+Date: 2019-01-15
 Category: Python
 Tags: python, django
 Slug: django-custom-context-processors
@@ -8,7 +8,27 @@ Summary: Custom context processors in Django
 
 ### Custom context processors in Django
 
+In the template to get content out of database usually the best way is a template tag (you can write own template tags). However when you want particular variable to be available in the context of every template creating custom context processor could be convenient way achieving this.
+If you ever used ```{% request %}``` or ```{% debug %}``` you can easily wrap your head around this concept.
 
+First we write simple context processors.
+```python
+# my_app/my_context_processor.py
+from datetime import datetime
+
+def custom_context(request):
+    return {"hello": "Hello World!"}
+    
+def another_custom_context(request):
+    right_now = datetime.now().strftime("%b %d %Y %H:%M:%S")
+    return {
+        "bye": "Bye Bye!",
+        "bye_user": f"Bye Bye {request.user}!",
+        "right_now": right_now
+    }
+```
+
+Now in settings append them to context_processors list in templates options.
 ```python
 # mysite/settings.py
 TEMPLATES = [
@@ -31,22 +51,7 @@ TEMPLATES = [
 ]
 ```
 
-```python
-# my_app/my_context_processor.py
-from datetime import datetime
-
-def custom_context(request):
-    return {"hello": "Hello World!"}
-    
-def another_custom_context(request):
-    right_now = datetime.now().strftime("%b %d %Y %H:%M:%S")
-    return {
-        "bye": "Bye Bye!",
-        "bye_user": f"Bye Bye {request.user}!",
-        "right_now": right_now
-    }
-```
-
+And there we are. We can enjoy our custom context processors!
 ```jinja2
 {# myapp/templates/myapp/page.html #}
 <p> {{ hello }} <p>
@@ -55,6 +60,7 @@ def another_custom_context(request):
 <p> Right now: {{ right_now }} <p>
 ```
 
+They will be rendered as below.
 ```html
 <p> Hello World! <p>
 <p> Bye Bye! <p>
