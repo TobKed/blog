@@ -68,4 +68,5 @@ They will be rendered as below.
 <p> Right now: Jan 05 2019 18:10:25 <p>
 ```
 
-[Django Documentation - Writing your own context processor](https://docs.djangoproject.com/en/2.1/ref/templates/api/#writing-your-own-context-processors)
+Sources:
+* [Django Documentation - Writing your own context processor](https://docs.djangoproject.com/en/2.1/ref/templates/api/#writing-your-own-context-processors)
