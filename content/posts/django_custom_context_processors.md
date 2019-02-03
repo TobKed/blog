@@ -69,4 +69,5 @@ They will be rendered as below.
 ```
 
 Sources:
+
 * [Django Documentation - Writing your own context processor](https://docs.djangoproject.com/en/2.1/ref/templates/api/#writing-your-own-context-processors)
