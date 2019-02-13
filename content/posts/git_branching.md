@@ -59,7 +59,7 @@ $ git commit -m "polishing"
 # *     (master)  initial commit
 ```
 
-What happened? Feature branch does not know what is going in master. Maybe someone should tell her before? Let's rewind.
+What happened? Feature branch does not know what is going in master. Maybe someone should tell her before? Rebase! Let's rewind.
 
 ```shell   
 $ git checkout feature
@@ -77,6 +77,8 @@ $ git commit -m "polishing"
 # |/
 # *   
 ```
+
+I hope it helps to you to keep your ducks in a row.
 
 Sources:
 
