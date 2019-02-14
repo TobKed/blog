@@ -10,6 +10,8 @@ Tags: welcome
 > -- <cite>Michael Jordan</cite>
 
 
-### Conferences
-* [PyCon CZ 2018](https://cz.pycon.org/2018/)
-* [PyCon PL 2018](https://pl.pycon.org/2018/en/)
+### Links
+
+* [LinkedIn](https://www.linkedin.com/in/tobiaszkedzierski/?locale=en_US)
+* [GitHub](https://github.com/TobKed)
+* [Personal](https://tobked.github.io/)
