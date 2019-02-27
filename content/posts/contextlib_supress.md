@@ -27,4 +27,4 @@ except FileNotFoundError:
 
 Sources:
 
-* [Python Tricks Email series form RealPython.org ](https://realpython.com/)
+* [Python Tricks Email series from RealPython.org ](https://realpython.com/)
