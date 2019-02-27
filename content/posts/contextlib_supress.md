@@ -21,7 +21,7 @@ This is equivalent to the following try/except clause:
 try:
     os.remove('somefile.tmp')
 except FileNotFoundError:
-    pass have ever used ```{% request %}``` or ```{% debug %}``` you can easily wrap your head around this concept.
+    pass
 ```
 
 
