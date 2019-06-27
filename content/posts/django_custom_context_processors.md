@@ -8,7 +8,7 @@ Summary: Custom context processors in Django
 
 ### Custom context processors in Django
 
-In order to get the content out of database in the template the best way is usually a template tag (you can write your own template tags). However, when you want a particular variable to be available in the context of every template, creating a custom context processor could be a convenient way achieving this.
+In order to get the content out of database in the template the best way is usually a template tag (you can write your own template tags). However, when you want a particular variable to be available in the context of every template, creating a custom context processor could be a convenient way to achieve this.
 If you have ever used ```{% request %}``` or ```{% debug %}``` you can easily wrap your head around this concept.
 
 First, we write simple context processors.
@@ -28,7 +28,7 @@ def another_custom_context(request):
     }
 ```
 
-Now in settings append them to the context_processors list in the templates options.
+Next, go to ```settings.py``` and append the context processors to the context_processors list in the templates options.
 ```python
 # mysite/settings.py
 TEMPLATES = [
