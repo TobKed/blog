@@ -13,7 +13,7 @@ Summary: Few words about enum and dataclass
 > -- <cite>https://docs.python.org/3/library/enum.html</cite>
 
 `Enum` is useful when you need immutable name-value pairs enclosed in an iterable object.
-What is special in `Enum`? It's metaclass `EnumMeta` provides dunder methods *(dunder methods: double underscores at the beginning and the end, also called magic methods)* which allow to use `Enum` class which will fail on a typical class. 
+What is special in `Enum`? Its metaclass `EnumMeta` provides dunder methods *(dunder methods: double underscores at the beginning and the end, also called magic methods)* which allow to use `Enum` class which will fail on a typical class. 
 
 The `Enum` class is callable, providing the following functional API:
 ```python
