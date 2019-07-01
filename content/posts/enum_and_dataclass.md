@@ -134,7 +134,7 @@ Dataclass by default generates special methods like:  `__init__`, `__doc__`, `__
 
 Some additional methods are created as well: `__annotations__`, `__dataclass_fields__`, `__dataclass_params__`.
 
-Default values are treated as class variable.
+Default values are treated as class variables.
 
 ```python
 # __doc__
@@ -202,7 +202,7 @@ _DataclassParams(init=True,repr=True,eq=True,order=False,unsafe_hash=False,froze
 }
 ```
 
-Default dataclass maybe not suits you so you can modify it easily by passing parameters to dataclass decorator (init, repr, order, unsafe_hash, frozen)
+If default dataclass does not suit you, you can easily modify it by passing parameters to dataclass decorator (init, repr, order, unsafe_hash, frozen).
 
 ```python
 >>> from pprint import pprint
