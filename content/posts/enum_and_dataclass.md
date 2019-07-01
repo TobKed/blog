@@ -132,7 +132,7 @@ Color(hue=120, saturation=1.0, lightness=0.5)
 
 Dataclass by default generates special methods like:  `__init__`, `__doc__`, `__eq__`.
 
-Some additional are created as well: `__annotations__`, `__dataclass_fields__`, `__dataclass_params__`.
+Some additional methods are created as well: `__annotations__`, `__dataclass_fields__`, `__dataclass_params__`.
 
 Default values are treated as class variable.
 
