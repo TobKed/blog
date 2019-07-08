@@ -35,7 +35,8 @@ True
 >>> list(Cards)                     
 [<Cards.clubs: 1>, <Cards.diamonds: 2>, <Cards.hearts: 3>, <Cards.spades: 4>]
 >>> for card in Cards:
->>>     print(card)
+        print(card)
+        
 Cards.clubs
 Cards.diamonds
 Cards.hearts
@@ -59,12 +60,13 @@ True
 
 Class syntax:
 ```python
->>> from enum import Enum
->>> class Color(Enum):
-...     RED = 1
-...     GREEN = 2
-...     BLUE = 3
-    
+from enum import Enum
+class Color(Enum):
+    RED = 1
+    GREEN = 2
+    BLUE = 3
+```
+```python    
 >>> repr(Color.RED))
 '<Color.RED: 1>'
 >>> type(Color.RED)          
@@ -97,18 +99,19 @@ Class syntax:
 > -- <cite>https://www.python.org/dev/peps/pep-0557/#abstract</cite>
 
 Dataclasses were introduced in Python3.7 (PEP 557). They provide elegant syntax for creating mutable data holder objects.
-They are based on `attrs` package "... that will bring back the joy of writing classes by relieving you from the drudgery of implementing object protocols (aka dunder methods)."
+They are based on `attrs` package "    that will bring back the joy of writing classes by relieving you from the drudgery of implementing object protocols (aka dunder methods)."
 
 
 ```python
->>> from dataclasses import dataclass, asdict, astuple, replace
+from dataclasses import dataclass, asdict, astuple, replace
 
->>> @dataclass
-... class Color:
-...    hue: int
-...    saturation: float
-...    lightness: float = 0.5
-
+@dataclass
+class Color:
+    hue: int
+    saturation: float
+    lightness: float = 0.5
+```
+```
 # __init__
 >>> c = Color(33, 1.0)
 >>> c
@@ -205,15 +208,15 @@ _DataclassParams(init=True,repr=True,eq=True,order=False,unsafe_hash=False,froze
 If default dataclass does not suit you, you can easily modify it by passing parameters to dataclass decorator (init, repr, order, unsafe_hash, frozen).
 
 ```python
->>> from pprint import pprint
+from pprint import pprint
 
->>> @dataclass(order=True, frozen=True)
-... class Color:
-...    hue: int
-...    saturation: float
-...    lightness: float = 0.5
-
-
+@dataclass(order=True, frozen=True)
+class Color:
+    hue: int
+    saturation: float
+    lightness: float = 0.5
+```
+```python
 >>> colors = [Color(5, 5.9), Color(1, 2.5), Color(1, 2.5), Color(3, 4.1)]
 
 >>> pprint(sorted(colors))
@@ -229,8 +232,76 @@ If default dataclass does not suit you, you can easily modify it by passing para
   Color(hue=5, saturation=5.9, lightness=0.5)}
 ```
 
-#### TODO
 #### Custom fields
+
+* field factories - instance of collection, instead of fixed default value
+* custom methods - no different than for any other class
+* limiting hashing  - limit to immutable fields by `field(hash=False)`
+* limiting field which are displayed - `field(repr=False)`
+* limiting for comparison - if dataclass has an `oredr=True` all fileds are included in comparison. Exclusion of filed is provided by `filed(compare=False)`
+* metadata - more informations about the field, e.g. `salary = field(metadata={'units': 'bitcoin'})`
+```python
+from dataclasses import dataclass, field
+from datetime import datetime
+
+@dataclass(order=True, unsafe_hash=True)
+class Employee:
+    emp_id: int = field()
+    name: str = field()
+    gender: str = field()
+    salary: int = field(hash=False, repr=False, metadata={'units': 'bitcoin'})
+    age: int = field(hash=False)
+    viewed_by: list = field(default_factory=list, compare=False, repr=False)
+
+    def access(self, viewer_id):
+        self.viewed_by.append((viewer_id, datetime.now()))
+```
+```python
+>>> from pprint import pprint
+
+>>> e1 = Employee(emp_id='12345',
+>>>               name="Rachel Green",
+>>>               gender='female',
+>>>               salary = 20,
+>>>               age = 20
+>>> )
+
+>>> e2 = Employee(emp_id='67890',
+                  name="Ross From Friends",
+                  gender='male',
+                  salary = 30,
+                  age = 30
+    )
+
+>>> e1.access('Changler Bing')
+>>> e1.access('Joey T.')
+>>> pprint(e1.viewed_by)
+[('Changler Bing', datetime.datetime(2019, 7, 8, 19, 49, 58, 706455)),
+ ('Joey T.', datetime.datetime(2019, 7, 8, 19, 49, 58, 706458))]
+
+>>> pprint(sorted([e1, e2]))
+[Employee(emp_id='12345', name='Rachel Green', gender='female', age=20),
+ Employee(emp_id='67890', name='Ross From Friends', gender='male', age=30)]
+
+>>> assignments = {e1: 'be pretty', e2: 'be anxious'}
+>>> pprint(assignments)
+{Employee(emp_id='12345', name='Rachel Green', gender='female', age=20): 'be pretty',
+ Employee(emp_id='67890', name='Ross From Friends', gender='male', age=30): 'be anxious'}
+
+
+>>> (fields(e1)[3])
+Field(name='salary',
+      type=<class 'int'>,
+      default=<dataclasses._MISSING_TYPE object at 0x7fc094c06e80>,
+      default_factory=<dataclasses._MISSING_TYPE object at 0x7fc094c06e80>,
+      init=True,
+      repr=False,
+      hash=False,
+      compare=True,
+      metadata=mappingproxy({'units': 'bitcoin'}),
+      _field_type=_FIELD
+)
+```
 
 Sources:
 
@@ -245,3 +316,5 @@ Sources:
 * [PEP 557 -- Data Classes](https://www.python.org/dev/peps/pep-0557/)
 
 * [attrs: Classes Without Boilerplate](https://github.com/python-attrs/attrs)
+
+* [Raymond Hettinger - Dataclasses: The code generator to end all code generators - PyCon 2018](https://www.youtube.com/watch?v=T-TwcmT6Rcw)
