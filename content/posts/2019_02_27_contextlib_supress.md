@@ -4,9 +4,10 @@ Category: Python
 Tags: python, exception, exceptions, context
 Slug: contextlib-suppress
 Summary: Handling exceptions with contextlib
+Status: published
 
 
-### Handling exceptions with contextlib.supress()
+## Handling exceptions with contextlib.supress()
 
 ```python
 import contextlib
@@ -25,5 +26,8 @@ except FileNotFoundError:
 ```
 
 
-Sources:  
+<br>
+
+----------------
+#### Sources:
 * [Python Tricks Email series from RealPython.com ](https://realpython.com/)

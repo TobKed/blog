@@ -4,9 +4,10 @@ Category: Git
 Tags: git, branching, vcs
 Slug: git-branching
 Summary: Git branching
+Status: published
 
 
-### Git branching
+## Git branching
 
 I want to present you how do I perform branching. When I develop some feature I am used to create branch for it to separate it from master. When I decide I am satisfied with the changes and some chapter is finished feature branch shall be merged into master. At the beginning I had the problem with merging because when it's done directly it squash commits from feature branch into master.
 
@@ -80,6 +81,9 @@ $ git commit -m "polishing"
 
 I hope it helps to you to keep your ducks in a row.
 
-Sources:
 
+<br>
+
+----------------
+#### Sources:
 * [A successful Git branching model - Vincent Driessen blog](https://nvie.com/posts/a-successful-git-branching-model/)

@@ -8,18 +8,21 @@ Summary: Installing Docker on Raspberry Pi 3
 Status: draft
 
 
-
 ## Docker on Raspberry Pi 3
 
-#### What and why?
+### What and why?
 
-#### Setting up Raspbian
-[1](#raspbian)
+### Setting up Raspbian
+<a name="1">[[1]](#raspbian)</a>
 
-#### Docker installation
+### Docker installation
 
-[2](#docker)
+<a name="1">[[2]](#docker)
 
-Sources:  
-<a name="raspbian">[1]</a> [Raspbian download](https://www.raspberrypi.org/downloads/raspbian/)  
-<a name="docker">[2]</a> [docker.com](https://www.docker.com/)
+
+<br>
+
+----------------
+#### Sources:
+* <a name="raspbian">[[1]](#1)</a> [Raspbian download](https://www.raspberrypi.org/downloads/raspbian/)
+* <a name="raspbian">[[2]](#2)</a> [docker.com](https://www.docker.com/)

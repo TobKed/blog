@@ -4,9 +4,10 @@ Category: Python
 Tags: python, django
 Slug: django-custom-context-processors
 Summary: Custom context processors in Django
+Status: published
 
 
-### Custom context processors in Django
+## Custom context processors in Django
 
 In order to get the content out of database in the template the best way is usually a template tag (you can write your own template tags). However, when you want a particular variable to be available in the context of every template, creating a custom context processor could be a convenient way to achieve this.
 If you have ever used ```{% request %}``` or ```{% debug %}``` you can easily wrap your head around this concept.
@@ -68,5 +69,8 @@ They will be rendered as below.
 <p> Right now: Jan 05 2019 18:10:25 <p>
 ```
 
-Sources:  
+<br>
+
+----------------
+#### Sources:
 * [Django Documentation - Writing your own context processor](https://docs.djangoproject.com/en/2.1/ref/templates/api/#writing-your-own-context-processors)

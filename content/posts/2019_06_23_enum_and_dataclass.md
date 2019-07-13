@@ -4,9 +4,10 @@ Category: Python
 Tags: python, enum, dataclass, data, OOP
 Slug: enum-and-dataclass
 Summary: Few words about enum and dataclass
+Status: published
 
 
-### Enum
+## Enum
 
 > "An enumeration is a set of symbolic names (members) bound to unique, constant values. Within an enumeration, the members can be compared by identity, and the enumeration itself can be iterated over."
 >
@@ -90,7 +91,7 @@ class Color(Enum):
 ```
 
 
-### Dataclasses
+## Dataclasses
 
 
 
@@ -232,7 +233,7 @@ class Color:
   Color(hue=5, saturation=5.9, lightness=0.5)}
 ```
 
-#### Custom fields
+### Custom fields
 
 * field factories - instance of collection, instead of fixed default value
 * custom methods - no different than for any other class
@@ -303,11 +304,18 @@ Field(name='salary',
 )
 ```
 
-Sources:  
-* [enum — Support for enumerations - Python Documentation](https://docs.python.org/3/library/enum.html)  
-* [dataclasses — Data Classes - Python Documentation](https://docs.python.org/3/library/dataclasses.html)  
-* [Cool New Features in Python 3.7 #Data Classes - realpython.com](https://realpython.com/python37-new-features/#data-classes)  
-* [The Ultimate Guide to Data Classes in Python 3.7 - realpython.com](https://realpython.com/python-data-classes/)  
-* [PEP 557 -- Data Classes](https://www.python.org/dev/peps/pep-0557/)  
-* [attrs: Classes Without Boilerplate](https://github.com/python-attrs/attrs)  
-* [Raymond Hettinger - Dataclasses: The code generator to end all code generators - PyCon 2018](https://www.youtube.com/watch?v=T-TwcmT6Rcw)  
+
+<br>
+
+----------------
+#### Sources:
+* [enum — Support for enumerations - Python Documentation](https://docs.python.org/3/library/enum.html)
+* [dataclasses — Data Classes - Python Documentation](https://docs.python.org/3/library/dataclasses.html)
+* [Cool New Features in Python 3.7 #Data Classes - realpython.com](https://realpython.com/python37-new-features/#data-classes)
+* [The Ultimate Guide to Data Classes in Python 3.7 - realpython.com](https://realpython.com/python-data-classes/)
+* [PEP 557 -- Data Classes](https://www.python.org/dev/peps/pep-0557/)
+* [attrs: Classes Without Boilerplate](https://github.com/python-attrs/attrs)
+* [Raymond Hettinger - Dataclasses: The code generator to end all code generators - PyCon 2018](https://www.youtube.com/watch?v=T-TwcmT6Rcw)
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%"' src="https://www.youtube.com/embed/T-TwcmT6Rcw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
