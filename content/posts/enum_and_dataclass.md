@@ -303,18 +303,11 @@ Field(name='salary',
 )
 ```
 
-Sources:
-
-* [enum — Support for enumerations - Python Documentation](https://docs.python.org/3/library/enum.html)
-
-* [dataclasses — Data Classes - Python Documentation](https://docs.python.org/3/library/dataclasses.html)
-
-* [Cool New Features in Python 3.7 #Data Classes - realpython.com](https://realpython.com/python37-new-features/#data-classes)
-
-* [The Ultimate Guide to Data Classes in Python 3.7 - realpython.com](https://realpython.com/python-data-classes/)
-
-* [PEP 557 -- Data Classes](https://www.python.org/dev/peps/pep-0557/)
-
-* [attrs: Classes Without Boilerplate](https://github.com/python-attrs/attrs)
-
-* [Raymond Hettinger - Dataclasses: The code generator to end all code generators - PyCon 2018](https://www.youtube.com/watch?v=T-TwcmT6Rcw)
+Sources:  
+* [enum — Support for enumerations - Python Documentation](https://docs.python.org/3/library/enum.html)  
+* [dataclasses — Data Classes - Python Documentation](https://docs.python.org/3/library/dataclasses.html)  
+* [Cool New Features in Python 3.7 #Data Classes - realpython.com](https://realpython.com/python37-new-features/#data-classes)  
+* [The Ultimate Guide to Data Classes in Python 3.7 - realpython.com](https://realpython.com/python-data-classes/)  
+* [PEP 557 -- Data Classes](https://www.python.org/dev/peps/pep-0557/)  
+* [attrs: Classes Without Boilerplate](https://github.com/python-attrs/attrs)  
+* [Raymond Hettinger - Dataclasses: The code generator to end all code generators - PyCon 2018](https://www.youtube.com/watch?v=T-TwcmT6Rcw)  

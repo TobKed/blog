@@ -76,6 +76,5 @@ class LogInTest(StaticLiveServerTestCase):
         self.browser.close()
 ```
 
-Sources:
-
+Sources:  
 * [Justin Abrahms - Selenium's Page Object Pattern: The Key to Maintainable Tests](https://justin.abrah.ms/python/selenium-page-object-pattern--the-key-to-maintainable-tests.html)

@@ -25,6 +25,5 @@ except FileNotFoundError:
 ```
 
 
-Sources:
-
+Sources:  
 * [Python Tricks Email series from RealPython.com ](https://realpython.com/)
