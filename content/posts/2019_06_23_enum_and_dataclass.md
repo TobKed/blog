@@ -303,6 +303,7 @@ Field(name='salary',
       _field_type=_FIELD
 )
 ```
+Please check links below for more informations. I strongly recommend Raymon Hettinger PyCon talk about dataclassses.
 
 
 <br>
