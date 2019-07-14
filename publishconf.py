@@ -9,6 +9,8 @@ import os
 import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
+from dotenv import load_dotenv
+load_dotenv()
 
 # If your site is available via HTTPS, make sure SITEURL begins with https://
 SITEURL = 'blog/'
@@ -21,5 +23,5 @@ DELETE_OUTPUT_DIRECTORY = True
 
 # Following items are often useful when publishing
 
+GOOGLE_ANALYTICS = os.environ.get("GOOGLE_ANALYTICS")
 #DISQUS_SITENAME = ""
-#GOOGLE_ANALYTICS = ""
