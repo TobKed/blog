@@ -238,9 +238,9 @@ class Color:
 * field factories - instance of collection, instead of fixed default value
 * custom methods - no different than for any other class
 * limiting hashing  - limit to immutable fields by `field(hash=False)`
-* limiting field which are displayed - `field(repr=False)`
-* limiting for comparison - if dataclass has an `oredr=True` all fileds are included in comparison. Exclusion of filed is provided by `filed(compare=False)`
-* metadata - more informations about the field, e.g. `salary = field(metadata={'units': 'bitcoin'})`
+* limiting fields which are displayed - `field(repr=False)`
+* limiting for comparison - if dataclass has an `order=True` all fields are included in comparison. Exclusion of field is provided by `field(compare=False)`
+* metadata - more information about the field, e.g. `salary = field(metadata={'units': 'bitcoin'})`
 ```python
 from dataclasses import dataclass, field
 from datetime import datetime
@@ -274,10 +274,10 @@ class Employee:
                   age = 30
     )
 
->>> e1.access('Changler Bing')
+>>> e1.access('Chandler Bing')
 >>> e1.access('Joey T.')
 >>> pprint(e1.viewed_by)
-[('Changler Bing', datetime.datetime(2019, 7, 8, 19, 49, 58, 706455)),
+[('Chandler Bing', datetime.datetime(2019, 7, 8, 19, 49, 58, 706455)),
  ('Joey T.', datetime.datetime(2019, 7, 8, 19, 49, 58, 706458))]
 
 >>> pprint(sorted([e1, e2]))
@@ -303,7 +303,7 @@ Field(name='salary',
       _field_type=_FIELD
 )
 ```
-Please check links below for more informations. I strongly recommend Raymon Hettinger PyCon talk about dataclassses.
+Please check links below for more information. I strongly recommend Raymond Hettinger`s PyCon talk about dataclassses.
 
 
 <br>
