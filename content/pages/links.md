@@ -19,9 +19,14 @@ Tags: python, django, links, bookmarks
 * [Import This: A Podcast for Humans](https://www.kennethreitz.org/import-this/)
 
 
+### Videos
+* [PyVideo.org](https://pyvideo.org/)
+
+
 ### Blogs
 
-* [blog.thedigitalcatonline.com/](http://blog.thedigitalcatonline.com/)
+* [Miguel Grinberg Blog](https://blog.miguelgrinberg.com/)
+* [The Digital Cat](http://blog.thedigitalcatonline.com/)
 
 
 ### Tutorials
@@ -34,6 +39,7 @@ Tags: python, django, links, bookmarks
 ### Django
 
 * [Classy Class-Based Views](https://ccbv.co.uk/)
+* [Classy Django Forms](https://cdf.9vo.lt/)
 * [Classy Django REST Framework](http://www.cdrf.co/)
 
 
