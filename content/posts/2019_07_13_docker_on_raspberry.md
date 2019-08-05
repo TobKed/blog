@@ -12,25 +12,25 @@ Status: draft
 
 ### What and why?
 Docker is a tool similar to virtual machine but without its performance overhead.
-It allows to create totally separated conteneraized environments which use host machine kernel.
-So it is fast as you run it natively and creating containers or using already build images is really easy and pleasant process.
-For more information about Docker check sources at the bottom of the page.
+It allows to create totally separated conteneraized environments which use a host machine kernel.
+So it is as fast as when you run it natively while creating containers or using already built images is a quite easy and pleasant process.
+For more information about Docker, check sources at the bottom of the page.
 
-Docker is great, so why do not use it on Raspberry?
-Usually during I play with RPi I break something in the system or SD card stops behave correct, so I have to reinstall system and go again through installation steps.
-It is not hard, there are plenty of tutorials which shows how do it.
-I've found that almost all of them are more or less different and merely one works from start to end as they suppose to be.
-So to make my life slightly easier I prepared short description how to set-up Raspberry and short python script which install Docker and docker-compose while I go to the kitchen and prepare hot cup of tea. 
-Moreover, this script has not even to be downloaded, just copy-paste one line in terminal and earl gray is ready to be brewed.
+Docker is great, so why not use it on Raspberry (RPi)?
+Usually when I play with RPi I break something in the system or SD card stops working, so I have to reinstall the system and go again through the installation steps.
+It is not difficult and there are plenty of tutorials which show how do it.
+I've found that almost everyone of them is different and most don't work from start to end as they are supossed to.
+So to make my life slightly easier I prepared a short description how to set-up RPi and a short python script which installs Docker and docker-compose while I go to the kitchen and prepare hot cup of tea. 
+Moreover, this script does not have to be downloaded, just copy-paste one line to the terminal and your earl gray is ready to be brewed.
 
 ### Setting up Raspbian  
-Download <a>[*Raspbian Buster Lite*](https://www.raspberrypi.org/downloads/raspbian/) and create bootable SD-card. For this purpose you can use for e.g. ***Startup Disk Creator*** (Ubuntu) or ***Etcher*** (Windows, Mac, Linux).  
+Download <a>[*Raspbian Buster Lite*](https://www.raspberrypi.org/downloads/raspbian/) and create a bootable SD-card. For this purpose you can use for e.g. ***Startup Disk Creator*** (Ubuntu) or ***Etcher*** (Windows, Mac, Linux).  
   
-If you use headless PI it is possible enable SSH and Wifi before first boot.  
-To do this you have to put onto the boot partition a file named `ssh` without any extension.
+If you use a headless RPi it is possible to enable SSH and Wi-Fi before the first boot.  
+To enable SSH you have to put an empty file named `ssh` onto the boot partition without any extension.
   
-For Wifi you need to define `wpa_supplicant.conf` (configuration file for Wi-Fi Protected Access client and IEEE 802.1X supplicant) on the boot partition as well.
-This file shall contain credentials for you network. 
+For Wi-Fi you need to define `wpa_supplicant.conf` (configuration file for Wi-Fi Protected Access client and IEEE 802.1X supplicant) on the boot partition as well.
+This file shall contain credentials for your network. 
 ```
 # wpa_supplicant.conf
 
@@ -47,12 +47,12 @@ network={
 
 ### Docker installation
 
-Installation is provided by simple which executes just 6 shell commands. I will desribe briefly each one of them.
+Installation is provided by a simple script which executes just 6 shell commands. I will desribe each one of them briefly.
 
 <script src="https://gist.github.com/TobKed/75337ec7b73a0ac59a415b837927e4ee.js"></script>
 
 
-Meaning of particular commands:
+The meaning of particular commands:
 
 *   ```sudo apt-get update```  
     downloads the package lists from the repositories and "updates" them to get information on the newest versions of packages and their dependencies.
@@ -60,44 +60,44 @@ Meaning of particular commands:
     * `apt-get` -  the command-line tool for handling packages.
     * `update` - option used to re-synchronize the package index files from their sources.
 *   ```curl -sSL https://get.docker.com | sh```  
-    installs docker by executing Docker installation script from online source.
+    installs docker by executing Docker installation script from an online source.
     *  `curl` - tool to transfer data from or to a server.
-    *  `--s/--silent` - silent or quiet mode. Don't show progress meter or error messages.
+    *  `--s/--silent` - silent or quiet mode. Doesn't show progress meter or error messages.
     *  `-S/--show-error` - when used with -s it makes curl show an error message if it fails.
-    *  `-L/--location` - ff the server reports that the requested page has moved to a different location (indicated with a Location: header and a 3XX response code), this option will make curl redo the request on the new place.
+    *  `-L/--location` - if the server reports that the requested page has moved to a different location (indicated with a Location: header and a 3XX response code), this option will make curl redo the request on the new place.
     *  `|` - pipes '|' send the output of one command as input of another command.
     *  `sh` - Bourne shell.
 *   ```sudo usermod -aG docker $USER```  
     adds your user to the docker group which is created during the installation to run docker commands without without prepending sudo (as non-root user)
-    *  `usermod` - modify a user account.
-    *  `--a, --append` - add the user to the supplementary group(s). Use only with the -G option.
+    *  `usermod` - modifie a user account.
+    *  `--a, --append` - adds the user to the supplementary group(s). Use only with the -G option.
     *  `-G, --groups` - a list of supplementary groups.
     *  `docker` - group name.
     *  `$USER` - environmental variable with username.
 *   ```sudo systemctl enable docker```  
-    configure Docker to start on boot
+    configures Docker to start on boot
     *  `systemctl` - may be used to introspect and control the state of the "systemd" system and service manager.
-    *  `enable NAME..., enable PATH...` - Enable one or more units or unit instances.
+    *  `enable NAME..., enable PATH...` - Enables one or more units or unit instances.
     *  `docker` - deamon process name.
 *   ```sudo apt-get install -y python3-pip```  
-    install package installer for Python 3
+    installs package installer for Python 3
     *  `install` -  this option is followed by one or more packages desired for installation.
     *  `-y, --yes, --assume-yes` automatic yes to prompts. Assume "yes" as answer to all prompts and run non-interactively.
     *  `python3-pip` - Python3 package installer.
 *   ```sudo pip3 install docker-compose`  
-    install docker-compose through Python package installer
+    installs docker-compose through Python package installer
     *  `pip3` - a recursive acronym for "Pip Installs Packages"
     *  `install` - argument for pip3, self-explanatory.
     *  `docker-compose` - name of package to be installed,
 
 
-To run this scrip you just have to copy-paste following line in the RPi terminal:
+To run this script you just have to copy-paste the following line in the RPi terminal:
 ```bash
 curl -sSL https://gist.githubusercontent.com/TobKed/75337ec7b73a0ac59a415b837927e4ee/raw/docker_on_raspbian.py | python3
 ```
 It executes (similar to `curl -sSL https://get.docker.com | sh`) this script posted on [github gist](https://gist.github.com/TobKed/75337ec7b73a0ac59a415b837927e4ee#file-docker_on_raspbian-py).
 
-After script successfully finish you can run subshell as docker user by executing `newgrp docker` (`newgrp` - change the current group ID (GID) during a login session) or restart RPi by `sudo shutdown -r now`.
+After script successfully finishes you can run subshell as a docker user by executing `newgrp docker` (`newgrp` - change the current group ID (GID) during a login session) or restart RPi by `sudo shutdown -r now` (recommended).
 
 
 
