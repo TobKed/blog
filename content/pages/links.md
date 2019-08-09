@@ -9,6 +9,7 @@ Tags: python, django, links, bookmarks
 
 * [Learning Python - Mark Lutz](http://shop.oreilly.com/product/0636920028154.do)
 * [Fluent Python - Luciano Ramalho](http://shop.oreilly.com/product/0636920032519.do)
+* [Flask Web Development - Miguel Grinberg](http://shop.oreilly.com/product/0636920089056.do)
 * [Test-Driven Development with Python - online](http://www.obeythetestinggoat.com/)
 
 
@@ -43,7 +44,9 @@ Tags: python, django, links, bookmarks
 * [Classy Django REST Framework](http://www.cdrf.co/)
 
 
-### Conferences
+### Conferences, meet-ups
 
 * [PyCon PL](https://pl.pycon.org/)
 * [PyCon CZ](https://cz.pycon.org/)
+* [PyWaw](http://pywaw.org/)
+* [PySilesia](http://pysilesia.pl/)
