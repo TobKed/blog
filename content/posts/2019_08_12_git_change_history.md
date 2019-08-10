@@ -72,6 +72,8 @@ git rebase -i master   # add --autosquash when rebase.autosquash is not set to t
 ```
 Important thing is that for making it without adding `--autosquash` argument you should set `rebase.autosquash` in config to _true_ (as I mentioned in <b>Setting up Git</b> section).
 In the case you want to edit commit message you can use `git commit --squash` as well. 
+
+
 <br>
 
 ----------------

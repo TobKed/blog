@@ -99,7 +99,6 @@ It executes (similar to `curl -sSL https://get.docker.com | sh`) this script pos
 After script successfully finishes you can run subshell as a docker user by executing `newgrp docker` (`newgrp` - change the current group ID (GID) during a login session) or restart RPi by `sudo shutdown -r now` (recommended).
 
 
-
 <br>
 
 ----------------
