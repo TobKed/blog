@@ -46,7 +46,7 @@ network={
 
 ### Docker installation
 
-Installation is provided by a simple script which executes just 6 shell commands. I will desribe each one of them briefly.
+Installation is provided by a simple script which executes just 6 shell commands. I will describe each one of them briefly.
 
 <script src="https://gist.github.com/TobKed/75337ec7b73a0ac59a415b837927e4ee.js"></script>
 
@@ -78,12 +78,12 @@ The meaning of particular commands:
     *  `systemctl` - may be used to introspect and control the state of the "systemd" system and service manager.
     *  `enable NAME..., enable PATH...` - Enables one or more units or unit instances.
     *  `docker` - deamon process name.
-*   ```sudo apt-get install -y python3-pip```  
+*   ```sudo apt-get install -y python3-pip``` 
     installs package installer for Python 3
     *  `install` -  this option is followed by one or more packages desired for installation.
     *  `-y, --yes, --assume-yes` automatic yes to prompts. Assume "yes" as answer to all prompts and run non-interactively.
     *  `python3-pip` - Python3 package installer.
-*   ```sudo pip3 install docker-compose`  
+*   ```sudo pip3 install docker-compose``` 
     installs docker-compose through Python package installer
     *  `pip3` - a recursive acronym for "Pip Installs Packages"
     *  `install` - argument for pip3, self-explanatory.
@@ -132,4 +132,4 @@ After script successfully finishes you can run subshell as a docker user by exec
 * [pip - The Python Package Installer documentation](https://pip.pypa.io/en/stable)
 * [pip install - The Python Package Installer documentation](https://pip.pypa.io/en/stable/reference/pip_install/)
 * [docker-compose · PyPI](https://pypi.org/project/docker-compose/)
-* [Linux newgrp command help and examples - ](https://www.computerhope.com/unix/unewgrp.htm)
+* [Linux newgrp command help and examples - computerhope](https://www.computerhope.com/unix/unewgrp.htm)
