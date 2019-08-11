@@ -10,7 +10,7 @@ SITEURL = ''
 
 
 PATH = 'content'
-STATIC_PATHS = ['images']
+STATIC_PATHS = ['images', 'css']
 
 TIMEZONE = 'Europe/Warsaw'
 
@@ -39,6 +39,10 @@ SOCIAL = (
 )
 
 DEFAULT_PAGINATION = 10
+
+COLOR_SCHEME_CSS = 'github.css'
+
+CSS_OVERRIDE = 'css/main.css'
 
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
