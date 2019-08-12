@@ -11,14 +11,14 @@ Status: draft
 Many times when working with Git you want change something in the history and Git is great about that.
 I strongly recomend to read [Git Tools - Rewriting History](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History).
 You can find there information how to use `git ammend` and `git rebase --interactive` (`git rebase -i`) commands.
-With them you change last commit, change the order of the commits, change messages or modify files in a commit,
- squash together or split apart commits, or remove commits entirely.
+By using them you can change the last commit, the order of the commits, the messages or modify files in a commit,
+ squash together or split them apart, or remove some of them entirely.
 
 ### What and why?
-I wanted to show how I rewrite history, which commands I use, how I configure Git for it.
+I wanted to present how I rewrite history, which commands do I use and how do I configure Git for it.
 
 ### Setting up Git
-Some Git settings which are useful during rewriting history:
+Here are some Git settings which are useful during rewriting history:
 
 * `git config --global merge.ff=false`
 > By default, Git does not create an extra merge commit when merging a commit that is a descendant of the current commit. Instead, the tip of the current branch is fast-forwarded. When set to false, this variable tells Git to create an extra merge commit in such a case (equivalent to giving the --no-ff option from the command line)."
@@ -37,20 +37,20 @@ Some Git settings which are useful during rewriting history:
 > -- <cite>[rebase.autosquash - Git documentation](https://git-scm.com/docs/git-config#Documentation/git-config.txt-rebaseautoSquash)</cite>
 
 ### Amending
-As previously mentioned article says amending is used for changing last commit. You do it by by adding changes to staging area and executing:
+As the previously mentioned article says, amending is used for changing the last commit. You do it by adding changes to the staging area and executing:
 ```bash
 git commit --amend
 ```
-It loads previous command message where you can make changes to it. After saving message it makes it your new last commit. Be careful because amending changing SHA1 of the commit.
-I use it a lot but usually I don't want to edit message, hence my one of my most favorite commands come in:
+It loads previous command message where you can make changes. After saving the message it makes it your new last commit. Be careful because amending changes SHA1 of the commit.
+I use it a lot but usually I don't want to edit the message, hence one of my most favorite command:
 ```bash
 git commit --amend --no-edit
 ```
 
 ### Interactive rebasing
-I will not discuss interactive rebasing in details due the fact it has great description in the Git documentation so I hope you are already familiar with it.
-A `git rebase -i` as a parameter takes the the parent of the last commit that to be edited.
-Usually I don't mind to perform interactive rebasing on all commits on given branch so to do this I pass as a parameter parent branch e.g.
+I will not discuss interactive rebasing in details due the fact that it has a great description in the Git documentation so I hope you are already familiar with it.
+A `git rebase -i` as a parameter takes the parent of the last commit to be edited.
+Usually I don't mind to performing interactive rebasing on all commits on a given branch so to do this I pass as a parameter the parent branch e.g.
 ```bash
 git rebase -i master
 ```
