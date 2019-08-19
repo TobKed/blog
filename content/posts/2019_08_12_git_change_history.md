@@ -1,10 +1,10 @@
 Title: Changing history in Git
-Date: 2019-08-12
+Date: 2019-08-19
 Category: Git
 Tags: git, vcs
 Slug: git-history
 Summary: Fix mistakes and clean git repository
-Status: draft
+Status: publish
 
 
 ## Changing history
@@ -56,22 +56,22 @@ git rebase -i master
 ```
 
 ### Fixup
-You make few commits already but you found there is bug in the second commit.
-It will be much more logically to fix this second commit than making another one.
-You can do this by making commit with changes and then during interactive rabasing you can choose `f` or `fixup` action for fixup commit and move it in the todo list below the commit you want to fix.
+You made a few commits already but you found there is a bug in the second commit.
+It will be much more convenient to fix this second commit than to create another one.
+You can do this by making a commit with changes and then, during interactive rebasing you can choose the `f` or `fixup` action for the fixup commit and move it in the todo list below the commit you want to fix.
 
-It can be done even better because to play comes the `git commit --fixup` command, my another fav. 
-As a argument it takes SHA1 of commit to be fixed-up.
-Initially commit will be added and message will be the same as the message of commit to be fixed-up with suffix `fixup!`.
-During interactive rebasing this commit will be put in order after commit to be fixed-up with option `fixup` so it saves little bit of your time and energy for reordering and editing it manually.
+It can be done even better by using my other favourite command, the `git commit --fixup`. 
+As an argument it takes the SHA1 of commit to be fixed-up.
+Initially, a commit will be added and the message will be the same as the message of the commit to be fixed-up with the suffix `fixup!`.
+During interactive rebasing, this commit will be put in order after the commit to be fixed-up with option `fixup`, so it saves a little bit of your time and energy for reordering and editing it manually.
 My workflow for fixup usually looks like that:
 ```bash
 git add -u
 git commit --fixup bas341d
 git rebase -i master   # add --autosquash when rebase.autosquash is not set to true
 ```
-Important thing is that for making it without adding `--autosquash` argument you should set `rebase.autosquash` in config to _true_ (as I mentioned in <b>Setting up Git</b> section).
-In the case you want to edit commit message you can use `git commit --squash` as well. 
+The important thing is that for making it without adding the `--autosquash` argument you should set `rebase.autosquash` in configuration to _true_ (as I mentioned in <b>Setting up Git</b> section).
+In case you want to edit the commit message you can use `git commit --squash` as well. 
 
 
 <br>
