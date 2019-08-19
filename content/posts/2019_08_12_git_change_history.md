@@ -4,7 +4,7 @@ Category: Git
 Tags: git, vcs
 Slug: git-history
 Summary: Fix mistakes and clean git repository
-Status: publish
+Status: published
 
 
 ## Changing history

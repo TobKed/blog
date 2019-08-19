@@ -1,5 +1,5 @@
 Title: Black
-Date: 2019-08-20
+Date: 2019-xx-xx
 Category: python
 Tags: python, pep8
 Slug: black
