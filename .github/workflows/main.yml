@@ -11,18 +11,19 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Build
-      uses: jefftriplett/python-actions@master
+      uses: ./.github/python-actions
       env:
         PIPENV_VENV_IN_PROJECT: true
       with:
         args: pip install --upgrade pip && pip install -r requirements.txt
     - name: Theme install
-      uses: jefftriplett/python-actions@master
+      uses: ./.github/python-actions
       with:
         args: git clone https://github.com/gilsondev/pelican-clean-blog.git
     - name: Deploy
-      uses: jefftriplett/python-actions@master
+      uses: ./.github/python-actions
       with:
         args: ./deploy-to-gh-pages.sh
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        GOOGLE_ANALYTICS: ${{ secrets.GOOGLE_ANALYTICS }}
