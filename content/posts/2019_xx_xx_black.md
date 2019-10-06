@@ -10,7 +10,7 @@ Header_Cover: /images/posts/black-cover.png
 
 ## Author
 
-The author of Black is Łukasz Langa from Poznań, Poland.
+The author of Black is Łukasz Langa, Pythonista from Poznań in Poland.
 He is a Python core developer and Python 3.8 release manager.
 
 ## Black
@@ -44,17 +44,17 @@ class GoogleCloudBaseHook(BaseHook):
         pass
 ```
 
-Linters give the information which part of code violates PEP-8 but they do not give any solutions.
-Usually it is quite easy to fix it but it is annoying and consumes time.
-It leaves space for opinionated discussion.
+Linters give the information which part of a code violates PEP-8, but they do not give any solutions.
+Usually it is quite easy to fix it, but it is annoying and consumes time.
+It leaves space for opinionated discussions.
 The good formatter can help a lot in this matter.
 
 > Black is the uncompromising Python code formatter. By using it, you agree to cede control over minutiae of hand-formatting. In return, Black gives you speed, determinism, and freedom from pycodestyle nagging about formatting. You will save time and mental energy for more important matters.
 > 
 > -- black documentation
 
-Black uses subset of PEP-8 as a code style where every decision was proceeded with discussion, supported by solid arguments and concrete parts of PEP-8.
-Under the hood code is parsed to Concrete Syntax Tree (CST) and Abstract Syntax Tree (AST).
+Black uses subset of PEP-8 as a code style where every decision was preceded with discussion, supported by solid arguments and concrete parts of PEP-8.
+Under the hood code is parsed to Concrete Syntax Tree (CST) and Abstract Syntax Tree (AST). You can learn more about this concepts from sources at the end of text.
 
 #### Pros:
 * Fast.
@@ -64,7 +64,7 @@ Under the hood code is parsed to Concrete Syntax Tree (CST) and Abstract Syntax 
   _No more discussions about where line should be broken._
 + Code reading is easier.  
   _As Uncle Bob said, code is read ten times more often than written. Due to this fact, when code is styled in consistent way (
-  and Black provides consistent output) it minimize effort while reading it. You can fully focus on syntax and logic, and no on style._
+  and Black provides consistent output) it minimizes effort while reading it. You can fully focus on syntax and logic, and not on style._
 + No additional (unneseccary?) refactoring during coding.  
   _During working on some part of code sometimes you may want to change (and sometimes you do it) some adjecent
   areas which are not well formatted (at least you think they are not). Black get rids off this additional refactors._
@@ -72,24 +72,23 @@ Under the hood code is parsed to Concrete Syntax Tree (CST) and Abstract Syntax 
 
 #### Cons:
 * Requires python 3.6+.  
-  _Older versions can be formatted but for working 3.6+ version is required._
+  _Older versions can be formatted but for working version 3.6+ is required._
 * Does not touch strings.  
   _Long strings will never be broken._
 * Does not touch imports.
-* Still in beta.
 * Sometimes it is PITA to configure with ISORT.
+* Still in beta.
 
 ### Using Black
 
 #### Install Black
 
-No explanation needed ;).
 To use it out of the box:
 ```bash
 pip install black
 black {source_file_or_directory}
 ```
-Do you want to format by using Python? Uno problemo:
+Do you want to format Python by using Python? Uno problemo:
 ```python
 import black
 
@@ -100,6 +99,7 @@ black.format_file_in_place(
     write_back=black.WriteBack.YES,
 )
 ```
+<br>
 
 #### pyproject.toml
 
@@ -132,10 +132,11 @@ exclude = '''
 '''
 ```
 <br>
+
 #### pre-commit
 
 If you don't use pre-commit in your projects, you should start using it immediately. Pre-commit framework makes configuring
-pre-commit hooks pleasant and convenient. Hook for Black parses files to be commited and if any of them changed during it, hook fails and prevents commit. It means the code was not compliant with the code style.
+pre-commit hooks pleasant and convenient. Hook for Black parses files to be commited and if any of them changed during it, hook fails and prevents commit to be done. It means the code was not compliant with the code style.
 Drawback of this is that you have to add to staging area formatted files and run commit command again.
 
 Example `.pre-commit-config.yaml`:
@@ -148,27 +149,59 @@ repos:
         name: Formats python files using black
         language_version: python3.6
 ```
+<br>
+
+#### PyCharm/IntelliJ IDEA - External Tools
+
+In IDE you can define handful external tools which are available in `Tools -> External Tool` and under right-click menu.
+
+![External Tools with Black]({static}/images/posts/black-external-tool.png)
+
+
+**Install black and check where locate installation folder.**
+
+```bash
+pip install black
+which black
+```
+
+**Set External Tool in IDE.**
+
+On macOS:
+
+```PyCharm -> Preferences -> Tools -> External Tools```
+
+On Windows / Linux / BSD:
+
+```File -> Settings -> Tools -> External Tools```
+
+**Click the + icon to add a new external tool.**
+
+Official documentation suggests the following values:
+
+```
+Name: Black
+Description: Black is the uncompromising Python code formatter.
+Program: <install_location_from_step_2>  
+Arguments: "$FilePath$"  
+```
+
+I personally modified them to better suits my needs:
+
+Version which reads settings from project `pyproject.toml` is same as above with addtional `Working Directory` property:
+
+```
+Working directory: $ProjectFileDir$
+```
+  
+Version with specific line length:
+
+```
+Arguments: "$FilePath$" --line-length 110
+```
+  
 
 #### File-watcher in IDE
-
-#### External tool in JetBrains IDE
-
-    PyCharm -> Preferences -> Tools -> External Tools
-    
-    On Windows / Linux / BSD:
-    
-    File -> Settings -> Tools -> External Tools
-    
-    Name: Black
-    Description: Black is the uncompromising Python code formatter.
-    Program: <install_location_from_step_2>
-    Arguments: "$FilePath$"
-    
-    # uses pyproject.toml
-    Working directory: $ContentRoot$
-    # preconfigured line length 
-    Arguments: "$FilePath$" --line-length 110
-
 
 
 <br>
