@@ -10,7 +10,7 @@ Header_Cover: /images/posts/black-cover.png
 
 ## Author
 
-The author of Black is Łukasz Langa, Pythonista from Poznań in Poland.
+The author of **Black** is Łukasz Langa, Pythonista from Poznań in Poland.
 He is a Python core developer and Python 3.8 release manager.
 
 ## Black
@@ -53,7 +53,7 @@ The good formatter can help a lot in this matter.
 > 
 > -- black documentation
 
-Black uses subset of PEP-8 as a code style where every decision was preceded with discussion, supported by solid arguments and concrete parts of PEP-8.
+**Black** uses subset of PEP-8 as a code style where every decision was preceded with discussion, supported by solid arguments and concrete parts of PEP-8.
 Under the hood code is parsed to Concrete Syntax Tree (CST) and Abstract Syntax Tree (AST). You can learn more about this concepts from sources at the end of text.
 
 #### Pros:
@@ -182,7 +182,7 @@ Official documentation suggests the following values:
 ```
 Name: Black
 Description: Black is the uncompromising Python code formatter.
-Program: <install_location_from_step_2>  
+Program: <install_location>  
 Arguments: "$FilePath$"  
 ```
 
@@ -199,10 +199,32 @@ Version with specific line length:
 ```
 Arguments: "$FilePath$" --line-length 110
 ```
-  
+
+<br>
 
 #### File-watcher in IDE
 
+Run Black on every file save:
+
+Make sure you have the File Watcher plugin installed.
+Go to `Preferences or Settings -> Tools -> File Watchers` and click + to add a new watcher:
+
+```
+Name: Black
+File type: Python
+Scope: Project Files
+Program: <install_location>
+Arguments: $FilePath$
+Output paths to refresh: $FilePath$
+Working directory: $ProjectFileDir$
+Uncheck "Auto-save edited files to trigger the watcher"
+```
+
+<br>
+
+### Summary
+
+I hope you will your brighten your code with **Black**.
 
 <br>
 
