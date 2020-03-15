@@ -20,6 +20,7 @@ Tags: python, django, links, bookmarks
 * [Python Bytes](https://pythonbytes.fm/)
 * [Import This: A Podcast for Humans](https://www.kennethreitz.org/import-this/)
 * [Django Chat](https://djangochat.com/)
+* [The Real Python Podcast](https://realpython.com/podcasts/rpp/)
 
 
 ### Videos
