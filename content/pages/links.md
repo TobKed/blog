@@ -21,6 +21,7 @@ Tags: python, django, links, bookmarks
 * [Import This: A Podcast for Humans](https://www.kennethreitz.org/import-this/)
 * [Django Chat](https://djangochat.com/)
 * [The Real Python Podcast](https://realpython.com/podcasts/rpp/)
+* [Test & Code](https://testandcode.com/)
 
 
 ### Videos
