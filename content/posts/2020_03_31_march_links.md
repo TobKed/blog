@@ -41,39 +41,44 @@ Status: draft
 
 ## Used recently
 
-### [django-summernote]()
+### [django-summernote](https://github.com/summernote/django-summernote)
 
-""
-
-
-### [django-ckeditor]()
-
-""
+> Summernote is a simple WYSIWYG editor.
+> django-summernote allows you to embed Summernote into Django very handy. Support admin mixins and widgets.
 
 
-### [django-import-export]()
+### [django-ckeditor](https://github.com/django-ckeditor/django-ckeditor)
 
-""
-
-
-### [django-modeltranslation]()
-
-""
+> Django admin CKEditor integration. Provides a RichTextField, RichTextUploadingField, CKEditorWidget and CKEditorUploadingWidget utilizing CKEditor with image uploading and browsing support included.
 
 
-### [django-storages]()
+### [django-import-export](https://github.com/django-import-export/django-import-export)
 
-""
+> django-import-export is a Django application and library for importing and exporting data with included admin integration.
 
 
-### [django-admin-sortable2]()
+### [django-modeltranslation](https://github.com/deschler/django-modeltranslation)
 
-""
+> The modeltranslation application is used to translate dynamic content of existing Django models to an arbitrary number of languages without having to change the original model classes.
+
+
+### [django-storages](https://github.com/jschneier/django-storages)
+
+> django-storages is a collection of custom storage backends for Django.
+
+
+### [django-admin-sortable2](https://github.com/jrief/django-admin-sortable2)
+
+> Generic drag-and-drop ordering for objects in the Django admin interface 
 
 
 ## Other Django libraries worth to be mentioned
 
-### [django-cms]()
+### [django-cms]( http://www.django-cms.org)
 
+> Open source enterprise content management system based on the Django framework.
 
+### [django-trench](https://github.com/merixstudio/django-trench)
 
+> django-trench provides a set of REST API endpoints to supplement django-rest-framework with multi-factor authentication (MFA, 2FA). It supports both standard built-in authentication methods, as well as JWT (JSON Web Token). 
+>

@@ -22,6 +22,8 @@ Tags: python, django, links, bookmarks
 * [Django Chat](https://djangochat.com/)
 * [The Real Python Podcast](https://realpython.com/podcasts/rpp/)
 * [Test & Code](https://testandcode.com/)
+* [IRL: Online Life is Real Life](https://irlpodcast.org/)
+* [Piątki po deployu (polish)](https://soundcloud.com/user-290159543)
 
 
 ### Videos
