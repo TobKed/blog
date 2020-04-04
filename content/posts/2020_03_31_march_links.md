@@ -4,42 +4,53 @@ Category: python
 Tags: python, blog, podcast, series, aggregate
 Slug: 2020-march-links
 Summary: Articles, videos, tools and some other interesting stuff from the past month 
-Status: draft
+Status: published
 
 
-# Articles
+# March 2020
+
+
+## Articles
 
 
 ### [Advanced Usage of Python Requests - findwork.dev](https://findwork.dev/blog/advanced-usage-python-requests-timeouts-retries-hooks/)
 
-“While it’s easy to immediately be productive with requests because of the simple API, the library also offers extensibility for advanced use cases. If you’re writing an API-heavy client or a web scraper you’ll probably need tolerance for network failures, helpful debugging traces and syntactic sugar.”
+> While it’s easy to immediately be productive with requests because of the simple API, the library also offers extensibility for advanced use cases. If you’re writing an API-heavy client or a web scraper you’ll probably need tolerance for network failures, helpful debugging traces and syntactic sugar.
 
 
 ### [Mental Models for Class Based Views - djangodeconstructed.com](https://djangodeconstructed.com/2020/01/03/mental-models-for-class-based-views/?utm_campaign=Django%2BNewsletter&utm_medium=email&utm_source=Django_Newsletter_13)
 
-"This article is a deep dive into how Django's class-based views work behind the scenes."
+> This article is a deep dive into how Django's class-based views work behind the scenes.
 
 
 ### [Python 3 Module of the Week - pymotw.com](https://pymotw.com/3/#)
 
-"PyMOTW-3 is a series of articles written by Doug Hellmann. to demonstrate how to use the modules of the Python 3 standard library"
+> PyMOTW-3 is a series of articles written by Doug Hellmann. to demonstrate how to use the modules of the Python 3 standard library
 
 
 ### [Guide to the Django REST Framework - sunscrapers.com](https://sunscrapers.com/ebook/how-to-create-a-rest-api-for-django-projects/)
 
-"Read this ebook, and you’re guaranteed to get clear and highly manageable code that won’t bring you shame when you show or transfer it to others."
+> Read this ebook, and you’re guaranteed to get clear and highly manageable code that won’t bring you shame when you show or transfer it to others.
 
 
-# Tools
+### [Views On Views - Matt Layman](https://www.mattlayman.com/understand-django/views-on-views/)
 
-### [git standup](https://github.com/kamranahmedse/git-standup)
-
-> Recall what you did on the last working day ..or be nosy and find what someone else did.
+> In this article, we’ll examine the core building block that makes those URLs work: the Django view.
 
 
-# Django libraries
+### [Django Admin Cookbook](https://books.agiliq.com/projects/django-admin-cookbook/en/latest/)
 
-## Used recently
+> Django admin cookbook is a set of recipes of how to do things with Django.
+
+
+## Python libraries
+
+### [pendulum](https://github.com/sdispater/pendulum)
+
+> Python datetimes made easy
+
+
+## Django libraries
 
 ### [django-summernote](https://github.com/summernote/django-summernote)
 
@@ -72,13 +83,25 @@ Status: draft
 > Generic drag-and-drop ordering for objects in the Django admin interface 
 
 
-## Other Django libraries worth to be mentioned
-
 ### [django-cms]( http://www.django-cms.org)
 
 > Open source enterprise content management system based on the Django framework.
 
+
 ### [django-trench](https://github.com/merixstudio/django-trench)
 
 > django-trench provides a set of REST API endpoints to supplement django-rest-framework with multi-factor authentication (MFA, 2FA). It supports both standard built-in authentication methods, as well as JWT (JSON Web Token). 
->
+
+
+## Tools
+
+### [git standup](https://github.com/kamranahmedse/git-standup)
+
+> Recall what you did on the last working day ..or be nosy and find what someone else did.
+
+
+## Other stuff
+
+### [nikitavoloboev/my-mac-os](https://github.com/nikitavoloboev/my-mac-os)
+
+> List of applications and tools that make my macOS experience even more amazing
