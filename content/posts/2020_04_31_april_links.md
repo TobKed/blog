@@ -31,3 +31,22 @@ https://github.com/GoogleCloudPlatform/gke-migration-to-containers/blob/master/s
 
 https://gist.github.com/pydevops/cffbd3c694d599c6ca18342d3625af97#projects
 
+
+
+
+https://openfolder.sh/django-faster-speed-tutorial
+
+https://www.mattlayman.com/understand-django/templates-user-interfaces/
+
+https://www.youtube.com/watch?v=ohkP4_-nigg
+
+https://www.mattlayman.com/understand-django/templates-user-interfaces/
+
+https://github.com/crazyguitar/pysheeet/blob/master/docs/appendix/python-concurrent.rst
+
+
+[About Removing Duplicates in the Database - DjangoTricks](https://cur.at/mEO5znW?m=email&sid=6SscuI6)
+
+> An elegant code snippet for removing duplicates in a database.
+
+https://python.works-hub.com/learn/9-django-tips-for-working-with-databases-f48d8?utm_campaign=Django%2BNewsletter&utm_medium=email&utm_source=Django_Newsletter_14
