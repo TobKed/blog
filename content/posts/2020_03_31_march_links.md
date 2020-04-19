@@ -3,7 +3,7 @@ Date: 2020-03-31
 Category: python
 Tags: python, blog, podcast, series, aggregate
 Slug: 2020-march-links
-Summary: Articles, videos, tools and some other interesting stuff from the past month 
+Summary: Interesting stuff from the month
 Status: published
 
 

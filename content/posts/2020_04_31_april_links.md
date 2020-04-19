@@ -3,8 +3,27 @@ Date: 2020-04-31
 Category: python
 Tags: python, blog, podcast, series, aggregate
 Slug: 2020-april-links
-Summary: Articles, videos, tools and some other interesting stuff from the past month 
+Summary: Interesting stuff from the month
 Status: draft
+
+
+# April 2020
+
+I am aggregating some more or less interesting stuff of various IT related stuff which nn which I stepped on during the month.
+Some of the materials are tightly connected with things I did or I am currently doing.
+
+## Some thoughts about month
+
+## Articles
+
+## Python libraries
+
+## Django libraries
+
+## Tools
+
+## Other stuff
+
 
 
 https://github.com/orderedlist/minimal
@@ -50,3 +69,28 @@ https://github.com/crazyguitar/pysheeet/blob/master/docs/appendix/python-concurr
 > An elegant code snippet for removing duplicates in a database.
 
 https://python.works-hub.com/learn/9-django-tips-for-working-with-databases-f48d8?utm_campaign=Django%2BNewsletter&utm_medium=email&utm_source=Django_Newsletter_14
+
+https://github.com/gregsramblings/google-cloud-4-words
+
+https://github.com/jaredks/rumps
+
+
+https://realpython.com/django-pytest-fixtures/
+
+https://www.youtube.com/watch?v=Xbl7XjFYsN4
+
+https://humberto.io/blog/tldr-generate-django-secret-key
+
+https://github.com/HackSoftware/Django-Styleguide
+
+https://www.b-list.org/weblog/2020/mar/16/no-service/
+
+https://django.cowhite.com/blog/create-and-update-django-rest-framework-nested-serializers/
+
+https://github.com/antonbabenko/pre-commit-terraform
+
+https://github.com/tabler/tabler-icons
+
+https://preset.io/blog/2020-04-15-github-community-dashboard/
+
+https://github.com/GoogleCloudPlatform/terraform-google-examples
