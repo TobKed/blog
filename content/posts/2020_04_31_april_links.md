@@ -9,8 +9,8 @@ Status: draft
 
 # April 2020
 
-I am aggregating some more or less interesting stuff of various IT related stuff which nn which I stepped on during the month.
-Some of the materials are tightly connected with things I did or I am currently doing.
+I am aggregating here some more or less interesting stuff of various IT related materials which I came across this month.
+Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts about month
 
