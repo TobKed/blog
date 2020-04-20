@@ -5,7 +5,7 @@ Tags: python, airflow, video, presentation
 Slug: pycode-ariflow-presentation
 Summary: Lightning talk from PyCode Conference 2019
 Status: published
-Header_Cover: /images/posts/pycode-presentation-1.jpg
+Header_Cover: /images/posts/pycode-presentation-2-edit.jpg
 
 
 # Airfow workflows in 5 minutes
