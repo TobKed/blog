@@ -2,6 +2,8 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
+import os
+
 THEME = "pelican-clean-blog"
 
 AUTHOR = 'Tobiasz Kedzierski'
@@ -48,4 +50,7 @@ CSS_OVERRIDE = 'css/main.css'
 # RELATIVE_URLS = True
 
 # theme settings
-# HEADER_COVER = '/images/qr.png'
+HEADER_COVER = 'images/poli-photo_by_julia_kaczorowska.png'
+FOOTER_INCLUDE = "my_footer.html"
+IGNORE_FILES = [FOOTER_INCLUDE]
+EXTRA_TEMPLATES_PATHS = [os.path.join(os.path.dirname(__file__), "content", "html")]
