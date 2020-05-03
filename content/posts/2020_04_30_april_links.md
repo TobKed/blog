@@ -14,7 +14,11 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts about month
 
-It was an interesting month. I learned a lot about Google Cloud Platform and Terraform.
+During this month I was focused mostly on the Google Cloud Platform. I learnt a lot about delivering infrastructure as code with [Terraform](https://www.terraform.io/).
+I heavily used [Qwiklabs](https://www.qwiklabs.com/) platform which provides real cloud environments that help developers to learn.
+I finished 4 quests (consist of 32 labs), information is available on  my Qwiklabs [public profile](https://google.qwiklabs.com/public_profiles/102aba17-a972-4e32-865b-0e3626420e5a).
+I also started to play with automation ([Ansible](https://www.ansible.com/)) and container orchestration ([Kubernetes](https://kubernetes.io)).
+
 
 ## Articles
 
@@ -94,6 +98,21 @@ It was an interesting month. I learned a lot about Google Cloud Platform and Ter
 > Globalhack entry - easy laptop automated imager
 
 
+### [ansible](https://github.com/ansible/ansible)
+
+> Ansible is a radically simple IT automation system. It handles configuration management, application deployment, cloud provisioning, ad-hoc task execution, network automation, and multi-node orchestration.
+
+
+### [kubernetes](https://github.com/kubernetes/kubernetes)
+
+> Production-Grade Container Scheduling and Management 
+
+
+### [minikube](https://github.com/kubernetes/minikube)
+
+> Run Kubernetes locally
+
+
 ## Cloud
 
 ### [Google Cloud Function Tips & Tricks](https://cloud.google.com/functions/docs/bestpractices/tips)
@@ -155,12 +174,12 @@ It was an interesting month. I learned a lot about Google Cloud Platform and Ter
 
 ## Other stuff
 
-### [minimal - jekyll theme](### [](https://github.com/orderedlist/minimal)
+### [minimal - jekyll theme](https://github.com/orderedlist/minimal)
 
 > The raw HTML and styles that are used for the minimal theme on GitHub Pages.
 
 
-### [Python For DevOps: Learn Ruthlessly Effective Automation](### [](https://paiml.github.io/python_devops_book/)
+### [Python For DevOps: Learn Ruthlessly Effective Automation](https://paiml.github.io/python_devops_book/)
 
 > "Python for DevOps" is a book written by Noah Gift, Kennedy Behrman, Alfredo Deza, and Grig Gheorghiu.
 
@@ -173,7 +192,6 @@ It was an interesting month. I learned a lot about Google Cloud Platform and Ter
 ## Videos
 
 ### [import asyncio: Learn Python's AsyncIO #1 - The Async Ecosystem](https://www.youtube.com/watch?v=Xbl7XjFYsN4)
-I start around 12:45
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%"' src="https://www.youtube.com/embed/Xbl7XjFYsN4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
@@ -182,4 +200,28 @@ I start around 12:45
 ### [Django with PyCharm Tips and Tricks](https://www.youtube.com/watch?v=ohkP4_-nigg)
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%"' src="https://www.youtube.com/embed/ohkP4_-nigg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+
+### ["The Hard Parts of Open Source" by Evan Czaplicki](https://www.youtube.com/watch?v=o_4EX4dPppA)
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%"' src="https://www.youtube.com/embed/o_4EX4dPppA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+
+### [Production-ready Flask & Django apps on Kubernetes](https://www.youtube.com/watch?v=rdjtPTV_WWo)
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%"' src="https://www.youtube.com/embed/rdjtPTV_WWo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+
+### [Getting Started with Containers and Google Kubernetes Engine (Cloud Next '18)](https://www.youtube.com/watch?v=znhnDHAPCZE)
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%"' src="https://www.youtube.com/embed/znhnDHAPCZE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+
+### [Kubernetes Tutorial | Kubernetes | Kubernetes tutorial for beginners](https://www.youtube.com/watch?v=gpmerrSpbHg)
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%"' src="https://www.youtube.com/embed/gpmerrSpbHg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
