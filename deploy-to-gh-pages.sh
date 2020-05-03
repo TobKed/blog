@@ -1,6 +1,9 @@
 #!/bin/bash
 # source: https://github.com/nolanbconaway/pelican-deploy-gh-actions/blob/master/deploy-to-gh-pages.sh
 
+set -euxo pipefail
+
+
 if [ -z "$ACCESS_TOKEN" ]
 then
   echo "No access token!"
