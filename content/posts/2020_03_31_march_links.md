@@ -20,29 +20,9 @@ Some of them are strictly related to the things I did or am currently doing.
 > While it’s easy to immediately be productive with requests because of the simple API, the library also offers extensibility for advanced use cases. If you’re writing an API-heavy client or a web scraper you’ll probably need tolerance for network failures, helpful debugging traces and syntactic sugar.
 
 
-### [Mental Models for Class Based Views - djangodeconstructed.com](https://djangodeconstructed.com/2020/01/03/mental-models-for-class-based-views/?utm_campaign=Django%2BNewsletter&utm_medium=email&utm_source=Django_Newsletter_13)
-
-> This article is a deep dive into how Django's class-based views work behind the scenes.
-
-
 ### [Python 3 Module of the Week - pymotw.com](https://pymotw.com/3/#)
 
 > PyMOTW-3 is a series of articles written by Doug Hellmann. to demonstrate how to use the modules of the Python 3 standard library
-
-
-### [Guide to the Django REST Framework - sunscrapers.com](https://sunscrapers.com/ebook/how-to-create-a-rest-api-for-django-projects/)
-
-> Read this ebook, and you’re guaranteed to get clear and highly manageable code that won’t bring you shame when you show or transfer it to others.
-
-
-### [Views On Views - Matt Layman](https://www.mattlayman.com/understand-django/views-on-views/)
-
-> In this article, we’ll examine the core building block that makes those URLs work: the Django view.
-
-
-### [Django Admin Cookbook](https://books.agiliq.com/projects/django-admin-cookbook/en/latest/)
-
-> Django admin cookbook is a set of recipes of how to do things with Django.
 
 
 ## Python libraries
@@ -52,7 +32,7 @@ Some of them are strictly related to the things I did or am currently doing.
 > Python datetimes made easy
 
 
-## Django libraries
+## Django
 
 ### [django-summernote](https://github.com/summernote/django-summernote)
 
@@ -93,6 +73,26 @@ Some of them are strictly related to the things I did or am currently doing.
 ### [django-trench](https://github.com/merixstudio/django-trench)
 
 > django-trench provides a set of REST API endpoints to supplement django-rest-framework with multi-factor authentication (MFA, 2FA). It supports both standard built-in authentication methods, as well as JWT (JSON Web Token). 
+
+
+### [Guide to the Django REST Framework - sunscrapers.com](https://sunscrapers.com/ebook/how-to-create-a-rest-api-for-django-projects/)
+
+> Read this ebook, and you’re guaranteed to get clear and highly manageable code that won’t bring you shame when you show or transfer it to others.
+
+
+### [Views On Views - Matt Layman](https://www.mattlayman.com/understand-django/views-on-views/)
+
+> In this article, we’ll examine the core building block that makes those URLs work: the Django view.
+
+
+### [Django Admin Cookbook](https://books.agiliq.com/projects/django-admin-cookbook/en/latest/)
+
+> Django admin cookbook is a set of recipes of how to do things with Django.
+
+
+### [Mental Models for Class Based Views - djangodeconstructed.com](https://djangodeconstructed.com/2020/01/03/mental-models-for-class-based-views/?utm_campaign=Django%2BNewsletter&utm_medium=email&utm_source=Django_Newsletter_13)
+
+> This article is a deep dive into how Django's class-based views work behind the scenes.
 
 
 ## Tools
