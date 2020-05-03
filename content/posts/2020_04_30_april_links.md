@@ -1,5 +1,5 @@
 Title: Month summary - April 2020
-Date: 2020-04-31
+Date: 2020-04-30
 Category: python
 Tags: python, blog, podcast, series, aggregate
 Slug: 2020-april-links
