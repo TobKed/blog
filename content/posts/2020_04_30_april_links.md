@@ -4,7 +4,7 @@ Category: python
 Tags: python, blog, podcast, series, aggregate
 Slug: 2020-april-links
 Summary: Interesting stuff from the month
-Status: draft
+Status: published
 
 
 # April 2020
@@ -12,12 +12,11 @@ Status: draft
 I am aggregating here some more or less interesting stuff of various IT related materials which I came across this month.
 Some of them are strictly related to the things I did or am currently doing.
 
+
 ## Some thoughts about month
 
-During this month I was focused mostly on the Google Cloud Platform. I learnt a lot about delivering infrastructure as code with [Terraform](https://www.terraform.io/).
-I heavily used [Qwiklabs](https://www.qwiklabs.com/) platform which provides real cloud environments that help developers to learn.
-I finished 4 quests (consist of 32 labs), information is available on  my Qwiklabs [public profile](https://google.qwiklabs.com/public_profiles/102aba17-a972-4e32-865b-0e3626420e5a).
-I also started to play with automation ([Ansible](https://www.ansible.com/)) and container orchestration ([Kubernetes](https://kubernetes.io)).
+This month I focused mostly on the Google Cloud Platform. I learnt a lot about delivering infrastructure as code [IaC] with [Terraform](https://www.terraform.io/). I was able to set up a project from scratch which contained dozens of resources (BigQuery, Cloud Functions, PubSub, Storage etc.) by using just a few commands. 
+I used [Qwiklabs](https://www.qwiklabs.com/), a platform which provides real cloud environments that help developers learn about them. I completed 4 Qwiklab quests (they consist of labs, in total I finished 32 labs), here’s the link to my public Qwiklab profile [profile](https://google.qwiklabs.com/public_profiles/102aba17-a972-4e32-865b-0e3626420e5a). I also started playing with automation ([Ansible](https://www.ansible.com/)) and container orchestration ([Kubernetes](https://kubernetes.io)) which will be helpful to grasp more complex environments.
 
 
 ## Articles
