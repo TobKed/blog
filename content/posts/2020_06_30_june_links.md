@@ -1,13 +1,13 @@
-Title: Month summary - April 2020
-Date: 2020-04-31
+Title: Month summary - June 2020
+Date: 2020-06-30
 Category: python
 Tags: python, blog, podcast, series, aggregate
-Slug: 2020-april-links
+Slug: 2020-june-links
 Summary: Interesting stuff from the month
 Status: draft
 
 
-# April 2020
+# June 2020
 
 I am aggregating here some more or less interesting stuff of various IT related materials which I came across this month.
 Some of them are strictly related to the things I did or am currently doing.
@@ -29,6 +29,8 @@ Some of them are strictly related to the things I did or am currently doing.
 ## Cloud
 
 ## Other stuff
+
+
 
 
 ## Videos
