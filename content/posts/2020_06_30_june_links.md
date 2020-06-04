@@ -12,9 +12,15 @@ Status: draft
 I am aggregating here some more or less interesting stuff of various IT related materials which I came across this month.
 Some of them are strictly related to the things I did or am currently doing.
 
-## Some thoughts about month
+
+## Some thoughts
 
 ## Articles
+
+### [Second-guessing the modern web](https://macwright.org/2020/05/10/spa-fatigue.html)
+
+> A critical look at the SPA + API backend pattern currently en vogue
+
 
 ## Python
 
@@ -30,7 +36,9 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Other stuff
 
+### [github-actions-manual-trigger](https://github.com/rgdiascardoso/github-actions-manual-trigger)
 
+> A simple tutorial for creating manually triggered GitHub Actions workflows 
 
 
 ## Videos
