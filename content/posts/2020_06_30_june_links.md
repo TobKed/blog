@@ -4,7 +4,7 @@ Category: python
 Tags: python, blog, podcast, series, aggregate
 Slug: 2020-june-links
 Summary: Interesting stuff from the month
-Status: draft
+Status: published
 
 
 # June 2020
@@ -15,9 +15,10 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
 
-This month I passed exam and became certified [Associate Cloud Engineer on Google Cloud Platform](https://www.credential.net/d47b7596-251f-45ac-8a54-4cf6d8c5a286?key=f4eed8bc7e2f25d6b2a9315f31e1a20dd7cd5ecc93caff78eb55feeafcc6be70).
-I worked intensively on facilitating GitHub Actions to build source distribution and wheels for Python in Apache Beam project.
-After that I decreased a bit my time on computer in my spare time to take care of some non-IT related stuff.
+This month I passed an exam and I became a [Google Cloud Associate Engineer](https://www.credential.net/d47b7596-251f-45ac-8a54-4cf6d8c5a286?key=f4eed8bc7e2f25d6b2a9315f31e1a20dd7cd5ecc93caff78eb55feeafcc6be70).
+I worked intensively on developing GitHub Actions workflow which builds source distribution and wheels for Python SDK package in Apache Beam project. 
+When it is merged then publishing could be done without separate repository beam-wheels. 
+It requires changing the release process which is my next goal.
 
 
 ## Articles
