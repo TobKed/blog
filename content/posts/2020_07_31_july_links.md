@@ -4,7 +4,7 @@ Category: python
 Tags: python, blog, podcast, series, aggregate
 Slug: 2020-july-links
 Summary: Interesting stuff from the month
-Status: publish
+Status: published
 
 
 # April 2020
