@@ -7,7 +7,7 @@ Summary: Interesting stuff from the month
 Status: draft
 
 
-# April 2020
+# {Month} 2020
 
 I am aggregating here some more or less interesting stuff of various IT related materials which I came across this month.
 Some of them are strictly related to the things I did or am currently doing.
