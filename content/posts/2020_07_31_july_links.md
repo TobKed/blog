@@ -4,7 +4,7 @@ Category: python
 Tags: python, blog, podcast, series, aggregate
 Slug: 2020-july-links
 Summary: Interesting stuff from the month
-Status: draft
+Status: publish
 
 
 # April 2020
@@ -15,6 +15,12 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
 
+This month I made a few improvements in the release process of [Apache Beam](https://github.com/apache/beam) Python SDK and its CI/CD.
+I connected building source distribution and wheels on GitHub Action with existing release scripts to work in cooperation now.
+This allowed for the separate repository used for package preparation to be deprecated.
+I spent a lot of time working with GitHub Action, therefore I released my own action called [github-forks-sync-action](https://github.com/TobKed/github-forks-sync-action).
+It can be used to synchronise forked repositories with upstream.
+I also made a contribution to [apache/airflow](https://github.com/apache/airflow) related to REST API by implementing DagSource endpoint.
 
 
 ## Articles
@@ -68,7 +74,6 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > Performance analysis for Python.
 
-## Django libraries
 
 ## Tools
 
@@ -81,10 +86,7 @@ Some of them are strictly related to the things I did or am currently doing.
 > During the December 2019 Edward Thomson published an advent calendar of top tips for GitHub Actions.
 
 
-## Cloud
-
 ## Other stuff
-
 
 ### [Help message for shell scripts](https://samizdat.dev/help-message-for-shell-scripts/)
 
@@ -104,7 +106,6 @@ Some of them are strictly related to the things I did or am currently doing.
 
 
 ## Videos
-
 
 ### [Tutorial: Katie McLaughlin - Deploying Django on Serverless Infrastructure - PyCon 2020](https://www.youtube.com/watch?v=oYy9_4fm56o)
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
