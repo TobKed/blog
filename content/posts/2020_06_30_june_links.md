@@ -30,7 +30,7 @@ It requires changing the release process which is my next goal.
 
 ## Python
 
-### [Azure DevOps: Python Wheels](https://iscinumpy.gitlab.io/post/azure-devops-python-wheels/))
+### [Azure DevOps: Python Wheels](https://iscinumpy.gitlab.io/post/azure-devops-python-wheels/)
 
 >  This one is about making Python wheels. If you want to play nice with Python users, or you have a complex build, this will make your package far more accessible to users. They are faster to install and to use and more secure.
 
@@ -48,7 +48,7 @@ It requires changing the release process which is my next goal.
 
 > Common solutions and tools developed by Google Cloud's Professional Services team.
 
-### ([hellcheck](https://github.com/koalaman/shellcheck)
+### [hellcheck](https://github.com/koalaman/shellcheck)
 
 > A shell script static analysis tool
 
@@ -60,7 +60,7 @@ It requires changing the release process which is my next goal.
 
 > Metabase is the easy, open source way for everyone in your company to ask questions and learn from data.
 
-### [Dash](https://plotly.com/dash/))
+### [Dash](https://plotly.com/dash/)
 
 > Dash is the most downloaded, trusted framework for building ML & data science web apps.
 
@@ -78,7 +78,7 @@ It requires changing the release process which is my next goal.
 
 ### [preset](https://preset.io/)
 
-> Fast analytics for modern teams. Based on Apache SUperset
+> Fast analytics for modern teams. Based on Apache Superset
 
 
 ## Cloud
