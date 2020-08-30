@@ -14,21 +14,35 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
 
+
+
 ## Articles
 
 ### [15 Command-Line Tools to Make You Better at Shell & CLI](https://dev.to/zaiste/15-command-line-tools-to-make-you-better-at-shell-cli-35n6)
 
-> 
+> Shell is the essential tool for every programmer. Here's a list of command-line tools that aim to provide modern, often much faster, alternatives to the existing shell commands.
 
 ### [Do not trust Google](https://lukeboyle.com/blog-posts/2020/08/do-not-trust-google)
 
-> 
+> Facebook seems to be our current punching bag of choice because of their supposed ability to manipulate political opinion, but in my opinion Google is a much more insidious company with far greater potential for abuse.
+
+### [What's it like as a Senior Engineer?](https://www.zainrizvi.io/blog/whats-it-like-as-a-senior-engineer/)
+
+> Experiences working at Google & Microsoft
+
+### [New Case Studies About Google’s Use of Go](https://opensource.googleblog.com/2020/08/new-case-studies-about-googles-use-of-go.html)
+
+> Go has turned out to have a much broader reach than we had ever expected. Its growth in the industry has been phenomenal, and it has powered many projects at Google.
 
 ## Python
 
 ### [What Are Python Wheels and Why Should You Care?](https://realpython.com/python-wheels/)
 
 > In this tutorial, you’ll learn what Python wheels are and why you should care as both a developer and end user of Python packages. You’ll see how the wheel format has gained momentum over the last decade and how it has made the package installation process faster and more stable.
+
+### [Delete entities of Datastore in bulk with Dataflow implemented in Python](https://levelup.gitconnected.com/delete-entities-of-datastore-in-bulk-with-dataflow-implemented-in-python-37cbe2dd7e08)
+
+> A simple way to delete entities in bulk with Apache Beam Python SDK on Dataflow and the way to run a pipeline with runtime parameters
 
 ## Django
 
@@ -52,19 +66,15 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > Views are one of the core components of a Django application. Django offers two kinds of views: function-based views and class-based views. Which one should you use? Fortunately, there’s an opinionated guide to help you sort things out!
 
-## Python libraries
-
-## Django libraries
-
 ## Tools
 
 ### [ytop - system monitor](https://github.com/cjbassi/ytop)
 
 > Another TUI based system monitor, this time in Rust!
 
-## Cloud
+### [Public APIs](https://github.com/public-apis/public-apis)
 
-## Other stuff
+> A collective list of free APIs for use in software and web development.
 
 ### [GitHub public roadmap](https://github.com/github/roadmap)
 
@@ -76,13 +86,3 @@ Some of them are strictly related to the things I did or am currently doing.
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%"' src="https://www.youtube.com/embed/c-Gi7OaykQo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-
-
-
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%"' src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-
