@@ -14,7 +14,11 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
 
+This month I worked mostly on the Apache Beam project. One of the biggest achievements this month was introducing cross platform test suites which run on GitHub Actions. These test suites verify Java and Python Beam SDKs by running unit and integration tests on Linux, MacOS and Windows platforms. I used Atlassian Python API wrapper to automate creation of Jira issues for tests which fail on Windows. 
 
+I also developed a proposal for the Beam Metrics Report mail handled by Jenkins scheduled job. Mail will be created by fetching metrics data from influxDB and generating a table with a comparison of mean metric values from last and previous week with highlighted deviations and links to the corresponding Grafana dashboards. It will allow to quickly detect possible regressions.
+
+Additionally, for an internal project I developed a small application which synchronizes data from Google Drive with the Datastore database. It  is deployed on Google Cloud Platform free of charge. It consists of Cloud Function written in Python which is triggered periodically by Cloud Scheduler. Infrastructure is defined as Terraform files which enabled easy development of Continuous Integration / Continuous Delivery pipeline on GitLab platform.
 
 ## Articles
 
