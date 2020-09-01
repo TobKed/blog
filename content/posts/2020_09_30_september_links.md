@@ -1,8 +1,8 @@
-Title: Month summary - April 2020
-Date: 2020-04-31
+Title: Month summary - September 2020
+Date: 2020-09-30
 Category: python
 Tags: python, blog, podcast, series, aggregate
-Slug: 2020-april-links
+Slug: 2020-september-links
 Summary: Interesting stuff from the month
 Status: draft
 

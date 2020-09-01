@@ -4,7 +4,7 @@ Category: python
 Tags: python, blog, podcast, series, aggregate
 Slug: 2020-august-links
 Summary: Interesting stuff from the month
-Status: draft
+Status: published
 
 
 # August 2020
@@ -14,9 +14,9 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
 
-This month I worked mostly on the Apache Beam project. One of the biggest achievements this month was introducing cross platform test suites which run on GitHub Actions. These test suites verify Java and Python Beam SDKs by running unit and integration tests on Linux, MacOS and Windows platforms. I used Atlassian Python API wrapper to automate creation of Jira issues for tests which fail on Windows. 
+This month I worked mostly on the [Apache Beam](https://github.com/apache/beam/) project. One of the biggest achievements this month was introducing [cross platform test suites](https://github.com/apache/beam/actions) which run on GitHub Actions. These test suites verify Java and Python Beam SDKs by running unit and integration tests on Linux, MacOS and Windows platforms. I used Atlassian Python API wrapper to automate creation of Jira issues for tests which fail on Windows. 
 
-I also developed a proposal for the Beam Metrics Report mail handled by Jenkins scheduled job. Mail will be created by fetching metrics data from influxDB and generating a table with a comparison of mean metric values from last and previous week with highlighted deviations and links to the corresponding Grafana dashboards. It will allow to quickly detect possible regressions.
+I also developed a proposal for the Beam Metrics Report mail handled by Jenkins scheduled job. Mail will be created by fetching metrics data from InfluxDB and generating a table with a comparison of mean metric values from last and previous week with highlighted deviations and links to the corresponding Grafana dashboards. It will allow to quickly detect possible regressions.
 
 Additionally, for an internal project I developed a small application which synchronizes data from Google Drive with the Datastore database. It  is deployed on Google Cloud Platform free of charge. It consists of Cloud Function written in Python which is triggered periodically by Cloud Scheduler. Infrastructure is defined as Terraform files which enabled easy development of Continuous Integration / Continuous Delivery pipeline on GitLab platform.
 
@@ -88,5 +88,5 @@ Additionally, for an internal project I developed a small application which sync
 
 ### [Szersze spojrzenie na Backend - Szymon Przedwojski | Przeprogramowani ft. Gość #5](https://www.youtube.com/watch?v=c-Gi7OaykQo)
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%"' src="https://www.youtube.com/embed/c-Gi7OaykQo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/c-Gi7OaykQo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
