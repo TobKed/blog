@@ -28,6 +28,37 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > In a remote-work world, setting up clear boundaries is integral to protecting your mental health and personal well-being.
 
+### [Google updates Android smartphones to listen to houses for suspect sounds](https://www.independent.co.uk/life-style/gadgets-and-tech/google-android-smartphone-update-listen-house-sounds-b906331.html)
+
+> Google says the update will make it easier for people with hearing issues to be notified of events.
+
+### [How Google Drive Can Make Every Corner of Your Life Easier](https://forge.medium.com/how-google-drive-can-make-every-corner-of-your-life-easier-9f3cc1acbb68)
+
+> The ultimate self-improvement tool is something you already have.
+
+### [How to Change Your Brain With Dr. Andrew Huberman (+ Utkarsh!)](https://thisten.co/y7qdc/qoLk8j26DKJ0FdUrv5EF4Z4ft3AShasQ8tiEFuYb)
+
+> 
+
+### [Git scraping: track changes over time by scraping to a Git repository](https://simonwillison.net/2020/Oct/9/git-scraping/)
+
+>
+
+### [How to take meeting notes](https://barehands.substack.com/p/how-to-take-meeting-notes)
+
+> 
+
+### ['I'll Never Work The Same Way Again:' One Co-Founder's Remote Work Experiments](https://www.entrepreneur.com/article/354226)
+
+> There's a lot of talk about structure and boundaries, but there's something to be said for flexibility, and embracing the messiness of your "life's work." 
+
+### [10 Tips From CEOs on Working From Home Effectively and Happily](https://www.entrepreneur.com/article/347479)
+
+> Far beyond getting out of your pajamas, these tips encourage wellness when you are working from home. 
+
+### [How Google Drive Can Make Every Corner of Your Life Easier](https://forge.medium.com/how-google-drive-can-make-every-corner-of-your-life-easier-9f3cc1acbb68)
+
+> The ultimate self-improvement tool is something you already have
 
 ## Django
 
@@ -66,10 +97,39 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > Old Photo Restoration (Official PyTorch Implementation)
 
+### [](https://www.darlinghq.org/)
+
+> 
+
+### [Qubes OS](https://www.qubes-os.org/)
+
+> Qubes OS is a free and open-source, security-oriented operating system for single-user desktop computing.
+
+### [Tails](https://tails.boum.org/)
+
+> Tails is a portable operating system that protects against surveillance and censorship. 
+
+
+## Other stuff
+
+### [Computer Stuff They Didn't Teach You - youtube playlist](https://www.youtube.com/playlist?list=PL0M0zPgJ3HSesuPIObeUVQNbKqlw5U2Vr)
+
+> Videos that will help you to fill in the gaps on all those little things that we should have learned in school but no one really sat down and took the time.
+
 
 ## Videos
 
 ### ["On a shoe-string and a t2.small: scaling on a [zero] budget." - Tom Eastman (PyConline AU 2020)](https://www.youtube.com/watch?v=A-3zc1CABqM)
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/A-3zc1CABqM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [Praca w korporacji - jakie ponosimy szkody zdrowotne? - prof. Paweł Januszewicz](https://www.youtube.com/watch?v=H9CJCVyD6mQ)
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/H9CJCVyD6mQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [I used the reasonably-secure Qubes OS for 6 months and survived - Matty McFatty [@themattymcfatty]](https://www.youtube.com/watch?v=sbN5Bz3v-uA)
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/sbN5Bz3v-uA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
