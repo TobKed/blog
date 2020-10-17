@@ -60,6 +60,14 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > The ultimate self-improvement tool is something you already have
 
+### [Why Life Can’t Be Simpler](https://fs.blog/2020/10/why-life-cant-be-simpler/)
+
+> We’d all like life to be simpler. But we also don’t want to sacrifice our options and capabilities. Tesler’s law of the conservation of complexity, a rule from design, explains why we can’t have both.
+
+### [You Don’t Have to Use Docker Anymore](https://towardsdatascience.com/its-time-to-say-goodbye-to-docker-5cfec8eff833)
+
+> Docker is not the only containerization tool out there and there might just be better alternatives…
+
 ## Django
 
 [Modern JavaScript for Django Developers](https://www.saaspegasus.com/guides/modern-javascript-for-django-developers/)
@@ -109,6 +117,13 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > Tails is a portable operating system that protects against surveillance and censorship. 
 
+### [dockle](https://github.com/goodwithtech/dockle)
+
+> Dockle - Container Image Linter for Security, Helping build the Best-Practice Docker Image, Easy to start
+
+### [trivy](https://github.com/aquasecurity/trivy)
+
+> A Simple and Comprehensive Vulnerability Scanner for Containers and other Artifacts, Suitable for CI.
 
 ## Other stuff
 
@@ -132,4 +147,9 @@ Some of them are strictly related to the things I did or am currently doing.
 ### [I used the reasonably-secure Qubes OS for 6 months and survived - Matty McFatty [@themattymcfatty]](https://www.youtube.com/watch?v=sbN5Bz3v-uA)
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/sbN5Bz3v-uA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [Reuven M. Lerner - Practical decorators - PyCon 2019](https://www.youtube.com/watch?v=MjHpMCIvwsY)
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/MjHpMCIvwsY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>

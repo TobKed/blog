@@ -10,12 +10,45 @@ Status: draft
 # September 2020
 
 I am aggregating here some more or less interesting stuff of various IT related materials which I came across this month.
-Some of them are strictly related to the things I did or am currently doing.
-
+Some of them are strictly related to the things I did or am currently doing. 
 
 ## Some thoughts
 
-This month ... Holidays.
+This month I spent mostly on holidays. I worked as a server during 10 day Vipassana meditation retreat and hiked in Beskids Mountains
+
+> Vipassana, which means to see things as they really are, is one of India's most ancient techniques of meditation. It was rediscovered by Gotama Buddha more than 2500 years ago and was taught by him as a universal remedy for universal ills, i.e., an Art Of Living. This non-sectarian technique aims for the total eradication of mental impurities and the resultant highest happiness of full liberation.
+>
+> source: [dhamma.org](https://www.dhamma.org/en/about/vipassana)
+
+Some recipes from the course:
+
+#### Sesame cake (for 20 people)
+
+Ingredients:
+ - Sesame: 0.5 kg
+ - Flour: 0.2 kg
+ - Rapeseed oil light: 200 ml
+ - Milk: 150 ml
+ - Sugar: 0.1 kg
+ - Baking powder: 0.5 tablespoon
+ - Salt: 0.4 teaspoon
+ - Lemon: 0.5
+ 
+Sesame needs to be soaked overnight / or for few hours. <br>
+
+1. Pour the water out from the sasame.
+2. Squeeze lemons.
+3. Mix oil with sugar. Add flour, baking powder and mix it thoroughly.
+4. Add milk, lemon juice and sesame and mix it thoroughly.
+5. Prepare 3-5 GN containers 6,5 cm and line them with baking paper.
+6. Spread the mass flat (height 1-2 cm) in GN containers.
+7. Mix 50 ml of water with 3 tablespoons of sugar and pour the cake (it will be slightly carmalized after
+it is baked).
+8. Baking: baking mode (hot air) , 180°, about 30-40 minutes.
+
+#### Lemon water
+
+Squeezed juice from one lemon add to the 1 liter of the boiled water.
 
 
 ## Articles
