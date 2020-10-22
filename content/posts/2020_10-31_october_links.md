@@ -68,6 +68,14 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > Docker is not the only containerization tool out there and there might just be better alternatives…
 
+### [How Harvard’s Star Computer-Science Professor Built a Distance-Learning Empire](https://www.newyorker.com/news/our-local-correspondents/how-harvards-star-computer-science-professor-built-a-distance-learning-empire)
+
+> ...
+
+### [Surprising __getattr__ recursion](https://nedbatchelder.com/blog/201010/surprising_getattr_recursion.html)
+
+>  It’s well-known that you have to be careful in __getattr__ not to use an attribute that might be missing. That would cause an infinite recursion. 
+
 ## Django
 
 [Modern JavaScript for Django Developers](https://www.saaspegasus.com/guides/modern-javascript-for-django-developers/)
@@ -124,6 +132,14 @@ Some of them are strictly related to the things I did or am currently doing.
 ### [trivy](https://github.com/aquasecurity/trivy)
 
 > A Simple and Comprehensive Vulnerability Scanner for Containers and other Artifacts, Suitable for CI.
+
+### [devops-exercises](https://github.com/bregman-arie/devops-exercises)
+
+>  This repo contains questions and exercises on various technical topics, sometimes related to DevOps and SRE
+
+### [/python-cheatsheet](https://github.com/gto76/python-cheatsheet)
+
+> Comprehensive Python Cheatshee
 
 ## Other stuff
 

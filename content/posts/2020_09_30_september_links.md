@@ -4,7 +4,7 @@ Category: python
 Tags: python, blog, podcast, series, aggregate
 Slug: 2020-september-links
 Summary: Interesting stuff from the month
-Status: draft
+Status: published
 
 
 # September 2020
@@ -14,7 +14,7 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
 
-This month I spent mostly on holidays. I worked as a server during 10 day Vipassana meditation retreat and hiked in Beskids Mountains
+I spent most of the month on holidays. I worked as a server during the 10 day Vipassana meditation retreat. Then I hiked in the Beskid Mountains for a few days.
 
 > Vipassana, which means to see things as they really are, is one of India's most ancient techniques of meditation. It was rediscovered by Gotama Buddha more than 2500 years ago and was taught by him as a universal remedy for universal ills, i.e., an Art Of Living. This non-sectarian technique aims for the total eradication of mental impurities and the resultant highest happiness of full liberation.
 >
@@ -25,30 +25,32 @@ Some recipes from the course:
 #### Sesame cake (for 20 people)
 
 Ingredients:
- - Sesame: 0.5 kg
- - Flour: 0.2 kg
- - Rapeseed oil light: 200 ml
- - Milk: 150 ml
- - Sugar: 0.1 kg
- - Baking powder: 0.5 tablespoon
- - Salt: 0.4 teaspoon
- - Lemon: 0.5
+<ul>
+  <li>Sesame seeds: 0.5 kg</li>
+  <li>All-purpose flour: 0.2 kg</li>
+  <li>Rapeseed oil light: 200 ml</li>
+  <li>Milk: 150 ml</li>
+  <li>Sugar: 0.1 kg</li>
+  <li>Baking powder: 0.5 tablespoon</li>
+  <li>Salt: 0.4 teaspoon</li>
+  <li>Lemon: 0.5</li>
+</ul> 
  
-Sesame needs to be soaked overnight / or for few hours. <br>
-
-1. Pour the water out from the sasame.
-2. Squeeze lemons.
-3. Mix oil with sugar. Add flour, baking powder and mix it thoroughly.
-4. Add milk, lemon juice and sesame and mix it thoroughly.
-5. Prepare 3-5 GN containers 6,5 cm and line them with baking paper.
-6. Spread the mass flat (height 1-2 cm) in GN containers.
-7. Mix 50 ml of water with 3 tablespoons of sugar and pour the cake (it will be slightly carmalized after
-it is baked).
-8. Baking: baking mode (hot air) , 180°, about 30-40 minutes.
-
+Sesame needs to be soaked overnight / or for a few hours.
+<ol>
+  <li>Pour the water out from the sesame.</li>
+  <li>Squeeze the lemon.</li>
+  <li>Mix oil with sugar. Add flour, baking powder and mix thoroughly.</li>
+  <li>Add milk, lemon juice and sesame and mix thoroughly.</li>
+  <li>Prepare an oven-pan and line it with baking paper.</li>
+  <li>Spread the mass flat (height 1-2 cm) in the oven-pan.</li>
+  <li>Mix 50 ml of water with 3 tablespoons of sugar and pour over the cake (it will be slightly caramelized after it is baked).</li>
+  <li>Baking: baking mode (hot air) , 180°C, about 30-40 minutes.</li>
+</ol>
+<br>
 #### Lemon water
 
-Squeezed juice from one lemon add to the 1 liter of the boiled water.
+Add juice squeezed from one lemon to 1 liter of boiled water.
 
 
 ## Articles
