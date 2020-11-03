@@ -76,6 +76,14 @@ Some of them are strictly related to the things I did or am currently doing.
 
 >  It’s well-known that you have to be careful in __getattr__ not to use an attribute that might be missing. That would cause an infinite recursion. 
 
+### [](https://vasilishynkarenka.com/the-psychology-of-learning-to-code/)
+
+> 
+
+### [16 Everyday Habits of Highly Productive People](https://www.lifehack.org/articles/productivity/16-everyday-habits-highly-productive-people.html)
+
+> 
+
 ## Django
 
 [Modern JavaScript for Django Developers](https://www.saaspegasus.com/guides/modern-javascript-for-django-developers/)
@@ -86,6 +94,13 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > Videos from Django Day Copenhagen.
 
+### [A Django REST API in a Single File](https://adamj.eu/tech/2020/10/15/a-single-file-rest-api-in-django)
+
+> The third in a series of writing Django apps in a single file, following previous posts on synchronous and asynchronous use cases.
+
+### []()
+
+> 
 
 ## Tools
 
@@ -141,12 +156,19 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > Comprehensive Python Cheatshee
 
+### [boundary-layer](https://github.com/etsy/boundary-layer)
+
+> boundary-layer is a tool for building Airflow DAGs from human-friendly, structured, maintainable yaml configuration.
+
 ## Other stuff
 
 ### [Computer Stuff They Didn't Teach You - youtube playlist](https://www.youtube.com/playlist?list=PL0M0zPgJ3HSesuPIObeUVQNbKqlw5U2Vr)
 
 > Videos that will help you to fill in the gaps on all those little things that we should have learned in school but no one really sat down and took the time.
 
+### [terraform-switcher](https://github.com/warrensbox/terraform-switcher/)
+
+> The tfswitch command line tool lets you switch between different versions of terraform.
 
 ## Videos
 
@@ -169,3 +191,8 @@ Some of them are strictly related to the things I did or am currently doing.
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/MjHpMCIvwsY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+
+
+```
+
+```
