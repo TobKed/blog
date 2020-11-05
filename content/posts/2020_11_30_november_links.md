@@ -25,6 +25,9 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > Scale any task down into a 2-minute version to make it easier to get started.
 
+### [Good morning, bad morning](https://vasilishynkarenka.com/good-morning-bad-morning/)
+
+> “If you want to change the world, start off by making your bed.” – William H. McRaven
 
 ## Python
 

@@ -15,7 +15,19 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
 
-...
+This month I worked on improving Google Cloud Dataflow within [Apache Airflow](https://github.com/apache/airflow) project.
+It was not an easy task since Dataflow is a quite complex service itself and has limited API.
+I helped to introduce operators for [SQL Queries](https://github.com/apache/airflow/pull/8553) and [Flex Templates](https://github.com/apache/airflow/pull/8550).
+I successfully added [`drain` option when cancelling Dataflow pipelines](https://github.com/apache/airflow/pull/11374) and helped community with [Google Cloud Memorystore Memcached Operators](https://github.com/apache/airflow/pull/10121).
+
+I am quite interested in CI and GitHub Actions and I created an action called [Label When Approved action](https://github.com/TobKed/label-when-approved-action). It sets a label on an approved Pull Request and removes it when changes are requested.
+It supports checking if approvals (or change requests) are authored by people with write access to the target repository.
+It was created specifically for [Apache Airflow](https://github.com/apache/airflow) where it is used for labeling
+pull requests approved by committers.
+These labels (or equivalent action outputs) are used to optimise the use of CI resources since [not approved pull requests run only a subset of tests](https://github.com/apache/airflow/pull/11828). It was introduced because the number of GitHub Actions jobs running in parallel is limited to 180 for all Apache projects so running full test suite every time seemed to be a waste.
+It was made in cooperation with [Jarek Potiuk](https://github.com/potiuk) who is Apache Airflow Commiter and PMC Member. It was also my first time with TypeScript which I enjoyed a lot.
+
+Meanwhile my blog post about Terraform and Infrastructure as Code was published [IaC]. If you want to know why IaC and Terraform is so popular, feel free to read it: [Terraform Tutorial: Introduction to Infrastructure as Code](https://www.polidea.com/blog/terraform-tutorial-introduction-to-infrastructure-as-code/).
 
 
 ## Articles
@@ -191,8 +203,3 @@ Some of them are strictly related to the things I did or am currently doing.
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/MjHpMCIvwsY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-
-
-```
-
-```
