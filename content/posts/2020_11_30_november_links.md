@@ -29,6 +29,10 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > “If you want to change the world, start off by making your bed.” – William H. McRaven
 
+### [Talking, Typing, Thinking: Software Is Not a Desk Job](https://daniel.fone.net.nz/blog/2020/10/21/talking-typing-thinking-software-is-not-a-desk-job/)
+
+> Developers over-optimise for the ergonomics of typing and not enough for the ergonomics of thinking.
+
 ## Python
 
 ## Django

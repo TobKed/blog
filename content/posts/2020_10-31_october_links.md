@@ -4,7 +4,7 @@ Category: python
 Tags: python, blog, podcast, series, aggregate
 Slug: 2020-october-links
 Summary: Interesting stuff from the month
-Status: draft
+Status: published
 
 
 # October 2020
@@ -50,15 +50,15 @@ Meanwhile my blog post about Terraform and Infrastructure as Code was published 
 
 ### [How to Change Your Brain With Dr. Andrew Huberman (+ Utkarsh!)](https://thisten.co/y7qdc/qoLk8j26DKJ0FdUrv5EF4Z4ft3AShasQ8tiEFuYb)
 
-> 
+> Dr. Huberman is here to school us on all things neuroplasticity---and how we can use it to our advantage through intense focus, mindfulness, and restorative sleep. Enjoy!
 
 ### [Git scraping: track changes over time by scraping to a Git repository](https://simonwillison.net/2020/Oct/9/git-scraping/)
 
->
+>We already have a great tool for efficiently tracking changes to text over time: Git. And GitHub Actions (and other CI systems) make it easy to create a scraper that runs every few minutes, records the current state of a resource and records changes to that resource over time in the commit history.
 
 ### [How to take meeting notes](https://barehands.substack.com/p/how-to-take-meeting-notes)
 
-> 
+> Author does not take notes during the meeting. Instead, he takes notes after the meeting and shares tips how to do it.
 
 ### ['I'll Never Work The Same Way Again:' One Co-Founder's Remote Work Experiments](https://www.entrepreneur.com/article/354226)
 
@@ -82,19 +82,19 @@ Meanwhile my blog post about Terraform and Infrastructure as Code was published 
 
 ### [How Harvard’s Star Computer-Science Professor Built a Distance-Learning Empire](https://www.newyorker.com/news/our-local-correspondents/how-harvards-star-computer-science-professor-built-a-distance-learning-empire)
 
-> ...
+> David Malan, of the hit class CS50, was working to perfect online teaching long before the pandemic. Is his method a model for the future of higher education? 
 
 ### [Surprising __getattr__ recursion](https://nedbatchelder.com/blog/201010/surprising_getattr_recursion.html)
 
 >  It’s well-known that you have to be careful in __getattr__ not to use an attribute that might be missing. That would cause an infinite recursion. 
 
-### [](https://vasilishynkarenka.com/the-psychology-of-learning-to-code/)
+### [The psychology of learning to code](https://vasilishynkarenka.com/the-psychology-of-learning-to-code/)
 
-> 
+> Build a habit of learning, find what you’re obsessed with, and crawl your way through The Suck.
 
 ### [16 Everyday Habits of Highly Productive People](https://www.lifehack.org/articles/productivity/16-everyday-habits-highly-productive-people.html)
 
-> 
+> A list of 16 tips and tricks that will help guide you to a more fulfilled life.
 
 ## Django
 
@@ -109,10 +109,6 @@ Meanwhile my blog post about Terraform and Infrastructure as Code was published 
 ### [A Django REST API in a Single File](https://adamj.eu/tech/2020/10/15/a-single-file-rest-api-in-django)
 
 > The third in a series of writing Django apps in a single file, following previous posts on synchronous and asynchronous use cases.
-
-### []()
-
-> 
 
 ## Tools
 
@@ -140,9 +136,9 @@ Meanwhile my blog post about Terraform and Infrastructure as Code was published 
 
 > Old Photo Restoration (Official PyTorch Implementation)
 
-### [](https://www.darlinghq.org/)
+### [Darling](https://www.darlinghq.org/)
 
-> 
+> Darling is a translation layer that lets you run macOS software on Linux
 
 ### [Qubes OS](https://www.qubes-os.org/)
 
