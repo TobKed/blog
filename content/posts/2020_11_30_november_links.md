@@ -33,6 +33,10 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > Developers over-optimise for the ergonomics of typing and not enough for the ergonomics of thinking.
 
+### [How to be more productive working from home: 9 rules for the “now normal”](https://www.atlassian.com/blog/productivity/more-productive-working-from-home)
+
+> Science-backed, expert-approved tactics you can start using today.
+
 ## Python
 
 ## Django

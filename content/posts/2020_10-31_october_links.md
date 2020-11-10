@@ -160,7 +160,7 @@ Meanwhile my blog post about Terraform and Infrastructure as Code was published 
 
 >  This repo contains questions and exercises on various technical topics, sometimes related to DevOps and SRE
 
-### [/python-cheatsheet](https://github.com/gto76/python-cheatsheet)
+### [python-cheatsheet](https://github.com/gto76/python-cheatsheet)
 
 > Comprehensive Python Cheatshee
 
