@@ -37,6 +37,47 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > Science-backed, expert-approved tactics you can start using today.
 
+### [Maker's schedule, manager's schedule](http://www.paulgraham.com/makersschedule.html)
+
+> "...the mere consciousness of an engagement will sometimes worry a whole day."
+> – Charles Dickens 
+
+### [7 Cognitive Biases That Make Us Suck at Time Management](https://blog.doist.com/cognitive-biases-time-management/)
+
+> Our brains are hardwired to sabotage our productivity. Can we do anything about it? 
+
+### [The Top 7 Best Practices For Leading Effective Virtual Team Meetings](https://weworkremotely.com/the-top-7-best-practices-for-leading-effective-virtual-team-meetings)
+
+> Stop wasting your remote team’s time. These best practices for virtual meetings will help you run more efficient calls and boost employee engagement. 
+
+### [8 questions for writing](https://vasilishynkarenka.com/8questions/)
+
+
+### [Time Blocking](https://todoist.com/productivity-methods/time-blocking)
+
+> ...and its cousins task batching and day theming. Control your schedule so it doesn't control you
+
+### [The Weekly Review](https://todoist.com/productivity-methods/weekly-review)
+
+> 10x your productivity with just one hour a week
+
+### [The Complete Guide to Deep Work](https://blog.doist.com/deep-work/)
+
+> How to master the #1 job skill that will never be obsolete
+
+### [The Complete Guide to Planning Your Day](https://blog.doist.com/how-to-plan-your-day/)
+
+> The 10-minute productivity practice for achieving more in work and life
+
+### []()
+
+> 
+
+### []()
+
+> 
+
+
 ## Python
 
 ## Django
@@ -54,6 +95,10 @@ Some of them are strictly related to the things I did or am currently doing.
 ### [](https://asciinema.org/)
 
 > 
+
+### [LocalStack - A fully functional local AWS cloud stack](https://github.com/localstack/localstack)
+
+> LocalStack provides an easy-to-use test/mocking framework for developing Cloud applications.
 
 ## Cloud
 
