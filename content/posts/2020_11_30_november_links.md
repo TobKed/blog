@@ -15,6 +15,21 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
 
+This month I spent some time on getting statistics of GitHub Actions [GA] usage within The Apache Software Foundation [ASF] repositories. 
+The ASF organisation has more than 2000 repositories and more than 200 of them use GA. 
+The limit for concurrent GA jobs for ASF equals 180 ([usage limits](https://docs.github.com/en/free-pro-team@latest/actions/reference/usage-limits-billing-and-administration#usage-limits)) and may be exhausted quite quickly. 
+This could lead to long queues. 
+The GItHub does not provide statistics related to GA so I created a repository (Fetch Apache GitHub Actions Statistics)[https://github.com/TobKed/fetch-apache-ga-stats]. 
+Within this repository, the statistics data is fetched by a GA workflow scheduled to run every 15 minutes. 
+This workflow makes a series of "snapshots" of GA workflow runs in `in_progress` and `queued` statuses for every ASF repository which uses GA. 
+Since verifying which one of more than 2000 repositories use GA is expensive because of exhausting api rate limits, this list is stored in a file within the repository. 
+The other GA workflow scheduled to run once a week is fetching this list and committing changes to the repository.
+
+Within Apache Airflow I introduced asynchronous execution of Dataflow jobs. 
+It allows starting a data processing pipeline without having to wait until it finishes. 
+The status of the pipeline may be monitored by new sensors ([Add DataflowJobStatusSensor and support non-blocking execution of jobs](https://github.com/apache/airflow/pull/11726), [Dataflow sensors - job metrics](https://github.com/apache/airflow/pull/12039), [Add DataflowJobMessagesSensor and DataflowAutoscalingEventsSensor](https://github.com/apache/airflow/pull/12249)).
+
+
 ## Articles
 
 ### [10 Things to Do After Installing Ubuntu 20.10](https://www.omgubuntu.co.uk/2020/10/things-to-do-after-installing-ubuntu-20-10-groovy-gorilla)
@@ -52,6 +67,7 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ### [8 questions for writing](https://vasilishynkarenka.com/8questions/)
 
+> The secret to good writing, as to any kind of knowledge work, is deliberate planning.
 
 ### [Time Blocking](https://todoist.com/productivity-methods/time-blocking)
 
@@ -69,16 +85,21 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > The 10-minute productivity practice for achieving more in work and life
 
-### []()
+### [You should expect "equal pay for equal work" at your new remote job](https://www.nityesh.com/equal-pay-for-equal-work-at-a-remote-company/)
 
-> 
+> Tough questions to ask your remote employer who gives you Cost Of Living based compensation and some thoughts on how remote compensation will work in the future
 
-### []()
+### [How to Avoid Zoom Fatigue in Your Weekly Virtual Meetings](https://weworkremotely.com/how-to-avoid-zoom-fatigue-in-your-weekly-virtual-meetings)
 
-> 
+> Zoom virtual meetings dragging you down? Discover what Zoom fatigue is, why it happens, and what you can do to lessen its effects in this guide
 
+### [We tried not looking at our screens first thing in the morning. It helped.](https://zapier.com/blog/no-screens-in-the-morning/)
 
-## Python
+> Want to feel stressed, anxious, and/or completely exhausted before you even have breakfast? I highly recommend looking at your phone right when you wake up.
+
+### [Remote Work Productivity Hacks: 33 Best Tips From Experts](https://arc.dev/blog/remote-work-productivity-tips-ad27ns7c15)
+
+> Supercharge your workday with these remote work productivity tips from some of the best in the business.
 
 ## Django
 
@@ -86,15 +107,15 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > A detailed guide to the various steps required to have React play well with Django.
 
-## Python libraries
-
-## Django libraries
-
 ## Tools
 
-### [](https://asciinema.org/)
+### [asciinema](https://asciinema.org/)
 
-> 
+> Record and share your terminal sessions, the right way
+
+### [pipdeptree](https://github.com/naiquevin/pipdeptree)
+
+> `pipdeptree` is a command line utility for displaying the installed python packages in form of a dependency tree
 
 ### [LocalStack - A fully functional local AWS cloud stack](https://github.com/localstack/localstack)
 
@@ -109,13 +130,3 @@ Some of them are strictly related to the things I did or am currently doing.
 ### [Google Cloud – Improving Security with Impersonation](https://www.jhanley.com/google-cloud-improving-security-with-impersonation/)
 
 >  The contents of the service account remain in Google Cloud. Instead of providing users with a service account file, we provide the user authorization to use the service account (impersonation). 
-
-## Other stuff
-
-
-## Videos
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
