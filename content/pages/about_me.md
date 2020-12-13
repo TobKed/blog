@@ -19,5 +19,7 @@ Tags: welcome
 
 ### Company blog-posts
 
+* [What’s New in Python 3.9—A Summary of New Features](https://www.polidea.com/blog/whats-new-in-python-39-a-summary-of-new-features/)
+* [Terraform Tutorial: Introduction to Infrastructure as Code](https://www.polidea.com/blog/terraform-tutorial-introduction-to-infrastructure-as-code/)
 * [What’s New in Python 3.8 — A Summary of the New Features](https://www.polidea.com/blog/whats-new-in-python-38-a-summary-of-the-new-features/)
 * [What Is Python Used For? Most Popular Uses](https://www.polidea.com/blog/what-is-python-used-for/)

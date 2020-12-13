@@ -44,10 +44,6 @@ Meanwhile my blog post about Terraform and Infrastructure as Code was published 
 
 > Google says the update will make it easier for people with hearing issues to be notified of events.
 
-### [How Google Drive Can Make Every Corner of Your Life Easier](https://forge.medium.com/how-google-drive-can-make-every-corner-of-your-life-easier-9f3cc1acbb68)
-
-> The ultimate self-improvement tool is something you already have.
-
 ### [How to Change Your Brain With Dr. Andrew Huberman (+ Utkarsh!)](https://thisten.co/y7qdc/qoLk8j26DKJ0FdUrv5EF4Z4ft3AShasQ8tiEFuYb)
 
 > Dr. Huberman is here to school us on all things neuroplasticity---and how we can use it to our advantage through intense focus, mindfulness, and restorative sleep. Enjoy!

@@ -4,7 +4,7 @@ Category: python
 Tags: python, blog, podcast, series, aggregate
 Slug: 2020-november-links
 Summary: Interesting stuff from the month
-Status: draft
+Status: published
 
 
 # November 2020
@@ -27,7 +27,7 @@ The other GA workflow scheduled to run once a week is fetching this list and com
 
 Within Apache Airflow I introduced asynchronous execution of Dataflow jobs. 
 It allows starting a data processing pipeline without having to wait until it finishes. 
-The status of the pipeline may be monitored by new sensors ([Add DataflowJobStatusSensor and support non-blocking execution of jobs](https://github.com/apache/airflow/pull/11726), [Dataflow sensors - job metrics](https://github.com/apache/airflow/pull/12039), [Add DataflowJobMessagesSensor and DataflowAutoscalingEventsSensor](https://github.com/apache/airflow/pull/12249)).
+The status of the pipeline may be monitored by new sensors ([DataflowJobStatusSensor](https://github.com/apache/airflow/pull/11726), [DataflowJobMetricsSensor](https://github.com/apache/airflow/pull/12039), [DataflowJobMessagesSensor and DataflowAutoscalingEventsSensor](https://github.com/apache/airflow/pull/12249)).
 
 
 ## Articles
