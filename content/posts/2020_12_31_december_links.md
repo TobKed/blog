@@ -67,6 +67,20 @@ https://www.polidea.com/blog/whats-new-in-python-39-a-summary-of-new-features/
 
 > Once upon a time, there used to be a great and acrimonious debate in philosophy about whether people had “mental imagery” — whether or not people actually see a little picture of an elephant when they think about an elephant.
 
+### [Google Cloud (over)Run: How a free trial experiment ended with a $72,000 bill overnight](https://www.theregister.com/2020/12/10/google_cloud_over_run/)
+
+> Billing budget? Free plan? All useless when buggy code went into overdrive
+
+### [Shifting to a remote mindset](https://increment.com/remote/remote-work-mindset/)
+
+> On moving away from the in-office default and considering how to achieve what you value.
+
+### [How to Think: The Skill You’ve Never Been Taught](https://fs.blog/2015/08/how-to-think/)
+
+> “I’ve spent my life trying to undo habits—especially habits of thinking. They narrow your interaction with the world. They’re the phrases that come easily to your mind, like: ‘I know what I think,’ or ‘I know what I like,’ or ‘I know what’s going to happen today.’ If you just replace ‘know’ with ‘don’t know,’ then you start to move into the unknown. And that’s where the interesting stuff happens.” 
+> — Humans of New York
+
+
 ## Python
 
 ### [Using Python's bisect module ](https://johnlekberg.com/blog/2020-11-21-stdlib-bisect.html)
@@ -94,6 +108,17 @@ https://www.polidea.com/blog/whats-new-in-python-39-a-summary-of-new-features/
 
 > A simple and extensible shell script for managing your todo.txt file.
 
+### [fastai/ghapi](https://github.com/fastai/ghapi)
+
+> A delightful and complete interface to GitHub's amazing API
+
+### [Typer](https://github.com/tiangolo/typer)
+
+> Typer, build great CLIs. Easy to code. Based on Python type hints.
+
+### [diagrams](https://github.com/mingrammer/diagrams)
+
+> Diagram as Code.
 
 ## Cloud
 
@@ -102,7 +127,27 @@ https://www.polidea.com/blog/whats-new-in-python-39-a-summary-of-new-features/
 
 ## Videos
 
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
+### [The Art of Code - Dylan Beattie](https://www.youtube.com/watch?v=6avJHaC3C2U)
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/6avJHaC3C2U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [YAML Tips for Kubernetes](https://www.youtube.com/watch?v=1rwCkFTjikw)
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/1rwCkFTjikw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [Peter Norvig: How Computers Learn](https://www.youtube.com/watch?v=T1O3ikmTEdA)
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/T1O3ikmTEdA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [Czy leci z nami DevOps? Webinar](https://www.youtube.com/watch?v=UGwayrJiFAA)
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/UGwayrJiFAA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [DjangoCon US 2017 - End-to-End Django on Kubernetes by Frank Wiles](https://www.youtube.com/watch?v=4LpaxvKsSlo)
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/4LpaxvKsSlo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>

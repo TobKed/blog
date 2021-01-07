@@ -1,13 +1,13 @@
-Title: Month summary - April 2020
-Date: 2020-04-31
+Title: Month summary - January 2021
+Date: 2021-01-31
 Category: python
 Tags: python, blog, podcast, series, aggregate
-Slug: 2020-april-links
+Slug: 2021-january-links
 Summary: Interesting stuff from the month
 Status: draft
 
 
-# {Month} 2020
+# January 2021
 
 I am aggregating here some more or less interesting stuff of various IT related materials which I came across this month.
 Some of them are strictly related to the things I did or am currently doing.
@@ -16,6 +16,14 @@ Some of them are strictly related to the things I did or am currently doing.
 ## Some thoughts
 
 ## Articles
+
+### [A Simple and Dynamic Method for Consistent Productivity](https://matthewsaltz.wordpress.com/2020/11/24/a-simple-and-dynamic-method-for-consistent-productivity/)
+
+> About a month ago I started a new system that I really like, and I hope I will stay with it.
+
+### [](https://peter-whittaker.com/install-python-MacOS)
+
+> 
 
 ## Python
 
@@ -33,6 +41,8 @@ Some of them are strictly related to the things I did or am currently doing.
 
 
 ## Videos
+
+https://www.youtube.com/watch?v=jfOGnsPkNiw
 
 ### [](https://www.youtube.com/watch?v=VIDEO_ID)
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
