@@ -19,7 +19,7 @@ This month I spent some time on getting statistics of GitHub Actions [GA] usage 
 The ASF organisation has more than 2000 repositories and more than 200 of them use GA. 
 The limit for concurrent GA jobs for ASF equals 180 ([usage limits](https://docs.github.com/en/free-pro-team@latest/actions/reference/usage-limits-billing-and-administration#usage-limits)) and may be exhausted quite quickly. 
 This could lead to long queues. 
-The GItHub does not provide statistics related to GA so I created a repository (Fetch Apache GitHub Actions Statistics)[https://github.com/TobKed/fetch-apache-ga-stats]. 
+The GItHub does not provide statistics related to GA so I created a repository [Fetch Apache GitHub Actions Statistics](https://github.com/TobKed/fetch-apache-ga-stats). 
 Within this repository, the statistics data is fetched by a GA workflow scheduled to run every 15 minutes. 
 This workflow makes a series of "snapshots" of GA workflow runs in `in_progress` and `queued` statuses for every ASF repository which uses GA. 
 Since verifying which one of more than 2000 repositories use GA is expensive because of exhausting api rate limits, this list is stored in a file within the repository. 
