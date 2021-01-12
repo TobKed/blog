@@ -21,9 +21,35 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > About a month ago I started a new system that I really like, and I hope I will stay with it.
 
-### [](https://peter-whittaker.com/install-python-MacOS)
+### [Doing Python development under Mac OS](https://peter-whittaker.com/install-python-MacOS)
+
+> Easy-peasy. Right?
+
+### [The 7 types of rest that every person needs](https://ideas.ted.com/the-7-types-of-rest-that-every-person-needs/)
+
+> This post is part of TED’s “How to Be a Better Human” series, each of which contains a piece of helpful advice from people in the TED community.
+
+### [System Design 101](https://stanete.com/system-design-101)
+
+> Why is it so important to design our services so they have no state? Specially if they are running somewhere on a server.
+
+### [20 Months in, 2K Hours Spent and 200K € Lost. A Story About Resilience and the Sunk Cost Fallacy](https://medium.com/swlh/20-months-in-2k-hours-spent-and-200k-lost-a-story-about-resilience-and-the-sunk-cost-fallacy-69fd4f61ef59)
+
+> TL;DR: It can be really hard to know if we’re just resilient or falling for the sunk cost fallacy.
+
+### [Time Awareness or How I Found Time for Life While Working Remotely](https://timeawareness.substack.com/p/time-awareness-and-remote-work)
+
+> I quickly found out that not having a context switch between the office and home forced me into non-healthy behaviors like giving work all the available time.
+
+### [10 Powerful Life Skills for the New Decade](https://neilkakkar.com/powerful-life-skills.html)
+
+> Over the past few years, I’ve noticed certain skills in people I admire, from Paul Graham, Vitalik Buterin, to Ender Wiggin.
+
+### []()
 
 > 
+
+
 
 ## Python
 
@@ -35,9 +61,17 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Tools
 
+### [PeterWhittaker/myDotFiles](https://github.com/PeterWhittaker/myDotFiles)
+
+> Peter Whittaker dot files
+
 ## Cloud
 
 ## Other stuff
+
+### [Minimal safe Bash script template](https://betterdev.blog/minimal-safe-bash-script-template/)
+
+> The opposite of "it's like riding a bike" is "it's like programming in bash".
 
 
 ## Videos
