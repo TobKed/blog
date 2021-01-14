@@ -45,10 +45,9 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > Over the past few years, I’ve noticed certain skills in people I admire, from Paul Graham, Vitalik Buterin, to Ender Wiggin.
 
-### []()
+### [Equal pay for equal work](https://dusted.codes/equal-pay-for-equal-work)
 
-> 
-
+> Remote work is on the rise, the economy is on a decline and businesses are re-structuring themselves around what many consider the new normal.
 
 
 ## Python

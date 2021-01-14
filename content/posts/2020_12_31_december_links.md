@@ -4,7 +4,7 @@ Category: python
 Tags: python, blog, podcast, series, aggregate
 Slug: 2020-december-links
 Summary: Interesting stuff from the month
-Status: draft
+Status: published
 
 
 # December 2020
@@ -15,28 +15,22 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
 
-This month was a quite limited due to the long Christmas holidays during which I did not spend time in front of the computer.
+This month was quite limited due to the long Christmas holidays during which I did not spend too much time in front of the computer.
 
-Some time ago in the one of the internal company projects we struck with the problem with too long response time on one of the websites.
-The form on this website is responsible for triggering operations dependent on external APIs. 
-Request timeout on Heroku, where it is deployed, is limited to thirty seconds and apparently, from time to time handling this form exceeds that limit. 
-It means not only user experience is very poor but also server error while the requested task is being only partially completed.
-Inspired by blog post about [using Celery with Flask](https://blog.miguelgrinberg.com/post/using-celery-with-flask),
-written by a great developer [Miguel Grinberg](https://blog.miguelgrinberg.com) I made similar thing in Django.
-The proposed solution is to trigger by the website form a long-running task that will be performed asynchronously by Celery worker and 
-being informed about its progress by dynamic progress bar.
-In the repository [django_celery_progress_bar](https://github.com/TobKed/django_celery_progress_bar) I created
-simple Django app with two Celery workers. First worker (`celeryworker`) is responsible for scheduled periodic tasks 
-while second one (`celeryworker_highprio`) is responsible for handling tasks triggered from the web UI. 
-The response from the app is being returned immediately with trigger status. Then progress bar updates are 
-handled by beneath javascript code.
+Some time ago in one of the projects I came across the problem of too long response time on one of the websites. The form on this website is responsible for triggering operations dependent on external APIs. 
+The request timeout on Heroku where it is deployed is limited to thirty seconds and apparently, from time to time handling this form exceeds that limit. 
+Not only does it spell very poor user experience, it also causes server error when timeout is exceeded and the requested task is only partially completed.
+
+Inspired by the blog post about [using Celery with Flask](https://blog.miguelgrinberg.com/post/using-celery-with-flask),
+written by a great developer [Miguel Grinberg](https://blog.miguelgrinberg.com), I made something similar in Django.
+The proposed solution is to trigger a long-running task on the website. The task will be performed asynchronously by the Celery worker and a dynamic progress bar will inform about its status.
+In the repository [django_celery_progress_bar](https://github.com/TobKed/django_celery_progress_bar) I created a simple Django app with two Celery workers. The first worker called `celeryworker`  is responsible for executing scheduled periodic tasks, 
+while the second one, called `celeryworker_highprio` is responsible for handling tasks triggered by the web form. The response from the app is returned immediately with initial task status. Then the progress bar updates are handled by a javascript function executed in a loop until it finishes.
 
 ![Progress Bar](https://raw.githubusercontent.com/TobKed/django_celery_progress_bar/main/images/progress_bar.gif)
 
-I track my expenditures for many years. At the beggining I used spreadsheets but putting data to it was cumbersome and not friendly.
-To make it more feasible I wrote some ago web app for it in Flask: [Home-Budgeting-App](https://github.com/TobKed/Home-Budgeting-App).
-I used it almost approximately for a year. Because I didn't want to spend too much time on developing further to get better management of the data
-I decided to rewrite it to Django to use its powerful admin panel. This way the 
+On another note, I have been tracking my expenditures for many years. At the beginning I used spreadsheets but updating it was cumbersome and inconvenient. To make it more friendly I wrote a web app for it in Flask some time ago: [Home-Budgeting-App](https://github.com/TobKed/Home-Budgeting-App).
+I have used it for a year approximately. I decided to rewrite it to Django to be able to use its powerful admin panel. This is how 
 ([yet_another_home_budgeting_app](https://github.com/TobKed/yet_another_home_budgeting_app)) was created.
 
 
