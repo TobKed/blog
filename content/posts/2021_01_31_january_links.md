@@ -49,10 +49,57 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > Remote work is on the rise, the economy is on a decline and businesses are re-structuring themselves around what many consider the new normal.
 
+### [Pipenv & Requests Author Kenneth Reitz Interview](https://evrone.com/kenneth-reitz-interview)
+
+> Kenneth Reitz: “Encapsulating concepts is better than extrapolating complexity.”
+
+### [Sekurak: Konta Trumpa zbanowane we wszystkich istotnych serwisach społecznościowych](https://sekurak.pl/konta-trumpa-zbanowane-we-wszystkich-istotnych-serwisach-spolecznosciowych-amazon-apple-google-blokuje-parlera-cenzura-na-niespotykana-dotad-skale-czy-normalnosc/)
+
+> Amazon/Apple/Google blokuje Parlera. Cenzura na niespotykaną dotąd skalę czy normalność?
+
+### [Tech Companies Are Profiling Us From Before Birth](https://thereader.mitpress.mit.edu/tech-companies-are-profiling-us-from-before-birth/)
+
+> Children today are the very first generation of citizens to be datafied from before birth. The social and political consequences of this historical transformation have yet to be seen.
+
+### [With the Death of Cash, Privacy Faces a Deeply Uncertain Future](https://hackernoon.com/with-the-death-of-cash-privacy-faces-a-deeply-uncertain-future-l8c344v)
+
+> The Coming Death of Cash and the Battle for the Future of Money. In One Future We have a Private, Anonymous Alternative to Cash but in the Black Mirror Future the Money in Your Pocket Knows Everything About You.
+
+### [Degoogling my life](https://thefiringneuron.com/2021/01/17/degoogling-my-life/)
+
+> Privacy is a human right, when so much of our life is lived online. In my opinion, the two most evil companies on the planet with a blatant disregard for privacy because it is so fundamental to their business model are: Facebook (and by extension, WhatsApp and Instagram) and Google.
+
+### [Forget About SMART Goals: 5 Unconventional Goal Setting Methods to Try Instead](https://blog.doist.com/unconventional-goal-setting/)
+
+> Traditional goal setting didn’t work for you last year? Try on something new...
+
+### [Why senior engineers get nothing done](https://swizec.com/blog/why-senior-engineers-get-nothing-done)
+
+> Remember when you started your job, how was it?
+
+### [Burned Out and Fantasizing About a Big Life Reset? Start Here](https://blog.doist.com/burnout-career-life-reset/)
+
+> Honest (and realistic) advice from those who’ve been there.
+
+### [5 Tips to Speed up Your Docker Image Build](https://vsupalov.com/5-tips-to-speed-up-docker-build)
+
+> Are your Docker builds taking forever? Docker can be a valuable part of your tool belt, or a constant source of annoyance.
 
 ## Python
 
+### [5 JavaScript things you should know/understand as a Python Developer](https://zanderle.com/musings/2021/1/5-javascript-things-you-should-knowithunderstand-as-a-python-developer/)
+
+> Modern JavaScript is in many ways very similar to Python. But it's also very different.
+
+### [Web Authentication Methods Compared](https://testdriven.io/blog/web-authentication-methods/)
+
+> In this article, we'll look at the most commonly used methods for handling web authentication from the perspective of a Python web developer.
+
 ## Django
+
+### [](https://justdjango.com/blog/7-concepts-to-get-a-job/)
+
+> 
 
 ## Python libraries
 
@@ -63,6 +110,26 @@ Some of them are strictly related to the things I did or am currently doing.
 ### [PeterWhittaker/myDotFiles](https://github.com/PeterWhittaker/myDotFiles)
 
 > Peter Whittaker dot files
+
+### [Docker BuildKit: faster builds, new features, and now it’s stable](https://pythonspeed.com/articles/docker-buildkit)
+
+> Over the past few years the Docker developers have been working on a new backend for building images, BuildKit.
+
+### [GCPSketchnote](https://github.com/priyankavergadia/GCPSketchnote)
+
+> GCPSketchnote
+
+### [Dockerfile best practices ](https://github.com/hexops/dockerfile)
+
+> This repository has best-practices for writing Dockerfiles that I (@slimsag) have quite painfully learned over the years both from my personal projects and from my work @sourcegraph. 
+
+### [rsync-time-backup](https://github.com/laurent22/rsync-time-backup)
+
+> This script offers Time Machine-style backup using rsync. It creates incremental backups of files and directories to the destination of your choice. The backups are structured in a way that makes it easy to recover any file at any point in time.
+
+### [Joplin](https://github.com/laurent22/joplin)
+
+> Joplin - an open source note taking and to-do application with synchronization capabilities for Windows, macOS, Linux, Android and iOS.
 
 ## Cloud
 
@@ -76,6 +143,7 @@ Some of them are strictly related to the things I did or am currently doing.
 ## Videos
 
 https://www.youtube.com/watch?v=jfOGnsPkNiw
+https://www.youtube.com/watch?v=-LSiF8RNM1g
 
 ### [](https://www.youtube.com/watch?v=VIDEO_ID)
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
