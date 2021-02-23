@@ -97,13 +97,9 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Django
 
-### [](https://justdjango.com/blog/7-concepts-to-get-a-job/)
+### [7 concepts you should know to get a job as a Django developer](https://justdjango.com/blog/7-concepts-to-get-a-job/)
 
-> 
-
-## Python libraries
-
-## Django libraries
+> In this post I'm going to explain the most important concepts you should know to get a job as a Django developer.
 
 ## Tools
 
@@ -131,7 +127,9 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > Joplin - an open source note taking and to-do application with synchronization capabilities for Windows, macOS, Linux, Android and iOS.
 
-## Cloud
+### [jenv](https://github.com/jenv/jenv)
+
+> Master your Java Environment with jenv.
 
 ## Other stuff
 
@@ -139,13 +137,15 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > The opposite of "it's like riding a bike" is "it's like programming in bash".
 
-
 ## Videos
 
-https://www.youtube.com/watch?v=jfOGnsPkNiw
-https://www.youtube.com/watch?v=-LSiF8RNM1g
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
+### ["Speeding up Your Docker Image Build" - Vladislav Supalov (PyConline AU 2020)](https://www.youtube.com/watch?v=LSiF8RNM1g)
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/LSiF8RNM1g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+
+### [IT.talk 2020](https://www.youtube.com/watch?v=jfOGnsPkNiw)
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/jfOGnsPkNiw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+

@@ -2,12 +2,12 @@ Title: Month summary - {month} 2021
 Date: 2021-0X-31
 Category: python
 Tags: python, blog, podcast, series, aggregate
-Slug: 2020-{month}-links
+Slug: 2021-{month}-links
 Summary: Interesting stuff from the month
 Status: draft
 
 
-# {Month} 2020
+# {Month} 2021
 
 I am aggregating here some more or less interesting stuff of various IT related materials which I came across this month.
 Some of them are strictly related to the things I did or am currently doing.
