@@ -45,6 +45,37 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > Professionals supposedly come in two shapes: either short and fat, or tall and skinny, meaning their skill set is either broad or deep. They can also be T-shaped—knowing a lot about a little and a little about a lot—but in this metaphor, that’s a compromise. After all, even a T need not have a 1:1 aspect ratio.
 
+### [The pros and cons of being a software engineer at a BIG tech company](https://stackoverflow.blog/2021/02/17/the-pros-and-cons-of-being-a-software-engineer-at-a-big-tech-company/)
+
+> There are benefits to being a technical lead at a less software intensive business.
+
+### [5 reasons why I love coding on Linux](https://opensource.com/article/21/2/linux-programming)
+
+> Linux is a great platform for programming—it's logical, easy to see the source code, and very efficient.
+
+### [How to Create a Permanent Work-From-Home Office](https://www.halfhalftravel.com/remote-work/permanent-work-from-home-office.html)
+
+> Thinking of setting up a permanent home office for productivity? Here are the home office ideas for creating and designing your work-from-home environment when working from home is long-term.
+
+### [Git is my buddy: Effective Git as a solo developer](https://mikkel.ca/blog/git-is-my-buddy-effective-solo-developer/)
+
+> But what if I told you that Git can be a valuable tool without ever setting up a remote repository? Used correctly, Git can help to structure your work, identifying gaps in your test coverage and minimizing dead code.
+
+### [Git Submodules: Adding, Using, Removing, Updating](https://chrisjean.com/git-submodules-adding-using-removing-and-updating/)
+
+> I’ll cover two of the more difficult things to figure out: removing and updating submodules from your repository.
+
+### [How to be more productive without forcing yourself](https://www.deprocrastination.co/blog/how-to-be-productive-without-forcing-yourself)
+
+> Imagine you could work more and be wildly productive. And the best thing about it? You wouldn’t need to force yourself to work.
+
+### [Reasons why SELECT * is bad for SQL performance](https://tanelpoder.com/posts/reasons-why-select-star-is-bad-for-sql-performance/)
+
+> Here’s a list of reasons why SELECT * is bad for SQL performance, assuming that your application doesn’t actually need all the columns.
+
+### [Zsh Tricks to Blow your Mind](https://www.twilio.com/blog/zsh-tricks-to-blow-your-mind)
+
+>  Read on to learn more about Zsh and some tips and tricks to optimize your development.
 
 ## Python
 
@@ -109,6 +140,32 @@ Some of them are strictly related to the things I did or am currently doing.
 > Nikita Voloboev personal wiki where he shares everything he knows about this world in form of an online GitBook hosted on GitHub.
 
 ## Videos
+
+### [David Beazley - Python Concurrency From the Ground Up: LIVE! - PyCon 2015](https://www.youtube.com/watch?v=MCs5OvhV9S4)
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/MCs5OvhV9S4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [Adam Haertle: Incydenty duże i bardzo duże, czyli administrator też człowiek](https://www.youtube.com/watch?v=0ifivA7Sy0E)
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/0ifivA7Sy0E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [CONFidence 2019: "Z kamerą wśród zwierząt, czyli użytkownik kontra technologia" - Adam Haertle](https://www.youtube.com/watch?v=aaxn9g_jOcc)
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/aaxn9g_jOcc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [SECURE 2020 - "Jak kochać to emaile, jak kraść to miliony"](https://www.youtube.com/watch?v=TixPdj4RPuo)
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/TixPdj4RPuo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### ["What You Should Know About Django REST Framework" - Lacey Williams Henschel (PyCascades 2021)](https://www.youtube.com/watch?v=06DJBu1zwoY)
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/06DJBu1zwoY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 
 ### [](https://www.youtube.com/watch?v=VIDEO_ID)
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">

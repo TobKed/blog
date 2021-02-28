@@ -15,6 +15,8 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
 
+...
+
 ## Articles
 
 ### [A Simple and Dynamic Method for Consistent Productivity](https://matthewsaltz.wordpress.com/2020/11/24/a-simple-and-dynamic-method-for-consistent-productivity/)
