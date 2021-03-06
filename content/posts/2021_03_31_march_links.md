@@ -1,7 +1,7 @@
 Title: Month summary - march 2021
 Date: 2021-03-31
-Category: python
-Tags: python, blog, podcast, series, aggregate
+Category: summary
+Tags: python, blog, podcast, series, aggregate, summary, month, 2021
 Slug: 2021-march-links
 Summary: Interesting stuff from the month
 Status: draft
@@ -61,6 +61,14 @@ Some of them are strictly related to the things I did or am currently doing.
 ### [Watson](https://github.com/TailorDev/Watson)
 
 > A wonderful CLI to track your time!
+
+### [DockerSlim](https://github.com/docker-slim/docker-slim)
+
+> Optimize Your Experience with Containers. Make Your Containers Better, Smaller, More Secure and Do Less to Get There (free and open source!)
+
+### [dive](https://github.com/wagoodman/dive)
+
+> A tool for exploring a docker image, layer contents, and discovering ways to shrink the size of your Docker/OCI image.
 
 ## Cloud
 

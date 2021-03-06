@@ -1,9 +1,10 @@
 Title: Year summary - 2020
 Date: 2020-12-31
-Category: python
-Tags: python, blog, podcast, series, aggregate
+Category: summary
+Tags: summary, year, 2020
 Slug: 2020-summary
 Summary: Year summary
+Header_Cover: /images/posts/2020_summary.png
 Status: draft
 
 
@@ -100,27 +101,38 @@ with articles, tools and other interesting materials I came across.
  - [November](https://tobked.github.io/blog/2020-november-links.html)
  - [December](https://tobked.github.io/blog/2020-december-links.html)
 
-I also wrote a few blog posts that were published on the company website:
+I also wrote a few blog posts that were published on the company website (reposted on Medium):
 
- - [What’s New in Python 3.8—A Summary of the New Features](https://www.polidea.com/blog/whats-new-in-python-38-a-summary-of-the-new-features/)
- - [What Is Python Used For? Most Popular Uses](https://www.polidea.com/blog/what-is-python-used-for/)
- - [Terraform Tutorial: Introduction to Infrastructure as Code](https://www.polidea.com/blog/terraform-tutorial-introduction-to-infrastructure-as-code/)
- - [What’s New in Python 3.9—A Summary of New Features](https://www.polidea.com/blog/whats-new-in-python-39-a-summary-of-new-features/)
+- [What’s New in Python 3.9—A Summary of New Features](https://tobiaszkedzierski.medium.com/whats-new-in-python-3-9-a-summary-of-new-features-e82dda07e85a)
+- [Terraform Tutorial: Introduction to Infrastructure as Code](https://tobiaszkedzierski.medium.com/terraform-tutorial-introduction-to-infrastructure-as-code-dccec643bfdb)
+- [What Is Python Used For? Most Popular Uses](https://tobiaszkedzierski.medium.com/what-is-python-used-for-most-popular-uses-a0c1019bac25)
+- [What’s New in Python 3.8—A Summary of the New Features](https://tobiaszkedzierski.medium.com/whats-new-in-python-3-8-a-summary-of-the-new-features-a2b68bd7b81d)
 
 
 ## Promoted to regular
 
-TODO
-
+My growth did not go unseen, and I was promoted from Junior to Regular Software Engineer position.
 
 ## Serving at Vipassana meditation center
 
-Few words about Vipassana ...
+I participated in Vipassana course as server during 10 days course.
 
-Maybe some pics ...
+Vipassana, which means to see things as they really are, is one of India's most ancient techniques of meditation.
+Vipassana is a way of self-transformation through self-observation. 
+It focuses on the deep interconnection between mind and body, which can be experienced directly by disciplined attention to the physical sensations that form the life of the body, and that continuously interconnect and condition the life of the mind.
 
+The technique of Vipassana Meditation is taught at ten-day residential courses during which participants learn the basics of the method, and practice sufficiently to experience its beneficial results.
+There are no charges for the courses - not even to cover the cost of food and accommodation. 
+All expenses are met by donations from people who, having completed a course and experienced the benefits of Vipassana, wish to give others the opportunity to also benefit.
+
+Serving at a Vipassana meditation retreat is a way to give back to the organization. 
+
+Learn more about Vipassana on [dhamma.org](https://www.dhamma.org/)
 
 ## Beskidy
 
-Maybe some pics ...
+![Beskidy photo]({static}/images/posts/beskidy/DSC03290.png)
 
+![Beskidy photo]({static}/images/posts/beskidy/DSC03307.png)
+
+![Beskidy photo]({static}/images/posts/beskidy/DSC03339.png)

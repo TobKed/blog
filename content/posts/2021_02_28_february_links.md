@@ -1,7 +1,7 @@
-Title: Month summary - {month} 2021
+Title: Month summary - February 2021
 Date: 2021-02-28
-Category: python
-Tags: python, blog, podcast, series, aggregate
+Category: summary
+Tags: python, blog, podcast, series, aggregate, summary, month, 2021
 Slug: 2021-february-links
 Summary: Interesting stuff from the month
 Status: draft
@@ -14,6 +14,8 @@ Some of them are strictly related to the things I did or am currently doing.
 
 
 ## Some thoughts
+
+...
 
 ## Articles
 
@@ -107,12 +109,6 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > An exploration of threads, processes, and coroutines in Python, with interesting examples that illuminate the differences between each.
 
-## Django
-
-## Python libraries
-
-## Django libraries
-
 ## Tools
 
 ### [asdf](https://github.com/asdf-vm/asdf)
@@ -164,10 +160,4 @@ Some of them are strictly related to the things I did or am currently doing.
 ### ["What You Should Know About Django REST Framework" - Lacey Williams Henschel (PyCascades 2021)](https://www.youtube.com/watch?v=06DJBu1zwoY)
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/06DJBu1zwoY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>

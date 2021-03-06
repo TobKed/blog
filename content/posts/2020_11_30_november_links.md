@@ -1,7 +1,7 @@
 Title: Month summary - November 2020
 Date: 2020-11-30
-Category: python
-Tags: python, blog, podcast, series, aggregate
+Category: summary
+Tags: python, blog, podcast, series, aggregate, summary, month, 2020 
 Slug: 2020-november-links
 Summary: Interesting stuff from the month
 Status: published

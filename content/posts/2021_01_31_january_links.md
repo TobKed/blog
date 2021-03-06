@@ -1,7 +1,7 @@
 Title: Month summary - January 2021
 Date: 2021-01-31
-Category: python
-Tags: python, blog, podcast, series, aggregate
+Category: summary
+Tags: python, blog, podcast, series, aggregate, summary, month, 2021
 Slug: 2021-january-links
 Summary: Interesting stuff from the month
 Status: draft
