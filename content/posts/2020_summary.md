@@ -78,9 +78,13 @@ In 2021, I am planning to introduce Apache Beam operators to Airflow.
 
 My adventure with GitHub Actions resulted in creation of my own actions:
 
- - [github-forks-sync-action](https://github.com/TobKed/github-forks-sync-action) - TODO
- - [label-when-approved-action](https://github.com/TobKed/label-when-approved-action) - TODO
- - [fetch-apache-ga-stats](https://github.com/TobKed/fetch-apache-ga-stats) - TODO
+ - [github-forks-sync-action](https://github.com/TobKed/github-forks-sync-action) - GitHub Action to synchronise forks
+ - [label-when-approved-action](https://github.com/TobKed/label-when-approved-action) - Label When Approved is an action that checks is Pull Request is approved and assign label to it. Label is not set or removed when Pull Request has awaiting requested changes.
+
+TODO
+
+[fetch-apache-ga-stats](https://github.com/TobKed/fetch-apache-ga-stats) - For The Apache Software Foundation [ASF] the limit for concurrent jobs in GitHub Actions [GA] equals 180 (usage limits). The GItHub does not provide statistics related to GA.
+   
 
 
 ## Writing
@@ -117,13 +121,13 @@ My growth did not go unseen, and I was promoted from Junior to Regular Software 
 
 I participated in Vipassana course as server during 10 days course.
 
-Vipassana, which means to see things as they really are, is one of India's most ancient techniques of meditation.
-Vipassana is a way of self-transformation through self-observation. 
-It focuses on the deep interconnection between mind and body, which can be experienced directly by disciplined attention to the physical sensations that form the life of the body, and that continuously interconnect and condition the life of the mind.
+> Vipassana, which means to see things as they really are, is one of India's most ancient techniques of meditation.
+> Vipassana is a way of self-transformation through self-observation. 
+> It focuses on the deep interconnection between mind and body, which can be experienced directly by disciplined attention to the physical sensations that form the life of the body, and that continuously interconnect and condition the life of the mind.
 
-The technique of Vipassana Meditation is taught at ten-day residential courses during which participants learn the basics of the method, and practice sufficiently to experience its beneficial results.
-There are no charges for the courses - not even to cover the cost of food and accommodation. 
-All expenses are met by donations from people who, having completed a course and experienced the benefits of Vipassana, wish to give others the opportunity to also benefit.
+> The technique of Vipassana Meditation is taught at ten-day residential courses during which participants learn the basics of the method, and practice sufficiently to experience its beneficial results.
+> There are no charges for the courses - not even to cover the cost of food and accommodation. 
+> All expenses are met by donations from people who, having completed a course and experienced the benefits of Vipassana, wish to give others the opportunity to also benefit.
 
 Serving at a Vipassana meditation retreat is a way to give back to the organization. 
 

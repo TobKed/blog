@@ -15,7 +15,9 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
 
-...
+The biggest event of the month is fact that I stared new job in [Snowflake](https://www.snowflake.com/).
+
+The second highlight of the months is that the [Apache Beam provider](https://github.com/apache/airflow/pull/12814) for Apache Airflow on which I was working for several weeks was finally merged into master.
 
 ## Articles
 

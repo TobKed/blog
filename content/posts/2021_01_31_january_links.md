@@ -15,7 +15,13 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
 
-...
+During this month I worked mostly on system test for Apache Airflow. 
+System tests in Airflow are tests which executes example dags and hits real resources, e.g Google Cloud Storages and Amazon S3.
+The fact that they work with real resources mean that these resources have to be provisioned and configured before and probably someone has to pay for them.
+The huge advantage of them is that they can spot breaking changes in external APIs or bugs which may slipped in eventually.
+To make running system test in more convenient way I authored repository [politools/airflow-system-tests](https://github.com/politools/airflow-system-tests).
+The tests are being run on Google Cloud Build which fetches Airflow repository and run system tests within Breeze environment.
+With one command plenty of parallel tests mah be executed.
 
 ## Articles
 
@@ -150,4 +156,3 @@ Some of them are strictly related to the things I did or am currently doing.
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/jfOGnsPkNiw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-
