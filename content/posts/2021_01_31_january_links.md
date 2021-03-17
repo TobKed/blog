@@ -4,7 +4,7 @@ Category: summary
 Tags: python, blog, podcast, series, aggregate, summary, month, 2021
 Slug: 2021-january-links
 Summary: Interesting stuff from the month
-Status: draft
+Status: published
 
 
 # January 2021
@@ -15,13 +15,16 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
 
-During this month I worked mostly on system test for Apache Airflow. 
-System tests in Airflow are tests which executes example dags and hits real resources, e.g Google Cloud Storages and Amazon S3.
-The fact that they work with real resources mean that these resources have to be provisioned and configured before and probably someone has to pay for them.
-The huge advantage of them is that they can spot breaking changes in external APIs or bugs which may slipped in eventually.
-To make running system test in more convenient way I authored repository [politools/airflow-system-tests](https://github.com/politools/airflow-system-tests).
-The tests are being run on Google Cloud Build which fetches Airflow repository and run system tests within Breeze environment.
-With one command plenty of parallel tests mah be executed.
+During this month I worked mostly on system tests for Apache Airflow.
+System tests in Airflow are tests which execute example DAGs and hit real resources, e.g.: Google Cloud Storages and Amazon S3.
+The huge advantage of them is that they can spot bugs which may slip in eventually or find breaking changes in external APIs.
+The fact that they work with real services means that these services have to be enabled, and in some cases provisioned and configured before.
+Cloud services have free tiers but still billing has to be configured and someone has to pay for it eventually.
+This is not something many people will do, but since I am interested in the cloud I wanted to make the running of these tests more convenient.
+It resulted in a repository: [politools/airflow-system-tests](https://github.com/politools/airflow-system-tests).
+The tests are being run on Google Cloud Build which clones Airflow repository and runs system tests within the Breeze environment.
+With one command, plenty of parallel tests may be executed.
+
 
 ## Articles
 
