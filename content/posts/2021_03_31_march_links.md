@@ -63,6 +63,18 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > – Nie ma co ukrywać, że praca zdalna potrafi rozleniwić i można stać się zbytnim domownikiem, co mi też zdarzyło się w pewnym okresie życia. Skoro można pracować z łóżka to po co z niego wstawać, po co przebierać się z piżamy, skoro całą dobę można spędzić w sypialni. A jak już człowiek jest cały dzień w piżamie, to przecież nie wyjdzie na zakupy, ani na siłownie, ani do ludzi – powiedział nam Grzegorz Krukowski, Programista z 15-letnim doświadczeniem.
 
+### [Nie ma czegoś takiego jak dobry kod](https://skutecznyprogramista.pl/dobry-kod/)
+
+> Nauczyłem się, że mogę co najwyżej osiągnąć stan “dobrego kodu w obecnej sytuacji”.
+
+### [What Remote Work Really Does To Your Engineering Productivity ](https://www.okayhq.com/blog/what-remote-work-really-does-to-your-engineering-productivity)
+
+> With companies on lockdown, remote work is currently at the peak of its hype cycle. Leaders and managers are touting its efficiency and flexibility... The data-backed reality, however, offers a more nuanced perspective.
+
+### [Unironically Using Kubernetes for my Personal Blog](https://mbuffett.com/posts/kubernetes-setup/)
+
+> There’s no shortage of posts like “Let’s use Kubernetes!” Now you have 8 problems, or Do I Really Need Kubernetes?, which tend to argue that unless you’re orchestrating 1000 containers, you’re good without Kubernetes.
+
 ## Python
 
 ### [syntactic sugar](https://snarky.ca/tag/syntactic-sugar/)
@@ -75,6 +87,10 @@ Some of them are strictly related to the things I did or am currently doing.
 > In a supply chain attack, the crooks don’t break into your network and install the malware directly.
 > Instead, they insert their malware upstream from you, implanting it into someone else’s network, repository or delivery mechanism and waiting for the infection to pass down the chain until it reaches you.
 
+### [Pattern matching tutorial for Pythonic code](https://mathspp.com/blog/pydonts/pattern-matching-tutorial-for-pythonic-code)
+
+> Structural pattern matching is coming in Python 3.10 and this article explores how to use it to write Pythonic code, showing the best use cases for the match statement.
+
 ## Django
 
 ### [Exciting New Features in Django 3.2](https://hakibenita.com/django-32-exciting-features)
@@ -84,6 +100,14 @@ Some of them are strictly related to the things I did or am currently doing.
 ### [Five Django Packages We Love at Monadica](https://monadical.com/posts/django-packages.html#)
 
 > One of the biggest draws to Django is its ecosystem. If you encounter a problem, the chances are that someone else in the community has too, and has been kind enough to abstract it into a package and release it.
+
+### [Writing tests for the Django admin with pytest-django](https://til.simonwillison.net/django/testing-django-admin-with-pytest)
+
+> Using the admin_client fixture.
+
+### [Five Common Django Mistakes](https://www.laac.dev/blog/five-common-django-mistakes/)
+
+> When you’re starting out with Django, you can introduce subtle bugs due to lack of knowledge. I wrote this post partially for myself to reference in my professional development, but also to help illuminate some mistakes that I see.
 
 ## Python libraries
 
@@ -107,6 +131,10 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > A tool for exploring a docker image, layer contents, and discovering ways to shrink the size of your Docker/OCI image.
 
+### [kubectx](https://github.com/ahmetb/kubectx)
+
+> Faster way to switch between clusters and namespaces in kubectl.
+
 ## Cloud
 
 ### [hcl2json](https://www.hcl2json.com/)
@@ -127,17 +155,32 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Other stuff
 
+### [The Architecture of Open Source Applications](http://aosabook.org/en/index.html)
+
+>  Architects look at thousands of buildings during their training, and study critiques of those buildings written by masters. In contrast, most software developers only ever get to know a handful of large programs well—usually programs they wrote themselves—and never study the great programs of history. As a result, they repeat one another's mistakes rather than building on one another's successes.
+> 
+> Our goal is to change that. In these two books, the authors of four dozen open source applications explain how their software is structured, and why. What are each program's major components? How do they interact? And what did their builders learn during their development? In answering these questions, the contributors to these books provide unique insights into how they think.
+> 
+> If you are a junior developer, and want to learn how your more experienced colleagues think, these books are the place to start. If you are an intermediate or senior developer, and want to see how your peers have solved hard design problems, these books can help you too.
+
+### [howtodeal](https://www.howtodeal.dev/)
+
+> How to Deal with Difficult People on Software Projects.
+
 
 ## Videos
 
-
-https://odysee.com/@Lunduke:e/LinuxSucks2021:1
-
-
+### [Linux Sucks 2021 - The End of Linux is Nigh](https://odysee.com/@Lunduke:e/LinuxSucks2021:1)
+<iframe id="lbry-iframe" width="560" height="315" src="https://odysee.com/$/embed/LinuxSucks2021/166742a68faca1abdf189ae4134de2d527576969?r=4z53E7r7wjonWSMqg2WmwM4gtYtNmt8y" allowfullscreen></iframe>
 
 ### [Top 10 Work from Home Productivity Tips [PART 1] | The Art of Remote Work Series](https://www.youtube.com/watch?v=ZQV4l7MAxnY)
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/ZQV4l7MAxnY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [TechWorld with Nana - Kubernetes Tutorial for Beginners [FULL COURSE in 4 Hours]](https://www.youtube.com/watch?v=X48VuDVv0do)
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/X48VuDVv0do" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 
