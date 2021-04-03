@@ -38,7 +38,7 @@ Tags: python, django, links, bookmarks
 * [Adam Johnson](https://adamj.eu/tech/)
 * [Will Vincent](https://wsvincent.com/)
 * [Haki Benita](https://hakibenita.com/)
-
+* [Michał Klich](https://klichx.dev/)
 
 ### Tutorials
 

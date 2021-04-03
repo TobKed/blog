@@ -1,17 +1,18 @@
-Title: Month summary - {month} 2021
-Date: 2021-0X-31
+Title: Month summary - April 2021
+Date: 2021-04-30
 Category: summary
 Tags: python, blog, podcast, series, aggregate, summary, month, 2021
-Slug: 2021-{month}-links
+Slug: 2021-april-links
 Summary: Interesting stuff from the month
 Status: draft
 
 
-# {Month} 2021
+# April 2021
 
 I am aggregating here some more or less interesting stuff of various IT related materials which I came across this month.
 Some of them are strictly related to the things I did or am currently doing.
 
+https://www.coursera.org/account/accomplishments/specialization/E452CCSHMMGH
 
 ## Some thoughts
 

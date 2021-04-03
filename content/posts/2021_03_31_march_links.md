@@ -37,7 +37,7 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ### [10 Software Engineering Laws Everybody Loves to Ignore](https://www.netmeister.org/blog/software-engineering-laws.html)
 
-> ...
+> Worth to revise from time to time.
 
 ### [Speed is the killer feature](https://bdickason.com/posts/speed-is-the-killer-feature/)
 
@@ -75,6 +75,26 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > There’s no shortage of posts like “Let’s use Kubernetes!” Now you have 8 problems, or Do I Really Need Kubernetes?, which tend to argue that unless you’re orchestrating 1000 containers, you’re good without Kubernetes.
 
+### [Czy Developer może zostać DevOpsem? Historia Mateusza Lubańskiego](https://geek.justjoin.it/czy-developer-moze-zostac-devopsem-historia-mateusza-lubanskiego)
+
+> Mateusz po blisko sześciu latach pracy na stanowisku Backend Developera został DevOpsem. Nie była to łatwa decyzja, bo w organizacji, w której pracował, był pierwszą osobą na tym stanowisku. Brakowało więc wypracowanej kultury DevOpsa, a przede wszystkim świadomości współpracowników, w jaki sposób może im pomóc rozwiązywać problemy. O pracy DevOpsa rozmawialiśmy z Mateuszem Lubański, DevOps & Software Engineer w ICE Mortage Technology.
+
+### [What a Year of WFH Has Done to Our Relationships at Work ](https://hbr.org/2021/03/what-a-year-of-wfh-has-done-to-our-relationships-at-work)
+
+> More than a year into the Covid-19 pandemic and WFH, new research from Microsoft shows that employees and teams are becoming much more siloed. In particular, connections with people outside our immediate teams has shrunk dramatically, leading to fewer places to connect around innovative ideas and fewer opportunities to build social capital. Further, this trend is making employees feel lonely and isolated. To help address this issue, leaders should focus on being proactive about connecting employees across the organization, make space for connections outside official meetings, encourage and reward social support, and improve the structure of meetings.
+
+### [https://antonz.org/sqlite-is-not-a-toy-database/](https://antonz.org/sqlite-is-not-a-toy-database/)
+
+> Whether you are a developer, data analyst, QA engineer, DevOps person, or product manager - SQLite is a perfect tool for you.
+
+### [SQLite is not a toy database](https://antonz.org/random-table/)
+
+> Let’s say you want to check how a query behaves on a large table - but there is no such table at hand. This is not a problem if your DBMS supports SQL recursion: lots of data can be generated with a single query. The WITH RECURSIVE clause comes to the rescue.
+
+### [10 Infographics That Make You More Productive at Work](https://blog.weekdone.com/10-infographics-that-make-you-more-productive-at-work/)
+
+> “Amateurs sit and wait for inspiration, the rest of us just get up and go to work,” wrote Stephen King.
+
 ## Python
 
 ### [syntactic sugar](https://snarky.ca/tag/syntactic-sugar/)
@@ -108,10 +128,6 @@ Some of them are strictly related to the things I did or am currently doing.
 ### [Five Common Django Mistakes](https://www.laac.dev/blog/five-common-django-mistakes/)
 
 > When you’re starting out with Django, you can introduce subtle bugs due to lack of knowledge. I wrote this post partially for myself to reference in my professional development, but also to help illuminate some mistakes that I see.
-
-## Python libraries
-
-## Django libraries
 
 ## Tools
 
@@ -167,6 +183,19 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > How to Deal with Difficult People on Software Projects.
 
+### [Why All My Servers Have an 8GB Empty File](https://brianschrader.com/archive/why-all-my-servers-have-an-8gb-empty-file/)
+
+> On Linux servers it can be incredibly difficult for any process to succeed if the disk is full. Copy commands and even deletions can fail or take forever as memory tries to swap to a full disk and there's very little you can do to free up large chunks of space. But what if there was a way to free up a large chunk of space on disk right when you need it most? Enter the dd command.
+
+### [Compare AWS and Azure services to Google Cloud](https://cloud.google.com/free/docs/aws-azure-gcp-service-comparison)
+
+> The table which lists generally available Google Cloud services and maps them to similar offerings in Amazon Web Services (AWS) and Microsoft Azure
+
+## Podcasts
+
+### [Talk to my backend, czyli Miłosz Kusiciel o platformie chmurowej GCP](https://flyonthecloud.com/pl/flytalks/talk-to-my-backend-milosz-kusiciel/)
+
+> Jak wyglądają chmury z perspektywy Head of Technology? Żeby uzyskać odpowiedź na to pytanie, zwracamy się do… właśnie do Head of Technology. W czwartym odcinku FlyTalks Miłosz Kusiciel dzieli się doświadczeniami z 12-letniej współpracy z software house’m Merixstudio, a co za tym idzie, z tysiącami ambitnych specjalistów, setkami globalnych firm i dziesiątkami zagranicznych startupów technologicznych.
 
 ## Videos
 
@@ -181,10 +210,4 @@ Some of them are strictly related to the things I did or am currently doing.
 ### [TechWorld with Nana - Kubernetes Tutorial for Beginners [FULL COURSE in 4 Hours]](https://www.youtube.com/watch?v=X48VuDVv0do)
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/X48VuDVv0do" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
