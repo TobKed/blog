@@ -3,7 +3,7 @@ Date: 2021-01-01
 Category: summary
 Tags: summary, year, 2020
 Slug: 2020-summary
-Summary: Year summary
+Summary: Ups and downs of 2020
 Header_Cover: /images/posts/2020_summary.png
 Status: published
 
@@ -102,16 +102,16 @@ with articles, tools and other interesting materials I came across.
 
 2020 summaries:
 
- - [March](https://tobked.github.io/blog/2020-march-links.html)
- - [April](https://tobked.github.io/blog/2020-april-links.html)
- - [May](https://tobked.github.io/blog/2020-may-links.html)
- - [June](https://tobked.github.io/blog/2020-june-links.html)
- - [July](https://tobked.github.io/blog/2020-july-links.html)
- - [August](https://tobked.github.io/blog/2020-august-links.html)
- - [September](https://tobked.github.io/blog/2020-september-links.html)
- - [October](https://tobked.github.io/blog/2020-october-links.html)
- - [November](https://tobked.github.io/blog/2020-november-links.html)
- - [December](https://tobked.github.io/blog/2020-december-links.html)
+ - [March]({filename}/posts/2020_03_31_march_links.md)
+ - [April]({filename}/posts/2020_04_30_april_links.md)
+ - [May]({filename}/posts/2020_05_31_may_links.md)
+ - [June]({filename}/posts/2020_06_30_june_links.md)
+ - [July]({filename}/posts/2020_07_31_july_links.md)
+ - [August]({filename}/posts/2020_08_31_august_links.md)
+ - [September]({filename}/posts/2020_09_30_september_links.md)
+ - [October]({filename}/posts/2020_10_31_october_links.md)
+ - [November]({filename}/posts/2020_11_30_november_links.md)
+ - [December]({filename}/posts/2020_12_31_december_links.md)
 
 I also wrote a few blog posts that were published on the company website (reposted on Medium):
 

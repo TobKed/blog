@@ -15,7 +15,8 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
 
-... 
+The main event of the month was **[Poductivity step by step (PL: Produktywność krok po kroku)](https://produktywnosckrokpokroku.pl/)** course.
+I wrote more about it in separate post: [Productivity course]({filename}/posts/2021_04_15_productivity.md)
 
 ## Articles
 
@@ -83,13 +84,13 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > More than a year into the Covid-19 pandemic and WFH, new research from Microsoft shows that employees and teams are becoming much more siloed. In particular, connections with people outside our immediate teams has shrunk dramatically, leading to fewer places to connect around innovative ideas and fewer opportunities to build social capital. Further, this trend is making employees feel lonely and isolated. To help address this issue, leaders should focus on being proactive about connecting employees across the organization, make space for connections outside official meetings, encourage and reward social support, and improve the structure of meetings.
 
-### [https://antonz.org/sqlite-is-not-a-toy-database/](https://antonz.org/sqlite-is-not-a-toy-database/)
+### [SQLite is not a toy database](https://antonz.org/sqlite-is-not-a-toy-database/)
 
 > Whether you are a developer, data analyst, QA engineer, DevOps person, or product manager - SQLite is a perfect tool for you.
 
-### [SQLite is not a toy database](https://antonz.org/random-table/)
+### [How to create a 1M record table with a single query](https://antonz.org/random-table/)
 
-> Let’s say you want to check how a query behaves on a large table - but there is no such table at hand. This is not a problem if your DBMS supports SQL recursion: lots of data can be generated with a single query. The WITH RECURSIVE clause comes to the rescue.
+> Let’s say you want to check how a query behaves on a large table - but there is no such table at hand. This is not a problem if your DBMS supports SQL recursion: lots of data can be generated with a single query. The `WITH RECURSIVE` clause comes to the rescue.
 
 ### [10 Infographics That Make You More Productive at Work](https://blog.weekdone.com/10-infographics-that-make-you-more-productive-at-work/)
 
