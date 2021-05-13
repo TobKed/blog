@@ -42,6 +42,14 @@ https://www.coursera.org/account/accomplishments/specialization/E452CCSHMMGH
 
 > Programming is hard, programming is not for everyone, and for the time being everyone might be able to do it, but most definitely most should not.
 
+### [The social contract of open source](https://snarky.ca/the-social-contract-of-open-source/)
+
+> Open source code is like me putting a stack of USB drives with my open source code on them on my front lawn with a sign that says "FREE", and you coming by and taking a USB drive when you want the latest copy of my open source code.
+
+### [Burned Out and Fantasizing About a Big Life Reset? Start Here](https://blog.doist.com/burnout-career-life-reset/)
+
+> You're never too old to ask "What should I be when I grow up?" Whether you’re tired of the corporate slog or longing for something different, take these concrete steps towards your dream job.
+
 ## Python
 
 ### [Free Python Books](https://github.com/pamoroso/free-python-books)
@@ -55,6 +63,12 @@ https://www.coursera.org/account/accomplishments/specialization/E452CCSHMMGH
 ### [All The Important Features and Changes in Python 3.10](https://towardsdatascience.com/all-the-important-features-and-changes-in-python-3-10-e3d1fe542fbf)
 
 > The release of Python 3.10 is getting closer, so it’s time to take a look at most important new features and changes it’s going to bring.
+
+### [Learn by reading code: Python standard library design decisions explained (for advanced beginners)](https://death.andgravity.com/stdlib)
+
+> Maybe you've heard you should develop an eye by reading and writing a lot of code.
+> It's true.
+> So, what code should you read?
 
 ## Django
 
@@ -77,6 +91,10 @@ https://www.coursera.org/account/accomplishments/specialization/E452CCSHMMGH
 ## Python libraries
 
 ## Django libraries
+
+### [drf-spectacular](https://github.com/tfranzel/drf-spectacular)
+
+> Sane and flexible OpenAPI 3.0 schema generation for Django REST framework.
 
 ## Tools
 
