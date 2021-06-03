@@ -12,9 +12,13 @@ Status: draft
 I am aggregating here some more or less interesting stuff of various IT related materials which I came across this month.
 Some of them are strictly related to the things I did or am currently doing.
 
-https://www.coursera.org/account/accomplishments/specialization/E452CCSHMMGH
 
 ## Some thoughts
+
+I completed [Architecting with Google Kubernetes Engine](https://www.coursera.org/account/accomplishments/specialization/E452CCSHMMGH) course on [coursera.org](https://www.coursera.org/specializations/architecting-google-kubernetes-engine).
+
+![Datastuido dashboard]({static}/images/posts/CERTIFICATE_LANDING_PAGE~E452CCSHMMGH.jpeg)
+[Architecting with Google Kubernetes Engine - Certificate](https://www.coursera.org/account/accomplishments/specialization/E452CCSHMMGH)
 
 ## Articles
 
@@ -88,8 +92,6 @@ https://www.coursera.org/account/accomplishments/specialization/E452CCSHMMGH
 
 > Small scale websites allow you to get away with things which sound counter intuitive when you are used to deploying complex web applications with service level agreements, or when you are just starting out and only find resources talking about those production ready deployments.
 
-## Python libraries
-
 ## Django libraries
 
 ### [drf-spectacular](https://github.com/tfranzel/drf-spectacular)
@@ -135,10 +137,7 @@ https://www.coursera.org/account/accomplishments/specialization/E452CCSHMMGH
 
 > The aim of this cheat sheet is to provide an easy to use list of common security mistakes and good practices that will help you secure your Docker containers.
 
-## Podcasts
-
 ## Videos
-
 
 ### [PubSub i Python w jednym stali domku, czyli asnychroniczny system eventowy. - Miłosz Kusiciel](https://www.youtube.com/watch?v=478625P95xk)
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
@@ -157,8 +156,3 @@ https://www.coursera.org/account/accomplishments/specialization/E452CCSHMMGH
 
 ### [Why you should define your fears instead of your goals - Tim Ferries](https://www.ted.com/talks/tim_ferriss_why_you_should_define_your_fears_instead_of_your_goals)
 <div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/tim_ferriss_why_you_should_define_your_fears_instead_of_your_goals" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div></div>
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>

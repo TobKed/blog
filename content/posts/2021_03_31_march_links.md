@@ -15,8 +15,8 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
 
-The main event of the month was **[Poductivity step by step (PL: Produktywność krok po kroku)](https://produktywnosckrokpokroku.pl/)** course.
-I wrote more about it in separate post: [Productivity course]({filename}/posts/2021_04_15_productivity.md)
+The main event of the month was the **[Poductivity step by step (PL: Produktywność krok po kroku)](https://produktywnosckrokpokroku.pl/)** course.
+I wrote more about it in a separate post: [Productivity course]({filename}/posts/2021_04_15_productivity.md)
 
 ## Articles
 
@@ -161,7 +161,7 @@ I wrote more about it in separate post: [Productivity course]({filename}/posts/2
 ### [Infrastructure as Code at Enterprise Scale: Identify the Right Approach for Your Organization](https://www.singlestoneconsulting.com/blog/infrastructure-as-code-at-enterprise-scale/)
 
 > An in-depth look at the tools and guidelines to help scale your IaC approach.
-> 
+
 ### [pulumi](https://www.pulumi.com/)
 
 > Modern Infrastructure as Code. Create, deploy, and manage infrastructure on any cloud using familiar programming languages and tools.
