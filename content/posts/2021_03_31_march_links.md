@@ -4,7 +4,7 @@ Category: summary
 Tags: python, blog, podcast, series, aggregate, summary, month, 2021
 Slug: 2021-march-links
 Summary: Interesting stuff from the month
-Status: draft
+Status: published
 
 
 # March 2021
