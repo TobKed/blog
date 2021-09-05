@@ -1,5 +1,5 @@
 Title: Month summary - July 2021
-Date: 2021-0X-31
+Date: 2021-07-31
 Category: summary
 Tags: python, blog, podcast, series, aggregate, summary, month, 2021
 Slug: 2021-July-links
