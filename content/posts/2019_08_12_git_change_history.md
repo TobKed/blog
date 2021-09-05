@@ -20,7 +20,7 @@ I wanted to present how I rewrite history, which commands do I use and how do I 
 ### Setting up Git
 Here are some Git settings which are useful during rewriting history:
 
-* `git config --global merge.ff=false`
+* `git config --global merge.ff false`
 > By default, Git does not create an extra merge commit when merging a commit that is a descendant of the current commit. Instead, the tip of the current branch is fast-forwarded. When set to false, this variable tells Git to create an extra merge commit in such a case (equivalent to giving the --no-ff option from the command line)."
 > 
 > -- <cite>[merge.ff - Git documentation](https://git-scm.com/docs/git-config#Documentation/git-config.txt-mergeff)</cite>
