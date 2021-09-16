@@ -1,7 +1,7 @@
 Title: Month summary - July 2021
 Date: 2021-07-31
 Category: summary
-Tags: python, blog, podcast, series, aggregate, summary, month, 2021
+Tags: python, blog, podcast, series, aggregate, summary, month, 2021, git
 Slug: 2021-July-links
 Summary: Interesting stuff from the month
 Status: draft
@@ -14,7 +14,34 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
 
+During my work in the office I found out that many times the use of Git is discussed during quick chats or coffee breaks.
+There is nothing wrong with this, however short discussions do not give space for deeper explanation or analysis.
+I decided that a presentation about Git will fill this gap which resulted in **Brival Tech Talk - tips & tricks**.
+I've expanded topics from my post on Git: [Changing history in Git]({filename}/posts/2019_08_12_git_change_history.md).
+
+I talked about:
+ - git config
+ - pre-commit
+ - fast-forward or not
+ - git add --patch
+ - -a, -m
+ - git adog
+ - git log master..@
+ - git reflog
+ - git revert
+ - git commit --amend
+ - git rebase
+ - git rebase --interactive
+ - git rebase --interactive --autosquash --autostash
+ - git rebase --exec
+
+I hope it is helpful and shows some less obvious ways of using Git.
+I spent some significant time reading related articles and documentation.
+I tested commands and concepts in the field as well because the presentation was conducted hand in hand with a live demo.
+I found it helpful.
+
 ![Brival Tech Talk - tips & tricks]({static}/images/posts/brival_tech_talk_git.jpg)
+
 
 ## Articles
 
