@@ -4,7 +4,7 @@ Category: summary
 Tags: python, blog, podcast, series, aggregate, summary, month, 2021
 Slug: 2021-august-links
 Summary: Interesting stuff from the month
-Status: draft
+Status: published
 
 
 # August 2021
