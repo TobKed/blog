@@ -20,20 +20,22 @@ I decided that a presentation about Git will fill this gap which resulted in **B
 I've expanded topics from my post on Git: [Changing history in Git]({filename}/posts/2019_08_12_git_change_history.md).
 
 I talked about:
- - git config
- - pre-commit
- - fast-forward or not
- - git add --patch
- - -a, -m
- - git adog
- - git log master..@
- - git reflog
- - git revert
- - git commit --amend
- - git rebase
- - git rebase --interactive
- - git rebase --interactive --autosquash --autostash
- - git rebase --exec
+<ul>
+    <li>git config </li>
+    <li>pre-commit </li>
+    <li>fast-forward or not </li>
+    <li>git add --patch </li>
+    <li>git commit -a, -m </li>
+    <li>git adog </li>
+    <li>git log master..@ </li>
+    <li>git reflog </li>
+    <li>git revert </li>
+    <li>git commit --amend </li>
+    <li>git rebase </li>
+    <li>git rebase --interactive </li>
+    <li>git rebase --interactive --autosquash --autostash </li>
+    <li>git rebase --exec </li>
+</ul>
 
 I hope it is helpful and shows some less obvious ways of using Git.
 I spent some significant time reading related articles and documentation.

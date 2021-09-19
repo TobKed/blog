@@ -37,6 +37,10 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > If you’ve ever spent ages waiting for an Ansible playbook to get through a bunch of tasks so yours can be tested, then this article is for you.
 
+### [Technical documentation writing quick tips](https://marijkeluttekes.dev/blog/articles/2021/09/06/technical-documentation-writing-quick-tips/)
+
+> These are tips that I give colleagues and pupils based on practical experience. Writing is a skill, and people have written entire books about the subject; hence this is a “quick tips” article.
+
 ## Python
 
 ### [The Unknown Features of Python's Operator Module](https://martinheinz.dev/blog/54)
@@ -55,13 +59,49 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > In this post, I'd like to describe how you can track your personal finances using a workflow that is highly focused on data privacy, is 100% self-hosted, and uses only the Python ecosystem.
 
+### [Python Project-Local Virtualenv Management](https://hynek.me/til/python-project-local-venvs/)
+
+> On UNIX-like operating systems you can have the Python equivalent of node_modules today, for every Python version, without changing your workflows.
+
+### [FastAPI with Async SQLAlchemy, SQLModel, and Alembic](https://testdriven.io/blog/fastapi-sqlmodel/)
+
+> This tutorial looks at how to work with SQLAlchemy asynchronously with SQLModel and FastAPI. We'll also configure Alembic for handling database migrations.
+
+### [Python 3.10 – Simplifies Unions in Type Annotations](https://www.blog.pythonlibrary.org/2021/09/11/python-3-10-simplifies-unions-in-type-annotations/)
+
+> The focus of this tutorial is to talk about PEP 604, which makes writing union types easier when adding type annotation (AKA: type hinting) to your codebase.
+
+### [Writing unit tests for Lambda functions in Python](https://emshea.com/post/writing-python-unit-tests-lambda-functions)
+
+> This post shares what I've learned about writing unit tests for Lambda functions. I'll explain what unit tests are and why they can help you write and make changes to your function code quickly. I've also written an example Python function and unit test (using the unittest framework) so you can see it in practice.
+
 ## Django
 
 ### [Python and Django Logging in Plain English](https://djangodeconstructed.com/2018/12/18/django-and-python-logging-in-plain-english/)
 
 > If you’ve ever written a program and printed out a value to see what’s going on during execution, then you understand at some level why logging is so valuable. Knowing what’s happening in your code at a point in time is enormously useful from both technical and business perspectives.
 
+### [Python and Django Logging in Plain English](https://djangodeconstructed.com/2018/12/18/django-and-python-logging-in-plain-english/)
+
+> If you’ve ever written a program and printed out a value to see what’s going on during execution, then you understand at some level why logging is so valuable. Knowing what’s happening in your code at a point in time is enormously useful from both technical and business perspectives.
+
+### [I Built a Django Scaffold Library That Creates A Fully Functional REST API in Seconds](https://python.plainenglish.io/scaffold-django-apis-in-seconds-3fb1610a7908)
+
+> [dr_scaffold](https://github.com/Abdenasser/dr_scaffold)This library will help you to scaffold full Restful API Resources in seconds using only one command.
+
+### [Django React Boilerplate - With Free Samples](https://blog.appseed.us/django-react-boilerplate/)
+
+> Learn how to bundle Django and React and code a full-stack boilerplate using this modern stack - with free samples.
+
+### [Understand Django - User File Use](https://www.mattlayman.com/understand-django/media-files/)
+
+> The latest installment in this series from Matt Layman covers file management, such as accepting images/files from users.
+
 ## Python libraries
+
+### [prettymaps](https://github.com/marceloprates/prettymaps)
+
+> A minimal Python library to draw customized maps from OpenStreetMap data.
 
 ### [prettymaps](https://github.com/marceloprates/prettymaps)
 
@@ -77,6 +117,10 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > A pure-Python Django/Jinja template indenter without dependencies.
 
+### [Django Advanced Filters](https://github.com/modlinltd/django-advanced-filters)
+
+> A django ModelAdmin mixin which adds advanced filtering abilities to the admin.
+
 ## Tools
 
 ## Cloud
@@ -88,6 +132,10 @@ Some of them are strictly related to the things I did or am currently doing.
 > This article by Dr Piotr Wozniak is part of SuperMemo Guru series on memory, learning, creativity, and problem solving.
 
 ## Podcasts
+
+### [The Real Python Podcast - Episode 77: Advantages of Completing Small Python Projects](https://realpython.com/podcasts/rpp/77/)
+
+> Are you a beginner or intermediate Python programmer who has made it through some of the fundamentals? Have you tried to tackle a big project but got stuck and frustrated? Completing some small projects might be the answer. This week on the show, we have author Al Sweigart and talk about his new book, “The Big Book of Small Python Projects.”
 
 ## Videos
 
