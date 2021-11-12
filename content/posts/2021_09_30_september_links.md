@@ -4,7 +4,7 @@ Category: summary
 Tags: python, blog, podcast, series, aggregate, summary, month, 2021
 Slug: 2021-september-links
 Summary: Interesting stuff from the month
-Status: draft
+Status: published
 
 
 # September 2021
@@ -14,6 +14,21 @@ Some of them are strictly related to the things I did or am currently doing.
 
 
 ## Some thoughts
+
+At the end of the month I attended the meetup called [IT Depends #8: DataLake i wyzwania AdTechu, czyli jak nie utonąć w danych (DataLake and AdTech challenges, i.e. how not to drown in data)](https://www.linkedin.com/events/itdepends-8-datalakeiwyzwaniaad6830784358421458944/) organized by [Clearcode](https://clearcode.cc/) company.
+There were two very interesting presentations:
+
+<ul>
+  <li> <b> Data Lake - co to jest i dlaczego lepiej nie robić z jeziora bagna?</b> (Data Lake - what is it and why is it better not to make a swamp out of a lake?) by Noemi</li>
+  <li> <b>Change Data Capture, czyli jak wiedzieć o każdej zmianie w Twojej bazie danych</b> (Change Data Capture: how to know about every change in your database) by Dawid</li>
+</ul>
+
+
+Additionally I attended workshops where we played with [Debezium](https://github.com/debezium/debezium) which is <i>is an open source project that provides a low latency data streaming platform for change data capture</i>.
+Whe used it to track changes in PostgreSQL database and stream them to Kafka from where they were consumed by a small JS app. The repository for this workshop is publicly available here: [ClearcodeHQ/it-depends-8](https://github.com/ClearcodeHQ/it-depends-8).
+
+It was a very nicely conducted meetup which I happily attended, moreover I won some gadgets like a cup, a t-shirt and a book about data lakes.
+
 
 ## Articles
 
@@ -75,6 +90,30 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > This post shares what I've learned about writing unit tests for Lambda functions. I'll explain what unit tests are and why they can help you write and make changes to your function code quickly. I've also written an example Python function and unit test (using the unittest framework) so you can see it in practice.
 
+### [Type hints, protocols, and good sense](https://speakerdeck.com/ramalho/type-hints-protocols-and-good-sense)
+
+> PyCon India keynote, presented September 19, 2021. Main sections: 1. The state of static typing in Python 2. The four modes of typing 3. The central role of typing.Protocol 4. Typing limits and how to address them.
+
+### [Logging in Python like a PRO](https://blog.guilatrova.dev/how-to-log-in-python-like-a-pro/)
+
+> I'll show you what good logging is with real-life examples. Most people don't know what to log, so they end up creating just noise....
+
+### [Handling exceptions in Python like a PRO](https://blog.guilatrova.dev/handling-exceptions-in-python-like-a-pro/)
+
+> One of the downsides of a flexible language like python is that people often assume that as long as something works then it's probably the proper way of doing so. I would like to write this humble guide on how to effectively use python exceptions and how to handle exceptions and log them correctly
+
+### [Validating and Formatting Phone Numbers in Python with phonenumbers](https://stackabuse.com/validating-and-formatting-phone-numbers-in-python/)
+
+> In this tutorial, we’ll learn how to parse, validate and extract phone numbers, as well as how to extract additional information from the phone number(s) like the carrier, timezone, or geocoder details.
+
+### [Writing unit tests for Lambda functions in Python](https://emshea.com/post/writing-python-unit-tests-lambda-functions)
+
+> This post shares what I've learned about writing unit tests for Lambda functions. I'll explain what unit tests are and why they can help you write and make changes to your function code quickly.
+
+### [Why does Black insist on reformatting my entire project?](https://lukasz.langa.pl/36380f86-6d28-4a55-962e-91c2c959db7a/)
+
+> For some users, one giant commit that reformats the world is an unpleasant thought. After all, it’s a “useless commit” and poisons git blame! I think that’s backwards.
+
 ## Django
 
 ### [Python and Django Logging in Plain English](https://djangodeconstructed.com/2018/12/18/django-and-python-logging-in-plain-english/)
@@ -96,6 +135,14 @@ Some of them are strictly related to the things I did or am currently doing.
 ### [Understand Django - User File Use](https://www.mattlayman.com/understand-django/media-files/)
 
 > The latest installment in this series from Matt Layman covers file management, such as accepting images/files from users.
+
+### [Using Celery task to generate data for a view](https://appliku.com/post/using-celery-task-to-generate-data-for-a-view?)
+
+> In this article we'll solve a problem when a view is taking too long to generate the response by moving actual data generation into the Celery task.
+
+### [Django Base Site](https://github.com/epicserve/django-base-site)
+
+> The Django Base Site is a Django site that is built using the best Django practices and comes with all the common Django packages that you need to jumpstart your next project.
 
 ## Python libraries
 
@@ -121,15 +168,35 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > A django ModelAdmin mixin which adds advanced filtering abilities to the admin.
 
+### [Django Cacheops](https://github.com/Suor/django-cacheops)
+
+> A slick app that supports automatic or manual queryset caching and automatic granular event-driven invalidation.
+
 ## Tools
 
+### [Debezium](https://github.com/debezium/debezium)
+
+> Change data capture for a variety of databases.
+
 ## Cloud
+
+### [Managing GCP service usage through delegated role grants](https://medium.com/google-cloud/managing-gcp-service-usage-through-delegated-role-grants-a843610f2226)
+
+> Delegated role grants is a new feature in GCP that allows organization administrators to control which roles a user can grant or revoke even when the user has setIamPolicy permission on a resource. In other words, through delegated role grants organization administrators can give a user permissions to grant/revoke specific roles.
+
+### [Awesome GCP Certifications](https://github.com/sathishvj/awesome-gcp-certifications)
+
+> Google Cloud Platform Certification resources.
 
 ## Other stuff
 
 ### [Genius checklist](https://supermemo.guru/wiki/Genius_checklist)
 
 > This article by Dr Piotr Wozniak is part of SuperMemo Guru series on memory, learning, creativity, and problem solving.
+
+### [20 Reasons To Quit Social Media](https://durmonski.com/life-advice/reasons-to-quit-social-media/)
+
+> The decision is up to you. You can either bombard your brain with endless distractions. Or you can use the time to dig deep on topics that actually interest you.
 
 ## Podcasts
 
@@ -139,7 +206,8 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Videos
 
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
+### [Natalia Stanko - Recovering from burnout - PyCode 2020](https://www.youtube.com/watch?v=uEat-OXaT9M)
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/uEat-OXaT9M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+
