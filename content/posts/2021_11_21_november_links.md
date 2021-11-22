@@ -21,9 +21,9 @@ Comments like "learning vim is the second most significant skill after reading" 
 
 ## Articles
 
-### []()
+### [The Duct Tape Programmer](https://www.joelonsoftware.com/2009/09/23/the-duct-tape-programmer/)
 
-> 
+> Jamie Zawinski is what I would call a duct-tape programmer. And I say that with a great deal of respect. He is the kind of programmer who is hard at work building the future, and making useful things so that people can do stuff. He is the guy you want on your team building go-carts, because he has two favorite tools: duct tape and WD-40. And he will wield them elegantly even as your go-cart is careening down the hill at a mile a minute. This will happen while other programmers are still at the starting line arguing over whether to use titanium or some kind of space-age composite material that Boeing is using in the 787 Dreamliner. 
 
 ## Python
 
