@@ -15,9 +15,22 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
 
-Despite of the fact that most of the month I was sick in my overheated head arose idea to finally learn Vim.
-I decided Moving beyond moving upd and down and at least trying to understand how people are using on the daily basis, why it so popular.
-Comments like "learning vim is the second most significant skill after reading" makes you think.
+Despite of the fact that most of the month I was sick in my overheated head arose idea to finally learn Vim (`a free and open-source, screen-based text editor program for Unix`)
+Comments like "Vim is the second most significant skill I learned after reading" makes you think.
+I decided to move beyond moving up and down with arrow keys and at least try to understand how people are using it on the daily basis, why it so popular/unpopular.
+I must admin that learning curve is not so friendly at the beggining, making through `vimtutor` is essantial but watching how poeple using opens eyes on possibilites.
+So at the end of month I started enjoying editing files with it, especially on fresh linux instalations.
+Writing small scripts without installing any additional software became much more smoother.
+I appreciate vim navigation so much I started to use [vimium](https://github.com/philc/vimium) which is a browser extension which provides vim-liked keyboard control and navigation.
+Another fresh item in my toolbelt is [ranger](https://github.com/ranger/ranger), a minimalistic console file manager. 
+Nice thing in `ranger` is `:bulkrename` command which gives you list of filenames easy editable in vim, so actions like removing suffixes in folder with numerous files is done in blink of an eye.
+
+Another major point for this months is cloud. 
+When I finally got better I signed up for AWS Practitioner Certficate exam which I successfully passed.
+I already have knowledge about Google Cloud Platform so broedening knowledge with another provider gave me better understaing of the Cloud.
+I have better overview of possibilites which Cloud computing offers and feel much more confident in this field.
+It is interesting to observe how major players solve the same problems in different way.
+
 
 ## Articles
 
