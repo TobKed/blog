@@ -15,21 +15,22 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
 
-Despite of the fact that most of the month I was sick in my overheated head arose idea to finally learn Vim (`a free and open-source, screen-based text editor program for Unix`)
-Comments like "Vim is the second most significant skill I learned after reading" makes you think.
-I decided to move beyond moving up and down with arrow keys and at least try to understand how people are using it on the daily basis, why it so popular/unpopular.
-I must admin that learning curve is not so friendly at the beggining, making through `vimtutor` is essantial but watching how poeple using opens eyes on possibilites.
-So at the end of month I started enjoying editing files with it, especially on fresh linux instalations.
-Writing small scripts without installing any additional software became much more smoother.
-I appreciate vim navigation so much I started to use [vimium](https://github.com/philc/vimium) which is a browser extension which provides vim-liked keyboard control and navigation.
-Another fresh item in my toolbelt is [ranger](https://github.com/ranger/ranger), a minimalistic console file manager. 
-Nice thing in `ranger` is `:bulkrename` command which gives you list of filenames easy editable in vim, so actions like removing suffixes in folder with numerous files is done in blink of an eye.
 
-Another major point for this months is cloud. 
-When I finally got better I signed up for AWS Practitioner Certficate exam which I successfully passed.
-I already have knowledge about Google Cloud Platform so broedening knowledge with another provider gave me better understaing of the Cloud.
-I have better overview of possibilites which Cloud computing offers and feel much more confident in this field.
-It is interesting to observe how major players solve the same problems in different way.
+Despite the fact that most of the month I was sick, an idea came to my overheated head to finally learn Vim (`a free and open-source, screen-based text editor program for Unix`).
+Comments like "Vim is the second most significant skill I learned after reading" made me  think.
+I decided to move beyond moving up and down with arrow keys and at least try to understand how people are using it on a daily basis, why it is so popular/unpopular.
+I must admit that the learning curve is not so friendly at the beginning, making through the `vimtutor` is essential, however watching how people use it opens your eyes to possibilities.
+So at the end of the month I started enjoying editing files with it, especially on fresh Linux installations.
+Writing small scripts without installing any additional software became much smoother.
+I appreciate vim navigation so much that I started using [vimium](https://github.com/philc/vimium), which is a browser extension that provides vim-liked keyboard control and navigation.
+Another fresh item in my toolbelt is [ranger](https://github.com/ranger/ranger), a minimalistic console file manager.
+A nice  thing in `ranger` is the `:bulkrename` command which gives you a list of filenames easily editable in vim, so actions like removing suffixes in a folder with numerous files can be done in the blink of an eye.
+
+Another major point for this month is the Cloud.
+When I finally got better I signed up for the AWS Practitioner Certificate exam which I successfully passed. Yay!!!
+I already have some knowledge about the Google Cloud Platform (Google Cloud Associate Certificate), so expanding it with another provider gave me a better understanding of the Cloud in general.
+I have a better overview of possibilities which Cloud computing offers and feel much more confident in this field.
+It is interesting to observe how major players solve the same problems in different ways.
 
 
 ## Articles
@@ -44,15 +45,11 @@ It is interesting to observe how major players solve the same problems in differ
 
 > This PEP is a tutorial for the pattern matching introduced by [PEP 634](https://www.python.org/dev/peps/pep-0634).
 
-## Django
-
 ## Python libraries
 
 ### [speedtest-cli](https://github.com/sivel/speedtest-cli/)
 
 > Command line interface for testing internet bandwidth using speedtest.net
-
-## Django libraries
 
 ## Tools
 
@@ -64,8 +61,6 @@ It is interesting to observe how major players solve the same problems in differ
 
 > Vimium is a browser extension that provides keyboard-based navigation and control of the web in the spirit of the Vim editor.
 
-## Cloud
-
 ## Other stuff
 
 ### [wttr.in](https://github.com/chubin/wttr.in)
@@ -76,10 +71,7 @@ It is interesting to observe how major players solve the same problems in differ
 
 > A curated list of awesome console services (reachable via HTTP, HTTPS and other network protocols).
 
-## Podcasts
-
 ## Video
-
 
 ### [Vim Diesel's OFFICIAL Vimtutor Let's Play/Commentary! (1 HOUR+ Special)](https://www.youtube.com/watch?v=d8XtNXutVto)
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
@@ -100,10 +92,4 @@ It is interesting to observe how major players solve the same problems in differ
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/f3dNkkFBvM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
 
