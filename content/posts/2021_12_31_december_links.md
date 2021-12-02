@@ -17,6 +17,10 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Articles
 
+### [Want to be great? Know a lot](https://www.iamjonas.me/2021/10/want-to-be-great-know-lot.html)
+
+> To become better you need to know what's out there. You need to turn the unknown unknowns into known unknowns.
+
 ## Python
 
 ## Django

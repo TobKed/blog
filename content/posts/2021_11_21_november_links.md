@@ -15,15 +15,15 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
 
-
 Despite the fact that most of the month I was sick, an idea came to my overheated head to finally learn Vim (`a free and open-source, screen-based text editor program for Unix`).
 Comments like "Vim is the second most significant skill I learned after reading" made me  think.
 I decided to move beyond moving up and down with arrow keys and at least try to understand how people are using it on a daily basis, why it is so popular/unpopular.
-I must admit that the learning curve is not so friendly at the beginning, making through the `vimtutor` is essential, however watching how people use it opens your eyes to possibilities.
-So at the end of the month I started enjoying editing files with it, especially on fresh Linux installations.
+I must admit that the learning curve is not so friendly at the beginning. 
+It is essential to work through the “vimtutor” as it gives you some basics, but watching how people use it opens your eyes to the possibilities of using it efficiently.
+So at the end of the month I started to enjoy editing files with it, especially on fresh Linux installations.
 Writing small scripts without installing any additional software became much smoother.
 I appreciate vim navigation so much that I started using [vimium](https://github.com/philc/vimium), which is a browser extension that provides vim-liked keyboard control and navigation.
-Another fresh item in my toolbelt is [ranger](https://github.com/ranger/ranger), a minimalistic console file manager.
+Another fresh item under my belt is [ranger](https://github.com/ranger/ranger), a minimalistic console file manager.
 A nice  thing in `ranger` is the `:bulkrename` command which gives you a list of filenames easily editable in vim, so actions like removing suffixes in a folder with numerous files can be done in the blink of an eye.
 
 Another major point for this month is the Cloud.
@@ -31,6 +31,10 @@ When I finally got better I signed up for the AWS Practitioner Certificate exam 
 I already have some knowledge about the Google Cloud Platform (Google Cloud Associate Certificate), so expanding it with another provider gave me a better understanding of the Cloud in general.
 I have a better overview of possibilities which Cloud computing offers and feel much more confident in this field.
 It is interesting to observe how major players solve the same problems in different ways.
+
+![AWS Certified Cloud Practitioner]({static}/images/posts/aws-certified-cloud-practitioner.png)
+
+[AWS Certified Cloud Practitioner - credly.com](https://www.credly.com/badges/b3b3b1ac-43da-4715-95ca-3c4881c94473/public_url)
 
 
 ## Articles
