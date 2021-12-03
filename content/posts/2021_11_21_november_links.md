@@ -4,7 +4,7 @@ Category: summary
 Tags: python, blog, podcast, series, aggregate, summary, month, 2021
 Slug: 2021-november-links
 Summary: Interesting stuff from the month
-Status: draft
+Status: published
 
 
 # November 2021
@@ -32,7 +32,7 @@ I already have some knowledge about the Google Cloud Platform (Google Cloud Asso
 I have a better overview of possibilities which Cloud computing offers and feel much more confident in this field.
 It is interesting to observe how major players solve the same problems in different ways.
 
-![AWS Certified Cloud Practitioner]({static}/images/posts/aws-certified-cloud-practitioner.png)
+<img src="{static}/images/posts/aws-certified-cloud-practitioner.png" alt="AWS Certified Cloud Practitioner" style="display: block; margin-left: auto; margin-right: auto;">
 
 [AWS Certified Cloud Practitioner - credly.com](https://www.credly.com/badges/b3b3b1ac-43da-4715-95ca-3c4881c94473/public_url)
 
