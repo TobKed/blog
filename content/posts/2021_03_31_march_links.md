@@ -1,4 +1,4 @@
-Title: Month summary - march 2021
+Title: Month summary - March 2021
 Date: 2021-03-31
 Category: summary
 Tags: python, blog, podcast, series, aggregate, summary, month, 2021
