@@ -6,7 +6,7 @@ import os
 
 THEME = "pelican-clean-blog"
 
-AUTHOR = 'Tobiasz Kedzierski'
+# AUTHOR = 'Tobiasz Kedzierski'
 SITENAME = 'ups and downs'
 SITEURL = ''
 
