@@ -1,5 +1,8 @@
 name: Deploy blog to gh-pages
+
 on:
+  workflow_dispatch:
+    inputs:
   push:
     branches:
       - master
@@ -10,20 +13,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - name: Build
-      uses: ./.github/python-actions
-      env:
-        PIPENV_VENV_IN_PROJECT: true
       with:
-        args: pip install --upgrade pip && pip install -r requirements.txt
-    - name: Theme install
-      uses: ./.github/python-actions
+        submodules: recursive
+    - uses: actions/setup-python@v2
       with:
-        args: git clone https://github.com/gilsondev/pelican-clean-blog.git
-    - name: Deploy
-      uses: ./.github/python-actions
-      with:
-        args: ./deploy-to-gh-pages.sh
+        python-version: '3.6.8'
+        cache: 'pip'
+    - run: pip install -r requirements.txt
+    - run: ./deploy-to-gh-pages.sh
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         GOOGLE_ANALYTICS: ${{ secrets.GOOGLE_ANALYTICS }}

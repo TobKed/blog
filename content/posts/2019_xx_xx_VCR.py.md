@@ -1,5 +1,5 @@
 Title: VCR.py
-Date: 2019-xx-xx
+Date: 2019-08-31
 Category: python
 Tags: python, testing, unittest
 Slug: vcrpy

@@ -1,5 +1,5 @@
 Title: RasbperryPi bluetooth audio receiver
-Date: 2019-xx-xx
+Date: 2019-08-13
 Category: python
 Tags: RPi, RaspberryPi, raspberry, bluetooth
 Slug: raspberry-bluetooth-audio-receiver

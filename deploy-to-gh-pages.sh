@@ -1,7 +1,7 @@
 #!/bin/bash
-# source: https://github.com/nolanbconaway/pelican-deploy-gh-actions/blob/master/deploy-to-gh-pages.sh
+# based on: https://github.com/nolanbconaway/pelican-deploy-gh-actions/blob/master/deploy-to-gh-pages.sh
 
-set -euxo pipefail
+set -euo pipefail
 
 
 if [ -z "$ACCESS_TOKEN" ]
@@ -19,13 +19,13 @@ REPOSITORY_PATH="https://${ACCESS_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
 
 echo '----- Deploy Settings -----'
 
-echo "* REPO: $GITHUB_REPOSITORY"
-echo "* ACTOR: $GITHUB_ACTOR"
-echo "* BRANCH: $BRANCH"
-echo "* BASE_BRANCH: $BASE_BRANCH"
-echo "* COMMIT_EMAIL: $COMMIT_EMAIL"
-echo "* GITHUB_REPOSITORY: $GITHUB_REPOSITORY"
-echo "* FOLDER: $FOLDER"
+echo "* REPO: ${GITHUB_REPOSITORY}"
+echo "* ACTOR: ${GITHUB_ACTOR}"
+echo "* BRANCH: ${BRANCH}"
+echo "* BASE_BRANCH: ${BASE_BRANCH}"
+echo "* COMMIT_EMAIL: ${COMMIT_EMAIL}"
+echo "* GITHUB_REPOSITORY: ${GITHUB_REPOSITORY}"
+echo "* FOLDER: ${FOLDER}"
 
 
 echo '----- Configuring git -----'
@@ -44,20 +44,22 @@ then
   echo 'just creating the branch...' > README.md && \
   git add README.md && \
   git commit -m "Initial ${BRANCH} commit" && \
-  git push $REPOSITORY_PATH $BRANCH
+  git push "${REPOSITORY_PATH}" "${BRANCH}"
 fi
 
 git checkout "$BASE_BRANCH"
 
 
 echo '----- Making HTML -----'
-make publish
+publish=$(make publish 2>&1)
+echo -e "${publish}"
+echo "${publish}" | grep -vzq "ERROR" || exit 1
 
 
 echo '----- Deploying -----'
 git add -f $FOLDER && \
 git commit -m "Deploy to ${BRANCH} - $(date +"%T")" && \
-git push $REPOSITORY_PATH `git subtree split --prefix $FOLDER $BASE_BRANCH`:$BRANCH --force
+git push "${REPOSITORY_PATH}" "$(git subtree split --prefix ${FOLDER} ${BASE_BRANCH})":"${BRANCH}" --force
 
 
-echo "Deployment succesful!"
+echo "Deployment successful!"
