@@ -40,7 +40,7 @@ SOCIAL = (
     ('GitHub', 'https://github.com/TobKed'),
 )
 
-DEFAULT_PAGINATION = 10
+DEFAULT_PAGINATION = 30
 
 COLOR_SCHEME_CSS = 'github.css'
 
