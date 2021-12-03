@@ -6,12 +6,10 @@ Slug: 2020-july-links
 Summary: Interesting stuff from the month
 Status: published
 
-
 # July 2020
 
 I am aggregating here some more or less interesting stuff of various IT related materials which I came across this month.
 Some of them are strictly related to the things I did or am currently doing.
-
 
 ## Some thoughts
 
@@ -21,7 +19,6 @@ This allowed for the separate repository used for package preparation to be depr
 I spent a lot of time working with GitHub Action, therefore I released my own action called [github-forks-sync-action](https://github.com/TobKed/github-forks-sync-action).
 It can be used to synchronise forked repositories with upstream.
 I also made a contribution to [apache/airflow](https://github.com/apache/airflow) related to REST API by implementing DagSource endpoint.
-
 
 ## Articles
 
@@ -41,13 +38,11 @@ I also made a contribution to [apache/airflow](https://github.com/apache/airflow
 
 > Philip James (@phildini) has spoken at various PyCons and DjangoCons and is the PyDev of the Week!
 
-
 ## Python
 
 ### [Pickle’s nine flaws](https://nedbatchelder.com/blog/202006/pickles_nine_flaws.html)
 
 > Python’s pickle module is a very convenient way to serialize and de-serialize objects. It needs no schema, and can handle arbitrary Python objects. But it has problems. This post briefly explains the problems.
-
 
 ## Django
 
@@ -67,13 +62,11 @@ I also made a contribution to [apache/airflow](https://github.com/apache/airflow
 
 > Update the default username/email/password pattern on login/signup with just email/password using a custom user model and django-allauth.
 
-
 ## Python libraries
 
 ### [tuna](https://github.com/nschloe/tuna)
 
 > Performance analysis for Python.
-
 
 ## Tools
 
@@ -85,7 +78,6 @@ I also made a contribution to [apache/airflow](https://github.com/apache/airflow
 
 > During the December 2019 Edward Thomson published an advent calendar of top tips for GitHub Actions.
 
-
 ## Other stuff
 
 ### [Help message for shell scripts](https://samizdat.dev/help-message-for-shell-scripts/)
@@ -94,25 +86,26 @@ I also made a contribution to [apache/airflow](https://github.com/apache/airflow
 
 ### [50 ideas that changed my life](https://www.perell.com/blog/50-ideas-that-changed-my-life)
 
-> These are my guiding principles and the light of intellectual life of the author. All of them will help you think better, and I hope they inspire curiosity. 
+> These are my guiding principles and the light of intellectual life of the author. All of them will help you think better, and I hope they inspire curiosity.
 
 ### [git commit accepts several message flags (-m) to allow multiline commits](https://www.stefanjudis.com/today-i-learned/git-commit-accepts-several-message-flags-m-to-allow-multiline-commits/)
 
-> When you use git on the command line you might have used the message flag (-m). It allows developers to define commit messages inline when calling git commit. 
+> When you use git on the command line you might have used the message flag (-m). It allows developers to define commit messages inline when calling git commit.
 
 ### [gRPC → Episode 75 - Heroku Podcast codeish](https://www.heroku.com/podcasts/codeish/75-grpc)
 
 > We’ll explore the capabilities of gRPC, a modern way for clients and servers to reliably communicate.
 
-
 ## Videos
 
 ### [Tutorial: Katie McLaughlin - Deploying Django on Serverless Infrastructure - PyCon 2020](https://www.youtube.com/watch?v=oYy9_4fm56o)
+
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%"' src="https://www.youtube.com/embed/oYy9_4fm56o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ### [Workshop: Google: Charles Engelke - Serverless Python Applications with Google Cloud - PyCon 2020](https://www.youtube.com/watch?v=4bjX9iKqpXA)
+
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%"' src="https://www.youtube.com/embed/4bjX9iKqpXA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>

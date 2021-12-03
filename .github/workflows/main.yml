@@ -17,7 +17,7 @@ jobs:
           persist-credentials: false
       - uses: actions/setup-python@v2
         with:
-          python-version: '3.6.8'
+          python-version: 3.8
       - uses: pre-commit/action@v2.0.3
         with:
           extra_args: --all-files --show-diff-on-failure --color always
@@ -35,7 +35,7 @@ jobs:
         submodules: recursive
     - uses: actions/setup-python@v2
       with:
-        python-version: '3.6.8'
+        python-version: 3.8
         cache: 'pip'
     - run: pip install -r requirements.txt
     - run: ./deploy-to-gh-pages.sh

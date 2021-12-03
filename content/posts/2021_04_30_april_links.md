@@ -6,12 +6,10 @@ Slug: 2021-april-links
 Summary: Interesting stuff from the month
 Status: published
 
-
 # April 2021
 
 I am aggregating here some more or less interesting stuff of various IT related materials which I came across this month.
 Some of them are strictly related to the things I did or am currently doing.
-
 
 ## Some thoughts
 
@@ -78,7 +76,7 @@ I completed [Architecting with Google Kubernetes Engine](https://www.coursera.or
 
 ### [Deploy A Site Live - Matt Layman](https://www.mattlayman.com/understand-django/deploy-site-live/)
 
->  Deployment is the act of making your application live to your audience, and this article explains the actions you should consider to deploy effectively.
+> Deployment is the act of making your application live to your audience, and this article explains the actions you should consider to deploy effectively.
 
 ### [Django’s Place in a Web Development World Ruled by React](https://thenewstack.io/djangos-place-in-a-web-development-world-ruled-by-react/)
 
@@ -140,19 +138,23 @@ I completed [Architecting with Google Kubernetes Engine](https://www.coursera.or
 ## Videos
 
 ### [PubSub i Python w jednym stali domku, czyli asnychroniczny system eventowy. - Miłosz Kusiciel](https://www.youtube.com/watch?v=478625P95xk)
+
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/478625P95xk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ### [DjangoCon 2019 - Prepping Your Project for Production by Peter Baumgartner](https://www.youtube.com/watch?v=tssYpA6WiQM)
+
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/tssYpA6WiQM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ### [Bombshell! Manipulated Google Search Results PROVED](https://www.youtube.com/watch?v=PPdQCw0oRA0)
+
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/PPdQCw0oRA0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ### [Why you should define your fears instead of your goals - Tim Ferries](https://www.ted.com/talks/tim_ferriss_why_you_should_define_your_fears_instead_of_your_goals)
+
 <div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/tim_ferriss_why_you_should_define_your_fears_instead_of_your_goals" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div></div>

@@ -6,19 +6,17 @@ Slug: 2021-november-links
 Summary: Interesting stuff from the month
 Status: published
 
-
 # November 2021
 
 I am aggregating here some more or less interesting stuff of various IT related materials which I came across this month.
 Some of them are strictly related to the things I did or am currently doing.
-
 
 ## Some thoughts
 
 Despite the fact that most of the month I was sick, an idea came to my overheated head to finally learn Vim (`a free and open-source, screen-based text editor program for Unix`).
 Comments like "Vim is the second most significant skill I learned after reading" made me  think.
 I decided to move beyond moving up and down with arrow keys and at least try to understand how people are using it on a daily basis, why it is so popular/unpopular.
-I must admit that the learning curve is not so friendly at the beginning. 
+I must admit that the learning curve is not so friendly at the beginning.
 It is essential to work through the “vimtutor” as it gives you some basics, but watching how people use it opens your eyes to the possibilities of using it efficiently.
 So at the end of the month I started to enjoy editing files with it, especially on fresh Linux installations.
 Writing small scripts without installing any additional software became much smoother.
@@ -36,12 +34,11 @@ It is interesting to observe how major players solve the same problems in differ
 
 [AWS Certified Cloud Practitioner - credly.com](https://www.credly.com/badges/b3b3b1ac-43da-4715-95ca-3c4881c94473/public_url)
 
-
 ## Articles
 
 ### [The Duct Tape Programmer](https://www.joelonsoftware.com/2009/09/23/the-duct-tape-programmer/)
 
-> Jamie Zawinski is what I would call a duct-tape programmer. And I say that with a great deal of respect. He is the kind of programmer who is hard at work building the future, and making useful things so that people can do stuff. He is the guy you want on your team building go-carts, because he has two favorite tools: duct tape and WD-40. And he will wield them elegantly even as your go-cart is careening down the hill at a mile a minute. This will happen while other programmers are still at the starting line arguing over whether to use titanium or some kind of space-age composite material that Boeing is using in the 787 Dreamliner. 
+> Jamie Zawinski is what I would call a duct-tape programmer. And I say that with a great deal of respect. He is the kind of programmer who is hard at work building the future, and making useful things so that people can do stuff. He is the guy you want on your team building go-carts, because he has two favorite tools: duct tape and WD-40. And he will wield them elegantly even as your go-cart is careening down the hill at a mile a minute. This will happen while other programmers are still at the starting line arguing over whether to use titanium or some kind of space-age composite material that Boeing is using in the 787 Dreamliner.
 
 ## Python
 
@@ -78,21 +75,25 @@ It is interesting to observe how major players solve the same problems in differ
 ## Video
 
 ### [Vim Diesel's OFFICIAL Vimtutor Let's Play/Commentary! (1 HOUR+ Special)](https://www.youtube.com/watch?v=d8XtNXutVto)
+
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/d8XtNXutVto" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ### [Mastering the Vim Language](https://www.youtube.com/watch?v=wlR5gYd6um0)
+
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/wlR5gYd6um0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ### [Learning Vim in a Week](https://www.youtube.com/watch?v=_NUO4JEtkDw)
+
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/_NUO4JEtkDw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ### [Scott Hanselman - Personal Productivity](https://www.youtube.com/watch?v=f3dNkkFBvM)
+
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/f3dNkkFBvM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>

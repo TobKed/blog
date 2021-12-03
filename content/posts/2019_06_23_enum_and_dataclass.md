@@ -6,7 +6,6 @@ Slug: enum-and-dataclass
 Summary: Few words about enum and dataclass
 Status: published
 
-
 ## Enum
 
 > "An enumeration is a set of symbolic names (members) bound to unique, constant values. Within an enumeration, the members can be compared by identity, and the enumeration itself can be iterated over."
@@ -14,9 +13,10 @@ Status: published
 > -- <cite>https://docs.python.org/3/library/enum.html</cite>
 
 `Enum` is useful when you need immutable name-value pairs enclosed in an iterable object.
-What is special in `Enum`? Its metaclass `EnumMeta` provides dunder methods *(dunder methods: double underscores at the beginning and the end, also called magic methods)* which allow to use `Enum` class which will fail on a typical class. 
+What is special in `Enum`? Its metaclass `EnumMeta` provides dunder methods *(dunder methods: double underscores at the beginning and the end, also called magic methods)* which allow to use `Enum` class which will fail on a typical class.
 
 The `Enum` class is callable, providing the following functional API:
+
 ```python
 >>> Cards = Enum('Cards', ['clubs', 'diamonds', 'hearts', 'spades'])
 >>> Cards
@@ -60,14 +60,18 @@ True
 ```
 
 Class syntax:
+
 ```python
 from enum import Enum
+
+
 class Color(Enum):
     RED = 1
     GREEN = 2
     BLUE = 3
 ```
-```python    
+
+```python
 >>> repr(Color.RED))
 '<Color.RED: 1>'
 >>> type(Color.RED)          
@@ -90,10 +94,7 @@ class Color(Enum):
 1
 ```
 
-
 ## Dataclasses
-
-
 
 > "Data Classes can be thought of as "mutable namedtuples with defaults."
 >
@@ -102,9 +103,9 @@ class Color(Enum):
 Dataclasses were introduced in Python3.7 (PEP 557). They provide elegant syntax for creating mutable data holder objects.
 They are based on `attrs` package "    that will bring back the joy of writing classes by relieving you from the drudgery of implementing object protocols (aka dunder methods)."
 
-
 ```python
 from dataclasses import dataclass, asdict, astuple, replace
+
 
 @dataclass
 class Color:
@@ -112,6 +113,7 @@ class Color:
     saturation: float
     lightness: float = 0.5
 ```
+
 ```
 # __init__
 >>> c = Color(33, 1.0)
@@ -132,7 +134,6 @@ Color(hue=120, saturation=1.0, lightness=0.5)
 >>> astuple(c)
 (33, 1.0, 0.5)
 ```
-
 
 Dataclass by default generates special methods like:  `__init__`, `__doc__`, `__eq__`.
 
@@ -211,12 +212,14 @@ If default dataclass does not suit you, you can easily modify it by passing para
 ```python
 from pprint import pprint
 
+
 @dataclass(order=True, frozen=True)
 class Color:
     hue: int
     saturation: float
     lightness: float = 0.5
 ```
+
 ```python
 >>> colors = [Color(5, 5.9), Color(1, 2.5), Color(1, 2.5), Color(3, 4.1)]
 
@@ -235,28 +238,31 @@ class Color:
 
 ### Custom fields
 
-* field factories - instance of collection, instead of fixed default value
-* custom methods - no different than for any other class
-* limiting hashing  - limit to immutable fields by `field(hash=False)`
-* limiting fields which are displayed - `field(repr=False)`
-* limiting for comparison - if dataclass has an `order=True` all fields are included in comparison. Exclusion of field is provided by `field(compare=False)`
-* metadata - more information about the field, e.g. `salary = field(metadata={'units': 'bitcoin'})`
+- field factories - instance of collection, instead of fixed default value
+- custom methods - no different than for any other class
+- limiting hashing  - limit to immutable fields by `field(hash=False)`
+- limiting fields which are displayed - `field(repr=False)`
+- limiting for comparison - if dataclass has an `order=True` all fields are included in comparison. Exclusion of field is provided by `field(compare=False)`
+- metadata - more information about the field, e.g. `salary = field(metadata={'units': 'bitcoin'})`
+
 ```python
 from dataclasses import dataclass, field
 from datetime import datetime
+
 
 @dataclass(order=True, unsafe_hash=True)
 class Employee:
     emp_id: int = field()
     name: str = field()
     gender: str = field()
-    salary: int = field(hash=False, repr=False, metadata={'units': 'bitcoin'})
+    salary: int = field(hash=False, repr=False, metadata={"units": "bitcoin"})
     age: int = field(hash=False)
     viewed_by: list = field(default_factory=list, compare=False, repr=False)
 
     def access(self, viewer_id):
         self.viewed_by.append((viewer_id, datetime.now()))
 ```
+
 ```python
 >>> from pprint import pprint
 
@@ -303,20 +309,23 @@ Field(name='salary',
       _field_type=_FIELD
 )
 ```
-Please check links below for more information. I strongly recommend Raymond Hettinger`s PyCon talk about dataclassses.
 
+Please check links below for more information. I strongly recommend Raymond Hettinger\`s PyCon talk about dataclassses.
 
 <br>
 
-----------------
+______________________________________________________________________
+
 #### Sources:
-* [enum — Support for enumerations - Python Documentation](https://docs.python.org/3/library/enum.html)
-* [dataclasses — Data Classes - Python Documentation](https://docs.python.org/3/library/dataclasses.html)
-* [Cool New Features in Python 3.7 #Data Classes - realpython.com](https://realpython.com/python37-new-features/#data-classes)
-* [The Ultimate Guide to Data Classes in Python 3.7 - realpython.com](https://realpython.com/python-data-classes/)
-* [PEP 557 -- Data Classes](https://www.python.org/dev/peps/pep-0557/)
-* [attrs: Classes Without Boilerplate](https://github.com/python-attrs/attrs)
-* [Raymond Hettinger - Dataclasses: The code generator to end all code generators - PyCon 2018](https://www.youtube.com/watch?v=T-TwcmT6Rcw)
+
+- [enum — Support for enumerations - Python Documentation](https://docs.python.org/3/library/enum.html)
+- [dataclasses — Data Classes - Python Documentation](https://docs.python.org/3/library/dataclasses.html)
+- [Cool New Features in Python 3.7 #Data Classes - realpython.com](https://realpython.com/python37-new-features/#data-classes)
+- [The Ultimate Guide to Data Classes in Python 3.7 - realpython.com](https://realpython.com/python-data-classes/)
+- [PEP 557 -- Data Classes](https://www.python.org/dev/peps/pep-0557/)
+- [attrs: Classes Without Boilerplate](https://github.com/python-attrs/attrs)
+- [Raymond Hettinger - Dataclasses: The code generator to end all code generators - PyCon 2018](https://www.youtube.com/watch?v=T-TwcmT6Rcw)
+
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%"' src="https://www.youtube.com/embed/T-TwcmT6Rcw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>

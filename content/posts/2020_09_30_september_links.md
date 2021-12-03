@@ -6,11 +6,10 @@ Slug: 2020-september-links
 Summary: Interesting stuff from the month
 Status: published
 
-
 # September 2020
 
 I am aggregating here some more or less interesting stuff of various IT related materials which I came across this month.
-Some of them are strictly related to the things I did or am currently doing. 
+Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
 
@@ -25,6 +24,7 @@ Some recipes from the course:
 #### Sesame cake (for 20 people)
 
 Ingredients:
+
 <ul>
   <li>Sesame seeds: 0.5 kg</li>
   <li>All-purpose flour: 0.2 kg</li>
@@ -35,8 +35,9 @@ Ingredients:
   <li>Salt: 0.4 teaspoon</li>
   <li>Lemon: 0.5</li>
 </ul> 
- 
+
 Sesame needs to be soaked overnight / or for a few hours.
+
 <ol>
   <li>Pour the water out from the sesame.</li>
   <li>Squeeze the lemon.</li>
@@ -51,7 +52,6 @@ Sesame needs to be soaked overnight / or for a few hours.
 #### Lemon water
 
 Add juice squeezed from one lemon to 1 liter of boiled water.
-
 
 ## Articles
 
@@ -75,7 +75,6 @@ Add juice squeezed from one lemon to 1 liter of boiled water.
 
 > In reality, Hacktoberfest is a corporate-sponsored distributed denial of service attack against the open source maintainer community.
 
-
 ## Python
 
 ### [Python Dependency Injection](https://testdriven.io/blog/python-dependency-injection/)
@@ -96,7 +95,7 @@ Add juice squeezed from one lemon to 1 liter of boiled water.
 
 ### [Will FastApi Become a New Flask?](https://www.polidea.com/blog/will-fastapi-become-a-new-flask/)
 
-> It shows excellent performance and offers some valuable features. It’s based on Starlette and derives some features from it. 
+> It shows excellent performance and offers some valuable features. It’s based on Starlette and derives some features from it.
 
 ### [Full Stack FastAPI and PostgreSQL - Base Project Generator](https://github.com/tiangolo/full-stack-fastapi-postgresql)
 
@@ -106,7 +105,7 @@ Add juice squeezed from one lemon to 1 liter of boiled water.
 
 ### [Django Builder](https://djangobuilder.io/)
 
->  is a website to create and build boiler plate code for Django apps.
+> is a website to create and build boiler plate code for Django apps.
 
 ### [Django ORM if you already know SQL](https://dev.to/amitness/django-orm-if-you-already-know-sql-k80)
 
@@ -120,7 +119,6 @@ Add juice squeezed from one lemon to 1 liter of boiled water.
 
 > Matt Layman's very good rundown of building a Django + Tailwind CSS + Heroku project for a non-profit in only 2 weeks.
 
-
 ## Tools
 
 ### [SelfControl](https://github.com/SelfControlApp/selfcontrol/)
@@ -129,8 +127,7 @@ Add juice squeezed from one lemon to 1 liter of boiled water.
 
 ### [Introducing GitHub Container Registry](https://github.blog/2020-09-01-introducing-github-container-registry/)
 
->  GitHub Container Registry is free for public images. Container Registry is free for private images during the beta, and as part of GitHub Packages will follow the same pricing model when generally available.
-
+> GitHub Container Registry is free for public images. Container Registry is free for private images during the beta, and as part of GitHub Packages will follow the same pricing model when generally available.
 
 ## Cloud
 
@@ -141,7 +138,6 @@ Add juice squeezed from one lemon to 1 liter of boiled water.
 ### [Booksy przenosi się do Google Cloud. W tle podbój nowych rynków](https://www.cloudforum.pl/2020/09/16/booksy-przenosi-sie-do-google-cloud-w-tle-podboj-nowych-rynkow/)
 
 > Booksy, jeden z najbardziej znanych polskich startupów, rozpoczął współpracę z Google i przenosi swoją aplikację do Google Cloud. Za sprawną migrację odpowiada Chmura Krajowa. Decyzja ma pomóc przede wszystkim w dynamicznej ekspansji na rynkach zagranicznych: amerykańskim, brytyjskim i brazylijskim. Pozwoli też spółce lepiej radzić sobie ze wzmożonym ruchem użytkowników i zracjonalizować koszty IT.
-
 
 ## Other stuff
 
@@ -155,7 +151,7 @@ Add juice squeezed from one lemon to 1 liter of boiled water.
 
 ### [Bash Pitfalls](https://mywiki.wooledge.org/BashPitfalls)
 
-> This page is a compilation of common mistakes made by bash users. Each example is flawed in some way. 
+> This page is a compilation of common mistakes made by bash users. Each example is flawed in some way.
 
 ### [The Three Year Rule](https://durmonski.com/self-improvement/the-three-year-rule/)
 

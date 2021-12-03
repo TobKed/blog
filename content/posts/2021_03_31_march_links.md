@@ -6,12 +6,10 @@ Slug: 2021-march-links
 Summary: Interesting stuff from the month
 Status: published
 
-
 # March 2021
 
 I am aggregating here some more or less interesting stuff of various IT related materials which I came across this month.
 Some of them are strictly related to the things I did or am currently doing.
-
 
 ## Some thoughts
 
@@ -100,8 +98,8 @@ I wrote more about it in a separate post: [Productivity course]({filename}/posts
 
 ### [syntactic sugar](https://snarky.ca/tag/syntactic-sugar/)
 
-> "In computer science, syntactic sugar is syntax within a programming language that is designed to make things easier to read or to express. It makes the language "sweeter" for human use: things can be expressed more clearly, more concisely, or in an alternative style that some may prefer." 
->   -- https://en.wikipedia.org/wiki/Syntactic_sugar 
+> "In computer science, syntactic sugar is syntax within a programming language that is designed to make things easier to read or to express. It makes the language "sweeter" for human use: things can be expressed more clearly, more concisely, or in an alternative style that some may prefer."
+> -- https://en.wikipedia.org/wiki/Syntactic_sugar
 
 ### [Poison packages – “Supply Chain Risks” user hits Python community with 4000 fake modules](https://nakedsecurity.sophos.com/2021/03/07/poison-packages-supply-chain-risks-user-hits-python-community-with-4000-fake-modules/)
 
@@ -118,7 +116,7 @@ I wrote more about it in a separate post: [Productivity course]({filename}/posts
 
 > A list of some new features in Django 3.2
 
-### [Five Django Packages We Love at Monadica](https://monadical.com/posts/django-packages.html#)
+### [Five Django Packages We Love at Monadica](https://monadical.com/posts/django-packages.html)
 
 > One of the biggest draws to Django is its ecosystem. If you encounter a problem, the chances are that someone else in the community has too, and has been kind enough to abstract it into a package and release it.
 
@@ -174,10 +172,10 @@ I wrote more about it in a separate post: [Productivity course]({filename}/posts
 
 ### [The Architecture of Open Source Applications](http://aosabook.org/en/index.html)
 
->  Architects look at thousands of buildings during their training, and study critiques of those buildings written by masters. In contrast, most software developers only ever get to know a handful of large programs well—usually programs they wrote themselves—and never study the great programs of history. As a result, they repeat one another's mistakes rather than building on one another's successes.
-> 
+> Architects look at thousands of buildings during their training, and study critiques of those buildings written by masters. In contrast, most software developers only ever get to know a handful of large programs well—usually programs they wrote themselves—and never study the great programs of history. As a result, they repeat one another's mistakes rather than building on one another's successes.
+>
 > Our goal is to change that. In these two books, the authors of four dozen open source applications explain how their software is structured, and why. What are each program's major components? How do they interact? And what did their builders learn during their development? In answering these questions, the contributors to these books provide unique insights into how they think.
-> 
+>
 > If you are a junior developer, and want to learn how your more experienced colleagues think, these books are the place to start. If you are an intermediate or senior developer, and want to see how your peers have solved hard design problems, these books can help you too.
 
 ### [howtodeal](https://www.howtodeal.dev/)
@@ -201,14 +199,17 @@ I wrote more about it in a separate post: [Productivity course]({filename}/posts
 ## Videos
 
 ### [Linux Sucks 2021 - The End of Linux is Nigh](https://odysee.com/@Lunduke:e/LinuxSucks2021:1)
+
 <iframe id="lbry-iframe" width="560" height="315" src="https://odysee.com/$/embed/LinuxSucks2021/166742a68faca1abdf189ae4134de2d527576969?r=4z53E7r7wjonWSMqg2WmwM4gtYtNmt8y" allowfullscreen></iframe>
 
-### [Top 10 Work from Home Productivity Tips [PART 1] | The Art of Remote Work Series](https://www.youtube.com/watch?v=ZQV4l7MAxnY)
+### [Top 10 Work from Home Productivity Tips \[PART 1\] | The Art of Remote Work Series](https://www.youtube.com/watch?v=ZQV4l7MAxnY)
+
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/ZQV4l7MAxnY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-### [TechWorld with Nana - Kubernetes Tutorial for Beginners [FULL COURSE in 4 Hours]](https://www.youtube.com/watch?v=X48VuDVv0do)
+### [TechWorld with Nana - Kubernetes Tutorial for Beginners \[FULL COURSE in 4 Hours\]](https://www.youtube.com/watch?v=X48VuDVv0do)
+
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/X48VuDVv0do" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>

@@ -6,10 +6,9 @@ Slug: django-page-object-pattern
 Summary: Page Object Pattern in testing Django
 Status: published
 
-
 ## Page Object Pattern
-Functional testing with usage of selenium is based on giving simple instructions to browser and comparing results with expectations. Generally we start with step by step instructions which element should be located, then what to do with them (click, read or insert value). It's working fine with simple pages but when project is growing and our test suite is getting complex as well and brittle to changes. Some id changed and bam, plenty of tests are not valid anymore. The Page Object Pattern is some special form of facade pattern where the web pages and elements of them are separated from testing procedure and provides nicer API. 
 
+Functional testing with usage of selenium is based on giving simple instructions to browser and comparing results with expectations. Generally we start with step by step instructions which element should be located, then what to do with them (click, read or insert value). It's working fine with simple pages but when project is growing and our test suite is getting complex as well and brittle to changes. Some id changed and bam, plenty of tests are not valid anymore. The Page Object Pattern is some special form of facade pattern where the web pages and elements of them are separated from testing procedure and provides nicer API.
 
 ### Page Objects in action
 
@@ -70,16 +69,17 @@ class LogInTest(StaticLiveServerTestCase):
         signup_form.setUsername("Justin")
         signup_form.setPassword("Bieber")
         signup_form.submit()
-        elem = self.browser.find_element_by_css_selector('.alert')
+        elem = self.browser.find_element_by_css_selector(".alert")
         self.assertIsNotNone(elem)
 
     def tearDown(self):
         self.browser.close()
 ```
 
-
 <br>
 
-----------------
+______________________________________________________________________
+
 #### Sources:
-* [Justin Abrahms - Selenium's Page Object Pattern: The Key to Maintainable Tests](https://justin.abrah.ms/python/selenium-page-object-pattern--the-key-to-maintainable-tests.html)
+
+- [Justin Abrahms - Selenium's Page Object Pattern: The Key to Maintainable Tests](https://justin.abrah.ms/python/selenium-page-object-pattern--the-key-to-maintainable-tests.html)

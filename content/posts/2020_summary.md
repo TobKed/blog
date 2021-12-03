@@ -7,14 +7,12 @@ Summary: Ups and downs of 2020
 Header_Cover: /images/posts/2020_summary.png
 Status: published
 
-
 # 2020
 
 Last year was extraordinary for obvious reasons.
 Shifting work from office to remote overnight, uncertainty about the future.
 It impacted everyone, however I think despite all of these things it was a great year.
 I made a not exactly chronological list of my personal highlights of the year.
-
 
 ## Developing backend for [**Her impact**](https://herimpact.co/)
 
@@ -25,8 +23,8 @@ It was a great adventure to make it alive in a quite short period of time. I am 
 
 [**Her Impact** on Bēhance.net](https://www.behance.net/gallery/94053021/Her-Impact-self-development-app-for-women)
 
-
 ## Privacy concerns
+
 2020 was the year to address all sorts of privacy related issues.
 
 I participated in the development of Polish COVID-19 application [ProteGO](https://github.com/ProteGO-Safe) in its early days.
@@ -37,7 +35,6 @@ The App attracted government attention and after some time it drifted in the dir
 I decided to follow my inner voice and not contribute to this project anymore.
 The project was continued and paid for by the government authorities and its history was overwritten so there is even no sign of my early contributions to it.
 I do not know what is the current state of the project as I do not follow it anymore.
-
 
 ## Increased Google Cloud Platform competencies
 
@@ -53,11 +50,11 @@ It solidified my knowledge about the Google Cloud Platform.
 
 **Coursera** accomplishments:
 
- * [Google Cloud Platform Fundamentals: Core Infrastructure](https://www.coursera.org/account/accomplishments/verify/PLPFK2SMEHM6)
- * [Essential Google Cloud Infrastructure: Foundation](https://www.coursera.org/account/accomplishments/verify/HJMSSXPASHXX)
- * [Elastic Google Cloud Infrastructure: Scaling and Automation](https://www.coursera.org/account/accomplishments/verify/VFK3U45L8HY6)
- * [Essential Google Cloud Infrastructure: Core Services](https://www.coursera.org/account/accomplishments/verify/JJH7V2MHMKYD)
- * [Getting Started with Google Kubernetes Engine](https://www.coursera.org/account/accomplishments/verify/HAA7U93T9M9X)
+- [Google Cloud Platform Fundamentals: Core Infrastructure](https://www.coursera.org/account/accomplishments/verify/PLPFK2SMEHM6)
+- [Essential Google Cloud Infrastructure: Foundation](https://www.coursera.org/account/accomplishments/verify/HJMSSXPASHXX)
+- [Elastic Google Cloud Infrastructure: Scaling and Automation](https://www.coursera.org/account/accomplishments/verify/VFK3U45L8HY6)
+- [Essential Google Cloud Infrastructure: Core Services](https://www.coursera.org/account/accomplishments/verify/JJH7V2MHMKYD)
+- [Getting Started with Google Kubernetes Engine](https://www.coursera.org/account/accomplishments/verify/HAA7U93T9M9X)
 
 In relation to the cloud infrastructure I got familiar with the idea of  _Infrastructure As Code_ and a well known tool for it, [Terraform](https://www.terraform.io/). I wrote a blog post about it:
 [Terraform Tutorial: Introduction to Infrastructure as Code](https://tobiaszkedzierski.medium.com/terraform-tutorial-introduction-to-infrastructure-as-code-dccec643bfdb)
@@ -67,7 +64,7 @@ d
 
 I contributed to two Open Source projects: [Apache Beam](https://github.com/apache/beam) and [Apache Airflow](https://github.com/apache/airflow).
 
-In Apache Beam I introduced GitHub Actions [GA] workflows where Java and Python cross platform test suites are being executed.
+In Apache Beam I introduced GitHub Actions \[GA\] workflows where Java and Python cross platform test suites are being executed.
 Previously, an external repository was responsible for building Python wheels.
 I introduced Github Actions workflow which builds Python wheels for Linux, Mac and Windows platforms and I integrated it with the release process.
 
@@ -78,8 +75,8 @@ In 2021, I am planning to introduce Apache Beam operators to Airflow.
 
 My adventure with GitHub Actions resulted in creation of my own actions:
 
- - [github-forks-sync-action](https://github.com/TobKed/github-forks-sync-action) - GitHub Action to synchronise forks
- - [label-when-approved-action](https://github.com/TobKed/label-when-approved-action) - Label When Approved is an action that checks if Pull Request is approved and assigns a label to it. The label is not set or removed when Pull Request is awaiting requested changes.
+- [github-forks-sync-action](https://github.com/TobKed/github-forks-sync-action) - GitHub Action to synchronise forks
+- [label-when-approved-action](https://github.com/TobKed/label-when-approved-action) - Label When Approved is an action that checks if Pull Request is approved and assigns a label to it. The label is not set or removed when Pull Request is awaiting requested changes.
 
 I also used GA to partially solve a problem related to GA itself within Apache Software Foundation.
 For ASF the limit for concurrent GA jobs equals 180 (usage limits).
@@ -92,7 +89,6 @@ Additionally, some basic statistics is calculated and results are pushed to Goog
 
 Sample dashboard created in Datastudio with collected data:
 
-
 ![Datastuido dashboard]({static}/images/posts/ga_stats.png)
 
 ## Writing
@@ -102,16 +98,16 @@ with articles, tools and other interesting materials I came across.
 
 2020 summaries:
 
- - [March]({filename}/posts/2020_03_31_march_links.md)
- - [April]({filename}/posts/2020_04_30_april_links.md)
- - [May]({filename}/posts/2020_05_31_may_links.md)
- - [June]({filename}/posts/2020_06_30_june_links.md)
- - [July]({filename}/posts/2020_07_31_july_links.md)
- - [August]({filename}/posts/2020_08_31_august_links.md)
- - [September]({filename}/posts/2020_09_30_september_links.md)
- - [October]({filename}/posts/2020_10_31_october_links.md)
- - [November]({filename}/posts/2020_11_30_november_links.md)
- - [December]({filename}/posts/2020_12_31_december_links.md)
+- [March]({filename}/posts/2020_03_31_march_links.md)
+- [April]({filename}/posts/2020_04_30_april_links.md)
+- [May]({filename}/posts/2020_05_31_may_links.md)
+- [June]({filename}/posts/2020_06_30_june_links.md)
+- [July]({filename}/posts/2020_07_31_july_links.md)
+- [August]({filename}/posts/2020_08_31_august_links.md)
+- [September]({filename}/posts/2020_09_30_september_links.md)
+- [October]({filename}/posts/2020_10_31_october_links.md)
+- [November]({filename}/posts/2020_11_30_november_links.md)
+- [December]({filename}/posts/2020_12_31_december_links.md)
 
 I also wrote a few blog posts that were published on the company website (reposted on Medium):
 
@@ -119,7 +115,6 @@ I also wrote a few blog posts that were published on the company website (repost
 - [Terraform Tutorial: Introduction to Infrastructure as Code](https://tobiaszkedzierski.medium.com/terraform-tutorial-introduction-to-infrastructure-as-code-dccec643bfdb)
 - [What Is Python Used For? Most Popular Uses](https://tobiaszkedzierski.medium.com/what-is-python-used-for-most-popular-uses-a0c1019bac25)
 - [What’s New in Python 3.8—A Summary of the New Features](https://tobiaszkedzierski.medium.com/whats-new-in-python-3-8-a-summary-of-the-new-features-a2b68bd7b81d)
-
 
 ## Promoted to regular
 

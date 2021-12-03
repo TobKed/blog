@@ -6,12 +6,10 @@ Slug: 2020-october-links
 Summary: Interesting stuff from the month
 Status: published
 
-
 # October 2020
 
 I am aggregating here some more or less interesting stuff of various IT related materials which I came across this month.
 Some of them are strictly related to the things I did or am currently doing.
-
 
 ## Some thoughts
 
@@ -27,8 +25,7 @@ pull requests approved by committers.
 These labels (or equivalent action outputs) are used to optimise the use of CI resources since [not approved pull requests run only a subset of tests](https://github.com/apache/airflow/pull/11828). It was introduced because the number of GitHub Actions jobs running in parallel is limited to 180 for all Apache projects so running full test suite every time seemed to be a waste.
 It was made in cooperation with [Jarek Potiuk](https://github.com/potiuk) who is Apache Airflow Commiter and PMC Member. It was also my first time with TypeScript which I enjoyed a lot.
 
-Meanwhile my blog post about Terraform and Infrastructure as Code was published [IaC]. If you want to know why IaC and Terraform is so popular, feel free to read it: [Terraform Tutorial: Introduction to Infrastructure as Code](https://www.polidea.com/blog/terraform-tutorial-introduction-to-infrastructure-as-code/).
-
+Meanwhile my blog post about Terraform and Infrastructure as Code was published \[IaC\]. If you want to know why IaC and Terraform is so popular, feel free to read it: [Terraform Tutorial: Introduction to Infrastructure as Code](https://www.polidea.com/blog/terraform-tutorial-introduction-to-infrastructure-as-code/).
 
 ## Articles
 
@@ -50,7 +47,7 @@ Meanwhile my blog post about Terraform and Infrastructure as Code was published 
 
 ### [Git scraping: track changes over time by scraping to a Git repository](https://simonwillison.net/2020/Oct/9/git-scraping/)
 
->We already have a great tool for efficiently tracking changes to text over time: Git. And GitHub Actions (and other CI systems) make it easy to create a scraper that runs every few minutes, records the current state of a resource and records changes to that resource over time in the commit history.
+> We already have a great tool for efficiently tracking changes to text over time: Git. And GitHub Actions (and other CI systems) make it easy to create a scraper that runs every few minutes, records the current state of a resource and records changes to that resource over time in the commit history.
 
 ### [How to take meeting notes](https://barehands.substack.com/p/how-to-take-meeting-notes)
 
@@ -58,11 +55,11 @@ Meanwhile my blog post about Terraform and Infrastructure as Code was published 
 
 ### ['I'll Never Work The Same Way Again:' One Co-Founder's Remote Work Experiments](https://www.entrepreneur.com/article/354226)
 
-> There's a lot of talk about structure and boundaries, but there's something to be said for flexibility, and embracing the messiness of your "life's work." 
+> There's a lot of talk about structure and boundaries, but there's something to be said for flexibility, and embracing the messiness of your "life's work."
 
 ### [10 Tips From CEOs on Working From Home Effectively and Happily](https://www.entrepreneur.com/article/347479)
 
-> Far beyond getting out of your pajamas, these tips encourage wellness when you are working from home. 
+> Far beyond getting out of your pajamas, these tips encourage wellness when you are working from home.
 
 ### [How Google Drive Can Make Every Corner of Your Life Easier](https://forge.medium.com/how-google-drive-can-make-every-corner-of-your-life-easier-9f3cc1acbb68)
 
@@ -78,11 +75,11 @@ Meanwhile my blog post about Terraform and Infrastructure as Code was published 
 
 ### [How Harvard’s Star Computer-Science Professor Built a Distance-Learning Empire](https://www.newyorker.com/news/our-local-correspondents/how-harvards-star-computer-science-professor-built-a-distance-learning-empire)
 
-> David Malan, of the hit class CS50, was working to perfect online teaching long before the pandemic. Is his method a model for the future of higher education? 
+> David Malan, of the hit class CS50, was working to perfect online teaching long before the pandemic. Is his method a model for the future of higher education?
 
 ### [Surprising __getattr__ recursion](https://nedbatchelder.com/blog/201010/surprising_getattr_recursion.html)
 
->  It’s well-known that you have to be careful in __getattr__ not to use an attribute that might be missing. That would cause an infinite recursion. 
+> It’s well-known that you have to be careful in __getattr__ not to use an attribute that might be missing. That would cause an infinite recursion.
 
 ### [The psychology of learning to code](https://vasilishynkarenka.com/the-psychology-of-learning-to-code/)
 
@@ -96,7 +93,7 @@ Meanwhile my blog post about Terraform and Infrastructure as Code was published 
 
 [Modern JavaScript for Django Developers](https://www.saaspegasus.com/guides/modern-javascript-for-django-developers/)
 
-> Working with Django in the modern JavaScript ecosystem without giving up the things that make it great 
+> Working with Django in the modern JavaScript ecosystem without giving up the things that make it great
 
 [Django Day Copenhagen 2020](https://www.youtube.com/playlist?list=PLEpW1LzVyQWhqb_OoWtURF5cfKSGof0It)
 
@@ -142,7 +139,7 @@ Meanwhile my blog post about Terraform and Infrastructure as Code was published 
 
 ### [Tails](https://tails.boum.org/)
 
-> Tails is a portable operating system that protects against surveillance and censorship. 
+> Tails is a portable operating system that protects against surveillance and censorship.
 
 ### [dockle](https://github.com/goodwithtech/dockle)
 
@@ -154,7 +151,7 @@ Meanwhile my blog post about Terraform and Infrastructure as Code was published 
 
 ### [devops-exercises](https://github.com/bregman-arie/devops-exercises)
 
->  This repo contains questions and exercises on various technical topics, sometimes related to DevOps and SRE
+> This repo contains questions and exercises on various technical topics, sometimes related to DevOps and SRE
 
 ### [python-cheatsheet](https://github.com/gto76/python-cheatsheet)
 
@@ -176,22 +173,26 @@ Meanwhile my blog post about Terraform and Infrastructure as Code was published 
 
 ## Videos
 
-### ["On a shoe-string and a t2.small: scaling on a [zero] budget." - Tom Eastman (PyConline AU 2020)](https://www.youtube.com/watch?v=A-3zc1CABqM)
+### ["On a shoe-string and a t2.small: scaling on a \[zero\] budget." - Tom Eastman (PyConline AU 2020)](https://www.youtube.com/watch?v=A-3zc1CABqM)
+
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/A-3zc1CABqM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ### [Praca w korporacji - jakie ponosimy szkody zdrowotne? - prof. Paweł Januszewicz](https://www.youtube.com/watch?v=H9CJCVyD6mQ)
+
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/H9CJCVyD6mQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-### [I used the reasonably-secure Qubes OS for 6 months and survived - Matty McFatty [@themattymcfatty]](https://www.youtube.com/watch?v=sbN5Bz3v-uA)
+### [I used the reasonably-secure Qubes OS for 6 months and survived - Matty McFatty \[@themattymcfatty\]](https://www.youtube.com/watch?v=sbN5Bz3v-uA)
+
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/sbN5Bz3v-uA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ### [Reuven M. Lerner - Practical decorators - PyCon 2019](https://www.youtube.com/watch?v=MjHpMCIvwsY)
+
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/MjHpMCIvwsY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>

@@ -9,10 +9,9 @@ Tags: welcome
 >
 > -- <cite>Michael Jordan</cite>
 
-
 ### Links
 
-* [Personal](https://tobked.github.io/)
-* [Medium](https://tobiaszkedzierski.medium.com/)
-* [GitHub](https://github.com/TobKed)
-* [LinkedIn](https://www.linkedin.com/in/tobiaszkedzierski/?locale=en_US)
+- [Personal](https://tobked.github.io/)
+- [Medium](https://tobiaszkedzierski.medium.com/)
+- [GitHub](https://github.com/TobKed)
+- [LinkedIn](https://www.linkedin.com/in/tobiaszkedzierski/?locale=en_US)

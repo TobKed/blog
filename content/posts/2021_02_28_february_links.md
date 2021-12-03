@@ -6,12 +6,10 @@ Slug: 2021-february-links
 Summary: Interesting stuff from the month
 Status: published
 
-
 # February 2021
 
 I am aggregating here some more or less interesting stuff of various IT related materials which I came across this month.
 Some of them are strictly related to the things I did or am currently doing.
-
 
 ## Some thoughts
 
@@ -20,9 +18,8 @@ The biggest event of the month is fact that I stared a new job at [Snowflake](ht
 The second highlight of the months is that the [Apache Beam provider](https://github.com/apache/airflow/pull/12814) for Apache Airflow on which I was working for several weeks was finally merged into `master`.
 Available on pypi:
 
- - [apache-airflow-providers-apache-beam](https://pypi.org/project/apache-airflow-providers-apache-beam/)
- - [apache-airflow-backport-providers-apache-beam](https://pypi.org/project/apache-airflow-backport-providers-apache-beam/)
-
+- [apache-airflow-providers-apache-beam](https://pypi.org/project/apache-airflow-providers-apache-beam/)
+- [apache-airflow-backport-providers-apache-beam](https://pypi.org/project/apache-airflow-backport-providers-apache-beam/)
 
 ## Articles
 
@@ -84,7 +81,7 @@ Available on pypi:
 
 ### [Zsh Tricks to Blow your Mind](https://www.twilio.com/blog/zsh-tricks-to-blow-your-mind)
 
->  Read on to learn more about Zsh and some tips and tricks to optimize your development.
+> Read on to learn more about Zsh and some tips and tricks to optimize your development.
 
 ## Python
 
@@ -94,7 +91,7 @@ Available on pypi:
 
 ### [Building Rich terminal dashboards](https://www.willmcgugan.com/blog/tech/post/building-rich-terminal-dashboards/)
 
-> Rich has become a popular (20K stars on GH) way of beautifying CLIs, and I'm pleased to see a number of projects using it. Since Rich is mature and battle-tested now, I had considered winding-down development. Until, I saw this tweet: The Tweet Do you want to see something […] 
+> Rich has become a popular (20K stars on GH) way of beautifying CLIs, and I'm pleased to see a number of projects using it. Since Rich is mature and battle-tested now, I had considered winding-down development. Until, I saw this tweet: The Tweet Do you want to see something \[…\]
 
 ### [Why you really need to upgrade pip](https://pythonspeed.com/articles/upgrade-pip/)
 
@@ -145,26 +142,31 @@ Available on pypi:
 ## Videos
 
 ### [David Beazley - Python Concurrency From the Ground Up: LIVE! - PyCon 2015](https://www.youtube.com/watch?v=MCs5OvhV9S4)
+
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/MCs5OvhV9S4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ### [Adam Haertle: Incydenty duże i bardzo duże, czyli administrator też człowiek](https://www.youtube.com/watch?v=0ifivA7Sy0E)
+
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/0ifivA7Sy0E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ### [CONFidence 2019: "Z kamerą wśród zwierząt, czyli użytkownik kontra technologia" - Adam Haertle](https://www.youtube.com/watch?v=aaxn9g_jOcc)
+
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/aaxn9g_jOcc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ### [SECURE 2020 - "Jak kochać to emaile, jak kraść to miliony"](https://www.youtube.com/watch?v=TixPdj4RPuo)
+
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/TixPdj4RPuo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ### ["What You Should Know About Django REST Framework" - Lacey Williams Henschel (PyCascades 2021)](https://www.youtube.com/watch?v=06DJBu1zwoY)
+
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/06DJBu1zwoY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>

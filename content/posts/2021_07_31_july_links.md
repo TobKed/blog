@@ -6,7 +6,6 @@ Slug: 2021-July-links
 Summary: Interesting stuff from the month
 Status: published
 
-
 # July 2021
 
 I am aggregating here some more or less interesting stuff of various IT related materials which I came across this month.
@@ -20,6 +19,7 @@ I decided that a presentation about Git will fill this gap which resulted in **B
 I've expanded topics from my post on Git: [Changing history in Git]({filename}/posts/2019_08_12_git_change_history.md).
 
 I talked about:
+
 <ul>
     <li>git config </li>
     <li>pre-commit </li>
@@ -43,7 +43,6 @@ I tested commands and concepts in the field as well because the presentation was
 I found it helpful.
 
 ![Brival Tech Talk - tips & tricks]({static}/images/posts/brival_tech_talk_git.jpg)
-
 
 ## Articles
 

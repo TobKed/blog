@@ -6,17 +6,18 @@ Slug: django-business-logic
 Summary: Where to put business logic in Django?
 Status: draft
 
-
 ## Business logic in Django
 
 Where to put business logic in Django?
 
-
 <br>
 
-----------------
+______________________________________________________________________
+
 #### Sources:
-* [CodingEntrepreneurs - Where do you put business logic with Django Rest Framework?](https://www.youtube.com/watch?v=sZrfQ4NwBR8)
+
+- [CodingEntrepreneurs - Where do you put business logic with Django Rest Framework?](https://www.youtube.com/watch?v=sZrfQ4NwBR8)
+
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%"' src="https://www.youtube.com/embed/sZrfQ4NwBR8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>

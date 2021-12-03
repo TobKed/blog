@@ -6,29 +6,26 @@ Slug: 2020-november-links
 Summary: Interesting stuff from the month
 Status: published
 
-
 # November 2020
 
 I am aggregating here some more or less interesting stuff of various IT related materials which I came across this month.
 Some of them are strictly related to the things I did or am currently doing.
 
-
 ## Some thoughts
 
-This month I spent some time on getting statistics of GitHub Actions [GA] usage within The Apache Software Foundation [ASF] repositories. 
-The ASF organisation has more than 2000 repositories and more than 200 of them use GA. 
-The limit for concurrent GA jobs for ASF equals 180 ([usage limits](https://docs.github.com/en/free-pro-team@latest/actions/reference/usage-limits-billing-and-administration#usage-limits)) and may be exhausted quite quickly. 
-This could lead to long queues. 
-The GItHub does not provide statistics related to GA so I created a repository [Fetch Apache GitHub Actions Statistics](https://github.com/TobKed/fetch-apache-ga-stats). 
-Within this repository, the statistics data is fetched by a GA workflow scheduled to run every 15 minutes. 
-This workflow makes a series of "snapshots" of GA workflow runs in `in_progress` and `queued` statuses for every ASF repository which uses GA. 
-Since verifying which one of more than 2000 repositories use GA is expensive because of exhausting api rate limits, this list is stored in a file within the repository. 
+This month I spent some time on getting statistics of GitHub Actions \[GA\] usage within The Apache Software Foundation \[ASF\] repositories.
+The ASF organisation has more than 2000 repositories and more than 200 of them use GA.
+The limit for concurrent GA jobs for ASF equals 180 ([usage limits](https://docs.github.com/en/free-pro-team@latest/actions/reference/usage-limits-billing-and-administration#usage-limits)) and may be exhausted quite quickly.
+This could lead to long queues.
+The GItHub does not provide statistics related to GA so I created a repository [Fetch Apache GitHub Actions Statistics](https://github.com/TobKed/fetch-apache-ga-stats).
+Within this repository, the statistics data is fetched by a GA workflow scheduled to run every 15 minutes.
+This workflow makes a series of "snapshots" of GA workflow runs in `in_progress` and `queued` statuses for every ASF repository which uses GA.
+Since verifying which one of more than 2000 repositories use GA is expensive because of exhausting api rate limits, this list is stored in a file within the repository.
 The other GA workflow scheduled to run once a week is fetching this list and committing changes to the repository.
 
-Within Apache Airflow I introduced asynchronous execution of Dataflow jobs. 
-It allows starting a data processing pipeline without having to wait until it finishes. 
+Within Apache Airflow I introduced asynchronous execution of Dataflow jobs.
+It allows starting a data processing pipeline without having to wait until it finishes.
 The status of the pipeline may be monitored by new sensors ([DataflowJobStatusSensor](https://github.com/apache/airflow/pull/11726), [DataflowJobMetricsSensor](https://github.com/apache/airflow/pull/12039), [DataflowJobMessagesSensor and DataflowAutoscalingEventsSensor](https://github.com/apache/airflow/pull/12249)).
-
 
 ## Articles
 
@@ -55,15 +52,15 @@ The status of the pipeline may be monitored by new sensors ([DataflowJobStatusSe
 ### [Maker's schedule, manager's schedule](http://www.paulgraham.com/makersschedule.html)
 
 > "...the mere consciousness of an engagement will sometimes worry a whole day."
-> – Charles Dickens 
+> – Charles Dickens
 
 ### [7 Cognitive Biases That Make Us Suck at Time Management](https://blog.doist.com/cognitive-biases-time-management/)
 
-> Our brains are hardwired to sabotage our productivity. Can we do anything about it? 
+> Our brains are hardwired to sabotage our productivity. Can we do anything about it?
 
 ### [The Top 7 Best Practices For Leading Effective Virtual Team Meetings](https://weworkremotely.com/the-top-7-best-practices-for-leading-effective-virtual-team-meetings)
 
-> Stop wasting your remote team’s time. These best practices for virtual meetings will help you run more efficient calls and boost employee engagement. 
+> Stop wasting your remote team’s time. These best practices for virtual meetings will help you run more efficient calls and boost employee engagement.
 
 ### [8 questions for writing](https://vasilishynkarenka.com/8questions/)
 
@@ -129,4 +126,4 @@ The status of the pipeline may be monitored by new sensors ([DataflowJobStatusSe
 
 ### [Google Cloud – Improving Security with Impersonation](https://www.jhanley.com/google-cloud-improving-security-with-impersonation/)
 
->  The contents of the service account remain in Google Cloud. Instead of providing users with a service account file, we provide the user authorization to use the service account (impersonation). 
+> The contents of the service account remain in Google Cloud. Instead of providing users with a service account file, we provide the user authorization to use the service account (impersonation).

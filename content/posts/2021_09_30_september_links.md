@@ -6,12 +6,10 @@ Slug: 2021-september-links
 Summary: Interesting stuff from the month
 Status: published
 
-
 # September 2021
 
 I am aggregating here some more or less interesting stuff of various IT related materials which I came across this month.
 Some of them are strictly related to the things I did or am currently doing.
-
 
 ## Some thoughts
 
@@ -23,20 +21,18 @@ There were two very interesting presentations:
   <li> <b>Change Data Capture, czyli jak wiedzieć o każdej zmianie w Twojej bazie danych</b> (Change Data Capture: how to know about every change in your database) by Dawid</li>
 </ul>
 
-
 Additionally I attended workshops where we played with [Debezium](https://github.com/debezium/debezium) which is <i>is an open source project that provides a low latency data streaming platform for change data capture</i>.
 Whe used it to track changes in PostgreSQL database and stream them to Kafka from where they were consumed by a small JS app. The repository for this workshop is publicly available here: [ClearcodeHQ/it-depends-8](https://github.com/ClearcodeHQ/it-depends-8).
 
 It was a very nicely conducted meetup which I happily attended, moreover I won some gadgets like a cup, a t-shirt and a book about data lakes.
 
-
 ## Articles
 
 ### [Best practices for writing code comments](https://stackoverflow.blog/2021/07/05/best-practices-for-writing-code-comments/)
 
->  While it's easy to measure the quantity of comments in a program, it's hard to measure the quality, and the two are not necessarily correlated. A bad comment is worse than no comment at all.
+> While it's easy to measure the quantity of comments in a program, it's hard to measure the quality, and the two are not necessarily correlated. A bad comment is worse than no comment at all.
 
-### [How to improve your Docker containers security [cheat sheet included]](https://blog.gitguardian.com/how-to-improve-your-docker-containers-security-cheat-sheet/)
+### [How to improve your Docker containers security \[cheat sheet included\]](https://blog.gitguardian.com/how-to-improve-your-docker-containers-security-cheat-sheet/)
 
 > Containers are no security devices. That's why we've curated a set of easily actionable recommendations to improve your Docker containers security.
 
@@ -60,7 +56,7 @@ It was a very nicely conducted meetup which I happily attended, moreover I won s
 
 ### [The Unknown Features of Python's Operator Module](https://martinheinz.dev/blog/54)
 
-> At the first glance Python's operator module might not seem very interesting. It includes many operator functions for arithmetic and binary operations and a couple of convenience and helper functions. They might not seem so useful, but with help of just a few of these functions you can make your code faster, more concise, more readable and more functional. So, in this article we will explore this great Python module and make the most out of the every function included in it. 
+> At the first glance Python's operator module might not seem very interesting. It includes many operator functions for arithmetic and binary operations and a couple of convenience and helper functions. They might not seem so useful, but with help of just a few of these functions you can make your code faster, more concise, more readable and more functional. So, in this article we will explore this great Python module and make the most out of the every function included in it.
 
 ### [145 Python Projects with Source Code](https://medium.com/coders-camp/130-python-projects-with-source-code-61f498591bb)
 
@@ -136,7 +132,7 @@ It was a very nicely conducted meetup which I happily attended, moreover I won s
 
 > The latest installment in this series from Matt Layman covers file management, such as accepting images/files from users.
 
-### [Using Celery task to generate data for a view](https://appliku.com/post/using-celery-task-to-generate-data-for-a-view?)
+### [Using Celery task to generate data for a view](https://appliku.com/post/using-celery-task-to-generate-data-for-a-view)
 
 > In this article we'll solve a problem when a view is taking too long to generate the response by moving actual data generation into the Celery task.
 
@@ -207,6 +203,7 @@ It was a very nicely conducted meetup which I happily attended, moreover I won s
 ## Videos
 
 ### [Natalia Stanko - Recovering from burnout - PyCode 2020](https://www.youtube.com/watch?v=uEat-OXaT9M)
+
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/uEat-OXaT9M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
