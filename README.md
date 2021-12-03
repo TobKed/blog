@@ -1,6 +1,8 @@
 ### [tobked.github.io/blog/](https://tobked.github.io/blog/)
 
-##### Blog made in Pelican 
+[![Deploy blog to gh-pages](https://github.com/TobKed/blog/actions/workflows/main.yml/badge.svg)](https://github.com/TobKed/blog/actions/workflows/main.yml)
+
+##### Blog made in Pelican
 
 Pelican
 
@@ -21,4 +23,3 @@ git commit -m <msg>
 git push
 make github
 ```
-

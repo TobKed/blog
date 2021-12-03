@@ -1,0 +1,29 @@
+repos:
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v4.0.1
+  hooks:
+  -   id: trailing-whitespace
+      exclude: ^.*\.md$
+  -   id: end-of-file-fixer
+  -   id: check-yaml
+  -   id: check-added-large-files
+  -   id: check-json
+#- repo: https://github.com/executablebooks/mdformat
+#  rev: 0.7.10
+#  hooks:
+#  - id: mdformat
+#    # optional
+#    args:
+#    - '--number'
+#    additional_dependencies:
+#    - mdformat-tables
+#    - mdformat-black
+#    - mdformat_footnote
+#    - mdformat_pelican
+#exclude: |
+#    (?x)(
+#        ^output/|
+#        ^themes/|
+#        ^venv/|
+#        ^content/NewZealand/
+#    )
