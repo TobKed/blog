@@ -24,7 +24,7 @@ Moreover, this script does not have to be downloaded, just copy-paste one line t
 
 ### Setting up Raspbian
 
-Download <a>[*Raspbian Buster Lite*](https://www.raspberrypi.org/downloads/raspbian/) and create a bootable SD-card. For this purpose you can use for e.g. ***Startup Disk Creator*** (Ubuntu) or ***Etcher*** (Windows, Mac, Linux).
+Download [*Raspbian Buster Lite*](https://www.raspberrypi.org/downloads/raspbian/) and create a bootable SD-card. For this purpose you can use for e.g. ***Startup Disk Creator*** (Ubuntu) or ***Etcher*** (Windows, Mac, Linux).
 
 If you use a headless RPi it is possible to enable SSH and Wi-Fi before the first boot.\
 To enable SSH you have to put an empty file named `ssh` onto the boot partition without any extension.
@@ -54,41 +54,61 @@ Installation is provided by a simple script which executes just 6 shell commands
 
 The meaning of particular commands:
 
-- `sudo apt-get update`\
+<ul>
+  <li><code>sudo apt-get update</code>
   downloads the package lists from the repositories and "updates" them to get information on the newest versions of packages and their dependencies.
-  - `sudo` - executes command as the superuser.
-  - `apt-get` -  the command-line tool for handling packages.
-  - `update` - option used to re-synchronize the package index files from their sources.
-- `curl -sSL https://get.docker.com | sh`\
-  installs docker by executing Docker installation script from an online source.
-  - `curl` - tool to transfer data from or to a server.
-  - `--s/--silent` - silent or quiet mode. Doesn't show progress meter or error messages.
-  - `-S/--show-error` - when used with -s it makes curl show an error message if it fails.
-  - `-L/--location` - if the server reports that the requested page has moved to a different location (indicated with a Location: header and a 3XX response code), this option will make curl redo the request on the new place.
-  - `|` - pipes '|' send the output of one command as input of another command.
-  - `sh` - Bourne shell.
-- `sudo usermod -aG docker $USER`\
+    <ul>
+      <li> <code>sudo</code> - executes command as the superuser.</li>
+      <li> <code>apt-get</code> -  the command-line tool for handling packages.</li>
+      <li> <code>update</code> - option used to re-synchronize the package index files from their sources.</li>
+    </ul>
+  </li>
+  <li> <code>curl -sSL https://get.docker.com | sh</code> 
+    installs docker by executing Docker installation script from an online source.
+    <ul>
+      <li> <code>curl</code> - tool to transfer data from or to a server.
+      <li> <code>--s/--silent</code> - silent or quiet mode. Doesn't show progress meter or error messages.</li>
+      <li> <code>-S/--show-error</code> - when used with -s it makes curl show an error message if it fails.</li>
+      <li> <code>-L/--location</code> - if the server reports that the requested page has moved to a different location (indicated with a Location: header and a 3XX response code), this option will make curl redo the request on the new place.</li>
+      <li> <code>|</code> - pipes '|' send the output of one command as input of another command.</li>
+      <li> <code>sh</code> - Bourne shell.</li>
+    </ul>
+  </li>
+  <li> sudo usermod -aG docker $USER`\
   adds your user to the docker group which is created during the installation to run docker commands without without prepending sudo (as non-root user)
-  - `usermod` - modifie a user account.
-  - `--a, --append` - adds the user to the supplementary group(s). Use only with the -G option.
-  - `-G, --groups` - a list of supplementary groups.
-  - `docker` - group name.
-  - `$USER` - environmental variable with username.
-- `sudo systemctl enable docker`\
-  configures Docker to start on boot
-  - `systemctl` - may be used to introspect and control the state of the "systemd" system and service manager.
-  - `enable NAME..., enable PATH...` - Enables one or more units or unit instances.
-  - `docker` - deamon process name.
-- `sudo apt-get install -y python3-pip`
-  installs package installer for Python 3
-  - `install` -  this option is followed by one or more packages desired for installation.
-  - `-y, --yes, --assume-yes` automatic yes to prompts. Assume "yes" as answer to all prompts and run non-interactively.
-  - `python3-pip` - Python3 package installer.
-- `sudo pip3 install docker-compose`
-  installs docker-compose through Python package installer
-  - `pip3` - a recursive acronym for "Pip Installs Packages"
-  - `install` - argument for pip3, self-explanatory.
-  - `docker-compose` - name of package to be installed,
+    <ul>
+      <li> <code>usermod</code> - modified a user account.</li>
+      <li> <code>--a, --append</code> - adds the user to the supplementary group(s). Use only with the -G option.</li>
+      <li> <code>-G, --groups</code> - a list of supplementary groups.</li>
+      <li> <code>docker</code> - group name.</li>
+      <li> <code>$USER</code> - environmental variable with username.</li>
+    </ul>
+  </li>
+  <li> <code>sudo systemctl enable docker</code>\
+    configures Docker to start on boot
+    <ul>
+      <li> <code>systemctl</code> - may be used to introspect and control the state of the "systemd" system and service manager.</li>
+      <li> <code>enable NAME..., enable PATH...</code> - Enables one or more units or unit instances.</li>
+      <li> <code>docker</code> - deamon process name.</li>
+    </ul>
+  </li>
+  <li> <code>sudo apt-get install -y python3-pip</code>
+    installs package installer for Python 3
+    <ul>
+      <li> <code>install</code> -  this option is followed by one or more packages desired for installation.</li>
+      <li> <code>-y, --yes, --assume-yes</code> automatic yes to prompts. Assume "yes" as answer to all prompts and run non-interactively.</li>
+      <li> <code>python3-pip</code> - Python3 package installer.</li>
+    </ul>
+  </li>
+  <li> <code>sudo pip3 install docker-compose</code>
+    installs docker-compose through Python package installer
+      <ul>
+        <li> <code>pip3</code> - a recursive acronym for "Pip Installs Packages"</li>
+        <li> <code>install</code> - argument for pip3, self-explanatory.</li>
+        <li> <code>docker-compose</code> - name of package to be installed.</li>
+      </ul>  
+  </li>
+</ul>
 
 To run this script you just have to copy-paste the following line in the RPi terminal:
 
@@ -106,34 +126,37 @@ ______________________________________________________________________
 
 #### Sources:
 
-- [docker homepage](https://www.docker.com/)
-- [dotScale 2013 - Solomon Hykes](https://www.youtube.com/watch?v=3N3n9FzebAA)
-
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%"' src="https://www.youtube.com/embed/3N3n9FzebAA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-* [Building Python apps with Docker - PyTexas](https://www.youtube.com/watch?v=VhabrYF1nms)
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%"' src="https://www.youtube.com/embed/VhabrYF1nms" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-* [Docker packaging guide for Pythond](https://pythonspeed.com/docker/)
-* [Raspbian download](https://www.raspberrypi.org/downloads/raspbian/)
-* [Startup Disk Creator](https://en.wikipedia.org/wiki/Startup_Disk_Creator)
-* [Etcher](https://www.balena.io/etcher/)
-* [SSH (Secure Shell) - Raspberry Pi Documentation](https://www.raspberrypi.org/documentation/remote-access/ssh/README.md)
-* [Setting up a Raspberry Pi headless - Raspberry Pi Documentation](https://www.raspberrypi.org/documentation/configuration/wireless/headless.md)
-* [wpa_supplicant - systutorials.com](https://www.systutorials.com/docs/linux/man/8-wpa_supplicant/)
-* [wpa_supplicant.conf - systutorials.com](https://www.systutorials.com/docs/linux/man/5-wpa_supplicant.conf/)
-* [Prepare SD card for Wifi on Headless Pi - Raspberry Pi Stack Exchangev](https://raspberrypi.stackexchange.com/questions/10251/prepare-sd-card-for-wifi-on-headless-pi)
-* [apt-get(8) - Linux man page](https://linux.die.net/man/8/apt-get)
-* [curl(1) - Linux man page](https://linux.die.net/man/1/curl)
-* [Piping in Unix or Linux - GeeksforGeeks](https://www.geeksforgeeks.org/piping-in-unix-or-linux/)
-* [The A-Z of Programming Languages: Bourne shell, or sh - Computerworld](https://www.computerworld.com.au/article/279011/-z_programming_languages_bourne_shell_sh)
-* [usermod(8) - Linux man page](https://linux.die.net/man/8/usermod)
-* [Post-installation steps for Linux - Configure Docker to start on boot - docker.com](https://docs.docker.com/install/linux/linux-postinstall/#configure-docker-to-start-on-boot)
-* [($USER) login(1) - Linux manual page](http://man7.org/linux/man-pages/man1/login.1.html#DESCRIPTION)
-* [ Details of package python3-pip in buster - Debian](https://packages.debian.org/buster/python3-pip)
-* [pip - The Python Package Installer documentation](https://pip.pypa.io/en/stable)
-* [pip install - The Python Package Installer documentation](https://pip.pypa.io/en/stable/reference/pip_install/)
-* [docker-compose · PyPI](https://pypi.org/project/docker-compose/)
-* [Linux newgrp command help and examples - computerhope](https://www.computerhope.com/unix/unewgrp.htm)
+<ul>
+  <li><a href="https://www.docker.com/">docker homepage</a></li>
+  <li><a href="https://pythonspeed.com/docker/">Docker packaging guide for Pythond</a></li>
+  <li><a href="https://www.raspberrypi.org/downloads/raspbian/">Raspbian download</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Startup_Disk_Creator">Startup Disk Creator</a></li>
+  <li><a href="https://www.balena.io/etcher/">Etcher</a></li>
+  <li><a href="https://www.raspberrypi.org/documentation/remote-access/ssh/README.md">SSH (Secure Shell) - Raspberry Pi Documentation</a></li>
+  <li><a href="https://www.raspberrypi.org/documentation/configuration/wireless/headless.md">Setting up a Raspberry Pi headless - Raspberry Pi Documentation</a></li>
+  <li><a href="https://www.systutorials.com/docs/linux/man/8-wpa_supplicant/">wpa_supplicant - systutorials.com</a></li>
+  <li><a href="https://www.systutorials.com/docs/linux/man/5-wpa_supplicant.conf/">wpa_supplicant.conf - systutorials.com</a></li>
+  <li><a href="https://raspberrypi.stackexchange.com/questions/10251/prepare-sd-card-for-wifi-on-headless-pi">Prepare SD card for Wifi on Headless Pi - Raspberry Pi Stack Exchangev</a></li>
+  <li><a href="https://linux.die.net/man/8/apt-get">apt-get(8) - Linux man page</a></li>
+  <li><a href="https://linux.die.net/man/1/curl">curl(1) - Linux man page</a></li>
+  <li><a href="https://www.geeksforgeeks.org/piping-in-unix-or-linux/">Piping in Unix or Linux - GeeksforGeeks</a></li>
+  <li><a href="https://www.computerworld.com.au/article/279011/-z_programming_languages_bourne_shell_sh">The A-Z of Programming Languages: Bourne shell, or sh - Computerworld</a></li>
+  <li><a href="https://linux.die.net/man/8/usermod">usermod(8) - Linux man page</a></li>
+  <li><a href="https://docs.docker.com/install/linux/linux-postinstall/#configure-docker-to-start-on-boot">Post-installation steps for Linux - Configure Docker to start on boot - docker.com</a></li>
+  <li><a href="http://man7.org/linux/man-pages/man1/login.1.html#DESCRIPTION">($USER) login(1) - Linux manual page</a></li>
+  <li><a href="https://packages.debian.org/buster/python3-pip"> Details of package python3-pip in buster - Debian</a></li>
+  <li><a href="https://pip.pypa.io/en/stable">pip - The Python Package Installer documentation</a></li>
+  <li><a href="https://pip.pypa.io/en/stable/reference/pip_install/">pip install - The Python Package Installer documentation</a></li>
+  <li><a href="https://pypi.org/project/docker-compose/">docker-compose · PyPI</a></li>
+  <li><a href="https://www.computerhope.com/unix/unewgrp.htm">Linux newgrp command help and examples - computerhope</a></li>
+  <li><a href="https://www.youtube.com/watch?v=3N3n9FzebAA">dotScale 2013 - Solomon Hykes</a>
+    <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+      <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/3N3n9FzebAA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </li>
+  <li><a href="https://www.youtube.com/watch?v=VhabrYF1nms">Building Python apps with Docker - PyTexas</a>
+    <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+      <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/VhabrYF1nms" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </li>
+</ul>
