@@ -15,6 +15,14 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Articles
 
+### [How to read a code](https://www.iamjonas.me/2020/08/how-to-read-code.html)
+
+> More common is to be thrown into an ongoing project. Or even more common is to be added to a project because key personnel left. With no time for handover. So how do you get up to speed and make changes with confidence then?
+
+### [The boring technology behind a one-person Internet company - The Official Listen Notes Blog ](https://www.listennotes.com/blog/the-boring-technology-behind-a-one-person-23/)
+
+> After reading this post, you should be able to replicate what I build for Listen Notes or easily do something similar. You don’t need to hire a lot of engineers.
+
 ### [Want to be great? Know a lot](https://www.iamjonas.me/2021/10/want-to-be-great-know-lot.html)
 
 > To become better you need to know what's out there. You need to turn the unknown unknowns into known unknowns.
