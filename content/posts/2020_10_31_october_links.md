@@ -25,11 +25,11 @@ pull requests approved by committers.
 These labels (or equivalent action outputs) are used to optimise the use of CI resources since [not approved pull requests run only a subset of tests](https://github.com/apache/airflow/pull/11828). It was introduced because the number of GitHub Actions jobs running in parallel is limited to 180 for all Apache projects so running full test suite every time seemed to be a waste.
 It was made in cooperation with [Jarek Potiuk](https://github.com/potiuk) who is Apache Airflow Commiter and PMC Member. It was also my first time with TypeScript which I enjoyed a lot.
 
-Meanwhile my blog post about Terraform and Infrastructure as Code was published \[IaC\]. If you want to know why IaC and Terraform is so popular, feel free to read it: [Terraform Tutorial: Introduction to Infrastructure as Code](https://www.polidea.com/blog/terraform-tutorial-introduction-to-infrastructure-as-code/).
+Meanwhile my blog post about Terraform and Infrastructure as Code was published \[IaC\]. If you want to know why IaC and Terraform is so popular, feel free to read it: [Terraform Tutorial: Introduction to Infrastructure as Code](https://tobiaszkedzierski.medium.com/terraform-tutorial-introduction-to-infrastructure-as-code-dccec643bfdb).
 
 ## Articles
 
-### [A Short Story for Engineers](https://userweb.cs.txstate.edu/~br02/cs1428/ShortStoryForEngineers.htm)
+### A Short Story for Engineers (link not valid anymore)
 
 > You don’t have to be an engineer to appreciate this story.
 

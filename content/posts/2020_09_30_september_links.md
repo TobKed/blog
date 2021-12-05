@@ -55,7 +55,7 @@ Add juice squeezed from one lemon to 1 liter of boiled water.
 
 ## Articles
 
-### [Five Nonobvious Remote Work Techniques](https://queue.acm.org/detail.cfm?id=3417752)
+### Five Nonobvious Remote Work Techniques (link not valid anymore)
 
 > Emulating the efficiency of in-person conversations
 
@@ -93,7 +93,7 @@ Add juice squeezed from one lemon to 1 liter of boiled water.
 
 > The full PyConline AU 2020 playlist.
 
-### [Will FastApi Become a New Flask?](https://www.polidea.com/blog/will-fastapi-become-a-new-flask/)
+### Will FastApi Become a New Flask? (link not valid anymore)
 
 > It shows excellent performance and offers some valuable features. It’s based on Starlette and derives some features from it.
 

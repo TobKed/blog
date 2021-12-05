@@ -25,7 +25,7 @@ Additionally, for an internal project I developed a small application which sync
 
 > Shell is the essential tool for every programmer. Here's a list of command-line tools that aim to provide modern, often much faster, alternatives to the existing shell commands.
 
-### [Do not trust Google](https://lukeboyle.com/blog-posts/2020/08/do-not-trust-google)
+### Do not trust Google (link not valid anymore)
 
 > Facebook seems to be our current punching bag of choice because of their supposed ability to manipulate political opinion, but in my opinion Google is a much more insidious company with far greater potential for abuse.
 

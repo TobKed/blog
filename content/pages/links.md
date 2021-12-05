@@ -58,8 +58,8 @@ Tags: python, django, links, bookmarks
 
 ### Conferences, meet-ups
 
-- [PyCon PL](https://pl.pycon.org/)
+- PyCon PL (link not valid anymore)
 - [PyCon CZ](https://cz.pycon.org/)
 - [PyWaw](http://pywaw.org/)
-- [PySilesia](http://pysilesia.pl/)
-- [Coding Dojo Silesia](https://www.meetup.com/pl-PL/Coding-Dojo-Silesia/)
+- PySilesia (link not valid anymore)
+- Coding Dojo Silesia (link not valid anymore)

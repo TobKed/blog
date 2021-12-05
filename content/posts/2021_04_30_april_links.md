@@ -36,7 +36,7 @@ I completed [Architecting with Google Kubernetes Engine](https://www.coursera.or
 
 > This article is an attempt to sort the basic things out with the minimum words and maximum drawings.
 
-### [Everyone Is Still Terrible At Creating Software At Scale](https://margint.blog/2021/04/05/creating-software-at-scale/)
+### Everyone Is Still Terrible At Creating Software At Scale (link not valid anymore)
 
 > How is it that we’ve found ways to organize the work around so many other creative disciplines but writing software is still hard?
 
