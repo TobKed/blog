@@ -15,11 +15,18 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # If your site is available via HTTPS, make sure SITEURL begins with https://
-SITEURL = "blog/"
-RELATIVE_URLS = True
+SITEURL = "https://tobked.github.io/blog/"
+RELATIVE_URLS = False
 
-# FEED_ALL_ATOM = 'feeds/all.atom.xml'
-# CATEGORY_FEED_ATOM = 'feeds/{slug}.atom.xml'
+FEED_DOMAIN = SITEURL
+FEED_MAX_ITEMS = 50
+FEED_ALL_RSS = 'feeds/all.rss.xml'
+FEED_ALL_ATOM = "feeds/all.atom.xml"
+CATEGORY_FEED_ATOM = None
+TRANSLATION_FEED_ATOM = None
+AUTHOR_FEED_ATOM = None
+AUTHOR_FEED_RSS = None
+
 
 DELETE_OUTPUT_DIRECTORY = True
 

@@ -44,6 +44,7 @@ SOCIAL = (
     ("user", "https://tobked.github.io/"),
     ("LinkedIn", "https://www.linkedin.com/in/tobiaszkedzierski/?locale=en_US"),
     ("GitHub", "https://github.com/TobKed"),
+    ("RSS", "https://tobked.github.io/blog/feeds/all.rss.xml"),
 )
 
 DEFAULT_PAGINATION = 10
