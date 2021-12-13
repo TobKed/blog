@@ -49,6 +49,18 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Other stuff
 
+### [Awesome-Selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted)
+
+> A list of Free Software network services and web applications which can be hosted on your own servers.
+
+### [joplin](https://github.com/laurent22/joplin/)
+
+> Joplin - an open source note taking and to-do application with synchronization capabilities for Windows, macOS, Linux, Android and iOS.
+
+### [ALL about RSS](https://github.com/AboutRSS/ALL-about-RSS)
+
+> A list of RSS related stuff: tools, services, communities and tutorials, etc.
+
 ## Podcasts
 
 ## Videos
