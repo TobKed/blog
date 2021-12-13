@@ -37,6 +37,10 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Python libraries
 
+### [sitemap - Pelcian plugin](https://github.com/pelican-plugins/sitemap)
+
+> Generates a site map for Pelican-powered sites.
+
 ## Django libraries
 
 ## Tools
