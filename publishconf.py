@@ -19,6 +19,7 @@ SITEURL = "https://tobked.github.io/blog/"
 RELATIVE_URLS = False
 
 FEED_DOMAIN = SITEURL
+RSS_FEED_SUMMARY_ONLY = False
 FEED_MAX_ITEMS = 50
 FEED_ALL_RSS = 'feeds/all.rss.xml'
 FEED_ALL_ATOM = "feeds/all.atom.xml"
