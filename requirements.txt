@@ -7,6 +7,7 @@ Jinja2==2.11.3
 Markdown==3.1.1
 MarkupSafe==1.1.1
 pelican==4.1.1
+pelican-sitemap==1.0.2
 ply==3.11
 pre-commit
 Pygments==2.7.4

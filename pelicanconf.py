@@ -15,7 +15,10 @@ PATH = "content"
 STATIC_PATHS = [
     "images",
     "css",
+    "extra/robots.txt",
 ]
+
+EXTRA_PATH_METADATA = {"extra/robots.txt": {"path": "/robots.txt"}}
 
 TIMEZONE = "Europe/Warsaw"
 
@@ -57,3 +60,11 @@ HEADER_COVER = "images/poli_photo_by_julia_kaczorowska_edit.png"
 FOOTER_INCLUDE = "my_footer.html"
 IGNORE_FILES = [FOOTER_INCLUDE]
 EXTRA_TEMPLATES_PATHS = [os.path.join(os.path.dirname(__file__), "content", "html")]
+
+# other
+PLUGINS = ["sitemap"]
+SITEMAP = {
+    "format": "xml",
+    "priorities": {"articles": 0.6, "indexes": 0.5, "pages": 0.4},
+    "changefreqs": {"articles": "weekly", "indexes": "weekly", "pages": "monthly"},
+}
