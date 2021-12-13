@@ -7,13 +7,15 @@ from __future__ import unicode_literals
 
 import os
 import sys
+
 sys.path.append(os.curdir)
 from pelicanconf import *
 from dotenv import load_dotenv
+
 load_dotenv()
 
 # If your site is available via HTTPS, make sure SITEURL begins with https://
-SITEURL = 'blog/'
+SITEURL = "blog/"
 RELATIVE_URLS = True
 
 # FEED_ALL_ATOM = 'feeds/all.atom.xml'
@@ -24,4 +26,4 @@ DELETE_OUTPUT_DIRECTORY = True
 # Following items are often useful when publishing
 
 GOOGLE_ANALYTICS = os.environ.get("GOOGLE_ANALYTICS")
-#DISQUS_SITENAME = ""
+# DISQUS_SITENAME = ""

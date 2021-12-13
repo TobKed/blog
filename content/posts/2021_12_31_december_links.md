@@ -29,6 +29,10 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Python
 
+### [Writing Simple Python GUIs for your Command-Line-Phobe Coworkers](https://cushychicken.github.io/python-guis-for-heretics/)
+
+> Why add a GUI? Simple: your coworkers know GUIs, and they love GUIs. They love them, even if they’ve never heard the term “GUI” and don’t know what “GUI” means.
+
 ## Django
 
 ## Python libraries
