@@ -1,11 +1,10 @@
 Title: Productivity course
-Date: 2021-04-15
+Date: 2021-12-16
 Category: life
 Tags: life, productivity
 Slug: productivity-course
 Summary: Few words about one month productivity course (Produktywność krok po kroku).
-Status: draft
-Header_Cover: /images/posts/black-cover.png
+Status: published
 
 ## Productivity
 
