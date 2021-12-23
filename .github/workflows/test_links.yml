@@ -1,0 +1,27 @@
+name: Test links
+
+on:
+  workflow_dispatch:
+    inputs:
+
+jobs:
+  test-links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+          cache: 'pip'
+      - name: Install requirements
+        run: pip install -r scripts/test_links/requirements.txt
+      - name: Test links
+        run: python scripts/test_links/test_links.py
+      - uses: actions/upload-artifact@v2
+        with:
+          name: logs
+          path: |
+            scripts/test_links/logs/
+            scripts/test_links/*.json
