@@ -107,6 +107,10 @@ Presentation about Terraform in Brival.
 
 > Configuring my mac with Ansible
 
+### [cat -v harmful stuff](https://harmful.cat-v.org/)
+
+> Encyclopedia of things considered harmful.
+
 ## Podcasts
 
 ### [Porozmawiajmy o IT #143: Pasja informatyki](https://porozmawiajmyoit.pl/poit-143-pasja-informatyki/)
@@ -116,6 +120,10 @@ Presentation about Terraform in Brival.
 ### [Darknet Diaries: EP 101: Lotería](https://darknetdiaries.com/episode/101/)
 
 > In 2014 the Puerto Rico Lottery was mysteriously losing money. Listen to this never before told story about what happened and who did it.
+
+### [PythpnBytes - Episode #264: We're just playing games with Jupyter at this point](https://pythonbytes.fm/episodes/show/264/we-re-just-playing-games-with-jupyter-at-this-point)
+
+> Special guest: Kim van Wyk
 
 ## Videos
 
