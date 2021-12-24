@@ -1,3 +1,4 @@
+beautifulsoup4==4.10.0
 Markdown==3.3.6
 pelican==4.7.1
 pelican-sitemap==1.0.2

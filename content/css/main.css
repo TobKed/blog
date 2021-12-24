@@ -449,6 +449,10 @@ blockquote p {
   margin-top: 0px;
 }
 
+.toctitle {
+  font-weight: bold;
+}
+
 /*FOR REFERENCE*/
 /*base {*/
 /*    color: #0085a1,*/

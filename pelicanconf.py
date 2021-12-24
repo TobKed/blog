@@ -69,3 +69,9 @@ SITEMAP = {
     "priorities": {"articles": 0.6, "indexes": 0.5, "pages": 0.4},
     "changefreqs": {"articles": "weekly", "indexes": "weekly", "pages": "monthly"},
 }
+
+MARKDOWN = {
+    "extension_configs": {
+        "markdown.extensions.toc": {"title": "Table of contents:"},
+    }
+}
