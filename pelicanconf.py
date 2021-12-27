@@ -72,6 +72,12 @@ SITEMAP = {
 
 MARKDOWN = {
     "extension_configs": {
+        # Needed for code syntax highlighting
+        "markdown.extensions.codehilite": {"css_class": "highlight"},
+        "markdown.extensions.extra": {},
+        "markdown.extensions.meta": {},
+        # This is for enabling the TOC generation
         "markdown.extensions.toc": {"title": "Table of contents:"},
-    }
+    },
+    "output_format": "html5",
 }

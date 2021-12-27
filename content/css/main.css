@@ -458,3 +458,14 @@ blockquote p {
 /*    color: #0085a1,*/
 /*    background: #0057a2*/
 /*}*/
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width:100%;
+  padding:5px;
+}
+
+table {
+  overflow:auto;
+}
