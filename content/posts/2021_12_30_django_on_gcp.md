@@ -9,7 +9,7 @@ Status: published
 
 # Repository with code: [TobKed/django_on_gcp](https://github.com/TobKed/django_on_gcp)
 
-Blog post is a complementary to the repository [github.com/TobKed/django_on_gcp](https://github.com/TobKed/django_on_gcp)
+Blog post is complementary to the repository [github.com/TobKed/django_on_gcp](https://github.com/TobKed/django_on_gcp)
 
 # Django application on Google Cloud Platform.
 
