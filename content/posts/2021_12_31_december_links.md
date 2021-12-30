@@ -147,6 +147,10 @@ Presentation about Terraform in Brival.
 
 > Special guest: Kim van Wyk
 
+### [The Real Python Podcast - Episode 90: A Python Journey: Cyber Security, Automating AWS, and TDD](https://realpython.com/podcasts/rpp/90/)
+
+> Hugh has a background in programming C and Perl and started to use Python in a cyber security job. He explains the way he used Python to search for malware. Hugh provides some suggestions for security packages and tools.
+
 ## Videos
 
 ### [HS Talks w Hackerspace Silesia! #2](https://www.youtube.com/watch?v=PISWsNC6XaU)
@@ -165,6 +169,12 @@ Presentation about Terraform in Brival.
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/f84n5oFoZBc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [Raymond Hettinger - Dataclasses: The code generator to end all code generators - PyCon 2018](https://www.youtube.com/watch?v=T-TwcmT6Rcw)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/T-TwcmT6Rcw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ### [](https://www.youtube.com/watch?v=VIDEO_ID)
