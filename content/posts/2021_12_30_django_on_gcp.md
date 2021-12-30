@@ -1,11 +1,11 @@
 Title: Django application on Google Cloud Platform.
-Date: 2021-12-25
+Date: 2021-12-30
 Category: django, cloud
 Tags: python, blog, django, cloud, google
 Slug: django_on_gcp
-Summary: How to deplpy Django app on Google Platform with Terraform
+Summary: How to deploy Django app on Google Platform with Terraform
 Header_Cover: /images/posts/2021_12_xx_django_gcp_terraform.png
-Status: draft
+Status: published
 
 # Repository with code: [TobKed/django_on_gcp](https://github.com/TobKed/django_on_gcp)
 

@@ -26,7 +26,7 @@ repos:
             ^themes/|
             ^venv/|
             ^content/posts/2019_10_07_black.md|
-            ^content/posts/2021_12_25_django_on_gcp.md
+            ^content/posts/2021_12_30_django_on_gcp.md
         )
 - repo: https://github.com/psf/black
   rev: 21.12b0

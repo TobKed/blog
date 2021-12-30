@@ -55,6 +55,12 @@ Presentation about Terraform in Brival.
 
 > This is a list of recurring anti-patterns that I see when I help folks with their container build pipelines, and suggestions to avoid them or refactor them into something better.
 
+### [Against the Trap of Efficiency: The Counterintuitive Antidote to the Time-Anxiety That Haunts and Hampers Our Search for Meaning](https://www.themarginalian.org/2021/12/20/four-thousand-weeks-oliver-burkeman/)
+
+> “Productivity is a trap. Becoming more efficient just makes you more rushed, and trying to clear the decks simply makes them fill up again faster… Since finitude defines our lives… living a truly authentic life — becoming fully human — means facing up to that fact.”
+>
+> By Maria Popova
+
 ## Python
 
 ### [Writing Simple Python GUIs for your Command-Line-Phobe Coworkers](https://cushychicken.github.io/python-guis-for-heretics/)
@@ -68,6 +74,18 @@ Presentation about Terraform in Brival.
 ### [Internals of sets and dicts](https://www.fluentpython.com/extra/internals-of-sets-and-dicts/)
 
 > Understand how Python dictionaries and sets are built with hash tables to make sense of their strengths and limitations.
+
+### [Writing fast async HTTP requests in Python](https://blog.jonlu.ca/posts/async-python-http)
+
+> I do a lot of web scraping in my spare time, and have been chasing down different formats and code snippets to make a large amount of network requests locally, with controls for rate limiting and error handling.
+
+### [Handling exceptions in Python like a PRO 🐍 💣](https://guicommits.com/handling-exceptions-in-python-like-a-pro/)
+
+> One of the downsides of a flexible language like python is that people often assume that as long as something works then it's probably the proper way of doing so. I would like to write this humble guide on how to effectively use python exceptions and how to handle exceptions and log them correctly.
+
+### [Structuring exceptions in Python like a PRO 🐍 🏗️ 💣](https://guicommits.com/how-to-structure-exception-in-python-like-a-pro/)
+
+> Given now you know how to properly [handle your exceptions](https://guicommits.com/handling-exceptions-in-python-like-a-pro/) with [Tryceratops](https://guicommits.com/project-tryceratops/) 🦖 help, the next step is to structure them effectively so you can scale and reuse them.
 
 ## Django
 
@@ -88,6 +106,10 @@ Presentation about Terraform in Brival.
 ## Tools
 
 ## Cloud
+
+### [AWS Organizations with Terraform Workspaces](https://guicommits.com/why-use-aws-organizations-with-terraform/)
+
+> How to use AWS Organizations to your advantage with meaningful examples, and how to use terraform to manage it and replicate resources across them.
 
 ## Other stuff
 
