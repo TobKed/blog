@@ -15,7 +15,7 @@ Some of them are strictly related to the things I did or am currently doing.
 
 During my work in the office I found out that many times the use of Git is discussed during quick chats or coffee breaks.
 There is nothing wrong with this, however short discussions do not give space for deeper explanation or analysis.
-I decided that a presentation about Git will fill this gap which resulted in **Brival Tech Talk - tips & tricks**.
+I decided that a presentation about Git will fill this gap which resulted in **Brival Tech Talk: GIT - tips & tricks**.
 I've expanded topics from my post on Git: [Changing history in Git]({filename}/posts/2019_08_12_git_change_history.md).
 
 I talked about:

@@ -9,15 +9,52 @@ Status: draft
 
 # 2021
 
-...
+Yeah, 2021. Give me a break. When you thought 2020 was hard 2021 hit me so hard Mike Tyson would not be ashamed of.
 
-## Developing ...
+## Programming journey
 
-...
+#### Apache Beam provider for Apache Airflow
 
-## Increased Cloud competencies
+In February, the [Apache Beam provider](https://github.com/apache/airflow/pull/12814) for [Apache Airflow](https://github.com/apache/airflow)
+on which I was working for several weeks was finally merged into `master`.
 
-...
+It is Available on pypi:
+
+- [apache-airflow-providers-apache-beam](https://pypi.org/project/apache-airflow-providers-apache-beam/)
+- [apache-airflow-backport-providers-apache-beam](https://pypi.org/project/apache-airflow-backport-providers-apache-beam/)
+
+#### Work
+
+Also in February, the software house Polidea for which I worked was bought by [Snowflake](https://www.snowflake.com/).
+Got offer and worked there for few months but I didn't enjoy it and struggle with some life issues, so I quit and took a short break.
+I worked for few months for [Brival](https://www.brival.co/) which is small software house from Częstochowa where I had
+opportunity to develop backend for video-chat self-help plumbing application.
+
+#### Increased Cloud competencies
+
+I continued my journey with Cloud.
+In November, I passed the AWS Certified Cloud Practitioner exam and got certificate.
+I already have some knowledge about the Google Cloud Platform (Google Cloud Associate Certificate),
+so expanding it with another provider gave me a better understanding of the Cloud in general.
+I have a better overview of possibilities which Cloud computing offers and feel much more confident in this field.
+It is interesting to observe how major players solve the same problems in different ways.
+
+<img src="{static}/images/posts/2021/aws-certified-cloud-practitioner.png" alt="AWS Certified Cloud Practitioner" style="display: block; margin-left: auto; margin-right: auto;">
+
+[AWS Certified Cloud Practitioner - credly.com](https://www.credly.com/badges/b3b3b1ac-43da-4715-95ca-3c4881c94473/public_url)
+
+## Learning, talking
+
+I completed [Productivity course]({filename}/posts/2021_04_15_productivity.md) which helped and helping me continuously
+to improve my time (and life) management.
+
+I learned also how to use this iconic text editor called [Vim](https://www.vim.org/).
+Maybe I am not very efficient with it, hence I am not using for everything but comfortable enough to dome some work with it.
+
+I gave two presentations:
+
+- Brival Tech Talk: GIT - tips & tricks
+- Brival internal talk: Terraform and Google Cloud Platform
 
 ## Writing
 

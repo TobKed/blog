@@ -58,7 +58,6 @@ It solidified my knowledge about the Google Cloud Platform.
 
 In relation to the cloud infrastructure I got familiar with the idea of  _Infrastructure As Code_ and a well known tool for it, [Terraform](https://www.terraform.io/). I wrote a blog post about it:
 [Terraform Tutorial: Introduction to Infrastructure as Code](https://tobiaszkedzierski.medium.com/terraform-tutorial-introduction-to-infrastructure-as-code-dccec643bfdb)
-d
 
 ## Open Source: Apache Airflow, Apache Beam, Github Actions
 
