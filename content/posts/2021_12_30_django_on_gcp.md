@@ -4,7 +4,7 @@ Category: django, cloud
 Tags: python, blog, django, cloud, google
 Slug: django_on_gcp
 Summary: How to deploy Django app on Google Platform with Terraform
-Header_Cover: /images/posts/2021_12_xx_django_gcp_terraform.png
+Header_Cover: /images/posts/2021/2021_12_xx_django_gcp_terraform.png
 Status: published
 
 # Repository with code: [TobKed/django_on_gcp](https://github.com/TobKed/django_on_gcp)
@@ -48,7 +48,7 @@ Hopefully such a condensed project may help you learn how GCP services may be us
 >
 > -- [App Engine documentation](https://cloud.google.com/appengine/docs)
 
-<img src="{static}/images/posts/2021_12_25_django_on_gcp_app_engine.png" alt="Django on App Engine" style="display: block; margin-left: auto; margin-right: auto;">
+<img src="{static}/images/posts/2021/2021_12_25_django_on_gcp_app_engine.png" alt="Django on App Engine" style="display: block; margin-left: auto; margin-right: auto;">
 
 ### Cloud Run
 
@@ -56,7 +56,7 @@ Hopefully such a condensed project may help you learn how GCP services may be us
 >
 > -- [Cloud Run documentation](<>)
 
-<img src="{static}/images/posts/2021_12_25_django_on_gcp_cloud_run.png" alt="Django on Cloud Run" style="display: block; margin-left: auto; margin-right: auto;">
+<img src="{static}/images/posts/2021/2021_12_25_django_on_gcp_cloud_run.png" alt="Django on Cloud Run" style="display: block; margin-left: auto; margin-right: auto;">
 
 ## Django app changes specific for Google Cloud Platform
 

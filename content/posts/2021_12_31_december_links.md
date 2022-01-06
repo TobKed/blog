@@ -13,13 +13,35 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
 
-Updates to blog:
+#### Blog
 
-- improved look
-- rss
-- robots.txt / sitemap
+Last month is stumble across \[Jack De Winter blog\])https://jackdewinter.github.io/) where he published a few articles
+about [Pelican](https://blog.getpelican.com/), a static website generator writtend in Python which runs my blog as well.
+Inspired by those articles I made some improvements like:
 
-Presentation about Terraform in Brival.
+- enabling website crawling
+- adding RSS channel
+- small improvements to look
+
+I wrote also some small, sloppy Python script which verifies are all links on the website works
+(there may be some typos or page was turned down etc.).
+I Spend some good time playing with blog.
+
+#### Posts
+
+I published two blog posts this month:
+
+- [Productivity course]({filename}/posts/2021_04_15_productivity.md) - this post waited in the closet for few months
+- [Django application on Google Cloud Platform]({filename}/posts/2021_12_30_django_on_gcp.md) - idea for this post was born in 2020,
+  however since soo many unexpected things happened last year it was the highest priority to complete it. Successfully I managed to close year with this post being publicly available.
+
+#### Presentation: Terraform
+
+While working on [Django application on Google Cloud Platform]({filename}/posts/2021_12_30_django_on_gcp.md) I spent some
+time playing with Terraform. Since I like it very much, it leads me to thought: why do not make some small presentation about it.
+I contacted folks from [Brival](https://www.brival.co/), agreed on the date, and it went pretty good in my opinion.
+I not only described some theory but also spun-up and teared down some example infrastructure on GCP.
+It was pretty nice to meet with people, and I had good time giving talk. Cheers and Happy Terraforming.
 
 ## Articles
 
@@ -67,7 +89,7 @@ Presentation about Terraform in Brival.
 
 > Why add a GUI? Simple: your coworkers know GUIs, and they love GUIs. They love them, even if they’ve never heard the term “GUI” and don’t know what “GUI” means.
 
-### [Fine Tuning Pelican: Enabling Website Crawling ](https://jackdewinter.github.io/2019/10/30/fine-tuning-pelican-enabling-website-crawling/)
+### [Fine Tuning Pelican: Enabling Website Crawling](https://jackdewinter.github.io/2019/10/30/fine-tuning-pelican-enabling-website-crawling/)
 
 > It is worthwhile to ensure that the website is properly set up to regulate any web crawling that does occur. This article details the setup required to enable this regulation.
 
@@ -87,6 +109,10 @@ Presentation about Terraform in Brival.
 
 > Given now you know how to properly [handle your exceptions](https://guicommits.com/handling-exceptions-in-python-like-a-pro/) with [Tryceratops](https://guicommits.com/project-tryceratops/) 🦖 help, the next step is to structure them effectively so you can scale and reuse them.
 
+### [The One Python Library Everyone Needs](https://glyph.twistedmatrix.com/2016/08/attrs.html)
+
+> Use[ _attrs_](https://github.com/python-attrs/attrs). Use it. Use it for everything.
+
 ## Django
 
 ### [The definitive guide to modeling polymorphism in Django](https://confuzeus.com/hub/django-web-framework/model-polymorphism/)
@@ -101,9 +127,13 @@ Presentation about Terraform in Brival.
 
 > Generates a site map for Pelican-powered sites.
 
-## Django libraries
+### [attrs](https://github.com/python-attrs/attrs)
 
-## Tools
+> _attrs_ is the Python package that will bring back the joy of writing classes by relieving you from the drudgery of implementing object protocols (aka dunder methods).
+
+### [cluegen](https://github.com/dabeaz/cluegen)
+
+> Cluegen is a library that allows you to define data classes using Python type clues.
 
 ## Cloud
 
@@ -175,10 +205,4 @@ Presentation about Terraform in Brival.
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/T-TwcmT6Rcw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
-
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>

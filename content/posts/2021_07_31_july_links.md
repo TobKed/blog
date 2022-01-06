@@ -42,7 +42,7 @@ I spent some significant time reading related articles and documentation.
 I tested commands and concepts in the field as well because the presentation was conducted hand in hand with a live demo.
 I found it helpful.
 
-![Brival Tech Talk - tips & tricks]({static}/images/posts/brival_tech_talk_git.jpg)
+![Brival Tech Talk - tips & tricks]({static}/images/posts/2021/brival_tech_talk_git.jpg)
 
 ## Articles
 

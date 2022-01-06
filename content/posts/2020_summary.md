@@ -4,7 +4,7 @@ Category: summary
 Tags: summary, year, 2020
 Slug: 2020-summary
 Summary: Ups and downs of 2020
-Header_Cover: /images/posts/2020_summary.png
+Header_Cover: /images/posts/2020/2020_summary.png
 Status: published
 
 # 2020
@@ -42,7 +42,7 @@ I became interested in improving competencies related to the cloud. Early in Jun
 While studying for the certificate I finished a series of tutorials on Qwiklabs and Coursera platforms.
 It solidified my knowledge about the Google Cloud Platform.
 
-![Google Cloud Associate Engineer]({static}/images/posts/gcp_ace.png)
+![Google Cloud Associate Engineer]({static}/images/posts/2020/gcp_ace.png)
 
 [Google Cloud Associate Engineer](https://www.credential.net/d47b7596-251f-45ac-8a54-4cf6d8c5a286?key=f4eed8bc7e2f25d6b2a9315f31e1a20dd7cd5ecc93caff78eb55feeafcc6be70).
 
@@ -89,7 +89,7 @@ Additionally, some basic statistics is calculated and results are pushed to Goog
 
 Sample dashboard created in Datastudio with collected data:
 
-![Datastuido dashboard]({static}/images/posts/ga_stats.png)
+![Datastuido dashboard]({static}/images/posts/2020/ga_stats.png)
 
 ## Writing
 
@@ -138,8 +138,8 @@ Learn more about Vipassana on [dhamma.org](https://www.dhamma.org/)
 
 ## Beskidy
 
-![Beskidy photo]({static}/images/posts/beskidy/DSC03290.png)
+![Beskidy photo]({static}/images/posts/2020/beskidy/DSC03290.png)
 
-![Beskidy photo]({static}/images/posts/beskidy/DSC03307.png)
+![Beskidy photo]({static}/images/posts/2020/beskidy/DSC03307.png)
 
-![Beskidy photo]({static}/images/posts/beskidy/DSC03339.png)
+![Beskidy photo]({static}/images/posts/2020/beskidy/DSC03339.png)

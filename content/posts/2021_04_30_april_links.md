@@ -15,7 +15,7 @@ Some of them are strictly related to the things I did or am currently doing.
 
 I completed [Architecting with Google Kubernetes Engine](https://www.coursera.org/account/accomplishments/specialization/E452CCSHMMGH) course on [coursera.org](https://www.coursera.org/specializations/architecting-google-kubernetes-engine).
 
-![Datastuido dashboard]({static}/images/posts/CERTIFICATE_LANDING_PAGE~E452CCSHMMGH.jpeg)
+![Datastuido dashboard]({static}/images/posts/2021/CERTIFICATE_LANDING_PAGE~E452CCSHMMGH.jpeg)
 [Architecting with Google Kubernetes Engine - Certificate](https://www.coursera.org/account/accomplishments/specialization/E452CCSHMMGH)
 
 ## Articles

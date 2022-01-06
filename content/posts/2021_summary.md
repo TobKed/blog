@@ -4,7 +4,7 @@ Category: summary
 Tags: summary, year, 2021
 Slug: 2021-summary
 Summary: Ups and downs of 2021
-Header_Cover: /images/posts/2021_summary.png
+Header_Cover: /images/posts/2021/summary/2021_summary.jpg
 Status: draft
 
 # 2021
@@ -21,8 +21,8 @@ Status: draft
 
 ## Writing
 
-I wanted to improve my writing skills so since March I have been writing monthly summaries where I am trying to compile a few sentences about the last month together
-with articles, tools and other interesting materials I came across.
+I wanted to improve my writing skills so since March I have been writing monthly summaries where I am trying to compile
+a few sentences about the last month together with articles, tools and other interesting materials I came across.
 
 2021 summaries:
 
@@ -39,12 +39,13 @@ with articles, tools and other interesting materials I came across.
 - [November]({filename}/posts/2021_11_30_november_links.md)
 - [December]({filename}/posts/2021_12_31_december_links.md)
 
-I also wrote a few blog posts:
+I also wrote two additional blog posts:
 
-- [](<>)
+- [Productivity course]({filename}/posts/2021_04_15_productivity.md)
+- [Django application on Google Cloud Platform]({filename}/posts/2021_12_30_django_on_gcp.md)
 
 ...
 
 ## ...
 
-![... photo]({static}/images/posts/....png)
+![... photo]({static}/images/posts/2021/summary/2021_summary.jpg)
