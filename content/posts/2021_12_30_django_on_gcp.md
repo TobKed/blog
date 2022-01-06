@@ -187,7 +187,7 @@ Most of the terminal commands stated here are executed within the Terraform envi
 <td>❌</td>
 <td><code>cloudbuild/gae_standard.yaml</code></td>
 <td><code>gae_standard.yaml</code></td>
-<td><a href="./terraform/modules/django_gae_standard"><code>terraform/modules/django_gae_standard</code></a></td>
+<td><a href="https://github.com/TobKed/django_on_gcp/tree/master/terraform/modules/django_gae_standard"><code>terraform/modules/django_gae_standard</code></a></td>
 </tr>
 <tr>
 <td><code>terraform/envs/gae_standard_with_gcs</code></td>
@@ -195,7 +195,7 @@ Most of the terminal commands stated here are executed within the Terraform envi
 <td>✅</td>
 <td><code>cloudbuild/gae_standard_with_gcs.yaml</code></td>
 <td><code>gae_standard_with_gcs.yaml</code></td>
-<td><a href="./terraform/modules/django_gae_standard"><code>terraform/modules/django_gae_standard</code></a></td>
+<td><a href="https://github.com/TobKed/django_on_gcp/tree/master/terraform/modules/django_gae_standard"><code>terraform/modules/django_gae_standard</code></a></td>
 </tr>
 <tr>
 <td><code>terraform/envs/gae_flexible</code></td>
@@ -203,7 +203,7 @@ Most of the terminal commands stated here are executed within the Terraform envi
 <td>✅</td>
 <td><code>cloudbuild/gae_flexible.yaml</code></td>
 <td><code>gae_flexible.yaml</code></td>
-<td><a href="./terraform/modules/django_gae_flexible"><code>terraform/modules/django_gae_flexible</code></a></td>
+<td><a href="https://github.com/TobKed/django_on_gcp/tree/master/terraform/modules/django_gae_flexible"><code>terraform/modules/django_gae_flexible</code></a></td>
 </tr>
 <tr>
 <td><code>terraform/envs/cloud_run</code></td>
@@ -211,7 +211,7 @@ Most of the terminal commands stated here are executed within the Terraform envi
 <td>✅</td>
 <td><code>cloudbuild/cloud_run.yaml</code></td>
 <td>-</td>
-<td><a href="./terraform/modules/django_cloud_run"><code>terraform/modules/django_cloud_run</code></a></td>
+<td><a href="https://github.com/TobKed/django_on_gcp/tree/master/terraform/modules/django_cloud_run"><code>terraform/modules/django_cloud_run</code></a></td>
 </tr>
 </tbody>
 </table>

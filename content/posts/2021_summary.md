@@ -26,8 +26,8 @@ a few sentences about the last month together with articles, tools and other int
 
 2021 summaries:
 
-- [March]({filename}/posts/2021_01_31_january_links.md)
-- [March]({filename}/posts/2021_02_28_february_links.md)
+- [January]({filename}/posts/2021_01_31_january_links.md)
+- [February]({filename}/posts/2021_02_28_february_links.md)
 - [March]({filename}/posts/2021_03_31_march_links.md)
 - [April]({filename}/posts/2021_04_30_april_links.md)
 - [May]({filename}/posts/2021_05_31_may_links.md)
@@ -44,8 +44,20 @@ I also wrote two additional blog posts:
 - [Productivity course]({filename}/posts/2021_04_15_productivity.md)
 - [Django application on Google Cloud Platform]({filename}/posts/2021_12_30_django_on_gcp.md)
 
-...
+## Photos
 
-## ...
+![Fixed Gear]({static}/images/posts/2021/summary/010.jpg)
 
-![... photo]({static}/images/posts/2021/summary/2021_summary.jpg)
+![Fores]({static}/images/posts/2021/summary/020.jpg)
+
+![Bieszczady]({static}/images/posts/2021/summary/030.jpg)
+
+![Bieszczady]({static}/images/posts/2021/summary/031.jpg)
+
+![Bieszczady]({static}/images/posts/2021/summary/032.jpg)
+
+![Beskid Wyspowy]({static}/images/posts/2021/summary/040.jpg)
+
+![Beskid Wyspowy]({static}/images/posts/2021/summary/041.jpg)
+
+![Jura]({static}/images/posts/2021/summary/090.jpg)

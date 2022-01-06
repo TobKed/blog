@@ -17,7 +17,9 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > A more productive way to make use of your time is to study to discover what the most successful authorities in your industry do in common.
 
-### [Building Cursors for the Disqus API](https://cra.mr/2011/03/08/building-cursors-for-the-disqus-api/)
+### Building Cursors for the Disqus API (link not valid anymore)
+
+[comment]: <> (https://cra.mr/2011/03/08/building-cursors-for-the-disqus-api/)
 
 > This last week we’ve been implementing cursors for the Disqus API (3.0). If you’re not familiar, the concept is like cursors in your database: create a marker for where you are with your result set so you can iterate through a large set of results efficiently. Think of it like a snapshot. A marker that lets us retrieve the results you were previously looking for, and return a subset of those results.
 
