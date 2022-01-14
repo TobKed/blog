@@ -1,7 +1,7 @@
 Title: Month summary - {Month} 2021
 Date: 2022-12-31
 Category: summary
-Tags: python, blog, podcast, series, aggregate, summary, month, 2021
+Tags: python, blog, podcast, series, aggregate, summary, month, 2022
 Slug: 2022-{month}-links
 Summary: Interesting stuff from the month
 Status: draft

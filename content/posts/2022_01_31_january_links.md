@@ -1,7 +1,7 @@
 Title: Month summary - January 2022
 Date: 2022-01-31
 Category: summary
-Tags: python, blog, podcast, series, aggregate, summary, month, 2021
+Tags: python, blog, podcast, series, aggregate, summary, month, 2022
 Slug: 2022-January-links
 Summary: Interesting stuff from the month
 Status: draft
@@ -20,6 +20,14 @@ Some of them are strictly related to the things I did or am currently doing.
 > Brian Armstrong just bought one of the most expensive homes in the state of California. For $133M, his modern Bel Air mansion is now one of the priciest single-family home transactions ever.
 >
 > The self-confessed “on the spectrum” (of Autism) CEO has managed to become one of the world’s richest entrepreneurs, as well as one of the most powerful men in web3. With the purchase of his Bel Air mansion, Brian has coronated his position as one of the richest and powerful men in the world, period.
+
+### [Five Tips For a Healthier Postgres Database in the New Year](https://blog.crunchydata.com/blog/five-tips-for-a-healthier-postgres-database-in-the-new-year)
+
+> In this coming year we look forward to making the developer experience of Postgres better than it's ever been.
+
+### [How I build a feature - Simon Willison](https://simonwillison.net/2022/Jan/12/how-i-build-a-feature/)
+
+> I’m maintaining a lot of different projects at the moment. I thought it would be useful to describe the process I use for adding a new feature to one of them, using the new sqlite-utils create-database command as an example.
 
 ## Python
 
