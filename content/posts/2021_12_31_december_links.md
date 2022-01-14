@@ -4,7 +4,8 @@ Category: summary
 Tags: python, blog, podcast, series, aggregate, summary, month, 2021
 Slug: 2021-december-links
 Summary: Interesting stuff from the month
-Status: draft
+Header_Cover: /images/posts/2021/2021_12_xx.jpg
+Status: published
 
 # December 2021
 
@@ -33,9 +34,9 @@ I published two blog posts this month:
 
 - [Productivity course]({filename}/posts/2021_04_15_productivity.md) - this post waited in the queue for a few months to be published
 - [Django application on Google Cloud Platform]({filename}/posts/2021_12_30_django_on_gcp.md) - the idea for this post was born in 2020,
-  however since so many unexpected things happened last year it was the highest priority to complete it. I published it successfully this year.
+  however since so many unexpected things happened last year it was not the highest priority to complete it. I published it successfully this year.
 
-<br>
+<p></p>
 
 #### Presentation: Terraform
 
@@ -185,22 +186,18 @@ It was pretty nice to meet with people, and I had a good time giving the talk. C
 
 ## Videos
 
+### [Travis Fischer, Esther Nam: Character encoding and Unicode in Python - PyCon 2014](https://www.youtube.com/watch?v=Mx70n1dL534)
+
+> Playback on other websites has been disabled by the video owner. [Watch on YouTube](https://www.youtube.com/watch?v=Mx70n1dL534)
+
+### [Hammock Driven Development - Rich Hickey](https://www.youtube.com/watch?v=f84n5oFoZBc)
+
+> Playback on other websites has been disabled by the video owner. [Watch on YouTube](https://www.youtube.com/watch?v=f84n5oFoZBc)
+
 ### [HS Talks w Hackerspace Silesia! #2](https://www.youtube.com/watch?v=PISWsNC6XaU)
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/PISWsNC6XaU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-### [Travis Fischer, Esther Nam: Character encoding and Unicode in Python - PyCon 2014](https://www.youtube.com/watch?v=Mx70n1dL534)
-
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/Mx70n1dL534" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-### [Hammock Driven Development - Rich Hickey](https://www.youtube.com/watch?v=f84n5oFoZBc)
-
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube.com/embed/f84n5oFoZBc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ### [Raymond Hettinger - Dataclasses: The code generator to end all code generators - PyCon 2018](https://www.youtube.com/watch?v=T-TwcmT6Rcw)
