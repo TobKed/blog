@@ -1,6 +1,6 @@
 Title: Month summary - December 2021
 Date: 2021-12-31
-Category: summar
+Category: summary
 Tags: python, blog, podcast, series, aggregate, summary, month, 2021
 Slug: 2021-december-links
 Summary: Interesting stuff from the month
@@ -15,33 +15,35 @@ Some of them are strictly related to the things I did or am currently doing.
 
 #### Blog
 
-Last month is stumble across \[Jack De Winter blog\])https://jackdewinter.github.io/) where he published a few articles
-about [Pelican](https://blog.getpelican.com/), a static website generator writtend in Python which runs my blog as well.
-Inspired by those articles I made some improvements like:
+Last month I stumbled upon the [Jack De Winter blog](https://jackdewinter.github.io/) where he published a few articles
+about [Pelican](https://blog.getpelican.com/), a static website generator written in Python which powers my blog as well.
+Inspired by those articles I made some improvements, like:
 
 - enabling website crawling
-- adding RSS channel
-- small improvements to look
+- adding a RSS channel
+- small styling improvements
 
-I wrote also some small, sloppy Python script which verifies are all links on the website works
-(there may be some typos or page was turned down etc.).
-I Spend some good time playing with blog.
+I also wrote some small sloppy Python script which verifies all links on the website
+(there may be some typos or pages that were turned down etc.).
+I had a good time playing with configuration and scripting.
 
 #### Posts
 
 I published two blog posts this month:
 
-- [Productivity course]({filename}/posts/2021_04_15_productivity.md) - this post waited in the closet for few months
-- [Django application on Google Cloud Platform]({filename}/posts/2021_12_30_django_on_gcp.md) - idea for this post was born in 2020,
-  however since soo many unexpected things happened last year it was the highest priority to complete it. Successfully I managed to close year with this post being publicly available.
+- [Productivity course]({filename}/posts/2021_04_15_productivity.md) - this post waited in the queue for a few months to be published
+- [Django application on Google Cloud Platform]({filename}/posts/2021_12_30_django_on_gcp.md) - the idea for this post was born in 2020,
+  however since so many unexpected things happened last year it was the highest priority to complete it. I published it successfully this year.
+
+<br>
 
 #### Presentation: Terraform
 
 While working on [Django application on Google Cloud Platform]({filename}/posts/2021_12_30_django_on_gcp.md) I spent some
-time playing with Terraform. Since I like it very much, it leads me to thought: why do not make some small presentation about it.
-I contacted folks from [Brival](https://www.brival.co/), agreed on the date, and it went pretty good in my opinion.
-I not only described some theory but also spun-up and teared down some example infrastructure on GCP.
-It was pretty nice to meet with people, and I had good time giving talk. Cheers and Happy Terraforming.
+time playing with Terraform. Since I like it very much, it led  me to this thought: why not make some small presentation about it?
+I contacted folks from [Brival](https://www.brival.co/), agreed on the date, and it went pretty well in my opinion.
+I not only described some theory but also spun up and tore down some examples of infrastructure on GCP.
+It was pretty nice to meet with people, and I had a good time giving the talk. Cheers and Happy Terraforming.
 
 ## Articles
 

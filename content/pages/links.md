@@ -42,6 +42,8 @@ Tags: python, django, links, bookmarks
 - [Real Python](https://realpython.com/)
 - [Corey Schafer - YouTube channel](https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g)
 - [Coding Entrepreneurs - YouTube Channel](https://www.youtube.com/channel/UCWEHue8kksIaktO8KTTN_zg)
+- [Dennis Ivy - YouTube Channel](https://www.youtube.com/c/dennisivy)
+- [JustDjango - YouTube Channel](https://www.youtube.com/channel/UCRM1gWNTDx0SHIqUJygD-kQ)
 
 ### Django
 

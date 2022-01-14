@@ -15,6 +15,12 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Articles
 
+### [From 0 to $50B: the Coinbase Profile](https://www.aakashg.com/2022/01/12/coinbase/)
+
+> Brian Armstrong just bought one of the most expensive homes in the state of California. For $133M, his modern Bel Air mansion is now one of the priciest single-family home transactions ever.
+>
+> The self-confessed “on the spectrum” (of Autism) CEO has managed to become one of the world’s richest entrepreneurs, as well as one of the most powerful men in web3. With the purchase of his Bel Air mansion, Brian has coronated his position as one of the richest and powerful men in the world, period.
+
 ## Python
 
 ### [Is your Python code vulnerable to log injection?](https://dev.arie.bovenberg.net/blog/is-your-python-code-vulnerable-to-log-injection/)
@@ -28,6 +34,10 @@ Some of them are strictly related to the things I did or am currently doing.
 ### [Set up a Gunicorn Configuration File, and Test It](https://adamj.eu/tech/2021/12/29/set-up-a-gunicorn-configuration-file-and-test-it)
 
 > If you use Gunicorn, it’s likely you have a configuration file. This is a Python module that contains settings as module-level variables.
+
+### [Functional Programming HOWTO](https://docs.python.org/3/howto/functional.html)
+
+> In this document, we’ll take a tour of Python’s features suitable for implementing programs in a functional style. After an introduction to the concepts of functional programming, we’ll look at language features such as iterators and generators and relevant library modules such as itertools and functools.
 
 ## Django
 
