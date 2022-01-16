@@ -21,7 +21,7 @@ Nevertheless, I survived this experience. Here is the proof :)
 I start around 12:45
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%"' src="https://www.youtube.com/embed/0-iH6YMKSg4?start=767" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%"' src="https://www.youtube-nocookie.com/embed/0-iH6YMKSg4?start=767" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 [Code from presentation](https://github.com/TobKed/airflow-demo)

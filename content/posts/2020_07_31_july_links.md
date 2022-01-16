@@ -101,11 +101,11 @@ I also made a contribution to [apache/airflow](https://github.com/apache/airflow
 ### [Tutorial: Katie McLaughlin - Deploying Django on Serverless Infrastructure - PyCon 2020](https://www.youtube.com/watch?v=oYy9_4fm56o)
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%"' src="https://www.youtube.com/embed/oYy9_4fm56o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%"' src="https://www.youtube-nocookie.com/embed/oYy9_4fm56o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ### [Workshop: Google: Charles Engelke - Serverless Python Applications with Google Cloud - PyCon 2020](https://www.youtube.com/watch?v=4bjX9iKqpXA)
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%"' src="https://www.youtube.com/embed/4bjX9iKqpXA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%"' src="https://www.youtube-nocookie.com/embed/4bjX9iKqpXA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
