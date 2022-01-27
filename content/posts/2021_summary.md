@@ -7,7 +7,7 @@ Summary: Ups and downs of 2021
 Header_Cover: /images/posts/2021/summary/2021_summary.jpg
 Status: published
 
-# 2021 # TODO
+# 2021
 
 Yeah, 2021.
 Give me a break.
@@ -90,7 +90,7 @@ I also wrote two additional blog posts:
 
 ![Fixed Gear]({static}/images/posts/2021/summary/010.jpg)
 
-![Fores]({static}/images/posts/2021/summary/020.jpg)
+![Forest]({static}/images/posts/2021/summary/020.jpg)
 
 ![Bieszczady]({static}/images/posts/2021/summary/030.jpg)
 
@@ -103,3 +103,5 @@ I also wrote two additional blog posts:
 ![Beskid Wyspowy]({static}/images/posts/2021/summary/041.jpg)
 
 ![Jura]({static}/images/posts/2021/summary/090.jpg)
+
+![Sea]({static}/images/posts/2021/summary/099.jpg)
