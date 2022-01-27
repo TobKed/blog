@@ -47,6 +47,22 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > In this document, we’ll take a tour of Python’s features suitable for implementing programs in a functional style. After an introduction to the concepts of functional programming, we’ll look at language features such as iterators and generators and relevant library modules such as itertools and functools.
 
+### [An introduction to Pydbantic — a single model solution to Data Verification & Storage](https://itnext.io/an-introduction-to-pydbantic-a-single-model-solution-to-data-verification-storage-254cfe9e757f)
+
+> In a nutshell, pydantic provides a framework for validating input between interfaces to ensure the correct input data( type, structure, required, optional) are met, eliminating the need to add logic to catch & verify bad input.
+
+### [To Virtualenv or not to Virtualenv for Docker? This is the question.](https://potiuk.com/to-virtualenv-or-not-to-virtualenv-for-docker-this-is-the-question-6f980d753b46)
+
+> In this post, I want to disect why the approach is — in my opinion — rather bad for important set of use cases (related to building containers containing Python) and what should be done to fix it. I believe recommending virtualenv as “recommended solution” in all cases — including container building — is the decision that pip maintainers should rethink.
+
+### [Awesome Python Typing](https://github.com/typeddjango/awesome-python-typing)
+
+> Collection of awesome Python types, stubs, plugins, and tools to work with them.
+
+### [Mypy - Type hints cheat sheet (Python 3)](https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html)
+
+> This document is a quick cheat sheet showing how the [PEP 484](https://www.python.org/dev/peps/pep-0484) type annotation notation represents various common types in Python 3.
+
 ## Django
 
 ### [My (free) Django monitoring stack for 2022](https://mattsegal.dev/django-monitoring-stack.html)
@@ -65,11 +81,29 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Django libraries
 
+### Go
+
+### [Go by Example](https://gobyexample.com/)
+
+> Go is an open source programming language designed for building simple, fast, and reliable software. Please read the official documentation to learn a bit about Go code, tools packages, and modules.
+>
+> Go by Example is a hands-on introduction to Go using annotated example programs.
+
 ## Tools
 
 ### [Healthchecks](https://github.com/healthchecks/healthchecks)
 
 > Healthchecks is a cron job monitoring service. It listens for HTTP requests and email messages ("pings") from your cron jobs and scheduled tasks ("checks"). When a ping does not arrive on time, Healthchecks sends out alerts.
+
+### [yt-dlp](https://github.com/yt-dlp/yt-dlp)
+
+> A youtube-dl fork with additional features and fixes.
+
+### [borg](https://github.com/borgbackup/borg)
+
+> BorgBackup (short: Borg) is a deduplicating backup program. Optionally, it supports compression and authenticated encryption.
+>
+> The main goal of Borg is to provide an efficient and secure way to backup data. The data deduplication technique used makes Borg suitable for daily backups since only changes are stored. The authenticated encryption technique makes it suitable for backups to not fully trusted targets.
 
 ## Cloud
 
@@ -111,7 +145,13 @@ Some of them are strictly related to the things I did or am currently doing.
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/p9suUK4NpY0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
+### [PyCon.DE 2017 Thomas Waldmann - The BorgBackup Project](hmttps://www.youtube.com/watch?v=oLFMsP1GMa0)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/oLFMsP1GMa0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [](hmttps://www.youtube.com/watch?v=VIDEO_ID)
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

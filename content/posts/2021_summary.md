@@ -5,11 +5,14 @@ Tags: summary, year, 2021
 Slug: 2021-summary
 Summary: Ups and downs of 2021
 Header_Cover: /images/posts/2021/summary/2021_summary.jpg
-Status: draft
+Status: published
 
 # 2021 # TODO
 
-Yeah, 2021. Give me a break. When you thought 2020 was hard, 2021 hit me so hard Mike Tyson would not be ashamed of these punches.
+Yeah, 2021.
+Give me a break.
+When you thought 2020 was hard, 2021 hit me so hard Mike Tyson would not be ashamed of these punches.
+But life is life, there are always ups and downs.
 
 ## Programming journey
 
@@ -54,6 +57,9 @@ I gave two presentations:
 
 - Brival Tech Talk: GIT - tips & tricks
 - Brival internal talk: Terraform and Google Cloud Platform
+
+<img src="{static}/images/posts/2021/brival_tech_talk_git.jpg" alt="Brival Tech Talk - tips & tricks" style="display: block; margin-left: auto; margin-right: auto;">
+<img src="{static}/images/posts/2021/brival_tech_talk_terraform.jpg" alt="Brival Tech Talk - Terraform" style="display: block; margin-left: auto; margin-right: auto;">
 
 ## Writing
 

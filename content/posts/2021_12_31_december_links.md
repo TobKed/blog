@@ -46,6 +46,8 @@ I contacted folks from [Brival](https://www.brival.co/), agreed on the date, and
 I not only described some theory but also spun up and tore down some examples of infrastructure on GCP.
 It was pretty nice to meet with people, and I had a good time giving the talk. Cheers and Happy Terraforming.
 
+![Brival Tech Talk - Terraform]({static}/images/posts/2021/brival_tech_talk_terraform.jpg)
+
 ## Articles
 
 ### [How to read a code](https://www.iamjonas.me/2020/08/how-to-read-code.html)
