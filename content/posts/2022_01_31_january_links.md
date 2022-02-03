@@ -29,6 +29,16 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > I’m maintaining a lot of different projects at the moment. I thought it would be useful to describe the process I use for adding a new feature to one of them, using the new sqlite-utils create-database command as an example.
 
+### [Abstract your code](https://guicommits.com/abstract-your-code/)
+
+> Implementation abstraction makes your code flexible and decoupled from vendors or hard implementations, and finally, it's quite easy to follow, yet is constantly ignored.
+>
+> This post would fit perfectly in a series named “Coding Practices that should be obvious, but for some unknown reason aren't”.
+
+### [Why is Exposing the Docker Socket a Really Bad Idea? ](https://blog.quarkslab.com/why-is-exposing-the-docker-socket-a-really-bad-idea.html)
+
+> It is written almost everywhere: do not expose the Docker socket on Linux! This is followed by the statement that doing so grants root access to the host. But why? What can be done and how? This is what we are about to explore in this article.
+
 ## Python
 
 ### [Is your Python code vulnerable to log injection?](https://dev.arie.bovenberg.net/blog/is-your-python-code-vulnerable-to-log-injection/)
@@ -62,6 +72,10 @@ Some of them are strictly related to the things I did or am currently doing.
 ### [Mypy - Type hints cheat sheet (Python 3)](https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html)
 
 > This document is a quick cheat sheet showing how the [PEP 484](https://www.python.org/dev/peps/pep-0484) type annotation notation represents various common types in Python 3.
+
+### [10 Unknown Security Pitfalls for Python](https://blog.sonarsource.com/10-unknown-security-pitfalls-for-python)
+
+> In this blog post, we share 10 security pitfalls we encountered in real-world Python projects. We chose pitfalls that we believe are less known in the developer community. By explaining each issue and its impact we hope to raise awareness and sharpen your security mindset. If you are using any of these features, make sure to check your Python code!
 
 ## Django
 
