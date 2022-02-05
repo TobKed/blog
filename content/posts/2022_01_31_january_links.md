@@ -2,7 +2,7 @@ Title: Month summary - January 2022
 Date: 2022-01-31
 Category: summary
 Tags: python, blog, podcast, series, aggregate, summary, month, 2022
-Slug: 2022-January-links
+Slug: 2022-january-links
 Summary: Interesting stuff from the month
 Status: draft
 
@@ -93,9 +93,7 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > Samila is a generative art generator written in Python, Samila let's you create arts based on many thousand points. The position of every single point is calculated by a formula, which has random parameters. Because of the random numbers, every image looks different.
 
-## Django libraries
-
-### Go
+## Go
 
 ### [Go by Example](https://gobyexample.com/)
 
@@ -119,9 +117,11 @@ Some of them are strictly related to the things I did or am currently doing.
 >
 > The main goal of Borg is to provide an efficient and secure way to backup data. The data deduplication technique used makes Borg suitable for daily backups since only changes are stored. The authenticated encryption technique makes it suitable for backups to not fully trusted targets.
 
-## Cloud
-
 ## Other stuff
+
+### [Autodocumenting Makefiles](https://daniel.feldroy.com/posts/autodocumenting-makefiles)
+
+> When I type just make without any arguments, by default that triggers the help function, which runs the Python script at the top of the makefile.
 
 ## Podcasts
 
@@ -163,10 +163,4 @@ Some of them are strictly related to the things I did or am currently doing.
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/oLFMsP1GMa0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-### [](hmttps://www.youtube.com/watch?v=VIDEO_ID)
-
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>

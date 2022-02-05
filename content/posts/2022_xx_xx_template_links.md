@@ -1,4 +1,4 @@
-Title: Month summary - {Month} 2021
+Title: Month summary - {Month} 2022
 Date: 2022-12-31
 Category: summary
 Tags: python, blog, podcast, series, aggregate, summary, month, 2022
@@ -22,6 +22,8 @@ Some of them are strictly related to the things I did or am currently doing.
 ## Python libraries
 
 ## Django libraries
+
+## Go
 
 ## Tools
 
