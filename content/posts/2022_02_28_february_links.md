@@ -17,6 +17,10 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Python
 
+### [cmd](https://docs.python.org/3/library/cmd.html#module-cmd)
+
+> The Cmd class provides a simple framework for writing line-oriented command interpreters. These are often useful for test harnesses, administrative tools, and prototypes that will later be wrapped in a more sophisticated interface.
+
 ## Django
 
 ## Python libraries
@@ -25,9 +29,17 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Tools
 
+### [Lurnby](https://github.com/Roznoshchik/Lurnby)
+
+> A tool for active reading and personal knowledge management.
+
 ## Cloud
 
 ## Go
+
+### [How We Write GitHub Actions in Go](https://full-stack.blend.com/how-we-write-github-actions-in-go.html)
+
+> Below, we’ll share the set of unique challenges for running and releasing actions written in Go and outline our strategies for solving these problems.
 
 ## Other stuff
 
@@ -43,6 +55,12 @@ Some of them are strictly related to the things I did or am currently doing.
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/IlU-zDU6aQ0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [Radoslav Georgiev - Django structure for scale and longevity](https://www.youtube.com/watch?v=yG3ZdxBb1oo)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ### [](https://www.youtube.com/watch?v=VIDEO_ID)
