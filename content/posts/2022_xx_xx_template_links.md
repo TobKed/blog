@@ -44,4 +44,3 @@ Some of them are strictly related to the things I did or am currently doing.
 ### [](https://www.youtube.com/watch?v=VIDEO_ID)
 
 > Playback on other websites has been disabled by the video owner. [Watch on YouTube](https://www.youtube.com/watch?v=VIDEO_ID)
-> warzechakonrad@gmail.com

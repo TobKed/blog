@@ -4,6 +4,7 @@ Category: summary
 Tags: python, blog, podcast, series, aggregate, summary, month, 2022
 Slug: 2022-january-links
 Summary: Interesting stuff from the month
+Header_Cover: /images/posts/2022/2022_01_xx.jpg
 Status: draft
 
 # January 2022
@@ -131,6 +132,10 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Videos
 
+### [Brandon Rhodes The Dictionary Even Mightier - PyCon 2017](https://www.youtube.com/watch?v=66P5FMkWoVU)
+
+> Playback on other websites has been disabled by the video owner. [Watch on YouTube](https://www.youtube.com/watch?v=66P5FMkWoVU)
+
 ### [The Internet's Own Boy: The Story of Aaron Swartz](https://www.youtube.com/watch?v=9vz06QO3UkQ)
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
@@ -141,12 +146,6 @@ Some of them are strictly related to the things I did or am currently doing.
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/wjF4X9t3FMk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-### [Brandon Rhodes The Dictionary Even Mightier PyCon 2017](https://www.youtube.com/watch?v=66P5FMkWoVU)
-
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/66P5FMkWoVU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ### [PyWaw #97](https://www.youtube.com/watch?v=p9suUK4NpY0)
