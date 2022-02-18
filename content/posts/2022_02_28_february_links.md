@@ -23,6 +23,13 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Django
 
+### [Django Styleguide](https://github.com/HackSoftware/Django-Styleguide/)
+
+> Django styleguide that we use in HackSoft.
+>
+> 1. We have a [Styleguide-Example](https://github.com/HackSoftware/Styleguide-Example) to show most of the styleguide in an actual project.
+>    2, You can watch Radoslav Georgiev's [Django structure for scale and longevity](https://www.youtube.com/watch?v=yG3ZdxBb1oo) for the philosophy behind the styleguide.
+
 ## Python libraries
 
 ## Django libraries
@@ -32,6 +39,10 @@ Some of them are strictly related to the things I did or am currently doing.
 ### [Lurnby](https://github.com/Roznoshchik/Lurnby)
 
 > A tool for active reading and personal knowledge management.
+
+### [gitstats](https://github.com/bagder/gitstats)
+
+> git history statistics generator
 
 ## Cloud
 
@@ -61,6 +72,12 @@ Some of them are strictly related to the things I did or am currently doing.
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [Inside Security - S01E17 | The creator of Curl, Daniel Stenberg, joins the show for an interview](https://www.youtube.com/watch?v=06Xfa2AvQrw)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/06Xfa2AvQrw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ### [](https://www.youtube.com/watch?v=VIDEO_ID)

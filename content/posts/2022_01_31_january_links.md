@@ -14,6 +14,13 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
 
+I heavily use my beloved Kindle and always highlight interesting fragments or sometimes event words.
+However, I did not review these notes for a veeery long time.
+They are stored in a simple text file, therefore reading raw content is not the most convenient way of consuming it.
+To say the least.
+I recalled that some time ago my friend [Tomasz Urbaszek](<>) created a simple tool written in Go to parse and browse Kindle clippings.
+It is called [gonotes](https://github.com/turbaszek/gonotes) and since I learned a little bit of Go, it was the perfect way to test my fresh skill on it, so I contributed a few fixes.
+
 ## Articles
 
 ### [From 0 to $50B: the Coinbase Profile](https://www.aakashg.com/2022/01/12/coinbase/)
