@@ -52,6 +52,10 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > Below, we’ll share the set of unique challenges for running and releasing actions written in Go and outline our strategies for solving these problems.
 
+### [github.com/fatih/vim-go](https://github.com/fatih/vim-go)
+
+> Go development plugin for Vim
+
 ## Other stuff
 
 ### [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/)

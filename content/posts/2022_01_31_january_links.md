@@ -5,7 +5,7 @@ Tags: python, blog, podcast, series, aggregate, summary, month, 2022
 Slug: 2022-january-links
 Summary: Interesting stuff from the month
 Header_Cover: /images/posts/2022/2022_01_xx.jpg
-Status: draft
+Status: published
 
 # January 2022
 
