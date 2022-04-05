@@ -13,6 +13,8 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
 
+https://github.com/TobKed/fetch-apache-ga-stats
+
 ## Articles
 
 ### [The Thirty Minute Rule](https://daniel.feldroy.com/posts/thirty-minute-rule)
@@ -108,6 +110,10 @@ Some of them are strictly related to the things I did or am currently doing.
 ### [attrs](https://github.com/python-attrs/attrs)
 
 > Python Classes Without Boilerplate.
+
+### [dateparser](https://github.com/scrapinghub/dateparser)
+
+> python parser for human readable dates
 
 ## Django libraries
 
