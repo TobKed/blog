@@ -13,11 +13,32 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
 
-[Django Styleguide](https://github.com/HackSoftware/Django-Styleguide/)
+I watched very nice talk about structuring Django application ([Radoslav Georgiev - Django structure for scale and longevity](https://www.youtube.com/watch?v=yG3ZdxBb1oo))
+and analyzed repository complementary this talk ([Django Styleguide](https://github.com/HackSoftware/Django-Styleguide/)).
+TLDR/TLDW whole idea behind it is that all business logic **should NOT** live in:
 
-[TobKed/github-forks-sync-action-test](https://github.com/TobKed/github-forks-sync-action-test)
+- APIs and Views.
+- Serializers and Forms.
+- Form tags.
+- Model save method.
+- Custom managers or querysets.
+- Signals
 
-[TobKed/flask-react-aws](https://github.com/TobKed/flask-react-aws)
+but in:
+
+- **Services** - functions, that mostly take care of writing things to the database.
+- **Selectors** - functions, that mostly take care of fetching things from the database.
+- **Model propertie**s (with some exceptions).
+- **Model clean method** for additional validations (with some exceptions).
+
+Which seems to be pretty awesome idea. Often logic is spread across Django in views or serializers and with growing project is easy to fall into
+some redundancy here and there. Then with updates and further grow it getting hard to keep track of everything.
+Proposed structure helps to keep logic in intuitive place (like service) and reuse it in views, serializers etc.
+This idea is especially speaks to me since I had a pleasure to work in the project which was written in Flask however also facilitates services.
+For more details watch the talk and check the repo.
+
+I made some improvements to my GitHub Action [TobKed/github-forks-sync-action](https://github.com/TobKed/github-forks-sync-action).
+Alongside of bugfixes I wrapped up example of syncing multiple branches based on the [issue](https://github.com/TobKed/github-forks-sync-action/issues/13) discussion.
 
 ## Python
 

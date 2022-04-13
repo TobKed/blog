@@ -13,7 +13,9 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
 
-https://github.com/TobKed/fetch-apache-ga-stats
+Apache Software Foundation contacted me about my repo: [Fetch Apache GitHub Actions Statistic](https://github.com/TobKed/fetch-apache-ga-stats).
+To help them collect statistics themselves I wrapped up all related infra into [Terraform files](https://github.com/TobKed/fetch-apache-ga-stats/tree/master/terraform).
+I enjoy figuring out connections between different cloud resources and since I am a fanboy of the Terraform it was pretty nice time spent this month.
 
 ## Articles
 
@@ -157,8 +159,6 @@ https://github.com/TobKed/fetch-apache-ga-stats
 
 > List of projects that provide terminal user interfaces
 
-## Cloud
-
 ## Other stuff
 
 ### [github.com/rafi/.config](https://github.com/rafi/.config)
@@ -168,8 +168,6 @@ https://github.com/TobKed/fetch-apache-ga-stats
 ### [Most influential books for programmers](https://github.com/cs-books/influential-cs-books)
 
 > These are books considered most influential for programmers from this [StackOverflow thread](http://stackoverflow.com/questions/1711/what-is-the-single-most-influential-book-every-programmer-should-read).
-
-## Podcasts
 
 ## Videos
 
@@ -184,13 +182,3 @@ https://github.com/TobKed/fetch-apache-ga-stats
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/6vj96QetfTg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
-
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
-
-> Playback on other websites has been disabled by the video owner. [Watch on YouTube](https://www.youtube.com/watch?v=VIDEO_ID)
