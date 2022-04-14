@@ -4,6 +4,7 @@ Category: summary
 Tags: python, blog, podcast, series, aggregate, summary, month, 2022
 Slug: 2022-march-links
 Summary: Interesting stuff from the month
+Header_Cover: /images/posts/2022/2022_03_xx.jpg
 Status: draft
 
 # March 2022

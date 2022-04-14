@@ -4,6 +4,7 @@ Category: summary
 Tags: python, blog, podcast, series, aggregate, summary, month, 2022
 Slug: 2022-february-links
 Summary: Interesting stuff from the month
+Header_Cover: /images/posts/2022/2022_02_xx.jpg
 Status: draft
 
 # February 2022
@@ -32,9 +33,9 @@ but in:
 - **Model clean method** for additional validations (with some exceptions).
 
 Which seems to be pretty awesome idea. Often logic is spread across Django in views or serializers and with growing project is easy to fall into
-some redundancy here and there. Then with updates and further grow it getting hard to keep track of everything.
+some redundancy here and there. Then with updates and further grow it is getting harder to keep track of everything.
 Proposed structure helps to keep logic in intuitive place (like service) and reuse it in views, serializers etc.
-This idea is especially speaks to me since I had a pleasure to work in the project which was written in Flask however also facilitates services.
+This idea especially speaks to me since I had a pleasure to work in the project which was written in Flask and also facilitates services.
 For more details watch the talk and check the repo.
 
 I made some improvements to my GitHub Action [TobKed/github-forks-sync-action](https://github.com/TobKed/github-forks-sync-action).
@@ -92,7 +93,7 @@ Alongside of bugfixes I wrapped up example of syncing multiple branches based on
 ### [Radoslav Georgiev - Django structure for scale and longevity](https://www.youtube.com/watch?v=yG3ZdxBb1oo)
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/yG3ZdxBb1oo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ### [Inside Security - S01E17 | The creator of Curl, Daniel Stenberg, joins the show for an interview](https://www.youtube.com/watch?v=06Xfa2AvQrw)
