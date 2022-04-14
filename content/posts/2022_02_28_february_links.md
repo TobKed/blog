@@ -14,9 +14,9 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
 
-I watched very nice talk about structuring Django application ([Radoslav Georgiev - Django structure for scale and longevity](https://www.youtube.com/watch?v=yG3ZdxBb1oo))
-and analyzed repository complementary this talk ([Django Styleguide](https://github.com/HackSoftware/Django-Styleguide/)).
-TLDR/TLDW whole idea behind it is that all business logic **should NOT** live in:
+I watched a very nice talk about structuring a Django application ([Radoslav Georgiev - Django structure for scale and longevity](https://www.youtube.com/watch?v=yG3ZdxBb1oo))
+and analyzed the repository complementary to that talk ([Django Styleguide](https://github.com/HackSoftware/Django-Styleguide/)).
+TLDR/TLDW: the whole idea behind it is that all business logic **should NOT** live in:
 
 - APIs and Views.
 - Serializers and Forms.
@@ -27,19 +27,21 @@ TLDR/TLDW whole idea behind it is that all business logic **should NOT** live in
 
 but in:
 
-- **Services** - functions, that mostly take care of writing things to the database.
-- **Selectors** - functions, that mostly take care of fetching things from the database.
-- **Model propertie**s (with some exceptions).
+- **Services** - functions that mostly take care of writing things to the database.
+- **Selectors** - functions that mostly take care of fetching things from the database.
+- **Model properties** (with some exceptions).
 - **Model clean method** for additional validations (with some exceptions).
 
-Which seems to be pretty awesome idea. Often logic is spread across Django in views or serializers and with growing project is easy to fall into
-some redundancy here and there. Then with updates and further grow it is getting harder to keep track of everything.
-Proposed structure helps to keep logic in intuitive place (like service) and reuse it in views, serializers etc.
-This idea especially speaks to me since I had a pleasure to work in the project which was written in Flask and also facilitates services.
+This seems to be a pretty awesome idea. Often,
+the business logic is spread across Django in views or serializers and with a growing project it is easy to fall into some redundancy here and there.
+Afterwards, with updates and further growth it is getting harder to keep track of where scattered logic parts live.
+The proposed structure helps to keep all crucial logic in an intuitive place (like service) and reuse it in views, serializers etc.
+This Django Styleguide speaks to me since I had the pleasure to work on a project which was written in Flask but also facilitated services.
 For more details watch the talk and check the repo.
 
-I made some improvements to my GitHub Action [TobKed/github-forks-sync-action](https://github.com/TobKed/github-forks-sync-action).
-Alongside of bugfixes I wrapped up example of syncing multiple branches based on the [issue](https://github.com/TobKed/github-forks-sync-action/issues/13) discussion.
+Other highlights of the month: I made some improvements to my GitHub Action [TobKed/github-forks-sync-action](https://github.com/TobKed/github-forks-sync-action).
+In addition to bug fixes I put together an example of syncing multiple branches.
+It emerged from the discussion on the [issue](https://github.com/TobKed/github-forks-sync-action/issues/13).
 
 ## Python
 

@@ -14,9 +14,9 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
 
-Apache Software Foundation contacted me about my repo: [Fetch Apache GitHub Actions Statistic](https://github.com/TobKed/fetch-apache-ga-stats).
-To help them collect statistics themselves I wrapped up all related infra into [Terraform files](https://github.com/TobKed/fetch-apache-ga-stats/tree/master/terraform).
-I enjoy figuring out connections between different cloud resources and since I am a fanboy of the Terraform it was pretty nice time spent this month.
+Apache Software Foundation contacted me about my repo [Fetch Apache GitHub Actions Statistic](https://github.com/TobKed/fetch-apache-ga-stats).
+To help them collect statistics and make setting up workflows from the repo easy and convenient I wrapped up all related infrastructure into [Terraform code](https://github.com/TobKed/fetch-apache-ga-stats/tree/master/terraform).
+I enjoy figuring out connections between different cloud resources and since I am a fanboy of Terraform it was a pretty nice time spent this month working on that.
 
 ## Articles
 
