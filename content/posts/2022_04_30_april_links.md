@@ -15,6 +15,8 @@ Some of them are strictly related to the things I did or am currently doing.
 
 "Scrapowanie danych publicznych w Pythonie"
 
+GCP PCA Cert
+
 ## Articles
 
 ### [Cargo Cult Software Engineering](https://stevemcconnell.com/articles/cargo-cult-software-engineering/)
@@ -46,6 +48,10 @@ Some of them are strictly related to the things I did or am currently doing.
 ### [Take Your Github Repository To The Next Level 🚀️](https://dev.to/eludadev/take-your-github-repository-to-the-next-level-17ge)
 
 > I’ve been using Github for a very long time now, and along the way I’ve been gathering a step-by-step guide on creating the perfect Github repository. If you haven’t guessed already, this article is an enhanced version of that guide.
+
+### [Writing for Engineers](https://www.heinrichhartmann.com/posts/writing/)
+
+> Writing is key to have impact in large organizations. As a senior software engineer chances are that writing is the most important skill you have to acquire in order to increase your scope beyond the team and advance your career.
 
 ## Python
 
@@ -79,6 +85,10 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > Python is one of the most elegant and clean programming languages, yet having a beautiful and clean syntax is not the same as writing clean code.
 
+### [fstring.help/](https://fstring.help/)
+
+> Python fstring reference.
+
 ## Django
 
 ### [How to Make Django Raise an Error for Missing Template Variables](https://adamj.eu/tech/2022/03/30/how-to-make-django-error-for-undefined-template-variables/)
@@ -93,11 +103,19 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > List of blogs about Django and related technologies.
 
+### [Permissions in Django](https://testdriven.io/blog/django-permissions/)
+
+> In this article, we'll look at how to assign permissions to users and groups in order to authorize them to perform specific actions.
+
 ## Python libraries
 
 ### [fastapi-events](https://github.com/melvinkcx/fastapi-events/)
 
 > Asynchronous event dispatching/handling library for FastAPI and Starlette
+
+### [structlog](https://github.com/hynek/structlog)
+
+> 'structlog' makes logging in Python faster, less painful, and more powerful by adding structure to your log entries.
 
 ### [bpython](https://github.com/bpython/bpython)
 
@@ -120,6 +138,10 @@ Some of them are strictly related to the things I did or am currently doing.
 ### [delta](https://github.com/dandavison/delta)
 
 > A syntax-highlighting pager for git, diff, and grep output
+
+### [agones](https://github.com/googleforgames/agones)
+
+> Dedicated Game Server Hosting and Scaling for Multiplayer Games on Kubernetes.
 
 ## Cloud
 
@@ -145,9 +167,23 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > This is a collection of my dotfiles not related to either vim or emacs. Mostly just bashy stuff.
 
+### [Brendan Gregg's Homepage](https://www.brendangregg.com/index.html)
+
+> G'Day. I use this site to share and bookmark various things, mostly my work with computers. While I currently work on large scale cloud computing performance at Netflix, this site reflects my own opinions and work from over the years.
+
+### [Julia Evans blog](https://jvns.ca/)
+
+> Hey! I'm Julia. Welcome to my blog. Here's every post I've ever written, organized by category. Enjoy!
+
+### [jmutai/dotfiles](https://github.com/jmutai/dotfiles)
+
+> My dotfiles collection used on Arch Linux box
+
 ## Podcasts
 
 ## Videos
+
+<iframe title="Luke at Monerotopia: Crypto for Dystopia Avoidance" src="https://videos.lukesmith.xyz/videos/embed/57e9e226-c143-4608-ac39-3c0f7444dd0f" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups" width="560" height="315" frameborder="0"></iframe>
 
 ### [The Missing Semester of Your CS Education - Lecture 4: Data Wrangling (2020)](https://www.youtube.com/watch?v=sz_dsktIjt4)
 
@@ -161,10 +197,10 @@ Some of them are strictly related to the things I did or am currently doing.
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/WXOzggTMHck" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
+### [Andy Baio: Cut, copy, paste](https://www.youtube.com/watch?v=9tmT80kW9Co)
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/9tmT80kW9Co" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ### [](https://www.youtube.com/watch?v=VIDEO_ID)
