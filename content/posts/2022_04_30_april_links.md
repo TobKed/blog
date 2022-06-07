@@ -13,9 +13,14 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
 
-"Scrapowanie danych publicznych w Pythonie"
+At the begging of month I attended workshops called ["Scrapowanie danych publicznych w Pythonie (Scraping public data in Python)"](https://medialabkatowice.eu/wydarzenia/scrapowanie-danych-publicznych-w-pythonie/).
+During the first part we created simple scrapers to fetch some data from chosen websites. They lack many features like error handling or throttling. During second part we wrote them with [scrapy](https://github.com/scrapy/scrapy) which was pretty awesome because with just few adjustments we employed very nice framework which handles a lot stuff for us, like logging, storing data, following logs, error handling, throttling etc. Big thanks to [Paweł Miech](https://pawelmhm.github.io/) who conducted this amazing workshop. Materials are available on his github [github.com/pawelmhm/warsztaty-medialab](https://github.com/pawelmhm/warsztaty-medialab)
 
-GCP PCA Cert
+The biggest part of the month was consumed by Google Cloud Platform \[GCP\]. Almost two years ago I passed the Google Cloud Associate Certified Engineer certification exam and I thought April is a good time to improve and confirm my increasing competencies with Google Cloud Platform. I read tons of GCP documentation, and websites.I did some udemy courses and completed very good book [Official Google Cloud Certified Professional Cloud Architect Study Guide by Dan Sullivan](https://www.goodreads.com/book/show/53001024-official-google-cloud-certified-professional-cloud-architect-study-guide),  I played with the GCP infra as well to get practical experience with topics which I did not use so far. After all, I was happy to read on screen in the certification center that I passed the exam. I am especially proud because it was one of the hardest certification exams so far. I learned a lot not only from a technical perspective but also from a business point of view.
+
+![Google Professional Cloud Architect]({static}/images/posts/2022/gcp_pca.png)
+
+[Google  Professional Cloud Architect](https://www.credential.net/fc647c87-e199-4dd2-b34e-67dbb7bc3d10#gs.2gfa5j).
 
 ## Articles
 
