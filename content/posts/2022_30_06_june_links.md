@@ -17,6 +17,18 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Python
 
+### [Format Specification Mini-Language](https://docs.python.org/3/library/string.html#format-specification-mini-language)
+
+> “Format specifications” are used within replacement fields contained within a format string to define how individual values are presented (see Format String Syntax and Formatted string literals).
+
+### [Format String Syntax](https://docs.python.org/3/library/string.html#format-string-syntax)
+
+> The syntax is related to that of formatted string literals, but it is less sophisticated and, in particular, does not support arbitrary expressions.
+
+### [Formatted string literals](https://docs.python.org/3/reference/lexical_analysis.html#f-strings)
+
+> A formatted string literal or f-string is a string literal that is prefixed with 'f' or 'F'. These strings may contain replacement fields, which are expressions delimited by curly braces {}. While other string literals always have a constant value, formatted strings are really expressions evaluated at run time.
+
 ## Django
 
 ## Python libraries
