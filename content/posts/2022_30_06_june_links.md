@@ -15,6 +15,10 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Articles
 
+### [„Otaczałem się drogimi, niepotrzebnymi rzeczami” – rozmowa z Wojtkiem Zającem](https://geek.justjoin.it/wojtek-zajac-na-zdalniaku-wywiad)
+
+> Zwiedził 50 krajów, pracował zdalnie z wielu miejsc na całym świecie. Od najbardziej przyziemnych, po te absolutnie egzotyczne. W 2015 roku po prostu kupił bilet w jedną stronę i nie wyobraża już sobie, że można żyć inaczej. Wojtek Zając to inspirujący programista, który chętnie dzieli się wiedzą i swoimi doświadczeniami.
+
 ## Python
 
 ### [Format Specification Mini-Language](https://docs.python.org/3/library/string.html#format-specification-mini-language)
@@ -31,6 +35,10 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Django
 
+### [Django: How to send email without Celery](https://nemecek.be/blog/158/django-how-to-send-email-without-celery)
+
+> Lightweight emails without Celery. And without a request-response cycle.
+
 ## Python libraries
 
 ## Django libraries
@@ -40,6 +48,10 @@ Some of them are strictly related to the things I did or am currently doing.
 ## Tools
 
 ## Cloud
+
+### [Protect sensitive info in logs using Google Cloud](https://medium.com/google-cloud/protect-sensitive-info-in-logs-using-google-cloud-4548211d4654)
+
+> Application logs may capture information that includes sensitive or proprietary data. As a result, this data may be available to unauthorized personnel that have access to application logs but should not be able to access that sensitive data
 
 ## Other stuff
 

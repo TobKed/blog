@@ -5,7 +5,7 @@ Tags: python, blog, podcast, series, aggregate, summary, month, 2022
 Slug: 2022-april-links
 Summary: Interesting stuff from the month
 Header_Cover: /images/posts/2022/2022_04_xx.jpg
-Status: draft
+Status: published
 
 # April 2022
 
@@ -14,10 +14,20 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
 
-At the begging of month I attended workshops called ["Scrapowanie danych publicznych w Pythonie (Scraping public data in Python)"](https://medialabkatowice.eu/wydarzenia/scrapowanie-danych-publicznych-w-pythonie/).
-During the first part we created simple scrapers to fetch some data from chosen websites. They lack many features like error handling or throttling. During second part we wrote them with [scrapy](https://github.com/scrapy/scrapy) which was pretty awesome because with just few adjustments we employed very nice framework which handles a lot stuff for us, like logging, storing data, following logs, error handling, throttling etc. Big thanks to [Paweł Miech](https://pawelmhm.github.io/) who conducted this amazing workshop. Materials are available on his github [github.com/pawelmhm/warsztaty-medialab](https://github.com/pawelmhm/warsztaty-medialab)
+At the begging of the month I attended workshops called ["Scrapowanie danych publicznych w Pythonie (Scraping public data in Python)"](https://medialabkatowice.eu/wydarzenia/scrapowanie-danych-publicznych-w-pythonie/).
+During the first part we created simple scrapers to fetch some data from chosen websites.
+They lacked many features like error handling or throttling.
+During the second part we wrote them with [scrapy](https://github.com/scrapy/scrapy) which was pretty awesome because with just a few adjustments we employed a very nice framework that handles a lot of stuff for us, like logging, storing data, following logs, error handling, throttling etc.
+Big thanks to [Paweł Miech](https://pawelmhm.github.io/) who conducted this amazing workshop.
+Materials are available on his github [github.com/pawelmhm/warsztaty-medialab](https://github.com/pawelmhm/warsztaty-medialab)
 
-The biggest part of the month was consumed by Google Cloud Platform \[GCP\]. Almost two years ago I passed the Google Cloud Associate Certified Engineer certification exam and I thought April is a good time to improve and confirm my increasing competencies with Google Cloud Platform. I read tons of GCP documentation, and websites.I did some udemy courses and completed very good book [Official Google Cloud Certified Professional Cloud Architect Study Guide by Dan Sullivan](https://www.goodreads.com/book/show/53001024-official-google-cloud-certified-professional-cloud-architect-study-guide),  I played with the GCP infra as well to get practical experience with topics which I did not use so far. After all, I was happy to read on screen in the certification center that I passed the exam. I am especially proud because it was one of the hardest certification exams so far. I learned a lot not only from a technical perspective but also from a business point of view.
+The biggest part of the month was consumed by Google Cloud Platform \[GCP\].
+Almost two years ago I passed the Google Cloud Associate Certified Engineer certification exam, and I thought April was a good time to improve and confirm my increasing competencies with Google Cloud Platform.
+I read tons of GCP documentation and websites.I did some udemy courses and completed a very good study book [Official Google Cloud Certified Professional Cloud Architect Study Guide by Dan Sullivan](https://www.goodreads.com/book/show/53001024-official-google-cloud-certified-professional-cloud-architect-study-guide),
+I played with the GCP infra as well to get practical experience with topics which I haven’t used so far.
+After all, I was happy to read on screen in the certification center that I passed the exam.
+I am especially proud because it was one of the hardest certification exams so far.
+I learned a lot not only from the technical perspective but also from the business point of view.
 
 ![Google Professional Cloud Architect]({static}/images/posts/2022/gcp_pca.png)
 
@@ -125,11 +135,7 @@ The biggest part of the month was consumed by Google Cloud Platform \[GCP\]. Alm
 
 ### [bpython](https://github.com/bpython/bpython)
 
-> [bpython](https://github.com/bpython/bpython) is a lightweight Python interpreter that adds several features common to IDEs. These features include syntax highlighting, expected parameter list, auto-indentation, and autocompletion.s
-
-## Django libraries
-
-## Go
+> [bpython](https://github.com/bpython/bpython) is a lightweight Python interpreter that adds several features common to IDEs. These features include syntax highlighting, expected parameter list, auto-indentation, and autocompletion.
 
 ## Tools
 
