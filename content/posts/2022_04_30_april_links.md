@@ -191,8 +191,6 @@ I learned a lot not only from the technical perspective but also from the busine
 
 > My dotfiles collection used on Arch Linux box
 
-## Podcasts
-
 ## Videos
 
 <iframe title="Luke at Monerotopia: Crypto for Dystopia Avoidance" src="https://videos.lukesmith.xyz/videos/embed/57e9e226-c143-4608-ac39-3c0f7444dd0f" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups" width="560" height="315" frameborder="0"></iframe>
