@@ -13,6 +13,11 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
 
+This month I did a lot of sport, Kubernetes, Terraform and GitHub Actions.
+Maybe even too much since I did not have energy to read or watch too many interesting things, however
+I made internal presentation about GitHub Action.
+TODO write more here about presentation ...
+
 ## Articles
 
 ### [„Otaczałem się drogimi, niepotrzebnymi rzeczami” – rozmowa z Wojtkiem Zającem](https://geek.justjoin.it/wojtek-zajac-na-zdalniaku-wywiad)
@@ -33,19 +38,15 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > A formatted string literal or f-string is a string literal that is prefixed with 'f' or 'F'. These strings may contain replacement fields, which are expressions delimited by curly braces {}. While other string literals always have a constant value, formatted strings are really expressions evaluated at run time.
 
+### [How to Create a Command-line Application with argparse](https://www.blog.pythonlibrary.org/2022/05/19/how-to-create-a-command-line-application-with-argparse/)
+
+> Python comes with a built-in library called argparse that you can use to create a command-line interface.
+
 ## Django
 
 ### [Django: How to send email without Celery](https://nemecek.be/blog/158/django-how-to-send-email-without-celery)
 
 > Lightweight emails without Celery. And without a request-response cycle.
-
-## Python libraries
-
-## Django libraries
-
-## Go
-
-## Tools
 
 ## Cloud
 
@@ -53,18 +54,6 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > Application logs may capture information that includes sensitive or proprietary data. As a result, this data may be available to unauthorized personnel that have access to application logs but should not be able to access that sensitive data
 
-## Other stuff
+### [6 Important things you need to run Kubernetes in production](https://www.pionative.com/post/6-important-things-you-need-to-run-kubernetes-in-production)
 
-## Podcasts
-
-## Videos
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
-
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
-
-> Playback on other websites has been disabled by the video owner. [Watch on YouTube](https://www.youtube.com/watch?v=VIDEO_ID)
+> Kubernetes is a very complex platform, but setting up a Kubernetes cluster is fairly easy as long as you choose a managed cloud solution. I would never advise self-managing a Kubernetes cluster unless you have a very good reason to do so.
