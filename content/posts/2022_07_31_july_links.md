@@ -18,6 +18,10 @@ My article was published in PyCoders weekly, awesome! And in Django Newsletter
 https://pycoders.com/issues/532
 https://django-news.com/issues/135?#start
 
+I worked on GCP Terraform for OIDC GitHub ACtions
+
+BadAss Developer and Ferrari Mind
+
 ## Articles
 
 ### [Why new Macs break your Docker build, and how to fix it](https://pythonspeed.com/articles/docker-build-problems-mac/)
@@ -58,6 +62,26 @@ https://django-news.com/issues/135?#start
 >
 > This lack of vision and inability to see the simpler solution has largely produced the slow-loading, content-minimal web of today and the bizarre culture of modern “webdevs” whose diets consist in anti-patterns.
 
+### [Tuple’s Pair Programming Guide](https://tuple.app/pair-programming-guide/)
+
+> Tips, tutorials, and resources for thoughtful pair programmers.
+
+### [How Docker broke in half](https://www.infoworld.com/article/3632142/how-docker-broke-in-half.html)
+
+> The game changing container company is a shell of its former self. What happened to one of the hottest enterprise technology businesses of the cloud era?
+
+### [12 Ways to Improve Your Monolith Before Transitioning to Microservices](https://semaphoreci.com/blog/monolith-microservices)
+
+> A word of advice: don’t write off the monolith just yet. With some preparation, it can serve you well all the way through the transition. Here are 12 tips for making the transition to microservices as smooth as possible.
+
+### [Workplaces are not for thinking](https://tedbauer2003.medium.com/workplaces-are-not-for-thinking-6bb23f24a86c)
+
+> Cognitive learning basically means the same thing as “thinking,” and thinking is pretty much dead in the river at most companies.
+
+### [What if work had mandatory “Stop And Think” periods?](https://thecontextofthings.com/2014/11/16/stop-and-think-at-work/)
+
+> It’s just a 20-minute stop. You stop working and go talk to people, go walk around and stretch, go play some ping-pong, maybe if it’s Friday you grab a beer from the office fridge, whatever. You just stop and disconnect, and then you reconnect. Simple.
+
 ## Python
 
 ### [6 Usage Patterns for the ThreadPoolExecutor in Python](https://superfastpython.com/threadpoolexecutor-usage-patterns/)
@@ -73,6 +97,25 @@ https://django-news.com/issues/135?#start
 ### [Apache Airflow in 2022: 10 Rules to Make It Work](https://towardsdatascience.com/apache-airflow-in-2022-10-rules-to-make-it-work-b5ed130a51ad)
 
 > Airflow is by default very permissive and without strict rules you are likely to fail in your pipeline stack implementation.
+
+### [Design by Contract in Python](https://python.plainenglish.io/design-by-contract-in-python-44db6e899db2)
+
+> Design by contract (DbC), also known as contract programming, programming by contract and design-by-contract programming, is an approach for designing software. It prescribes that software designers should define formal, precise and verifiable interface specifications for software components, which extend the ordinary definition of abstract data types with preconditions, postconditions and invariants.
+>
+> — [wikipedia.org (Design by Contract)](https://en.wikipedia.org/wiki/Design_by_contract)
+
+### [Yes, I have opinions on your open source contributions ](https://www.b-list.org/weblog/2022/jul/11/pypi/)
+
+> Recently the Python Package Index announced that they will be implementing new account-security policies, and hoo boy are some people ever worked up about it. This has already escalated to the author of at least one high-download-count package — one which was a dependency of pytest, thus likely to break a lot of people’s testing and CI right as the weekend started, always nice — deleting their package from PyPI out of anger and announcing they intend to stop maintaining it, though it has now, at the author’s request, been restored by the PyPI maintainers.
+
+### [Organize Python code like a PRO](https://guicommits.com/organize-python-code-like-a-pro/)
+
+> For every minute spent in organizing, an hour is earned.
+> by Benjamin Franklin
+
+### [It’s Time to Say Goodbye to These Obsolete Python Libraries](https://python.plainenglish.io/its-time-to-say-goodbye-to-these-obsolete-python-libraries-7c02aa77d84a)
+
+> Forget about `os.path`, `random`, `pytz`, `namedtuple` and more and start using the latest and greatest Python libraries.
 
 ## Django
 
@@ -138,6 +181,16 @@ https://django-news.com/issues/135?#start
 
 > These courses will make you a beast in DevOps if you’re willing to take a challenge.
 
+### [Why I definitively switched from Cloud Functions to Cloud Run](https://medium.com/google-cloud/why-i-definitively-switched-from-cloud-functions-to-cloud-run-635d03f1eb4d)
+
+> On Google Cloud, Cloud Functions is (was?) one of the most popular services to deploy a simple piece of code in HTTP mode or in Background mode (answer to events, like PubSub messages or Cloud Storage events).
+>
+> However, the introduction of Cloud Run in 2019 and the very fast and very good feature additions to the product lead me to reconsider the use of Cloud Functions and, slowly, lead me to abandon it.
+
+### [Eventarc - Google Cloud Platform](https://cloud.google.com/eventarc)
+
+> Eventarc lets you asynchronously deliver events from Google services, SaaS, and your own apps using loosely coupled services that react to state changes. Eventarc requires no infrastructure management — you can optimize productivity and costs while building a modern, event-driven solution.
+
 ## Other stuff
 
 ### [Every Programmer Should Know](https://github.com/mtdvio/every-programmer-should-know)
@@ -190,6 +243,18 @@ https://django-news.com/issues/135?#start
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/skLJuksCRTw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [ Why Do So Many Programmers Lose Hope? ](https://www.youtube.com/watch?v=NdA6aQR-s4U)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/NdA6aQR-s4U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [Jonathan Haidt: Has Social Media Destroyed a Generation?](https://www.youtube.com/watch?v=Ocm_75ivYT0)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/Ocm_75ivYT0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ### [](https://www.youtube.com/watch?v=VIDEO_ID)

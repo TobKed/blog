@@ -15,8 +15,12 @@ Some of them are strictly related to the things I did or am currently doing.
 
 This month I did a lot of sport, Kubernetes, Terraform and GitHub Actions.
 Maybe even too much since I did not have energy to read or watch too many interesting things, however
-I made internal presentation about GitHub Action.
-TODO write more here about presentation ...
+I made internal presentation about the last one: GitHub Actions.
+I am huge fan of this CI/CD and I am pretty experienced with it.
+`Sharing is caring` so I wanted to share some hints and tips which may not be obvious and/or documented well.
+For this purpose I created repository [TobKed/github_actions_demo](https://github.com/TobKed/github_actions_demo)
+and some sldes. It was light tech talk and took me approximately 10 minuts.
+Pretty fun experienge though.
 
 ## Articles
 
