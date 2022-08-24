@@ -5,6 +5,7 @@ Tags: python, blog, podcast, series, aggregate, summary, month, 2022
 Slug: 2022-july-links
 Summary: Interesting stuff from the month
 Status: draft
+Header_Cover: /images/posts/2022/2022_07_xx.jpg
 
 # July 2022
 
@@ -13,14 +14,20 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
 
-My article was published in PyCoders weekly, awesome! And in Django Newsletter
+My repository with [deployment Django on Google Cloud Platform \[GCP\]](https://github.com/TobKed/django_on_gcp)
+was published in [PyCoders weekly #532](https://pycoders.com/issues/532)
+and in [Django Newsletter #135](https://django-news.com/issues/135?#start).
+How awesome is that! :)
 
-https://pycoders.com/issues/532
-https://django-news.com/issues/135?#start
+I also added infra describe in Terraform for setting up Open ID Connect authorization for GitHub Actions and GCP
+to my [repository](https://github.com/TobKed/github_actions_oidc) dedicated for this topic.
 
-I worked on GCP Terraform for OIDC GitHub ACtions
-
-BadAss Developer and Ferrari Mind
+Talk [Making Badass Developers](https://www.youtube.com/watch?v=FKTxC9pl-WM)
+and blog post [The Ferrari problem](https://vasilishynkarenka.com/the-ferrari-problem/)
+makes me to realize that how important is to minimize impact of not important or less important things in our lifes.
+We should not burn our llimited brain capacity to make some trivial choices like choosing t-shirt to wear today.
+This is of course very trivial example but goes to the point of scarcity of computing power.
+Apparently I already I got rid of t-shirt problem since 98% of my t-shirts are plain black -> no choice -> no problem.
 
 ## Articles
 
