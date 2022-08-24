@@ -5,7 +5,7 @@ Tags: python, blog, podcast, series, aggregate, summary, month, 2022
 Slug: 2022-june-links
 Summary: Interesting stuff from the month
 Status: draft
-Header_Cover: /images/posts/2022/2022_06_xx.jpg
+Header_Cover: /images/posts/2022/2022_06_xx.JPG
 
 # June 2022
 
@@ -20,7 +20,7 @@ however I made internal presentation about the last one: GitHub Actions.
 I am huge fan of this CI/CD and I am pretty experienced with it.
 `Sharing is caring` so I wanted to share some hints and tips which may not be obvious and/or not documented very well.
 For this purpose I created repository [TobKed/github_actions_demo](https://github.com/TobKed/github_actions_demo)
-and some sldes. It was light tech talk and took me approximately 10 minuts which was a pretty fun experience though.
+and some slides. It was light tech talk and took me approximately 10 minuts which was a pretty fun experience though.
 
 ## Articles
 
