@@ -4,7 +4,7 @@ Category: summary
 Tags: python, blog, podcast, series, aggregate, summary, month, 2022
 Slug: 2022-july-links
 Summary: Interesting stuff from the month
-Status: draft
+Status: published
 Header_Cover: /images/posts/2022/2022_07_xx.jpg
 
 # July 2022
