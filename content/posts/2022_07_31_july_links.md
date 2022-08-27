@@ -19,15 +19,15 @@ was published in [PyCoders weekly #532](https://pycoders.com/issues/532)
 and in [Django Newsletter #135](https://django-news.com/issues/135?#start).
 How awesome is that! :)
 
-I also added infra describe in Terraform for setting up Open ID Connect authorization for GitHub Actions and GCP
-to my [repository](https://github.com/TobKed/github_actions_oidc) dedicated for this topic.
+I also added infra described in Terraform for setting up Open ID Connect authorization for GitHub Actions and GCP
+to my [repository](https://github.com/TobKed/github_actions_oidc) dedicated to this topic.
 
-Talk [Making Badass Developers](https://www.youtube.com/watch?v=FKTxC9pl-WM)
+The talk [Making Badass Developers](https://www.youtube.com/watch?v=FKTxC9pl-WM)
 and blog post [The Ferrari problem](https://vasilishynkarenka.com/the-ferrari-problem/)
-makes me to realize that how important is to minimize impact of not important or less important things in our lifes.
+made me realize how important it is to minimize the impact of not important or less important things in our lives.
 We should not burn our llimited brain capacity to make some trivial choices like choosing t-shirt to wear today.
-This is of course very trivial example but goes to the point of scarcity of computing power.
-Apparently I already I got rid of t-shirt problem since 98% of my t-shirts are plain black -> no choice -> no problem.
+This is of course a very trivial example but goes to the point of scarcity of computing power.
+Apparently I already got rid of the t-shirt problem since 98% of my t-shirts are plain black -> no choice -> no problem.
 
 ## Articles
 
