@@ -14,6 +14,12 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
 
+I setup deployment of [Saleor](https://saleor.io/) on Google Kubernetes Engine with [Terraform](https://www.terraform.io/).
+Additionally I learnt and used [Terragrunt](https://terragrunt.gruntwork.io/) (wrapper for terraform).
+Saleor is an open-source e-commerce platform.
+It consists of three services: Core, Dashboard and Storefront.
+The Core is written in Python (Django) and exposes GraphQL API which is consumed by Dashboard and Storefront (both written in React).
+
 ## Articles
 
 ### [Protestware on the rise: Why developers are sabotaging their own code](https://techcrunch.com/2022/07/27/protestware-code-sabotage/)
@@ -59,6 +65,10 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > But this raises a lot of questions, like: just what is “async” Python? Why do people care about it so much? And is it really that useful for building web apps? What are all these new frameworks and other tools about?
 
+### [Python F-Strings Number Formatting Cheat Sheet](https://cheatography.com/brianallan/cheat-sheets/python-f-strings-number-formatting/)
+
+> Contains formulas, tables, and examples showing patterns and options focused on number formatting for Python's Formatted String Literals -- i.e., F-Strings.
+
 ## Django
 
 ### [How to use elided pagination in Django and solve too many pages problem](https://nemecek.be/blog/105/how-to-use-elided-pagination-in-django-and-solve-too-many-pages-problem)
@@ -73,6 +83,10 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > Learn how to test Django models.
 
+### [Django: How to let user download a file](https://nemecek.be/blog/165/django-how-to-let-user-download-a-file)
+
+> Creating file download links with the help of a FileResponse.
+
 ## Python libraries
 
 ### [lowbar](https://github.com/AnnikaV9/lowbar)
@@ -84,8 +98,6 @@ Some of them are strictly related to the things I did or am currently doing.
 ### [django-q](https://github.com/Koed00/django-q)
 
 > A multiprocessing distributed task queue for Django
-
-## Go
 
 ## Tools
 
@@ -125,7 +137,9 @@ Some of them are strictly related to the things I did or am currently doing.
 > Reports generated from git platforms are great, but what if we need more flexibility towards creating git log reports?
 > In this article we explore exporting logs from a git repository into BigQuery and apply some analysis queries with SQL.
 
-## Other stuff
+### [Preparing for the Google Cloud Professional Cloud DevOps Engineer Exam](https://medium.com/google-cloud/preparing-for-the-google-cloud-professional-cloud-devops-engineer-exam-30e9d5fe07e4)
+
+> Site reliability Engineer is an interesting topic and taking time to learn about it would definitely be a valuable experience. The saying goes class SRE implements DevOps.
 
 ## Podcasts
 
@@ -134,15 +148,3 @@ Some of them are strictly related to the things I did or am currently doing.
 > Dziś moim gościem jest Piotr Gocłowski – w branży technologii od 10 lat, początkowo związany z automatyką przemysłową, a konkretnie sieciami, IoT i komunikacją szeregową.
 > Cloud Architekt w GCP, posiadacz kilku certyfikatów GCP, na co dzień doradza i pomaga klientom rozwiązywać problemy związane z chmurą GCP.
 > Fan Raspberry PI, Nintendo a prywatnie szczęśliwy mąż i ojciec 2 żywiołowych córek.
-
-## Videos
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
-
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
-
-> Playback on other websites has been disabled by the video owner. [Watch on YouTube](https://www.youtube.com/watch?v=VIDEO_ID)
