@@ -1,5 +1,5 @@
 Title: Month summary - September 2022
-Date: 2022-12-31
+Date: 2022-09-30
 Category: summary
 Tags: python, blog, podcast, series, aggregate, summary, month, 2022
 Slug: 2022-september-links
@@ -78,6 +78,26 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > Let's talk about the simple 3-step productivity strategy that Warren Buffett uses to help his employees determine their priorities and actions.
 
+### [Increasing development productivity with repository management](https://kalis.me/increasing-development-productivity-repository-management/)
+
+> Do you have to manually clone all your repos? Of course not. This is where repository management comes in.
+
+### [80 days to get into FAANG](https://towardsdatascience.com/80-days-to-get-into-faang-5c77f27d5224l)
+
+> This article will give a summary of my journey. More importantly, it will outline and address my main preparations, routine, struggles, and how I overcame those. I will mainly focus on the technical interviews. I hope this will be useful for any aspiring SWE/MLE looking to make the next big jump.
+
+### [The Most Effective Creatives Maximize Leverage, Not Hours Worked](https://towardsdatascience.com/the-most-effective-creatives-maximize-leverage-not-hours-worked-20ed0070fdd7)
+
+> Forget ‘quiet quitting’: 3 strategies for creating more business impact with fewer hours
+
+### [Why NoSQL Scales better than SQL](https://blog.devgenius.io/why-nosql-scales-better-than-sql-eb0b46b4aac5)
+
+> Why are SQL data stores not as scalable as NoSQL? What is the reason that we need ‘NoSQL’ now?
+
+### [How Did REST Come To Mean The Opposite of REST?](https://htmx.org/essays/how-did-rest-come-to-mean-the-opposite-of-rest/)
+
+> [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) must be the most broadly misused technical term in computer programming history.
+
 ## Python
 
 ### [Using Mypy in production at Spring](https://notes.crmarsh.com/using-mypy-in-production-at-spring)
@@ -114,11 +134,29 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > I subscribed to the Real Python mailing list two years ago, and I learned a lot of tips and tricks during that time. Even though it might seem like an odd way to learn Python, I have found it to be extremely helpful. I have written down some notes about the most useful tips and tricks that I have learned over the last two years, and I wanted to share them with you today.
 
+### [Why You Should Use Data Classes in Python](https://www.giulianopertile.com/blog/why-you-should-use-dataclasses-in-python/)
+
+> Don’t you know what a Data Class is? You know how to use it? And what is the difference with a regular class? Here in this post I will try to answer these questions and many more.
+
+### [Recipes from Python SQLite docs](https://rednafi.github.io/reflections/recipes-from-python-sqlite-docs.html)
+
+> While going through the documentation of Python's sqlite3 module, I noticed that it's quite API-driven, where different parts of the module are explained in a prescriptive manner.
+> I, however, learn better from examples, recipes, and narratives.
+> Although a few good recipes already exist in the docs, I thought I'd also enlist some of the examples I tried out while grokking them.
+
+### [Heroku Alternatives for Python-based Applications](https://testdriven.io/blog/heroku-alternatives/)
+
+> Unfortunately, starting November 28, 2022, Heroku will discontinue its free tier. This means you'll no longer be able to leverage free dynos, Postgres databases, and Redis instances.
+
 ## Django
 
 ### [Django Shared Property](https://github.com/schinckel/django-shared-property)
 
 > Properties that are both ORM expressions and python code.
+
+### [Asynchronous Tasks With Django and Celery](https://realpython.com/asynchronous-tasks-with-django-and-celery/)
+
+> You’ve built a shiny Django app and want to release it to the public, but you’re worried about time-intensive tasks that are part of your app’s workflow. You don’t want your users to have a negative experience navigating your app. You can integrate Celery to help with that.
 
 ## Python libraries
 
@@ -131,6 +169,10 @@ Some of them are strictly related to the things I did or am currently doing.
 ### [dotfiles](https://dotfiles.github.io/)
 
 > Your unofficial guide to dotfiles on GitHub.
+
+### [Awesome dotfiles](https://github.com/webpro/awesome-dotfiles)
+
+> A curated list of dotfiles resources. Inspired by the [awesome](https://github.com/sindresorhus/awesome) list thing. Note that some articles or tools may look old or old-fashioned, but this usually means they're battle-tested and mature (like dotfiles themselves). Feel free to propose new articles, projects or tools!
 
 ## Cloud
 
@@ -164,6 +206,22 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > Thus, to simplify it further and for such simple use-cases, Google has now launched direct streaming capability from Pub/Sub via “BigQuery Subscription”. In addition, Pub/Sub topic schemas provide the option of writing Pub/Sub messages to BigQuery tables with compatible schemas. If the schema is not enabled for your topic, messages will be registered as bytes or strings to the given BigQuery table.
 
+### [Google Cloud Global External HTTP(S) Load Balancer - Deep Dive](https://cloud.google.com/blog/topics/developers-practitioners/google-cloud-global-external-https-load-balancer-deep-dive)
+
+> Load balancing in Google Cloud is a fully scalable, distributed and redundant managed service offered in different flavors such as global external, regional external, and regional internal.
+
+### [What is Kubernetes HPA and How Can It Help You Save on the Cloud?](https://cast.ai/blog/what-is-kubernetes-hpa-and-how-can-it-help-you-save-on-the-cloud/)
+
+> Autoscaling is a core capability of Kubernetes. The tighter you configure the scaling mechanisms – HPA, VPA, and Cluster Autoscaler – the lower the waste and costs of running your application.
+
+### [Building a secure CI/CD pipeline using Google Cloud built-in services](https://cloud.google.com/blog/products/devops-sre/devsecops-and-cicd-using-google-cloud-built-in-services)
+
+> In this blog, we will be focusing on the tools and technology side of DevOps. At the core of the technical aspect of DevOps, the concept is Continuous Integration and Continuous Delivery (CI/CD). The idea behind CI/CD concept is to create an automated software delivery pipeline that continuously deploys the new software releases in an automated fashion.
+
+### [Kubernetes CLI (kubectl) tips you didn't know about](https://learncloudnative.com/blog/2022-05-10-kubectl-tips)
+
+> There are so many excellent tips I decided to collect the most interesting ones in a single post.
+
 ## Other stuff
 
 ### [Docuseek](https://docuseek2.com/)
@@ -172,12 +230,24 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Podcasts
 
+### [ Aplikacja minimalizmu w codziennym życiu - Art Balsam | NZDL #021 ](https://www.youtube.com/watch?v=B9sLaQqmulM)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/B9sLaQqmulM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 ## Videos
 
 ### [TechWorld with Nana: Microservices explained - the What, Why and How?](https://www.youtube.com/watch?v=v4LlmLmVWk)
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/v4LlmLmVWk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [TechWorld with Nana: Istio & Service Mesh - simply explained in 15 mins](https://www.youtube.com/watch?v=16fgzklcF7Y)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/16fgzklcF7Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ### [](https://www.youtube.com/watch?v=VIDEO_ID)

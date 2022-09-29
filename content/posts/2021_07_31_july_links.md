@@ -2,7 +2,7 @@ Title: Month summary - July 2021
 Date: 2021-07-31
 Category: summary
 Tags: python, blog, podcast, series, aggregate, summary, month, 2021, git
-Slug: 2021-July-links
+Slug: 2021-july-links
 Summary: Interesting stuff from the month
 Status: published
 

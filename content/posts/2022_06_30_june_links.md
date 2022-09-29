@@ -1,5 +1,5 @@
 Title: Month summary - June 2022
-Date: 2022-12-31
+Date: 2022-06-30
 Category: summary
 Tags: python, blog, podcast, series, aggregate, summary, month, 2022
 Slug: 2022-june-links

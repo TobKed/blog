@@ -1,5 +1,5 @@
 Title: Month summary - July 2022
-Date: 2022-12-31
+Date: 2022-07-31
 Category: summary
 Tags: python, blog, podcast, series, aggregate, summary, month, 2022
 Slug: 2022-july-links
@@ -25,7 +25,7 @@ to my [repository](https://github.com/TobKed/github_actions_oidc) dedicated to t
 The talk [Making Badass Developers](https://www.youtube.com/watch?v=FKTxC9pl-WM)
 and blog post [The Ferrari problem](https://vasilishynkarenka.com/the-ferrari-problem/)
 made me realize how important it is to minimize the impact of not important or less important things in our lives.
-We should not burn our llimited brain capacity to make some trivial choices like choosing t-shirt to wear today.
+We should not burn our limited brain capacity to make some trivial choices like choosing t-shirt to wear today.
 This is of course a very trivial example but goes to the point of scarcity of computing power.
 Apparently I already got rid of the t-shirt problem since 98% of my t-shirts are plain black -> no choice -> no problem.
 

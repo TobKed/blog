@@ -1,5 +1,5 @@
 Title: Month summary - August 2022
-Date: 2022-12-31
+Date: 2022-08-30
 Category: summary
 Tags: python, blog, podcast, series, aggregate, summary, month, 2022
 Slug: 2022-august-links
@@ -15,7 +15,7 @@ Some of them are strictly related to the things I did or am currently doing.
 ## Some thoughts
 
 I setup deployment of [Saleor](https://saleor.io/) on Google Kubernetes Engine with [Terraform](https://www.terraform.io/).
-Additionally I learnt and used [Terragrunt](https://terragrunt.gruntwork.io/) (wrapper for terraform).
+Additionally, I learnt and used [Terragrunt](https://terragrunt.gruntwork.io/) (wrapper for terraform).
 Saleor is an open-source e-commerce platform.
 It consists of three services: Core, Dashboard and Storefront.
 The Core is written in Python (Django) and exposes GraphQL API which is consumed by Dashboard and Storefront (both written in React).
@@ -31,7 +31,7 @@ The Core is written in Python (Django) and exposes GraphQL API which is consumed
 
 > Releasing lab-built open-source software often involves a mountain of unforeseen work for the developers.
 
-### [7 Github Actions Tricks I Wish I Knew Before I Started](https://yonatankra.com/7-github-actions-tricks-i-wish-i-knew-before-i-started/#6_Saving_Computation_Time_by_Stopping_Obsolete_Workflows)
+### [7 Github Actions Tricks I Wish I Knew Before I Started](https://yonatankra.com/7-github-actions-tricks-i-wish-i-knew-before-i-started/)
 
 > Here are 7 tricks with github actions that changed my life (or at least my CI/CD pipeline).
 > These tricks helped me create a more maintainable workflows code as well as boosted performance of the whole CI/CD process.
