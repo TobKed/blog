@@ -14,7 +14,7 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
 
-I setup deployment of [Saleor](https://saleor.io/) on Google Kubernetes Engine with [Terraform](https://www.terraform.io/).
+I set up deployment of [Saleor](https://saleor.io/) on Google Kubernetes Engine with [Terraform](https://www.terraform.io/).
 Additionally, I learnt and used [Terragrunt](https://terragrunt.gruntwork.io/) (wrapper for terraform).
 Saleor is an open-source e-commerce platform.
 It consists of three services: Core, Dashboard and Storefront.

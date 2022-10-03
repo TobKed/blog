@@ -5,6 +5,7 @@ Tags: python, blog, podcast, series, aggregate, summary, month, 2022
 Slug: 2022-september-links
 Summary: Interesting stuff from the month
 Status: draft
+Header_Cover: /images/posts/2022/2022_09_xx.jpg
 
 # September 2022
 
@@ -12,6 +13,8 @@ I am aggregating here some more or less interesting stuff of various IT related 
 Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
+
+Lakes, mountains, Vipassana, a lot of sport.
 
 ## Articles
 
@@ -158,10 +161,6 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > You’ve built a shiny Django app and want to release it to the public, but you’re worried about time-intensive tasks that are part of your app’s workflow. You don’t want your users to have a negative experience navigating your app. You can integrate Celery to help with that.
 
-## Python libraries
-
-## Django libraries
-
 ## Go
 
 ## Tools
@@ -249,13 +248,3 @@ Some of them are strictly related to the things I did or am currently doing.
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/16fgzklcF7Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
-
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
-
-> Playback on other websites has been disabled by the video owner. [Watch on YouTube](https://www.youtube.com/watch?v=VIDEO_ID)
