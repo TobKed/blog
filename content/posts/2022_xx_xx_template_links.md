@@ -15,6 +15,8 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Articles
 
+## Productivity
+
 ## Python
 
 ## Django
