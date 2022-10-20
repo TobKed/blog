@@ -12,10 +12,6 @@ Header_Cover: /images/posts/2022/2022_09_xx.jpg
 I am aggregating here some more or less interesting stuff of various IT related materials which I came across this month.
 Some of them are strictly related to the things I did or am currently doing.
 
-## Some thoughts
-
-Lakes, mountains, Vipassana, a lot of sport.
-
 ## Articles
 
 ### [Customizing your shell](https://blog.balthazar-rouberol.com/customizing-your-shell.html)
@@ -160,8 +156,6 @@ Lakes, mountains, Vipassana, a lot of sport.
 ### [Asynchronous Tasks With Django and Celery](https://realpython.com/asynchronous-tasks-with-django-and-celery/)
 
 > You’ve built a shiny Django app and want to release it to the public, but you’re worried about time-intensive tasks that are part of your app’s workflow. You don’t want your users to have a negative experience navigating your app. You can integrate Celery to help with that.
-
-## Go
 
 ## Tools
 
