@@ -104,6 +104,18 @@ GitHub Actions Tips & Tricks presentation.
 
 > Master the command line, in one page
 
+### [terminalizer](https://github.com/faressoft/terminalizer)
+
+> Record your terminal and generate animated gif images or share a web player link [terminalizer.com](terminalizer.com).
+
+### [asciinema](https://github.com/asciinema/asciinema)
+
+> `asciinema` lets you easily record terminal sessions and replay them in a terminal as well as in a web browser.
+
+### [JSON Crack](https://jsoncrack.com/)
+
+> Simple visualization tool for your JSON data. No forced structure, paste your JSON and view it instantly.
+
 ## Cloud
 
 ### [loader.io](https://loader.io/)
