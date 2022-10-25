@@ -116,6 +116,10 @@ GitHub Actions Tips & Tricks presentation.
 
 > Simple visualization tool for your JSON data. No forced structure, paste your JSON and view it instantly.
 
+### [tabler.io](https://github.com/tabler/tabler)
+
+> A premium and open source dashboard template with a responsive and high-quality UI.
+
 ## Cloud
 
 ### [loader.io](https://loader.io/)
@@ -123,6 +127,10 @@ GitHub Actions Tips & Tricks presentation.
 > Simple Cloud-based load testing.
 >
 > Loader.io is a FREE load testing service that allows you to stress test your web-apps & apis with thousands of concurrent connections.
+
+### [Why we're leaving the cloud](alendar.google.com/calendar/u/0/r/week)
+
+> The savings promised in reduced complexity never materialized. So we're making our plans to leave.
 
 ## Other stuff
 

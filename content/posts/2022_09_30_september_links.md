@@ -4,7 +4,7 @@ Category: summary
 Tags: python, blog, podcast, series, aggregate, summary, month, 2022
 Slug: 2022-september-links
 Summary: Interesting stuff from the month
-Status: draft
+Status: published
 Header_Cover: /images/posts/2022/2022_09_xx.jpg
 
 # September 2022
@@ -231,10 +231,10 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Videos
 
-### [TechWorld with Nana: Microservices explained - the What, Why and How?](https://www.youtube.com/watch?v=v4LlmLmVWk)
+### [TechWorld with Nana: Microservices explained - the What, Why and How?](https://www.youtube.com/watch?v=rv4LlmLmVWk)
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/v4LlmLmVWk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/rv4LlmLmVWk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ### [TechWorld with Nana: Istio & Service Mesh - simply explained in 15 mins](https://www.youtube.com/watch?v=16fgzklcF7Y)

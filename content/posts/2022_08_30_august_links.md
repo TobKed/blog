@@ -4,7 +4,7 @@ Category: summary
 Tags: python, blog, podcast, series, aggregate, summary, month, 2022
 Slug: 2022-august-links
 Summary: Interesting stuff from the month
-Status: draft
+Status: published
 Header_Cover: /images/posts/2022/2022_08_xx.jpg
 
 # August 2022
@@ -14,7 +14,7 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
 
-I set up deployment of [Saleor](https://saleor.io/) on Google Kubernetes Engine with [Terraform](https://www.terraform.io/).
+I set up the deployment of [Saleor](https://saleor.io/) on Google Kubernetes Engine with [Terraform](https://www.terraform.io/).
 Additionally, I learnt and used [Terragrunt](https://terragrunt.gruntwork.io/) (wrapper for terraform).
 Saleor is an open-source e-commerce platform.
 It consists of three services: Core, Dashboard and Storefront.
