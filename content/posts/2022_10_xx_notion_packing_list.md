@@ -5,7 +5,7 @@ Tags: sleep, productivity, tools, notion
 Slug: notion-packing-lists
 Summary: Make packing easier
 Header_Cover: /images/posts/2020/2020_summary.png
-Status: draft
+Status: published
 
 # Packing - what is the problem here?
 
