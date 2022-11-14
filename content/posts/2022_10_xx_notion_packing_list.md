@@ -1,7 +1,7 @@
 Title: Notion packing lists
 Date: 2022-10-25
 Category: productivity
-Tags: sleep, productivity, tools, notion
+Tags: productivity, tools, notion
 Slug: notion-packing-lists
 Summary: Make packing easier
 Header_Cover: /images/posts/2020/2020_summary.png
