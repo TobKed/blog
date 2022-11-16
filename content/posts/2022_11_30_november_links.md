@@ -95,19 +95,31 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > There are several ways to get started with Python 3 on macOS, but one way is better than the others.
 
-## Django
+### [Hexagonal architecture in Python](https://blog.szymonmiks.pl/p/hexagonal-architecture-in-python/)
 
-### [Django Performance Improvements - Part 4: Caching in Django Applications](https://blog.sentry.io/2022/10/24/django-performance-improvements-part-4-caching-in-django-applications/)
-
-> In the first three parts of this series around improving performance in your Django applications, we focused on database, code optimization, and frontend optimization. In part 4, we will focus on ways to improve the speed of the Django applications.
-
-## Python libraries
+> Let me show you a hands-on example using our lovely Python language (FastAPI example included).
 
 ### [Simple, sane, and sensible Logging in Python](https://medium.com/@petefison/logging-in-python-doesnt-get-simpler-than-this-50a7f24af1f4)
 
 > If you’re not already using it, there’s a simple, powerful wrapper around Python’s Logging module called [log2d](https://github.com/PFython/log2d) that gives you access to all sorts of advanced features using a deceptively simple syntax.
 > It’s literally all you need if you’re in the 80% of Developers who just want to adopt good logging practices quickly, using sensible default settings, without having to learn yet another peculiar syntax,
 > and without having to store away long snippets of boiler-plate code which are too convoluted to be memorable.
+
+## Django
+
+### [Django Performance Improvements - Part 4: Caching in Django Applications](https://blog.sentry.io/2022/10/24/django-performance-improvements-part-4-caching-in-django-applications/)
+
+> In the first three parts of this series around improving performance in your Django applications, we focused on database, code optimization, and frontend optimization. In part 4, we will focus on ways to improve the speed of the Django applications.
+
+### [How to Filter Django QuerySets – 15 Examples For Beginners](https://ctrlzblog.com/django-queryset-filter-15-examples/)
+
+> A tutorial on creating QuerySets with Django ORM and filtering the data. Includes how to convert QuerySets into lists.
+
+## Python libraries
+
+### [Typer](https://github.com/tiangolo/typer)
+
+> Typer, build great CLIs. Easy to code. Based on Python type hints.
 
 ## Django libraries
 
@@ -181,6 +193,8 @@ Some of them are strictly related to the things I did or am currently doing.
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/2BN96ON48U8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+
+https://www.youtube.com/watch?v=GBTdnfD6s5Q
 
 ### [](https://www.youtube.com/watch?v=VIDEO_ID)
 
