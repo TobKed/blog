@@ -61,6 +61,12 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > Solve your own problem, everything else will follow.
 
+### [The bubble has popped for unprofitable software companies](https://world.hey.com/dhh/the-bubble-has-popped-for-unprofitable-software-companies-2a0a5f57)
+
+> Ride the big money to the moon or die trying.
+> Anyone interested in living on earth just don't have the vision or the courage to reach for infinity and beyond.
+> Operating within your means, taking profits along the way, and aiming for a stable, long-term business is not just dismissed, but frowned upon.
+
 ## Productivity
 
 ### [Skip the Digital Detox—Abstinence Won’t Work (But This Does)](https://www.nirandfar.com/digital-detox-failure)
@@ -138,6 +144,10 @@ Some of them are strictly related to the things I did or am currently doing.
 ### [Hari Sekhon - DevOps Bash Tools](https://github.com/HariSekhon/DevOps-Bash-tools)
 
 > 800+ DevOps Bash Scripts.
+
+### [musicforprogramming.net](https://musicforprogramming.net/about)
+
+> To be fully engaged in your own creative or logical challenges, while at the same time fully on board the emotional rails of the musical ideas of another person can make for an experience not dissimilar to meditation — but rather than focussing on the simplicity of nothingness while swatting away introspective daydreams, you are engulfed in enough complexity to cause introspective daydreams to burn up on re-entry.
 
 ## Cloud
 
