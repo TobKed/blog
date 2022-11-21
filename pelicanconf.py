@@ -36,15 +36,15 @@ AUTHOR_FEED_RSS = None
 LINKS = (
     ("Home", "/index.html"),
     ("about me", "/pages/about-me.html"),
-    ("tobked.github.io", "https://tobked.github.io/"),
+    ("tobked.dev", "https://tobked.dev/"),
 )
 
 # Social widget
 SOCIAL = (
-    ("user", "https://tobked.github.io/"),
+    ("user", "https://tobked.dev"),
     ("LinkedIn", "https://www.linkedin.com/in/tobiaszkedzierski/?locale=en_US"),
     ("GitHub", "https://github.com/TobKed"),
-    ("RSS", "https://tobked.github.io/blog/feeds/all.rss.xml"),
+    ("RSS", "https://blog.tobked.dev/feeds/all.rss.xml"),
 )
 
 DEFAULT_PAGINATION = 10

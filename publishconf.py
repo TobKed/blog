@@ -15,7 +15,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # If your site is available via HTTPS, make sure SITEURL begins with https://
-SITEURL = "https://tobked.github.io/blog/"
+SITEURL = "https://blog.tobked.dev/"
 RELATIVE_URLS = False
 
 FEED_DOMAIN = SITEURL
