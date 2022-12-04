@@ -15,6 +15,7 @@ BASE_BRANCH='master'
 BRANCH='gh-pages'
 COMMIT_EMAIL="${GITHUB_ACTOR}@users.noreply.github.com"
 REPOSITORY_PATH="https://${ACCESS_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+CNAME="blog.tobked.dev"
 
 
 echo '----- Deploy Settings -----'
@@ -55,6 +56,8 @@ publish=$(make publish 2>&1)
 echo -e "${publish}"
 echo "${publish}" | grep -vzq "ERROR" || exit 1
 
+echo '----- Add CNAME -----'
+echo "${CNAME}" > "${FOLDER}/CNAME"
 
 echo '----- Deploying -----'
 git add -f $FOLDER && \

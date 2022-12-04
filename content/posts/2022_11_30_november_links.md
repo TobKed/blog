@@ -4,6 +4,7 @@ Category: summary
 Tags: python, blog, podcast, series, aggregate, summary, month, 2022
 Slug: 2022-november-links
 Summary: Interesting stuff from the month
+Header_Cover: /images/posts/2022/2022_11_xx.jpg
 Status: draft
 
 # November 2022
@@ -111,6 +112,14 @@ Some of them are strictly related to the things I did or am currently doing.
 > It’s literally all you need if you’re in the 80% of Developers who just want to adopt good logging practices quickly, using sensible default settings, without having to learn yet another peculiar syntax,
 > and without having to store away long snippets of boiler-plate code which are too convoluted to be memorable.
 
+### [Sentry: How we run our Python tests in hundreds of environments really fast](https://blog.sentry.io/2022/11/14/how-we-run-our-python-tests-in-hundreds-of-environments-really-fast/)
+
+> Supporting seven Python versions, and around twenty frameworks, and between 2 and 9 versions of each of those frameworks amounts to over 400 environments we run our tests in.
+
+### [Parallel Nested For-Loops in Python](https://superfastpython.com/parallel-nested-for-loops-in-python/#Single_Process_Pool_and_Shared_Queue_unbounded)
+
+> In this tutorial, you will discover how to change a nested for-loop to be concurrent or parallel in Python with a suite of worked examples.
+
 ## Django
 
 ### [Django Performance Improvements - Part 4: Caching in Django Applications](https://blog.sentry.io/2022/10/24/django-performance-improvements-part-4-caching-in-django-applications/)
@@ -121,15 +130,18 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > A tutorial on creating QuerySets with Django ORM and filtering the data. Includes how to convert QuerySets into lists.
 
+### [RealPython: Deploy a Django App With Gunicorn and Nginx \[paywall\]](https://realpython.com/courses/django-app-with-gunicorn-nginx/)
+
+> Taking a Django app from development to production is a demanding but rewarding process.
+> In this video course, you’ll go through that process step by step.
+> You’ll start at square one with a no-frills Django application then add in Gunicorn, Nginx, and domain registration.
+> After working through this video course, you’ll be better equipped to take your Django app into production and serve it to the world.
+
 ## Python libraries
 
 ### [Typer](https://github.com/tiangolo/typer)
 
 > Typer, build great CLIs. Easy to code. Based on Python type hints.
-
-## Django libraries
-
-## Go
 
 ## Tools
 
@@ -148,6 +160,12 @@ Some of them are strictly related to the things I did or am currently doing.
 ### [musicforprogramming.net](https://musicforprogramming.net/about)
 
 > To be fully engaged in your own creative or logical challenges, while at the same time fully on board the emotional rails of the musical ideas of another person can make for an experience not dissimilar to meditation — but rather than focussing on the simplicity of nothingness while swatting away introspective daydreams, you are engulfed in enough complexity to cause introspective daydreams to burn up on re-entry.
+
+### [jaeger](https://github.com/jaegertracing/jaeger)
+
+> Jaeger, inspired by \[Dapper\]\[dapper\] and [OpenZipkin](https://zipkin.io),
+> is a distributed tracing platform created by \[Uber Technologies\]\[ubeross\]
+> and donated to [Cloud Native Computing Foundation](https://cncf.io).
 
 ## Cloud
 
@@ -168,6 +186,10 @@ Some of them are strictly related to the things I did or am currently doing.
 > A few months ago we started working with a company operating in Singapore and Hong Kong that’s using Foxy to expand their online services in the grocery and restaurant industries.
 > Foxy was a perfect fit, but they were finding our API far too slow to meet their needs.
 
+### [GCPinstances.info](https://gcpinstances.doit-intl.com/?cost_duration=monthly)
+
+> Easy GCP Compute Engine Instance Comparison
+
 ## Other stuff
 
 ### [monorepo.tools](https://monorepo.tools/)
@@ -179,6 +201,10 @@ Some of them are strictly related to the things I did or am currently doing.
 > The ultimate goal of the Open Library is to make all the published works of humankind available to everyone in the world.
 
 ## Podcasts
+
+### [Internet. Czas działać!](<>)
+
+> „Internet. Czas działać!” to podcast, z którego dowiecie się, jak internetowe technologie wpływają na społeczeństwo i jak być ich świadomym konsumentem.
 
 ## Videos
 
@@ -204,14 +230,14 @@ Some of them are strictly related to the things I did or am currently doing.
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/2BN96ON48U8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-https://www.youtube.com/watch?v=GBTdnfD6s5Q
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
+### [OpenTelemetry: The Vision, Reality, and How to Get Started - Dotan Horovits, Logz.io](https://www.youtube.com/watch?v=qE1ggEmvz2Y)
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/qE1ggEmvz2Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
+### [When To Use Microservices (And When Not To!) • Sam Newman & Martin Fowler • GOTO 2020](https://www.youtube.com/watch?v=GBTdnfD6s5Q)
 
-> Playback on other websites has been disabled by the video owner. [Watch on YouTube](https://www.youtube.com/watch?v=VIDEO_ID)
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/GBTdnfD6s5Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
