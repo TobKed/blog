@@ -37,9 +37,56 @@ Some of them are strictly related to the things I did or am currently doing.
 >
 > Have you ever wondered why they are always implemented as \[closed, open) as opposed to \[closed, closed\]?
 
+### [Smart Move, Google](https://garrit.xyz/posts/2022-11-24-smart-move-google)
+
+> Back home I opened Google Maps again, and noticed that maps.google.com now redirects to google.com/maps.
+> This implies that the permissions I give to Google Maps now apply to **all** of Googles services hosted under this domain.
+
+### [The Hidden Cost of High Salaries in Tech](https://d-hanshew.medium.com/the-hidden-cost-of-high-salaries-in-tech-4e5d8c9b2e3a)
+
+> Giving chase sometimes ain’t worth it.
+
+### [Beginner’s Guide to OpenTelemetry](https://logz.io/learn/opentelemetry-guide/#overview)
+
+> Every journey in Observability begins with instrumenting an application to emit telemetry data – primarily logs, metrics and traces – from each service as it executes. OpenTelemetry is an open source project under the Cloud Native Computing Foundation (CNCF) that offers a unified framework for generating, collecting and transmitting telemetry data. With OpenTelemetry you can instrument your application in a vendor-agnostic way, and then analyze the telemetry data in your backend tool of choice, whether Prometheus, Jaeger, Zipkin, or others.
+
+### [Understanding browser cookies 🍪](https://chenhuijing.com/blog/understanding-browser-cookies/)
+
+> A cookie is a small plain text file stored in the browser. There isn’t anything executable in there. It simply contains a small amount of data.
+
+### [Jak wybrać odpowiedni font? Podstawy typografii](https://konradmakowski.com/jak-dobrac-font-do-publikacji/projektowanie/)
+
+> Czy wiesz, że często nie ma znaczenia, jak dobre są twoje treści? I tak mogą zostać nieprzeczytane!
+>
+> Jeśli napiszesz naprawdę świetny tekst, ale przedstawisz go w złej formie, to odbiorca podświadomie pomyśli, że zawartość merytoryczna jest tak samo źle podana, jak forma tekstu.
+
+### [Awesome macOS Command Line](https://git.herrbischoff.com/awesome-macos-command-line/)
+
+> A curated list of shell commands and tools specific to macOS.
+>
+> “You don’t have to know everything. You simply need to know where to find it when necessary.” (John Brunner)
+
+### [Self Hosting a Google Maps Alternative with OpenStreetMap](https://wcedmisten.fyi/post/self-hosting-osm/)
+
+> OpenStreetMap provides crowdsourced mapping data available for free to the world.
+> But this isn't to say I can just use OSM.
+> The organization does provide the data, but its usage policy encourages users to not rely on their servers for personal use, and instead take responsibility for hosting themselves.
+> And based on this project, I can see why.
+> The hardware requirements are not for the faint of heart.
+
 ## Productivity
 
+### [To Be More Disciplined, Stop These 4 Bad Habits](https://nickwignall.medium.com/to-be-more-disciplined-stop-these-4-bad-habits-2917927ced4b)
+
+> If you’ve struggled for a long time to be more disciplined without much success, working to identify and eliminate these four habits that interfere with discipline might be a much more helpul strategy.
+
 ## Python
+
+### [The Origins of Python](https://inference-review.com/article/the-origins-of-python)
+
+> The success of any undertaking can rarely be ascribed to a single factor.30 In addition to those mentioned above, luck also plays a role.
+> While ABC was perhaps too far ahead of its time, Python appeared at just the right time.
+> Whatever the case, I believe that the design philosophy we developed in the process leading to ABC, inasmuch as it was also followed in Python, has had at least some positive influence.
 
 ## Django
 
@@ -52,6 +99,12 @@ Some of them are strictly related to the things I did or am currently doing.
 > Everything you need to know to get your Django app into production.
 
 ## Python libraries
+
+### [PySnooper](https://github.com/cool-RR/PySnooper)
+
+> PySnooper - Never use print for debugging again
+>
+> PySnooper is a poor man's debugger. If you've used Bash, it's like set -x for Python, except it's fancier.
 
 ## Django libraries
 
@@ -76,6 +129,10 @@ Some of them are strictly related to the things I did or am currently doing.
 ### [Killer Shell CKAD - Interactive Scenarios for Kubernetes Application Developers](https://killercoda.com/killer-shell-ckad)
 
 > These scenarios can be used standalone for CKAD preparation or learning Kubernetes in general.
+
+### [The Reference Architecture for Agility](https://github.com/wso2/reference-architecture)
+
+> The Reference Architecture for Agility is a technology-neutral logical architecture based on a disaggregated cloud-based model.
 
 ## Other stuff
 
@@ -105,6 +162,24 @@ Some of them are strictly related to the things I did or am currently doing.
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [ Advanced API and Integration Problems & Patterns - Udi Dahan - NDC Oslo 2022 ](https://www.youtube.com/watch?v=vNouCMGP1eE&t)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/vNouCMGP1eE&t" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [The Design of Everyday APIs - presented by Lynn Root](https://www.youtube.com/watch?v=bVoM2WLt6Hk)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/bVoM2WLt6Hk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [Co dopamina i adrenalina robi z programist(k)ą? - Jakub Pilimon - Beyond Code 2022](https://www.youtube.com/watch?v=CfPRrBHLUtY)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/CfPRrBHLUtY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ### [](https://www.youtube.com/watch?v=VIDEO_ID)

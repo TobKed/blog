@@ -5,7 +5,7 @@ Tags: python, blog, podcast, series, aggregate, summary, month, 2022
 Slug: 2022-october-links
 Summary: Interesting stuff from the month
 Header_Cover: /images/posts/2022/2022_10_xx.jpg
-Status: draft
+Status: published
 
 # October 2022
 
@@ -14,11 +14,11 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
 
-I made presentation **"GitHub Actions: (opinionated) Tips & Tricks"** at [Brival](https://www.brival.co/) software house.
+​​I made a presentation **"GitHub Actions: (opinionated) Tips & Tricks"** at [Brival](https://www.brival.co/) software house.
 It was my second public presentation about this topic.
-Since then I updated content and demo repository.
-I noticed how beneficial is to give the same presentation mutliple times.
-It went significantly better than first time.
+Since then I updated the content and demo repository.
+I noticed how beneficial it is to give the same presentation multiple times.
+It went significantly better than the first time.
 I was not limited with time and had more freedom in going deeper into details.
 
 ![GitHub Actions Tips & Tricks @Brival]({static}/images/posts/2022/2022_10_brival.jpg)

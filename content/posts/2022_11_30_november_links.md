@@ -5,7 +5,7 @@ Tags: python, blog, podcast, series, aggregate, summary, month, 2022
 Slug: 2022-november-links
 Summary: Interesting stuff from the month
 Header_Cover: /images/posts/2022/2022_11_xx.jpg
-Status: draft
+Status: published
 
 # November 2022
 
@@ -13,6 +13,8 @@ I am aggregating here some more or less interesting stuff of various IT related 
 Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
+
+I created and maintain small private **kubernetes** cluster on [Google Kubernetes Engine\[GKE\]](https://cloud.google.com/kubernetes-engine).
 
 ## Articles
 
@@ -157,10 +159,6 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > 800+ DevOps Bash Scripts.
 
-### [musicforprogramming.net](https://musicforprogramming.net/about)
-
-> To be fully engaged in your own creative or logical challenges, while at the same time fully on board the emotional rails of the musical ideas of another person can make for an experience not dissimilar to meditation — but rather than focussing on the simplicity of nothingness while swatting away introspective daydreams, you are engulfed in enough complexity to cause introspective daydreams to burn up on re-entry.
-
 ### [jaeger](https://github.com/jaegertracing/jaeger)
 
 > Jaeger, inspired by \[Dapper\]\[dapper\] and [OpenZipkin](https://zipkin.io),
@@ -199,6 +197,10 @@ Some of them are strictly related to the things I did or am currently doing.
 ### [Open Library](https://openlibrary.org/)
 
 > The ultimate goal of the Open Library is to make all the published works of humankind available to everyone in the world.
+
+### [musicforprogramming.net](https://musicforprogramming.net/about)
+
+> To be fully engaged in your own creative or logical challenges, while at the same time fully on board the emotional rails of the musical ideas of another person can make for an experience not dissimilar to meditation — but rather than focussing on the simplicity of nothingness while swatting away introspective daydreams, you are engulfed in enough complexity to cause introspective daydreams to burn up on re-entry.
 
 ## Podcasts
 
