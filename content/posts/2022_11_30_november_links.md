@@ -14,7 +14,7 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
 
-I created and maintain small private **kubernetes** cluster on [Google Kubernetes Engine\[GKE\]](https://cloud.google.com/kubernetes-engine).
+I created and maintain small private **kubernetes** cluster on [Google Kubernetes Engine \[GKE\]](https://cloud.google.com/kubernetes-engine).
 
 ## Articles
 

@@ -74,11 +74,27 @@ Some of them are strictly related to the things I did or am currently doing.
 > And based on this project, I can see why.
 > The hardware requirements are not for the faint of heart.
 
+### [How I Split a Monolith Into Microservices Without Refactoring](https://betterprogramming.pub/how-i-split-a-monolith-into-microservices-without-refactoring-5d76924c34c2)
+
+> My journey to becoming more agile with a just-in-time architectural style.
+
+### [Stop Copy-Pasting Old Scripts, Use Makefile Instead!](https://mario-gunawan.medium.com/stop-copy-pasting-old-scripts-use-makefile-instead-68331cdf6a32)
+
+> Makefile is a way to group your terminal commands into one group which we usually calls “target”. A target consists of several commands to be executed in order from top to bottom and stops whenever there is an error output from a command.
+
+### [11 Laws of Software Estimation for Complex Work](https://mdalmijn.com/p/11-laws-of-software-estimation-for-complex-work)
+
+> Adjust your sails, deal with the unexpected and uncertain, instead of being angry at the winds you will never be able to predict and control.
+
 ## Productivity
 
 ### [To Be More Disciplined, Stop These 4 Bad Habits](https://nickwignall.medium.com/to-be-more-disciplined-stop-these-4-bad-habits-2917927ced4b)
 
 > If you’ve struggled for a long time to be more disciplined without much success, working to identify and eliminate these four habits that interfere with discipline might be a much more helpul strategy.
+
+### [5 Harsh Truths for Success from Linus Torvalds](https://medium.com/codex/5-harsh-truths-from-linus-torvalds-406ab20cea02)
+
+> Before I start, I want to tell you something: I cannot guarantee that you will like these ideas, but I can only tell the truth, the harsh, painful truth.
 
 ## Python
 
@@ -98,6 +114,10 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > Everything you need to know to get your Django app into production.
 
+### [Django API Domains](https://phalt.github.io/django-api-domains/)
+
+> This styleguide combines domain-driven design principles and Django's apps pattern to provide a pragmatic guide for developing scalable API services with the Django web framework.
+
 ## Python libraries
 
 ### [PySnooper](https://github.com/cool-RR/PySnooper)
@@ -116,6 +136,22 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > CRI-O is meant to provide an integration path between OCI conformant runtimes and the Kubelet. Specifically, it implements the Kubelet Container Runtime Interface (CRI) using OCI conformant runtimes. The scope of CRI-O is tied to the scope of the CRI.
 
+### [Command Line Interface Guidelines](https://clig.dev/)
+
+> An [open-source](https://github.com/cli-guidelines/cli-guidelines) guide to help you write better command-line programs, taking traditional UNIX principles and updating them for the modern day.
+
+### [WTF (aka 'wtfutil')](https://github.com/wtfutil/wtf)
+
+> WTF (aka 'wtfutil') is the personal information dashboard for your terminal, providing at-a-glance access to your very important but infrequently-needed stats and data.
+
+### [YouTube Transcript](https://youtubetranscript.com/)
+
+> YouTube Transcript
+
+### [Background Music - macOS audio utility](https://github.com/kyleneideck/BackgroundMusic)
+
+> Background Music, a macOS audio utility: automatically pause your music, set individual apps' volumes and record system audio.
+
 ## Cloud
 
 ### [CNCF Cloud Native Interactive Landscape](https://landscape.cncf.io/)
@@ -133,6 +169,10 @@ Some of them are strictly related to the things I did or am currently doing.
 ### [The Reference Architecture for Agility](https://github.com/wso2/reference-architecture)
 
 > The Reference Architecture for Agility is a technology-neutral logical architecture based on a disaggregated cloud-based model.
+
+### \[Introduction to FinOps on Google Cloud\]9https://medium.com/google-cloud/introduction-to-finops-on-google-cloud-3e031a026375
+
+> In this article, we evaluate the increasing importance of Cloud FinOps and why it requires a new way of thinking.
 
 ## Other stuff
 
