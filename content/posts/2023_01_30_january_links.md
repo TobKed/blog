@@ -1,12 +1,12 @@
-Title: Month summary - {Month} 2023
-Date: 2023-12-31
+Title: Month summary - January 2022
+Date: 2022-12-31
 Category: summary
-Tags: python, blog, podcast, series, aggregate, summary, month, 2023
-Slug: 2023-{month}-links
+Tags: python, blog, podcast, series, aggregate, summary, month, 2022
+Slug: 2022-january-links
 Summary: Interesting stuff from the month
 Status: draft
 
-# {Month} 2023
+# January 2022
 
 I am aggregating here some more or less interesting stuff of various IT related materials which I came across this month.
 Some of them are strictly related to the things I did or am currently doing.
@@ -18,6 +18,11 @@ Some of them are strictly related to the things I did or am currently doing.
 ## Productivity
 
 ## Python
+
+### [The Python Graph Gallery](https://www.python-graph-gallery.com/)
+
+> Welcome to the Python Graph Gallery, a collection of hundreds of charts made with Python.
+> Charts are organized in about 40 sections and always come with their associated reproducible code.
 
 ## Django
 

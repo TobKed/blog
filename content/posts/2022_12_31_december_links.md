@@ -13,6 +13,10 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
 
+[Google Cloud Platform Professional Cloud Developer certificate.](https://www.credential.net/47fe6c30-0530-4291-8f72-93d0bf5d682e)
+
+![Google Professional Cloud Developer]({static}/images/posts/2022/summary/gcp_pcd.png)
+
 ## Articles
 
 ### [Do they deserve the gift of your keystrokes?](https://www.hanselman.com/blog/do-they-deserve-the-gift-of-your-keystrokes)
@@ -31,7 +35,7 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > Cloudflare has been using Kafka in production since 2014. We have come a long way since then, and currently run 14 distinct Kafka clusters, across multiple data centers, with roughly 330 nodes. Between them, over a trillion messages have been processed over the last eight years.
 
-### \[Always use [closed, open) intervals](https://fhur.me/posts/always-use-closed-open-intervals)
+### [Always use \[closed, open) intervals](https://fhur.me/posts/always-use-closed-open-intervals)
 
 > ntervals or ranges pop-up everywhere in the programming world. The classic example is picking a start and end date, like you would when booking an AirBnB or a flight. But that's just one example: from slicing a JS Array, to Java's List#sublist and even SQL's LIMIT operator, ranges are everywhere.
 >
@@ -86,6 +90,12 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > Adjust your sails, deal with the unexpected and uncertain, instead of being angry at the winds you will never be able to predict and control.
 
+### [GitHub Actions – Sharing actions and reusable workflows from private repositories is now GA](https://github.blog/changelog/2022-12-14-github-actions-sharing-actions-and-reusable-workflows-from-private-repositories-is-now-ga/)
+
+> See managing the repository settings and managing the enterprise repository settings to allow access to workflows in other repositories.
+
+### [How to share terminal demos as razor-sharp animated SVG](https://wasimlorgat.com/tils/how-to-share-terminal-demos-as-razor-sharp-animated-svg.html)
+
 ## Productivity
 
 ### [To Be More Disciplined, Stop These 4 Bad Habits](https://nickwignall.medium.com/to-be-more-disciplined-stop-these-4-bad-habits-2917927ced4b)
@@ -126,10 +136,6 @@ Some of them are strictly related to the things I did or am currently doing.
 >
 > PySnooper is a poor man's debugger. If you've used Bash, it's like set -x for Python, except it's fancier.
 
-## Django libraries
-
-## Go
-
 ## Tools
 
 ### [CRI-O - OCI-based implementation of Kubernetes Container Runtime Interface](https://github.com/cri-o/cri-o)
@@ -151,6 +157,12 @@ Some of them are strictly related to the things I did or am currently doing.
 ### [Background Music - macOS audio utility](https://github.com/kyleneideck/BackgroundMusic)
 
 > Background Music, a macOS audio utility: automatically pause your music, set individual apps' volumes and record system audio.
+
+### [Reactive Resume](https://github.com/AmruthPillai/Reactive-Resume)
+
+> A one-of-a-kind resume builder that keeps your privacy in mind. Completely secure, customizable, portable, open-source and free forever. Try it out today!
+
+### \[✨ Star History ✨\]\[https://star-history.com/\]
 
 ## Cloud
 
@@ -174,23 +186,27 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > In this article, we evaluate the increasing importance of Cloud FinOps and why it requires a new way of thinking.
 
-## Other stuff
-
-## Podcasts
-
 ## Videos
 
 ### [KubeCon + CloudNativeCon North America 2022](https://www.youtube.com/playlist?list=PLj6h78yzYM2O5aNpRM71NQyx3WUe1xpTn)
 
-[Tips To Fight Impostor Syndrome - Aurélie Vache, OVHcloud](https://www.youtube.com/watch?v=SbRHcT1Je-A)
-[The 10 Biggest Mistakes You Shouldn’t Make In Open Source - Bill Mulligan, Isovalent & Divya Mohan](https://www.youtube.com/watch?v=InZvbdYmRrE)
-[Tips And Tricks To Successfully Migrate From Jaeger To OpenTelemetry - Vineeth Pothulapati](https://www.youtube.com/watch?v=6Vnuu2oVEMA)
-[Keynote: How to Become an Open Source Mechanic - Emily Fox, Security Engineer, Apple](https://www.youtube.com/watch?v=chZcSIIOqnY)
-[Tutorial: Set Up Your Shell For Kubernetes... - Sebastien Thomas, Wunderkind & Archy Khayretdinov](https://www.youtube.com/watch?v=TKYAEjNg4Hw)
-[Prometheus - Intro, Deep Dive, And Open Q+A - Goutham Veeramachaneni & Ganesh Vernekar, Grafana Labs](https://www.youtube.com/watch?v=45n_Nf5xhaw)
-[Learn About Helm And Its Ecosystem - Andrew Block & Karena Angell, Matt Farina, Scott Rigby](https://www.youtube.com/watch?v=8g8K7afFBP8)
-[Tutorial: Build Your Own Heroku With Cloud Native Stack](https://www.youtube.com/watch?v=3Aw60VXVMu8)
-[Jaeger: The Future with OpenTelemetry and Metrics- Jonah Kowall, Logz.io & Joe Elliott, Grafana Labs](https://www.youtube.com/watch?v=i18XQVg0Ad8)
+- [Tips To Fight Impostor Syndrome - Aurélie Vache, OVHcloud](https://www.youtube.com/watch?v=SbRHcT1Je-A)
+
+- [The 10 Biggest Mistakes You Shouldn’t Make In Open Source - Bill Mulligan, Isovalent & Divya Mohan](https://www.youtube.com/watch?v=InZvbdYmRrE)
+
+- [Tips And Tricks To Successfully Migrate From Jaeger To OpenTelemetry - Vineeth Pothulapati](https://www.youtube.com/watch?v=6Vnuu2oVEMA)
+
+- [Keynote: How to Become an Open Source Mechanic - Emily Fox, Security Engineer, Apple](https://www.youtube.com/watch?v=chZcSIIOqnY)
+
+- [Tutorial: Set Up Your Shell For Kubernetes... - Sebastien Thomas, Wunderkind & Archy Khayretdinov](https://www.youtube.com/watch?v=TKYAEjNg4Hw)
+
+- [Prometheus - Intro, Deep Dive, And Open Q+A - Goutham Veeramachaneni & Ganesh Vernekar, Grafana Labs](https://www.youtube.com/watch?v=45n_Nf5xhaw)
+
+- [Learn About Helm And Its Ecosystem - Andrew Block & Karena Angell, Matt Farina, Scott Rigby](https://www.youtube.com/watch?v=8g8K7afFBP8)
+
+- [Tutorial: Build Your Own Heroku With Cloud Native Stack](https://www.youtube.com/watch?v=3Aw60VXVMu8)
+
+- [Jaeger: The Future with OpenTelemetry and Metrics- Jonah Kowall, Logz.io & Joe Elliott, Grafana Labs](https://www.youtube.com/watch?v=i18XQVg0Ad8)
 
 ### [Moving 17 years of old legacy code and websites into the Cloud - Scott Hanselman at NDC Porto 2022](https://www.youtube.com/watch?v=CVxwsskDzmU)
 
@@ -221,13 +237,3 @@ Some of them are strictly related to the things I did or am currently doing.
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/CfPRrBHLUtY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
-
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
-
-> Playback on other websites has been disabled by the video owner. [Watch on YouTube](https://www.youtube.com/watch?v=VIDEO_ID)
