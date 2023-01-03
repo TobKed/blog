@@ -4,7 +4,8 @@ Category: summary
 Tags: python, blog, podcast, series, aggregate, summary, month, 2022
 Slug: 2022-december-links
 Summary: Interesting stuff from the month
-Status: draft
+Header_Cover: /images/posts/2022/2022_12_xx.jpg
+Status: published
 
 # December 2022
 
@@ -13,9 +14,12 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
 
+The Google Cloud Platform journey continues.
+Ending year with another certificate in my collection.
+
 [Google Cloud Platform Professional Cloud Developer certificate.](https://www.credential.net/47fe6c30-0530-4291-8f72-93d0bf5d682e)
 
-![Google Professional Cloud Developer]({static}/images/posts/2022/summary/gcp_pcd.png)
+<img src="{static}/images/posts/2022/summary/gcp_pcd.png" alt="Google Professional Cloud Developer" style="display: block; margin-left: auto; margin-right: auto;">
 
 ## Articles
 
@@ -160,9 +164,11 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ### [Reactive Resume](https://github.com/AmruthPillai/Reactive-Resume)
 
-> A one-of-a-kind resume builder that keeps your privacy in mind. Completely secure, customizable, portable, open-source and free forever. Try it out today!
+> A one-of-a-kind resume builder that keeps your privacy in mind. Completely secure, customizable, portable, open-source and free forever.
 
-### \[✨ Star History ✨\]\[https://star-history.com/\]
+### [✨ Star History ✨](https://star-history.com/)
+
+> The missing GitHub star history graph.
 
 ## Cloud
 
@@ -191,21 +197,13 @@ Some of them are strictly related to the things I did or am currently doing.
 ### [KubeCon + CloudNativeCon North America 2022](https://www.youtube.com/playlist?list=PLj6h78yzYM2O5aNpRM71NQyx3WUe1xpTn)
 
 - [Tips To Fight Impostor Syndrome - Aurélie Vache, OVHcloud](https://www.youtube.com/watch?v=SbRHcT1Je-A)
-
 - [The 10 Biggest Mistakes You Shouldn’t Make In Open Source - Bill Mulligan, Isovalent & Divya Mohan](https://www.youtube.com/watch?v=InZvbdYmRrE)
-
 - [Tips And Tricks To Successfully Migrate From Jaeger To OpenTelemetry - Vineeth Pothulapati](https://www.youtube.com/watch?v=6Vnuu2oVEMA)
-
 - [Keynote: How to Become an Open Source Mechanic - Emily Fox, Security Engineer, Apple](https://www.youtube.com/watch?v=chZcSIIOqnY)
-
 - [Tutorial: Set Up Your Shell For Kubernetes... - Sebastien Thomas, Wunderkind & Archy Khayretdinov](https://www.youtube.com/watch?v=TKYAEjNg4Hw)
-
 - [Prometheus - Intro, Deep Dive, And Open Q+A - Goutham Veeramachaneni & Ganesh Vernekar, Grafana Labs](https://www.youtube.com/watch?v=45n_Nf5xhaw)
-
 - [Learn About Helm And Its Ecosystem - Andrew Block & Karena Angell, Matt Farina, Scott Rigby](https://www.youtube.com/watch?v=8g8K7afFBP8)
-
 - [Tutorial: Build Your Own Heroku With Cloud Native Stack](https://www.youtube.com/watch?v=3Aw60VXVMu8)
-
 - [Jaeger: The Future with OpenTelemetry and Metrics- Jonah Kowall, Logz.io & Joe Elliott, Grafana Labs](https://www.youtube.com/watch?v=i18XQVg0Ad8)
 
 ### [Moving 17 years of old legacy code and websites into the Cloud - Scott Hanselman at NDC Porto 2022](https://www.youtube.com/watch?v=CVxwsskDzmU)
@@ -217,13 +215,13 @@ Some of them are strictly related to the things I did or am currently doing.
 ### [The Forgotten Art of Structured Programming - Kevlin Henney \[C++ on Sea 2019\]](https://www.youtube.com/watch?v=SFv8Wm2HdNM)
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/SFv8Wm2HdNM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-### [ Advanced API and Integration Problems & Patterns - Udi Dahan - NDC Oslo 2022 ](https://www.youtube.com/watch?v=vNouCMGP1eE&t)
+### [Advanced API and Integration Problems & Patterns - Udi Dahan - NDC Oslo 2022 ](https://www.youtube.com/watch?v=vNouCMGP1eE)
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/vNouCMGP1eE&t" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/vNouCMGP1eE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ### [The Design of Everyday APIs - presented by Lynn Root](https://www.youtube.com/watch?v=bVoM2WLt6Hk)

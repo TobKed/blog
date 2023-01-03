@@ -13,25 +13,25 @@ some thoughts
 
 ## Programming journey
 
-new domain
+New work, new domain, new achievements.
 
 #### Work
 
-new job
-promotion to senior
+Started work in the biggest Polish software house: NetGuru as Python Developer (mid or regular).
+I worked there for a huge international client nad worldwide projects.
+I also co-author the internal Python newsletter.
 
 #### Increased Cloud competencies
 
-I continued my journey with Cloud.
+I continue my journey with Cloud.
 I achieved two Google Cloud Platform certificates:
 
-- [Google Professional Cloud Architect](https://www.credential.net/fc647c87-e199-4dd2-b34e-67dbb7bc3d10#gs.2gfa5j)
-
+- [Google Professional Cloud Architect](https://www.credential.net/fc647c87-e199-4dd2-b34e-67dbb7bc3d10)
 - [Google Professional Cloud Developer](https://www.credential.net/47fe6c30-0530-4291-8f72-93d0bf5d682e)
 
-![Google Professional Cloud Architect]({static}/images/posts/2022/summary/gcp_pca.png)
+<img src="{static}/images/posts/2022/summary/gcp_pca.png" alt="Google Professional Cloud Architect" style="display: block; margin-left: auto; margin-right: auto;">
 
-![Google Professional Cloud Developer]({static}/images/posts/2022/summary/gcp_pcd.png)
+<img src="{static}/images/posts/2022/summary/gcp_pcd.png" alt="Google Professional Cloud Developer" style="display: block; margin-left: auto; margin-right: auto;">
 
 ## Learning, talking
 
@@ -69,15 +69,26 @@ I also wrote one additional blog posts:
 ## Photos
 
 ![2022_01]({static}/images/posts/2022/2022_01_xx.jpg)
+<br>
 ![2022_02]({static}/images/posts/2022/2022_02_xx.jpg)
+<br>
 ![2022_03]({static}/images/posts/2022/2022_03_xx.jpg)
+<br>
 ![2022_04]({static}/images/posts/2022/2022_04_xx.jpg)
+<br>
 ![2022_05]({static}/images/posts/2022/2022_05_xx.jpg)
+<br>
 ![2022_06]({static}/images/posts/2022/2022_06_xx.jpg)
+<br>
 ![2022_07]({static}/images/posts/2022/2022_07_xx.jpg)
-![2022_07]({static}/images/posts/2022/2022_07_xx.jpg)
+<br>
 ![2022_08]({static}/images/posts/2022/2022_08_xx.jpg)
+<br>
 ![2022_09]({static}/images/posts/2022/2022_09_xx.jpg)
+<br>
 ![2022_10]({static}/images/posts/2022/2022_10_xx.jpg)
+<br>
 ![2022_11]({static}/images/posts/2022/2022_11_xx.jpg)
+<br>
 ![2022_12]({static}/images/posts/2022/2022_12_xx.jpg)
+<br>
