@@ -188,7 +188,7 @@ Ending year with another certificate in my collection.
 
 > The Reference Architecture for Agility is a technology-neutral logical architecture based on a disaggregated cloud-based model.
 
-### \[Introduction to FinOps on Google Cloud\]9https://medium.com/google-cloud/introduction-to-finops-on-google-cloud-3e031a026375
+### [Introduction to FinOps on Google Cloud](https://medium.com/google-cloud/introduction-to-finops-on-google-cloud-3e031a026375)
 
 > In this article, we evaluate the increasing importance of Cloud FinOps and why it requires a new way of thinking.
 

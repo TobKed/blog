@@ -9,19 +9,13 @@ Status: draft
 
 # 2022
 
-some thoughts
-
-## Programming journey
-
-New work, new domain, new achievements.
-
-#### Work
+## Work
 
 Started work in the biggest Polish software house: NetGuru as Python Developer (mid or regular).
 I worked there for a huge international client nad worldwide projects.
 I also co-author the internal Python newsletter.
 
-#### Increased Cloud competencies
+## Increased Cloud competencies
 
 I continue my journey with Cloud.
 I achieved two Google Cloud Platform certificates:
