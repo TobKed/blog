@@ -1,17 +1,16 @@
-Title: Month summary - January 2022
-Date: 2022-12-31
+Title: Month summary - January 2023
+Date: 2023-01-31
 Category: summary
-Tags: python, blog, podcast, series, aggregate, summary, month, 2022
-Slug: 2022-january-links
+Tags: python, blog, podcast, series, aggregate, summary, month, 2023
+Slug: 2023-january-links
 Summary: Interesting stuff from the month
-Status: draft
+Header_Cover: /images/posts/2023/2023_01_xx.jpg
+Status: published
 
-# January 2022
+# January 2023
 
 I am aggregating here some more or less interesting stuff of various IT related materials which I came across this month.
 Some of them are strictly related to the things I did or am currently doing.
-
-## Some thoughts
 
 ## Articles
 
@@ -45,6 +44,41 @@ Some of them are strictly related to the things I did or am currently doing.
 > Nowadays an API Gateway is an essential component in designing a distributed system’s architecture with multiple API services or microservices.
 > This post helps you understand what’s the API Gateway, when, and why to use it, and guides you on how to choose the best API Gateway solution for your applications.
 
+### [Meetings for an effective eng organization.](https://lethain.com/eng-org-meetings/)
+
+> Good meetings are the heartbeat for your organization.
+
+### [Reaching Peak Meeting Efficiency](https://medium.learningbyshipping.com/reaching-peak-meeting-efficiency-f8e47c93317a)
+
+> Meetings are a critical tool for building a diverse, high-performance team with shared values
+
+### [YouTube Addiction](https://www.jntrnr.com/youtube-addiction/)
+
+> Hi, my name is JT. I'm a YouTube addict.
+>
+> I know what you're thinking. That sounds like a joke. That you want a funny punchline to go with it. Me too.
+
+### [The Art of Writing Amazing REST APIs](https://jkebertz.medium.com/the-art-of-writing-amazing-rest-apis-dc4c4100478d)
+
+> There are some things that many companies get right and a lot that many get wrong. So how do I think about designing APIs? What makes a good API?
+
+### [In the long run](https://blog.ploeh.dk/2023/01/16/in-the-long-run/)
+
+> Software design decisions should be time-aware.
+
+### [GPT-3 Is the Best Journal I’ve Ever Used](https://every.to/chain-of-thought/gpt-3-is-the-best-journal-you-ve-ever-used)
+
+> I’ve been journaling for 10 years, and I can attest that using AI is journaling on steroids.
+
+### [Death of a Craftsman](https://einarwh.wordpress.com/2020/04/05/death-of-a-craftsman/)
+
+> Hi! My name is Einar.
+> I design and write software for a living, presumably like you.
+> You could call me a software developer, a coder, a programmer, and also a software designer, I guess.
+> Those are all things I do and labels that I’m comfortable with.
+> I am not, however, a software craftsman.
+> This blog post is about why.
+
 ## Productivity
 
 ### [How to annotate literally everything](https://beepb00p.xyz/annotating.html)
@@ -65,6 +99,10 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > There’s this unique state of ultra-calm and curious mind that I enter on Sundays that I just can’t access on other days.
 
+### [Jak efektywnie czytać i zarządzać treściami z różnych źródeł?](https://jozwiak.top/blog/jak-efektywnie-czytac-i-zarzadzac-tresciami)
+
+> Sposobem na zwiększenie wygody czytania jest scentralizowanie treści z różnych serwisów, czyli zebranie ich w jednym, wspólnym miejscu. Możemy wtedy konsumować je w sposób komfortowy, przeglądając jeden kanał (feed), w którym wszystkie będą widoczne.
+
 ## Python
 
 ### [The Python Graph Gallery](https://www.python-graph-gallery.com/)
@@ -75,6 +113,23 @@ Some of them are strictly related to the things I did or am currently doing.
 ### [Boring Python: code quality](https://www.b-list.org/weblog/2022/dec/19/boring-python-code-quality/)
 
 > This is the second in a series of posts I intend to write about how to build, deploy, and manage Python applications in as boring a way as possible.
+
+### [Logging practices I follow](https://www.16elt.com/2023/01/06/logging-practices-I-follow/)
+
+> Therefore I follow a specific set of practices which allows me to write better logs while also being consistent across the system.
+
+### [Structured Logging with Structlog](https://bitestreams.com/blog/structured_logging/)
+
+> An introduction to structured logging and its advantages using the structlog package for Python.
+
+### [Python Docs - Logging Cookbook -Implementing structured logging](https://docs.python.org/3/howto/logging-cookbook.html#implementing-structured-logging)
+
+> Although most logging messages are intended for reading by humans, and thus not readily machine-parseable, there might be circumstances where you want to output messages in a structured format which is capable of being parsed by a program (without needing complex regular expressions to parse the log message).
+
+### [Same words, different meanings](https://nedbatchelder.com/blog/202301/same_words_different_meanings.html)
+
+> One of the difficulties when comparing programming languages is that they sometimes use the same words to describe similar things, but always with differences.
+> Sometimes the differences are large enough that we want to use different words, but often they are not.
 
 ## Django
 
@@ -88,9 +143,9 @@ Some of them are strictly related to the things I did or am currently doing.
 > If you’re looking for questions to ask a software company, then here are a few to get you started. Keep in mind, these are not meant as “gotcha” questions.
 > The point of them is to understand the company you would be joining, so you can make the best decision possible.
 
-## Python libraries
+### [How to Log Users In With Their Email](https://ctrlzblog.com/how-to-log-users-in-with-their-email/)
 
-## Django libraries
+> Learn how to use Django's authentication system to log users in with an email instead of a username.
 
 ## Go
 
@@ -114,7 +169,13 @@ Some of them are strictly related to the things I did or am currently doing.
 > HandleFinder is a powerful tool that can be used to find usernames across many [social networks](https://github.com/sherlock-project/sherlock/blob/master/sites.md).
 > This project is a wrapper around the [Sherlock Project](https://github.com/sherlock-project).
 
-## Cloud
+### [Feeder](https://f-droid.org/en/packages/com.nononsenseapps.feeder/)
+
+> Feeder is a fully free/libre feed reader.
+> It supports all common feed formats, including JSONFeed.
+> It doesn't track you. It doesn't require any setup.
+> It doesn't even need you to create an account!
+> Just setup your feeds, or import them from your old reader via OPML, then get on with syncing and reading.
 
 ## Other stuff
 
@@ -125,20 +186,54 @@ Some of them are strictly related to the things I did or am currently doing.
 >
 > While most "todo" demos provide an excellent cursory glance at a framework's capabilities, they typically don't convey the knowledge & perspective required to actually build real applications with it.
 
-## Podcasts
+### [Discover the best graduation speeches](https://commspeeches.softr.app/)
+
+> One and only place to find a curated list of best commencement speeches.
 
 ## Videos
 
-https://www.youtube.com/watch?v=YUqn1OPxtmE
-https://www.youtube.com/watch?v=9-cyC6O81Bk
-https://www.youtube.com/watch?v=FS1mnISoG7U
+### [Stamps Back](https://www.youtube.com/watch?v=YUqn1OPxtmE)
 
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
+Stamps Back the 5th Moleman documentary.
+From Commodore 64s smuggled across the Iron Curtain to cracked games on cassette tapes sold at flea markets, floppy disk swapping via postal mail, hacked phone booths connected to US BBSes, and copy parties packed to capacity, Stamps Back tells the story of how teenagers in Hungary ignited a computing revolution in the 1980s with illegally copied video games from the West, and began the Hungarian demoscene.
+More info at stampsback.com
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/YUqn1OPxtmE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
+### [Habits of Efficient Developers](https://www.youtube.com/watch?v=9-cyC6O81Bk)
 
-> Playback on other websites has been disabled by the video owner. [Watch on YouTube](https://www.youtube.com/watch?v=VIDEO_ID)
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/9-cyC6O81Bk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [Scaling Yourself • Scott Hanselman • GOTO 2012](https://www.youtube.com/watch?v=FS1mnISoG7U)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/FS1mnISoG7U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [Devoxx Poland 2016 - Wojciech Seliga - Ten lessons I painfully learnt while moving from software ...](https://www.youtube.com/watch?v=ffXpiFEq1jE)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/ffXpiFEq1jE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [HackCast S02E08 - Django Community & Django Styleguide](https://www.youtube.com/watch?v=9VfRaPECbpY)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/9VfRaPECbpY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [She hacked a billionaire, a bank and you could be next. Do this now to protect yourself!](https://www.youtube.com/watch?v=8MIIeIa25tE)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/8MIIeIa25tE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [Successful, Accomplished, Depressed – A Talk About Performance, Perfectionism, and Burnout in IT](https://www.youtube.com/watch?v=C84h5e9cOZY)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/C84h5e9cOZY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>

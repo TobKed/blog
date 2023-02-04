@@ -1,11 +1,11 @@
 Title: Year summary - 2022
-Date: 2022-01-01
+Date: 2023-01-01
 Category: summary
 Tags: summary, year, 2022
 Slug: 2022-summary
 Summary: Ups and downs of 2022
 Header_Cover: /images/posts/2022/summary/2022_summary.jpg
-Status: draft
+Status: published
 
 # 2022
 
@@ -50,7 +50,7 @@ Every month is decorated with picture made by me.
 - [May]({filename}/posts/2022_05_31_may_links.md)
 - [June]({filename}/posts/2022_06_30_june_links.md)
 - [July]({filename}/posts/2022_07_31_july_links.md)
-- [August]({filename}/posts/2022_08_31_august_links.md)
+- [August]({filename}/posts/2022_08_30_august_links.md)
 - [September]({filename}/posts/2022_09_30_september_links.md)
 - [October]({filename}/posts/2022_10_31_october_links.md)
 - [November]({filename}/posts/2022_11_30_november_links.md)
@@ -63,26 +63,25 @@ I also wrote one additional blog posts:
 ## Photos
 
 ![2022_01]({static}/images/posts/2022/2022_01_xx.jpg)
-<br>
+
 ![2022_02]({static}/images/posts/2022/2022_02_xx.jpg)
-<br>
+
 ![2022_03]({static}/images/posts/2022/2022_03_xx.jpg)
-<br>
+
 ![2022_04]({static}/images/posts/2022/2022_04_xx.jpg)
-<br>
+
 ![2022_05]({static}/images/posts/2022/2022_05_xx.jpg)
-<br>
+
 ![2022_06]({static}/images/posts/2022/2022_06_xx.jpg)
-<br>
+
 ![2022_07]({static}/images/posts/2022/2022_07_xx.jpg)
-<br>
+
 ![2022_08]({static}/images/posts/2022/2022_08_xx.jpg)
-<br>
+
 ![2022_09]({static}/images/posts/2022/2022_09_xx.jpg)
-<br>
+
 ![2022_10]({static}/images/posts/2022/2022_10_xx.jpg)
-<br>
+
 ![2022_11]({static}/images/posts/2022/2022_11_xx.jpg)
-<br>
+
 ![2022_12]({static}/images/posts/2022/2022_12_xx.jpg)
-<br>
