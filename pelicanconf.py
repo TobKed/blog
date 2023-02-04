@@ -34,8 +34,8 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = (
-    ("Home", "/index.html"),
-    ("about me", "/pages/about-me.html"),
+    ("Home", "/index"),
+    ("about me", "/pages/about-me"),
     ("tobked.dev", "https://tobked.dev/"),
 )
 
@@ -81,3 +81,22 @@ MARKDOWN = {
     },
     "output_format": "html5",
 }
+
+ARTICLE_URL = "{slug}"
+ARTICLE_ORDER_BY = "reversed-date"
+ARTICLE_LANG_URL = "{slug}-{lang}"
+DRAFT_URL = "drafts/{slug}"
+DRAFT_LANG_URL = "drafts/{slug}-{lang}"
+PAGE_URL = "pages/{slug}"
+PAGE_LANG_URL = "pages/{slug}-{lang}"
+DRAFT_PAGE_URL = "drafts/pages/{slug}"
+DRAFT_PAGE_LANG_URL = "drafts/pages/{slug}-{lang}"
+CATEGORY_URL = "category/{slug}"
+TAG_URL = "tag/{slug}"
+AUTHOR_URL = "author/{slug}"
+
+PAGINATION_PATTERNS = (
+    (1, "{url}", "{save_as}"),
+    (2, "{base_name}/page/{number}", "{base_name}/page/{number}{extension}"),
+    (-1, "{base_name}/last/", "{base_name}/last/index.html"),
+)
