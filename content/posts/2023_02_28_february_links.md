@@ -3,15 +3,14 @@ Date: 2023-02-28
 Category: summary
 Tags: python, blog, podcast, series, aggregate, summary, february, 2023
 Slug: 2023-february-links
-Summary: Interesting stuff from the february
+Summary: Interesting stuff from the month
 Status: draft
+Header_Cover: /images/posts/black-cover.png
 
 # February 2023
 
 I am aggregating here some more or less interesting stuff of various IT related materials which I came across this february.
 Some of them are strictly related to the things I did or am currently doing.
-
-## Some thoughts
 
 ## Articles
 
@@ -35,21 +34,11 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > This guide provides an overview of each tool with examples and includes links to guides in our library that go deeper into each tool.
 
-## Productivity
-
-## Python
-
-## Django
-
-## Python libraries
-
 ## Django libraries
 
 ### [django-baton](https://github.com/otto-torino/django-baton)
 
 > A cool, modern and responsive django admin application based on bootstrap 5
-
-## Go
 
 ## Tools
 
@@ -68,10 +57,6 @@ Some of them are strictly related to the things I did or am currently doing.
 ### [Difference between Container Registry and Artifact Registry Google Cloud](https://medium.com/google-cloud/difference-between-container-registry-and-artifact-registry-google-cloud-deac2a3ac383)
 
 > Artifact Registry is the next generation of Container Registry. Artifact registry Store, manage, and secure your build artifacts.
-
-## Other stuff
-
-## Podcasts
 
 ## Videos
 
@@ -92,13 +77,3 @@ Some of them are strictly related to the things I did or am currently doing.
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/vJ1STks8MUU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
-
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
-
-> Playback on other websites has been disabled by the video owner. [Watch on YouTube](https://www.youtube.com/watch?v=VIDEO_ID)
