@@ -13,6 +13,8 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
 
+presentation: https://tobked.dev/git_rebase_interactive
+
 ## Articles
 
 ### [How to Make a Great Conference Talk](https://switowski.com/blog/how-to-make-a-great-conference-talk/)
@@ -26,6 +28,16 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Django
 
+### [Django Performance Optimization Tips](https://testdriven.io/blog/django-performance-optimization-tips/)
+
+> This article addresses different aspects of Django performance and showcases some of the practices you can use to speed up your app.
+> On top of that, it provides links to additional resources for further reading.
+
+### [Ban 1+N in Django](https://suor.github.io/blog/2023/03/26/ban-1-plus-n-in-django/)
+
+> I always thought of 1+N as a thing that you just keep in your head, catch on code reviews or via performance regressions.
+> This worked well for a long time, however, the less control we have over our SQL queries the more likely it will sneak through those guards.
+
 ## Python libraries
 
 ## Django libraries
@@ -36,9 +48,25 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Cloud
 
+### [Why I think GCP is better than AWS](https://nandovillalba.medium.com/why-i-think-gcp-is-better-than-aws-ea78f9975bda)
+
+> AWS is the best platform to showcase how great GCP is…
+
+## AI
+
+### [March 20 ChatGPT outage: Here’s what happened](https://openai.com/blog/march-20-chatgpt-outage)
+
+> An update on our findings, the actions we’ve taken, and technical details of the bug.
+
 ## Other stuff
 
 ## Podcasts
+
+### [The Real Python Podcast Episode 150: Lessons Learned From Four Years Programming With Python](https://realpython.com/podcasts/rpp/150/)
+
+> What are the core lessons you’ve learned along your Python development journey?
+> What are key takeaways you would share with new users of the language?
+> This week on the show, Duarte Oliveira e Carmo is here to discuss his recent talk, “Four Years of Python.”
 
 ## Videos
 

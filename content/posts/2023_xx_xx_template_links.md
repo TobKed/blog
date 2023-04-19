@@ -31,6 +31,8 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Cloud
 
+## AI
+
 ## Other stuff
 
 ## Podcasts

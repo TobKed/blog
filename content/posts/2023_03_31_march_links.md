@@ -5,14 +5,12 @@ Tags: python, blog, podcast, series, aggregate, summary, month, 2023
 Slug: 2023-march-links
 Summary: Interesting stuff from the month
 Header_Cover: /images/posts/2023/2023_03_xx.png
-Status: draft
+Status: published
 
 # March 2023
 
 I am aggregating here some more or less interesting stuff of various IT related materials which I came across this month.
 Some of them are strictly related to the things I did or am currently doing.
-
-## Some thoughts
 
 ## Articles
 
