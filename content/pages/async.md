@@ -9,6 +9,8 @@ Status: hidden
 - [SuperFastPython: Python Asyncio: The Complete Guide](https://superfastpython.com/python-asyncio/)
 - [RealPython: Speed Up Your Python Program With Concurrency](https://realpython.com/python-concurrency/)
 - [Michał Klich: asyncio’s event loop](https://klichx.dev/2022/12/28/asyncios-event-loop/)
+- [Python/Django AsyncIO Tutorial with Examples ](https://djangostars.com/blog/asynchronous-programming-in-python-asyncio/)
+- [5 Common Asyncio Errors in Python (and how to avoid them)](https://superfastpython.com/asyncio-common-errors/)
 
 ## Books
 
