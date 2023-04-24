@@ -45,10 +45,9 @@ presentation: https://tobked.dev/git_rebase_interactive
 
 > An update on our findings, the actions we’ve taken, and technical details of the bug.
 
-### [Discover your next favorite book Powered by AI](https://www.librarian-ai.com/)
+### [librarian-ai.com/](https://www.librarian-ai.com/)
 
 > Discover your next favorite book effortlessly with the help of AI.
-> Simply choose your 3 favourite books and let AI suggest personalized recommendations tailored to your reading preferences
 
 ### [🧠 Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts)
 
@@ -61,6 +60,10 @@ presentation: https://tobked.dev/git_rebase_interactive
 ### [TED: Greg Brockman - The inside story of ChatGPT's astonishing potential](https://www.ted.com/talks/greg_brockman_the_inside_story_of_chatgpt_s_astonishing_potential/)
 
 > In a talk from the cutting edge of technology, OpenAI cofounder Greg Brockman explores the underlying design principles of ChatGPT and demos some mind-blowing, unreleased plug-ins for the chatbot that sent shockwaves across the world.
+
+### [regex.ai](https://regex.ai/)
+
+> AI-Powered Regular Expression Solver
 
 ## Security
 
@@ -167,6 +170,14 @@ presentation: https://tobked.dev/git_rebase_interactive
 ### [KNOW YOUR HTTP * WELL](https://github.com/for-GET/know-your-http-well)
 
 > HTTP encodings, headers, media types, methods, relations and status codes, all summarized and linking to their specification.
+
+### [Google Python Style Guide](https://google.github.io/styleguide/pyguide.html)
+
+> Python is the main dynamic language used at Google. This style guide is a list of dos and don’ts for Python programs.
+
+### [Awesome Software and Architectural Design Patterns](https://github.com/DovAmir/awesome-design-patterns)
+
+> A curated list of software and architecture related design patterns.
 
 ## Podcasts
 
