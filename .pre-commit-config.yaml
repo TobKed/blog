@@ -27,7 +27,8 @@ repos:
             ^venv/|
             ^content/posts/2019_10_07_black.md|
             ^content/posts/2021_08_31_august_links.md|
-            ^content/posts/2021_12_30_django_on_gcp.md
+            ^content/posts/2021_12_30_django_on_gcp.md|
+            ^content/posts/2023_27_04_google_cloud_developer_day_warsaw.md
         )
 - repo: https://github.com/psf/black
   rev: 23.1.0

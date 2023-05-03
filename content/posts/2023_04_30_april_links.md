@@ -5,6 +5,7 @@ Tags: python, blog, podcast, series, aggregate, summary, month, 2023
 Slug: 2023-april-links
 Summary: Interesting stuff from the month
 Status: draft
+Header_Cover: /images/posts/2023/2023_04_gcp_dev_day/2023_04_gcp_dev_day.jpg
 
 # April 2023
 
@@ -13,7 +14,29 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
 
-presentation: https://tobked.dev/git_rebase_interactive
+#### `git rebase --interactive` and `fixups`
+
+I have seen how different people use Git, and each person has their own way of using it.
+However, I did not see many people using git `rebase interactive` and `fixups`.
+For a long time, I have been thinking about presenting how I use `git rebase`, `git rebase interactive`, and my beloved `fixups`.
+A long time ago, I wrote a short blog post about it ([Changing history in Git]({filename}/posts/2019_08_12_git_change_history.md)), but I felt it was not enough.
+I wanted to show it in action and explain why I do it.
+Because of that, I decided to prepare a presentation about it.
+I presented it during one of the internal meetings at work, and I think it went well.
+I am planning to present it during one of the meetups in the future.
+
+I was a little bit frustrated with Google Slides and how it handles code snippets.
+I decided to keep the text of the presentation in the repository, so it is easier to track changes, publish and share it.
+Inspired by [Raymond Hettinger](https://www.youtube.com/playlist?list=PLRVdut2KPAguz3xcd22i_o_onnmDKj3MA) I decided to use the documentation generator [MkDocs](https://www.mkdocs.org/) and [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/).
+The presentation is available as a website under my domain: [tobked.dev/git_rebase_interactive](https://tobked.dev/git_rebase_interactive).
+Its source is on my Github: [github.com/TobKed/git_rebase_interactive](https://github.com/TobKed/git_rebase_interactive).
+
+#### [Google Cloud Developer Day Warsaw 2023]({filename}/posts/2023_04_27_gcp_dev_day.md)
+
+I attended Google Cloud Developer Day Warsaw 2023 on April 27th, 2023. It was a free event organized by Google Cloud at their [Warsaw Campus](https://www.campus.co/warsaw/).
+I wrote more about it in a separate blog post: [Google Cloud Developer Day Warsaw 2023]({filename}/posts/2023_04_27_gcp_dev_day.md).
+
+______________________________________________________________________
 
 ## Articles
 
@@ -37,7 +60,36 @@ presentation: https://tobked.dev/git_rebase_interactive
 > A simple solution to this problem is a script that automatically suspends the server, when it is not used, and another script to wake the server up again, in case there is work to do.
 > To my surprise I could not find any out-of-the-box solution, so I thought, it is a worthwhile effort to write about it.
 
+### [69 Ways to F\*\*\* Up Your Deploy](https://kellyshortridge.com/blog/posts/69-ways-to-mess-up-your-deploy/)
+
+> We hear about all the ways to make your deploys so glorious that your pipelines poop rainbows and services saunter off into the sunset together.
+> But what we don’t see as much is folklore of how to make your deploys suffer.
+
+### [I failed 3 job applications, here's what I learned](https://blog.alexewerlof.com/p/3-job-applications)
+
+> Tips and mistakes to avoid when applying software engineering jobs at top tech.
+
+### [TikTok is a Time Bomb](https://gurwinder.substack.com/p/tiktok-may-be-a-chinese-bio-weapon)
+
+> The ultimate weapon of mass distraction
+
+### [Bicycle by Bartosz Ciechanowski](https://ciechanow.ski/bicycle/)
+
+> In this article, I’ll focus on the delicate interplay between many of the forces that act on a bicycle and its parts when riding.
+> We’ll witness how forces applied through tires make a bicycle accelerate, brake, and turn, and we’ll also investigate how the wheels and the frame handle those different forces without breaking.
+
+### [Zmiana pracy w IT – kiedy warto się na to zdecydować?](https://programistanaswoim.pl/zmiana-pracy-w-it-kiedy-warto-sie-na-to-zdecydowac/)
+
+> Czy to czas, żeby zmienić coś w swoim życiu, czy lepiej zostać w obecnej firmie i poczekać na bardziej sprzyjający moment?
+
 ## Productivity
+
+### [The age of Agile must end](https://uxdesign.cc/the-age-of-agile-must-end-bc89c0f084b7)
+
+> 30 years ago the technology industry attempted to import Lean practices — it failed.
+> Instead of “continuous improvement,” progress halted.
+> Agile is incompatible with UX research, design, and scalable development.
+> It always will be. It’s time to create a new operational standard.
 
 ## AI
 
@@ -99,6 +151,19 @@ presentation: https://tobked.dev/git_rebase_interactive
 
 > In this tutorial, you will discover the most common errors encountered by beginners in asyncio in Python.
 
+### [ Google: Assured Open Source Software - List of supported Java and Python packages](https://cloud.google.com/assured-open-source-software/docs/supported-packages#python)
+
+> Help reduce the risk to your software supply chain by using the same OSS packages that Google uses and secures in your own developer workflows.
+
+### [authentik on Django: 500% slower to run but 200% faster to build](https://goauthentik.io/blog/2023-03-16-authentik-on-django-500-slower-to-run-but-200-faster-to-build)
+
+> With the arrival of funding and the requirement to build a business that could sustain itself now and scale as the company evolved,
+> I had to confront some of the technical choices I made when building authentik – in particular, the choice to build authentik using Python and Django.
+
+### [Dependency Injection in Python](https://itnext.io/dependency-injection-in-python-a1e56ab8bdd0)
+
+> Building flexible and testable architectures in Python
+
 ## Django
 
 ### [Django Performance Optimization Tips](https://testdriven.io/blog/django-performance-optimization-tips/)
@@ -124,13 +189,15 @@ presentation: https://tobked.dev/git_rebase_interactive
 
 > Mariusz Felisiak, a Django and Python contributor and a Django Fellow, explores how to use recent async improvements in Django to run multiple async tasks in an asynchronous view!
 
-## Python libraries
+### [How to have Python show warnings when running Django](https://www.untangled.dev/2023/04/26/py-django-warnings/)
 
-## Django libraries
-
-## Go
+> I usually look for deprecation warnings when I see a newer Django version being prepared for release.
 
 ## Tools
+
+### [git-sim](https://github.com/initialcommit-com/git-sim)
+
+> Visually simulate Git operations in your own repos with a single terminal command.
 
 ## Cloud
 
@@ -165,6 +232,24 @@ presentation: https://tobked.dev/git_rebase_interactive
 
 > Mój domowy klaster K8s na Raspberry Pi
 
+### [Defining Labelling strategy in GCP for gaining granularity into cloud costs](https://medium.com/google-cloud/defining-labelling-strategy-in-gcp-for-gaining-granularity-into-cloud-costs-9110018d356b)
+
+> Labels act as metadata which lets you filter resources in Cloud Billing console. It’s important to note that labels and tags hold different meanings in GCP, refer [this](https://cloud.google.com/resource-manager/docs/tags/tags-overview) to know more.
+
+### [AwesomeGCP \[YouTube Channel\]](https://www.youtube.com/@AwesomeGCP)
+
+> Preparation of GCP certifications
+
+### [How I Keep Myself Up-to-Date on Google Cloud Platform: A Personal Journey](https://medium.com/google-cloud/how-i-keep-myself-up-to-date-on-google-cloud-platform-a-personal-journey-dc334f733c0f)
+
+> As a GCP user, it’s important to stay up-to-date with the latest changes and advancements in the platform.
+
+### [OWASP Kubernetes Top 10](https://sysdig.com/blog/top-owasp-kubernetes/)
+
+> The OWASP Kubernetes Top 10 puts all possible risks in an order of overall commonality or probability.
+
+### [CloudSkills/Terraform-Projects](https://github.com/CloudSkills/Terraform-Projects)
+
 ## Other stuff
 
 ### [KNOW YOUR HTTP * WELL](https://github.com/for-GET/know-your-http-well)
@@ -178,6 +263,14 @@ presentation: https://tobked.dev/git_rebase_interactive
 ### [Awesome Software and Architectural Design Patterns](https://github.com/DovAmir/awesome-design-patterns)
 
 > A curated list of software and architecture related design patterns.
+
+### [IPTV](https://github.com/iptv-org/iptv#database)
+
+> Collection of publicly available IPTV channels from all over the world.
+
+### [America Against America (USA) - Wang Huning](https://ia601806.us.archive.org/12/items/america-against-america/America%20Against%20America.pdf)
+
+> America critique.
 
 ## Podcasts
 
@@ -200,13 +293,3 @@ presentation: https://tobked.dev/git_rebase_interactive
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/dlyIeJijh7E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
-
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
-
-> Playback on other websites has been disabled by the video owner. [Watch on YouTube](https://www.youtube.com/watch?v=VIDEO_ID)
