@@ -1,11 +1,11 @@
 Title: Google Cloud Developer Day Warsaw 2023
-Date: 2023-04-27
+Date: 2023-05-03
 Category: cloud
 Tags: cloud, developer, google, gcp, 2023
 Slug: google-cloud-developer-day-warsaw-2023
 Summary: My notes from Google Cloud Developer Day Warsaw 2023
-Header_Cover: /images/posts/2023/2023_04_gcp_dev_day/2023_04_gcp_dev_day.jpg
-Status: draft
+Header_Cover: /images/posts/2023/2023_05_gcp_dev_day/2023_05_gcp_dev_day.jpg
+Status: published
 
 # Google Cloud Developer Day Warsaw 2023
 
@@ -103,7 +103,7 @@ gcurl='curl -H "Authorization: Bearer $(gcloud auth print-identity-token)" -H "C
 
 At the lounge area, there was a DJ named Rytmik playing some delightful house music. You can check out his music on [soundcloud.com/rytmikmusic](https://soundcloud.com/rytmikmusic) and [mixcloud.com/Rytmik](https://www.mixcloud.com/Rytmik/).
 
-![Rytmik]({static}/images/posts/2023/2023_04_gcp_dev_day/2023_04_gcp_dev_day_rytmik.jpg)
+![Rytmik]({static}/images/posts/2023/2023_05_gcp_dev_day/2023_05_gcp_dev_day_rytmik.jpg)
 
 ### Links
 

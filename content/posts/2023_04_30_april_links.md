@@ -4,8 +4,8 @@ Category: summary
 Tags: python, blog, podcast, series, aggregate, summary, month, 2023
 Slug: 2023-april-links
 Summary: Interesting stuff from the month
-Status: draft
-Header_Cover: /images/posts/2023/2023_04_gcp_dev_day/2023_04_gcp_dev_day.jpg
+Status: published
+Header_Cover: /images/posts/2023/2023_05_gcp_dev_day/2023_05_gcp_dev_day.jpg
 
 # April 2023
 
@@ -31,10 +31,10 @@ Inspired by [Raymond Hettinger](https://www.youtube.com/playlist?list=PLRVdut2KP
 The presentation is available as a website under my domain: [tobked.dev/git_rebase_interactive](https://tobked.dev/git_rebase_interactive).
 Its source is on my Github: [github.com/TobKed/git_rebase_interactive](https://github.com/TobKed/git_rebase_interactive).
 
-#### [Google Cloud Developer Day Warsaw 2023]({filename}/posts/2023_04_27_gcp_dev_day.md)
+#### [Google Cloud Developer Day Warsaw 2023]({filename}/posts/2023_05_03_gcp_dev_day.md)
 
 I attended Google Cloud Developer Day Warsaw 2023 on April 27th, 2023. It was a free event organized by Google Cloud at their [Warsaw Campus](https://www.campus.co/warsaw/).
-I wrote more about it in a separate blog post: [Google Cloud Developer Day Warsaw 2023]({filename}/posts/2023_04_27_gcp_dev_day.md).
+I wrote more about it in a separate blog post: [Google Cloud Developer Day Warsaw 2023]({filename}/posts/2023_05_03_gcp_dev_day.md).
 
 ______________________________________________________________________
 
