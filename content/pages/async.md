@@ -15,6 +15,7 @@ Status: hidden
 - [5 Common Asyncio Errors in Python (and how to avoid them)](https://superfastpython.com/asyncio-common-errors/)
 - [GUI commits; Effective Python Async like a PRO 🐍🔀)](https://guicommits.com/effective-python-async-like-a-pro/)
 - [Limiting concurrency in Python asyncio: the story of async imap_unordered()](https://death.andgravity.com/limit-concurrency)
+- [AsyncIO: Why I Hate It](https://charlesleifer.com/blog/asyncio/)
 
 ## Books
 
