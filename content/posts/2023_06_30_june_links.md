@@ -4,6 +4,7 @@ Category: summary
 Tags: python, blog, podcast, series, aggregate, summary, month, 2023
 Slug: 2023-june-links
 Summary: Interesting stuff from the month
+Header_Cover: /images/posts/2023/2023_06_xx.jpg
 Status: draft
 
 # June 2023
@@ -57,8 +58,6 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > Specify what you want it to build, the AI asks for clarification, and then builds it.
 
-## Security
-
 ## Python
 
 ### [The Many Problems with Celery](https://steve.dignam.xyz/2023/05/20/many-problems-with-celery/)
@@ -89,8 +88,6 @@ Some of them are strictly related to the things I did or am currently doing.
 > It is not just about bug-free code.
 > It's about the speed at which you can develop good code.
 
-## Django
-
 ## Python libraries
 
 ### [FastAPI Best Practices](https://github.com/zhanymkanov/fastapi-best-practices)
@@ -100,8 +97,6 @@ Some of them are strictly related to the things I did or am currently doing.
 ### [JSON to Pydantic Converter](https://jsontopydantic.com/)
 
 > To generate a Pydantic model from a JSON object, enter it into the JSON editor and watch a Pydantic model automagically appear in the Pydantic editor.
-
-## Django libraries
 
 ## Go
 
@@ -198,13 +193,3 @@ Some of them are strictly related to the things I did or am currently doing.
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/88_LUw1Wwe4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
-
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
-
-> Playback on other websites has been disabled by the video owner. [Watch on YouTube](https://www.youtube.com/watch?v=VIDEO_ID)

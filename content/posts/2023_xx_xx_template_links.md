@@ -4,6 +4,7 @@ Category: summary
 Tags: python, blog, podcast, series, aggregate, summary, month, 2023
 Slug: 2023-{month}-links
 Summary: Interesting stuff from the month
+Header_Cover: /images/posts/2023/2023_xx_xx.jpg
 Status: draft
 
 # {Month} 2023

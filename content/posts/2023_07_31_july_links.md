@@ -4,6 +4,7 @@ Category: summary
 Tags: python, blog, podcast, series, aggregate, summary, month, 2023
 Slug: 2023-july-links
 Summary: Interesting stuff from the month
+Header_Cover: /images/posts/2023/2023_07_xx.jpg
 Status: draft
 
 # July 2023
@@ -23,7 +24,16 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Python
 
+### [Kraken Technologies: How we organise our very large Python monolith](https://blog.europython.eu/kraken-technologies-how-we-organize-our-very-large-pythonmonolith/)
+
+> Layering is a well-known software architecture pattern in which components are organized, conceptually, into a stack.
+> A component is not allowed to depend on any components higher up the stack.
+
 ## Django
+
+### [Django Views — The Right Way](https://spookylukey.github.io/django-views-the-right-way/index.html)
+
+> It is the result of mistakes made and lessons learned in a range of Django and Python projects over 15+ years.
 
 ## Python libraries
 
