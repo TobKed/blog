@@ -5,7 +5,7 @@ Tags: python, blog, podcast, series, aggregate, summary, month, 2023
 Slug: 2023-june-links
 Summary: Interesting stuff from the month
 Header_Cover: /images/posts/2023/2023_06_xx.jpg
-Status: draft
+Status: published
 
 # June 2023
 
@@ -13,6 +13,22 @@ I am aggregating here some more or less interesting stuff of various IT related 
 Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
+
+Over the past month, I have been working on a highly scalable app on the Google Cloud Platform.
+I used Cloud Run and Cloud SQL (PostgreSQL) to provision the application code and database, respectively.
+
+Cloud Run is a serverless compute platform that allows me to run my code without having to worry about managing servers.
+Cloud SQL is a managed database service that provides a reliable and scalable database for my app.
+
+I also used PubSub messaging to decouple APIs that need to be very fast from more time-consuming processes.
+PubSub is a messaging service that allows me to send and receive messages between different parts of my app.
+This decoupling allows me to scale my app more easily, as I can add or remove background worker instances without affecting the performance of the APIs.
+
+Finally, I used a load balancer to expose my app to consumers.
+A load balancer distributes traffic across multiple instances of my app, which helps to improve performance and reliability.
+The load balancer also allows me to redirect country-specific load to the instances closest to the users, which improves the user experience.
+
+It is very rewarding when you see that an app scales well and handles traffic peaks without impacting latency.
 
 ## Articles
 
