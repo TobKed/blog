@@ -22,6 +22,12 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Productivity
 
+### [Edsger Dijkstra’s One-Day Workweek](https://calnewport.com/edsger-dijkstras-one-day-workweek/)
+
+> At this point, Dijkstra had become the opposite of busy.
+> He spent almost all of his time thinking and recording his ideas.
+> He only came to campus on Tuesdays.
+
 ## AI
 
 ## Security

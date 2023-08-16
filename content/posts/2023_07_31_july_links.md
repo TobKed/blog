@@ -14,13 +14,23 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
 
-## Articles
+Summer is in full swing, and I'm not doing much after work.
+Not doing much on the computer, that is. I'm doing a lot of other things, like swimming, hiking, and spending time with friends and family.
 
-## Productivity
+But even though I'm not spending a lot of time on the computer, I'm still learning new things.
+In work, I've been learning a lot about Kubeflow Pipelines and how to use them to build ML pipelines.
 
-## AI
+Kubeflow Pipelines are an open-source platform for building and managing ML pipelines.
+It's a powerful tool that can help you automate your ML workflow and make it more reproducible.
+I've been able to build a few pipelines using Kubeflow Pipelines, and I'm really excited about the possibilities.
 
-## Security
+I run production pipelines on Google Cloud in a service called Vertex Pipelines.
+Vertex Pipelines are a managed service that makes it easy to run Kubeflow Pipelines on Google Cloud.
+
+I'm excited to continue learning about Kubeflow Pipelines and Vertex Pipelines.
+I think these are great tools that can help ML engineers automate their workflows and make their work more reproducible.
+
+I'm looking forward to learning more about it, and I will share more about my experiences with these tools in future blog posts.
 
 ## Python
 
@@ -35,32 +45,8 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > It is the result of mistakes made and lessons learned in a range of Django and Python projects over 15+ years.
 
-## Python libraries
-
-## Django libraries
-
-## Go
-
-## Tools
-
 ## Cloud
 
 ### [Automating Deployment of Applications using Kubernetes Python SDK](https://www.faizanbashir.me/automating-deployment-of-python-applications-kubernetes-sdk)
 
 > In this article, we’ll demonstrate how to use the Python Kubernetes SDK to automate the deployment of an Nginx application to a Kubernetes cluster.
-
-## Other stuff
-
-## Podcasts
-
-## Videos
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
-
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
-
-> Playback on other websites has been disabled by the video owner. [Watch on YouTube](https://www.youtube.com/watch?v=VIDEO_ID)
