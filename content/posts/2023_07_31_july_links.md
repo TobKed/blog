@@ -5,7 +5,7 @@ Tags: python, blog, podcast, series, aggregate, summary, month, 2023
 Slug: 2023-july-links
 Summary: Interesting stuff from the month
 Header_Cover: /images/posts/2023/2023_07_xx.jpg
-Status: draft
+Status: published
 
 # July 2023
 
@@ -20,11 +20,11 @@ Not doing much on the computer, that is. I'm doing a lot of other things, like s
 But even though I'm not spending a lot of time on the computer, I'm still learning new things.
 In work, I've been learning a lot about Kubeflow Pipelines and how to use them to build ML pipelines.
 
-Kubeflow Pipelines are an open-source platform for building and managing ML pipelines.
+[Kubeflow Pipelines](https://www.kubeflow.org/docs/started/introduction/) are an open-source platform for building and managing ML pipelines.
 It's a powerful tool that can help you automate your ML workflow and make it more reproducible.
 I've been able to build a few pipelines using Kubeflow Pipelines, and I'm really excited about the possibilities.
 
-I run production pipelines on Google Cloud in a service called Vertex Pipelines.
+I run production pipelines on [Google Cloud](https://cloud.google.com/?hl=en) in a service called [Vertex Pipelines](https://cloud.google.com/vertex-ai/docs/pipelines).
 Vertex Pipelines are a managed service that makes it easy to run Kubeflow Pipelines on Google Cloud.
 
 I'm excited to continue learning about Kubeflow Pipelines and Vertex Pipelines.
