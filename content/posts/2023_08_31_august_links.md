@@ -5,7 +5,7 @@ Tags: python, blog, podcast, series, aggregate, summary, month, 2023
 Slug: 2023-august-links
 Summary: Interesting stuff from the month
 Header_Cover: /images/posts/2023/2023_08_xx.jpg
-Status: draft
+Status: published
 
 # August 2023
 
@@ -13,6 +13,12 @@ I am aggregating here some more or less interesting stuff of various IT related 
 Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
+
+With the summer season in full force and plenty of outdoor activities to enjoy, there's also exciting news!
+A new tutorial is coming soon that will teach you how to use FastAPI, CloudRun, and PubSub for message queueing.
+This tutorial will guide you through the process of setting up your environment, creating API and worker services, and deploying them to CloudRun.
+By the end of the tutorial, you'll have a working FastAPI application that can handle requests and push messages to a PubSub topic, along with a worker service that can process messages.
+Stay tuned for more details!
 
 ## Articles
 
@@ -28,27 +34,11 @@ Some of them are strictly related to the things I did or am currently doing.
 > He spent almost all of his time thinking and recording his ideas.
 > He only came to campus on Tuesdays.
 
-## AI
-
-## Security
-
 ## Python
 
-## Django
+### [Why Python is amazing...](https://josvisser.substack.com/p/why-python-is-amazing)
 
-## Python libraries
-
-## Django libraries
-
-## Go
-
-## Tools
-
-## Cloud
-
-## Other stuff
-
-## Podcasts
+> Great language that every software engineer should know…
 
 ## Videos
 
@@ -58,12 +48,8 @@ Some of them are strictly related to the things I did or am currently doing.
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/J1f5b4vcxCQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
+### [How programmers flex on each other ](https://www.youtube.com/watch?v=r6tH55syq0o)
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/r6tH55syq0o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
-
-> Playback on other websites has been disabled by the video owner. [Watch on YouTube](https://www.youtube.com/watch?v=VIDEO_ID)
