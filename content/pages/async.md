@@ -16,6 +16,7 @@ Status: hidden
 - [GUI commits; Effective Python Async like a PRO 🐍🔀)](https://guicommits.com/effective-python-async-like-a-pro/)
 - [Limiting concurrency in Python asyncio: the story of async imap_unordered()](https://death.andgravity.com/limit-concurrency)
 - [AsyncIO: Why I Hate It](https://charlesleifer.com/blog/asyncio/)
+- [The easy way to concurrency and parallelism with Python stdlib ](https://www.bitecode.dev/p/the-easy-way-to-concurrency-and-parallelism)
 
 ## Books
 
