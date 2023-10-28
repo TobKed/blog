@@ -17,6 +17,7 @@ Status: hidden
 - [Limiting concurrency in Python asyncio: the story of async imap_unordered()](https://death.andgravity.com/limit-concurrency)
 - [AsyncIO: Why I Hate It](https://charlesleifer.com/blog/asyncio/)
 - [The easy way to concurrency and parallelism with Python stdlib ](https://www.bitecode.dev/p/the-easy-way-to-concurrency-and-parallelism)
+- [Michał Klich: asyncio: real world coroutines](https://klichx.dev/2023/08/03/asyncio-real-world-coroutines/)
 
 ## Books
 
