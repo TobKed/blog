@@ -5,7 +5,7 @@ Tags: python, blog, podcast, series, aggregate, summary, month, 2023
 Slug: 2023-october-links
 Summary: Interesting stuff from the month
 Header_Cover: /images/posts/2023/2023_10_xx.jpg
-Status: draft
+Status: published
 
 # October 2023
 
@@ -13,6 +13,14 @@ I am aggregating here some more or less interesting stuff of various IT related 
 Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
+
+This month, I spruced up my [Python API and background workers on Google Cloud Platform repo](https://github.com/TobKed/fastapi_cloudrun_pubsub).
+It's a neat package with a simple app and all the setup for FastAPI, CloudRun, and PubSub.
+Just a fun little project showcasing Python on Google Cloud – check it out!
+
+By the way, [last month]({filename}/posts/2023_09_30_september_links.md) I gave a lightning talk at PyCon CZ based on this repository.
+
+![PyCon CZ.]({static}/images/posts/2023/2023_09_pyconcz.jpg)
 
 ## Articles
 
@@ -106,7 +114,7 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > In conclusion, the functools module in Python’s Standard Library is a treasure trove of tools, especially for those who frequently work with functions and decorators.
 
-### [https://seddonym.me/2019/04/15/inversion-of-control/](https://seddonym.me/2019/04/15/inversion-of-control/) &
+### [What is Inversion of Control and Why Does it Matter?](https://seddonym.me/2019/04/15/inversion-of-control/)
 
 [Three Techniques for Inverting Control, in Python](https://seddonym.me/2019/08/03/ioc-techniques/)
 
