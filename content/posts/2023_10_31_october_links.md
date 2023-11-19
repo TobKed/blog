@@ -4,7 +4,7 @@ Category: summary
 Tags: python, blog, podcast, series, aggregate, summary, month, 2023
 Slug: 2023-october-links
 Summary: Interesting stuff from the month
-Header_Cover: /images/posts/2023/2023_xx_xx.jpg
+Header_Cover: /images/posts/2023/2023_10_xx.jpg
 Status: draft
 
 # October 2023
@@ -100,10 +100,6 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > Your time matters.
 
-## AI
-
-## Security
-
 ## Python
 
 [6 Cool Things You Can Do With The Functools Module](https://pybit.es/articles/6-cool-things-you-can-do-with-the-functools-module/)
@@ -153,12 +149,30 @@ Some of them are strictly related to the things I did or am currently doing.
 > Protocol buffers are a data serialization format that is language agnostic.
 > They are analogous to Python’s own pickle format, but one of the advantages of protocol buffers is that they can be used by multiple programming languages.
 
+### [Do not use requirements.txt](https://quanttype.net/posts/2023-10-31-do-not-use-requirements.txt.html)
+
+> However, pip was designed to be a package installer and not a full-fledged project workflow tool.
+> pip lacks two essential features, dependency lockfiles and automatic management of virtualenvs
+
+### [The most performant timestamp functions in Python](https://www.dataroc.ca/blog/most-performant-timestamp-functions-python)
+
+> Use `time.time()` for epoch timestamps.
+>
+> Use `datetime.utcnow()` for datetime timestamps.
+>
+> For tz-aware datetimes, you should do your own research. I only skimmed the surface here
+
 ## Django
 
 ### [Supercharge Your Django App: 7 Sneaky Tricks to Crush Slow Database Queries](https://johnnymetz.com/posts/slow-django-database-queries/)
 
 > Django provides many tools and methods for optimizing database queries in its [Database access optimization documentation](https://docs.djangoproject.com/en/4.2/topics/db/optimization/).
 > In this blog post, we will explore a collection of additional and essential tips I’ve compiled over the years to help you pinpoint and resolve your inefficient Django queries.
+
+### [Why is the Django Admin “Ugly”?](https://www.coderedcorp.com/blog/why-is-the-django-admin-ugly/)
+
+> While talking with people at Djangocon US, one question kept coming up: “why is the Django admin so ‘ugly’?”.
+> I’m paraphrasing here, so pardon the click-bait title, but the question came in many forms. Why does the Django admin have a “dated” UI? Why has the Django admin not changed much in all these years? Why is the Django admin missing <insert feature>?
 
 ## Python libraries
 
@@ -176,11 +190,13 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > Hypothesis is a powerful, flexible, and easy to use library for property-based testing.
 
-## Django libraries
+### [RenderCV](https://github.com/sinaatalay/rendercv)
 
-## Go
+> LaTeX CV generator from a YAML/JSON input file.
 
-## Tools
+### [Prefect](https://github.com/PrefectHQ/prefect)
+
+> Prefect is a workflow orchestration tool empowering developers to build, observe, and react to data pipelines
 
 ## Cloud
 
@@ -222,8 +238,6 @@ Some of them are strictly related to the things I did or am currently doing.
 > It contains a lot of useful information gathered in one piece.
 > It is an invaluable source of knowledge for me that I often look back on.
 
-## Podcasts
-
 ## Videos
 
 ### ["Design Patterns for Data Pipelines" - Lisa Dusseault (PyBay 2023)](https://www.youtube.com/watch?v=opR44Tu9p1I)
@@ -232,12 +246,14 @@ Some of them are strictly related to the things I did or am currently doing.
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/opR44Tu9p1I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
+### [Top 6 Most Popular API Architecture Styles](https://www.youtube.com/watch?v=4vLxWqE94l4)
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/4vLxWqE94l4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
+### [Tmux has forever changed the way I write code.](https://www.youtube.com/watch?v=DzNmUNvnB04)
 
-> Playback on other websites has been disabled by the video owner. [Watch on YouTube](https://www.youtube.com/watch?v=VIDEO_ID)
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/DzNmUNvnB04" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
