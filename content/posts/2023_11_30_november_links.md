@@ -65,6 +65,21 @@ Some of them are strictly related to the things I did or am currently doing.
 > I’ve been seeing a comment over and over to the effect of “I hate rebase”.
 > People seemed to feel pretty strongly about this, and I was really surprised because I don’t run into a lot of problems with rebase and I use it all the time.
 
+### [What I learned after one year of building a Data Platform from scratch](https://medium.com/@jeremysrgt/what-i-learned-after-one-year-of-building-a-data-platform-from-scratch-d7075629cab1)
+
+> Building a data platform from scratch is an amazing experience and I wanted to share the lessons that I learned along the way.
+
+### [How moving from AWS to Bare-Metal saved us $230,000 /yr.](https://blog.oneuptime.com/moving-from-aws-to-bare-metal/)
+
+> Thanks to advancements in technologies like Docker, Kubernetes, Helm, Microk8s, and more, transitioning to bare-metal infrastructure is now significantly easier than it was just a few years ago.
+
+### [Architectural Decisions — The Making Of](https://ozimmer.ch/practices/2020/04/27/ArchitectureDecisionMaking.html)
+
+> Architectural Decisions (ADs) have been answering “why” questions about design options since the inception of software architecture in the 1990s.
+> Ways to capture them should be part of each architect’s toolbox.
+> Less is more — only the key ADs justify the effort, and only crisp and sound justifications will convince the reader.
+> Let’s see how to get there.
+
 ## Productivity
 
 ### [Mastering Multiple GitHub Accounts ](https://dzone.com/articles/mastering-multiple-github-accounts)
@@ -78,6 +93,10 @@ Some of them are strictly related to the things I did or am currently doing.
 ### [How to find time to learn after work](https://www.feststelltaste.de/how-to-find-time-to-learn-after-work/)
 
 > My software developer colleagues often ask me where I do get all the time for reading all the tech books or articles, watching conference talks and listening to podcasts.
+
+### [Your daily standup should be asynchronous. Here’s why](https://alex-omeyer.medium.com/your-daily-standup-should-be-asynchronous-heres-why-58f5da75ff0e)
+
+> Daily standups are from the early 2000s. It’s time we brought them up to speed for a remote-working, distributed, tech-assisted world.
 
 ## AI
 
