@@ -5,14 +5,12 @@ Tags: python, blog, podcast, series, aggregate, summary, month, 2023
 Slug: 2023-november-links
 Summary: Interesting stuff from the month
 Header_Cover: /images/posts/2023/2023_11_xx.jpg
-Status: draft
+Status: published
 
 # November 2023
 
 I am aggregating here some more or less interesting stuff of various IT related materials which I came across this month.
 Some of them are strictly related to the things I did or am currently doing.
-
-## Some thoughts
 
 ## Articles
 
@@ -80,11 +78,11 @@ Some of them are strictly related to the things I did or am currently doing.
 > Less is more — only the key ADs justify the effort, and only crisp and sound justifications will convince the reader.
 > Let’s see how to get there.
 
-## Productivity
-
 ### [Mastering Multiple GitHub Accounts ](https://dzone.com/articles/mastering-multiple-github-accounts)
 
 > In this blog post, we'll explore how to leverage this configuration file to set up seamless access to multiple GitHub accounts simultaneously.
+
+## Productivity
 
 ### [The looming demise of the 10x developer](https://blog.testdouble.com/posts/2023-07-12-the-looming-demise-of-the-10x-developer/)
 
@@ -104,8 +102,6 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > On November 3rd programmer and lawyer Matthew Butterick, along with the Joseph Saveri Law Firm, filed a class action lawsuit against GitHub, Microsoft (its parent company), and OpenAI.
 
-## Security
-
 ## Python
 
 ### [RealPython: How to Catch Multiple Exceptions in Python](https://realpython.com/python-catch-multiple-exceptions/)
@@ -123,8 +119,6 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > a tool-based introduction with Python
 
-## Django
-
 ## Python libraries
 
 ### [gcsfs](https://github.com/fsspec/gcsfs)
@@ -136,8 +130,6 @@ Some of them are strictly related to the things I did or am currently doing.
 ### [μDjango (micro Django)](https://github.com/pauloxnet/uDjango)
 
 > A single file Django micro project created for demonstration purposes to be used in the same way as other Python frameworks.
-
-## Go
 
 ## Tools
 
@@ -213,8 +205,6 @@ I've also included some interactive examples, so you can try out different curl 
 > I've condensed the most critical knowledge into this guide.
 > Each topic has a brief description and a self contained example that you can run yourself.
 
-## Podcasts
-
 ## Videos
 
 ### [Free software, free society: Richard Stallman at TEDxGeneva 2014](https://www.youtube.com/watch?v=Ag1AKIl_2GM)
@@ -228,13 +218,3 @@ I've also included some interactive examples, so you can try out different curl 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/mdpV9j3Dc4s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
-
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
-
-> Playback on other websites has been disabled by the video owner. [Watch on YouTube](https://www.youtube.com/watch?v=VIDEO_ID)
