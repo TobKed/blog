@@ -16,7 +16,34 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Articles
 
+### [How Pinterest scaled to 11 million users with only 6 engineers](https://read.engineerscodex.com/p/how-pinterest-scaled-to-11-million?utm_source=unknownews)
+
+> Lessons from scaling Pinterest
+
+### [No Downtime Deployments with Gunicorn](https://blog.pecar.me/gunicorn-restart)
+
+> You want to continue serving requests while your Gunicorn process restarts to load your application code updates, and you want to avoid setting up a complicated code deployment process. Gunicorn supports this workflow out of the box with the HUP signal.
+
+### [Advice for new software devs who've read all those other advice essays](https://buttondown.email/hillelwayne/archive/advice-for-new-software-devs-whove-read-all-those/)
+
+> From a person who really shouldn't be giving others advice.
+
+### [10 Things Software Developers Should Learn about Learning](https://cacm.acm.org/magazines/2024/1/278891-10-things-software-developers-should-learn-about-learning/fulltext)
+
+> Learning is necessary for software developers. Change is perpetual:
+> New technologies are frequently invented, and old technologies are repeatedly updated.
+> Thus, developers do not learn to program just once—over the course of their careers they will learn many new programming languages and frameworks
+
 ## Productivity
+
+### [Durmonski - How To Approach Learning Self-Discipline](https://durmonski.com/self-improvement/learning-self-discipline/)
+
+> One of the reasons why we tend not to exert self-control comes down to a powerful background idea whose full destructive force we may not even be aware of.
+> That is, the belief that others will judge us harshly when we steer away from the social norms.
+
+### [Durmonski - ](<>)
+
+>
 
 ## AI
 
