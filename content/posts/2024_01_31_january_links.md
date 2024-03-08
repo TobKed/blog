@@ -5,7 +5,7 @@ Tags: python, blog, podcast, series, aggregate, summary, month, 2024
 Slug: 2024-january-links
 Summary: Interesting stuff from the month
 Header_Cover: /images/posts/2024/2024_01_xx.jpg
-Status: draft
+Status: published
 
 # January 2024
 
