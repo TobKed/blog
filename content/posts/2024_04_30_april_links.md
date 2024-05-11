@@ -4,15 +4,13 @@ Category: summary
 Tags: python, blog, podcast, series, aggregate, summary, month, 2024
 Slug: 2024-april-links
 Summary: Interesting stuff from the month
-Header_Cover: /images/posts/2024/2024_xx_xx.jpg
+Header_Cover: /images/posts/2024/2024_04_xx.jpg
 Status: draft
 
 # April 2024
 
 I am aggregating here some more or less interesting stuff of various IT related materials which I came across this month.
 Some of them are strictly related to the things I did or am currently doing.
-
-## Some thoughts
 
 ## Articles
 
@@ -47,7 +45,9 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > Learning how to build beautiful products without burning myself out (again). Writing about what I discovered along the way.
 
-## AI
+### [Jak nie wpaść w pułapki nauki?](https://devszczepaniak.pl/pulapki-nauki/)
+
+> Tutorial hell
 
 ## Security
 
@@ -62,6 +62,10 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Python
 
+### [Python F-String Codes I Use Every Day](https://pybit.es/articles/python-f-string-codes-i-use-every-day/)
+
+> A few examples that will save the day probably\* 95% of time.
+
 ## Django
 
 ### [10 reasons I stick to Django rather than FastAPI](https://www.david-dahan.com/blog/10-reasons-i-stick-to-django)
@@ -73,13 +77,18 @@ Some of them are strictly related to the things I did or am currently doing.
 > Slow queries happen, and when they do, it can be tough to dissect why they’re slow.
 > This difficulty is compounded by using Django’s ORM, since it generates the SQL for you, so you may have little idea of the actual queries “under the hood”.
 
-## Python libraries
+### [Django Developers Survey 2023](https://lp.jetbrains.com/django-developer-survey-2023/)
 
-## Django libraries
+> This report is based on the third annual Django Developers Survey, conducted in September – October 2023 as a collaborative effort between the Django Software Foundation and PyCharm.
+> To help us get a better idea of the current state of the framework and the ecosystem around it, around 4,000 Django users and enthusiasts from around the world took the survey.
 
-## Go
+### [Learn to use Websockets with Django by building your own ChatGPT ](https://www.saaspegasus.com/guides/django-websockets-chatgpt-channels-htmx/)
 
-## Tools
+> Everything you need to know about websockets to use them in your applications, with Django, channels, and HTMX.
+
+### [Sending email in Django using GMail](https://softwarecrafts.co.uk/100-words/day-76)
+
+> Another day, another beginner wanting to use GMail for free email sending, while this is entirely valid for a small project, please don't do this for your next startup.
 
 ## Cloud
 
@@ -89,16 +98,6 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Other stuff
 
-## Podcasts
+### [Tor: From the Dark Web to the Future of Privacy](https://direct.mit.edu/books/oa-monograph/5761/TorFrom-the-Dark-Web-to-the-Future-of-Privacy)
 
-## Videos
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
-
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
-
-> Playback on other websites has been disabled by the video owner. [Watch on YouTube](https://www.youtube.com/watch?v=VIDEO_ID)
+> A biography of Tor—a cultural and technological history of power, privacy, and global politics at the internet's core.
