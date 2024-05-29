@@ -15,6 +15,10 @@ Status: draft
 
 ## Learning, talking
 
+Pycon CZ 2023 and Lightning Talk.
+
+[github.com/TobKed/fastapi_cloudrun_pubsub](https://github.com/TobKed/fastapi_cloudrun_pubsub)
+
 ## Writing
 
 I wanted to improve my writing skills so since March I have been writing monthly summaries where I am trying to compile
@@ -36,10 +40,6 @@ Every month is decorated with picture made by me.
 - [October]({filename}/posts/2023_10_31_october_links.md)
 - [November]({filename}/posts/2023_11_30_november_links.md)
 - [December]({filename}/posts/2023_12_31_december_links.md)
-
-I also wrote one additional blog posts:
-
-- []({filename}/posts/2023_.md)
 
 ## Photos
 
