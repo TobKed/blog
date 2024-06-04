@@ -1,11 +1,11 @@
 Title: git: when ignorance is a bliss
-Date: 2024-06-15
+Date: 2024-06-04
 Category: programming
 Tags: git, programming
 Slug: declutter-git-status
 Summary: Focus on what matters: decluterring `git status`
-Header_Cover: /images/posts/2024/2024_06_git.jpg
-Status: draft
+Header_Cover: /images/posts/2024/2024_06_04_declutter_git_status.jpg
+Status: published
 
 ## Focus on what matters: decluterring `git status`
 
