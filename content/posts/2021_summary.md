@@ -63,7 +63,7 @@ I gave two presentations:
 
 ## Writing
 
-I wanted to improve my writing skills so since March I have been writing monthly summaries where I am trying to compile
+I have been writing monthly summaries where I am trying to compile
 a few sentences about the last month together with articles, tools and other interesting materials I came across.
 
 2021 summaries:

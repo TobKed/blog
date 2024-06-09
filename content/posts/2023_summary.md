@@ -1,11 +1,11 @@
 Title: Year summary - 2023
-Date: 2023-01-01
+Date: 2024-01-01
 Category: summary
 Tags: summary, year, 2023
 Slug: 2023-summary
 Summary: Ups and downs of 2023
 Header_Cover: /images/posts/2023/2023_08_xx.jpg
-Status: draft
+Status: published
 
 # 2023
 
@@ -74,10 +74,9 @@ It was a personal victory over my fear of public speaking.
 
 ## Writing
 
-I wanted to improve my writing skills so since March I have been writing monthly summaries where I am trying to compile
-a few sentences about the last month together with articles, tools and other interesting materials I came across.
+I've been writing monthly summaries, compiling a few sentences about the past month alongside articles, tools, and other interesting finds.
 
-Every month is decorated with picture made by me.
+Each month, I add a personal touch with a photo I've taken
 
 2023 summaries:
 
@@ -94,7 +93,7 @@ Every month is decorated with picture made by me.
 - [November]({filename}/posts/2023_11_30_november_links.md)
 - [December]({filename}/posts/2023_12_31_december_links.md)
 
-I also wrote one additional blog posts:
+I also wrote one additional blog post:
 
 - [Google Cloud Developer Day Warsaw 2023]({filename}/posts/2023_05_03_gcp_dev_day.md)
 

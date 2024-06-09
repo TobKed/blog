@@ -36,7 +36,7 @@ First one in NetGuru and second one in Brival.
 
 ## Writing
 
-I wanted to improve my writing skills so since March I have been writing monthly summaries where I am trying to compile
+I have been writing monthly summaries where I am trying to compile
 a few sentences about the last month together with articles, tools and other interesting materials I came across.
 
 Every month is decorated with picture made by me.
