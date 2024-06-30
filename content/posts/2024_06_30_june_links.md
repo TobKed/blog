@@ -14,6 +14,10 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
 
+Completed [Beginner: Introduction to Generative AI Learning Path](https://www.cloudskillsboost.google/paths/118)
+
+https://www.cloudskillsboost.google/public_profiles/102aba17-a972-4e32-865b-0e3626420e5a/badges/9465084
+
 ## Articles
 
 ### [Three Laws of Software Complexity (or: why software engineers are always grumpy)](https://maheshba.bitbucket.io/blog/2024/05/08/2024-ThreeLaws.html)
@@ -40,9 +44,38 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > The team discovered that a single chip responsible for storing a portion of the FDS memory — including some of the FDS computer’s software code — isn’t working.
 
+### [Become a Great Engineering Leader in 12 Months](https://hybridhacker.email/p/how-to-become-a-great-engineering-leader)
+
+> 150+ Learning Sources Organized in a 12 Months Path to Become a Great Engineering Leader
+
+### [This Guy Makes $3M+ per Year With 0 Employees](https://medium.com/@uzmanali/this-guy-makes-3m-per-year-with-0-employees-f3c9b125a9b0)
+
+> Peter Levels, one of the most stunning Indie Hacker ever.
+
 ## Productivity
 
+### [How to Build Anything Extremely Quickly](https://learnhowtolearn.org/how-to-build-extremely-quickly/)
+
+> Do “outline speedrunning”: Recursively outline an MVP, speedrun filling it in, and only then go back and perfect.
+
+### [Managing My Motivation, as a Solo Dev](https://mbuffett.com/posts/maintaining-motivation/)
+
+> One of the biggest sticking points of being a solo dev is maintaining motivation.
+> I’ve been keeping a journal entry about how to hack my motivation, what works and what doesn’t.
+
+### [Inbox ten](https://boz.com/articles/inbox-ten)
+
+> How do you stay informed and advance your own work while also keeping others informed so they can do the same?
+
+### [How do you program for 8h in a row?](https://www.bitecode.dev/p/how-do-you-program-for-8h-in-a-row)
+
+> That's the neat thing, you don't
+
 ## AI
+
+### [I Will Fucking Piledrive You If You Mention AI Again](https://ludic.mataroa.blog/blog/i-will-fucking-piledrive-you-if-you-mention-ai-again/)
+
+> So it is with great regret that I announce that the next person to talk about rolling out AI is going to receive a complimentary chiropractic adjustment in the style of Dr. Bourne, i.e, I am going to fucking break your neck. I am truly, deeply, sorry.
 
 ### [GoogleCloudPlatform/generative-ai](https://github.com/GoogleCloudPlatform/generative-ai)
 
@@ -73,11 +106,19 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > It’s no secret that the Python datetime library has its quirks. Not only are there probably more than you think; third-party libraries don’t address most of them!
 
+### [Building a Bluesky Italian Art Bot](https://www.nicologiso.com/tech/italian-art-bot-bluesky/)
+
+> So now the goal was clear: building a Python bot of Italian art publishing 3 images per day on Bluesky.
+
 ## Django
 
 ### [7 simple examples using Django GeneratedField ⚡️](https://www.photondesigner.com/articles/generated-field-examples)
 
 > A feature added in Django 5.0 is GeneratedField, which allows us to auto-calculate database fields.
+
+### [Django Service Layers: Beyond Fat Models vs. Enterprise Patterns](https://simoncrowe.hashnode.dev/django-service-layers-beyond-fat-models-vs-enterprise-patterns)
+
+> What I'm arguing in this post is that while full-blown enterprise architecture patterns don't work well with Django, larger applications can still benefit from a service layer.
 
 ## Python libraries
 
@@ -99,11 +140,28 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > Glow is a terminal based markdown reader designed from the ground up to bring out the beauty—and power—of the CLI.
 
+### [harlequin](https://github.com/tconbeer/harlequin)
+
+> The SQL IDE for Your Terminal.
+
 ## Cloud
 
 ### [How an empty S3 bucket can make your AWS bill explode](https://medium.com/@maciej.pocwierz/how-an-empty-s3-bucket-can-make-your-aws-bill-explode-934a383cb8b1)
 
 > Yes, S3 charges for unauthorized requests (4xx) as well\[1\]. That’s expected behavior.
+
+### [Complete guide on Google Cloud (GCP) Landing zone architecture](https://mycloudwiki.com/cloud-landing-zone/google-cloud/complete-guide-on-gcp-landing-zones/)
+
+> Learn how a Landing Zone simplifies governance, enhances security, and optimizes your Google cloud environment for efficiency and future growth.
+
+### [Cloud engineer gets 2 years for wiping ex-employer’s code repos](https://www.bleepingcomputer.com/news/security/cloud-engineer-gets-2-years-for-wiping-ex-employers-code-repos/)
+
+> A cloud engineer, was sentenced to two years in prison and a restitution of $529,000 for wiping the code repositories of his former employer in retaliation for being fired by the company.
+
+### [Optimize Your Athletic Performance with Gemini and Vertex AI](https://medium.com/google-cloud/optimize-your-athletic-performance-with-gemini-and-vertex-ai-eae42d014659)
+
+> One challenge in improving is that some aspects of our performance are hard to measure, and getting access to high quality data and personalized coaching can be difficult — we’re not all on track to be professional athletes, after all.
+> But what if we can get some of that insightful data and analysis with the help of AI?
 
 ## Other stuff
 
