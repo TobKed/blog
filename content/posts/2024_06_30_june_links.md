@@ -132,8 +132,6 @@ https://www.cloudskillsboost.google/public_profiles/102aba17-a972-4e32-865b-0e36
 
 > Extensions for using Django with htmx.
 
-## Go
-
 ## Tools
 
 ### [glow](https://github.com/charmbracelet/glow)
@@ -163,10 +161,6 @@ https://www.cloudskillsboost.google/public_profiles/102aba17-a972-4e32-865b-0e36
 > One challenge in improving is that some aspects of our performance are hard to measure, and getting access to high quality data and personalized coaching can be difficult — we’re not all on track to be professional athletes, after all.
 > But what if we can get some of that insightful data and analysis with the help of AI?
 
-## Other stuff
-
-## Podcasts
-
 ## Videos
 
 ### [Python Bytes 386](https://www.youtube.com/watch?v=BybkexjbTMY)
@@ -180,13 +174,3 @@ https://www.cloudskillsboost.google/public_profiles/102aba17-a972-4e32-865b-0e36
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/jXmRrChXUrI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
-
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
-
-> Playback on other websites has been disabled by the video owner. [Watch on YouTube](https://www.youtube.com/watch?v=VIDEO_ID)
