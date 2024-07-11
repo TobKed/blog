@@ -5,7 +5,7 @@ Tags: python, blog, podcast, series, aggregate, summary, month, 2024
 Slug: 2024-june-links
 Summary: Interesting stuff from the month
 Header_Cover: /images/posts/2024/2024_06_xx.jpg
-Status: draft
+Status: published
 
 # June 2024
 
@@ -15,7 +15,7 @@ Some of them are strictly related to the things I did or am currently doing.
 ## Some thoughts
 
 This month, I tackled the [Introduction to Generative AI Learning Path on Google Cloud Skills Boost](https://www.cloudskillsboost.google/paths/118)
-This path provided a fantastic foundation for understanding generative AI concepts, ranging from the core workings of large language models to the crucial principles of responsible AI development.
+This path provided a good foundation for understanding generative AI concepts, ranging from the core workings of large language models to the crucial principles of responsible AI development.
 
 The hands-on labs were particularly insightful, showcasing how to leverage the power of Google services to put theory into practice.
 You can see my progress on my Cloud Skills Boost profile [Cloud Skills Boost profile](https://www.cloudskillsboost.google/public_profiles/102aba17-a972-4e32-865b-0e3626420e5a/badges/9465084).
