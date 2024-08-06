@@ -6,6 +6,7 @@ Status: hidden
 
 ## Websites
 
+- [SuperFastPython: Asyncio Event Loop in Separate Thread](https://superfastpython.com/asyncio-event-loop-separate-thread/)
 - [SuperFastPython: Python Asyncio: The Complete Guide](https://superfastpython.com/python-asyncio/)
 - [SuperFastPython: Python Asyncio: 5 Common Asyncio Errors in Python (and how to avoid them)](https://superfastpython.com/asyncio-common-errors/)
 - [SuperFastPython: Parallel Nested For-Loops in Python](https://superfastpython.com/parallel-nested-for-loops-in-python/#Single_Process_Pool_and_Shared_Queue_unbounded)
