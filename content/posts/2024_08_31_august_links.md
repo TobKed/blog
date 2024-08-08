@@ -52,9 +52,22 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Python
 
+### [Nerderati: Tracing the evolution of a Python function with git log.](https://nerderati.com/tracing-the-evolution-of-a-python-function-with-git-log/)
+
+> Next time you reach for git blame to figure out how some method has changed over time, try the very easy-to-remember and perfectly well named `git log -L :<funcname>:<path>`!
+
 ## Django
 
 ## Python libraries
+
+### [pypika](https://github.com/kayak/pypika)
+
+> PyPika is a python SQL query builder that exposes the full richness of the SQL language using a syntax that reflects the resulting query.
+> PyPika excels at all sorts of SQL queries but is especially useful for data analysis.
+
+#### [LangChain](https://github.com/langchain-ai/langchain)
+
+> LangChain is a framework for developing applications powered by large language models (LLMs).
 
 ## Django libraries
 
@@ -64,11 +77,23 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Cloud
 
+### [Google Cloud deleted a large customer’s infrastructure](https://blocksandfiles.com/2024/05/14/google-cloud-unisuper/)
+
+> An Australian superannuation fund manager, using Google Cloud for an Infrastructure-as-a-Service contract, found it had no disaster recovery (DR) recourse when the entire infrastructure subscription was deleted.
+
 ## Other stuff
+
+### [Firefly Zero](https://github.com/firefly-zero)
+
+> A modern handheld game console with effortless multiplayer. It's fun to play, alone or with friends, and easy to program.
 
 ## Podcasts
 
 ## Videos
+
+### [YouTube Channel: That DevOps Guy](https://www.youtube.com/@MarcelDempers/)
+
+> Marcel Dempers: Professional Software Engineer | Container Guru | Azure Expert | All-things Kubernetes | #.NET #Go #Node Developer | DevOps Engineer
 
 ### [Maciej Markiewicz: Software, Security i Efekt motyla | OMH 2023](https://www.youtube.com/watch?v=0Rc1-Qem5HM)
 
