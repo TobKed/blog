@@ -40,15 +40,45 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > Have you ever mentioned something that seems totally normal to you only to be greeted by surprise?
 
+### [Jack Danger: Managing Underperformers](https://jackdanger.com/managing-underperformers/)
+
+> Kind managers address underperformance early and accurately.
+
+### [Top 10 SQL interview questions](https://meganlieu.substack.com/p/top-10-sql-interview-questions)
+
+> And how I would answer them!
+
+### [Taking notes on a new codebase](https://www.simplermachines.com/taking-notes-on-a-new-codebase/)
+
+> let’s just get tactical write away, and talk about note-taking for dependency mapping.
+
+### [Why you need a "WTF Notebook"](https://www.simplermachines.com/why-you-need-a-wtf-notebook/)
+
+> There's a very specific reputation I want to have on a team: "Nat helps me solve my problems. Nat get things I care about done."
+
+### [Should the daily stand-up die?](https://leaddev.com/process/should-daily-stand-die)
+
+> The daily stand-up was intended to quickly help developers remove any blockers to commitments before starting their working day.
+> But at many companies, stand-ups have devolved into tedious one-sided status reports.
+
 ## Productivity
 
 ### [Alex Sexton: The Productivity Cycle](https://alexsexton.com/blog/2014/1/the-productivity-cycle)
 
 > I simply want my hard work to be spent most efficiently.
 
+### [The Due Diligence of Decision-making](https://gettingthingsdone.com/2024/06/due-diligence-of-decision-making/)
+
+> It’s not always the actual work that is the hardest part of a job and success—it’s the decisions, compromises and choices that need to be made.
+> -- —Barbara Abrams Mintzer
+
 ## AI
 
 ## Security
+
+### [Container Breakouts: Escape Techniques in Cloud Environments](https://unit42.paloaltonetworks.com/container-escape-techniques/)
+
+> This article reviews container escape techniques, assesses their possible impact and reveals how to detect these escapes from the perspective of endpoint detection and response (EDR).
 
 ## Python
 
@@ -57,6 +87,14 @@ Some of them are strictly related to the things I did or am currently doing.
 > Next time you reach for git blame to figure out how some method has changed over time, try the very easy-to-remember and perfectly well named `git log -L :<funcname>:<path>`!
 
 ## Django
+
+### [Enhance Your Django REST API with Google Cloud Logging](https://medium.com/google-cloud/enhance-your-django-rest-api-with-google-cloud-logging-c7afcd9f263f)
+
+> In this tutorial I will show you how to implement Google Cloud Logging to your Django APP, specifically for a DRF (Django Rest Framwork) project.
+
+### [Django: create sub-commands within a management command](https://adamj.eu/tech/2024/08/14/django-management-command-sub-commands/)
+
+> Using sub-commands could simplify some of Django’s built-in commands.
 
 ## Python libraries
 
@@ -80,6 +118,23 @@ Some of them are strictly related to the things I did or am currently doing.
 ### [Google Cloud deleted a large customer’s infrastructure](https://blocksandfiles.com/2024/05/14/google-cloud-unisuper/)
 
 > An Australian superannuation fund manager, using Google Cloud for an Infrastructure-as-a-Service contract, found it had no disaster recovery (DR) recourse when the entire infrastructure subscription was deleted.
+
+### [Gemini API: Revolutionizing Content Generation with Direct PDF Input](https://medium.com/google-cloud/gemini-api-revolutionizing-content-generation-with-direct-pdf-input-105493780fa4)
+
+> Gemini API now enables direct PDF processing for content generation, eliminating image conversion and reducing costs.
+
+### [Package and deploy your machine learning models to Google Cloud with Cog](https://medium.com/google-cloud/package-and-deploy-your-machine-learning-models-to-google-cloud-with-cog-ac6e20a19ac1)
+
+> [Cog](https://github.com/replicate/cog/tree/main) is an open-source tool that lets you package machine learning models in a standard, production-ready container.
+
+### [Automatically Deploy Generative AI Go Web Applications from Version Control to Cloud Run](https://codelabs.developers.google.com/codelabs/deploy-from-github/gen-ai-go?hl=en#0)
+
+> In this lab, you write a web application and configure Cloud Run to automatically deploy your application when a change is made to the source code of your application. Then you modify your application and deploy it again.
+
+### [Processing arriving GCS files with PubSub triggers](https://medium.com/google-cloud/processing-arriving-gcs-files-with-pubsub-triggers-5fd61325c122)
+
+> The article describes experiments in processing Google Cloud Storage (GCS) files through BEAM where the content is to be inserted into BigQuery.
+> We are specifically examining the usage of Cloud Storage event triggers through PubSub.
 
 ## Other stuff
 
