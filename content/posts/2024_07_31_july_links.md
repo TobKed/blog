@@ -5,14 +5,12 @@ Tags: python, blog, podcast, series, aggregate, summary, month, 2024
 Slug: 2024-july-links
 Summary: Interesting stuff from the month
 Header_Cover: /images/posts/2024/2024_07_xx.jpg
-Status: draft
+Status: published
 
 # July 2024
 
 I am aggregating here some more or less interesting stuff of various IT related materials which I came across this month.
 Some of them are strictly related to the things I did or am currently doing.
-
-## Some thoughts
 
 ## Articles
 

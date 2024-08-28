@@ -61,6 +61,14 @@ Some of them are strictly related to the things I did or am currently doing.
 > The daily stand-up was intended to quickly help developers remove any blockers to commitments before starting their working day.
 > But at many companies, stand-ups have devolved into tedious one-sided status reports.
 
+### [High Growth Engineer: The 3 Big Mistakes That Almost Cost Me My Promotion (And How You Can Avoid Them)](https://read.highgrowthengineer.com/p/3-mistakes-almost-cost-me-my-promotion)
+
+> Guest post by Steve Huynh, ex-Amazon Principal Engineer
+
+### [Practices of Reliable Software Design](https://two-wrongs.com/practices-of-reliable-software-design)
+
+> Here are all eight practices I have adopted with experience that I had use for during the exercise of writing a fast, small, in-memory cache.
+
 ## Productivity
 
 ### [Alex Sexton: The Productivity Cycle](https://alexsexton.com/blog/2014/1/the-productivity-cycle)
