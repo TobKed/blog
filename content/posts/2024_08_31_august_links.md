@@ -12,8 +12,6 @@ Status: draft
 I am aggregating here some more or less interesting stuff of various IT related materials which I came across this august.
 Some of them are strictly related to the things I did or am currently doing.
 
-## Some thoughts
-
 ## Articles
 
 ### [Hybrid Hacker: Personal Finance for Engineers 🏦](https://hybridhacker.email/p/personal-finance-for-engineers)
@@ -69,6 +67,36 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > Here are all eight practices I have adopted with experience that I had use for during the exercise of writing a fast, small, in-memory cache.
 
+### [Panic! at the Job Market](https://matt.sh/panic-at-the-job-market)
+
+> ready for another too-long article about personal failure while blaming the world for our faults?
+
+### [Make Firefox Private Again – omówienie strony](https://www.ciemnastrona.com.pl/2024/08/27/make-firefox-private)
+
+> Lis zwęszył reklamy, ale mam go na smyczy.
+
+### [One on One Meeting Format Ideas](https://marcgg.com/blog/2021/03/27/one-on-one-format/)
+
+> The way I see it, the main objective of a one on one meeting is to build a good work relationship with my direct reports.
+
+### [Part II: Derisking 12 common workplace scenarios](https://newsletter.weskao.com/p/derisking-12-common-workplace-scenarios)
+
+> How to identify and address risks in situations like: giving constructive feedback, sharing a controversial idea, doing cold outreach, and more.
+
+### [Getting the Most Out of Your CV](https://foxleytalent.com/blog/getting-the-most-out-of-your-cv/)
+
+> I want to start by saying this is my personal opinion of what a “good” CV looks like and based on my experience, working with developers, reviewing and sending out CV’s to clients as a recruiter.
+
+### [Modern Git Commands and Features You Should Be Using](https://martinheinz.dev/blog/109)
+
+> All of us - software engineers - use git every day, however most people only ever touch the most basic of commands, such as `add`, `commit`, `push` or `pull`, like it's still 2005.
+>
+> Git however, introduced many features since then, and using them can make your life so much easier, so let's explore some of the recently added, modern git commands, that you should know about.
+
+### [The 3 Motivational Forces of Developers](https://www.bennorthrop.com/Essays/2013/developer-motivation.php)
+
+> After 15 years in industry, I've come to realize that the most defining quality of a developer is his source of motivation.
+
 ## Productivity
 
 ### [Alex Sexton: The Productivity Cycle](https://alexsexton.com/blog/2014/1/the-productivity-cycle)
@@ -79,6 +107,10 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > It’s not always the actual work that is the hardest part of a job and success—it’s the decisions, compromises and choices that need to be made.
 > -- —Barbara Abrams Mintzer
+
+### [How to Organize Personal Work 🧺](https://hybridhacker.email/p/how-to-organize-personal-work)
+
+> A small framework for knowledge work and personal productivity.
 
 ## AI
 
@@ -93,6 +125,14 @@ Some of them are strictly related to the things I did or am currently doing.
 ### [Nerderati: Tracing the evolution of a Python function with git log.](https://nerderati.com/tracing-the-evolution-of-a-python-function-with-git-log/)
 
 > Next time you reach for git blame to figure out how some method has changed over time, try the very easy-to-remember and perfectly well named `git log -L :<funcname>:<path>`!
+
+### [Production-ready Docker Containers with uv](https://hynek.me/articles/docker-uv/)
+
+> I’m aware Astral \[\]is working on implementing this feature\](https://github.com/astral-sh/uv/issues/5229), so I fully expect this article to be outdated within days or weeks.
+
+### [Understanding the Template Method Pattern in Python](https://startcodingnow.com/template-method-design-pattern)
+
+> This is useful when you have a series of steps that need to be executed in a specific order, but the implementation of some steps may vary.
 
 ## Django
 
@@ -144,6 +184,14 @@ Some of them are strictly related to the things I did or am currently doing.
 > The article describes experiments in processing Google Cloud Storage (GCS) files through BEAM where the content is to be inserted into BigQuery.
 > We are specifically examining the usage of Cloud Storage event triggers through PubSub.
 
+### [How to prompt Gemini asynchronously using Python on Google Cloud](https://medium.com/google-cloud/how-to-prompt-gemini-asynchronously-using-python-on-google-cloud-986ca45d9f1b)
+
+> It would be much more efficient if you could send all questions at once, and then wait for all the answers to come back.
+
+### [Deploying dbt Projects at Scale on Google Cloud](https://towardsdatascience.com/dbt-deployment-gcp-a350074e3377)
+
+> Containerising and running dbt projects with Artifact Registry, Cloud Composer, GitHub Actions and dbt-airflow.
+
 ## Other stuff
 
 ### [Firefly Zero](https://github.com/firefly-zero)
@@ -176,12 +224,8 @@ Some of them are strictly related to the things I did or am currently doing.
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/4hl8LpDKRMw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
+### [Boiling Frogs 2018 - Krzysztof Kędzierski - Dług techniczny – narzędzie profesjonalisty](https://www.youtube.com/watch?v=PxcQlSUIpjQ)
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/PxcQlSUIpjQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
-
-> Playback on other websites has been disabled by the video owner. [Watch on YouTube](https://www.youtube.com/watch?v=VIDEO_ID)

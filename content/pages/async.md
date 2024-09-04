@@ -10,6 +10,7 @@ Status: hidden
 - [SuperFastPython: Python Asyncio: The Complete Guide](https://superfastpython.com/python-asyncio/)
 - [SuperFastPython: Python Asyncio: 5 Common Asyncio Errors in Python (and how to avoid them)](https://superfastpython.com/asyncio-common-errors/)
 - [SuperFastPython: Parallel Nested For-Loops in Python](https://superfastpython.com/parallel-nested-for-loops-in-python/#Single_Process_Pool_and_Shared_Queue_unbounded)
+- [SuperFastPython: Asyncio gather() Limit Concurrency](https://superfastpython.com/asyncio-gather-limit-concurrency/)
 - [RealPython: Speed Up Your Python Program With Concurrency](https://realpython.com/python-concurrency/)
 - [Michał Klich: asyncio’s event loop](https://klichx.dev/2022/12/28/asyncios-event-loop/)
 - [Python/Django AsyncIO Tutorial with Examples ](https://djangostars.com/blog/asynchronous-programming-in-python-asyncio/)
