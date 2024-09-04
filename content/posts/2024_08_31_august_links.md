@@ -1,11 +1,11 @@
-Title: August summary - August 2024
+Title: Month summary - August 2024
 Date: 2024-08-31
 Category: summary
-Tags: python, blog, podcast, series, aggregate, summary, august, 2024
+Tags: python, blog, podcast, series, aggregate, summary, month, 2024
 Slug: 2024-august-links
-Summary: Interesting stuff from the august
+Summary: Interesting stuff from the month
 Header_Cover: /images/posts/2024/2024_08_xx.jpg
-Status: draft
+Status: published
 
 # August 2024
 
@@ -112,8 +112,6 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > A small framework for knowledge work and personal productivity.
 
-## AI
-
 ## Security
 
 ### [Container Breakouts: Escape Techniques in Cloud Environments](https://unit42.paloaltonetworks.com/container-escape-techniques/)
@@ -155,12 +153,6 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > LangChain is a framework for developing applications powered by large language models (LLMs).
 
-## Django libraries
-
-## Go
-
-## Tools
-
 ## Cloud
 
 ### [Google Cloud deleted a large customer’s infrastructure](https://blocksandfiles.com/2024/05/14/google-cloud-unisuper/)
@@ -197,8 +189,6 @@ Some of them are strictly related to the things I did or am currently doing.
 ### [Firefly Zero](https://github.com/firefly-zero)
 
 > A modern handheld game console with effortless multiplayer. It's fun to play, alone or with friends, and easy to program.
-
-## Podcasts
 
 ## Videos
 
