@@ -58,6 +58,10 @@ Some of them are strictly related to the things I did or am currently doing.
 > This piece covers advice for tech workers to make the most out of this heated market: whether you want to make a job change or not.
 > A market where demand for employees outstrips supply is one where employees can do well for themselves with less-than-usual effort.
 
+### [7 Must-Know Lessons To Be A Better Engineer From Top Industry Leaders](https://read.highgrowthengineer.com/p/month-of-collabs-recap-2024)
+
+> 2024 Month of Collabs: Best lessons to take your career forward
+
 ## Productivity
 
 ## AI
@@ -141,6 +145,10 @@ Some of them are strictly related to the things I did or am currently doing.
 > IAM group authentication extends existing IAM database authentication functionality by allowing database access to be managed at the group level instead of the individual user level.
 
 ## Other stuff
+
+### [The 512KB Club](https://512kb.club/)
+
+> The 512KB Club is a collection of performance-focused web pages from across the Internet.
 
 ## Podcasts
 
