@@ -62,7 +62,27 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > 2024 Month of Collabs: Best lessons to take your career forward
 
+### [Why Not Comments](https://buttondown.com/hillelwayne/archive/why-not-comments/)
+
+> Why not "why not" comments? Not why "not comments"
+
+### [Release fatigue 😫 and going static](https://levit.be/blog/release-fatigue.html)
+
+> By virtue of being statically generated, the code for our website doesn't need to be kept up-to-date with the latest security release of every package and tool we use, it's just HTML!
+
+### [Why Scrum is Stressing You Out](https://rethinkingsoftware.substack.com/p/why-scrum-is-stressing-you-out)
+
+> Back then, things would get crazy around deadlines, but at other times, I recall feeling pretty even. These days, however, the pressure seems omnipresent.
+
+### [Makefiles for Web Work](https://rosszurowski.com/log/2022/makefiles)
+
+> `make` is a build tool that’s been around since the 1970s. It was originally designed for automating the building of C programs: installing dependencies, running tests, and compiling binaries.
+
 ## Productivity
+
+### [Good software development habits](https://zarar.dev/good-software-development-habits/)
+
+> This post is not advice, it's what's working for me.
 
 ## AI
 
@@ -76,11 +96,15 @@ Some of them are strictly related to the things I did or am currently doing.
 > Your data is accessed using your device and stored on your device.
 > No clouds, only sunshine.
 
-## Security
+## Securiy
 
 ### [Hacking misconfigured AWS S3 buckets: A complete guide](https://blog.intigriti.com/hacking-tools/hacking-misconfigured-aws-s3-buckets-a-complete-guide)
 
 > You've probably already come across an AWS S3 bucket, maybe even a misconfigured one too, and if you ignored them before, we hope this article shines some light on the most common security misconfigurations present in this storage bucket service.
+
+### [Fake recruiter coding tests target devs with malicious Python packages](https://www.reversinglabs.com/blog/fake-recruiter-coding-tests-target-devs-with-malicious-python-packages)
+
+> RL found the VMConnect campaign continuing with malicious actors posing as recruiters, using packages and the names of financial firms to lure developers.
 
 ## Python
 
@@ -94,6 +118,14 @@ Some of them are strictly related to the things I did or am currently doing.
 > We can limit concurrency when using asyncio.gather() via a semaphore.
 >
 > In this tutorial, you will discover how to limit concurrency with asyncio.gather().
+
+### [How to Build a Perfect Docker Image for a Poetry Project](https://codemageddon.me/post/poetry-docker/)
+
+> This article describes how to build a perfect Docker image for your Poetry-based project
+
+### [Docker images using uv's python](https://mkennedy.codes/posts/python-docker-images-using-uv-s-new-python-features/)
+
+> uv has changed the landscape
 
 ## Django
 
@@ -110,11 +142,20 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > I have been working on a project where we might want to delete models even just for testing purposes, but we don't want to accidentally delete models.
 
+### [Django: hoist repeated decorator definitions](https://adamj.eu/tech/2024/09/08/django-repeated-decorators/)
+
+> Django provides us with a rich set of view decorators.
+> In this post, we’ll look at a technique for hoisting repeated use of these decorators to reduce repetition.
+
 ## Python libraries
 
 ### [cbfa](https://github.com/pomponchik/cbfa)
 
 > Class-based views for the FastAPI
+
+### [humanize](https://github.com/python-humanize/humanize)
+
+> This modest package contains various common humanization utilities, like turning a number into a fuzzy human-readable duration ("3 minutes ago") or into a human-readable size or throughputs
 
 ## Django libraries
 
@@ -143,6 +184,10 @@ Some of them are strictly related to the things I did or am currently doing.
 ### [Announcing IAM group authentication in Cloud SQL](https://cloud.google.com/blog/products/databases/announcing-iam-group-authentication-in-cloud-sql)
 
 > IAM group authentication extends existing IAM database authentication functionality by allowing database access to be managed at the group level instead of the individual user level.
+
+### [Stevey's Google Platforms Rant](https://gist.github.com/chitchcock/1281611)
+
+> Yegge wrote this in 2011 and posted it on Google+. He intended to make it visible internally to Google only, but accidentally made it public.
 
 ## Other stuff
 
