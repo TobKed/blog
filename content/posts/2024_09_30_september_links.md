@@ -78,11 +78,19 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > `make` is a build tool that’s been around since the 1970s. It was originally designed for automating the building of C programs: installing dependencies, running tests, and compiling binaries.
 
+### [The Art of War Applied To Software Development](https://www.toptal.com/agile/art-of-war-software-development)
+
+> In this post, Toptal Freelance Software Engineer Jose F. Maldonado explains why many of these ancient teachings still matter, and what you can do to make them work for you and your team.
+
 ## Productivity
 
 ### [Good software development habits](https://zarar.dev/good-software-development-habits/)
 
 > This post is not advice, it's what's working for me.
+
+### [How to understand/retain complex concepts 10x better](https://learnhowtolearn.org/how-to-understand-and-retain-any-concept-10x-better/)
+
+> The whole idea: compress the concept by repeatedly practicing explaining it until you understand it from first principles.
 
 ## AI
 
@@ -171,6 +179,14 @@ Some of them are strictly related to the things I did or am currently doing.
 > "PostgreSQL In Great STYle": Postgres, Infras, Graphics, Service, Toolbox, it's all Yours.
 > ```
 
+### [C4 model](https://c4model.com/)
+
+> The C4 model for visualising software architecture
+
+### [Exiftool Github action](https://github.com/woss/exiftool-action)
+
+> Action for Exiftool. Include it in the path without installing, run multiple versions
+
 ## Cloud
 
 ### [Technical Guide: End-to-End CI/CD DevOps with Jenkins, Terraform, Docker, Kubernetes, SonarQube, ArgoCD, AWS EC2, EKS, and GitHub Actions (Django Deployment)](https://medium.com/django-unleashed/technical-guide-end-to-end-ci-cd-devops-with-jenkins-docker-kubernetes-argocd-github-actions-fee466fe949e)
@@ -203,6 +219,12 @@ Some of them are strictly related to the things I did or am currently doing.
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/cKcGG3JakZQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [How to Negotiate a Big Tech Offer as a Software Engineer - with ‪@RahulPandeyrkp‬](https://www.youtube.com/watch?v=cbngWLr7BC4)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/cbngWLr7BC4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ### [](https://www.youtube.com/watch?v=VIDEO_ID)
