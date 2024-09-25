@@ -14,6 +14,14 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
 
+Passing GitHub Actions certificate.
+
+Learning tmux.
+
+Create photoblog with hugo.
+
+Practicing fountain pen writing.
+
 ## Articles
 
 ### [High Growth Engineer: My Tech Promotion Algorithm](https://read.highgrowthengineer.com/p/my-tech-promotion-algorithm)
@@ -93,6 +101,11 @@ Some of them are strictly related to the things I did or am currently doing.
 > The whole idea: compress the concept by repeatedly practicing explaining it until you understand it from first principles.
 
 ## AI
+
+### [danielmiessler/fabric](https://github.com/danielmiessler/fabric)
+
+> fabric is an open-source framework for augmenting humans using AI.
+> It provides a modular framework for solving specific problems using a crowdsourced set of AI prompts that can be used anywhere.
 
 ### [Deep-Live-Cam](https://github.com/hacksider/Deep-Live-Cam)
 
@@ -225,6 +238,24 @@ Some of them are strictly related to the things I did or am currently doing.
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/cbngWLr7BC4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [Fireship: Tmux in 100 Seconds](https://www.youtube.com/watch?v=vtB1J_zCv8I)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/vtB1J_zCv8I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [NetworkChuck: you need to learn tmux RIGHT NOW!!](https://www.youtube.com/watch?v=nTqu6w2wc68)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/nTqu6w2wc68" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [NetworkChuck: 18 Weird and Wonderful ways I use Docker ](https://www.youtube.com/watch?v=RUqGlWr5LBA)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/RUqGlWr5LBA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ### [](https://www.youtube.com/watch?v=VIDEO_ID)
