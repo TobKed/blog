@@ -90,6 +90,10 @@ Practicing fountain pen writing.
 
 > In this post, Toptal Freelance Software Engineer Jose F. Maldonado explains why many of these ancient teachings still matter, and what you can do to make them work for you and your team.
 
+### [A Life Engineered: The #1 Mistake You're Making with Your Mentor (And How You Can Avoid It)](https://alifeengineered.substack.com/p/the-1-mistake-youre-making-with-your)
+
+> Tips and resources on how to make the most out of your mentorship.
+
 ## Productivity
 
 ### [Good software development habits](https://zarar.dev/good-software-development-habits/)
@@ -117,7 +121,19 @@ Practicing fountain pen writing.
 > Your data is accessed using your device and stored on your device.
 > No clouds, only sunshine.
 
-## Securiy
+### [How to Get Samantha from Her or TARS from Interstellar on Your iPhone/Android](https://danielmiessler.com/p/get-samantha-tars-interstellar-iphoneandroid)
+
+> Change your AI from Siri to an interactive and realistic AI from Her or Interstellar that you can have long conversations with.
+
+### [MacGPT](https://www.macgpt.com/)
+
+> ChatGPT on your Mac and Menubar.
+
+### [MacWhisper](https://goodsnooze.gumroad.com/l/macwhisper)
+
+> Quickly and easily transcribe audio files into text with OpenAI's state-of-the-art transcription technology Whisper.
+
+## Security
 
 ### [Hacking misconfigured AWS S3 buckets: A complete guide](https://blog.intigriti.com/hacking-tools/hacking-misconfigured-aws-s3-buckets-a-complete-guide)
 
