@@ -94,6 +94,10 @@ Practicing fountain pen writing.
 
 > Tips and resources on how to make the most out of your mentorship.
 
+### [Using Bloom’s Taxonomy to Write Effective Learning Outcomes](https://tips.uark.edu/using-blooms-taxonomy/)
+
+> Bloom’s Taxonomy is a classification of the different objectives and skills that educators set for their students (learning outcomes).
+
 ## Productivity
 
 ### [Good software development habits](https://zarar.dev/good-software-development-habits/)
@@ -196,6 +200,10 @@ Practicing fountain pen writing.
 
 ## Django libraries
 
+### [radiac/nanodjango](https://github.com/radiac/nanodjango)
+
+> Full Django in a single file - views, models, API ,with async support. Automatically convert it to a full project.
+
 ## Go
 
 ## Tools
@@ -234,6 +242,10 @@ Practicing fountain pen writing.
 
 > Yegge wrote this in 2011 and posted it on Google+. He intended to make it visible internally to Google only, but accidentally made it public.
 
+### [What are the main Cloud Design Patterns?](https://newsletter.techworld-with-milan.com/p/what-are-the-main-cloud-design-patterns)
+
+> and how they help fighting with fallacies of Distributed Computing
+
 ## Other stuff
 
 ### [The 512KB Club](https://512kb.club/)
@@ -268,10 +280,28 @@ Practicing fountain pen writing.
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/nTqu6w2wc68" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-### [NetworkChuck: 18 Weird and Wonderful ways I use Docker ](https://www.youtube.com/watch?v=RUqGlWr5LBA)
+### [NetworkChuck: 18 Weird and Wonderful ways I use Docker](https://www.youtube.com/watch?v=RUqGlWr5LBA)
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/RUqGlWr5LBA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [NetworkChuck:  You've been using AI Wrong ](https://www.youtube.com/watch?v=UbDyjIIGaxQ)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/UbDyjIIGaxQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [DjangoCon US: Django & Celery - A love story of async proportions - Hugo Bessa](https://www.youtube.com/watch?v=2GhZWzeipWA)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/2GhZWzeipWA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [](https://www.youtube.com/watch?v=VIDEO_ID)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ### [](https://www.youtube.com/watch?v=VIDEO_ID)
