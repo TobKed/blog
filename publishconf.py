@@ -34,4 +34,4 @@ DELETE_OUTPUT_DIRECTORY = True
 # Following items are often useful when publishing
 
 GOOGLE_ANALYTICS = os.environ.get("GOOGLE_ANALYTICS")
-# DISQUS_SITENAME = ""
+# ANALYTICS = ""

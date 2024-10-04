@@ -31,6 +31,6 @@ repos:
             ^content/posts/2023_05_03_gcp_dev_day.md
         )
 - repo: https://github.com/psf/black
-  rev: 24.4.2
+  rev: 24.8.0
   hooks:
     - id: black
