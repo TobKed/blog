@@ -20,6 +20,10 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## AI
 
+### [Google NotebookLM](https://notebooklm.google/)
+
+> NotebookLM is your personalized AI research assistant powered by Google's most capable model, Gemini 1.5 Pro.
+
 ## Security
 
 ## Python
