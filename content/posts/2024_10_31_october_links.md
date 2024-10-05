@@ -16,6 +16,14 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Articles
 
+### [A short history of the O’Reilly animals](https://www.oreilly.com/content/a-short-history-of-the-oreilly-animals/)
+
+> How lions, tigers, and tarsiers went geek.
+
+### [Moving to the Netherlands for a Tech Job: The Ultimate Guide](https://relocate.me/blog/job-relocation/moving-to-the-netherlands-for-a-tech-job/)
+
+> To sum up, the Netherlands is a unique relocation destination that offers a very beneficial environment for IT specialists with a 30% tax ruling, excellent work-life balance, and outstanding standard of living.
+
 ## Productivity
 
 ## AI
@@ -41,6 +49,10 @@ Some of them are strictly related to the things I did or am currently doing.
 ## Cloud
 
 ## Other stuff
+
+### [International Tech Job Search Handbook](https://github.com/AndrewStetsenko/tech-jobs-with-relocation)
+
+> All-in-one guide to getting a tech job abroad 🌎
 
 ## Podcasts
 

@@ -254,9 +254,7 @@ Practicing fountain pen writing.
 
 ### [Zasypiaj z poczuciem, że to był dobry dzień. Startujemy Productivity by Heart! 💚](https://www.youtube.com/watch?v=cKcGG3JakZQ)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/cKcGG3JakZQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+> Playback on other websites has been disabled by the video owner. [Watch on YouTube](https://www.youtube.com/watch?v=cKcGG3JakZQ)
 
 ### [How to Negotiate a Big Tech Offer as a Software Engineer - with ‪@RahulPandeyrkp‬](https://www.youtube.com/watch?v=cbngWLr7BC4)
 
