@@ -14,23 +14,27 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
 
-### GitHub Actions
+This month I delved deep into the world of [GitHub Actions](https://github.com/features/actions), a tool that I've grown to love and become an expert in.
+Previously I've not only worked extensively with GitHub Actions but also created my own custom actions, such as the [GitHub Forks Sync Action](https://github.com/TobKed/github-forks-sync-action) and the [Label When Approved Action](https://github.com/TobKed/label-when-approved-action).
 
-This month, I delved deep into the world of GitHub Actions, a tool that I've grown to love and become an expert in.
-I've not only worked extensively with GitHub Actions but also created my own custom actions, such as the [GitHub Forks Sync Action](https://github.com/TobKed/github-forks-sync-action) and the [Label When Approved Action](https://github.com/TobKed/label-when-approved-action).
-
-In addition to this, I utilized GitHub Actions for scraping data related to GitHub Actions for the Apache Software Foundation.
+In addition to this I utilized GitHub Actions for scraping data related to GitHub Actions for the Apache Software Foundation.
 This allowed me to calculate valuable statistics.
 My dedication to mastering GitHub Actions led me to pass a certification exam with minimal preparation, earning the badge of a certified GitHub Actions expert, which I proudly display [here](https://www.credly.com/badges/6b96a6c9-28cb-47dd-9dfa-13dd7a37d543).
 
-<img src="{static}/images/posts/2024/2024_09_github_actions.png" alt="GitHub Actions Certification" style="display: block; margin-left: auto; margin-right: auto;">
+<a target="\_blank" rel="noopener noreferrer" href="https://www.credly.com/badges/6b96a6c9-28cb-47dd-9dfa-13dd7a37d543">
+    <img src="{static}/images/posts/2024/2024_09_github_actions.png" alt="GitHub Actions Certification" style="display: block; margin-left: auto; margin-right: auto;">
+</a>
 
-<img src="{static}/images/posts/2021/brival_tech_talk_git.jpg" alt="Brival Tech Talk - tips & tricks" style="display: block; margin-left: auto; margin-right: auto;">
+Me a while back, full of hair and excitement, giving a presentation on GitHub Actions:
+
+<img src="{static}/images/posts/2022/2022_10_brival.jpg" alt="Brival Tech Talk - tips & tricks" style="display: block; margin-left: auto; margin-right: auto;">
 
 After achieving this milestone, I decided to channel my expertise into a personal project.
-One weekend evening, I finally created a photoblog using Hugo and GitHub Actions.
-To maintain the privacy of the original-size photos and their metadata, I kept the source code in a private repository.
-With the help of a GitHub Actions workflow, a static website was generated using Hugo and pushed to a public repository, where my photoblog is now available for viewing at [photos.tobked.dev](https://photos.tobked.dev).
+One weekend evening I finally created a photoblog using [Hugo](https://gohugo.io/) and GitHub Actions.
+To maintain the privacy of the original-size photos and their metadata I kept the source code in a private repository.
+With the help of a GitHub Actions workflow, a static website was generated using **Hugo** and pushed to a public repository, where my photoblog is now available for viewing at [photos.tobked.dev](https://photos.tobked.dev).
+
+`gh-pages.yaml`
 
 ```yaml
 name: github pages
@@ -75,9 +79,9 @@ jobs:
 ```
 
 In addition to my GitHub Actions adventures, I also dived into learning tmux, a tool that brought me a lot of joy.
-I even created a `.tmux.conf` file to tailor the tmux experience to my liking, enabling features like mouse support and setting new panes to open in the current directory.
+I customized a configuration file to tailor the tmux experience to my liking, enabling features like mouse support and setting new panes to open in the current directory.
 
-`.tmux.conf`:
+`.tmux.conf`
 
 ```shell
 set -g mouse on
@@ -95,6 +99,8 @@ bind c new-window -c "#{pane_current_path}"
 bind '"' split-window -c "#{pane_current_path}"
 bind % split-window -h -c "#{pane_current_path}"
 ```
+
+I'm excited to share some interesting materials I've gone through. Check them out below.
 
 ## Articles
 
