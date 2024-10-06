@@ -14,13 +14,87 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
 
-Passing GitHub Actions certificate.
+### GitHub Actions
 
-Learning tmux.
+This month, I delved deep into the world of GitHub Actions, a tool that I've grown to love and become an expert in.
+I've not only worked extensively with GitHub Actions but also created my own custom actions, such as the [GitHub Forks Sync Action](https://github.com/TobKed/github-forks-sync-action) and the [Label When Approved Action](https://github.com/TobKed/label-when-approved-action).
 
-Create photoblog with hugo.
+In addition to this, I utilized GitHub Actions for scraping data related to GitHub Actions for the Apache Software Foundation.
+This allowed me to calculate valuable statistics.
+My dedication to mastering GitHub Actions led me to pass a certification exam with minimal preparation, earning the badge of a certified GitHub Actions expert, which I proudly display [here](https://www.credly.com/badges/6b96a6c9-28cb-47dd-9dfa-13dd7a37d543).
 
-Practicing fountain pen writing.
+<img src="{static}/images/posts/2024/2024_09_github_actions.png" alt="GitHub Actions Certification" style="display: block; margin-left: auto; margin-right: auto;">
+
+<img src="{static}/images/posts/2021/brival_tech_talk_git.jpg" alt="Brival Tech Talk - tips & tricks" style="display: block; margin-left: auto; margin-right: auto;">
+
+After achieving this milestone, I decided to channel my expertise into a personal project.
+One weekend evening, I finally created a photoblog using Hugo and GitHub Actions.
+To maintain the privacy of the original-size photos and their metadata, I kept the source code in a private repository.
+With the help of a GitHub Actions workflow, a static website was generated using Hugo and pushed to a public repository, where my photoblog is now available for viewing at [photos.tobked.dev](https://photos.tobked.dev).
+
+```yaml
+name: github pages
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@75d2e84710de30f6ff7268e08f310b60ef14033f  # v3
+        with:
+          hugo-version: '0.134.3'
+          extended: true
+
+      - name: Build
+        run: hugo --minify
+
+      - name: Setup Exiftool
+        uses: woss/exiftool-action@f592e36cc8d653b8f8ac3084b34403d0911236a3  # v12.87
+
+      - name: Remove Exif data from images
+        run: exiftool -r -all= -ext jpg -ext jpeg -ext png -ext webp -overwrite_original public
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@4f9cc6602d3f66b9c108549d475ec49e8ef4d45e  # v4
+        if: github.ref == 'refs/heads/master'
+        with:
+          deploy_key: ${{ secrets.ACTIONS_PHOTOS_DEPLOY_KEY }}
+          external_repository: TobKed/photos
+          publish_dir: ./public
+          cname: photos.tobked.dev
+```
+
+In addition to my GitHub Actions adventures, I also dived into learning tmux, a tool that brought me a lot of joy.
+I even created a `.tmux.conf` file to tailor the tmux experience to my liking, enabling features like mouse support and setting new panes to open in the current directory.
+
+`.tmux.conf`:
+
+```shell
+set -g mouse on
+setw -g mode-keys vi
+
+# List of plugins
+set -g @plugin 'tmux-plugins/tpm'
+set -g @plugin 'tmux-plugins/tmux-resurrect'
+set -g @plugin 'tmux-plugins/tmux-continuum'
+
+set -g @continuum-restore 'on'
+
+# Set new panes to open in current directory
+bind c new-window -c "#{pane_current_path}"
+bind '"' split-window -c "#{pane_current_path}"
+bind % split-window -h -c "#{pane_current_path}"
+```
 
 ## Articles
 
