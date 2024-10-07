@@ -5,7 +5,7 @@ Tags: python, blog, podcast, series, aggregate, summary, month, 2024
 Slug: 2024-september-links
 Summary: Interesting stuff from the month
 Header_Cover: /images/posts/2024/2024_09_xx.jpg
-Status: draft
+Status: published
 
 # September 2024
 
@@ -82,7 +82,7 @@ jobs:
           cname: photos.tobked.dev
 ```
 
-Photo from the blog:
+Photo from the [photos.tobked.dev](https://photos.tobked.dev/posts/2024_10_05_circles/):
 
 <a target="\_blank" rel="noopener noreferrer" href="https://photos.tobked.dev/posts/2024_10_05_circles/">
     <img src="{static}/images/posts/2024/2024_09_photoblog.jpg" alt="photos.tobked.dev photography" style="display: block; margin-left: auto; margin-right: auto;">
@@ -112,7 +112,7 @@ bind '"' split-window -c "#{pane_current_path}"
 bind % split-window -h -c "#{pane_current_path}"
 ```
 
-#### Rest
+#### Resources
 
 I'm excited to share some interesting materials I've gone through. Check them out below.
 
