@@ -24,7 +24,15 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > To sum up, the Netherlands is a unique relocation destination that offers a very beneficial environment for IT specialists with a 30% tax ruling, excellent work-life balance, and outstanding standard of living.
 
+### [High Growth Engineer: 5 Keys to the Hiring Manager Interview from a Meta Senior Manager](https://read.highgrowthengineer.com/p/5-keys-to-the-hiring-manager-interview)
+
+> In his time at Meta, he’s conducted over 2,000 interviews and has seen every mistake in the book. He will share the biggest mistakes with you and what to do instead.
+
 ## Productivity
+
+### [GYSHIDO](https://gyshido.com/)
+
+> The Art Of Getting Your Shit Done
 
 ## AI
 
