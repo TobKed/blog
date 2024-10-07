@@ -40,6 +40,15 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > NotebookLM is your personalized AI research assistant powered by Google's most capable model, Gemini 1.5 Pro.
 
+### [Gonçalo Valério: “Extracting wisdom” from conference videos](https://blog.ovalerio.net/archives/2900)
+
+> A couple of months ago, [I wrote a blog post about how I run these AI tools on my device without the need of leaking any data to external services](https://blog.ovalerio.net/archives/2825).
+> Today, I’ll describe how I used them to help me with the task of extracting the key information and learnings from all the videos I won’t be able to watch.
+
+### [Gonçalo Valério: Local AI to the rescue](https://blog.ovalerio.net/archives/2825)
+
+> While understandable, given that the hardware requirements for AI stuff are massive, I find unsettling the continuation of the trend of all your data and interactions being shared with a remote company.
+
 ## Security
 
 ## Python

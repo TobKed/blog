@@ -14,6 +14,8 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
 
+#### GitHub Actions
+
 This month I delved deep into the world of [GitHub Actions](https://github.com/features/actions), a tool that I've grown to love and become an expert in.
 Previously I've not only worked extensively with GitHub Actions but also created my own custom actions, such as the [GitHub Forks Sync Action](https://github.com/TobKed/github-forks-sync-action) and the [Label When Approved Action](https://github.com/TobKed/label-when-approved-action).
 
@@ -29,12 +31,14 @@ Me a while back, full of hair and excitement, giving a presentation on GitHub Ac
 
 <img src="{static}/images/posts/2022/2022_10_brival.jpg" alt="Brival Tech Talk - tips & tricks" style="display: block; margin-left: auto; margin-right: auto;">
 
+#### GitHub Action + Hugo = Photoblog
+
 After achieving this milestone, I decided to channel my expertise into a personal project.
 One weekend evening I finally created a photoblog using [Hugo](https://gohugo.io/) and GitHub Actions.
 To maintain the privacy of the original-size photos and their metadata I kept the source code in a private repository.
 With the help of a GitHub Actions workflow, a static website was generated using **Hugo** and pushed to a public repository, where my photoblog is now available for viewing at [photos.tobked.dev](https://photos.tobked.dev).
 
-`gh-pages.yaml`
+Here’s the GitHub Actions workflow: `gh-pages.yaml`
 
 ```yaml
 name: github pages
@@ -78,10 +82,18 @@ jobs:
           cname: photos.tobked.dev
 ```
 
-In addition to my GitHub Actions adventures, I also dived into learning tmux, a tool that brought me a lot of joy.
-I customized a configuration file to tailor the tmux experience to my liking, enabling features like mouse support and setting new panes to open in the current directory.
+Photo from the blog:
 
-`.tmux.conf`
+<a target="\_blank" rel="noopener noreferrer" href="https://photos.tobked.dev/posts/2024_10_05_circles/">
+    <img src="{static}/images/posts/2024/2024_09_photoblog.jpg" alt="photos.tobked.dev photography" style="display: block; margin-left: auto; margin-right: auto;">
+</a>
+
+#### tmux
+
+In addition to my GitHub Actions adventures, I also dived into learning [`tmux`](https://github.com/tmux/tmux/wiki), a terminal multiplexer that brought me a lot of joy.
+I customized a configuration file to tailor the `tmux` experience to my liking, enabling features like mouse support and setting new panes to open in the current directory.
+
+Here’s my configuration file: `.tmux.conf`
 
 ```shell
 set -g mouse on
@@ -99,6 +111,8 @@ bind c new-window -c "#{pane_current_path}"
 bind '"' split-window -c "#{pane_current_path}"
 bind % split-window -h -c "#{pane_current_path}"
 ```
+
+#### Rest
 
 I'm excited to share some interesting materials I've gone through. Check them out below.
 
