@@ -32,6 +32,14 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > Much of this may be "duh", but there might be a few rules you haven't considered yet.
 
+### [A Life Engineered: A European Developer Journey In Big Tech](https://alifeengineered.substack.com/p/a-european-developer-journey-to-big)
+
+> With so much focus on the US, there's a lot of opportunity in Europe-if you can find it.
+
+### [What I'm Doing and How It's Going](https://danielmiessler.com/p/what-im-doing-how-its-going)
+
+> How I went from a $350K FTE to $700K+ doing my own thing.
+
 ## Productivity
 
 ### [GYSHIDO](https://gyshido.com/)
