@@ -14,6 +14,14 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
 
+https://github.com/BurntSushi/ripgrep
+
+https://github.com/junegunn/fzf
+
+rg fzf | fzf
+
+https://github.com/sharkdp/fd
+
 ## Articles
 
 ### [A short history of the O’Reilly animals](https://www.oreilly.com/content/a-short-history-of-the-oreilly-animals/)
@@ -39,6 +47,28 @@ Some of them are strictly related to the things I did or am currently doing.
 ### [What I'm Doing and How It's Going](https://danielmiessler.com/p/what-im-doing-how-its-going)
 
 > How I went from a $350K FTE to $700K+ doing my own thing.
+
+### [High Growth Engineer: 3 Career Principles that got me to Director at Google](https://read.highgrowthengineer.com/p/3-career-principles-to-director-at-google)
+
+> What helped me get 5 promotions in 10 years at Google.
+
+### [Allegro tech blog: Do repeat yourself! What is responsibility in code?](https://blog.allegro.tech/2024/10/do-repeat-yourself)
+
+> Did you know that in October this year, [DRY principle](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) will celebrate its 25th anniversary?
+> It was proposed by Andrew Hunt and David Thomas in The Pragmatic Programmer book in 1999.
+
+### [Unplanned Obsolescence: Less htmx is More](https://unplannedobsolescence.com/blog/less-htmx-is-more/)
+
+> How should we use htmx?
+
+### [Hacking Scale: How Uber Reduced Their Log Size By 99%](https://newsletter.betterstack.com/p/how-uber-reduced-their-log-size-by)
+
+> Uber broke apart an open source tool to massively compress their logs.
+
+### [The Pragmatic Engineer: Why techies leave Big Tech](https://newsletter.pragmaticengineer.com/p/leaving-big-tech)
+
+> A job in Big Tech is a career goal for many software engineers and engineering managers.
+> So what leads people to quit, after working so hard to land these roles?
 
 ## Productivity
 
@@ -71,17 +101,48 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Security
 
+### [Forbes: Google Will Track Your Location ‘Every 15 Minutes’—‘Even With GPS Disabled’](https://www.forbes.com/sites/zakdoffman/2024/10/05/google-new-location-tracking-warning-pixel-9-pro-pixel-9-pro-xl-pixel-9-pro-fold/)
+
+> If you’re worried your phone might be spying on you, sharing your data and location without you realizing, then a new report this week will make alarming reading.
+
+### [CloudImposer: Executing Code on Millions of Google Servers with a Single Malicious Package](https://www.tenable.com/blog/cloudimposer-executing-code-on-millions-of-google-servers-with-a-single-malicious-package)
+
+> Tenable Research discovered a remote code execution (RCE) vulnerability in Google Cloud Platform (GCP) that is now fixed and that we dubbed CloudImposer.
+> The vulnerability could have allowed an attacker to hijack an internal software dependency that Google pre-installs on each Google Cloud Composer pipeline-orchestration tool.
+> Tenable Research also found risky guidance in GCP documentation that customers should be aware of.
+
 ## Python
+
+### [Miguel Grinberg: The Ultimate Guide to Error Handling in Python](https://blog.miguelgrinberg.com/post/the-ultimate-guide-to-error-handling-in-python)
+
+> Exceptions in Python is one of those areas that have a surface layer that most people know, and a deeper, almost secret one that a lot of developers don't even know exists.
 
 ## Django
 
+### [Simon Willison’s TILs: Building an automatically updating live blog in Django](https://til.simonwillison.net/django/live-blog)
+
+> OpenAI's DevDay event yesterday (October 1st 2024) didn’t invite press (as far as I can tell), didn’t livestream the event and didn’t allow audience livestreaming either.
+> I made a last minute decision to [live blog the event](https://simonwillison.net/2024/Oct/1/openai-devday-2024-live-blog/) myself.
+
 ## Python libraries
+
+### [openai/swarm](https://github.com/openai/swarm)
+
+> Educational framework exploring ergonomic, lightweight multi-agent orchestration. Managed by OpenAI Solution team.
 
 ## Django libraries
 
 ## Go
 
 ## Tools
+
+### [rwblickhan: Command Line Tools I Like (2022)](https://rwblickhan.org/newsletters/command-line-tools-i-like-2022/)
+
+> That said, I like a number of modern command line tools, many written in Rust, which are typically blazing fast and have better command-line interfaces than traditional Unix tools.
+
+### [sharkdp/fd](https://github.com/sharkdp/fd)
+
+> A simple, fast and user-friendly alternative to 'find'
 
 ## Cloud
 
@@ -99,6 +160,14 @@ Some of them are strictly related to the things I did or am currently doing.
 ## Podcasts
 
 ## Videos
+
+### [Django Day Copenhagen 2024](https://www.youtube.com/playlist?list=PLEpW1LzVyQWhad3QVuB5_2PNPCd7L22W_)
+
+> The full Django Day Copenhagen 2024 playlist.
+
+### [EuroPython 2024](https://www.youtube.com/playlist?list=PL8uoeex94UhE1CbtkDK4hevp2lBif57Nq)
+
+> The full EuroPython 2024 playlist
 
 ### [TED: Ted Ferries - Why you should define your fears instead of your goals](https://www.ted.com/talks/tim_ferriss_why_you_should_define_your_fears_instead_of_your_goals/)
 
