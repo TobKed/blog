@@ -20,13 +20,14 @@ In April 2021, I wrote about the [Produktywność Krok Po Kroku](2021_04_15_prod
 This time, I completed the [Productivity By Heart](https://www.productivitybyheart.com/) course, and I must say, it brought back the creativity spark I felt I had lost along the way.
 The course provided a fresh perspective on productivity and has been a game-changer for me.
 You can find my certification of completion [here](https://credsverse.com/credentials/f51a1f4f-dea2-41a0-a661-fd1c110488fe).
+I’ll be diving into more details about this course in a separate post after finishing all the materials.
 
 On another note, I've been enhancing my workflow in the terminal.
-I've added some new tools like
+I've added some new tools like:
 
-- [fzf](https://github.com/junegunn/fzf), a command-line fuzzy finder
-- [ripgrep](https://github.com/BurntSushi/ripgrep), a recursive line-oriented search tool
-- [fd](https://github.com/sharkdp/fd):  nn alternative to `find`
+- [`fzf`](https://github.com/junegunn/fzf) - a command-line fuzzy finder
+- [`ripgrep`](https://github.com/BurntSushi/ripgrep) - a recursive line-oriented search tool
+- [`fd`](https://github.com/sharkdp/fd) - nn alternative to `find`
 
 These tools have been incredibly useful and have improved my efficiency within the terminal.
 
@@ -147,8 +148,6 @@ These tools have been incredibly useful and have improved my efficiency within t
 ### [sharkdp/fd](https://github.com/sharkdp/fd)
 
 > A simple, fast and user-friendly alternative to 'find'
-
-## Cloud
 
 ## Other stuff
 
