@@ -14,13 +14,22 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
 
-https://github.com/BurntSushi/ripgrep
+#### Productivity By Heart
 
-https://github.com/junegunn/fzf
+In April 2021, I wrote about the [Produktywność Krok Po Kroku](2021_04_15_productivity.md) course by Piotr Nabielec.
+This time, I completed the [Productivity By Heart](https://www.productivitybyheart.com/) course, and I must say, it brought back the creativity spark I felt I had lost along the way.
+The course provided a fresh perspective on productivity and has been a game-changer for me.
+You can find my certification of completion [here](https://credsverse.com/credentials/f51a1f4f-dea2-41a0-a661-fd1c110488fe).
 
-rg fzf | fzf
+On another note, I've been enhancing my workflow in the terminal.
+I've added some new tools like
 
-https://github.com/sharkdp/fd
+- [fzf](https://github.com/junegunn/fzf), a command-line fuzzy finder
+- [ripgrep](https://github.com/BurntSushi/ripgrep), a recursive line-oriented search tool
+- [fd](https://github.com/sharkdp/fd):  An alternative to `find`
+-
+
+These tools have been incredibly useful and have improved my efficiency within the terminal.
 
 ## Articles
 
@@ -130,10 +139,6 @@ https://github.com/sharkdp/fd
 
 > Educational framework exploring ergonomic, lightweight multi-agent orchestration. Managed by OpenAI Solution team.
 
-## Django libraries
-
-## Go
-
 ## Tools
 
 ### [rwblickhan: Command Line Tools I Like (2022)](https://rwblickhan.org/newsletters/command-line-tools-i-like-2022/)
@@ -156,8 +161,6 @@ https://github.com/sharkdp/fd
 
 > In September 2024 we took part in a Live Coding Workshop and Showcase at the [Festival of the Mind 2024](https://festivalofthemind.sheffield.ac.uk/2024/) in Sheffield.
 > Together with the School of Computer Science at the University of Sheffield, we spent the afternoon making bleeps with code, before heading out for a live demo at the Spiegeltent in the city centre.
-
-## Podcasts
 
 ## Videos
 
@@ -187,13 +190,3 @@ https://github.com/sharkdp/fd
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/4EmstuO0Em8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
-
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
-
-> Playback on other websites has been disabled by the video owner. [Watch on YouTube](https://www.youtube.com/watch?v=VIDEO_ID)
