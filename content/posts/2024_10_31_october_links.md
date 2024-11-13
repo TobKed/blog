@@ -14,8 +14,6 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
 
-#### Productivity By Heart
-
 In April 2021, I wrote about the [Productivity Step By Step (Produktywność Krok Po Kroku)](2021_04_15_productivity.md) course by [Piotr Nabielec](https://www.linkedin.com/in/piotrnabielec/).
 This time, I completed the [Productivity By Heart](https://www.productivitybyheart.com/) course, and I must say, it brought back the creativity spark I felt I had lost along the way.
 The course provided a fresh perspective on productivity and has been a game-changer for me.
