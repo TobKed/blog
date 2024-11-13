@@ -26,8 +26,7 @@ I've added some new tools like
 
 - [fzf](https://github.com/junegunn/fzf), a command-line fuzzy finder
 - [ripgrep](https://github.com/BurntSushi/ripgrep), a recursive line-oriented search tool
-- [fd](https://github.com/sharkdp/fd):  An alternative to `find`
--
+- [fd](https://github.com/sharkdp/fd):  nn alternative to `find`
 
 These tools have been incredibly useful and have improved my efficiency within the terminal.
 

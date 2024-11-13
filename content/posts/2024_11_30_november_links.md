@@ -50,6 +50,10 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > Neovim config for the lazy
 
+### [inirudebwoy/google-photo-takeout-fix](https://github.com/inirudebwoy/google-photo-takeout-fix)
+
+> It takes your Google export and fixes date on each photo.
+
 ## Cloud
 
 ## Other stuff
