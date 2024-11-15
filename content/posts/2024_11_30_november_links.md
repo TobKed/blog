@@ -45,7 +45,15 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Python
 
+### [Jeff Triplett's Micro.blog: 🤷 UV does everything or enough that I'm not sure what else it needs to do](https://micro.webology.dev/2024/11/03/uv-does-everything.html)
+
+> UV feels like one of those old infomercials where it solves everything, which is where we have landed in the Python world.
+
 ## Django
+
+### [Efe Öge: Djangoday Copenhagen 2024 and Copenhagen](https://efe.me/2024/11/djangoday-copenhagen-2024-and-copenhagen)
+
+> I had been in Copenhagen for a long weekend for the [Djangoday Copenhagen 2024](https://2024.djangoday.dk/).
 
 ### [Cory Zue: Deploying (Multiple) Django Apps to a Single Server with Kamal 2](https://www.coryzue.com/writing/kamal-django/)
 
@@ -79,6 +87,14 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > Kamal offers zero-downtime deploys, rolling restarts, asset bridging, remote builds, accessory service management, and everything else you need to deploy and manage your web app in production with Docker.
 > Originally built for Rails apps, Kamal will work with any type of web app that can be containerized.
+
+### [Posting](https://github.com/darrenburns/posting)
+
+> A powerful HTTP client that lives in your terminal.
+>
+> Posting is an HTTP client, not unlike Postman and Insomnia.
+> As a TUI application, it can be used over SSH and enables efficient keyboard-centric workflows.
+> Your requests are stored locally in simple YAML files, so they're easy to read and version control.
 
 ## Cloud
 
@@ -120,6 +136,12 @@ Some of them are strictly related to the things I did or am currently doing.
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/HBZw2VHhZy0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [Python Bytes 409: We've moved to Hetzner](https://www.youtube.com/watch?v=vg6VLG0jKek)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/vg6VLG0jKek" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ### [](https://www.youtube.com/watch?v=VIDEO_ID)

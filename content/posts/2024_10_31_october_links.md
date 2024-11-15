@@ -20,6 +20,10 @@ The course provided a fresh perspective on productivity and has been a game-chan
 You can find my certification of completion [here](https://credsverse.com/credentials/f51a1f4f-dea2-41a0-a661-fd1c110488fe).
 I’ll be diving into more details about this course in a separate post after going through all the materials once again.
 
+<a target="\_blank" rel="noopener noreferrer" href="https://credsverse.com/credentials/f51a1f4f-dea2-41a0-a661-fd1c110488fe">
+    <img src="{static}/images/posts/2024/2024_10_productivity_by_heart.png" alt="Productivity By Heart Certification" style="display: block; margin-left: auto; margin-right: auto;">
+</a>
+
 On another note, I've been enhancing my workflow in the terminal.
 I've added some new tools like:
 
