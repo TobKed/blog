@@ -14,6 +14,10 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
 
+https://github.com/RamiAwar/dataline
+
+https://claude.ai
+
 ## Articles
 
 ### [High Growth Engineer: 5 Lessons I learned the hard way from 10+ years as a software engineer](https://read.highgrowthengineer.com/p/5-lessons-i-learned-the-hard-way-from-10-years)
@@ -31,6 +35,25 @@ Some of them are strictly related to the things I did or am currently doing.
 ### [A Life Engineered: Mid To Staff Engineer In Two Years By Job Hopping](https://alifeengineered.substack.com/p/mid-level-to-staff-engineer-in-two?publication_id=2598310&post_id=150852930&isFreemail=true&r=4e700z&triedRedirect=true)
 
 > How an SDE-II at Amazon got two promotions by hopping jobs in just two years.
+
+### [rmoff’s random ramblings: Blog Writing for Developers](https://rmoff.net/2023/07/19/blog-writing-for-developers/)
+
+> To summarise this whole article, bear in mind that these two statements are not mutually exclusive:
+>
+> ```
+> Write for yourself. Work out what you would like to read, and write it.
+> Think of the reader and what value you’re providing to them in your writing.
+> ```
+>
+> That’s because as a developer writing for developers, you are the reader.
+
+### [Ryan Cheley: DjangoCon US 2024 Talk](https://www.ryancheley.com/2024/10/17/djangocon-us-2024-talk/)
+
+> This year, as last year, my general prep technique was to:
+>
+> 1. Give the presentation AND record it
+> 2. Watch the recording and make notes about what I needed to change
+> 3. Make the changes
 
 ## Productivity
 
@@ -128,6 +151,10 @@ Some of them are strictly related to the things I did or am currently doing.
 > There are plenty of reasons for this focus, but before we dive into those, our main call to action is for everyone to check out the Call for Papers!
 > Feel free to apply with your open-source AI projects. Everyone interested in AI and AI engineering is encouraged to join us at FOSDEM.
 
+### [Test & Code 223: Writing Stuff Down is a Super Power](https://github.com/RamiAwar/dataline)
+
+> Taking notes well can help to listen better, remember things, show respect, be more accountable, free up mind space to solve problems.
+
 ## Videos
 
 ### [PyData Amsterdam 2024 - YoyTube Playlist](https://www.youtube.com/playlist?list=PLGVZCDnMOq0reU2lzNZCn9obkyRVaSnpF)
@@ -142,6 +169,12 @@ Some of them are strictly related to the things I did or am currently doing.
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/vg6VLG0jKek" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [DEF CON 32 - Counter Deception: Defending Yourself in a World Full of Lies - Tom Cross, Greg Conti](https://www.youtube.com/watch?v=gHqDEMrqTjE)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/gHqDEMrqTjE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ### [](https://www.youtube.com/watch?v=VIDEO_ID)
