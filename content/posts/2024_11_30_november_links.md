@@ -82,6 +82,11 @@ https://claude.ai
 
 > If you haven’t heard of it, Kamal is a tool built by the Rails community to deploy applications to any server. They recently released Kamal 2, which makes it easy to deploy multiple apps to the same server, which really helps cut down on costs.
 
+### [The Practical Guide to Scaling Django](https://slimsaas.com/blog/django-scaling-performance)
+
+> Most Django scaling guides focus on theoretical maximums.
+> But real scaling isn’t about handling hypothetical millions of users - it’s about systematically eliminating bottlenecks as you grow. Here’s how to do it right, based on patterns that work in production.
+
 ## Python libraries
 
 ## Django libraries
@@ -175,6 +180,18 @@ https://claude.ai
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/gHqDEMrqTjE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [DEF CON 32 - Social Engineering Like you’re Picard - Jayson E Street](https://www.youtube.com/watch?v=kc25CttuDmw)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/kc25CttuDmw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [DEF CON 32 - Inside the FBI’s Secret Encrypted Phone Company ‘Anom’ - Joseph Cox](https://www.youtube.com/watch?v=uFyk5UOyNqI)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/uFyk5UOyNqI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ### [](https://www.youtube.com/watch?v=VIDEO_ID)
