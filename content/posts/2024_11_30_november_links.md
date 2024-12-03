@@ -4,7 +4,7 @@ Category: summary
 Tags: python, blog, podcast, series, aggregate, summary, month, 2024
 Slug: 2024-november-links
 Summary: Interesting stuff from the month
-Header_Cover: /images/posts/2024/2024_xx_xx.jpg
+Header_Cover: /images/posts/2024/2024_11_xx.jpg
 Status: draft
 
 # November 2024
@@ -19,6 +19,10 @@ https://github.com/RamiAwar/dataline
 https://claude.ai
 
 ## Articles
+
+### [Joan Westenberg: I Miss the Internet](https://www.joanwestenberg.com/i-miss-the-internet/)
+
+> The real internet. The one we used to have. Before it all got so much less – and somehow so much more – complicated.
 
 ### [High Growth Engineer: 5 Lessons I learned the hard way from 10+ years as a software engineer](https://read.highgrowthengineer.com/p/5-lessons-i-learned-the-hard-way-from-10-years)
 
@@ -64,6 +68,10 @@ https://claude.ai
 
 ## AI
 
+### [shell_gpt](https://github.com/TheR1D/shell_gpt)
+
+> A command-line productivity tool powered by AI large language models like GPT-4, will help you accomplish your tasks faster and more efficiently.
+
 ## Security
 
 ## Python
@@ -86,12 +94,6 @@ https://claude.ai
 
 > Most Django scaling guides focus on theoretical maximums.
 > But real scaling isn’t about handling hypothetical millions of users - it’s about systematically eliminating bottlenecks as you grow. Here’s how to do it right, based on patterns that work in production.
-
-## Python libraries
-
-## Django libraries
-
-## Go
 
 ## Tools
 
@@ -193,13 +195,3 @@ https://claude.ai
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/uFyk5UOyNqI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
-
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
-
-> Playback on other websites has been disabled by the video owner. [Watch on YouTube](https://www.youtube.com/watch?v=VIDEO_ID)
