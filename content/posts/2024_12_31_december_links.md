@@ -16,7 +16,21 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Articles
 
+### [The Engineering Manager: Fast-forwarding decision making](https://theengineeringmanager.substack.com/p/fast-forwarding-decision-making)
+
+> Let's go faster.
+
+### [Dmitry Mazin: Demystifying git submodules](https://www.cyberdemon.org/2024/03/20/submodules.html)
+
+> In this article, I’ll explain exactly what I needed to know in order to work with submodules without inflicting self-damage.
+
 ## Productivity
+
+### [A guide to context switching](https://blog.logrocket.com/product-management/context-switching/)
+
+> Context switching is when you shift your focus from one task to another. 
+> This requires you to disengage from one activity and re-engage with another. 
+> If the shifting happens too frequently, it could lead to mental fatigue, lack of productivity, and errors.
 
 ## AI
 
@@ -42,6 +56,10 @@ Some of them are strictly related to the things I did or am currently doing.
 ## Cloud
 
 ## Other stuff
+
+### [1 dataset 100 visualisations](https://100.datavizproject.com/)
+
+> We wanted to show the diversity and complexity of data visualization and how we can tell different stories using limited visual properties and assets.
 
 ## Podcasts
 
