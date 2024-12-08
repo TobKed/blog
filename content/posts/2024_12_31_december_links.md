@@ -28,8 +28,8 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ### [A guide to context switching](https://blog.logrocket.com/product-management/context-switching/)
 
-> Context switching is when you shift your focus from one task to another. 
-> This requires you to disengage from one activity and re-engage with another. 
+> Context switching is when you shift your focus from one task to another.
+> This requires you to disengage from one activity and re-engage with another.
 > If the shifting happens too frequently, it could lead to mental fatigue, lack of productivity, and errors.
 
 ## AI
@@ -49,9 +49,17 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Django libraries
 
+### [Creating AI-based Summaries in a Django Websites](https://www.djangotricks.com/blog/2024/11/creating-ai-based-summaries-in-django/)
+
+> In this post, I'll share how I used Simplemind and Gemini to automate this process in my Django-based project.
+
 ## Go
 
 ## Tools
+
+### [Pet](https://github.com/knqyf263/pet)
+
+> Simple command-line snippet manager
 
 ## Cloud
 
