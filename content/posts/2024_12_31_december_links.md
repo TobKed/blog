@@ -34,6 +34,10 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## AI
 
+### [aichat](https://github.com/sigoden/aichat)
+
+> AIChat is an all-in-one LLM CLI tool featuring Shell Assistant, CMD & REPL Mode, RAG, AI Tools & Agents, and More.
+
 ## Security
 
 ## Python
@@ -61,7 +65,19 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > Simple command-line snippet manager
 
+### [NvChad](https://github.com/NvChad/NvChad)
+
+> Blazing fast Neovim config providing solid defaults and a beautiful UI, enhancing your neovim experience.
+
 ## Cloud
+
+### [Optimize your Cloud Run functions](https://medium.com/google-cloud/optimize-your-cloud-run-functions-7bf0b6c188f4)
+
+> In my experience, tuning Serverless services always requires actual testing and analysis of results. It’s a bit of trial and error and Cloud Run functions is no different.
+
+### [Gemini in BigQuery: Unlocking Multimodal Search with Vector Embeddings](https://medium.com/google-cloud/gemini-in-bigquery-unlocking-multimodal-search-with-vector-embeddings-part-2-69e26c36fee5)
+
+> This blog post will guide you through using vector search in BigQuery to perform semantic searches using both text and image(or other multimodal) inputs.
 
 ## Other stuff
 

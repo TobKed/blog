@@ -14,9 +14,17 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
 
-https://github.com/RamiAwar/dataline
+This month, I worked on analytics for my personal project, dealing with complex SQL queries.
+During the exploration phase, I discovered a helpful tool called [dataline](https://github.com/RamiAwar/dataline), created by my colleague [Rami Awar](https://github.com/RamiAwa).
+It's a natural language interface for data exploration that made understanding my dataset much easier.
+It was a great help in understanding what I could achieve with my data.
 
-https://claude.ai
+I also spent time evaluating different AI assistants.
+After testing several options, I found [Claude AI](https://claude.ai) to provide the most useful responses for my needs.
+
+I've been watching DEFCON presentations in my free time.
+These security talks are fascinating and offer great insights into current cybersecurity trends and challenges.
+You can find the presentations I watched in the video section at the bottom.
 
 ## Articles
 
@@ -27,10 +35,6 @@ https://claude.ai
 ### [High Growth Engineer: 5 Lessons I learned the hard way from 10+ years as a software engineer](https://read.highgrowthengineer.com/p/5-lessons-i-learned-the-hard-way-from-10-years)
 
 > Guest post by Staff Engineer, Gourav Khanijoe
-
-### [Strategize Your Career: 🛡️ My strategy against distractions as a software engineer working in an open-floor office](https://strategizeyourcareer.com/p/my-strategy-against-distractions)
-
-> With distractions becoming more prevalent, engineers need effective strategies to minimize interruptions and enhance their focus. This article offers actionable insights to fight them.
 
 ### [Mind Your Image Metadata](https://stefaniemolin.com/articles/devx/pre-commit/exif-stripper/)
 
@@ -44,10 +48,8 @@ https://claude.ai
 
 > To summarise this whole article, bear in mind that these two statements are not mutually exclusive:
 >
-> ```
-> Write for yourself. Work out what you would like to read, and write it.
-> Think of the reader and what value you’re providing to them in your writing.
-> ```
+> > Write for yourself. Work out what you would like to read, and write it.
+> > Think of the reader and what value you’re providing to them in your writing.
 >
 > That’s because as a developer writing for developers, you are the reader.
 
@@ -66,13 +68,15 @@ https://claude.ai
 > The president’s doctor isn’t busy with other patients. They sit, and wait, and maybe read a paper on The Correlation Between Presidential Tenure And Grey Hair.
 > They do nothing but be ready for when the president needs them.
 
+### [Strategize Your Career: 🛡️ My strategy against distractions as a software engineer working in an open-floor office](https://strategizeyourcareer.com/p/my-strategy-against-distractions)
+
+> With distractions becoming more prevalent, engineers need effective strategies to minimize interruptions and enhance their focus. This article offers actionable insights to fight them.
+
 ## AI
 
 ### [shell_gpt](https://github.com/TheR1D/shell_gpt)
 
 > A command-line productivity tool powered by AI large language models like GPT-4, will help you accomplish your tasks faster and more efficiently.
-
-## Security
 
 ## Python
 
