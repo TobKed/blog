@@ -62,6 +62,10 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Django
 
+### [Single-file Django Apps with nanodjango](https://lincolnloop.com/insights/single-file-apps-with-nanodjango/)
+
+> Nanodjango is a project to bring that simplicity to Django, without losing any of its power
+
 ## Python libraries
 
 ### [mypy-baseline](https://github.com/orsinium-labs/mypy-baseline)
