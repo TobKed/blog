@@ -24,5 +24,8 @@ https://www.youtube.com/watch?v=gbQFSMayJxk
 [Huberman Lab - Sleep Toolkit: Tools for Optimizing Sleep & Sleep-Wake Timing](https://hubermanlab.com/sleep-toolkit-tools-for-optimizing-sleep-and-sleep-wake-timing/)
 https://www.youtube.com/watch?v=h2aWYjSA1Jc
 
-[Huberman Lab  Essentials: Master Your Sleep & Be More Alert When Awake ](https://www.hubermanlab.com/episode/essentials-master-your-sleep-be-more-alert-when-awake)
+[Huberman Lab Essentials: Master Your Sleep & Be More Alert When Awake ](https://www.hubermanlab.com/episode/essentials-master-your-sleep-be-more-alert-when-awake)
 https://www.youtube.com/watch?v=lIo9FcrljDk
+
+[Huberman Lab Essentials: Understand and Use Dreams to Learn and Forget](https://www.hubermanlab.com/episode/essentials-understanding-and-using-dreams-to-learn-and-to-forget)
+https://www.youtube.com/watch?v=hF32FvBH4gI

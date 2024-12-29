@@ -18,6 +18,14 @@ neovim
 
 focus
 
+HashiCorp Certified: Terraform Associate (003)
+https://www.credly.com/badges/dd230996-5592-4397-9dab-02a5144111b9/public_url
+
+Focus:
+[The Bike Shed: 451: Making Time for and Managing Focus](https://bikeshed.thoughtbot.com/451)
+[How to Stay Focused - 3 Proven Techniques](https://www.youtube.com/watch?v=ok33EXy_mN8)
+[Huberman Lab Essentials - How to Focus to Change Your Brain](https://www.youtube.com/watch?v=4AwyVTHEU3s)
+
 ## Articles
 
 ### [The Engineering Manager: Fast-forwarding decision making](https://theengineeringmanager.substack.com/p/fast-forwarding-decision-making)
@@ -137,6 +145,10 @@ focus
 
 ## Podcasts
 
+[The Bike Shed: 451: Making Time for and Managing Focus](https://bikeshed.thoughtbot.com/451)
+
+> Joël has some more timezone facts to share, while Stephanie reveals her worst enemy when it comes to productivity.
+
 ## Videos
 
 ### [GoGaRuCo 2010 - The Shell Hater's Handbook by: Ryan Tomayko](https://www.youtube.com/watch?v=olH-9b3VJfs)
@@ -197,6 +209,12 @@ focus
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/KYDG3AHgYEs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [TheVimeagen -  Teaching Neovim From Scratch To A Noob](https://www.youtube.com/watch?v=ybCiHPWKNA)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/ybCiHPWKNA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ### [](https://www.youtube.com/watch?v=VIDEO_ID)
