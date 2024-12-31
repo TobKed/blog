@@ -19,6 +19,7 @@ Status: hidden
 - [SuperFastPython: Parallel Nested For-Loops in Python](https://superfastpython.com/parallel-nested-for-loops-in-python/#Single_Process_Pool_and_Shared_Queue_unbounded)
 - [SuperFastPython: Python Asyncio: 5 Common Asyncio Errors in Python (and how to avoid them)](https://superfastpython.com/asyncio-common-errors/)
 - [SuperFastPython: Python Asyncio: The Complete Guide](https://superfastpython.com/python-asyncio/)
+- [SuperFastPython: Asyncio Event Loop in Separate Thread](https://superfastpython.com/asyncio-event-loop-separate-thread/)
 - [The easy way to concurrency and parallelism with Python stdlib ](https://www.bitecode.dev/p/the-easy-way-to-concurrency-and-parallelism)
 
 ## Books

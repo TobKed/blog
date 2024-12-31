@@ -143,6 +143,12 @@ Focus:
 
 > We wanted to show the diversity and complexity of data visualization and how we can tell different stories using limited visual properties and assets.
 
+### [Navidrome Music Server](https://github.com/navidrome/navidrome)
+
+> Navidrome is an open source web-based music collection server and streamer.
+> It gives you freedom to listen to your music collection from any browser or mobile device.
+> It's like your personal Spotify!
+
 ## Podcasts
 
 [The Bike Shed: 451: Making Time for and Managing Focus](https://bikeshed.thoughtbot.com/451)
