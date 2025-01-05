@@ -55,8 +55,6 @@ Focus:
 
 > AIChat is an all-in-one LLM CLI tool featuring Shell Assistant, CMD & REPL Mode, RAG, AI Tools & Agents, and More.
 
-## Security
-
 ## Python
 
 ### [Python's pathlib module](https://www.pythonmorsels.com/pathlib-module/)
@@ -86,23 +84,19 @@ Focus:
 
 > Nanodjango is a project to bring that simplicity to Django, without losing any of its power
 
+### [Creating AI-based Summaries in a Django Websites](https://www.djangotricks.com/blog/2024/11/creating-ai-based-summaries-in-django/)
+
+> In this post, I'll share how I used Simplemind and Gemini to automate this process in my Django-based project.
+
 ## Python libraries
 
 ### [mypy-baseline](https://github.com/orsinium-labs/mypy-baseline)
 
 > Integrate mypy in seconds with existing codebase. A friendly CLI tool to make mypy report only new type violations and ignore existing ones.
 
-## Django libraries
-
-### [Creating AI-based Summaries in a Django Websites](https://www.djangotricks.com/blog/2024/11/creating-ai-based-summaries-in-django/)
-
-> In this post, I'll share how I used Simplemind and Gemini to automate this process in my Django-based project.
-
 ### [blacklanternsecurity/bbot](https://github.com/blacklanternsecurity/bbot)
 
 > The recursive internet scanner for hackers. 🧡
-
-## Go
 
 ## Tools
 
@@ -225,18 +219,8 @@ Focus:
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/KYDG3AHgYEs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-### [TheVimeagen -  Teaching Neovim From Scratch To A Noob](https://www.youtube.com/watch?v=ybCiHPWKNA)
+### [TheVimeagen -  Teaching Neovim From Scratch To A Noob](https://www.youtube.com/watch?v=-ybCiHPWKNA)
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/ybCiHPWKNA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/-ybCiHPWKNA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
-
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
-
-> Playback on other websites has been disabled by the video owner. [Watch on YouTube](https://www.youtube.com/watch?v=VIDEO_ID)
