@@ -72,6 +72,14 @@ Focus:
 
 > I finished `PyMyFlySpy` the day before we left. The code is available on [GitHub](https://github.com/robert/PyMyFlySpy) and it’s easy to setup and run.
 
+### [https://superfastpython.com/asyncio-event-loop-separate-thread/](https://www.stuartellis.name/articles/python-modern-practices/)
+
+> Python has a long history, and it has evolved over time. This article describes some agreed modern best practices.
+
+### [SuperFastPython: Asyncio Event Loop in Separate Thread](https://superfastpython.com/asyncio-event-loop-separate-thread/)
+
+> We can run an asyncio event loop in a new thread by starting a new thread and configuring it to start or run an event loop.
+
 ## Django
 
 ### [Single-file Django Apps with nanodjango](https://lincolnloop.com/insights/single-file-apps-with-nanodjango/)
