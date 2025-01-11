@@ -32,13 +32,29 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > Want a mechanical keyboard but don't know where to start? We've got you covered.
 
+### [How to create your own VPN server using OpenVPN and AWS?](https://scientyficworld.org/how-to-create-vpn-server-using-openvpn-and-aws/)
+
+> Building your own VPN may sound technical, but with the right guidance, it becomes straightforward and highly rewarding.
+
+### [225. Systems Ideas that Sound Good But Almost Never Work—"Let's just…"](https://hardcoresoftware.learningbyshipping.com/p/225-systems-ideas-that-sound-good)
+
+> Some engineering patterns that sound good but almost never work as intended.
+
 ## Productivity
+
+### [Cassidy Williams: The Productivity apps I use in 2024](https://cassidoo.co/post/producivity-apps-2024/)
+
+> I often get asked what my favorite tools are and how I use them to get my work done, and I’m writing this both to answer that question, and also for me to just paste a link to this post next time I’m asked. Efficiency!
 
 ## AI
 
 ### [ChatGPT search vs. Google: A deep dive analysis of 62 queries](https://searchengineland.com/chatgpt-search-vs-google-analysis-449676)
 
 > A detailed analysis of ChatGPT search and Google's performance across 62 queries, with scoring metrics and practical examples.
+
+### [How to Create a Claude Chat with Dynamic Knowledge (No API Required!)](https://thoughts.jock.pl/p/dynamic-claude-chat-automation-guide)
+
+> Let's Cook Up Some Basic AI Automation Magic.
 
 ## Security
 
@@ -58,6 +74,10 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > Learn how to display Django messages as user friendly toasts with Htmx
 
+### [Complex Django filters with Subquery](https://www.better-simple.com/django/2025/01/01/complex-django-filters-with-subquery/)
+
+> Django’s Subquery expression is one of the most powerful tools in the ORM. The documentation does a good job of explaining it at a high level, but unless you have a decent understanding of SQL, you may not fully understand it’s power.
+
 ## Python libraries
 
 ## Django libraries
@@ -65,6 +85,10 @@ Some of them are strictly related to the things I did or am currently doing.
 ## Go
 
 ## Tools
+
+### [👻 Ghostty](https://github.com/ghostty-org/ghostty)
+
+> 👻 Ghostty is a fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration.
 
 ## Cloud
 
@@ -74,6 +98,10 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Other stuff
 
+### [Template0](https://template0.com/blog/in-the-ai-era-templates-are-more-important)
+
+> All the free web templates you need for product, business, landing pages, blogs, portfolios, ecommerce, and admin dashboards.
+
 ## Podcasts
 
 ## Videos
@@ -82,6 +110,12 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > The 38th Chaos Communication Congress (38C3) takes place in Hamburg, 27.-30.12.2024, and is the 2024 edition of the annual four-day conference on technology, society and utopia organised by the Chaos Computer Club (CCC) and volunteers.
 > Congress offers lectures and workshops and various events on a multitude of topics including (but not limited to) information technology and generally a critical-creative attitude towards technology and the discussion about the effects of technological advances on society.
+
+### [Jakub Mrugalski:  Asystent AI z bazą wiedzy w 3 minuty — Claude 3.5 Sonnet](https://www.youtube.com/watch?v=1zBym4evzus)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/1zBym4evzus" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ### [](https://www.youtube.com/watch?v=VIDEO_ID)
 
