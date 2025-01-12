@@ -5,7 +5,7 @@ Tags: python, blog, podcast, series, aggregate, summary, month, 2024
 Slug: 2024-december-links
 Summary: Interesting stuff from the month
 Header_Cover: /images/posts/2024/2024_12_xx.jpg
-Status: draft
+Status: published
 
 # December 2024
 
@@ -22,7 +22,7 @@ To make sure I'm still up-to-date, I signed up and successfully passed the [Hash
     <img src="{static}/images/posts/2024/2024_11_terraform_associate.png" alt="HashiCorp Certification: Terraform Associate (003)" style="display: block; margin-left: auto; margin-right: auto;">
 </a>
 
-I also ventured into the `neovim` territory, inspired by my workmate [Thiago Bellini](https://github.com/bellini666) and his fantastic setup.
+I also ventured into the [`neovim`](https://neovim.io/) (hyperextensible Vim-based text editor) territory, inspired by my workmate [Thiago Bellini](https://github.com/bellini666) and his fantastic setup.
 I took a look at his [dotfiles](https://github.com/bellini666/dotfiles) and decided to learn the basics of `neovim` first, before diving into [LazyVim](https://www.lazyvim.org/) or [NvChad](https://nvchad.com/).
 This led me to fork [kickstart.nvim](https://github.com/TobKed/kickstart.nvim/tree/master), a launch point for personal nvim configuration.
 I've been slowly exploring the world of neovim in my free time.
