@@ -40,6 +40,15 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > Some engineering patterns that sound good but almost never work as intended.
 
+### [Rules for Writing Software Tutorials](https://refactoringenglish.com/chapters/rules-for-software-tutorials/)
+
+> You can stand out in a sea of mediocre guides by following a few simple rules.
+
+### [Allegro Tech Blog: Circuit Breaker not only for HTTP calls! (based on resilience4j)](https://blog.allegro.tech/2024/12/circuitbreaker-not-only-for-http-calls.html)
+
+> ... we show how to use Circuit Breaker from Resilience4j for handling cases other than HTTP calls.
+> With that ~70 lines of code, we were able to significantly improve our response time to failures, redirect users to functioning payment providers, meet business requirements regarding reliability, and take the manual switching off of payment methods off from developers’ shoulders.
+
 ## Productivity
 
 ### [Cassidy Williams: The Productivity apps I use in 2024](https://cassidoo.co/post/producivity-apps-2024/)
@@ -90,11 +99,19 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > 👻 Ghostty is a fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration.
 
+### [k3d](https://github.com/k3d-io/k3d)
+
+> Little helper to run CNCF's k3s in Docker.
+
 ## Cloud
 
 ### [Pub/Sub to BigQuery with BigQuery Subscription](https://medium.com/google-cloud/pub-sub-to-bigquery-with-bigquery-subscription-785e914bd63d)
 
 > Real-time data ingestion and analysis are becoming increasingly critical for modern businesses, whether in retail, finance, or logistics.
+
+### [Create a CI/CD Pipeline using GitHub Actions and Google Cloud](https://medium.com/google-cloud/create-a-ci-cd-pipeline-using-github-actions-and-google-cloud-9be20ff50e97)
+
+> In this guide, I’m going to show you how to create a CI/CD pipeline that automates the test and build of our application code, and then deploys to Google Cloud services.
 
 ## Other stuff
 

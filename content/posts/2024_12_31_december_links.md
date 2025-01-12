@@ -14,17 +14,28 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
 
-neovim
+This month, I decided to revisit and validate my knowledge on Terraform, a tool I've been working with for around 5 years.
+It's always been a great experience, so much so that I wrote an introductory article about it four years ago: [Terraform Tutorial: Introduction to Infrastructure as Code](https://tobiaszkedzierski.medium.com/terraform-tutorial-introduction-to-infrastructure-as-code-dccec643bfdb).
+To make sure I'm still up-to-date, I signed up and successfully passed the [HashiCorp Certification: Terraform Associate (003)](https://www.credly.com/badges/dd230996-5592-4397-9dab-02a5144111b9/public_url).
 
-focus
+<a target="\_blank" rel="noopener noreferrer" href="https://www.credly.com/badges/dd230996-5592-4397-9dab-02a5144111b9/public_url">
+    <img src="{static}/images/posts/2024/2024_11_terraform_associate.png" alt="HashiCorp Certification: Terraform Associate (003)" style="display: block; margin-left: auto; margin-right: auto;">
+</a>
 
-HashiCorp Certified: Terraform Associate (003)
-https://www.credly.com/badges/dd230996-5592-4397-9dab-02a5144111b9/public_url
+I also ventured into the `neovim` territory, inspired by my workmate [Thiago Bellini](https://github.com/bellini666) and his fantastic setup.
+I took a look at his [dotfiles](https://github.com/bellini666/dotfiles) and decided to learn the basics of `neovim` first, before diving into [LazyVim](https://www.lazyvim.org/) or [NvChad](https://nvchad.com/).
+This led me to fork [kickstart.nvim](https://github.com/TobKed/kickstart.nvim/tree/master), a launch point for personal nvim configuration.
+I've been slowly exploring the world of neovim in my free time.
+It hasn't replaced my IDE yet, but who knows what the future holds.
 
-Focus:
-[The Bike Shed: 451: Making Time for and Managing Focus](https://bikeshed.thoughtbot.com/451)
-[How to Stay Focused - 3 Proven Techniques](https://www.youtube.com/watch?v=ok33EXy_mN8)
-[Huberman Lab Essentials - How to Focus to Change Your Brain](https://www.youtube.com/watch?v=4AwyVTHEU3s)
+And speaking of time, I've been thinking about how the recent influx of distractions has been impacting my focus.
+To help manage and improve my focus, I found these resources to be quite helpful:
+
+- [The Bike Shed: 451: Making Time for and Managing Focus](https://bikeshed.thoughtbot.com/451)
+- [How to Stay Focused - 3 Proven Techniques](https://www.youtube.com/watch?v=ok33EXy_mN8)
+- [Huberman Lab Essentials - How to Focus to Change Your Brain](https://www.youtube.com/watch?v=4AwyVTHEU3s)
+
+So, this month has been about **Terraform**, **neovim**, and **focus**. Onward to the next month's adventures!
 
 ## Articles
 
@@ -70,7 +81,7 @@ Focus:
 
 > I finished `PyMyFlySpy` the day before we left. The code is available on [GitHub](https://github.com/robert/PyMyFlySpy) and it’s easy to setup and run.
 
-### [https://superfastpython.com/asyncio-event-loop-separate-thread/](https://www.stuartellis.name/articles/python-modern-practices/)
+### [Modern Good Practices for Python Development ](https://www.stuartellis.name/articles/python-modern-practices/)
 
 > Python has a long history, and it has evolved over time. This article describes some agreed modern best practices.
 
