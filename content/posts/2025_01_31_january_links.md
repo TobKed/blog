@@ -49,6 +49,29 @@ Some of them are strictly related to the things I did or am currently doing.
 > ... we show how to use Circuit Breaker from Resilience4j for handling cases other than HTTP calls.
 > With that ~70 lines of code, we were able to significantly improve our response time to failures, redirect users to functioning payment providers, meet business requirements regarding reliability, and take the manual switching off of payment methods off from developers’ shoulders.
 
+### [An Efficient Framework to Approach System Design Problems](https://medium.com/swlh/an-efficient-framework-to-approach-system-design-problems-cf058f614a84)
+
+> In my experience as either a software developer or a mentor for software developers, the buzz word “system design” has been popped up quite frequently.
+> Actually, no matter for real-life software development or software engineering interviews, “system design” is right in the center of the stage.
+
+### [I Feel Like a Hacker Using These Cool Linux Terminal Tools](https://itsfoss.com/hacker-like-linux-terminal-tools/)
+
+> Get ready to look like a hacker with me using these Linux terminal tools!
+
+### [Making Beautiful API Keys](https://docs.agentstation.ai/blog/beautiful-api-keys/)
+
+> tl;dr - Since developers are our customers, we wanted them to have beautiful API keys.
+> We couldn't find a suitable standard solution so we made our own package - [uuidkey](https://github.com/agentstation/uuidkey) - that you can use to encode & format UUIDs into human-readable keys.
+> If you use UUIDv7, you can also decode the keys to store them as sortable, indexable IDs in your database.
+
+### [Today I learned that bash has hashmaps](https://xeiaso.net/notes/2024/bash-hashmap/)
+
+> I was horrified to find out that bash has hashmaps, and decided to write this note to tell you how to use them.
+
+### \[Categories of leadership on technical teams\](Categories of leadership on technical teams)
+
+> One framework I’ve referenced repeatedly is to break down team leadership into a few different categories of responsibility.
+
 ## Productivity
 
 ### [Cassidy Williams: The Productivity apps I use in 2024](https://cassidoo.co/post/producivity-apps-2024/)
@@ -77,6 +100,12 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > Sometimes, tests need temporary files or directories. You can do this in Python’s unittest with the standard library tempfile module.
 
+### [heapq — Heap queue algorithm](https://docs.python.org/3/library/heapq.html)
+
+> This module provides an implementation of the heap queue algorithm, also known as the priority queue algorithm.
+>
+> Heaps are binary trees for which every parent node has a value less than or equal to any of its children. We refer to this condition as the heap invariant.
+
 ## Django
 
 ### [Show Django flash messages as toasts with Htmx](https://joshkaramuth.com/blog/django-messages-toast-htmx/)
@@ -86,6 +115,10 @@ Some of them are strictly related to the things I did or am currently doing.
 ### [Complex Django filters with Subquery](https://www.better-simple.com/django/2025/01/01/complex-django-filters-with-subquery/)
 
 > Django’s Subquery expression is one of the most powerful tools in the ORM. The documentation does a good job of explaining it at a high level, but unless you have a decent understanding of SQL, you may not fully understand it’s power.
+
+### [How to show a modal in Django + HTMX](https://joshkaramuth.com/blog/django-htmx-modal/)
+
+> Learn how to show a modal with minimal Javascript in Django + HTMX
 
 ## Python libraries
 
@@ -103,6 +136,14 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > Little helper to run CNCF's k3s in Docker.
 
+### [dsRAG](https://github.com/D-Star-AI/dsRAG/)
+
+> High-performance retrieval engine for unstructured data.
+
+### [dsRAG](https://github.com/D-Star-AI/dsRAG/)
+
+> High-performance retrieval engine for unstructured data.
+
 ## Cloud
 
 ### [Pub/Sub to BigQuery with BigQuery Subscription](https://medium.com/google-cloud/pub-sub-to-bigquery-with-bigquery-subscription-785e914bd63d)
@@ -113,15 +154,51 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > In this guide, I’m going to show you how to create a CI/CD pipeline that automates the test and build of our application code, and then deploys to Google Cloud services.
 
+### [Exposing GKE Apps Using GCP HTTP Load Balancer, Cloud Armor, Cloud CDN, and Istio — part 1](https://medium.com/@stefan-marc/exposing-gke-apps-using-gcp-http-load-balancer-cloud-armor-cloud-cdn-and-istio-part-1-ad3f0613901d#431%20-%2016114418)
+
+> But deploying on GKE is just the first step. The true challenge lies in ensuring your applications are accessible to users — securely, efficiently, and reliably. That’s where the magic happens!
+
+### [Cloud Build + Cloud Deploy](https://medium.com/@snilsumelis/cloud-build-cloud-deploy-5d8d8b0996d4#429%20-%2016002053)
+
+> Cloud Build and Cloud Deploy, in particular, are essential components for implementing a strong CI/CD (Continuous Integration/Continuous Delivery) pipeline.
+
 ## Other stuff
 
 ### [Template0](https://template0.com/blog/in-the-ai-era-templates-are-more-important)
 
 > All the free web templates you need for product, business, landing pages, blogs, portfolios, ecommerce, and admin dashboards.
 
+### [t3dotgg/stripe-recommendations](https://github.com/t3dotgg/stripe-recommendations)
+
+> How I Stay Sane Implementing Stripe
+
+### [Doodles-as-A-Service Repo](https://github.com/girliemac/a-picture-is-worth-a-1000-words)
+
+> I am trying to describe complex matters in simple doodles!
+
+### [Dan McKinley: Egoless Engineering](https://egoless.engineering/)
+
+> Digging the Ditch Towards Enlightenment
+
 ## Podcasts
 
 ## Videos
+
+### [MIT 6.824 Distributed Systems (Spring 2020)](https://www.youtube.com/playlist?list=PLrw6a1wE39_tb2fErI4-WkMbsvGQk9_UB)
+
+> 6.824 is a core 12-unit graduate subject with lectures, readings, programming labs, an optional project, a mid-term exam, and a final exam. It will present abstractions and implementation techniques for engineering distributed systems. Major topics include fault tolerance, replication, and consistency. Much of the class consists of studying and discussing case studies of distributed systems.
+
+### [MIT 6.006 Introduction to Algorithms, Spring 2020](https://www.youtube.com/playlist?list=PLUl4u3cNGP63EdVPNLG3ToM6LaEUuStEY)
+
+> This course is an introduction to mathematical modeling of computational problems, as well as common algorithms, algorithmic paradigms, and data structures used to solve these problems. It emphasizes the relationship between algorithms and programming and introduces basic performance measures and analysis techniques for these problems.
+
+### [David Amos: Graph Theory With Python](https://www.youtube.com/playlist?list=PLLIPpKeh9v3ZFEHvNd5xqUrCkqLgXnekL)
+
+> Join me as we explore the world of Graph Theory with a focus on graph algorithms and using Python as a tool for mathematical research!
+
+### [Liber Indigo: The Affordances of Magic](https://www.youtube.com/playlist?list=PLsfH1Ahi4SzE-QmrsrtyZubGmi66iP45V)
+
+> Liber Indigo leads us down a winding path through interface design, semantics, dreams, rainbows, materialism, magic, divination, and poetry, intersecting with the ideas of Aldous Huxley, Carl Jung, Albert Einstein, Max Planck, William James, Alan Turing, and others along the way.
 
 ### [38C3: Illegal Instructions](https://media.ccc.de/b/congress/2024)
 
@@ -132,6 +209,12 @@ Some of them are strictly related to the things I did or am currently doing.
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/1zBym4evzus" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [Continuous Delivery: Yes... Microservices REALLY ARE Technical Debt ](https://www.youtube.com/watch?v=LltDdEw1p9w)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/LltDdEw1p9w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ### [](https://www.youtube.com/watch?v=VIDEO_ID)
