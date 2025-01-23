@@ -11,6 +11,13 @@ Status: draft
 
 ## Highlights
 
+#### AI
+
+<audio controls style="width: 100%; margin: 1em 0;">
+    <source src="{static}/audio/2024_IT_Links_and_Reflections.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
 #### Presentations
 
 - gcp ml api

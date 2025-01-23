@@ -13,9 +13,10 @@ SITEURL = ""
 
 PATH = "content"
 STATIC_PATHS = [
-    "images",
+    "audio",
     "css",
     "extra/robots.txt",
+    "images",
 ]
 
 EXTRA_PATH_METADATA = {"extra/robots.txt": {"path": "./robots.txt"}}
