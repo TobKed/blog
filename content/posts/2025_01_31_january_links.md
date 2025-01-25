@@ -72,6 +72,10 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > One framework I’ve referenced repeatedly is to break down team leadership into a few different categories of responsibility.
 
+### [System Design Codex: Eventual Consistency is Tricky](https://newsletter.systemdesigncodex.com/p/eventual-consistency-is-tricky)
+
+> But there are great patterns to handle it...
+
 ## Productivity
 
 ### [Cassidy Williams: The Productivity apps I use in 2024](https://cassidoo.co/post/producivity-apps-2024/)
@@ -144,6 +148,14 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > High-performance retrieval engine for unstructured data.
 
+### [LNAV -- The Logfile Navigator](https://github.com/tstack/lnav)
+
+> A log file viewer for the terminal
+>
+> Merge, tail, search, filter, and query log files with ease.
+>
+> No server. No setup. Still featureful.
+
 ## Cloud
 
 ### [Pub/Sub to BigQuery with BigQuery Subscription](https://medium.com/google-cloud/pub-sub-to-bigquery-with-bigquery-subscription-785e914bd63d)
@@ -180,6 +192,14 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > Digging the Ditch Towards Enlightenment
 
+### [GitPodcast](https://www.gitpodcast.com/)
+
+> Convert any git repository into an engaging podcast.
+
+### [Professional Programming](https://github.com/charlax/professional-programming)
+
+> A collection of learning resources for curious software engineers
+
 ## Podcasts
 
 ## Videos
@@ -215,6 +235,12 @@ Some of them are strictly related to the things I did or am currently doing.
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/LltDdEw1p9w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [Docker Image BEST Practices - From 1.2GB to 10MB](https://www.youtube.com/watch?v=m67Mjbx6DMY)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/m67Mjbx6DMY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ### [](https://www.youtube.com/watch?v=VIDEO_ID)
