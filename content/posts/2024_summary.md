@@ -4,7 +4,7 @@ Category: summary
 Tags: summary, year, 2024
 Slug: 2024-summary
 Summary: Ups and downs of 2024
-Header_Cover: /images/posts/2024/2024_xx_xx.jpg
+Header_Cover: /images/posts/2024/2024_11_xx.jpg
 Status: draft
 
 # 2024
@@ -28,19 +28,17 @@ This year, I had the opportunity to give two presentations during internal tech 
 
 I earned two certifications this year.
 First, I became a certified [GitHub Actions](https://www.credly.com/badges/6b96a6c9-28cb-47dd-9dfa-13dd7a37d543) expert, a proud achievement after mastering the tool.
-Second, I validated my five-year experience with Terraform by passing the[HashiCorp Certification: Terraform Associate (003)](https://www.credly.com/badges/dd230996-5592-4397-9dab-02a5144111b9/public_url) exam.
-
-[GitHub Actions](https://www.credly.com/badges/6b96a6c9-28cb-47dd-9dfa-13dd7a37d543).
+Second, I validated my five-year experience with Terraform by passing th e[HashiCorp Certification: Terraform Associate (003)](https://www.credly.com/badges/dd230996-5592-4397-9dab-02a5144111b9/public_url) exam.
 
 <a target="\_blank" rel="noopener noreferrer" href="https://www.credly.com/badges/6b96a6c9-28cb-47dd-9dfa-13dd7a37d543">
     <img src="{static}/images/posts/2024/2024_09_github_actions.png" alt="GitHub Actions Certification" style="display: block; margin-left: auto; margin-right: auto;">
 </a>
-
-[HashiCorp Certification: Terraform Associate (003)](https://www.credly.com/badges/dd230996-5592-4397-9dab-02a5144111b9/public_url).
+[GitHub Actions](https://www.credly.com/badges/6b96a6c9-28cb-47dd-9dfa-13dd7a37d543).
 
 <a target="\_blank" rel="noopener noreferrer" href="https://www.credly.com/badges/dd230996-5592-4397-9dab-02a5144111b9/public_url">
     <img src="{static}/images/posts/2024/2024_11_terraform_associate.png" alt="HashiCorp Certification: Terraform Associate (003)" style="display: block; margin-left: auto; margin-right: auto;">
 </a>
+[HashiCorp Certification: Terraform Associate (003)](https://www.credly.com/badges/dd230996-5592-4397-9dab-02a5144111b9/public_url).
 
 ## Photoblog
 
@@ -62,33 +60,23 @@ This course offered a fresh perspective on productivity and has been a game-chan
 
 As always, I've kept up with my monthly summaries, where I compile a few sentences about each month, along with any interesting articles, tools, and other materials I've come across.
 Each month, I also add a personal touch with a photo I've taken.
+
+- [January]({filename}/posts/2024_01_30_january_links.md)
+- [February]({filename}/posts/2024_02_28_february_links.md)
+- [March]({filename}/posts/2024_03_31_march_links.md)
+- [April]({filename}/posts/2024_04_30_april_links.md)
+- [May]({filename}/posts/2024_05_31_may_links.md)
+- [June]({filename}/posts/2024_06_30_june_links.md)
+- [July]({filename}/posts/2024_07_31_july_links.md)
+- [August]({filename}/posts/2024_08_31_august_links.md)
+- [September]({filename}/posts/2024_09_30_september_links.md)
+- [October]({filename}/posts/2024_10_31_october_links.md)
+- [November]({filename}/posts/2024_11_30_november_links.md)
+- [December]({filename}/posts/2024_12_31_december_links.md)
+
 I also wrote an additional blog post:
 
 - [git: when ignorance is a bliss]({filename}/posts/2024_06_04_declutter_git_status.md).
-
-- [January]({filename}/posts/2024_01_30_january_links.md)
-
-- [February]({filename}/posts/2024_02_28_february_links.md)
-
-- [March]({filename}/posts/2024_03_31_march_links.md)
-
-- [April]({filename}/posts/2024_04_30_april_links.md)
-
-- [May]({filename}/posts/2024_05_31_may_links.md)
-
-- [June]({filename}/posts/2024_06_30_june_links.md)
-
-- [July]({filename}/posts/2024_07_31_july_links.md)
-
-- [August]({filename}/posts/2024_08_31_august_links.md)
-
-- [September]({filename}/posts/2024_09_30_september_links.md)
-
-- [October]({filename}/posts/2024_10_31_october_links.md)
-
-- [November]({filename}/posts/2024_11_30_november_links.md)
-
-- [December]({filename}/posts/2024_12_31_december_links.md)
 
 ## Summary
 
