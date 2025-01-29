@@ -76,6 +76,10 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > But there are great patterns to handle it...
 
+### [A free upgrade could let Philips Hue and other Zigbee bulbs act as motion sensors](https://9to5mac.com/2025/01/22/a-free-upgrade-could-let-philips-hue-and-other-zigbee-bulbs-act-as-motion-sensors/?_bhlid=4133e7362a34fc5a51f82a0d9de5ec4cc32dde33)
+
+> The secret is technology which can detect the interference in radio signals created by someone walking into a room. This interference can then be used as a trigger to control the light bulbs in the same way as existing motion sensors.
+
 ## Productivity
 
 ### [Cassidy Williams: The Productivity apps I use in 2024](https://cassidoo.co/post/producivity-apps-2024/)
@@ -199,6 +203,12 @@ Some of them are strictly related to the things I did or am currently doing.
 ### [Professional Programming](https://github.com/charlax/professional-programming)
 
 > A collection of learning resources for curious software engineers
+
+### [letsnotdothat.com](https://letsnotdothat.com/)
+
+> Master the Art of the Product Manager "No"
+>
+> Keep your meetings smooth and your priorities on track!
 
 ## Podcasts
 
