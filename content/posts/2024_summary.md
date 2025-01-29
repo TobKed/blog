@@ -33,12 +33,12 @@ Second, I validated my five-year experience with Terraform by passing the [Hashi
 <a target="\_blank" rel="noopener noreferrer" href="https://www.credly.com/badges/6b96a6c9-28cb-47dd-9dfa-13dd7a37d543">
     <img src="{static}/images/posts/2024/2024_09_github_actions.png" alt="GitHub Actions Certification" style="display: block; margin-left: auto; margin-right: auto;">
 </a>
-<div style="text-align: center">[GitHub Actions](https://www.credly.com/badges/6b96a6c9-28cb-47dd-9dfa-13dd7a37d543).</div>
+<div style="text-align: center"><a target="\_blank" rel="noopener noreferrer" href="https://www.credly.com/badges/6b96a6c9-28cb-47dd-9dfa-13dd7a37d543">GitHub Actions</a></div>
 
 <a target="\_blank" rel="noopener noreferrer" href="https://www.credly.com/badges/dd230996-5592-4397-9dab-02a5144111b9/public_url">
     <img src="{static}/images/posts/2024/2024_11_terraform_associate.png" alt="HashiCorp Certification: Terraform Associate (003)" style="display: block; margin-left: auto; margin-right: auto;">
 </a>
-<div style="text-align: center">[HashiCorp Certification: Terraform Associate (003)](https://www.credly.com/badges/dd230996-5592-4397-9dab-02a5144111b9/public_url).</div>
+<div style="text-align: center"><a target="\_blank" rel="noopener noreferrer" href="https://www.credly.com/badges/dd230996-5592-4397-9dab-02a5144111b9/public_url">HashiCorp Certification: Terraform Associate (003)</a></div>
 
 ## Photoblog
 
