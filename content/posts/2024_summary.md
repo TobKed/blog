@@ -28,17 +28,17 @@ This year, I had the opportunity to give two presentations during internal tech 
 
 I earned two certifications this year.
 First, I became a certified [GitHub Actions](https://www.credly.com/badges/6b96a6c9-28cb-47dd-9dfa-13dd7a37d543) expert, a proud achievement after mastering the tool.
-Second, I validated my five-year experience with Terraform by passing th e[HashiCorp Certification: Terraform Associate (003)](https://www.credly.com/badges/dd230996-5592-4397-9dab-02a5144111b9/public_url) exam.
+Second, I validated my five-year experience with Terraform by passing the [HashiCorp Certification: Terraform Associate (003)](https://www.credly.com/badges/dd230996-5592-4397-9dab-02a5144111b9/public_url) exam.
 
 <a target="\_blank" rel="noopener noreferrer" href="https://www.credly.com/badges/6b96a6c9-28cb-47dd-9dfa-13dd7a37d543">
     <img src="{static}/images/posts/2024/2024_09_github_actions.png" alt="GitHub Actions Certification" style="display: block; margin-left: auto; margin-right: auto;">
 </a>
-[GitHub Actions](https://www.credly.com/badges/6b96a6c9-28cb-47dd-9dfa-13dd7a37d543).
+<div style="text-align: center">[GitHub Actions](https://www.credly.com/badges/6b96a6c9-28cb-47dd-9dfa-13dd7a37d543).</div>
 
 <a target="\_blank" rel="noopener noreferrer" href="https://www.credly.com/badges/dd230996-5592-4397-9dab-02a5144111b9/public_url">
     <img src="{static}/images/posts/2024/2024_11_terraform_associate.png" alt="HashiCorp Certification: Terraform Associate (003)" style="display: block; margin-left: auto; margin-right: auto;">
 </a>
-[HashiCorp Certification: Terraform Associate (003)](https://www.credly.com/badges/dd230996-5592-4397-9dab-02a5144111b9/public_url).
+<div style="text-align: center">[HashiCorp Certification: Terraform Associate (003)](https://www.credly.com/badges/dd230996-5592-4397-9dab-02a5144111b9/public_url).</div>
 
 ## Photoblog
 
