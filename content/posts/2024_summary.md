@@ -13,16 +13,17 @@ This year was filled with learning and growth in several key areas.
 
 ## AI
 
-In 2024, I went deep into the AI realm, experimenting with tools like ChatGPT, Gemini, and Claude AI. Among these, Claude AI best met my needs.
-I used NotebookLM to create a year-end summary podcast, which you can find at the end of this post.
+In 2024, I went deep into the AI realm, experimenting with tools like [ChatGPT](https://chatgpt.com/), [Gemini](https://gemini.google.com/app), and [Claude](https://claude.ai/).
+Among these, Claude best met my needs.
+I used [NotebookLM](https://notebooklm.google/) to create a year-end summary podcast, which you can find at the end of this post.
 I also came across [fabric](https://github.com/danielmiessler/fabric), an open-source framework designed to augment human capabilities using AI.
 
 ## Presentations
 
 This year, I had the opportunity to give two presentations during internal tech meetups:
 
-- ML (Fast)API below 100ms (on GCP)
-- git fixup: Make rewriting history great again
+- [ML (Fast)API below 100ms (on GCP)](https://github.com/TobKed/fastapi_cloudrun_pubsub)
+- [git fixup: Make rewriting history great again](https://tobked.dev/git_rebase_interactive/rebase_interactive/)
 
 ## Certificates
 
@@ -42,7 +43,7 @@ Second, I validated my five-year experience with Terraform by passing the [Hashi
 
 ## Photoblog
 
-After these accomplishments, I decided to create a personal project: a photoblog.
+In free time I decided to create a personal project: a photoblog.
 I used [Hugo](https://gohugo.io/) and GitHub Actions to create the blog, keeping the source code in a private repository to maintain the privacy of the original-size photos and their metadata.
 My photoblog is now available for viewing at [photos.tobked.dev](https://photos.tobked.dev).
 More about it in [September Summary]({filename}/posts/2024_09_30_september_links.md)
