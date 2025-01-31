@@ -68,7 +68,7 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > I was horrified to find out that bash has hashmaps, and decided to write this note to tell you how to use them.
 
-### \[Categories of leadership on technical teams\](Categories of leadership on technical teams)
+### [Categories of leadership on technical teams](https://www.benkuhn.net/leadcats/)
 
 > One framework I’ve referenced repeatedly is to break down team leadership into a few different categories of responsibility.
 
@@ -80,11 +80,23 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > The secret is technology which can detect the interference in radio signals created by someone walking into a room. This interference can then be used as a trigger to control the light bulbs in the same way as existing motion sensors.
 
+### [architecture notes:  Database Sharding Explained](https://architecturenotes.co/p/database-sharding-explained)
+
+> Many people don't understand database sharding, which could solve their difficulties. This article explains database sharding, its benefits, including ho
+
+### [blinry: Building a tiny Linux from scratch](https://blinry.org/tiny-linux/)
+
+> Last week, I built a tiny Linux system from scratch, and booted it on my laptop!
+
 ## Productivity
 
 ### [Cassidy Williams: The Productivity apps I use in 2024](https://cassidoo.co/post/producivity-apps-2024/)
 
 > I often get asked what my favorite tools are and how I use them to get my work done, and I’m writing this both to answer that question, and also for me to just paste a link to this post next time I’m asked. Efficiency!
+
+### [# How to improve your WFH lighting to reduce eye strain](https://rustle.ca/posts/articles/work-from-home-lighting)
+
+> _Having a working environment that’s as easy on my eyes as possible is of critical importance_
 
 ## AI
 
@@ -128,6 +140,10 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > Learn how to show a modal with minimal Javascript in Django + HTMX
 
+### [# Database Indexing in Django](https://testdriven.io/blog/django-db-indexing/)
+
+> This article explores the basics of database indexing, its advantages and disadvantages, and how to apply it in a Django application.
+
 ## Python libraries
 
 ## Django libraries
@@ -159,6 +175,10 @@ Some of them are strictly related to the things I did or am currently doing.
 > Merge, tail, search, filter, and query log files with ease.
 >
 > No server. No setup. Still featureful.
+
+### [Portainer Templates](https://portainer-templates.as93.net/)
+
+> The largest single collection, of ready-to-go Portainer templates
 
 ## Cloud
 
@@ -210,7 +230,15 @@ Some of them are strictly related to the things I did or am currently doing.
 >
 > Keep your meetings smooth and your priorities on track!
 
+### [devnoname120/My macOS setup.md](https://gist.github.com/devnoname120/4767a0aa18879217170fd0c68809fc24)
+
+> Quality of life improvements
+
 ## Podcasts
+
+### [The Real Python Podcast: Episode 236: Simon Willison: Using LLMs for Python Development](https://realpython.com/podcasts/rpp/236/)
+
+> Simon has been researching LLMs over the past two and a half years and documenting the results on his blog. He shares which models work best for writing Python versus JavaScript and compares coding tools and environments.
 
 ## Videos
 
