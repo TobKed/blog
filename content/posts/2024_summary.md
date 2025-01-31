@@ -1,11 +1,11 @@
 Title: Year summary - 2024
-Date: 2024-01-01
+Date: 2025-01-01
 Category: summary
 Tags: summary, year, 2024
 Slug: 2024-summary
 Summary: Ups and downs of 2024
 Header_Cover: /images/posts/2024/2024_11_xx.jpg
-Status: draft
+Status: published
 
 # 2024
 
@@ -81,7 +81,7 @@ I also wrote an additional blog post:
 
 ## Summary
 
-2024 was an intensive year, but I've learned a lot. I've compiled my reflections on the year in a podcast, which you can listen to below.
+2024 was an intensive year, but I've learned a lot. I've compiled my reflections on the year in a podcast, which you can listen to below (made with [NotebookLM](https://notebooklm.google/)).
 
 <audio controls style="width: 100%; margin: 1em 0;">
     <source src="{static}/audio/2024_IT_Links_and_Reflections.mp3" type="audio/mpeg">
