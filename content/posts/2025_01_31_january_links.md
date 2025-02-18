@@ -92,7 +92,7 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > I often get asked what my favorite tools are and how I use them to get my work done, and I’m writing this both to answer that question, and also for me to just paste a link to this post next time I’m asked. Efficiency!
 
-### [# How to improve your WFH lighting to reduce eye strain](https://rustle.ca/posts/articles/work-from-home-lighting)
+### [How to improve your WFH lighting to reduce eye strain](https://rustle.ca/posts/articles/work-from-home-lighting)
 
 > _Having a working environment that’s as easy on my eyes as possible is of critical importance_
 
@@ -138,7 +138,7 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > Learn how to show a modal with minimal Javascript in Django + HTMX
 
-### [# Database Indexing in Django](https://testdriven.io/blog/django-db-indexing/)
+### [Database Indexing in Django](https://testdriven.io/blog/django-db-indexing/)
 
 > This article explores the basics of database indexing, its advantages and disadvantages, and how to apply it in a Django application.
 
