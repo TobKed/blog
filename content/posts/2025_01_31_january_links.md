@@ -142,12 +142,6 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > This article explores the basics of database indexing, its advantages and disadvantages, and how to apply it in a Django application.
 
-## Python libraries
-
-## Django libraries
-
-## Go
-
 ## Tools
 
 ### [👻 Ghostty](https://github.com/ghostty-org/ghostty)
@@ -157,10 +151,6 @@ Some of them are strictly related to the things I did or am currently doing.
 ### [k3d](https://github.com/k3d-io/k3d)
 
 > Little helper to run CNCF's k3s in Docker.
-
-### [dsRAG](https://github.com/D-Star-AI/dsRAG/)
-
-> High-performance retrieval engine for unstructured data.
 
 ### [dsRAG](https://github.com/D-Star-AI/dsRAG/)
 
@@ -278,13 +268,3 @@ Some of them are strictly related to the things I did or am currently doing.
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/m67Mjbx6DMY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
-
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
-
-> Playback on other websites has been disabled by the video owner. [Watch on YouTube](https://www.youtube.com/watch?v=VIDEO_ID)
