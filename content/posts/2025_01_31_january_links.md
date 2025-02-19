@@ -5,7 +5,7 @@ Tags: python, blog, podcast, series, aggregate, summary, month, 2025
 Slug: 2025-january-links
 Summary: Interesting stuff from the month
 Header_Cover: /images/posts/2025/2025_01_xx.jpg
-Status: draft
+Status: published
 
 # January 2025
 
