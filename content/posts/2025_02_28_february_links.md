@@ -49,6 +49,18 @@ https://ftp.belnet.be/mirror/FOSDEM/video/2025/ud2218a/fosdem-2025-6827--lightni
 
 > Software can now adapt to you, not the other way around. Better yet, AI is making it possible for anyone, not just developers, to create single-use or custom applications.
 
+### [Vim After Bram: A Core Maintainer on How They’ve Kept It Going](https://thenewstack.io/vim-after-bram-a-core-maintainer-on-how-theyve-kept-it-going/)
+
+> What happens when the chief maintainer of an open source project dies. Maintaining VIM turned out to be a full time job, though the community has stepped in to help.
+
+### [Armin Ronacher: Ugly Code and Dumb Things](https://lucumr.pocoo.org/2025/2/20/ugly-code/)
+
+> Perfect code doesn't guarantee success if you haven't solved a real problem for real people. Pursuing elegance in a vacuum leads to abandoned side projects or frameworks nobody uses. By contrast, clunky but functional code often comes with just the right compromises for quick iteration.
+
+### [Christian Hollinger: Why I still self host my servers (and what I've recently learned)](https://chollinger.com/blog/2024/08/why-i-still-self-host-my-servers-and-what-ive-recently-learned/)
+
+> This article is about two things: Why I still bother and what it has recently taught me. Think of it as a brief retrospective and an encouragement for readers to go down the same rabbit hole.
+
 ## Productivity
 
 ### [devszczepaniak.pl: Pułapki produktywności](https://devszczepaniak.pl/pulapki-produktywnosci/)
@@ -65,6 +77,14 @@ https://ftp.belnet.be/mirror/FOSDEM/video/2025/ud2218a/fosdem-2025-6827--lightni
 
 > Postanowiłem po prostu wrzucić tu kilka luźnych przemyśleń, które wpadły mi do głowy w trakcie jego trwania. Dla siebie – ku pamięci oraz dla Was – żeby zachęcić lub zniechęcić do udziału w kolejnych edycjach.
 
+### [PennyroyalTea/gibberlink](https://github.com/PennyroyalTea/gibberlink)
+
+> Two conversational AI agents switching from English to sound-level protocol after confirming they are both AI agents
+
+### [AI Company Asks Job Applicants Not to Use AI in Job Applications](https://www.404media.co/anthropic-claude-job-application-ai-assistants/)
+
+> Anthropic, the developer of the conversational AI assistant Claude, doesn’t want prospective new hires using AI assistants in their applications, regardless of whether they’re in marketing or engineering.
+
 ## Security
 
 ## Python
@@ -74,6 +94,10 @@ https://ftp.belnet.be/mirror/FOSDEM/video/2025/ud2218a/fosdem-2025-6827--lightni
 ### [Official Django MongoDB Backend Now Available in Public Preview](https://www.mongodb.com/blog/post/mongodb-django-backend-now-available-public-preview)
 
 > To get started, it’s as easy as running `pip install django-mongodb-backend`. MongoDB has even created an easy-to-use starter template that works with the django-admin command `startproject`, making it a snap to see what typical MongoDB migrations look like in Django. For more information, check out our [quickstart guide](https://dev.to/mongodb/django-mongodb-backend-quickstart-4o89).
+
+### [What is OpenTelemetry and how to add it to your Django application](https://allthingsopen.org/articles/what-is-opentelemetry-add-django-application)
+
+> A step-by-step guide to connecting your Django app’s OpenTelemetry setup to an Elastic observability backend.
 
 ## Python libraries
 
@@ -107,6 +131,10 @@ https://ftp.belnet.be/mirror/FOSDEM/video/2025/ud2218a/fosdem-2025-6827--lightni
 
 > The most minimal sites on the web, curated in one place.
 
+### [wger](https://github.com/wger-project/wger)
+
+> wger (ˈvɛɡɐ) Workout Manager is a free, open source web application that helps you manage your personal workouts, weight and diet plans and can also be used as a simple gym management utility. It offers a REST API as well, for easy integration with other projects and tools.
+
 ## Podcasts
 
 ## Videos
@@ -139,6 +167,60 @@ https://ftp.belnet.be/mirror/FOSDEM/video/2025/ud2218a/fosdem-2025-6827--lightni
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/hm-rDxSMzSw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [Mike Tomala: Bielik to NIE jest Polski ChatGPT! Cała prawda o Polskim Modelu.](https://www.youtube.com/watch?v=ohBDt7YcleI)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/ohBDt7YcleI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [Krzysztof Tutak: 12 AI może więcej, niż myślimy i mniej niż nam się wydaje | Adam Gospodarczyk](https://www.youtube.com/watch?v=LBG3_L-sbJA)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/LBG3_L-sbJA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [Jakub Mrugalski - A gdyby tak zrobić startup w weekend? - no-code, AI i odrobina magii | Infoshare](https://www.youtube.com/watch?v=dYzfArtf7qU)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/dYzfArtf7qU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [DjangoCon 2008 Keynote: Cal Henderson: Why I Hate Django](https://www.youtube.com/watch?v=i6Fr65PFqfk)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/i6Fr65PFqfk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [The Complexity Genie - Armin Ronacher, Vendure Conf 2024](https://www.youtube.com/watch?v=B63n4WeN-Pc)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/B63n4WeN-Pc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [](https://www.youtube.com/watch?v=VIDEO_ID)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [](https://www.youtube.com/watch?v=VIDEO_ID)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [](https://www.youtube.com/watch?v=VIDEO_ID)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [](https://www.youtube.com/watch?v=VIDEO_ID)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ### [](https://www.youtube.com/watch?v=VIDEO_ID)
