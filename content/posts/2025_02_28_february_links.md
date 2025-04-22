@@ -85,10 +85,6 @@ https://ftp.belnet.be/mirror/FOSDEM/video/2025/ud2218a/fosdem-2025-6827--lightni
 
 > Anthropic, the developer of the conversational AI assistant Claude, doesn’t want prospective new hires using AI assistants in their applications, regardless of whether they’re in marketing or engineering.
 
-## Security
-
-## Python
-
 ## Django
 
 ### [Official Django MongoDB Backend Now Available in Public Preview](https://www.mongodb.com/blog/post/mongodb-django-backend-now-available-public-preview)
@@ -99,17 +95,11 @@ https://ftp.belnet.be/mirror/FOSDEM/video/2025/ud2218a/fosdem-2025-6827--lightni
 
 > A step-by-step guide to connecting your Django app’s OpenTelemetry setup to an Elastic observability backend.
 
-## Python libraries
-
 ## Django libraries
 
 ### [dracula/django-admin](https://github.com/dracula/django-admin)
 
 > A dark (and light 🕯️) theme for the Django Admin.
-
-## Go
-
-## Tools
 
 ## Cloud
 
@@ -134,8 +124,6 @@ https://ftp.belnet.be/mirror/FOSDEM/video/2025/ud2218a/fosdem-2025-6827--lightni
 ### [wger](https://github.com/wger-project/wger)
 
 > wger (ˈvɛɡɐ) Workout Manager is a free, open source web application that helps you manage your personal workouts, weight and diet plans and can also be used as a simple gym management utility. It offers a REST API as well, for easy integration with other projects and tools.
-
-## Podcasts
 
 ## Videos
 
