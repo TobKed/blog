@@ -21,7 +21,7 @@ I'll write a separate blog post about highlights from this event soon!
 
 <figure style="text-align: center;">
     <img src="{static}/images/posts/2025/fosdem/nextcloud_talk.jpg" alt="FOSDEM 2025" style="display: block; margin-left: auto; margin-right: auto;">
-    <figcaption style="font-size: 0.9em; margin-top: 8px;">Nextcloud presentation at FOSDEM 2025. One of many pictures I took during the event.</figcaption>
+    <figcaption style="font-size: 0.9em; margin-top: 8px;">Nextcloud presentation at FOSDEM 2025. One of many photos I took during the event.</figcaption>
 </figure>
 
 ## Articles
