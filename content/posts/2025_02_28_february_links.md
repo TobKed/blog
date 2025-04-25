@@ -9,13 +9,13 @@ Status: draft
 
 # February 2025
 
-I am aggregating here some more or less interesting stuff of various IT related materials which I came across this month.
-Some of them are strictly related to the things I did or am currently doing.
+Time for another monthly post sharing some of the IT discoveries that crossed my path lately.
+Below you'll find a mix of articles, links, and resources, some of which tie into my current activities and areas of interest.
 
 ## Some thoughts
 
-February was interesting due to the fact I attended FOSDEM 2025.
-FOSDEM, which stands for the Free and Open source Software Developers' European Meeting, is a large, free, volunteer-run event held annually in Brussels.
+February was interesting due to the fact I attended [*FOSDEM 2025*](https://fosdem.org/2025/).
+[FOSDEM](https://fosdem.org), which stands for the Free and Open source Software Developers' European Meeting, is a large, free, volunteer-run event held annually in Brussels.
 It brings together thousands of developers and enthusiasts from the global open-source community to meet, share ideas, and collaborate.
 I'll write a separate blog post about highlights from this event soon!
 
