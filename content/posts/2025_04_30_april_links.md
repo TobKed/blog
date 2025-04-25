@@ -52,9 +52,13 @@ Some of them are strictly related to the things I did or am currently doing.
 
 > Postanowiłem więc przetestować chyba najlepiej ocenianą alternatywą, którą można samodzielnie hostować, czyli n8n\* i postawić go na najtańszym dostępnym na polskim rynku VPSie, czyli Mikrusie. A że jestem zupełnie świeżo po tym procesie, to stwierdziłem, że się nim w poniższym wpisie z Tobą podzielić.
 
-### \[Programming Pulse: Hexagonal vs Clean vs Onion Architectures: Choosing the Right Architecture\]https://programmingpulse.vercel.app/blog/hexagonal-vs-clean-vs-onion-architectures#the-principles-of-onion-architecture
+### [Programming Pulse: Hexagonal vs Clean vs Onion Architectures: Choosing the Right Architecture](https://programmingpulse.vercel.app/blog/hexagonal-vs-clean-vs-onion-architectures#the-principles-of-onion-architecture)
 
 > Choosing the right architecture for a software project is a crucial decision that can have a significant impact on the success and maintainability of the system.
+
+### [A Life Engineered: 5 Simple Ways to Level Up Your Communication](https://alifeengineered.substack.com/p/5-simple-ways-to-level-up-your-communication)
+
+> Practical Tips for Getting Heard and Making an Impact
 
 ## Productivity
 
@@ -76,6 +80,10 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## AI
 
+### {Wired: This ‘College Protester’ Isn’t Real. It’s an AI-Powered Undercover Bot for Cops\](https://www.wired.com/story/massive-blue-overwatch-ai-personas-police-suspects/)
+
+> Massive Blue is helping cops deploy AI-powered social media bots to talk to people they suspect are anything from violent sex criminals all the way to vaguely defined “protesters.”
+
 ## Security
 
 ## Python
@@ -85,6 +93,10 @@ Some of them are strictly related to the things I did or am currently doing.
 ### [Adam Johnson: Django: what’s new in 5.2](https://adamj.eu/tech/2025/04/07/django-whats-new-5.2/)
 
 > Django 5.2 was released last Wednesday, another exciting step forward for our favourite web framework. It comes with a composite of new features, contributed to by many, some of which I am happy to have helped with. Below is my pick of highlights from the release notes.
+
+### [Bendegúz Csirmaz: You don't need CompositePrimaryKeys](https://csirmazbendeguz.github.io/2025/04/15/you-dont-need-composite-primary-keys.html)
+
+> Django 5.2 ships with the new `CompositePrimaryKey` class. You should probably avoid it.
 
 ## Python libraries
 
@@ -141,6 +153,12 @@ Some of them are strictly related to the things I did or am currently doing.
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/QyRjW5WNzN0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
+### [Devoxx: How to survive as a developer in the exponential age of AI by Sander Hoogendoorn](https://www.youtube.com/watch?v=DYhbNSGUQKc)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/DYhbNSGUQKc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 ### [FOSS Baackstage: Airflow Beach Cleaning – Securing Supply Chain - Jarek Potiuk](https://25.foss-backstage.de/session/airflow-beach-cleaning-securing-supply-chain/)
 
 > Uniting efforts of Apache Airflow, ASF, PSF, Alpha-Omega fund in experimental project aimed at review and help with security of the whole 700+ dependencies of Apache Airflow.
@@ -173,12 +191,6 @@ Some of them are strictly related to the things I did or am currently doing.
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/V_mZsiZcy7s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
-
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ### [](https://www.youtube.com/watch?v=VIDEO_ID)

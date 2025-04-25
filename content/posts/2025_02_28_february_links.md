@@ -14,10 +14,12 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
 
-FOSSDEM
+February was interesting due to the fact I attended FOSDEM 2025.
+FOSDEM, which stands for the Free and Open source Software Developers' European Meeting, is a large, free, volunteer-run event held annually in Brussels.
+It brings together thousands of developers and enthusiasts from the global open-source community to meet, share ideas, and collaborate.
+I'll write a separate blog post about highlights from this event soon!
 
-https://fosdem.org/2025/schedule/event/fosdem-2025-6827--lightning-talks-/
-https://ftp.belnet.be/mirror/FOSDEM/video/2025/ud2218a/fosdem-2025-6827--lightning-talks-.mp4
+<img src="{static}/images/posts/2025/fosdem/nextcloud_talk.jpg" alt="FOSDEM 2025" style="display: block; margin-left: auto; margin-right: auto;">
 
 ## Articles
 
