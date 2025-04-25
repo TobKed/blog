@@ -62,8 +62,8 @@ This course offered a fresh perspective on productivity and has been a game-chan
 As always, I've kept up with my monthly summaries, where I compile a few sentences about each month, along with any interesting articles, tools, and other materials I've come across.
 Each month, I also add a personal touch with a photo I've taken.
 
-- [January]({filename}/posts/2024_01_30_january_links.md)
-- [February]({filename}/posts/2024_02_28_february_links.md)
+- [January]({filename}/posts/2024_01_31_january_links.md)
+- [February]({filename}/posts/2024_02_29_february_links.md)
 - [March]({filename}/posts/2024_03_31_march_links.md)
 - [April]({filename}/posts/2024_04_30_april_links.md)
 - [May]({filename}/posts/2024_05_31_may_links.md)
