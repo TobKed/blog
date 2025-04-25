@@ -5,7 +5,7 @@ Tags: python, blog, podcast, series, aggregate, summary, month, 2025
 Slug: 2025-february-links
 Summary: Interesting stuff from the month
 Header_Cover: /images/posts/2025/2025_02_xx.jpg
-Status: draft
+Status: published
 
 # February 2025
 
@@ -14,8 +14,8 @@ Below you'll find a mix of articles, links, and resources, some of which tie int
 
 ## Some thoughts
 
-February was interesting due to the fact I attended [*FOSDEM 2025*](https://fosdem.org/2025/).
-[FOSDEM](https://fosdem.org), which stands for the Free and Open source Software Developers' European Meeting, is a large, free, volunteer-run event held annually in Brussels.
+February was interesting because I attended [**FOSDEM 2025**](https://fosdem.org/2025/).
+[FOSDEM](https://fosdem.org), which stands for the Free and Open Source Software Developers' European Meeting, is a large, free, volunteer-run event held annually in Brussels.
 It brings together thousands of developers and enthusiasts from the global open-source community to meet, share ideas, and collaborate.
 I'll write a separate blog post about highlights from this event soon!
 
