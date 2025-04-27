@@ -123,10 +123,10 @@ Below you'll find a mix of articles, links, and resources, some of which tie int
 
 > Voxxed Days is a community developer conference series and is part of the extended Devoxx family.
 
-### [Devoxx: Developer Experience: Building an Environment for Engineering Success by Bas de Groot](https://www.youtube.com/watch?v=VIDEO_ID)
+### [Devoxx: Developer Experience: Building an Environment for Engineering Success by Bas de Groot](https://www.youtube.com/watch?v=wD2pzuCUTRo)
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/wD2pzuCUTRo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ### [Devoxx: Clean Architecture for Serverless: Business Logic You Can Take Anywhere by Elena van Engelen Maslova](https://www.youtube.com/watch?v=wz0GQbkrr1Q)
@@ -193,10 +193,10 @@ Below you'll find a mix of articles, links, and resources, some of which tie int
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/V_mZsiZcy7s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
+### [Louis Rossmann's Keynote Speech on Right to Repair](https://www.youtube.com/watch?v=2ol3rMem_Eg)
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/2ol3rMem_Eg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ### [](https://www.youtube.com/watch?v=VIDEO_ID)
