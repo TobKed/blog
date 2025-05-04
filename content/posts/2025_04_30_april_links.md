@@ -4,7 +4,7 @@ Category: summary
 Tags: python, blog, podcast, series, aggregate, summary, month, 2025
 Slug: 2025-april-links
 Summary: Interesting stuff from the month
-Header_Cover: /images/posts/2025/2025_xx_xx.jpg
+Header_Cover: /images/posts/2025/2025_04_xx.jpg
 Status: draft
 
 # April 2025
@@ -13,6 +13,8 @@ Time for another monthly post sharing some of the IT discoveries that crossed my
 Below you'll find a mix of articles, links, and resources, some of which tie into my current activities and areas of interest.
 
 ## Some thoughts
+
+# TODO
 
 ## Articles
 
@@ -80,13 +82,9 @@ Below you'll find a mix of articles, links, and resources, some of which tie int
 
 ## AI
 
-### {Wired: This ‘College Protester’ Isn’t Real. It’s an AI-Powered Undercover Bot for Cops\](https://www.wired.com/story/massive-blue-overwatch-ai-personas-police-suspects/)
+### [Wired: This ‘College Protester’ Isn’t Real. It’s an AI-Powered Undercover Bot for Cops](https://www.wired.com/story/massive-blue-overwatch-ai-personas-police-suspects/)
 
 > Massive Blue is helping cops deploy AI-powered social media bots to talk to people they suspect are anything from violent sex criminals all the way to vaguely defined “protesters.”
-
-## Security
-
-## Python
 
 ## Django
 
@@ -97,18 +95,6 @@ Below you'll find a mix of articles, links, and resources, some of which tie int
 ### [Bendegúz Csirmaz: You don't need CompositePrimaryKeys](https://csirmazbendeguz.github.io/2025/04/15/you-dont-need-composite-primary-keys.html)
 
 > Django 5.2 ships with the new `CompositePrimaryKey` class. You should probably avoid it.
-
-## Python libraries
-
-## Django libraries
-
-## Go
-
-## Tools
-
-## Cloud
-
-## Other stuff
 
 ## Podcasts
 
@@ -198,43 +184,3 @@ Below you'll find a mix of articles, links, and resources, some of which tie int
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/2ol3rMem_Eg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
-
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
-
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
-
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
-
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
-
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
-
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
-
-> Playback on other websites has been disabled by the video owner. [Watch on YouTube](https://www.youtube.com/watch?v=VIDEO_ID)
