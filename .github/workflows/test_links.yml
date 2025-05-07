@@ -13,7 +13,7 @@ jobs:
           persist-credentials: false
       - uses: actions/setup-python@v3
         with:
-          python-version: 3.10
+          python-version: 3.13
           cache: 'pip'
       - name: Install requirements
         run: pip install -r scripts/test_links/requirements.txt
