@@ -26,7 +26,7 @@ Below you'll find a mix of articles, links, and resources, some of which tie int
 
 > I have met a lot of developers in my life. Lately, I asked myself: “What does it take to be one of the best? What do they all have in common?
 
-### [Julia Evans: What's involved in getting a "modern" terminal setup?](https://jvns.ca/blog/2025/01/11/getting-a-modern-terminal-setup/?)
+### [Julia Evans: What's involved in getting a "modern" terminal setup?](https://jvns.ca/blog/2025/01/11/getting-a-modern-terminal-setup/)
 
 > I thought I would write down some notes about what it means to me personally to have a “modern” terminal experience and what I think can make it hard for people to get there.
 
