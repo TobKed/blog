@@ -2,6 +2,7 @@ crewai==0.119.0
 crewai-tools==0.44.0
 python-dotenv==1.1.0
 langchain-openai==0.2.14
+loguru==0.7.3
 # Add other langchain provider packages if you extend LLM support
 # e.g., langchain-anthropic
 
