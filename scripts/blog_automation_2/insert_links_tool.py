@@ -14,118 +14,84 @@ project_root/
 ├── .env
 └── requirements.txt
 """
-import argparse
-import os
 import sys
 from pathlib import Path
 from typing import List
 
-from dotenv import load_dotenv
-
-# --- Path Setup ---
-# Ensure the script can find the link_processing module
-try:
-    # This assumes the script is in project_root/scripts/
-    # SCRIPT_DIR = Path(__file__).resolve().parent
-    SCRIPT_DIR = Path(__file__).resolve().parent
-    PROJECT_ROOT = SCRIPT_DIR.parent.parent
-    sys.path.append(str(PROJECT_ROOT))  # Add project root to Python path
-    # print(f"Project root added to path: {PROJECT_ROOT}")
-except NameError:
-    # Fallback if __file__ is not defined (e.g., in some interactive environments)
-    PROJECT_ROOT = Path.cwd()
-    # SCRIPT_DIR = PROJECT_ROOT / "scripts" # Assuming standard structure
-    SCRIPT_DIR = (
-        PROJECT_ROOT / "scripts" / "blog_automation_2"
-    )  # Assuming standard structure
-    # print(f"Warning: __file__ not defined. Assuming project root: {PROJECT_ROOT}")
-    if not (SCRIPT_DIR / "link_processing").exists():
-        print(
-            "Error: Could not reliably find the 'link_processing' directory. "
-            "Please run from the project root or ensure script is in 'scripts/' subdir.",
-            file=sys.stderr,
-        )
-        sys.exit(1)
+from loguru import logger
 
 from link_processing.crew import LinkProcessingCrew
 from link_processing.file_updater import (
     get_available_sections,
     insert_link_into_markdown_file,
 )
+from link_processing.url_processor import process_url, LinkMetadata
 
-# Load environment variables from .env file in the project root
-# dotenv_path = PROJECT_ROOT / ".env"
-dotenv_path = SCRIPT_DIR / ".env"
-if dotenv_path.exists():
-    load_dotenv(dotenv_path)
-    # print(f"Loaded .env file from: {dotenv_path}")
-else:
-    print(
-        f"Warning: .env file not found at {dotenv_path}. API keys should be set in environment."
-    )
+from config import (
+    CommandLineArgs,
+    setup_paths,
+    load_environment,
+    parse_arguments,
+    validate_markdown_file,
+    setup_logging,
+)
 
 
-def main():
+def process_urls(urls: List[str]) -> List[LinkMetadata]:
+    """
+    Process a list of URLs to extract metadata and clean them.
+
+    Args:
+        urls (List[str]): List of URLs to process
+
+    Returns:
+        List[LinkMetadata]: List of processed URL metadata
+    """
+    processed_urls: List[LinkMetadata] = []
+    for url in urls:
+        try:
+            metadata = process_url(url)
+            processed_urls.append(metadata)
+            logger.info(
+                f"Processed URL: {metadata.original_url} -> {metadata.cleaned_url} "
+                f"(Type: {metadata.link_type.value})"
+            )
+        except Exception as e:
+            logger.exception(f"Error processing URL {url}")
+            # Continue with other URLs even if one fails
+            continue
+    return processed_urls
+
+
+def main() -> None:
     """Main function to orchestrate link processing and insertion."""
-    parser = argparse.ArgumentParser(
-        description="Analyzes URLs, generates descriptions and categories, "
-        "and inserts them into a markdown blog post.",
-        formatter_class=argparse.ArgumentDefaultsHelpFormatter,
-    )
-    parser.add_argument(
-        "target_markdown_file",
-        type=str,  # Keep as string to allow relative paths from project_root
-        help="Path to the target markdown blog post file (relative to project root, e.g., content/posts/file.md).",
-    )
-    parser.add_argument(
-        "urls",
-        type=str,
-        nargs="+",
-        help="One or more URLs to process.",
-    )
-    parser.add_argument(
-        "--llm-provider",
-        choices=["openai"],  # Add more as implemented (e.g., "anthropic")
-        default=os.getenv("DEFAULT_LLM_PROVIDER", "openai"),
-        help="Specify the LLM provider to use. Can also be set via DEFAULT_LLM_PROVIDER in .env.",
-    )
-    parser.add_argument(
-        "--model-name",
-        type=str,
-        default=os.getenv("DEFAULT_MODEL_NAME"),  # e.g. OPENAI_MODEL_NAME from .env
-        help="Specify the model name for the LLM provider. Overrides environment variables like OPENAI_MODEL_NAME.",
-    )
-    parser.add_argument(
-        "-v",
-        "--verbose",
-        action="store_true",
-        help="Enable verbose output from the CrewAI tasks.",
+    # Parse command line arguments first to get verbose flag
+    args: CommandLineArgs = parse_arguments()
+
+    # Setup logging with appropriate verbosity
+    setup_logging(verbose=args.verbose)
+
+    # Setup paths and environment
+    project_root, script_dir = setup_paths()
+    load_environment(script_dir)
+
+    # Validate target markdown file
+    target_markdown_path = validate_markdown_file(
+        project_root, args.target_markdown_file
     )
 
-    args = parser.parse_args()
+    logger.info(
+        f"Processing {len(args.urls)} URL(s) for '{target_markdown_path.name}'..."
+    )
 
-    # Resolve target markdown file path relative to project root
-    target_markdown_path = PROJECT_ROOT / args.target_markdown_file
-    if not target_markdown_path.is_file():
-        print(
-            f"Error: Target markdown file not found: {target_markdown_path}",
-            file=sys.stderr,
-        )
+    # Process URLs to clean them and extract metadata
+    processed_urls = process_urls(args.urls)
+    if not processed_urls:
+        logger.error("No URLs were successfully processed. Exiting.")
         sys.exit(1)
-
-    print(f"Processing {len(args.urls)} URL(s) for '{target_markdown_path.name}'...")
 
     # 1. Get available sections from the target markdown file
     available_sections = get_available_sections(target_markdown_path)
-    if not available_sections:
-        print(
-            f"Warning: Could not find any H2 sections (e.g., '## Section Name') in {target_markdown_path}. "
-            "Categorization might be limited or default to 'Other stuff'.",
-            file=sys.stderr,
-        )
-        # Proceeding, as "Other stuff" can be a fallback.
-    else:
-        print(f"Available sections in blog: {available_sections}")
 
     # 2. Initialize and run the CrewAI crew for each URL
     try:
@@ -135,24 +101,27 @@ def main():
             verbose_level=2 if args.verbose else 0,
         )
     except ValueError as e:
-        print(f"Error initializing LinkProcessingCrew: {e}", file=sys.stderr)
+        logger.error(f"Error initializing LinkProcessingCrew: {e}")
         sys.exit(1)
 
     successful_insertions = 0
-    for url in args.urls:
-        print(f"\n--- Processing URL: {url} ---")
+    for metadata in processed_urls:
+        logger.info(f"Processing URL: {metadata.cleaned_url}")
+        logger.debug(f"\tmetadata: {metadata=}")
         try:
-            processed_data = link_crew.process_url(url, available_sections)
+            processed_data = link_crew.process_url(
+                metadata.cleaned_url, available_sections
+            )
 
             if (
                 processed_data
                 and processed_data.get("category")
                 and processed_data.get("markdown_string")
             ):
-                print(f"  Title: {processed_data['title']}")
-                print(f"  Description: {processed_data['description']}")
-                print(f"  Keywords: {processed_data.get('keywords', 'N/A')}")
-                print(f"  Categorized under: {processed_data['category']}")
+                logger.info(f"Title: {processed_data['title']}")
+                logger.info(f"Description: {processed_data['description']}")
+                logger.info(f"Keywords: {processed_data.get('keywords', 'N/A')}")
+                logger.info(f"Categorized under: {processed_data['category']}")
 
                 # 3. Insert into markdown file
                 if insert_link_into_markdown_file(
@@ -160,31 +129,36 @@ def main():
                     section_name=processed_data["category"],
                     markdown_to_insert=processed_data["markdown_string"],
                 ):
-                    print(f"  Successfully inserted into '{target_markdown_path.name}'")
+                    logger.success(
+                        f"Successfully inserted into '{target_markdown_path.name}'"
+                    )
                     successful_insertions += 1
                 else:
-                    print(f"  Failed to insert link for {url} into the markdown file.")
+                    logger.error(
+                        f"Failed to insert link for {metadata.cleaned_url} into the markdown file."
+                    )
             elif (
                 processed_data is None
             ):  # Explicitly None means an error occurred in crew
-                print(f"  Processing failed for URL {url} within the crew.")
+                logger.error(
+                    f"Processing failed for URL {metadata.cleaned_url} within the crew."
+                )
             else:
-                print(
-                    f"  Could not fully process URL {url}. Missing essential data. Skipping insertion. Data: {processed_data}"
+                logger.warning(
+                    f"Could not fully process URL {metadata.cleaned_url}. "
+                    f"Missing essential data. Skipping insertion. Data: {processed_data}"
                 )
 
         except Exception as e:
-            print(
-                f"An unexpected error occurred while processing URL {url}: {e}",
-                file=sys.stderr,
+            logger.exception(
+                f"An unexpected error occurred while processing URL {metadata.cleaned_url}"
             )
-            # Consider adding more robust error handling or logging (e.g., traceback)
 
-    print(f"\n--- Finished processing ---")
-    print(f"{successful_insertions} link(s) successfully processed and inserted.")
-    if successful_insertions < len(args.urls):
-        print(
-            f"{len(args.urls) - successful_insertions} link(s) could not be processed or inserted fully."
+    logger.info("Finished processing")
+    logger.info(f"{successful_insertions} link(s) successfully processed and inserted.")
+    if successful_insertions < len(processed_urls):
+        logger.warning(
+            f"{len(processed_urls) - successful_insertions} link(s) could not be processed or inserted fully."
         )
 
 
