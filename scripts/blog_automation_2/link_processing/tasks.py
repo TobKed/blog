@@ -1,89 +1,85 @@
 """
-Defines the CrewAI tasks for link processing.
+Tasks for the link processing crew.
+
+This module defines the tasks used in the link processing crew:
+- Analysis task: Analyzes URLs and generates descriptions
+- Categorization task: Categorizes links based on their content
 """
 
-from crewai import Task, Agent
-from .agents import LinkAnalysisAgents, load_prompt
+from typing import List
+
+from crewai import Task
+from loguru import logger
+from pydantic import BaseModel, Field
+
+from .prompts import (
+    LINK_ANALYZER_PROMPT,
+    LINK_CATEGORIZER_PROMPT,
+)
 
 
-class LinkAnalysisTasks:
-    """Container for link analysis and categorization tasks."""
+class AnalysisOutput(BaseModel):
+    """Output model for the analysis task."""
 
-    def __init__(self):
-        # Load prompts during initialization
-        self.analyze_web_content_prompt_template = load_prompt(
-            "analyze_content_prompt.txt"
-        )
-        self.categorize_link_prompt_template = load_prompt("categorize_link_prompt.txt")
+    title: str = Field(..., description="A clear, concise title for the content")
+    description: str = Field(
+        ...,
+        description="A detailed description of the content, highlighting key points",
+    )
+    keywords: List[str] = Field(..., description="A list of relevant keywords")
 
-    def analyze_web_content_task(self, agent: Agent, url: str) -> Task:
-        """
-        Task for an agent to fetch, analyze web content from a URL,
-        and extract title, description, and keywords.
-        """
-        return Task(
-            description=(
-                f"Fetch the content of the web page at the URL: {url}. "
-                "After fetching the content, analyze it thoroughly. "
-                "Your goal is to determine the page's title, generate a concise summary (1-3 sentences), "
-                "and identify 3-5 relevant keywords. "
-                "Adhere to the following detailed guidelines for content analysis and JSON output format: "
-                f"\n\n{self.analyze_web_content_prompt_template}"
-            ),
-            expected_output=(
-                "A single JSON string adhering to the specified format: "
-                '{ "title": "string", "description": "string", "keywords": ["string", ...] }. '
-                "Ensure the JSON is valid."
-            ),
-            agent=agent,
-            async_execution=False,
-            instructions=self.analyze_web_content_prompt_template,
-        )
 
-    def categorize_link_task(
-        self,
-        agent: Agent,
-        title: str,
-        description: str,
-        keywords: list,
-        available_sections: list,
-    ) -> Task:
-        """
-        Task for an agent to categorize a link based on its title, description,
-        keywords, and a list of available blog sections.
-        """
-        # Prepare the dynamic parts of the prompt
-        formatted_keywords = (
-            ", ".join(f'"{k}"' for k in keywords) if keywords else "N/A"
-        )
-        # --- FIX: Format available sections as a simple comma-separated list ---
-        formatted_sections = (
-            ", ".join(available_sections)
-            if available_sections
-            else "No specific sections provided (use general knowledge or 'Other stuff')."
-        )
-        # --- End Fix ---
+class CategorizationOutput(BaseModel):
+    """Output model for the categorization task."""
 
-        # Format the prompt template with the actual data
-        task_instructions = self.categorize_link_prompt_template.format(
-            title=title,
-            description=description,
-            keywords=formatted_keywords,
-            available_blog_sections=formatted_sections,  # Use the simplified format
-        )
+    category: str = Field(..., description="The chosen category/section name")
 
-        return Task(
-            description=(
-                "Categorize the web link based on its provided title, description, and keywords. "
-                "You must choose the single most suitable section from the list of available blog sections. "
-                "Your output should be only the name of the chosen section."
-                "Adhere to the following detailed guidelines for content analysis and JSON output format: "
-                f"\n\n{task_instructions}"
-            ),
-            expected_output=(
-                "The name of the single most appropriate blog section as a plain string (e.g., 'Python', 'AI', 'Other stuff')."
-            ),
-            agent=agent,
-            instructions=task_instructions,  # Pass the fully formatted prompt
-            async_execution=False,
-        )
+
+def create_analysis_task(url: str, agent) -> Task:
+    """
+    Create a task for analyzing a URL and generating a description.
+
+    Args:
+        url (str): The URL to analyze
+        agent: The agent that will perform the analysis
+
+    Returns:
+        Task: The configured analysis task
+    """
+    return Task(
+        description=f"""Analyze the following URL and provide a detailed description:
+        URL: {url}
+
+        {LINK_ANALYZER_PROMPT}""",
+        agent=agent,
+        expected_output="""A JSON object containing:
+        - title: A clear, concise title
+        - description: A detailed description
+        - keywords: A list of relevant keywords""",
+        output_pydantic=AnalysisOutput,
+    )
+
+
+def create_categorization_task(url: str, available_sections: List[str], agent) -> Task:
+    """
+    Create a task for categorizing a URL into an appropriate section.
+
+    Args:
+        url (str): The URL to categorize
+        available_sections (List[str]): List of available sections for categorization
+        agent: The agent that will perform the categorization
+
+    Returns:
+        Task: The configured categorization task
+    """
+    sections_str = "\n".join(f"- {section}" for section in available_sections)
+
+    return Task(
+        description=f"""Categorize the following URL into the most appropriate section:
+        URL: {url}
+
+        {LINK_CATEGORIZER_PROMPT.format(available_sections=sections_str)}""",
+        agent=agent,
+        expected_output="A single string containing the chosen section name",
+        output_pydantic=CategorizationOutput,
+    )

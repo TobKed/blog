@@ -1,15 +1,24 @@
 """
-Defines the CrewAI agents for link processing.
+Agents for the link processing crew.
+
+This module defines the agents used in the link processing crew:
+- LinkAnalyzerAgent: Analyzes URLs and generates descriptions
+- LinkCategorizerAgent: Categorizes links based on their content
 """
 
 import os
 from pathlib import Path
 from crewai import Agent
 from langchain_openai import ChatOpenAI
+from loguru import logger
 
 from typing import Optional
 
 from .tools import web_content_fetcher_tool
+from .prompts import (
+    LINK_ANALYZER_PROMPT,
+    LINK_CATEGORIZER_PROMPT,
+)
 
 
 # Helper to load prompts from the 'prompts' directory (sibling to 'link_processing')
@@ -64,7 +73,7 @@ class LinkAnalysisAgents:
                 temperature=0.2,  # Lower temperature for more deterministic analysis
                 # openai_api_key=os.getenv("OPENAI_API_KEY") # Handled by ChatOpenAI if env var is set
             )
-            print(f"Using OpenAI model: {effective_model_name}")
+            logger.info(f"Using OpenAI model: {effective_model_name}")
         # Example for future extension:
         # elif llm_provider.lower() == "anthropic":
         #     effective_model_name = model_name or os.getenv("ANTHROPIC_MODEL_NAME", "claude-3-opus-20240229")
@@ -124,3 +133,78 @@ class LinkAnalysisAgents:
             verbose=self.verbose,
             allow_delegation=False,
         )
+
+
+def create_link_analyzer_agent(
+    llm_provider: str,
+    model_name: Optional[str] = None,
+    verbose: bool = False,
+) -> Agent:
+    """
+    Create a LinkAnalyzerAgent for analyzing URLs and generating descriptions.
+
+    Args:
+        llm_provider (str): The LLM provider to use (e.g., 'openai', 'anthropic')
+        model_name (Optional[str]): The specific model to use
+        verbose (bool): Whether to enable verbose output
+
+    Returns:
+        Agent: The configured LinkAnalyzerAgent
+    """
+    # Determine effective model name based on provider
+    effective_model_name = model_name or (
+        "gpt-4-turbo-preview" if llm_provider == "openai" else "claude-3-opus-20240229"
+    )
+
+    if llm_provider == "openai":
+        logger.info(f"Using OpenAI model: {effective_model_name}")
+    # elif llm_provider == "anthropic":
+    #     logger.info(f"Using Anthropic model: {effective_model_name}")
+
+    return Agent(
+        role="Link Analyzer",
+        goal="Analyze URLs and generate accurate, concise descriptions",
+        backstory="""You are an expert at analyzing web content and creating
+        clear, informative descriptions. You have a keen eye for detail and
+        can quickly identify the key points of any content.""",
+        verbose=verbose,
+        llm_provider=llm_provider,
+        model_name=effective_model_name,
+        allow_delegation=False,
+        prompt=LINK_ANALYZER_PROMPT,
+    )
+
+
+def create_link_categorizer_agent(
+    llm_provider: str,
+    model_name: Optional[str] = None,
+    verbose: bool = False,
+) -> Agent:
+    """
+    Create a LinkCategorizerAgent for categorizing links.
+
+    Args:
+        llm_provider (str): The LLM provider to use (e.g., 'openai', 'anthropic')
+        model_name (Optional[str]): The specific model to use
+        verbose (bool): Whether to enable verbose output
+
+    Returns:
+        Agent: The configured LinkCategorizerAgent
+    """
+    # Determine effective model name based on provider
+    effective_model_name = model_name or (
+        "gpt-4-turbo-preview" if llm_provider == "openai" else "claude-3-opus-20240229"
+    )
+
+    return Agent(
+        role="Link Categorizer",
+        goal="Categorize links into appropriate sections based on their content",
+        backstory="""You are an expert at organizing and categorizing content.
+        You have a deep understanding of various topics and can quickly determine
+        the most appropriate category for any piece of content.""",
+        verbose=verbose,
+        llm_provider=llm_provider,
+        model_name=effective_model_name,
+        allow_delegation=False,
+        prompt=LINK_CATEGORIZER_PROMPT,
+    )
