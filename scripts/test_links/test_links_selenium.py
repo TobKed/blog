@@ -2,6 +2,7 @@ import time
 from copy import copy
 from typing import Dict, Set, Tuple, Union
 
+from logger import LOGS_DIR, SUFFIX_TIMESTAMP, get_logger
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.chrome.options import Options
@@ -9,8 +10,6 @@ from selenium.webdriver.chromium.webdriver import ChromiumDriver
 from selenium.webdriver.common.by import By
 from yaspin import yaspin
 from yaspin.spinners import Spinners
-
-from logger import LOGS_DIR, SUFFIX_TIMESTAMP, get_logger
 
 logger = get_logger(__name__)
 

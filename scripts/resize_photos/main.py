@@ -2,7 +2,6 @@ import pathlib
 
 from PIL import Image
 
-
 MAXSIZE = (1024, 1024)
 DPI = (300, 300)
 

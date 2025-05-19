@@ -4,10 +4,9 @@ from urllib.request import urljoin, urlparse
 
 import requests
 from bs4 import BeautifulSoup
+from logger import get_logger
 from yaspin import yaspin
 from yaspin.spinners import Spinners
-
-from logger import get_logger
 
 logger = get_logger(__name__)
 

@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
+import datetime
 import os
 import shutil
 import sys
-import datetime
 
 from invoke import task
 from invoke.util import cd
