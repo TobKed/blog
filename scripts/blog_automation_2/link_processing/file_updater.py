@@ -4,14 +4,23 @@ Includes extracting sections and inserting new link content.
 """
 
 import re
+import sys
 from pathlib import Path
 from typing import List, Optional
+
+from loguru import logger
 
 
 def get_available_sections(markdown_file_path: Path) -> List[str]:
     """
     Extracts H2 level section names from a markdown file.
     Example: "## Section Name" -> "Section Name"
+
+    Args:
+        markdown_file_path (Path): Path to the markdown file to analyze
+
+    Returns:
+        List[str]: List of section names found in the file
     """
     sections: List[str] = []
     try:
@@ -20,15 +29,20 @@ def get_available_sections(markdown_file_path: Path) -> List[str]:
         # It captures the text after '## ' up to the end of the line.
         matches = re.findall(r"^\s*##\s+(.+?)\s*$", content, re.MULTILINE)
         sections = [match.strip() for match in matches if match.strip()]
+
+        if not sections:
+            logger.warning(
+                f"Could not find any H2 sections (e.g., '## Section Name') in {markdown_file_path}. "
+                "Categorization might be limited or default to 'Other stuff'."
+            )
+        else:
+            logger.debug(f"Found {len(sections)} sections: {sections}")
+
     except FileNotFoundError:
-        print(
-            f"Error: Markdown file not found at {markdown_file_path}", file=sys.stderr
-        )
+        logger.error(f"Markdown file not found at {markdown_file_path}")
     except Exception as e:
-        print(
-            f"Error reading or parsing sections from {markdown_file_path}: {e}",
-            file=sys.stderr,
-        )
+        logger.exception(f"Error reading or parsing sections from {markdown_file_path}")
+
     return sections
 
 
@@ -107,11 +121,12 @@ def insert_link_into_markdown_file(
             # Add remaining lines
             new_content_lines.extend(lines[insertion_point:])
             inserted = True
+            logger.debug(f"Inserted link into existing section '{section_name}'")
 
         elif normalized_target_section_name == "other stuff":
             # If "Other stuff" section doesn't exist, append it
-            print(
-                f"  Section '{section_name}' not found. Appending as new '## {section_name}' section."
+            logger.info(
+                f"Section '{section_name}' not found. Appending as new '## {section_name}' section."
             )
             if (
                 lines and lines[-1].strip() != ""
@@ -128,31 +143,23 @@ def insert_link_into_markdown_file(
             new_content_lines.append(markdown_to_insert)
             new_content_lines.append("")
             inserted = True
+            logger.debug(f"Created new 'Other stuff' section and inserted link")
         else:
-            print(
-                f"  Warning: Section '{section_name}' not found. Link not inserted.",
-                file=sys.stderr,
-            )
+            logger.warning(f"Section '{section_name}' not found. Link not inserted.")
             return False
 
         if inserted:
             markdown_file_path.write_text(
                 "\n".join(new_content_lines), encoding="utf-8"
             )
+            logger.success(f"Successfully updated markdown file: {markdown_file_path}")
             return True
 
         return False  # Should not be reached if logic is correct
 
     except FileNotFoundError:
-        print(
-            f"Error: Markdown file not found at {markdown_file_path} during update.",
-            file=sys.stderr,
-        )
+        logger.error(f"Markdown file not found at {markdown_file_path} during update.")
         return False
     except Exception as e:
-        print(
-            f"Error updating markdown file {markdown_file_path}: {e}", file=sys.stderr
-        )
-        # import traceback
-        # traceback.print_exc() # For debugging
+        logger.exception(f"Error updating markdown file {markdown_file_path}")
         return False
