@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+            <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <title>Django application on Google Cloud Platform.</title>
+
+            <link href="https://blog.tobked.dev//feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="ups and downs Full Atom Feed" />
+            <link href="https://blog.tobked.dev//feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="ups and downs Full RSS Feed" />
+        <!-- Bootstrap Core CSS -->
+        <link href="https://blog.tobked.dev/theme/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link href="https://blog.tobked.dev/theme/css/clean-blog.min.css" rel="stylesheet">
+
+        <!-- Code highlight color scheme -->
+            <link href="https://blog.tobked.dev/theme/css/code_blocks/github.css" rel="stylesheet">
+
+            <!-- CSS specified by the user -->
+            <link href="https://blog.tobked.dev/css/main.css" rel="stylesheet">
+
+        <!-- Custom Fonts -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+
+        <meta name="description" content="How to deploy Django app on Google Platform with Terraform">
+
+        <meta name="author" content="Tobiasz Kedzierski">
+
+        <meta name="tags" content="python">
+        <meta name="tags" content="blog">
+        <meta name="tags" content="django">
+        <meta name="tags" content="cloud">
+        <meta name="tags" content="google">
+
+	                <meta property="og:locale" content="">
+		<meta property="og:site_name" content="ups and downs">
+
+	<meta property="og:type" content="article">
+            <meta property="article:author" content="https://blog.tobked.dev/author/tobiasz-kedzierski">
+	<meta property="og:url" content="https://blog.tobked.dev/django_on_gcp">
+	<meta property="og:title" content="Django application on Google Cloud Platform.">
+	<meta property="article:published_time" content="2021-12-30 00:00:00+01:00">
+            <meta property="og:description" content="How to deploy Django app on Google Platform with Terraform">
+
+            <meta property="og:image" content="https://blog.tobked.dev/images/posts/2021/2021_12_xx_django_gcp_terraform.png">
+</head>
+
+<body class="article-django_on_gcp">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="https://blog.tobked.dev/">ups and downs</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+
+                            <li><a href="https://blog.tobked.dev/pages/about-me">about me</a></li>
+                            <li><a href="https://blog.tobked.dev/pages/links">links</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+        <header class="intro-header" style="background-image: url('https://blog.tobked.dev//images/posts/2021/2021_12_xx_django_gcp_terraform.png')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="post-heading">
+                        <h1>Django application on Google Cloud Platform.</h1>
+                        <span class="meta">Posted by
+                                <a href="https://blog.tobked.dev/author/tobiasz-kedzierski">Tobiasz Kedzierski</a>
+                             on 30.12.2021
+                        </span>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    <!-- Post Content -->
+    <article>
+        <h1 id="repository-with-code-tobkeddjango_on_gcp">Repository with code: <a href="https://github.com/TobKed/django_on_gcp">TobKed/django_on_gcp</a></h1>
+<p>Blog post is complementary to the repository <a href="https://github.com/TobKed/django_on_gcp">github.com/TobKed/django_on_gcp</a></p>
+<h1 id="django-application-on-google-cloud-platform">Django application on Google Cloud Platform.</h1>
+<div class="toc"><span class="toctitle">Table of contents:</span><ul>
+<li><a href="#repository-with-code-tobkeddjango_on_gcp">Repository with code: TobKed/django_on_gcp</a></li>
+<li><a href="#django-application-on-google-cloud-platform">Django application on Google Cloud Platform.</a><ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#google-cloud-options">Google Cloud options</a><ul>
+<li><a href="#app-engine">App Engine</a></li>
+<li><a href="#cloud-run">Cloud Run</a></li>
+</ul>
+</li>
+<li><a href="#django-app-changes-specific-for-google-cloud-platform">Django app changes specific for Google Cloud Platform</a></li>
+<li><a href="#prerequisites">Prerequisites</a></li>
+<li><a href="#instructions">Instructions</a><ul>
+<li><a href="#1-types-of-deployments">1. Types of deployments</a></li>
+<li><a href="#2-variables-specific-for-your-gcp-project">2. Variables specific for your GCP project</a></li>
+<li><a href="#3-set-up-infrastructure">3. Set up infrastructure</a></li>
+<li><a href="#4-deploy-app">4. Deploy app</a></li>
+<li><a href="#5-destroy-infrastructure">5. Destroy infrastructure</a></li>
+<li><a href="#extra-create-django-superuser">Extra: Create Django superuser</a></li>
+<li><a href="#how-to-run-app-locally">How to run app locally</a></li>
+</ul>
+</li>
+<li><a href="#warnings">Warnings!</a></li>
+<li><a href="#links">Links</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="introduction">Introduction</h2>
+<p>The Cloud is consistently growing and it may be worth considering for your next Python project.
+But Cloud is also very complex and the number of available services is still growing, as well as the number of decisions that have to be made when you want to create configuration for your project.
+If you want to learn how to run a simple, basic Django app in the Google Cloud Platform [GCP] and see how easy it can be as well as to get the underlying services in the form of the code (Infrastructure as Code [IaC]), this is a place for you.</p>
+<p>There are many ways to deploy a Django application on the GCP:</p>
+<ul>
+<li>App Engine (covered here)</li>
+<li>Cloud Run (covered here)</li>
+<li>Kubernetes (TODO)</li>
+<li>Compute Engine (not covered here)</li>
+</ul>
+<p>Most of them are covered in <a href="https://cloud.google.com/python/django/">GCP documentation</a> which is quite good in my opinion, however if you are not familiar with the Cloud, all these services and operations may seem confusing (and redundant).
+Django apps mentioned in these tutorials are almost the same, they have changes dependent on the service type on which they were supposed to be running, nevertheless some changes are not related.
+Moreover, I found some of the tutorials and apps to contain tiny bugs.</p>
+<p>So what I have done here is a simple Django application (based on Django project tutorial: <a href="https://docs.djangoproject.com/en/3.2/intro/tutorial01/">Writing your first Django app</a>, where all changes specific to given GCP services are grouped and can be found in the possible fewest number of places for an easy analysis.
+Additionally, infrastructure is wrapped in the Terraform (IaC tool) which allows you to easily create (and destroy) all necessary resources.
+The process of deploying application itself is not handled by Terraform (<a href="https://medium.com/google-cloud/dont-deploy-applications-with-terraform-2f4508a45987">Don’t Deploy Applications with Terraform - Paul Durivage</a>), but it is wrapped in the easy to follow Google Cloud Build [GCB] pipelines,
+separate for each service. Due to the fact that inheritance between GCB pipelines is not possible, they have a lot in common but analysis of differences between them should not be a problem for you.
+For GCB purposes I wrapped the app in Docker, even though the App Engine does not require it, but it was the easiest way to provide a proxy connection to Cloud SQL database (<a href="https://github.com/GoogleCloudPlatform/ruby-docker/tree/master/app-engine-exec-wrapper">app-engine-exec-wrapper,</a>).</p>
+<p>Hopefully such a condensed project may help you learn how GCP services may be used along with Python projects, so some ideas could be picked up in the future.</p>
+<h2 id="google-cloud-options">Google Cloud options</h2>
+<h3 id="app-engine">App Engine</h3>
+<blockquote>
+<p>App Engine is a fully managed, serverless platform for developing and hosting web applications at scale. You can choose from several popular languages, libraries, and frameworks to develop your apps, and then let App Engine take care of provisioning servers and scaling your app instances based on demand.</p>
+<p>-- <a href="https://cloud.google.com/appengine/docs">App Engine documentation</a></p>
+</blockquote>
+<p><img src="https://blog.tobked.dev/images/posts/2021/2021_12_25_django_on_gcp_app_engine.png" alt="Django on App Engine" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>This architecture consists of:</p>
+<ul>
+<li>App Engine - the main service which provides Django app directly to the users</li>
+<li>Secrets - stores sensitive data (secret key, database credentials, bucket name, etc.)</li>
+<li>Cloud SQL - relational database (PostgreSQL)</li>
+<li>Cloud Storage - file storage (static files could optionally be served by App Engine directly)</li>
+</ul>
+<h3 id="cloud-run">Cloud Run</h3>
+<blockquote>
+<p>Cloud Run is a managed compute platform that enables you to run containers that are invocable via requests or events. Cloud Run is serverless: it abstracts away all infrastructure management, so you can focus on what matters most — building great applications.</p>
+<p>-- <a href="">Cloud Run documentation</a></p>
+</blockquote>
+<p><img src="https://blog.tobked.dev/images/posts/2021/2021_12_25_django_on_gcp_cloud_run.png" alt="Django on Cloud Run" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<p>This architecture consists of:</p>
+<ul>
+<li>Cloud Run- the main service which provides Django app directly to the users</li>
+<li>Secrets - stores sensitive data (secret key, database credentials, bucket name, etc.)</li>
+<li>Cloud SQL - relational database (PostgreSQL)</li>
+<li>Cloud Storage - file storage</li>
+</ul>
+<h2 id="django-app-changes-specific-for-google-cloud-platform">Django app changes specific for Google Cloud Platform</h2>
+<p>All changes to the fresh Django app are located in <code>mysite/settings.py</code> file
+and are related to three areas: secrets, database and storage.
+I will describe each of them.</p>
+<ol>
+<li>
+<p>Secrets</p>
+<p>As depicted in diagrams from the previous point, the application connects to the Google Secrets service to obtain some sensitive information.</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">io</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">environ</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">google.cloud</span><span class="w"> </span><span class="kn">import</span> <span class="n">secretmanager</span>
+
+<span class="n">BASE_DIR</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">resolve</span><span class="p">()</span><span class="o">.</span><span class="n">parent</span><span class="o">.</span><span class="n">parent</span>
+
+<span class="n">env</span> <span class="o">=</span> <span class="n">environ</span><span class="o">.</span><span class="n">Env</span><span class="p">(</span><span class="n">DEBUG</span><span class="o">=</span><span class="p">(</span><span class="nb">bool</span><span class="p">,</span> <span class="kc">False</span><span class="p">))</span>
+<span class="n">env_file</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">BASE_DIR</span><span class="p">,</span> <span class="s2">&quot;.env&quot;</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">env_file</span><span class="p">):</span>
+    <span class="n">env</span><span class="o">.</span><span class="n">read_env</span><span class="p">(</span><span class="n">env_file</span><span class="p">)</span>
+<span class="c1"># Pull secrets from Google Secret Manager</span>
+<span class="k">elif</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;GOOGLE_CLOUD_PROJECT&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">):</span>
+    <span class="n">project_id</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;GOOGLE_CLOUD_PROJECT&quot;</span><span class="p">)</span>
+    <span class="n">settings_name</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;SETTINGS_NAME&quot;</span><span class="p">,</span> <span class="s2">&quot;django_settings&quot;</span><span class="p">)</span>
+    <span class="n">client</span> <span class="o">=</span> <span class="n">secretmanager</span><span class="o">.</span><span class="n">SecretManagerServiceClient</span><span class="p">()</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;projects/</span><span class="si">{</span><span class="n">project_id</span><span class="si">}</span><span class="s2">/secrets/</span><span class="si">{</span><span class="n">settings_name</span><span class="si">}</span><span class="s2">/versions/latest&quot;</span>
+    <span class="n">payload</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">access_secret_version</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">)</span><span class="o">.</span><span class="n">payload</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s2">&quot;UTF-8&quot;</span><span class="p">)</span>
+    <span class="n">env</span><span class="o">.</span><span class="n">read_env</span><span class="p">(</span><span class="n">io</span><span class="o">.</span><span class="n">StringIO</span><span class="p">(</span><span class="n">payload</span><span class="p">))</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;No local .env or GOOGLE_CLOUD_PROJECT detected. No secrets found.&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<p>Environmental variables are handled by <a href="https://django-environ.readthedocs.io/en/latest/"><code>django-environ</code></a> package.</p>
+<p>If the <code>.env</code> file exists it is treated as the source of secrets (extends environmental variables).</p>
+<p>Otherwise, if <code>GOOGLE_CLOUD_PROJECT</code> environmental variable existence check is positive, then client of Google Secrets
+fetches the secret (with default name <code>django_settings</code>) and extends environmental variables with values from it.</p>
+<p>If there is no <code>.env</code> file and no <code>GOOGLE_CLOUD_PROJECT</code> variable, then an exception is raised and the app will not be able to start.</p>
+<p>The secret (mentioned <code>django_settings</code> from Google Secrets) consists of three variables:</p>
+<ul>
+<li><code>SECRET_KEY</code> - which is used to provide cryptographic signing.</li>
+<li><code>DATABASE_URL</code> - database connection information and credentials.</li>
+<li><code>GS_BUCKET_NAME</code> - <a href="https://cloud.google.com/storage/">Google Cloud Storage</a> bucket name (may be empty for Google App Engine standard environment).</li>
+</ul>
+</li>
+<li>
+<p>Database</p>
+<div class="highlight"><pre><span></span><code><span class="n">default_sqlite3_database</span> <span class="o">=</span> <span class="s2">&quot;sqlite:///&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">BASE_DIR</span> <span class="o">/</span> <span class="s2">&quot;db.sqlite3&quot;</span><span class="p">)</span>
+<span class="n">DATABASES</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;default&quot;</span><span class="p">:</span> <span class="n">env</span><span class="o">.</span><span class="n">db</span><span class="p">(</span><span class="s2">&quot;DATABASE_URL&quot;</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="n">default_sqlite3_database</span><span class="p">)}</span>
+
+<span class="c1"># If the flag as been set, configure to use proxy</span>
+<span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&quot;USE_CLOUD_SQL_AUTH_PROXY&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">):</span>
+    <span class="n">DATABASES</span><span class="p">[</span><span class="s2">&quot;default&quot;</span><span class="p">][</span><span class="s2">&quot;HOST&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;127.0.0.1&quot;</span>
+    <span class="n">DATABASES</span><span class="p">[</span><span class="s2">&quot;default&quot;</span><span class="p">][</span><span class="s2">&quot;PORT&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">5432</span>
+</code></pre></div>
+
+<p>Database connection string is obtained from the <code>DATABASE_URL</code> environment variable.
+Otherwise, the default <code>sqlite3</code> database is used.</p>
+<p>Then, if the <code>USE_CLOUD_SQL_AUTH_PROXY</code> environmental variable exists,
+the database connection will be modified to make it work with <a href="https://cloud.google.com/sql/docs/postgres/sql-proxy">Cloud SQL Auth proxy</a>.</p>
+</li>
+<li>
+<p>Storage</p>
+<div class="highlight"><pre><span></span><code><span class="n">GS_BUCKET_NAME</span> <span class="o">=</span> <span class="n">env</span><span class="p">(</span><span class="s2">&quot;GS_BUCKET_NAME&quot;</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+
+<span class="n">STATIC_URL</span> <span class="o">=</span> <span class="s2">&quot;/static/&quot;</span>
+
+<span class="k">if</span> <span class="n">GS_BUCKET_NAME</span><span class="p">:</span>
+    <span class="n">DEFAULT_FILE_STORAGE</span> <span class="o">=</span> <span class="s2">&quot;storages.backends.gcloud.GoogleCloudStorage&quot;</span>
+    <span class="n">STATICFILES_STORAGE</span> <span class="o">=</span> <span class="s2">&quot;storages.backends.gcloud.GoogleCloudStorage&quot;</span>
+    <span class="n">GS_DEFAULT_ACL</span> <span class="o">=</span> <span class="s2">&quot;publicRead&quot;</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">STATIC_ROOT</span> <span class="o">=</span> <span class="s2">&quot;static&quot;</span>
+    <span class="n">STATICFILES_DIRS</span> <span class="o">=</span> <span class="p">[]</span>
+</code></pre></div>
+
+<p>If <code>GS_BUCKET_NAME</code> environment variable exists, then the relevant storage backend will be set with the help of <a href="https://github.com/jschneier/django-storages/">django-storages</a> package.</p>
+</li>
+</ol>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Topics you should be familiar with since they will be not covered:</p>
+<ul>
+<li>Python and Django</li>
+<li>Cloud - basic cloud concepts in general</li>
+<li>Google Cloud Platform: basics of the services, use of <code>gcloud</code> CLI, managing billing and documentation about <a href="https://cloud.google.com/python/django/">Django on GCP (GCP documentation)</a></li>
+<li>Terraform -  basic use and concepts. You can also check my tutorial on Medium: <a href="https://tobiaszkedzierski.medium.com/terraform-tutorial-introduction-to-infrastructure-as-code-dccec643bfdb">Terraform Tutorial: Introduction to Infrastructure as Code</a></li>
+</ul>
+<p>What you should prepare:</p>
+<ul>
+<li>Google Cloud Project - create a fresh GCP project or use an existing one (but it may cause Terraform exceptions)</li>
+<li><a href="https://cloud.google.com/sdk/gcloud"><code>gcloud</code></a> - install GCP cli and authorize it with a relevant GCP Project</li>
+<li><a href="https://www.terraform.io/downloads.html">Terraform</a> - install the latest version</li>
+<li>Python [optionally] - Python 3.9 in virtual environment if you want to run Django app locally</li>
+</ul>
+<h2 id="instructions">Instructions</h2>
+<p>Most of the terminal commands stated here are executed within the Terraform environment folder relevant to the chosen solution.</p>
+<h3 id="1-types-of-deployments">1. Types of deployments</h3>
+<div style="overflow-x:auto;">
+<table>
+<thead>
+<tr>
+<th>Terraform environment folder</th>
+<th>Description</th>
+<th>GCS</th>
+<th><code>CLOUD_BUILD_FILE</code> variable</th>
+<th>Config file</th>
+<th>Used Terraform module</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>terraform/envs/gae_standard</code></td>
+<td>App Engine Standard environment <strong>without</strong> GCS storage</td>
+<td>❌</td>
+<td><code>cloudbuild/gae_standard.yaml</code></td>
+<td><code>gae_standard.yaml</code></td>
+<td><a href="https://github.com/TobKed/django_on_gcp/tree/master/terraform/modules/django_gae_standard"><code>terraform/modules/django_gae_standard</code></a></td>
+</tr>
+<tr>
+<td><code>terraform/envs/gae_standard_with_gcs</code></td>
+<td>App Engine Standard environment</td>
+<td>✅</td>
+<td><code>cloudbuild/gae_standard_with_gcs.yaml</code></td>
+<td><code>gae_standard_with_gcs.yaml</code></td>
+<td><a href="https://github.com/TobKed/django_on_gcp/tree/master/terraform/modules/django_gae_standard"><code>terraform/modules/django_gae_standard</code></a></td>
+</tr>
+<tr>
+<td><code>terraform/envs/gae_flexible</code></td>
+<td>App Engine Flexible environment</td>
+<td>✅</td>
+<td><code>cloudbuild/gae_flexible.yaml</code></td>
+<td><code>gae_flexible.yaml</code></td>
+<td><a href="https://github.com/TobKed/django_on_gcp/tree/master/terraform/modules/django_gae_flexible"><code>terraform/modules/django_gae_flexible</code></a></td>
+</tr>
+<tr>
+<td><code>terraform/envs/cloud_run</code></td>
+<td>Cloud Run</td>
+<td>✅</td>
+<td><code>cloudbuild/cloud_run.yaml</code></td>
+<td>-</td>
+<td><a href="https://github.com/TobKed/django_on_gcp/tree/master/terraform/modules/django_cloud_run"><code>terraform/modules/django_cloud_run</code></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<h3 id="2-variables-specific-for-your-gcp-project">2. Variables specific for your GCP project</h3>
+<ol>
+<li>
+<p>Shell environmental variables</p>
+<p>Set environmental variables.
+Some values you have to know beforehand, like <code>PROJECT_ID</code>.
+Others you can generate on the fly, like <code>DJANGO_SECRET_KEY</code> however, remember to keep them somewhere (see the next step).
+They will be used to provide input variables for Terraform and for <code>gcloud</code> commands.</p>
+<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">PROJECT_ID</span><span class="o">=</span>django-cloud-tf-test-001
+<span class="nb">export</span><span class="w"> </span><span class="nv">REGION</span><span class="o">=</span>europe-central2
+<span class="nb">export</span><span class="w"> </span><span class="nv">ZONE</span><span class="o">=</span>europe-central2-a
+<span class="nb">export</span><span class="w"> </span><span class="nv">SQL_DATABASE_INSTANCE_NAME</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">PROJECT_ID</span><span class="si">}</span><span class="s2">-db-instance&quot;</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">SQL_DATABASE_NAME</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">PROJECT_ID</span><span class="si">}</span><span class="s2">-db&quot;</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">SERVICE_NAME</span><span class="o">=</span>polls-service
+<span class="nb">export</span><span class="w"> </span><span class="nv">SERVICE_ACCOUNT_NAME</span><span class="o">=</span>polls-service-account<span class="w">  </span><span class="c1"># for cloud run</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">SERVICE_ACCOUNT</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">SERVICE_ACCOUNT_NAME</span><span class="si">}</span><span class="s2">@</span><span class="si">${</span><span class="nv">PROJECT_ID</span><span class="si">}</span><span class="s2">.iam.gserviceaccount.com&quot;</span><span class="w">   </span><span class="c1"># for cloud run</span>
+
+<span class="nb">export</span><span class="w"> </span><span class="nv">DJANGO_SECRET_KEY</span><span class="o">=</span><span class="k">$(</span>cat<span class="w"> </span>/dev/urandom<span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nv">LC_ALL</span><span class="o">=</span>C<span class="w"> </span>tr<span class="w"> </span>-dc<span class="w"> </span><span class="s1">&#39;[:alpha:]&#39;</span><span class="p">|</span><span class="w"> </span>fold<span class="w"> </span>-w<span class="w"> </span><span class="m">50</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>head<span class="w"> </span>-n1<span class="k">)</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">SQL_USER</span><span class="o">=</span><span class="k">$(</span>cat<span class="w"> </span>/dev/urandom<span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nv">LC_ALL</span><span class="o">=</span>C<span class="w"> </span>tr<span class="w"> </span>-dc<span class="w"> </span><span class="s1">&#39;[:alpha:]&#39;</span><span class="p">|</span><span class="w"> </span>fold<span class="w"> </span>-w<span class="w"> </span><span class="m">10</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>head<span class="w"> </span>-n1<span class="k">)</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">SQL_PASSWORD</span><span class="o">=</span><span class="k">$(</span>cat<span class="w"> </span>/dev/urandom<span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="nv">LC_ALL</span><span class="o">=</span>C<span class="w"> </span>tr<span class="w"> </span>-dc<span class="w"> </span><span class="s1">&#39;[:alpha:]&#39;</span><span class="p">|</span><span class="w"> </span>fold<span class="w"> </span>-w<span class="w"> </span><span class="m">10</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>head<span class="w"> </span>-n1<span class="k">)</span>
+</code></pre></div>
+
+</li>
+<li>
+<p><code>gcloud</code> project configuration</p>
+<div class="highlight"><pre><span></span><code>gcloud<span class="w"> </span>config<span class="w"> </span><span class="nb">set</span><span class="w"> </span>project<span class="w"> </span><span class="nv">$PROJECT_ID</span>
+</code></pre></div>
+
+</li>
+<li>
+<p>Terraform variables</p>
+<p>Terraform can read variables from environment variables.
+Naming convention is <code>TF_VAR_variable_name</code>.</p>
+<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">TF_VAR_project_id</span><span class="o">=</span><span class="nv">$PROJECT_ID</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">TF_VAR_region</span><span class="o">=</span><span class="nv">$REGION</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">TF_VAR_zone</span><span class="o">=</span><span class="nv">$ZONE</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">TF_VAR_django_secret_key</span><span class="o">=</span><span class="nv">$DJANGO_SECRET_KEY</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">TF_VAR_sql_database_instance_name</span><span class="o">=</span><span class="nv">$SQL_DATABASE_INSTANCE_NAME</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">TF_VAR_sql_database_name</span><span class="o">=</span><span class="nv">$SQL_DATABASE_NAME</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">TF_VAR_sql_user</span><span class="o">=</span><span class="nv">$SQL_USER</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">TF_VAR_sql_password</span><span class="o">=</span><span class="nv">$SQL_PASSWORD</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">TF_VAR_cloud_run_service_account_name</span><span class="o">=</span><span class="nv">$SERVICE_ACCOUNT_NAME</span>
+</code></pre></div>
+
+<p>Another way to provide input variables is the '.tfvars' file.
+With variables set in the previous step, such file could be generated with the following command:</p>
+<div class="highlight"><pre><span></span><code>cat<span class="w"> </span><span class="s">&lt;&lt; EOF &gt; terraform.tfvars</span>
+<span class="s">project_id                     = &quot;$PROJECT_ID&quot;</span>
+<span class="s">region                         = &quot;$REGION&quot;</span>
+<span class="s">zone                           = &quot;$ZONE&quot;</span>
+<span class="s">django_secret_key              = &quot;$DJANGO_SECRET_KEY&quot;</span>
+<span class="s">sql_database_instance_name     = &quot;$SQL_DATABASE_INSTANCE_NAME&quot;</span>
+<span class="s">sql_database_name              = &quot;$SQL_DATABASE_NAME&quot;</span>
+<span class="s">sql_user                       = &quot;$SQL_USER&quot;</span>
+<span class="s">sql_password                   = &quot;$SQL_PASSWORD&quot;</span>
+<span class="s">cloud_run_service_account_name = &quot;$SERVICE_ACCOUNT_NAME&quot;</span>
+<span class="s">EOF</span>
+</code></pre></div>
+
+<p>More about variables: <a href="https://www.terraform.io/language/values/variables">Input Variables</a> and <a href="https://www.terraform.io/language/values/variables#variable-definition-precedence">Variable Definition Precedence</a></p>
+</li>
+</ol>
+<h3 id="3-set-up-infrastructure">3. Set up infrastructure</h3>
+<p>Set up infrastructure with basic Terraform commands:</p>
+<div class="highlight"><pre><span></span><code>terraform<span class="w"> </span>init
+terraform<span class="w"> </span>plan
+terraform<span class="w"> </span>apply
+</code></pre></div>
+
+<p>Known issues:</p>
+<ul>
+<li>
+<p><a href="https://issuetracker.google.com/issues/35874988">No way to delete an application</a> - 13 years old Google issue:</p>
+<div class="highlight"><pre><span></span><code>Error:<span class="w"> </span>Error<span class="w"> </span>creating<span class="w"> </span>App<span class="w"> </span>Engine<span class="w"> </span>application:<span class="w"> </span>googleapi:<span class="w"> </span>Error<span class="w"> </span><span class="m">409</span>:<span class="w"> </span>This<span class="w"> </span>application<span class="w"> </span>already<span class="w"> </span>exists<span class="w"> </span>and<span class="w"> </span>cannot<span class="w"> </span>be<span class="w"> </span>re-created.,<span class="w"> </span>alreadyExist<span class="sb">`</span>
+</code></pre></div>
+
+<p>After destroying infrastructure and recreating it again this error occurs since the App Engine app was (silently) not deleted as intended.
+It could be fixed by importing the existing App Engine app into Terraform state:</p>
+<div class="highlight"><pre><span></span><code>terraform<span class="w"> </span>import<span class="w"> </span>module.<span class="nv">$TERRAFORM_MODULE_NAME</span>.google_app_engine_application.app<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">PROJECT_ID</span><span class="si">}</span><span class="s2">&quot;</span>
+</code></pre></div>
+
+<p>Replace <code>$TERRAFORM_MODULE_NAME</code> with the relevant module name (see <code>main.tf</code> in env of your choice).</p>
+<p>Example for <code>django_gae_standard</code>:</p>
+<div class="highlight"><pre><span></span><code>terraform<span class="w"> </span>import<span class="w"> </span>module.django_gae_standard.google_app_engine_application.app<span class="w"> </span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">PROJECT_ID</span><span class="si">}</span><span class="s2">&quot;</span>
+</code></pre></div>
+
+<p>More about importing: <a href="https://www.terraform.io/docs/cli/import/index.html">Terraform - import</a></p>
+</li>
+<li>
+<p>random null occurrence for <code>data.google_project.project.number</code> (<a href="https://github.com/hashicorp/terraform-provider-google/issues/10587#issuecomment-984589651">my comment on <code>hashicorp/terraform-provider-google - data.google_project.project.project_id sometimes null</code> issue</a>):</p>
+<div class="highlight"><pre><span></span><code>The<span class="w"> </span>expression<span class="w"> </span>result<span class="w"> </span>is<span class="w"> </span>null.<span class="w"> </span>Cannot<span class="w"> </span>include<span class="w"> </span>a<span class="w"> </span>null<span class="w"> </span>value<span class="w"> </span><span class="k">in</span><span class="w"> </span>a<span class="w"> </span>string<span class="w"> </span>template.
+</code></pre></div>
+
+</li>
+</ul>
+<p>The only solution here is to retry until it works and wait until the new version of the <code>hashicorp/terraform-provider-google</code> has it eliminated.</p>
+<h3 id="4-deploy-app">4. Deploy app</h3>
+<p>I share the opinion that Terraform should only be used to provide the infrastructure and the
+deployment of the application itself should be handled separately
+(see <a href="https://medium.com/google-cloud/dont-deploy-applications-with-terraform-2f4508a45987">Don’t Deploy Applications with Terraform - Paul Durivage</a>).</p>
+<p>GCB pipelines handle the operation of deploying and/or updating the application.</p>
+<ol>
+<li>
+<p>Set GCB pipeline relevant to the chosen deployment</p>
+<p>Substitute the path with the value taken from the <a href="#1-types-of-deployments">Types of deployments</a> table</p>
+<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">CLOUD_BUILD_FILE</span><span class="o">=</span>&lt;put<span class="w"> </span>value<span class="w"> </span>here&gt;
+</code></pre></div>
+
+</li>
+<li>
+<p>Deploy</p>
+<p>Commands should be run from the root repository directory (see <code>CLOUD_BUILD_FILE</code> variable).</p>
+<ul>
+<li>
+<p>App Engine</p>
+<p>Run GCB pipeline:</p>
+<div class="highlight"><pre><span></span><code>gcloud<span class="w"> </span>builds<span class="w"> </span>submit<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--project<span class="w"> </span><span class="nv">$PROJECT_ID</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--config<span class="w"> </span><span class="nv">$CLOUD_BUILD_FILE</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--substitutions<span class="w"> </span><span class="nv">_INSTANCE_NAME</span><span class="o">=</span><span class="nv">$SQL_DATABASE_INSTANCE_NAME</span>,_REGION<span class="o">=</span><span class="nv">$REGION</span>,_SERVICE_NAME<span class="o">=</span><span class="nv">$SERVICE_NAME</span>
+</code></pre></div>
+
+<p>Display GAE application url:</p>
+<div class="highlight"><pre><span></span><code>gcloud<span class="w"> </span>app<span class="w"> </span>describe<span class="w"> </span>--format<span class="w"> </span><span class="s2">&quot;value(defaultHostname)&quot;</span>
+</code></pre></div>
+
+<p>Known issues:</p>
+<ul>
+<li>ambiguous error occurrence during the last step, a Terraform Google provider issue, wait a while and retry<div class="highlight"><pre><span></span><code>Step<span class="w"> </span><span class="c1">#5 - &quot;deploy app&quot;: ERROR: (gcloud.app.deploy) NOT_FOUND: Unable to retrieve P4SA: [service-123456789101@gcp-gae-service.iam.gserviceaccount.com] from GAIA. Could be GAIA propagation delay or request from deleted apps.</span>
+sFinished<span class="w"> </span>Step<span class="w"> </span><span class="c1">#5 - &quot;deploy app&quot;</span>
+</code></pre></div>
+
+</li>
+</ul>
+</li>
+<li>
+<p>Cloud Run</p>
+<p>Run GCB pipeline:</p>
+<div class="highlight"><pre><span></span><code>gcloud<span class="w"> </span>builds<span class="w"> </span>submit<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--project<span class="w"> </span><span class="nv">$PROJECT_ID</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--config<span class="w"> </span><span class="nv">$CLOUD_BUILD_FILE</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--substitutions<span class="w"> </span><span class="nv">_INSTANCE_NAME</span><span class="o">=</span><span class="nv">$SQL_DATABASE_INSTANCE_NAME</span>,_REGION<span class="o">=</span><span class="nv">$REGION</span>,_SERVICE_NAME<span class="o">=</span><span class="nv">$SERVICE_NAME</span>,_SERVICE_ACCOUNT_NAME<span class="o">=</span><span class="nv">$SERVICE_ACCOUNT_NAME</span>
+</code></pre></div>
+
+<p>Display Cloud Run application url:</p>
+<div class="highlight"><pre><span></span><code>gcloud<span class="w"> </span>run<span class="w"> </span>services<span class="w"> </span>list<span class="w"> </span>--filter<span class="w"> </span>SERVICE:<span class="nv">$SERVICE_NAME</span><span class="w"> </span>--format<span class="w"> </span><span class="s2">&quot;value(status.address.url)&quot;</span>
+</code></pre></div>
+
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="5-destroy-infrastructure">5. Destroy infrastructure</h3>
+<div class="highlight"><pre><span></span><code>terraform<span class="w"> </span>destroy
+</code></pre></div>
+
+<h3 id="extra-create-django-superuser">Extra: Create Django superuser</h3>
+<p>Superuser credentials are intended to be stored as Google Secret.
+Default name for the secret is <code>superuser_credentials</code>.
+These credentials are used by <code>cloudbuild/create_superuser.yaml</code> GCB pipeline for superuser creation.</p>
+<p>An easy way to quickly create and destroy Google Secrets is to use the <code>gcloud</code> cli.
+Optionally, resources could be created in TF as well, however if superuser credentials are needed only once,
+it does not seem to be the best idea to store it as IaC.</p>
+<ol>
+<li>
+<p>Create the secret:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">SECRET_NAME</span><span class="o">=</span><span class="s2">&quot;superuser_credentials&quot;</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">SUPERUSER_USERNAME</span><span class="o">=</span><span class="s2">&quot;super_username&quot;</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">SUPERUSER_PASSWORD</span><span class="o">=</span><span class="s2">&quot;super_password&quot;</span>
+
+gcloud<span class="w"> </span>secrets<span class="w"> </span>create<span class="w"> </span><span class="nv">$SECRET_NAME</span><span class="w"> </span>--replication-policy<span class="o">=</span><span class="s2">&quot;automatic&quot;</span>
+<span class="nb">echo</span><span class="w"> </span>-n<span class="w"> </span><span class="s2">&quot;USERNAME=</span><span class="si">${</span><span class="nv">SUPERUSER_USERNAME</span><span class="si">}</span><span class="s2">\nPASSWORD=</span><span class="si">${</span><span class="nv">SUPERUSER_PASSWORD</span><span class="si">}</span><span class="s2">\n&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>gcloud<span class="w"> </span>secrets<span class="w"> </span>versions<span class="w"> </span>add<span class="w"> </span><span class="nv">$SECRET_NAME</span><span class="w"> </span>--data-file<span class="o">=</span>-
+</code></pre></div>
+
+<p>Optionally, you can read the secret to verify if it is correct:</p>
+<div class="highlight"><pre><span></span><code>gcloud<span class="w"> </span>secrets<span class="w"> </span>versions<span class="w"> </span>access<span class="w"> </span>latest<span class="w"> </span>--secret<span class="o">=</span><span class="nv">$SECRET_NAME</span>
+</code></pre></div>
+
+</li>
+<li>
+<p>Run GCB pipeline which creates Django superuser:</p>
+<div class="highlight"><pre><span></span><code>gcloud<span class="w"> </span>builds<span class="w"> </span>submit<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--project<span class="w"> </span><span class="nv">$PROJECT_ID</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--config<span class="w"> </span>cloudbuild/create_superuser.yaml<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>--substitutions<span class="w"> </span><span class="nv">_INSTANCE_NAME</span><span class="o">=</span><span class="nv">$SQL_DATABASE_INSTANCE_NAME</span>,_REGION<span class="o">=</span><span class="nv">$REGION</span>,_SERVICE_NAME<span class="o">=</span><span class="nv">$SERVICE_NAME</span>
+</code></pre></div>
+
+</li>
+<li>
+<p>Delete the secret:</p>
+<div class="highlight"><pre><span></span><code>gcloud<span class="w"> </span>secrets<span class="w"> </span>delete<span class="w"> </span><span class="nv">$SECRET_NAME</span>
+</code></pre></div>
+
+</li>
+</ol>
+<p>Optionally create Secret as a Terraform resource (credentials provided as variables):</p>
+<div class="highlight"><pre><span></span><code><span class="kr">variable</span><span class="w"> </span><span class="nv">&quot;django_superuser_username&quot;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="na">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Django superuser username&quot;</span>
+<span class="w">  </span><span class="na">type</span><span class="w">        </span><span class="o">=</span><span class="w"> </span><span class="kt">string</span>
+<span class="p">}</span>
+
+<span class="kr">variable</span><span class="w"> </span><span class="nv">&quot;django_superuser_password&quot;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="na">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Django superuser password&quot;</span>
+<span class="w">  </span><span class="na">type</span><span class="w">        </span><span class="o">=</span><span class="w"> </span><span class="kt">string</span>
+<span class="p">}</span>
+
+<span class="kr">resource</span><span class="w"> </span><span class="nc">&quot;google_secret_manager_secret&quot;</span><span class="w"> </span><span class="nv">&quot;superuser_credentials&quot;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="na">secret_id</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="nv">var.django_settings_name</span>
+<span class="w">  </span><span class="na">depends_on</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="nv">google_project_service.gcp_services</span><span class="p">]</span>
+<span class="w">  </span><span class="nb">labels</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="na">label</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;superuser_credentials&quot;</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w">  </span><span class="nb">replication</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="na">automatic</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="no">true</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kr">resource</span><span class="w"> </span><span class="nc">&quot;google_secret_manager_secret_version&quot;</span><span class="w"> </span><span class="nv">&quot;superuser_credentials_version&quot;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="na">secret</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">google_secret_manager_secret.django_settings.id</span>
+
+<span class="w">  </span><span class="na">secret_data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&lt;&lt;-</span><span class="dl">EOF</span>
+<span class="sh">  USERNAME=${var.django_superuser_username}</span>
+<span class="sh">  PASSWORD=${var.django_superuser_password}</span>
+<span class="dl">  EOF</span>
+
+<span class="w">  </span><span class="na">depends_on</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="nv">module.django_cloud_run</span><span class="p">]</span><span class="c1">  # relevant module for your case</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<h3 id="how-to-run-app-locally">How to run app locally</h3>
+<p>Instruction on how to run this app locally with or without connection to the cloud services.
+If you want to run the app with connection to the cloud services you have to set up the infrastructure first (steps 1-3 in <a href="#instructions">Instructions</a>).</p>
+<ol>
+<li>
+<p>Create Python virtual environment and install dependencies:</p>
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>venv
+<span class="nb">source</span><span class="w"> </span>venv/bin/activate
+pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+</code></pre></div>
+
+</li>
+<li>
+<p>Set up connection to Google Cloud services (if you need them):</p>
+<ul>
+<li>
+<p>Authenticate to GCP:</p>
+<div class="highlight"><pre><span></span><code>gcloud<span class="w"> </span>auth<span class="w"> </span>application-default<span class="w"> </span>login
+</code></pre></div>
+
+</li>
+<li>
+<p>Install <a href="https://cloud.google.com/sql/docs/postgres/sql-proxy">Cloud SQL Auth proxy</a>:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Linux 64-bit</span>
+wget<span class="w"> </span>https://dl.google.com/cloudsql/cloud_sql_proxy.linux.amd64<span class="w"> </span>-O<span class="w"> </span>cloud_sql_proxy
+<span class="c1"># MacOS 64-bit</span>
+curl<span class="w"> </span>-o<span class="w"> </span>cloud_sql_proxy<span class="w"> </span>https://dl.google.com/cloudsql/cloud_sql_proxy.darwin.amd64
+
+chmod<span class="w"> </span>+x<span class="w"> </span>cloud_sql_proxy
+</code></pre></div>
+
+</li>
+<li>
+<p>Export environment variables:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">GOOGLE_CLOUD_PROJECT</span><span class="o">=</span><span class="nv">$PROJECT_ID</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">USE_CLOUD_SQL_AUTH_PROXY</span><span class="o">=</span><span class="nb">true</span>
+</code></pre></div>
+
+</li>
+</ul>
+</li>
+<li>
+<p>Create <code>.env</code> file with secrets:</p>
+<ul>
+<li>
+<p>without connection to cloud services:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;DEBUG=True&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>.env
+</code></pre></div>
+
+</li>
+<li>
+<p>with connection to cloud services (values fetched from Google Secrets):</p>
+<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;DEBUG=True&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>.env
+
+<span class="c1"># The output will be formatted as UTF-8 which can corrupt binary secrets.</span>
+<span class="c1"># To get the raw bytes, have Cloud SDK print the response as base64-encoded and decode</span>
+gcloud<span class="w"> </span>secrets<span class="w"> </span>versions<span class="w"> </span>access<span class="w"> </span>latest<span class="w"> </span>--secret<span class="o">=</span>django_settings<span class="w"> </span>--format<span class="o">=</span><span class="s1">&#39;get(payload.data)&#39;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="p">|</span><span class="w"> </span>tr<span class="w"> </span><span class="s1">&#39;_-&#39;</span><span class="w"> </span><span class="s1">&#39;/+&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>base64<span class="w"> </span>-d<span class="w"> </span>&gt;&gt;<span class="w"> </span>.env
+</code></pre></div>
+
+</li>
+</ul>
+</li>
+<li>
+<p>Run the Django migrations to set up your models and assets:</p>
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>manage.py<span class="w"> </span>makemigrations
+python<span class="w"> </span>manage.py<span class="w"> </span>makemigrations<span class="w"> </span>polls
+python<span class="w"> </span>manage.py<span class="w"> </span>migrate
+python<span class="w"> </span>manage.py<span class="w"> </span>collectstatic
+</code></pre></div>
+
+</li>
+<li>
+<p>Start the Django web server:</p>
+<div class="highlight"><pre><span></span><code>python<span class="w"> </span>manage.py<span class="w"> </span>runserver
+</code></pre></div>
+
+</li>
+</ol>
+<h2 id="warnings">Warnings!</h2>
+<ol>
+<li>Remember to edit <code>.gcloudignore</code> and <code>.dockerignore</code>. It excludes all files except implicitly added.</li>
+<li>Running services and operations costs real <strong>MONEY</strong>. Make sure that you do not leave any resources that consume credits unintentionally.</li>
+<li>Examples here are not production-ready and do not provide a sufficient level of security. If you want to run it within your organization, consult it with the person responsible for Cloud (e.g. Cloud Security Officer).</li>
+</ol>
+<h2 id="links">Links</h2>
+<ul>
+<li><a href="https://cloud.google.com/python"> Python on Google Cloud</a></li>
+<li><a href="https://cloud.google.com/python/django/appengine">Running Django on the App Engine standard environment</a></li>
+<li><a href="https://cloud.google.com/python/django/flexible-environment">Running Django on the App Engine flexible environment</a></li>
+<li><a href="https://cloud.google.com/python/django/run">Running Django on the Cloud Run environment </a></li>
+</ul>
+    </article>
+
+        <div class="tags">
+            <p>tags: <a href="https://blog.tobked.dev/tag/python">python</a>, <a href="https://blog.tobked.dev/tag/blog">blog</a>, <a href="https://blog.tobked.dev/tag/django">django</a>, <a href="https://blog.tobked.dev/tag/cloud">cloud</a>, <a href="https://blog.tobked.dev/tag/google">google</a></p>
+        </div>
+
+    <hr>
+
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                            <li>
+                                <a href="https://tobked.dev">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-user fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/tobiaszkedzierski/?locale=en_US">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/TobKed">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://blog.tobked.dev/feeds/all.rss.xml">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                    </ul>
+<p class="copyright text-muted">
+    Blog powered by <a href="http://getpelican.com">Pelican</a>,
+    which takes great advantage of <a href="http://python.org">Python</a>. <br />
+    Main page header photo by <a href="https://juliakaczorowska.pl/">Julia Kaczorowska</a> (other by me). <br />
+        &copy;  Tobiasz Kedzierski
+</p>                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://blog.tobked.dev/theme/js/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://blog.tobked.dev/theme/js/bootstrap.min.js"></script>
+
+        <!-- Custom Theme JavaScript -->
+        <script src="https://blog.tobked.dev/theme/js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
