@@ -8,17 +8,17 @@ This module defines the agents used in the link processing crew:
 
 import os
 from pathlib import Path
+from typing import Optional
+
 from crewai import Agent
 from langchain_openai import ChatOpenAI
 from loguru import logger
 
-from typing import Optional
-
-from .tools import web_content_fetcher_tool
 from .prompts import (
     LINK_ANALYZER_PROMPT,
     LINK_CATEGORIZER_PROMPT,
 )
+from .tools import web_content_fetcher_tool
 
 
 # Helper to load prompts from the 'prompts' directory (sibling to 'link_processing')

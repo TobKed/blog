@@ -10,15 +10,15 @@ import json
 import traceback
 from typing import Dict, List, Optional
 
-from crewai import Crew, Process, CrewOutput
+from crewai import Crew, CrewOutput, Process
 from loguru import logger
 
 from .agents import create_link_analyzer_agent, create_link_categorizer_agent
 from .tasks import (
-    create_analysis_task,
-    create_categorization_task,
     AnalysisOutput,
     CategorizationOutput,
+    create_analysis_task,
+    create_categorization_task,
 )
 
 

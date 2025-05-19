@@ -18,23 +18,21 @@ import sys
 from pathlib import Path
 from typing import List
 
-from loguru import logger
-
+from config import (
+    CommandLineArgs,
+    load_environment,
+    parse_arguments,
+    setup_logging,
+    setup_paths,
+    validate_markdown_file,
+)
 from link_processing.crew import LinkProcessingCrew
 from link_processing.file_updater import (
     get_available_sections,
     insert_link_into_markdown_file,
 )
-from link_processing.url_processor import process_url, LinkMetadata
-
-from config import (
-    CommandLineArgs,
-    setup_paths,
-    load_environment,
-    parse_arguments,
-    validate_markdown_file,
-    setup_logging,
-)
+from link_processing.url_processor import LinkMetadata, process_url
+from loguru import logger
 
 
 def process_urls(urls: List[str]) -> List[LinkMetadata]:
