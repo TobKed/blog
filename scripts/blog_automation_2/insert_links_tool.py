@@ -31,6 +31,7 @@ from link_processing.file_updater import (
     get_available_sections,
     insert_link_into_markdown_file,
 )
+from link_processing.link_registry import LinkRegistry
 from link_processing.url_processor import LinkMetadata, process_url
 from loguru import logger
 
@@ -62,102 +63,67 @@ def process_urls(urls: List[str]) -> List[LinkMetadata]:
 
 
 def main() -> None:
-    """Main function to orchestrate link processing and insertion."""
-    # Parse command line arguments first to get verbose flag
-    args: CommandLineArgs = parse_arguments()
+    """Main function to run the link processing script."""
+    # Parse command line arguments
+    args = parse_arguments()
 
-    # Setup logging with appropriate verbosity
-    setup_logging(verbose=args.verbose)
+    # Setup logging
+    setup_logging(args.verbose)
 
-    # Setup paths and environment
-    project_root, script_dir = setup_paths()
-    load_environment(script_dir)
+    # Load environment variables
+    load_environment()
 
-    # Validate target markdown file
-    target_markdown_path = validate_markdown_file(
-        project_root, args.target_markdown_file
-    )
+    # Setup paths
+    paths = setup_paths()
 
-    logger.info(
-        f"Processing {len(args.urls)} URL(s) for '{target_markdown_path.name}'..."
-    )
+    # Validate markdown file
+    markdown_file = validate_markdown_file(paths.project_root / args.markdown_file)
 
-    # Process URLs to clean them and extract metadata
+    # Initialize link registry with posts directory
+    posts_dir = paths.project_root / "content" / "posts"
+    link_registry = LinkRegistry(posts_dir)
+
+    # Process URLs
     processed_urls = process_urls(args.urls)
-    if not processed_urls:
-        logger.error("No URLs were successfully processed. Exiting.")
-        sys.exit(1)
 
-    # 1. Get available sections from the target markdown file
-    available_sections = get_available_sections(target_markdown_path)
+    # Initialize crew
+    crew = LinkProcessingCrew(
+        llm_provider=args.llm_provider,
+        model_name=args.model_name,
+        verbose_level=args.verbose,
+    )
 
-    # 2. Initialize and run the CrewAI crew for each URL
-    try:
-        link_crew = LinkProcessingCrew(
-            llm_provider=args.llm_provider,
-            model_name=args.model_name,
-            verbose_level=2 if args.verbose else 0,
-        )
-    except ValueError as e:
-        logger.error(f"Error initializing LinkProcessingCrew: {e}")
-        sys.exit(1)
+    # Get available sections from the markdown file
+    available_sections = get_available_sections(markdown_file)
 
-    successful_insertions = 0
+    # Process each URL
     for metadata in processed_urls:
-        logger.info(f"Processing URL: {metadata.cleaned_url}")
-        logger.debug(f"\tmetadata: {metadata=}")
-        try:
-            processed_data = link_crew.process_url(
-                metadata.cleaned_url, available_sections
+        # Check for duplicates
+        if link_registry.is_duplicate(metadata.cleaned_url):
+            duplicate_info = link_registry.get_duplicate_info(metadata.cleaned_url)
+            logger.warning(
+                f"Duplicate link found: {metadata.cleaned_url}\n"
+                f"Previously added to {duplicate_info.post_file} on {duplicate_info.added_date}"
             )
+            continue
 
-            if (
-                processed_data
-                and processed_data.get("category")
-                and processed_data.get("markdown_string")
-            ):
-                logger.info(f"Title: {processed_data['title']}")
-                logger.info(f"Description: {processed_data['description']}")
-                logger.info(f"Keywords: {processed_data.get('keywords', 'N/A')}")
-                logger.info(f"Categorized under: {processed_data['category']}")
-
-                # 3. Insert into markdown file
-                if insert_link_into_markdown_file(
-                    markdown_file_path=target_markdown_path,
-                    section_name=processed_data["category"],
-                    markdown_to_insert=processed_data["markdown_string"],
-                ):
-                    logger.success(
-                        f"Successfully inserted into '{target_markdown_path.name}'"
-                    )
-                    successful_insertions += 1
-                else:
-                    logger.error(
-                        f"Failed to insert link for {metadata.cleaned_url} into the markdown file."
-                    )
-            elif (
-                processed_data is None
-            ):  # Explicitly None means an error occurred in crew
-                logger.error(
-                    f"Processing failed for URL {metadata.cleaned_url} within the crew."
-                )
-            else:
-                logger.warning(
-                    f"Could not fully process URL {metadata.cleaned_url}. "
-                    f"Missing essential data. Skipping insertion. Data: {processed_data}"
-                )
-
-        except Exception as e:
-            logger.exception(
-                f"An unexpected error occurred while processing URL {metadata.cleaned_url}"
+        # Process URL with crew
+        result = crew.process_url(metadata.cleaned_url, available_sections)
+        if result:
+            # Insert link into markdown file
+            insert_link_into_markdown_file(
+                markdown_file, result["category"], result["markdown_string"]
             )
-
-    logger.info("Finished processing")
-    logger.info(f"{successful_insertions} link(s) successfully processed and inserted.")
-    if successful_insertions < len(processed_urls):
-        logger.warning(
-            f"{len(processed_urls) - successful_insertions} link(s) could not be processed or inserted fully."
-        )
+            # Add to registry
+            link_registry.add_link(
+                url=metadata.cleaned_url,
+                original_url=metadata.original_url,
+                post_file=str(markdown_file),
+                title=result["title"],
+            )
+            logger.info(f"Successfully added link: {metadata.cleaned_url}")
+        else:
+            logger.error(f"Failed to process URL: {metadata.cleaned_url}")
 
 
 if __name__ == "__main__":

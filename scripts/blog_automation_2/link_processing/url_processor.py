@@ -1,26 +1,28 @@
 """
-URL processing and metadata handling module.
+URL processing module for the blog automation tool.
 
-This module provides functionality for:
-- Cleaning URLs (removing tracking parameters, etc.)
-- Extracting metadata from URLs
-- Determining link types
+This module provides functionality to:
+1. Process and clean URLs
+2. Extract metadata from URLs
+3. Determine link types
 """
 
 from dataclasses import dataclass
 from enum import Enum
-from typing import Optional, Set
-from urllib.parse import parse_qs, urlparse, urlunparse
+from typing import Optional
+from urllib.parse import urlparse
 
 from loguru import logger
 
+from .url_utils import clean_url
+
 
 class LinkType(Enum):
-    """Enum representing different types of links."""
+    """Enum for different types of links."""
 
+    ARTICLE = "article"
     YOUTUBE = "youtube"
     VIDEO = "video"
-    ARTICLE = "article"
     UNKNOWN = "unknown"
 
 
@@ -46,94 +48,6 @@ class LinkMetadata:
     video_id: Optional[str] = None
 
 
-def is_youtube_url(parsed_url) -> bool:
-    """
-    Check if the URL is a YouTube URL.
-
-    Args:
-        parsed_url: Parsed URL object
-
-    Returns:
-        bool: True if the URL is a YouTube URL
-    """
-    return "youtube.com" in parsed_url.netloc or "youtu.be" in parsed_url.netloc
-
-
-def get_youtube_essential_params(query_params: dict) -> dict:
-    """
-    Get essential YouTube parameters (video ID and playlist ID).
-
-    Args:
-        query_params (dict): Dictionary of query parameters
-
-    Returns:
-        dict: Dictionary containing only essential YouTube parameters
-    """
-    essential_params = {}
-
-    # Keep video ID
-    if "v" in query_params:
-        essential_params["v"] = query_params["v"]
-
-    # Keep playlist ID
-    if "list" in query_params:
-        essential_params["list"] = query_params["list"]
-
-    return essential_params
-
-
-def clean_url(url: str) -> str:
-    """
-    Clean a URL by removing all query parameters except for essential YouTube parameters.
-    For YouTube URLs, only keeps video ID ('v') and playlist ID ('list') parameters.
-    For all other URLs, removes all query parameters.
-
-    Args:
-        url (str): The URL to clean
-
-    Returns:
-        str: The cleaned URL
-    """
-    try:
-        # Parse the URL
-        parsed = urlparse(url)
-
-        # Handle query parameters
-        if parsed.query:
-            query_params = parse_qs(parsed.query)
-
-            if is_youtube_url(parsed):
-                # For YouTube URLs, keep only essential parameters
-                cleaned_params = get_youtube_essential_params(query_params)
-            else:
-                # For all other URLs, remove all query parameters
-                cleaned_params = {}
-
-            # Reconstruct query string if there are any parameters to keep
-            new_query = (
-                "&".join(f"{k}={v[0]}" for k, v in cleaned_params.items())
-                if cleaned_params
-                else ""
-            )
-
-            # Reconstruct URL with cleaned query
-            parsed = parsed._replace(query=new_query)
-
-        # Remove trailing slashes
-        path = parsed.path.rstrip("/")
-        parsed = parsed._replace(path=path)
-
-        # Reconstruct the URL
-        cleaned_url = urlunparse(parsed)
-
-        logger.debug(f"Cleaned URL: {url} -> {cleaned_url}")
-        return cleaned_url
-
-    except Exception as e:
-        logger.warning(f"Error cleaning URL {url}: {e}")
-        return url
-
-
 def extract_video_id(url: str) -> Optional[str]:
     """
     Extract video ID from various video platform URLs.
@@ -146,21 +60,27 @@ def extract_video_id(url: str) -> Optional[str]:
     """
     try:
         parsed = urlparse(url)
+        domain = parsed.netloc.lower()
 
         # YouTube
-        if "youtube.com" in parsed.netloc or "youtu.be" in parsed.netloc:
-            if "youtu.be" in parsed.netloc:
-                return parsed.path[1:]  # Remove leading slash
-            query_params = parse_qs(parsed.query)
-            return query_params.get("v", [None])[0]
+        if "youtube.com" in domain:
+            if "v=" in parsed.query:
+                return parsed.query.split("v=")[1].split("&")[0]
+        elif "youtu.be" in domain:
+            return parsed.path.strip("/")
 
-        # Add support for other video platforms here
-        # Example: Vimeo, Dailymotion, etc.
+        # Vimeo
+        elif "vimeo.com" in domain:
+            return parsed.path.strip("/")
+
+        # Other video platforms
+        elif domain in {"dailymotion.com", "twitch.tv", "bitchute.com", "odysee.com"}:
+            return parsed.path.strip("/")
 
         return None
 
     except Exception as e:
-        logger.warning(f"Error extracting video ID from {url}: {e}")
+        logger.error(f"Error extracting video ID from {url}: {e}")
         return None
 
 
@@ -217,6 +137,8 @@ def process_url(url: str) -> LinkMetadata:
     try:
         # Clean the URL
         cleaned_url = clean_url(url)
+        if not cleaned_url:
+            raise ValueError(f"Invalid URL: {url}")
 
         # Determine link type
         link_type = determine_link_type(cleaned_url)
