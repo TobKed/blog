@@ -2,11 +2,11 @@
 
 ## TODO
 
-- \[x\] - handle duplicates
-- \[ \] - make proper prompt configuration
-- \[ \] - handle youtube videos
-- \[ \] - make better prompts
-- \[ \] - use strategy pattern to handle links with different libraries like crewAI, firecrawl, BS4
+- [x] - handle duplicates
+- [ ] - remove crewAI, use firecrawl for simplifcation
+- [ ] - handle youtube videos with YT api?
+- [ ] - make better prompts
+- [ ] - use strategy pattern to handle links with different libraries like crewAI, firecrawl, BS4
 
 ## Helper snippets
 
