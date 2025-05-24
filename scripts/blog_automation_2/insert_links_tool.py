@@ -64,17 +64,23 @@ def main() -> None:
 
         # Process URL with crew
         result = link_processor.analyze_url(metadata.cleaned_url, available_sections)
+
         if result:
             # Insert link into markdown file
+            title = metadata.title or result.og_title or result.title
+
+            markdown_string = f"### [{title}]({metadata.cleaned_url})\n\n> {result.og_description}\n\n-- AI summary: {result.brief_summary}"
             insert_link_into_markdown_file(
-                markdown_file, result["category"], result["markdown_string"]
+                markdown_file_path=markdown_file,
+                section_name=result.section,
+                markdown_to_insert=markdown_string,
             )
             # Add to registry
             link_registry.add_link(
                 url=metadata.cleaned_url,
                 original_url=metadata.original_url,
                 post_file=str(markdown_file),
-                title=result["title"],
+                title=metadata.title,
             )
             logger.info(f"Successfully added link: {metadata.cleaned_url}")
         else:
