@@ -10,7 +10,7 @@ This module provides functionality to:
 from dataclasses import dataclass
 from enum import Enum
 from typing import List, Optional
-from urllib.parse import urlparse
+from urllib.parse import parse_qs, urlparse
 
 from loguru import logger
 
@@ -38,6 +38,7 @@ class LinkMetadata:
         title (Optional[str]): Title of the content (if available)
         description (Optional[str]): Description of the content (if available)
         video_id (Optional[str]): Video ID for video links (if applicable)
+        is_youtube_playlist (bool): True if the link is a YouTube playlist
     """
 
     original_url: str
@@ -46,6 +47,7 @@ class LinkMetadata:
     title: Optional[str] = None
     description: Optional[str] = None
     video_id: Optional[str] = None
+    is_youtube_playlist: bool = False
 
 
 def extract_video_id(url: str) -> Optional[str]:
@@ -64,8 +66,9 @@ def extract_video_id(url: str) -> Optional[str]:
 
         # YouTube
         if "youtube.com" in domain:
-            if "v=" in parsed.query:
-                return parsed.query.split("v=")[1].split("&")[0]
+            query_params = parse_qs(parsed.query)
+            if "v" in query_params:
+                return query_params["v"][0]
         elif "youtu.be" in domain:
             return parsed.path.strip("/")
 
@@ -107,9 +110,6 @@ def determine_link_type(url: str) -> LinkType:
             "vimeo.com",
             "dailymotion.com",
             "twitch.tv",
-            "vimeo.com",
-            "dailymotion.com",
-            "twitch.tv",
             "bitchute.com",
             "odysee.com",
         }
@@ -148,12 +148,29 @@ def process_url(url: str) -> LinkMetadata:
         if link_type in (LinkType.YOUTUBE, LinkType.VIDEO):
             video_id = extract_video_id(cleaned_url)
 
+        # Check if YouTube link is a playlist
+        is_youtube_playlist = False
+        if link_type == LinkType.YOUTUBE:
+            parsed_cleaned_url = urlparse(cleaned_url)
+            query_params = parse_qs(parsed_cleaned_url.query)
+            if "list" in query_params:
+                is_youtube_playlist = True
+                # Playlists don't have a single video_id in the same way,
+                # though 'v' might be present for the first video.
+                # We prioritize playlist detection.
+                # If it's a playlist, we might not want a video_id here,
+                # or we might want the list_id. For now, clearing video_id if it's a playlist
+                # to avoid confusion, unless a specific video from playlist is intended.
+                # For current use case, playlist link itself is enough.
+                # video_id = None # Optional: Clear video_id if it's primarily a playlist link
+
         # Create metadata object
         metadata = LinkMetadata(
             original_url=url,
             cleaned_url=cleaned_url,
             link_type=link_type,
             video_id=video_id,
+            is_youtube_playlist=is_youtube_playlist,
         )
 
         logger.debug(f"Processed URL: {metadata}")
