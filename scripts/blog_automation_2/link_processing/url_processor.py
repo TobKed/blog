@@ -9,7 +9,7 @@ This module provides functionality to:
 
 from dataclasses import dataclass
 from enum import Enum
-from typing import Optional
+from typing import List, Optional
 from urllib.parse import urlparse
 
 from loguru import logger
@@ -165,3 +165,29 @@ def process_url(url: str) -> LinkMetadata:
         return LinkMetadata(
             original_url=url, cleaned_url=url, link_type=LinkType.UNKNOWN
         )
+
+
+def process_urls(urls: List[str]) -> List[LinkMetadata]:
+    """
+    Process a list of URLs to extract metadata and clean them.
+
+    Args:
+        urls (List[str]): List of URLs to process
+
+    Returns:
+        List[LinkMetadata]: List of processed URL metadata
+    """
+    processed_urls: List[LinkMetadata] = []
+    for url in urls:
+        try:
+            metadata = process_url(url)
+            processed_urls.append(metadata)
+            logger.info(
+                f"Processed URL: {metadata.original_url} -> {metadata.cleaned_url} "
+                f"(Type: {metadata.link_type.value})"
+            )
+        except Exception as e:
+            logger.exception(f"Error processing URL {url}")
+            # Continue with other URLs even if one fails
+            continue
+    return processed_urls

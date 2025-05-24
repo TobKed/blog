@@ -2,64 +2,23 @@
 """
 Main CLI script to analyze URLs, generate descriptions and categories,
 and insert them into a markdown blog post using a CrewAI-based system.
-
-Assumes the following project structure:
-project_root/
-├── scripts/
-│   ├── insert_links_tool.py  (this script)
-│   └── link_processing/
-│   └── prompts/
-├── content/
-│   └── posts/
-├── .env
-└── requirements.txt
 """
-import sys
-from pathlib import Path
-from typing import List
 
 from config import (
-    CommandLineArgs,
     load_environment,
     parse_arguments,
     setup_logging,
     setup_paths,
     validate_markdown_file,
 )
-from link_processing.crew import LinkProcessingCrew
 from link_processing.file_updater import (
     get_available_sections,
     insert_link_into_markdown_file,
 )
 from link_processing.link_registry import LinkRegistry
-from link_processing.url_processor import LinkMetadata, process_url
+from link_processing.url_analyser import UrlAnalyser
+from link_processing.url_processor import process_urls
 from loguru import logger
-
-
-def process_urls(urls: List[str]) -> List[LinkMetadata]:
-    """
-    Process a list of URLs to extract metadata and clean them.
-
-    Args:
-        urls (List[str]): List of URLs to process
-
-    Returns:
-        List[LinkMetadata]: List of processed URL metadata
-    """
-    processed_urls: List[LinkMetadata] = []
-    for url in urls:
-        try:
-            metadata = process_url(url)
-            processed_urls.append(metadata)
-            logger.info(
-                f"Processed URL: {metadata.original_url} -> {metadata.cleaned_url} "
-                f"(Type: {metadata.link_type.value})"
-            )
-        except Exception as e:
-            logger.exception(f"Error processing URL {url}")
-            # Continue with other URLs even if one fails
-            continue
-    return processed_urls
 
 
 def main() -> None:
@@ -86,15 +45,11 @@ def main() -> None:
     # Process URLs
     processed_urls = process_urls(args.urls)
 
-    # Initialize crew
-    crew = LinkProcessingCrew(
-        llm_provider=args.llm_provider,
-        model_name=args.model_name,
-        verbose_level=args.verbose,
-    )
-
     # Get available sections from the markdown file
     available_sections = get_available_sections(markdown_file)
+
+    # Initialize analyser
+    link_processor = UrlAnalyser()
 
     # Process each URL
     for metadata in processed_urls:
@@ -108,7 +63,7 @@ def main() -> None:
             continue
 
         # Process URL with crew
-        result = crew.process_url(metadata.cleaned_url, available_sections)
+        result = link_processor.analyze_url(metadata.cleaned_url, available_sections)
         if result:
             # Insert link into markdown file
             insert_link_into_markdown_file(
