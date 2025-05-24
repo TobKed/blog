@@ -1,14 +1,3 @@
-crewai==0.119.0
-crewai-tools==0.44.0
 python-dotenv==1.1.0
 langchain-openai==0.2.14
 loguru==0.7.3
-# Add other langchain provider packages if you extend LLM support
-# e.g., langchain-anthropic
-
-# Dependencies that might be pulled by crewai-tools or specific tools:
-# beautifulsoup4
-# requests
-# duckduckgo-search # Default for WebsiteSearchTool if no other engine specified
-# google-api-python-client # If using GoogleCustomSearchTool
-# serperpy # If using SerperDevTool
