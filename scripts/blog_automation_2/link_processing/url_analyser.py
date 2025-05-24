@@ -3,14 +3,11 @@ import json
 import os
 from abc import ABC, abstractmethod
 from pprint import pprint as print
-from typing import Any, List, Optional
+from typing import List, Optional
 
 from crawl4ai import AsyncWebCrawler, CrawlerRunConfig, CrawlResult, LLMConfig
 from crawl4ai.extraction_strategy import LLMExtractionStrategy
 from pydantic import BaseModel, Field
-from sqlalchemy.dialects.postgresql.pg_catalog import pg_description
-
-url = r"https://github.com/unclecode/crawl4ai"
 
 
 class PageSummary(BaseModel):
@@ -23,7 +20,9 @@ class PageSummary(BaseModel):
 
 class PageAnalysisOutout(PageSummary):
     og_title: str = Field(..., description="Original title of the page.")
-    og_description: str = Field(..., description="Original description of the page.")
+    og_description: Optional[str] = Field(
+        ..., description="Original description of the page."
+    )
 
 
 class UrlAnalyserBase(ABC):

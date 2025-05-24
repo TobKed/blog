@@ -17,7 +17,7 @@ from link_processing.file_updater import (
 )
 from link_processing.link_registry import LinkRegistry
 from link_processing.url_analyser import UrlAnalyser
-from link_processing.url_processor import process_urls
+from link_processing.url_processor import LinkType, process_urls
 from loguru import logger
 
 
@@ -68,11 +68,41 @@ def main() -> None:
         if result:
             # Insert link into markdown file
             title = metadata.title or result.og_title or result.title
+            description = (
+                result.og_description or result.summary
+            )  # Prefer OG description
 
-            markdown_string = f"### [{title}]({metadata.cleaned_url})\n\n> {result.og_description}\n\n-- AI summary: {result.brief_summary}"
+            section_to_insert = result.section
+
+            # Use og_title and og_description for YouTube links if available
+            if metadata.link_type == LinkType.YOUTUBE:
+                title = result.og_title or title
+                description = result.og_description or description
+            if metadata.link_type == LinkType.YOUTUBE and metadata.is_youtube_playlist:
+                # Format as a regular link under "Videos" section
+                markdown_string = (
+                    f"### [{title}]({metadata.cleaned_url})\n\n> {description}"
+                )
+                section_to_insert = "Videos"
+            elif metadata.link_type == LinkType.YOUTUBE and metadata.video_id:
+                # Format as an embedded video
+                video_id_to_embed = metadata.video_id  # Use video_id from LinkMetadata
+                markdown_string = (
+                    f"### [{title}](https://www.youtube.com/watch?v={metadata.video_id})\n\n"
+                    f'<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">\n'
+                    f'    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/{video_id_to_embed}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>\n'
+                    f"</div>\n\n"
+                    f"> {description}\n\n"
+                    f"-- AI summary: {result.brief_summary}"
+                )
+                section_to_insert = "Videos"
+            else:
+                # Standard format for other links
+                markdown_string = f"### [{title}]({metadata.cleaned_url})\n\n> {description}\n\n-- AI summary: {result.brief_summary}"
+
             insert_link_into_markdown_file(
                 markdown_file_path=markdown_file,
-                section_name=result.section,
+                section_name=section_to_insert,
                 markdown_to_insert=markdown_string,
             )
             # Add to registry
