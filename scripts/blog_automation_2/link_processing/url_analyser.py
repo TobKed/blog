@@ -19,7 +19,7 @@ class PageSummary(BaseModel):
 
 
 class PageAnalysisOutout(PageSummary):
-    og_title: str = Field(..., description="Original title of the page.")
+    og_title: Optional[str] = Field(..., description="Original title of the page.")
     og_description: Optional[str] = Field(
         ..., description="Original description of the page."
     )

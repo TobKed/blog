@@ -1,5 +1,3 @@
-Target Post: content/posts/your_target_post.md
+Target Post: content/posts/2025_05_31_may_links.md
 
-http://link1.com
-https://youtube.com/watch?v=somevideo
-http://link2.com/article
+https://testdouble.com/insights/from-engineer-to-consultant-the-powerful-shift-from-inward-to-outward-focus

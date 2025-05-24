@@ -93,7 +93,6 @@ def run_insert_tool_for_url(
     command = [
         "python",
         str(INSERT_LINKS_TOOL_PATH),
-        "--markdown_file",
         target_post,
         url,
     ]
@@ -170,22 +169,22 @@ def generate_report_file(
         with open(report_file_path, "w", encoding="utf-8") as f:
             f.write(f"Target Post: {target_post_file}\\n\\n")
 
-            f.write("## Successfully Added Links\\n")
+            f.write("## Successfully Added Links\n")
             if added_links:
                 for link_detail in added_links:
                     url_match = re.search(r"(https?://[^\s]+)", link_detail)
                     url_to_list = url_match.group(1) if url_match else link_detail
-                    f.write(f"- {url_to_list}\\n")
+                    f.write(f"- {url_to_list}\n")
             else:
-                f.write("No links were successfully added.\\n")
-            f.write("\\n")
+                f.write("No links were successfully added.\n")
+            f.write("\n")
 
-            f.write("## Failed or Skipped Links\\n")
+            f.write("## Failed or Skipped Links\n")
             if failed_links:
                 for link_detail in failed_links:
-                    f.write(f"- {link_detail}\\n")
+                    f.write(f"- {link_detail}\n")
             else:
-                f.write("No links failed or were skipped.\\n")
+                f.write("No links failed or were skipped.\n")
 
         logger.info(f"Report generated: {report_file_path}")
     except Exception as e:
