@@ -92,7 +92,7 @@ def main() -> None:
                     f'<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">\n'
                     f'    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/{video_id_to_embed}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>\n'
                     f"</div>\n\n"
-                    f"##### AI generated summary\n\n"
+                    f"#### AI generated summary\n\n"
                     f"{result.brief_summary}"
                 )
                 section_to_insert = "Videos"
@@ -101,7 +101,7 @@ def main() -> None:
                 markdown_string = (
                     f"### [{title}]({metadata.cleaned_url})\n\n"
                     f"> {description}\n\n"
-                    f"##### AI generated summary\n\n"
+                    f"#### AI generated summary\n\n"
                     f"{result.brief_summary}"
                 )
 
