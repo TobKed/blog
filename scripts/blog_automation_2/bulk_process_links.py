@@ -167,7 +167,7 @@ def generate_report_file(
 
     try:
         with open(report_file_path, "w", encoding="utf-8") as f:
-            f.write(f"Target Post: {target_post_file}\\n\\n")
+            f.write(f"Target Post: {target_post_file}\n")
 
             f.write("## Successfully Added Links\n")
             if added_links:
