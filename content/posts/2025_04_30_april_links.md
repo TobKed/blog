@@ -12,10 +12,6 @@ Status: draft
 Time for another monthly post sharing some of the IT discoveries that crossed my path lately.
 Below you'll find a mix of articles, links, and resources, some of which tie into my current activities and areas of interest.
 
-## Some thoughts
-
-# TODO
-
 ## Articles
 
 ### [How I Am Using a Lifetime 100% Free Server](https://withcodeexample.com/how-i-am-using-a-lifetime-100-free-server/)
