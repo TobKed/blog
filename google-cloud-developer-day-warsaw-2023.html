@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+            <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <title>Google Cloud Developer Day Warsaw 2023</title>
+
+            <link href="https://blog.tobked.dev//feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="ups and downs Full Atom Feed" />
+            <link href="https://blog.tobked.dev//feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="ups and downs Full RSS Feed" />
+        <!-- Bootstrap Core CSS -->
+        <link href="https://blog.tobked.dev/theme/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link href="https://blog.tobked.dev/theme/css/clean-blog.min.css" rel="stylesheet">
+
+        <!-- Code highlight color scheme -->
+            <link href="https://blog.tobked.dev/theme/css/code_blocks/github.css" rel="stylesheet">
+
+            <!-- CSS specified by the user -->
+            <link href="https://blog.tobked.dev/css/main.css" rel="stylesheet">
+
+        <!-- Custom Fonts -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+
+        <meta name="description" content="My notes from Google Cloud Developer Day Warsaw 2023">
+
+        <meta name="author" content="Tobiasz Kedzierski">
+
+        <meta name="tags" content="cloud">
+        <meta name="tags" content="developer">
+        <meta name="tags" content="google">
+        <meta name="tags" content="gcp">
+        <meta name="tags" content="2023">
+
+	                <meta property="og:locale" content="">
+		<meta property="og:site_name" content="ups and downs">
+
+	<meta property="og:type" content="article">
+            <meta property="article:author" content="https://blog.tobked.dev/author/tobiasz-kedzierski">
+	<meta property="og:url" content="https://blog.tobked.dev/google-cloud-developer-day-warsaw-2023">
+	<meta property="og:title" content="Google Cloud Developer Day Warsaw 2023">
+	<meta property="article:published_time" content="2023-05-03 00:00:00+02:00">
+            <meta property="og:description" content="My notes from Google Cloud Developer Day Warsaw 2023">
+
+            <meta property="og:image" content="https://blog.tobked.dev/images/posts/2023/2023_05_gcp_dev_day/2023_05_gcp_dev_day.jpg">
+</head>
+
+<body class="article-google-cloud-developer-day-warsaw-2023">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="https://blog.tobked.dev/">ups and downs</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+
+                            <li><a href="https://blog.tobked.dev/pages/about-me">about me</a></li>
+                            <li><a href="https://blog.tobked.dev/pages/links">links</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+        <header class="intro-header" style="background-image: url('https://blog.tobked.dev//images/posts/2023/2023_05_gcp_dev_day/2023_05_gcp_dev_day.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="post-heading">
+                        <h1>Google Cloud Developer Day Warsaw 2023</h1>
+                        <span class="meta">Posted by
+                                <a href="https://blog.tobked.dev/author/tobiasz-kedzierski">Tobiasz Kedzierski</a>
+                             on 03.05.2023
+                        </span>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    <!-- Post Content -->
+    <article>
+        <h1 id="google-cloud-developer-day-warsaw-2023">Google Cloud Developer Day Warsaw 2023</h1>
+<p>I attended Google Cloud Developer Day Warsaw 2023 on April 27th, 2023. It was a free event organized by Google Cloud at their <a href="https://www.campus.co/warsaw/">Warsaw Campus</a>.
+It was a full-day event with 12 presentations.
+I attended all of them and found all of them to be very interesting.
+Especially mind-blowing was the showcase of AI capabilities.
+I chose just a few of them to write down my notes.
+I picked them since they are related to my current work and I found them interesting.</p>
+<div class="toc"><span class="toctitle">Table of contents:</span><ul>
+<li><a href="#google-cloud-developer-day-warsaw-2023">Google Cloud Developer Day Warsaw 2023</a><ul>
+<li><a href="#service-to-service-communication-with-serverless-christoph-grotz">Service to Service Communication with Serverless (Christoph Grotz)</a></li>
+<li><a href="#code-centric-iac-with-pulumi-artur-kulinski">Code-centric IaC with Pulumi (Artur Kuliński)</a></li>
+<li><a href="#secrets-and-serverless-anna-muscarella">Secrets and Serverless (Anna Muscarella)</a></li>
+<li><a href="#from-prototype-to-production-going-faster-on-cloud-run-roman-seibel">From Prototype to Production: Going Faster on Cloud Run (Roman Seibel)</a></li>
+<li><a href="#extras">Extras</a><ul>
+<li><a href="#gcurl">gcurl</a></li>
+<li><a href="#music-by-rytmik">music by Rytmik</a></li>
+<li><a href="#links">Links</a></li>
+</ul>
+</li>
+<li><a href="#summary">Summary</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<h3 id="service-to-service-communication-with-serverless-christoph-grotz">Service to Service Communication with Serverless (<a href="https://christoph-grotz.medium.com/">Christoph Grotz</a>)</h3>
+<p>Christoph presented how to use Envoy to communicate between two instances of Cloud Run with minimal overhead of authentication and authorization.
+No JWT, no headers, no tokens. Just plain HTTP requests.
+In a very simple example, the only change between the local setup and cloud environments is the URL of the service.
+Moreover, the URL for the cloud environment is the same for different environments like staging, testing, production.
+Correct routing is done by the service mesh.</p>
+<h3 id="code-centric-iac-with-pulumi-artur-kulinski">Code-centric IaC with Pulumi (Artur Kuliński)</h3>
+<p>Artur presented Pulumi - a tool for Infrastructure as Code.
+I am a huge fan of IaC and have been using Terraform for a while now.
+I had heard about Pulumi before, but I never had a chance to try it.
+It is especially interesting since Pulumi uses "regular" programming languages like Python, which seems more natural to me than HCL.
+Now, I am definitely going to give it a try after what I saw.</p>
+<h3 id="secrets-and-serverless-anna-muscarella">Secrets and Serverless (Anna Muscarella)</h3>
+<p>Anna gave a great presentation about how to manage secrets in a serverless environment.
+She presented different approaches and their pros and cons.
+In short, there are three approaches:</p>
+<ul>
+<li>environment variables</li>
+<li>volume mounts</li>
+<li>secret manager</li>
+</ul>
+<p>While environment variables are the easiest to use, they are not the most secure for obvious reasons I will not mention here.
+Volume mounts are also not the best practice and sometimes cumbersome to use or even not supported by some services.
+The best way to manage secrets is to use a secret manager within your app so secrets are not exposed to the environment.</p>
+<p>I used this approach in my <a href="https://github.com/TobKed/django_on_gcp">repository</a> and <a href="https://blog.tobked.dev/django_on_gcp">blog post</a> where I showed how to run <a href="https://blog.tobked.dev/django_on_gcp">Django application on Google Cloud Platform</a>.
+As you can see below, secrets are pulled from <a href="https://cloud.google.com/secret-manager">Google Secret Manager</a> if the app is running on Google Cloud Platform.
+In my case, they are pulled only during app initialization, so to use the latest secret, you need to restart the app.
+For the sake of simplicity, the secrets with the <code>latest</code> tag are used. However, it may not be the best fit for the production environment where we want to pin the version of the secret.</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">io</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">environ</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">google.cloud</span><span class="w"> </span><span class="kn">import</span> <span class="n">secretmanager</span>
+
+<span class="n">BASE_DIR</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)</span><span class="o">.</span><span class="n">resolve</span><span class="p">()</span><span class="o">.</span><span class="n">parent</span><span class="o">.</span><span class="n">parent</span>
+
+
+<span class="n">env</span> <span class="o">=</span> <span class="n">environ</span><span class="o">.</span><span class="n">Env</span><span class="p">(</span><span class="n">DEBUG</span><span class="o">=</span><span class="p">(</span><span class="nb">bool</span><span class="p">,</span> <span class="kc">False</span><span class="p">))</span>
+<span class="n">env_file</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">BASE_DIR</span><span class="p">,</span> <span class="s2">&quot;.env&quot;</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">env_file</span><span class="p">):</span>
+    <span class="n">env</span><span class="o">.</span><span class="n">read_env</span><span class="p">(</span><span class="n">env_file</span><span class="p">)</span>
+<span class="c1"># Pull secrets from Google Secret Manager</span>
+<span class="k">elif</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;GOOGLE_CLOUD_PROJECT&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">):</span>
+    <span class="n">project_id</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;GOOGLE_CLOUD_PROJECT&quot;</span><span class="p">)</span>
+    <span class="n">settings_name</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;SETTINGS_NAME&quot;</span><span class="p">,</span> <span class="s2">&quot;django_settings&quot;</span><span class="p">)</span>
+    <span class="n">client</span> <span class="o">=</span> <span class="n">secretmanager</span><span class="o">.</span><span class="n">SecretManagerServiceClient</span><span class="p">()</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;projects/</span><span class="si">{</span><span class="n">project_id</span><span class="si">}</span><span class="s2">/secrets/</span><span class="si">{</span><span class="n">settings_name</span><span class="si">}</span><span class="s2">/versions/latest&quot;</span>
+    <span class="n">payload</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">access_secret_version</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">)</span><span class="o">.</span><span class="n">payload</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s2">&quot;UTF-8&quot;</span><span class="p">)</span>
+    <span class="n">env</span><span class="o">.</span><span class="n">read_env</span><span class="p">(</span><span class="n">io</span><span class="o">.</span><span class="n">StringIO</span><span class="p">(</span><span class="n">payload</span><span class="p">))</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;No local .env or GOOGLE_CLOUD_PROJECT detected. No secrets found.&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<p>Here is the link to the code which I used in my example: <a href="https://github.com/TobKed/django_on_gcp/blob/4e25321d856f09a15a58f54cc273abf1e879126d/mysite/settings.py#L14">github.com/TobKed/django_on_gcp/blob/master/mysite/settings.py#L14</a></p>
+<h3 id="from-prototype-to-production-going-faster-on-cloud-run-roman-seibel">From Prototype to Production: Going Faster on Cloud Run (Roman Seibel)</h3>
+<p>Roman made promoting the app between different environments as easy as a piece of cake.
+Tt was astonishing.
+Now, I am an even bigger fan of Cloud Run.</p>
+<h2 id="extras">Extras</h2>
+<h3 id="gcurl"><code>gcurl</code></h3>
+<p><code>gcurl</code> is a nice alias for <code>curl</code> that allows for quick hitting of Google Cloud endpoints with authorization using your gcloud <a href="https://cloud.google.com/sdk/gcloud/reference/auth/print-identity-token">identity token</a>:</p>
+<div class="highlight"><pre><span></span><code><span class="nv">gcurl</span><span class="o">=</span><span class="s1">&#39;curl -H &quot;Authorization: Bearer $(gcloud auth print-identity-token)&quot; -H &quot;Content-Type: application/json&quot;&#39;</span>
+</code></pre></div>
+
+<h3 id="music-by-rytmik"><a href="https://soundcloud.com/rytmikmusic">music by Rytmik</a></h3>
+<p>At the lounge area, there was a DJ named Rytmik playing some delightful house music. You can check out his music on <a href="https://soundcloud.com/rytmikmusic">soundcloud.com/rytmikmusic</a> and <a href="https://www.mixcloud.com/Rytmik/">mixcloud.com/Rytmik</a>.</p>
+<p><img alt="Rytmik" src="https://blog.tobked.dev/images/posts/2023/2023_05_gcp_dev_day/2023_05_gcp_dev_day_rytmik.jpg"></p>
+<h3 id="links">Links</h3>
+<ul>
+<li><a href="https://inthecloud.withgoogle.com/cloud-developer-days-warsaw-23/register.html#agenda">Cloud Developer Day - Warsaw</a></li>
+<li><a href="https://www.campus.co/warsaw/">Google for Startups - Warsaw Campus</a></li>
+<li><a href="https://serviceweaver.dev/">Service Weaver</a></li>
+<li><a href="https://github.com/ServiceWeaver/weaver">github.com/ServiceWeaver/weaver</a></li>
+<li><a href="https://github.com/google/gke-policy-automation">GKE Policy Automation</a></li>
+<li><a href="https://cloud.google.com/blog/topics/developers-practitioners/auditing-gke-clusters-across-entire-organization">Auditing GKE Clusters across the entire organization - blog post</a></li>
+<li><a href="https://github.com/liquibase/liquibase-bigquery">github.com/liquibase/liquibase-bigquery</a></li>
+<li><a href="https://seroter.com/2022/11/17/continuously-deploy-your-apps-and-data-lets-try-to-use-liquibase-for-bigquery-workloads/">Continuously deploy your apps AND data? Let’s try to use Liquibase for BigQuery changes - blog post</a></li>
+<li><a href="https://github.com/GoogleCloudPlatform/cloud-run-mesh">github.com/GoogleCloudPlatform/cloud-run-mesh</a></li>
+<li><a href="https://www.envoyproxy.io/">Envoy - an open source edge and service proxy, designed for cloud-native applications</a></li>
+</ul>
+<h2 id="summary">Summary</h2>
+<p>It was a great event, and I am looking forward to the next one. I learned a lot of new things and met interesting people. Great job Google Cloud team!</p>
+    </article>
+
+        <div class="tags">
+            <p>tags: <a href="https://blog.tobked.dev/tag/cloud">cloud</a>, <a href="https://blog.tobked.dev/tag/developer">developer</a>, <a href="https://blog.tobked.dev/tag/google">google</a>, <a href="https://blog.tobked.dev/tag/gcp">gcp</a>, <a href="https://blog.tobked.dev/tag/2023">2023</a></p>
+        </div>
+
+    <hr>
+
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                            <li>
+                                <a href="https://tobked.dev">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-user fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/tobiaszkedzierski/?locale=en_US">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/TobKed">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://blog.tobked.dev/feeds/all.rss.xml">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                    </ul>
+<p class="copyright text-muted">
+    Blog powered by <a href="http://getpelican.com">Pelican</a>,
+    which takes great advantage of <a href="http://python.org">Python</a>. <br />
+    Main page header photo by <a href="https://juliakaczorowska.pl/">Julia Kaczorowska</a> (other by me). <br />
+        &copy;  Tobiasz Kedzierski
+</p>                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://blog.tobked.dev/theme/js/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://blog.tobked.dev/theme/js/bootstrap.min.js"></script>
+
+        <!-- Custom Theme JavaScript -->
+        <script src="https://blog.tobked.dev/theme/js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
