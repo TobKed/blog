@@ -14,6 +14,12 @@ Below you'll find a mix of articles, links, and resources, some of which tie int
 
 ## Some thoughts
 
+Meetups:
+
+- [Google Developer Groups: Meet NotebookLM explore Google I/O's Latest](https://www.meetup.com/pl-PL/gdg-nl/events/308084364)
+
+- [Py.Amsterdam Meetup at Fareharbor](https://www.meetup.com/pl-PL/pyamsterdam/events/307658391)
+
 ## Articles
 
 ## Productivity
