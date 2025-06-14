@@ -20,6 +20,8 @@ Meetups:
 
 - [Py.Amsterdam Meetup at Fareharbor](https://www.meetup.com/pl-PL/pyamsterdam/events/307658391)
 
+- [macieyng/dripdrop: Server support for Progressive JSON.](https://github.com/macieyng/dripdrop)
+
 ## Articles
 
 ### [What Real Feedback Sounds Like - by Claire Lew](https://newsletter.canopy.is/p/what-real-feedback-sounds-like)
