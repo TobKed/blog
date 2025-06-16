@@ -44,6 +44,8 @@ Laurie Hérault shares her journey of overcoming procrastination by applying the
 
 ## AI
 
+## AI Tools
+
 ## Security
 
 ## Python
