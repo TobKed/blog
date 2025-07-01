@@ -1,35 +1,49 @@
 Target Post: content/posts/2025_06_30_june_links.md
 
-https://youtu.be/Nn08HVq4BHA
+https://alifeengineered.substack.com/p/another-day-and-you-have-nothing
 
-https://youtu.be/6P-vjgPx9ww
+https://temporal.io/blog/a-mental-model-for-agentic-ai-applications
 
-https://github.com/Teemu/pytest-sugar
+https://www.peterbe.com/plog/a-python-dict-that-can-report-which-keys-you-did-not-use
 
-https://youtu.be/0y7IFUYUTgg
+https://www.revsys.com/tidbits/better-django-management-commands-with-django-click-and-django-typer/
 
-https://youtu.be/1jb6_Q4_SMk
+https://read.engineerscodex.com/p/5-non-llm-software-trends-to-be-excited
 
-https://www.youtube.com/watch?v=NQVjOr4K8f0
+https://m.youtube.com/playlist?list=PLGVZCDnMOq0qLS7Mk-jI9jhb4t5UY6yDW
 
-https://blog.greg.technology/2025/05/19/on-instagram-addiction.html
+https://platforms.substack.com/p/the-many-fallacies-of-ai-wont-take
 
-https://github.com/m4xshen/hardtime.nvim
+https://www.bbc.com/culture/article/20250609-how-being-alone-can-make-you-happier
 
-https://blog.appsignal.com/2025/05/28/ways-to-optimize-your-code-in-python.html
+https://saurabh-kumar.com/articles/2025/06/cut-django-database-latency-by-50-70ms-with-native-connection-pooling/
 
-https://medium.com/ambient-innovation/how-to-split-up-a-django-monolith-without-using-microservices-e93759c606a7
+https://www.youtube.com/watch?v=LCEmiRjPEtQ
 
-https://georgiker.com/blog/pycon-us-2025/
+https://caseorganic.medium.com/the-invisible-light-thats-harming-our-health-and-how-we-can-light-things-better-d3916de90521
 
-https://github.com/macieyng/dripdrop
+https://read.highgrowthengineer.com/p/minimalistic-ai-setup
 
-https://informatykzakladowy.pl/gaweda-o-smart-home/
+https://www.architecture-weekly.com/p/start-alone-then-together-why-software
 
-https://www.alexwest.co/book-one
+https://newsletter.weskao.com/p/why-high-performers-make-assertions
 
-https://newsletter.canopy.is/p/what-real-feedback-sounds-like
+https://youtu.be/NzxjEzA0G0o
 
-https://www.laurieherault.com/articles/a-thermal-receipt-printer-cured-my-procrastination
+https://mrshiny608.github.io/MrShiny608/optimisation/2025/04/22/OhNoYouDidnt.html
 
-https://www.youtube.com/playlist?list=PLL3-3m0jNaWnYW_62xZPeKuicpNA98JJD
+https://youtu.be/b00sgRR_Vc0?si=qIN2
+
+https://www.caktusgroup.com/blog/2025/06/11/migrating-python-django-projects-uv/
+
+https://addyo.substack.com/p/the-prompt-engineering-playbook-for
+
+https://jyn.dev/how-i-use-my-terminal/
+
+https://strudel.cc/
+
+https://fly.io/blog/youre-all-nuts/
+
+https://www.youtube.com/watch?v=3jwQu95l6Oc
+
+https://www.youtube.com/watch?v=\_-0zHdJGTlw
