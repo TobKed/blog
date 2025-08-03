@@ -469,3 +469,11 @@ table, th, td {
 table {
   overflow:auto;
 }
+
+/* AI generated summary styling */
+.ai-summary {
+  font-size: 12px;
+  color: #808080;
+  font-style: italic;
+  opacity: 0.7;
+}
