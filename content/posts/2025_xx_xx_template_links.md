@@ -14,6 +14,8 @@ Below you'll find a mix of articles, links, and resources, some of which tie int
 
 ## Some thoughts
 
+______________________________________________________________________
+
 ## Articles
 
 ## Productivity
