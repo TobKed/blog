@@ -5,7 +5,7 @@ Tags: python, blog, podcast, series, aggregate, summary, month, 2025
 Slug: 2025-june-links
 Summary: Interesting stuff from the month
 Header_Cover: /images/posts/2025/2025_06_gcp_office_ams.jpg
-Status: draft
+Status: published
 
 # June 2025
 
@@ -51,6 +51,8 @@ The networking afterward was super nice, and I even ran into someone I had met a
     <img src="{static}/images/posts/2025/2025_06_pyams_fh_tyron.jpg" alt="Tyrone Damasceno presenting on AI" style="display: block; margin-left: auto; margin-right: auto;">
     <figcaption style="font-size: 0.9em; margin-top: 8px; margin-bottom: 12px">Tyrone Damasceno presenting on AI</figcaption>
 </figure>
+
+______________________________________________________________________
 
 ## Articles
 
@@ -202,9 +204,9 @@ This article explores methods to decompose a Django monolith without adopting mi
 
 > Materiały na zajęcia w ramach studiów podyplomowych Big Data na UAM: https://wmi.amu.edu.pl/dla-kandydata/studia-podyplomowe/big-data
 
-### [PyData Virginia 2025 YouTube Playlist](https://m.youtube.com/playlist?list=PLGVZCDnMOq0qLS7Mk-jI9jhb4t5UY6yDW)
+### [PyData Virginia 2025 - YouTube Playlist](https://m.youtube.com/playlist?list=PLGVZCDnMOq0qLS7Mk-jI9jhb4t5UY6yDW)
 
-> PyData Virginia 2025 YouTube Playlis
+> PyData Virginia 2025 YouTube Playlist
 
 ### [AI vs Programmers: 4 Critical Skills You Need To Win the Race - YouTube](https://www.youtube.com/watch?v=Nn08HVq4BHA)
 
