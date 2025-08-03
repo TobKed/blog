@@ -36,9 +36,9 @@ I also attended a couple of great local meetups. First, I visited the Google off
 
 Later in the month, the [Py Amsterdam meetup](https://www.meetup.com/pl-PL/pyamsterdam/events/307658391) was hosted right at [Fareharbor](https://fareharbor.com/), the company I'm currently working for and enjoying a lot. In the past, it was always quite a trip to get to the meetups, but this time I just grabbed my coffee mug and walked one floor up from my desk to participate in the amazing event. There were three great talks:
 
-- An intro by Ujwaal, the VP of Technology at Fareharbor.
-- An inspiring session by Iulia Feroli on building her own, more accurate Spotify Wrapped.
-- A very relevant talk by my workmate, Tyrone Damasceno, asking if it's still possible to develop without AI.
+- An intro by [Ujjwal Tyagi](https://www.linkedin.com/in/ujjwal-tyagi), the VP Engineering at FareHarbor.
+- An inspiring session by [Iulia Feroli](https://www.linkedin.com/in/iuliaferoli/) on building her own, more accurate Spotify Wrapped.
+- A very relevant talk by my workmate, [Tyrone Damasceno](https://www.linkedin.com/in/tyronedamasceno/), asking if it's still possible to develop without AI.
 
 The networking afterward was super nice, and I even ran into someone I had met at the Google event earlier in the month.
 
