@@ -11,4 +11,18 @@ Status: hidden
 
 ## Books
 
-## Video
+## Tools
+
+- Genspark AI
+- Raycast
+- Perplexity
+- ChatGPT and voice mode
+- Cursor
+- MacWhisper
+- Superhuman
+- DeepWiki and GitDiagram
+-
+
+Based a lot on [My (mostly) minimalistic AI setup as a Senior Engineer in Big Tech](https://read.highgrowthengineer.com/p/minimalistic-ai-setup)
+
+## Videos
