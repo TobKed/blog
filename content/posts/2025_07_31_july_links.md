@@ -5,7 +5,7 @@ Tags: python, blog, podcast, series, aggregate, summary, month, 2025
 Slug: 2025-july-links
 Summary: Interesting stuff from the month
 Header_Cover: /images/posts/2025/2025_07_xx.jpg
-Status: draft
+Status: published
 
 # July 2025
 
@@ -14,7 +14,7 @@ Below you'll find a mix of articles, links, and resources, some of which tie int
 
 ## Some thoughts
 
-This month I stumbled upon something that completely blew my mind: copyparty. It's an incredibly versatile and portable file server packed into a single file with zero dependencies.
+This month I stumbled upon something that completely blew my mind: [copyparty](https://github.com/9001/copyparty/). It's an incredibly versatile and portable file server packed into a single file with zero dependencies.
 
 As the project on GitHub says:
 
@@ -67,6 +67,12 @@ ______________________________________________________________________
 ### [How I do it | daniel.haxx.se](https://daniel.haxx.se/blog/2025/07/13/how-i-do-it/)
 
 > The blog post by Daniel Stenberg discusses his dedication and approach to managing the curl project, an open-source tool he has been leading for decades. He describes his work routine, motivation, and the independence of the curl project. Daniel emphasizes the importance of maintaining high standards, continuous improvement, and the sense of responsibility he feels towards the users of curl. He also touches on his leadership style, which focuses on reducing bureaucracy and encouraging community participation. The post highlights his passion for programming and the balance he maintains between work and personal life.
+
+### [Running a million-board chess MMO in a single process · eieio.games](https://eieio.games/blog/a-million-realtime-chess-boards-in-a-single-process/)
+
+<span class="ai-summary"> AI generated summary </span>
+
+This article explores the development of a system that manages a million real-time chess boards in a single process. It highlights the use of a dense array, a single mutex for simplicity, and Cloudflare for caching to optimize performance and reduce server load. The article also discusses snapshot taking, serialization, and rollback mechanisms.
 
 ## Productivity
 
@@ -125,6 +131,10 @@ This article explains why some classic design patterns, like Singleton and Build
 
 > The article provides an in-depth exploration of the Python standard library module 'shelve.py'.urce code. It explains how 'shelve' allows for persistent, dictionary-like objects and highlights key components and methods within the module. The article serves as a guide for understanding and utilizing 'shelve' effectively.
 
+### [From SQL To SQLModel: A Cleaner Way To Work With Databases In Python - Pybites](https://pybit.es/articles/from-sql-to-sqlmodel-a-cleaner-way-to-work-with-databases-in-python/)
+
+> SQLModel is a library that lets you interact with databases through Python code with Python objects and type annotations instead of writing direct SQL queries.
+
 ## Django
 
 ### [From Rock Bottom to Production Code – Blog](https://www.matthewraynor.com/blog/from-rock-bottom-to-production-code)
@@ -138,24 +148,6 @@ This article explains why some classic design patterns, like Singleton and Build
 ### [Django: iterate through all registered URL patterns - Adam Johnson](https://adamj.eu/tech/2025/07/22/django-iterate-url-patterns/)
 
 > I’ve found it useful, on occasion, to iterate through all registered URL patterns in a Django project. Sometimes this has been for checking URL layouts or auditing which views are registered.
-
-## Python libraries
-
-### [Unlock deeper insights with the new Python client library for Data Commons - Google Developers Blog](https://developers.googleblog.com/en/pythondatacommons/)
-
-> Explore the new Python client library for Data Commons, offering enhanced features and support for custom instances to unlock deeper insights from public statistical data.
-
-### [From SQL To SQLModel: A Cleaner Way To Work With Databases In Python - Pybites](https://pybit.es/articles/from-sql-to-sqlmodel-a-cleaner-way-to-work-with-databases-in-python/)
-
-> SQLModel is a library that lets you interact with databases through Python code with Python objects and type annotations instead of writing direct SQL queries.
-
-## Go
-
-### [Running a million-board chess MMO in a single process · eieio.games](https://eieio.games/blog/a-million-realtime-chess-boards-in-a-single-process/)
-
-<span class="ai-summary"> AI generated summary </span>
-
-This article explores the development of a system that manages a million real-time chess boards in a single process. It highlights the use of a dense array, a single mutex for simplicity, and Cloudflare for caching to optimize performance and reduce server load. The article also discusses snapshot taking, serialization, and rollback mechanisms.
 
 ## Tools
 
