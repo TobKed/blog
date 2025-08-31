@@ -14,17 +14,23 @@ Below you'll find a mix of articles, links, and resources, some of which tie int
 
 ## Some thoughts
 
-This blew my mind
+This month I stumbled upon something that completely blew my mind: copyparty. It's an incredibly versatile and portable file server packed into a single file with zero dependencies.
 
-### [introducing copyparty, the FOSS file server - YouTube](https://www.youtube.com/watch?v=15_-hgsX2V0)
+As the project on GitHub says:
+
+#### [GitHub - 9001/copyparty](https://github.com/9001/copyparty/)
+
+> Portable file server with accelerated resumable uploads, dedup, WebDAV, FTP, TFTP, zeroconf, media indexer, thumbnails++ all in one file, no deps - 9001/copyparty
+
+It's one of those tools that just does everything you need without any fuss. For a great introduction and to see it in action, check out this video:
+
+#### [introducing copyparty, the FOSS file server - YouTube](https://www.youtube.com/watch?v=15_-hgsX2V0)
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/15_-hgsX2V0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-### [GitHub - 9001/copyparty](https://github.com/9001/copyparty/)
-
-> Portable file server with accelerated resumable uploads, dedup, WebDAV, FTP, TFTP, zeroconf, media indexer, thumbnails++ all in one file, no deps - 9001/copyparty
+Definitely worth a look if you ever need to share files quickly and efficiently.
 
 ______________________________________________________________________
 
