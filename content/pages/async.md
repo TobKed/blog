@@ -22,6 +22,7 @@ Status: hidden
 - [SuperFastPython: Python Asyncio: 5 Common Asyncio Errors in Python (and how to avoid them)](https://superfastpython.com/asyncio-common-errors/)
 - [SuperFastPython: Python Asyncio: The Complete Guide](https://superfastpython.com/python-asyncio/)
 - [The easy way to concurrency and parallelism with Python stdlib ](https://www.bitecode.dev/p/the-easy-way-to-concurrency-and-parallelism)
+- [asyncio: a library with too many sharp corners](https://sailor.li/asyncio)
 
 ## Books
 
