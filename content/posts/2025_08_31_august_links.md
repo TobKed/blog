@@ -57,7 +57,7 @@ The author shares a personal story about a failed promotion attempt at Amazon, h
 
 ## Productivity
 
-### [ journaling system cobbled together with nix, vim, coreutils · tangled](https://tangled.sh/@oppi.li/journal)
+### [journaling system cobbled together with nix, vim, coreutils · tangled](https://tangled.sh/@oppi.li/journal)
 
 > The page describes a journaling system created using Nix, Vim, and Coreutils, inspired by the Bullet Journal method.
 
@@ -193,7 +193,7 @@ The author shares their experience of learning electronics by building a circuit
 
 ### [Just-in-Time Development with Django and HTMX: Faster, Leaner, and Smarter](https://djangotv.com/videos/djangocon-europe/2025/djangocon-europe-2025-just-in-time-development-with-django-and-htmx-faster-leaner-and-smarter/)
 
-> Talk: Just-in-Time Development with Django and HTMX: Faster, Leaner, and Smarter by Thomas De Bonnet https://pretalx.evolutio.pt/djangocon-europe-2025/talk/9TRSPC/
+> Talk: Just-in-Time Development with Django and HTMX: Faster, Leaner, and Smarter by Thomas De Bonnet
 
 ### [Genspark AI: 6 Mega Praktycznych Zastosowań](https://www.youtube.com/watch?v=1o60zrL5GoU)
 
@@ -223,7 +223,7 @@ This YouTube video is a guide on how to turn your computer into an assistant usi
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/DSu483N6H9s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-### [SekurakTV: Jak wygrywać CTF-y 2.0 ](https://www.youtube.com/live/sZfGuXL2wKQ)
+### [SekurakTV: Jak wygrywać CTF-y 2.0](https://www.youtube.com/live/sZfGuXL2wKQ)
 
 > Zapraszamy na szkolenie z Gynvaelem Coldwindem (szkolenie w języku polskim). Szkolenie potrwa ~4 godziny.
 
@@ -257,7 +257,7 @@ Henry Misc shares his Neovim setup for Python development, featuring auto-format
 
 This video tells the inspiring story of Sundas Khalid, who went from being a high school dropout to a principal at Google, earning more from content creation than her tech salary.
 
-### [AI w terminalu – Claude Code Deep Dive ](https://www.youtube.com/live/eifcDbiHfFw)
+### [AI w terminalu – Claude Code Deep Dive](https://www.youtube.com/live/eifcDbiHfFw)
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/eifcDbiHfFw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
