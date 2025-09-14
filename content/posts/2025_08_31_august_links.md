@@ -16,11 +16,11 @@ Below you'll find a mix of articles, links, and resources, some of which tie int
 
 ### [The Phoenix Project](https://www.goodreads.com/book/show/17255186-the-phoenix-project)
 
-**The Phoenix Project** is widely recommended and often found on "must-read" lists for IT professionals. It's a **novel about IT, DevOps, and helping your business win**, co-authored by Gene Kim, Kevin Behr, and George Spafford. This format, a deliberate homage to Eliyahu Goldratt's _The Goal_, makes complex concepts accessible and persuasive to a broad audience, including non-technical business leaders, acting as a "Trojan Horse" for organizational change.
+**The Phoenix Project** is widely recommended and often found on "must-read" lists for IT professionals. It's a **novel about IT, DevOps, and helping your business win**, co-authored by Gene Kim, Kevin Behr, and George Spafford. This format, a deliberate homage to [Eliyahu Goldratt's _The Goal_](https://www.goodreads.com/book/show/113934.The_Goal), makes complex concepts accessible and persuasive to a broad audience, including non-technical business leaders, acting as a "Trojan Horse" for organizational change.
 
-The story follows **Bill Palmer**, a Director of Midrange Operations, who receives an unexpected "battlefield promotion" to VP of IT Operations at the fictional auto parts manufacturer, Parts Unlimited. His CEO, Steve Masters, gives him a stark ultimatum: fix the company's critical, over-budget, and behind-schedule **"Phoenix Project"** in 90 days, or the entire IT department will be outsourced. Bill is dropped into a state of perpetual crisis, characterized by failed change management, siloed conflicts, rogue actors like the CISO John, and systemic bottlenecks.
+The story follows **Bill Palmer**, a Director of Midrange Operations, who receives an unexpected "battlefield promotion" to VP of IT Operations at the fictional auto parts manufacturer, Parts Unlimited. His CEO, Steve Masters, gives him a stark ultimatum: fix the company's critical, over-budget, and behind-schedule **"Phoenix Project"** in 90 days, or the entire IT department will be outsourced. Bill is dropped into a state of perpetual crisis, characterized by failed change management, siloed conflicts, rogue actors like the CISO John, and systemic bottlenecks. Bill's mentor is **Erik Reid**, an eccentric prospective board member who reveals wisdom through quizzes and analogies to manufacturing plants, guiding Bill and his team to discover solutions.
 
-Bill's mentor is **Erik Reid**, an eccentric prospective board member who reveals wisdom through quizzes and analogies to manufacturing plants, guiding Bill and his team to discover solutions. The book introduces several main concepts:
+The book introduces several main concepts:
 
 #### Four types of work
 
