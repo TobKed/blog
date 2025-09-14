@@ -14,7 +14,34 @@ Below you'll find a mix of articles, links, and resources, some of which tie int
 
 ## Some thoughts
 
-Phoenix Project completed
+### [The Phoenix Project](https://www.goodreads.com/book/show/17255186-the-phoenix-project)
+
+**The Phoenix Project** is widely recommended and often found on "must-read" lists for IT professionals. It's a **novel about IT, DevOps, and helping your business win**, co-authored by Gene Kim, Kevin Behr, and George Spafford. This format, a deliberate homage to Eliyahu Goldratt's _The Goal_, makes complex concepts accessible and persuasive to a broad audience, including non-technical business leaders, acting as a "Trojan Horse" for organizational change.
+
+The story follows **Bill Palmer**, a Director of Midrange Operations, who receives an unexpected "battlefield promotion" to VP of IT Operations at the fictional auto parts manufacturer, Parts Unlimited. His CEO, Steve Masters, gives him a stark ultimatum: fix the company's critical, over-budget, and behind-schedule **"Phoenix Project"** in 90 days, or the entire IT department will be outsourced. Bill is dropped into a state of perpetual crisis, characterized by failed change management, siloed conflicts, rogue actors like the CISO John, and systemic bottlenecks.
+
+Bill's mentor is **Erik Reid**, an eccentric prospective board member who reveals wisdom through quizzes and analogies to manufacturing plants, guiding Bill and his team to discover solutions. The book introduces several main concepts:
+
+#### Four types of work
+
+- **Business Projects**: Initiatives delivering new value to customers, like the Phoenix Project itself.
+- **Internal IT Projects**: Efforts enabling future business projects, such as infrastructure upgrades.
+- **Changes**: Modifications from planned work, including code deployments and patches.
+- **Unplanned Work**: The most destructive type, comprising emergency fixes and firefighting, which derails planned efforts and is a symptom of technical debt. Unplanned work is called the "silent killer" of productivity.
+
+#### Three Ways
+
+- **The First Way (Flow/Systems Thinking)**: Focuses on optimizing the entire system for fast, smooth, and predictable work delivery from Development through Operations to the customer. Practices include making work visible (e.g., Kanban boards), limiting Work-In-Process (WIP), and reducing batch sizes.
+- **The Second Way (Amplifying Feedback Loops)**: Emphasizes rapid and constant feedback from Operations back to Development to catch and fix problems at the source, building quality into the system. Practices include swarming on problems and blameless post-mortems.
+- **The Third Way (Continual Experimentation and Learning)**: Cultivates a high-trust, generative culture where experimentation is encouraged, and failure is an opportunity for learning. It institutionalizes improvement, transforming local discoveries into global knowledge.
+
+#### Theory of Constraints (TOC)
+
+- This theory posits that a system's output is limited by its single greatest bottleneck. At Parts Unlimited, the primary constraint is personified by **Brent**, a brilliant but indispensable engineer crucial for every critical task. The solution involves re-engineering the system around him using **Goldratt's Five Focusing Steps**: identify, exploit, subordinate, elevate, and repeat.
+
+**My opinion:** The book is definitely worth reading. It offers an interesting perspective on how DevOps evolved and how business interacts with IT. Its profound impact stems from providing a relatable blueprint for real-world organizational change, ultimately reframing IT from a siloed cost center into an integrated, strategic driver of business value. It is regarded as a foundational text for the DevOps movement, transforming it from a niche concept to a mainstream global philosophy.
+
+______________________________________________________________________
 
 ## Articles
 

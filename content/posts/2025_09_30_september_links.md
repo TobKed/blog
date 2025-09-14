@@ -14,6 +14,14 @@ Below you'll find a mix of articles, links, and resources, some of which tie int
 
 ## Some thoughts
 
+Python Documentary
+
+Superfile - awesome TUI file manager
+
+Improving my thinking - improving my thinking
+
+<https://www.youtube.com/watch?v=vtIzMaLkCaM>
+
 ______________________________________________________________________
 
 ## Articles
