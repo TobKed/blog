@@ -5,7 +5,7 @@ Tags: python, blog, podcast, series, aggregate, summary, month, 2025
 Slug: 2025-august-links
 Summary: Interesting stuff from the month
 Header_Cover: /images/posts/2025/2025_08_xx.jpg
-Status: draft
+Status: published
 
 # August 2025
 
