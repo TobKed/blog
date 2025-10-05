@@ -4,7 +4,7 @@ Category: summary
 Tags: python, blog, podcast, series, aggregate, summary, month, 2025
 Slug: 2025-september-links
 Summary: Interesting stuff from the month
-Header_Cover: /images/posts/2025/2025_xx_xx.jpg
+Header_Cover: /images/posts/2025/2025_09_xx.jpg
 Status: draft
 
 # September 2025
