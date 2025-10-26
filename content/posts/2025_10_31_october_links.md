@@ -17,8 +17,13 @@ Below you'll find a mix of articles, links, and resources, some of which tie int
 obisidan-nvim
 ghostty
 touch-id
-https://0xmachos.com/2023-10-01-Touch-ID-sudo/
-https://github.com/0xmachos/macos-scripts/blob/master/enable-touchid-sudo
+<https://0xmachos.com/2023-10-01-Touch-ID-sudo/>
+<https://github.com/0xmachos/macos-scripts/blob/master/enable-touchid-sudo>
+
+alt-tab window switcher
+brew install --cask rectangle
+
+AI House OpenAI meetup
 
 ______________________________________________________________________
 
