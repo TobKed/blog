@@ -4,18 +4,22 @@ Helper script to bulk process URLs from a markdown file and insert them into a t
 Generates a report of successfully added and failed/skipped links.
 """
 import argparse
-import re
-import subprocess
 import sys
 from pathlib import Path
 
+from config import setup_paths, validate_markdown_file
+from link_processing.core import process_single_link
+from link_processing.exceptions import (
+    DuplicateLinkError,
+    SectionNotFoundError,
+    URLProcessingError,
+)
+from link_processing.link_registry import LinkRegistry
+from link_processing.url_analyser import UrlAnalyser
 from loguru import logger  # Import Loguru logger
 
 # Determine the project root (assuming this script is in scripts/blog_automation_2/)
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
-INSERT_LINKS_TOOL_PATH = (
-    PROJECT_ROOT / "scripts" / "blog_automation_2" / "insert_links_tool.py"
-)
 
 
 def setup_logging(verbose: bool) -> None:
@@ -74,79 +78,6 @@ def parse_input_file(input_file_path: Path) -> tuple[str, list[str]]:
     return target_post_file, urls_to_process
 
 
-def run_insert_tool_for_url(
-    target_post: str, url: str, verbose_tool: bool
-) -> tuple[bool, str]:
-    """
-    Runs the insert_links_tool.py for a single URL and captures its output.
-
-    Args:
-        target_post (str): The markdown file to insert the link into (relative to project root).
-        url (str): The URL to process.
-        verbose_tool (bool): Whether to run the insert_links_tool.py in verbose mode.
-
-    Returns:
-        tuple[bool, str]: A tuple containing (success_status, status_message).
-                          success_status is True if the link was added, False otherwise.
-                          status_message contains the reason for failure/skip or success.
-    """
-    command = [
-        "python",
-        str(INSERT_LINKS_TOOL_PATH),
-        target_post,
-        url,
-    ]
-    if verbose_tool:
-        command.append("--verbose")
-
-    try:
-        # Run the command from the project root
-        logger.debug(f"Running command: {' '.join(command)}")
-        process = subprocess.run(
-            command,
-            capture_output=True,
-            text=True,
-            cwd=PROJECT_ROOT,
-            check=False,  # Don't raise exception for non-zero exit codes
-        )
-
-        output = process.stdout + "\\n" + process.stderr
-        logger.debug(f"Output from insert_links_tool for {url}:\n{output.strip()}")
-
-        if re.search(r"Successfully added link:", output, re.IGNORECASE):
-            return True, f"Successfully added: {url}"
-        elif re.search(r"Duplicate link found:", output, re.IGNORECASE):
-            reason = re.search(r"Duplicate link found:.*", output, re.IGNORECASE)
-            return False, reason.group(0) if reason else f"Duplicate link: {url}"
-        elif re.search(r"Failed to process URL:", output, re.IGNORECASE):
-            reason = re.search(r"Failed to process URL:.*", output, re.IGNORECASE)
-            return False, reason.group(0) if reason else f"Failed to process: {url}"
-        elif process.returncode != 0:
-            return (
-                False,
-                f"Failed with exit code {process.returncode}. Output: {output.strip()}",
-            )
-        else:
-            # Fallback if no specific message is found but tool seemed to succeed
-            if "error" in output.lower() or "failed" in output.lower():
-                return (
-                    False,
-                    f"Processing finished with unclear status. Output: {output.strip()}",
-                )
-            return (
-                True,
-                f"Processed (status unclear from output, assumed success): {url}",
-            )
-
-    except FileNotFoundError:
-        logger.error(f"Could not find insert_links_tool.py at {INSERT_LINKS_TOOL_PATH}")
-        logger.error("Please ensure the script path is correct and it's executable.")
-        return False, "Helper script error: insert_links_tool.py not found."
-    except Exception as e:
-        logger.error(f"Error running insert_links_tool.py for {url}: {e}")
-        return False, f"Error running insert_links_tool.py for {url}: {e}"
-
-
 def generate_report_file(
     input_file_path: Path,
     target_post_file: str,
@@ -172,9 +103,7 @@ def generate_report_file(
             f.write("## Successfully Added Links\n")
             if added_links:
                 for link_detail in added_links:
-                    url_match = re.search(r"(https?://[^\s]+)", link_detail)
-                    url_to_list = url_match.group(1) if url_match else link_detail
-                    f.write(f"- {url_to_list}\n")
+                    f.write(f"- {link_detail}\n")
             else:
                 f.write("No links were successfully added.\n")
             f.write("\n")
@@ -204,7 +133,7 @@ def main():
     parser.add_argument(
         "--verbose",
         action="store_true",
-        help="Enable verbose logging for this script and run the insert_links_tool.py in verbose mode.",
+        help="Enable verbose logging for this script.",
     )
     args = parser.parse_args()
 
@@ -213,9 +142,20 @@ def main():
 
     input_file_path = args.input_file.resolve()  # Ensure absolute path
 
-    target_post_file, urls_to_process = parse_input_file(input_file_path)
+    target_post_file_rel, urls_to_process = parse_input_file(input_file_path)
 
-    logger.info(f"Processing links for target post: {target_post_file}")
+    # Setup paths and validate markdown file
+    paths = setup_paths()
+    target_post_file_abs = validate_markdown_file(
+        paths.project_root / target_post_file_rel
+    )
+
+    # Initialize components once
+    posts_dir = paths.project_root / "content" / "posts"
+    link_registry = LinkRegistry(posts_dir)
+    link_processor = UrlAnalyser()
+
+    logger.info(f"Processing links for target post: {target_post_file_rel}")
     logger.info(
         f"Found {len(urls_to_process)} URLs to process from {input_file_path.name}"
     )
@@ -225,21 +165,21 @@ def main():
 
     for i, url in enumerate(urls_to_process):
         logger.info(f"Processing URL {i+1}/{len(urls_to_process)}: {url} ...")
-        # Pass args.verbose to run_insert_tool_for_url to control verbosity of the tool itself
-        success, message = run_insert_tool_for_url(target_post_file, url, args.verbose)
-        if success:
-            logger.info(f"  \\_ Status: Success ({message})")
-            added_links_details.append(url)
-        else:
-            logger.warning(
-                f"  \\_ Status: Failed/Skipped ({message})"
-            )  # Use warning for user-facing non-critical failures
-            failed_links_details.append(
-                f"{url} (Reason: {message.replace(url, '').strip().lstrip(':').strip()})"
+        try:
+            cleaned_url = process_single_link(
+                url=url,
+                markdown_file=target_post_file_abs,
+                link_registry=link_registry,
+                link_processor=link_processor,
             )
+            logger.info(f"  \\_ Status: Success ({cleaned_url})")
+            added_links_details.append(cleaned_url)
+        except (DuplicateLinkError, URLProcessingError, SectionNotFoundError) as e:
+            logger.warning(f"  \\_ Status: Failed/Skipped ({e})")
+            failed_links_details.append(f"{url} (Reason: {e})")
 
     generate_report_file(
-        input_file_path, target_post_file, added_links_details, failed_links_details
+        input_file_path, target_post_file_rel, added_links_details, failed_links_details
     )
     logger.info("Bulk processing complete.")
 

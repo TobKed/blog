@@ -11,13 +11,12 @@ from config import (
     setup_paths,
     validate_markdown_file,
 )
-from link_processing.file_updater import (
-    get_available_sections,
-    insert_link_into_markdown_file,
+from link_processing.core import process_single_link
+from link_processing.exceptions import (
+    DuplicateLinkError,
+    SectionNotFoundError,
+    URLProcessingError,
 )
-from link_processing.link_registry import LinkRegistry
-from link_processing.url_analyser import UrlAnalyser
-from link_processing.url_processor import LinkType, process_urls
 from loguru import logger
 
 
@@ -42,84 +41,21 @@ def main() -> None:
     posts_dir = paths.project_root / "content" / "posts"
     link_registry = LinkRegistry(posts_dir)
 
-    # Process URLs
-    processed_urls = process_urls(args.urls)
-
-    # Get available sections from the markdown file
-    available_sections = get_available_sections(markdown_file)
-
     # Initialize analyser
     link_processor = UrlAnalyser()
 
-    # Process each URL
-    for metadata in processed_urls:
-        # Check for duplicates
-        if link_registry.is_duplicate(metadata.cleaned_url):
-            duplicate_info = link_registry.get_duplicate_info(metadata.cleaned_url)
-            logger.warning(
-                f"Duplicate link found: {metadata.cleaned_url}\n"
-                f"Previously added to {duplicate_info.post_file} on {duplicate_info.added_date}"
+    # Process each URL from the command line
+    for url in args.urls:
+        logger.info(f"Processing URL: {url}")
+        try:
+            process_single_link(
+                url=url,
+                markdown_file=markdown_file,
+                link_registry=link_registry,
+                link_processor=link_processor,
             )
-            continue
-
-        # Process URL with crew
-        result = link_processor.analyze_url(metadata.cleaned_url, available_sections)
-
-        if result:
-            # Insert link into markdown file
-            title = metadata.title or result.og_title or result.title
-            description = (
-                result.og_description or result.summary
-            )  # Prefer OG description
-
-            section_to_insert = result.section
-
-            # Use og_title and og_description for YouTube links if available
-            if metadata.link_type == LinkType.YOUTUBE:
-                title = result.og_title or title
-                description = result.og_description or description
-            if metadata.link_type == LinkType.YOUTUBE and metadata.is_youtube_playlist:
-                # Format as a regular link under "Videos" section
-                markdown_string = (
-                    f"### [{title}]({metadata.cleaned_url})\n\n> {description}"
-                )
-                section_to_insert = "Videos"
-            elif metadata.link_type == LinkType.YOUTUBE and metadata.video_id:
-                # Format as an embedded video
-                video_id_to_embed = metadata.video_id  # Use video_id from LinkMetadata
-                markdown_string = (
-                    f"### [{title}](https://www.youtube.com/watch?v={video_id_to_embed})\n\n"
-                    f'<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">\n'
-                    f'    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/{video_id_to_embed}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>\n'
-                    f"</div>\n\n"
-                    f"#### AI generated summary\n\n"
-                    f"{result.brief_summary}"
-                )
-                section_to_insert = "Videos"
-            else:
-                # Standard format for other links
-                markdown_string = (
-                    f"### [{title}]({metadata.cleaned_url})\n\n"
-                    f"> {description}\n\n"
-                    f"#### AI generated summary\n\n"
-                    f"{result.brief_summary}"
-                )
-
-            insert_link_into_markdown_file(
-                markdown_file_path=markdown_file,
-                section_name=section_to_insert,
-                markdown_to_insert=markdown_string,
-            )
-            # Add to registry
-            link_registry.add_link(
-                url=metadata.cleaned_url,
-                original_url=metadata.original_url,
-                post_file=str(markdown_file),
-                title=metadata.title,
-            )
-            logger.info(f"Successfully added link: {metadata.cleaned_url}")
-        else:
-            logger.error(f"Failed to process URL: {metadata.cleaned_url}")
+        except (DuplicateLinkError, URLProcessingError, SectionNotFoundError) as e:
+            logger.error(f"Failed to process link: {e}")
 
 
 if __name__ == "__main__":

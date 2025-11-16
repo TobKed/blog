@@ -10,6 +10,8 @@ from typing import List, Optional
 
 from loguru import logger
 
+from .exceptions import SectionNotFoundError
+
 
 def get_available_sections(markdown_file_path: Path) -> List[str]:
     """
@@ -48,7 +50,7 @@ def get_available_sections(markdown_file_path: Path) -> List[str]:
 
 def insert_link_into_markdown_file(
     markdown_file_path: Path, section_name: str, markdown_to_insert: str
-) -> bool:
+) -> None:
     """
     Inserts a markdown formatted link string under a specific H2 section
     in a markdown file. If the section doesn't exist, and the section_name
@@ -59,8 +61,8 @@ def insert_link_into_markdown_file(
         section_name (str): The name of the H2 section (e.g., "Python").
         markdown_to_insert (str): The full markdown block for the link.
 
-    Returns:
-        bool: True if insertion was successful, False otherwise.
+    Raises:
+        SectionNotFoundError: If the target section is not found and is not 'Other stuff'.
     """
     try:
         content = markdown_file_path.read_text(encoding="utf-8")
@@ -145,21 +147,19 @@ def insert_link_into_markdown_file(
             inserted = True
             logger.debug(f"Created new 'Other stuff' section and inserted link")
         else:
-            logger.warning(f"Section '{section_name}' not found. Link not inserted.")
-            return False
+            raise SectionNotFoundError(
+                f"Section '{section_name}' not found in {markdown_file_path}. Link not inserted."
+            )
 
         if inserted:
             markdown_file_path.write_text(
                 "\n".join(new_content_lines), encoding="utf-8"
             )
             logger.success(f"Successfully updated markdown file: {markdown_file_path}")
-            return True
-
-        return False  # Should not be reached if logic is correct
 
     except FileNotFoundError:
         logger.error(f"Markdown file not found at {markdown_file_path} during update.")
-        return False
+        raise
     except Exception as e:
         logger.exception(f"Error updating markdown file {markdown_file_path}")
-        return False
+        raise
