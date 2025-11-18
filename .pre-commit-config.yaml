@@ -29,7 +29,8 @@ repos:
             ^content/posts/2019_10_07_black.md|
             ^content/posts/2021_08_31_august_links.md|
             ^content/posts/2021_12_30_django_on_gcp.md|
-            ^content/posts/2023_05_03_gcp_dev_day.md
+            ^content/posts/2023_05_03_gcp_dev_day.md|
+            ^scripts/blog_automation_2/README.md
         )
 - repo: https://github.com/psf/black
   rev: 25.1.0
