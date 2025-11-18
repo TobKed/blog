@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Main CLI script to analyze URLs, generate descriptions and categories,
-and insert them into a markdown blog post using a CrewAI-based system.
+and insert them into a markdown blog post.
 """
 
 from config import (
