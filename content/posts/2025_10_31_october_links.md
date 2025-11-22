@@ -16,13 +16,13 @@ Below you'll find a mix of articles, links, and resources, some of which tie int
 
 ### AI House OpenAI meetup
 
-The highlight of the month was the AI House OpenAI meetup in Amsterdam. It was a great event focused on "Vibe Coding" and getting the most out of OpenAI's coding assistant.
+The highlight of the month was the [AI House OpenAI meetup](https://luma.com/wkcnkqw5) in Amsterdam. It was a great event focused on "Vibe Coding" and getting the most out of OpenAI's coding assistant.
 
 [Anouk Muis](https://www.linkedin.com/in/anoukmuis/?originalSubdomain=uk) from OpenAI gave a workshop on ChatGPT's Codex, followed by a panel discussion with [Vladislav Tankov](https://www.linkedin.com/in/vladislav-tankov/) (Director of AI at JetBrains) and [Jelmer Borst](https://www.linkedin.com/in/japborst/) (Head of Analytics & AI at Picnic Technologies). It was great to explore practical strategies for effective AI-assisted coding at the new AI House hub.
 
-<img src="/images/posts/2025/2025_10_31_ai_house.png" alt="AI House" style="display: block; margin-left: auto; margin-right: auto;">
+<img src="{static}/images/posts/2025/2025_10_ai_house_open_ai.jpg" alt="AI House" style="display: block; margin-left: auto; margin-right: auto;">
 
-<img src="/images/posts/2025/2025_10_31_ai_house_panel.png" alt="AI House panel discussion" style="display: block; margin-left: auto; margin-right: auto;">
+<img src="{static}/images/posts/2025/2025_10_ai_house_open_ai_panel.jpg" alt="AI House panel discussion" style="display: block; margin-left: auto; margin-right: auto;">
 
 ### Tools updates
 
@@ -41,9 +41,9 @@ On the window management front, I started using [Alt-Tab](https://github.com/lwo
 I watched a lot of Graham Weaver videos this month. His "Last Lecture" series gave me a lot of inspiration and motivation.
 
 - [Last Lecture Series: How to Design a Winnable Game – Graham Weaver](https://www.youtube.com/watch?v=0SQor2z2QAU)
-- [Last Lecture Series: “How to Live an Asymmetric Life,” Graham Weaver](https://www.youtube.com/watch?v=dZxbVGhpEkI)
-- [Last Lecture Series: “Your Life as the Hero’s Journey,” Graham Weaver](https://www.youtube.com/watch?v=WhkTFEzyqlo)
-- [Last Lecture Series: How to Live your Life at Full Power — Graham Weaver](https://www.youtube.com/watch?v=uxoCnxlxpIk)
+- [Last Lecture Series: “How to Live an Asymmetric Life” Graham Weaver](https://www.youtube.com/watch?v=dZxbVGhpEkI)
+- [Last Lecture Series: “Your Life as the Hero’s Journey” Graham Weaver](https://www.youtube.com/watch?v=WhkTFEzyqlo)
+- [Last Lecture Series: "How to Live your Life at Full Power" Graham Weaver](https://www.youtube.com/watch?v=uxoCnxlxpIk)
 
 ______________________________________________________________________
 
