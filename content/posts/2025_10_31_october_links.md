@@ -14,18 +14,36 @@ Below you'll find a mix of articles, links, and resources, some of which tie int
 
 ## Some thoughts
 
-obisidan-nvim
-ghostty
-touch-id
-<https://0xmachos.com/2023-10-01-Touch-ID-sudo/>
-<https://github.com/0xmachos/macos-scripts/blob/master/enable-touchid-sudo>
+### AI House OpenAI meetup
 
-alt-tab window switcher
-brew install --cask rectangle
+The highlight of the month was the AI House OpenAI meetup in Amsterdam. It was a fantastic event focused on "Vibe Coding" and getting the most out of AI coding assistants.
 
-AI House OpenAI meetup
+Anouk Muis from OpenAI gave a workshop on ChatGPT's Codex, followed by a panel discussion with Vladislav Tankov (Director of AI at JetBrains) and Jelmer Borst (Head of Analytics & AI at Picnic Technologies). It was great to explore practical strategies for effective AI-assisted coding at the new AI House hub.
 
-Graham videos
+![AI House](/images/posts/2025/2025_10_31_ai_house.png)
+
+![AI House](/images/posts/2025/2025_10_31_ai_house_panel.png)
+
+### Tools updates
+
+I finally made the switch from iTerm to **Ghostty**. I had been struggling with some random hotkey window issues in iTerm, but I managed to recreate my preferred workflow in Ghostty using its quick terminal feature:
+
+```
+keybind = global:cmd+enter=toggle_quick_terminal
+```
+
+I also enabled Touch ID for `sudo` commands, so I no longer need to type my password all the time ([link1](https://0xmachos.com/2023-10-01-Touch-ID-sudo/), [link2](https://github.com/0xmachos/macos-scripts/blob/master/enable-touchid-sudo)).
+
+On the window management front, I started using [Alt-Tab](https://github.com/lwouis/alt-tab-macos) for better switching and [Rectangle](https://rectangleapp.com/) for snapping windows. Both have significantly improved my workflow.
+
+### Life
+
+I watched a lot of Graham Weaver videos this month. His "Last Lecture" series gave me a lot of inspiration and motivation.
+
+- [Last Lecture Series: How to Design a Winnable Game – Graham Weaver](https://www.youtube.com/watch?v=0SQor2z2QAU)
+- [Last Lecture Series: “How to Live an Asymmetric Life,” Graham Weaver](https://www.youtube.com/watch?v=dZxbVGhpEkI)
+- [Last Lecture Series: “Your Life as the Hero’s Journey,” Graham Weaver](https://www.youtube.com/watch?v=WhkTFEzyqlo)
+- [Last Lecture Series: How to Live your Life at Full Power — Graham Weaver](https://www.youtube.com/watch?v=uxoCnxlxpIk)
 
 ______________________________________________________________________
 
@@ -41,7 +59,7 @@ ______________________________________________________________________
 
 The page explores influential essays that shaped the author's software development philosophy, emphasizing clear test code, the benefits of plain JavaScript, choosing reliable technologies, digital disaster preparedness, and user-friendly input validation.
 
-### [\[PSA\] Advice I Wish I Knew as a Junior Developer — Invidious Musings](https://raheeljunaid.com/blog/advice-for-developers/)
+### [Advice I Wish I Knew as a Junior Developer](https://raheeljunaid.com/blog/advice-for-developers/)
 
 #### AI generated summary
 
@@ -57,7 +75,7 @@ The article explores the 'productive discomfort zone,' a phase where career grow
 
 > The highly valuable tool for influence and moving solutions forward as an engineer
 
-### [Distributing your own scripts via Homebrew | justin․searls․co](https://justin.searls.co/posts/how-to-distribute-your-own-scripts-via-homebrew/)
+### [Distributing your own scripts via Homebrewo](https://justin.searls.co/posts/how-to-distribute-your-own-scripts-via-homebrew/)
 
 #### AI generated summary
 
@@ -79,7 +97,11 @@ The article discusses the concept of 'good taste' in software engineering, empha
 
 Firefox is praised as the best mobile browser due to its open-source nature, privacy features, and support for powerful extensions on Android. The article highlights extensions that block ads and pop-ups, improve user experience on Medium and Twitter/X, and more. It also discusses Firefox's sync feature and customizable homepage.
 
-## Productivity
+### [Examples are the best documentation](https://rakhim.exotext.com/examples-are-the-best-documentation)
+
+#### AI generated summary
+
+The article emphasizes the value of examples in technical documentation, arguing that they help developers quickly understand complex concepts without needing to delve into detailed explanations. It highlights the challenges developers face with formal documentation and suggests that examples can make documentation more accessible and practical.
 
 ## AI
 
@@ -131,10 +153,6 @@ Context engineering involves creating dynamic systems to provide the right infor
 
 ## Security
 
-### [archive.is](https://archive.is/HeCcf)
-
-TODO
-
 ### [How I Almost Got Hacked By A 'Job Interview'](https://blog.daviddodda.com/how-i-almost-got-hacked-by-a-job-interview)
 
 > I was 30 seconds away from running malware, Here's how a sophisticated scam operation almost got me, and why every developer needs to read this.
@@ -154,12 +172,6 @@ TODO
 #### AI generated summary
 
 Guido van Rossum discusses Python's philosophy of simplicity and its role in AI, the importance of type hints, and the challenges of transitioning from Python 2 to 3. He expresses concerns about the ethical implications of AI and hopes for Python's legacy to empower individual developers.
-
-### [Examples are the best documentation | exotext](https://rakhim.exotext.com/examples-are-the-best-documentation)
-
-#### AI generated summary
-
-The article emphasizes the value of examples in technical documentation, arguing that they help developers quickly understand complex concepts without needing to delve into detailed explanations. It highlights the challenges developers face with formal documentation and suggests that examples can make documentation more accessible and practical.
 
 ### [Python 3.14: Cool New Features for You to Try – Real Python](https://realpython.com/python314-new-features/)
 
@@ -193,15 +205,11 @@ The author explains how to customize the Django shell to automatically import sp
 
 ### [GitHub - feldroy/air: The new Python web framework by the authors of Two Scoops of Django](https://github.com/feldroy/air)
 
-> The new Python web framework by the authors of Two Scoops of Django - feldroy/air
+> Air 💨: The new web framework that breathes fresh air into Python web development. Built with FastAPI, Starlette, and Pydantic.
 
 ## Tools
 
-### [ZeroTier | Next-Generation Connectivity and Cybersecurity](https://www.zerotier.com/)
-
-> Connect everything, from cloud to IoT, with the next-generation global network solution. Simple, resilient, and secure networking in minutes.
-
-### [GitHub - tw93/Mole: 🐹 Dig deep like a mole to clean you Mac. 像鼹鼠一样深入挖掘来清理你的 Mac](https://github.com/tw93/Mole)
+### [GitHub - tw93/Mole: 🐹 Dig deep like a mole to clean you Mac.](https://github.com/tw93/Mole)
 
 #### AI generated summary
 
@@ -227,11 +235,13 @@ Nebula is a scalable overlay networking tool that connects computers globally wi
 
 Tilt is an open-source toolkit that simplifies microservice development by providing smart rebuilds, live updates, and a user-friendly interface for Kubernetes. It enhances productivity through features like holistic app visibility, fast live updates, and built-in best practices.
 
+### [ZeroTier | Next-Generation Connectivity and Cybersecurity](https://www.zerotier.com/)
+
+> Connect everything, from cloud to IoT, with the next-generation global network solution. Simple, resilient, and secure networking in minutes.
+
 ## Cloud
 
 ### [Every Developer Needs to Self-Host - DEV Community](https://dev.to/code42cate/every-developer-needs-to-self-host-43mm)
-
-> I used to think self hosting was something only sysadmins or homelab nerds did. You know, the kind of... Tagged with cloud, devops, opensource, webdev.
 
 #### AI generated summary
 
@@ -251,55 +261,55 @@ This page explores the author's minimalist lifestyle of indefinite travel with o
 
 ## Videos
 
-### [Last Lecture Series: How to Design a Winnable Game – Graham Weaver - YouTube](https://www.youtube.com/watch?v=0SQor2z2QAU)
+### [Last Lecture Series: How to Design a Winnable Game – Graham Weaver](https://www.youtube.com/watch?v=0SQor2z2QAU)
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/0SQor2z2QAU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-### [Last Lecture Series: “How to Live an Asymmetric Life,” Graham Weaver - YouTube](https://www.youtube.com/watch?v=dZxbVGhpEkI)
+### [Last Lecture Series: “How to Live an Asymmetric Life,” Graham Weaver](https://www.youtube.com/watch?v=dZxbVGhpEkI)
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/dZxbVGhpEkI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-### [Last Lecture Series: “Your Life as the Hero’s Journey,” Graham Weaver - YouTube](https://www.youtube.com/watch?v=WhkTFEzyqlo)
+### [Last Lecture Series: “Your Life as the Hero’s Journey,” Graham Weaver](https://www.youtube.com/watch?v=WhkTFEzyqlo)
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/WhkTFEzyqlo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-### [Last Lecture Series: How to Live your Life at Full Power — Graham Weaver - YouTube](https://www.youtube.com/watch?v=uxoCnxlxpIk)
+### [Last Lecture Series: How to Live your Life at Full Power — Graham Weaver](https://www.youtube.com/watch?v=uxoCnxlxpIk)
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/uxoCnxlxpIk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-### [The Holy Grail of Neovim Note Taking - YouTube](https://www.youtube.com/watch?v=5ht8NYkU9wQ)
+### [The Holy Grail of Neovim Note Taking](https://www.youtube.com/watch?v=5ht8NYkU9wQ)
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/5ht8NYkU9wQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-### [Lecture #9: How to Read so that you _Retain_ Information - YouTube](https://www.youtube.com/watch?v=uiNB-6SuqVA)
+### [Lecture #9: How to Read so that you _Retain_ Information](https://www.youtube.com/watch?v=uiNB-6SuqVA)
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/uiNB-6SuqVA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-### [n8n Now Runs My ENTIRE Homelab - YouTube](https://www.youtube.com/watch?v=budTmdQfXYU)
+### [n8n Now Runs My ENTIRE Homelab](https://www.youtube.com/watch?v=budTmdQfXYU)
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/budTmdQfXYU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-### [DEF CON 33 - Kill List: Hacking an Assassination Site on the Dark Web - Carl Miller, Chris Monteiro - YouTube](https://www.youtube.com/watch?v=cYZmRp90hss)
+### [DEF CON 33 - Kill List: Hacking an Assassination Site on the Dark Web - Carl Miller, Chris Monteiro](https://www.youtube.com/watch?v=cYZmRp90hss)
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/cYZmRp90hss" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-### [What Big Tech Still Gets WRONG about Great Programmers | Casey Muratori - YouTube](https://www.youtube.com/watch?v=gZ2V5VtwrCw)
+### [What Big Tech Still Gets WRONG about Great Programmers | Casey Muratori](https://www.youtube.com/watch?v=gZ2V5VtwrCw)
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/gZ2V5VtwrCw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -309,37 +319,37 @@ This page explores the author's minimalist lifestyle of indefinite travel with o
 
 Casey Muratori addresses the common misconceptions held by big tech companies regarding the qualities of great programmers, highlighting the disconnect between industry hiring practices and the true skills that define exceptional programming talent.
 
-### [AI Slop Is Destroying The Internet - YouTube](https://www.youtube.com/watch?v=_zfN9wnPvU0)
+### [AI Slop Is Destroying The Internet](https://www.youtube.com/watch?v=_zfN9wnPvU0)
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/_zfN9wnPvU0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-### [Visualizing transformers and attention | Talk for TNG Big Tech Day '24 - YouTube](https://www.youtube.com/watch?v=KJtZARuO3JY)
+### [Visualizing transformers and attention | Talk for TNG Big Tech Day '24](https://www.youtube.com/watch?v=KJtZARuO3JY)
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/KJtZARuO3JY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-### [Vibes won't cut it — Chris Kelly, Augment Code - YouTube](https://www.youtube.com/watch?v=Dc3qOA9WOnE)
+### [Vibes won't cut it — Chris Kelly, Augment Code](https://www.youtube.com/watch?v=Dc3qOA9WOnE)
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/Dc3qOA9WOnE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-### [Google’s NotebookLM is Getting Even More Powerful - YouTube](https://www.youtube.com/watch?v=i9kiuGIHlMY)
+### [Google’s NotebookLM is Getting Even More Powerful](https://www.youtube.com/watch?v=i9kiuGIHlMY)
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/i9kiuGIHlMY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-### [13 Years in QA: Why Traditional QA is Disappearing (And What to Do) - YouTube](https://www.youtube.com/watch?v=4J53WvB1-4E)
+### [13 Years in QA: Why Traditional QA is Disappearing (And What to Do)](https://www.youtube.com/watch?v=4J53WvB1-4E)
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/4J53WvB1-4E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-### [The AWS Outage Uncovered Something EVERY Developer Should Know - YouTube](https://www.youtube.com/watch?v=X2wmzn-tfiQ)
+### [The AWS Outage Uncovered Something EVERY Developer Should Know](https://www.youtube.com/watch?v=X2wmzn-tfiQ)
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/X2wmzn-tfiQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
