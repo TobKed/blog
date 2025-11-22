@@ -75,7 +75,7 @@ The article explores the 'productive discomfort zone,' a phase where career grow
 
 > The highly valuable tool for influence and moving solutions forward as an engineer
 
-### [Distributing your own scripts via Homebrewo](https://justin.searls.co/posts/how-to-distribute-your-own-scripts-via-homebrew/)
+### [Distributing your own scripts via Homebrew](https://justin.searls.co/posts/how-to-distribute-your-own-scripts-via-homebrew/)
 
 #### AI generated summary
 
@@ -209,6 +209,12 @@ The author explains how to customize the Django shell to automatically import sp
 
 ## Tools
 
+### [Tilt | Kubernetes for Prod, Tilt for Dev](https://tilt.dev/)
+
+#### AI generated summary
+
+Tilt is an open-source toolkit that simplifies microservice development by providing smart rebuilds, live updates, and a user-friendly interface for Kubernetes. It enhances productivity through features like holistic app visibility, fast live updates, and built-in best practices.
+
 ### [GitHub - tw93/Mole: 🐹 Dig deep like a mole to clean you Mac.](https://github.com/tw93/Mole)
 
 #### AI generated summary
@@ -221,19 +227,7 @@ Mole is a terminal-based tool for cleaning and optimizing Mac systems, offering 
 
 ### [GitHub - slackhq/nebula](https://github.com/slackhq/nebula)
 
-> A scalable overlay networking tool with a focus on performance, simplicity and security - slackhq/nebula
-
-#### AI generated summary
-
-Nebula is a scalable overlay networking tool that connects computers globally with a focus on performance, simplicity, and security. It supports multiple platforms and integrates encryption, security groups, certificates, and tunneling for secure communication.
-
-### [Tilt | Kubernetes for Prod, Tilt for Dev](https://tilt.dev/)
-
-> Kubernetes for Prod, Tilt for Dev
-
-#### AI generated summary
-
-Tilt is an open-source toolkit that simplifies microservice development by providing smart rebuilds, live updates, and a user-friendly interface for Kubernetes. It enhances productivity through features like holistic app visibility, fast live updates, and built-in best practices.
+> A scalable overlay networking tool with a focus on performance, simplicity and security
 
 ### [ZeroTier | Next-Generation Connectivity and Cybersecurity](https://www.zerotier.com/)
 
@@ -241,7 +235,7 @@ Tilt is an open-source toolkit that simplifies microservice development by provi
 
 ## Cloud
 
-### [Every Developer Needs to Self-Host - DEV Community](https://dev.to/code42cate/every-developer-needs-to-self-host-43mm)
+### [Every Developer Needs to Self-Host](https://dev.to/code42cate/every-developer-needs-to-self-host-43mm)
 
 #### AI generated summary
 
