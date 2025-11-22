@@ -23,6 +23,7 @@ endif
 
 .DEFAULT_GOAL := help
 
+.PHONY: help
 help:
 	@echo 'Makefile for a pelican Web site                                           '
 	@echo ''
@@ -31,15 +32,19 @@ help:
 	@echo 'Set the DEBUG variable to 1 to enable debugging, e.g. make DEBUG=1 html   '
 	@echo 'Set the RELATIVE variable to 1 to enable relative urls                    '
 
+.PHONY: html
 html: ## (re)generate the web site
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
+.PHONY: clean
 clean: ## remove the generated files
 	[ ! -d $(OUTPUTDIR) ] || rm -rf $(OUTPUTDIR)
 
+.PHONY: regenerate
 regenerate: ## regenerate files upon modification
 	$(PELICAN) -r $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
+.PHONY: serve
 serve: ## serve site at http://localhost:8000
 ifdef PORT
 	$(PELICAN) -l $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS) -p $(PORT)
@@ -47,6 +52,7 @@ else
 	$(PELICAN) -l $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 endif
 
+.PHONY: serve-global
 serve-global: ## serve (as root) to $(SERVER):80
 ifdef SERVER
 	$(PELICAN) -l $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS) -p $(PORT) -b $(SERVER)
@@ -55,6 +61,7 @@ else
 endif
 
 
+.PHONY: devserver
 devserver: ## serve and regenerate together
 ifdef PORT
 	$(PELICAN) -lr $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS) -p $(PORT)
@@ -62,15 +69,20 @@ else
 	$(PELICAN) -lr $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 endif
 
+.PHONY: publish
 publish: ## generate using production settings
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 
+.PHONY: github
 github: publish ## upload the web site via gh-pages
 	ghp-import -m "Generate Pelican site" -b $(GITHUB_PAGES_BRANCH) $(OUTPUTDIR)
 	git push origin $(GITHUB_PAGES_BRANCH)
 
 
+.PHONY: resize_images
 resize_images: ## resize images in scripts/resize_photos/input
 	$(PY) scripts/resize_photos/main.py
 
-.PHONY: html help clean regenerate serve serve-global devserver stopserver publish github resize_images
+.PHONY: generate_post
+generate_post: ## generate a new post
+	$(PY) scripts/generate_post.py

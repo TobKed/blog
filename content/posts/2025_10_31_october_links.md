@@ -16,9 +16,9 @@ Below you'll find a mix of articles, links, and resources, some of which tie int
 
 ### AI House OpenAI meetup
 
-The highlight of the month was the AI House OpenAI meetup in Amsterdam. It was a fantastic event focused on "Vibe Coding" and getting the most out of AI coding assistants.
+The highlight of the month was the AI House OpenAI meetup in Amsterdam. It was a great event focused on "Vibe Coding" and getting the most out of OpenAI's coding assistant.
 
-Anouk Muis from OpenAI gave a workshop on ChatGPT's Codex, followed by a panel discussion with Vladislav Tankov (Director of AI at JetBrains) and Jelmer Borst (Head of Analytics & AI at Picnic Technologies). It was great to explore practical strategies for effective AI-assisted coding at the new AI House hub.
+[Anouk Muis](https://www.linkedin.com/in/anoukmuis/?originalSubdomain=uk) from OpenAI gave a workshop on ChatGPT's Codex, followed by a panel discussion with [Vladislav Tankov](https://www.linkedin.com/in/vladislav-tankov/) (Director of AI at JetBrains) and [Jelmer Borst](https://www.linkedin.com/in/japborst/) (Head of Analytics & AI at Picnic Technologies). It was great to explore practical strategies for effective AI-assisted coding at the new AI House hub.
 
 <img src="/images/posts/2025/2025_10_31_ai_house.png" alt="AI House" style="display: block; margin-left: auto; margin-right: auto;">
 
@@ -26,7 +26,7 @@ Anouk Muis from OpenAI gave a workshop on ChatGPT's Codex, followed by a panel d
 
 ### Tools updates
 
-I finally made the switch from iTerm to **Ghostty**. I had been struggling with some random hotkey window issues in iTerm, but I managed to recreate my preferred workflow in Ghostty using its quick terminal feature:
+I finally switched terminal emulators. I had been struggling with some random key binding issues in [iTerm2](https://www.iterm2.com/), but I managed to recreate my preferred workflow with a hotkey window in [Ghostty](https://ghostty.org/) using its quick terminal feature:
 
 ```
 keybind = global:cmd+enter=toggle_quick_terminal
@@ -34,7 +34,7 @@ keybind = global:cmd+enter=toggle_quick_terminal
 
 I also enabled Touch ID for `sudo` commands, so I no longer need to type my password all the time ([link1](https://0xmachos.com/2023-10-01-Touch-ID-sudo/), [link2](https://github.com/0xmachos/macos-scripts/blob/master/enable-touchid-sudo)).
 
-On the window management front, I started using [Alt-Tab](https://github.com/lwouis/alt-tab-macos) for better switching and [Rectangle](https://rectangleapp.com/) for snapping windows. Both have significantly improved my workflow.
+On the window management front, I started using [Alt-Tab](https://github.com/lwouis/alt-tab-macos) for better windows switching and [Rectangle](https://rectangleapp.com/) for snapping windows. Both have significantly improved my workflow.
 
 ### Life
 
