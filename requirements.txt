@@ -4,3 +4,4 @@ pelican==4.10.1
 pelican-sitemap==1.1.0
 python-dotenv==1.0.1
 pre-commit==3.5.0
+Pillow

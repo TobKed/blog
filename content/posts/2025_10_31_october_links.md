@@ -20,9 +20,9 @@ The highlight of the month was the AI House OpenAI meetup in Amsterdam. It was a
 
 Anouk Muis from OpenAI gave a workshop on ChatGPT's Codex, followed by a panel discussion with Vladislav Tankov (Director of AI at JetBrains) and Jelmer Borst (Head of Analytics & AI at Picnic Technologies). It was great to explore practical strategies for effective AI-assisted coding at the new AI House hub.
 
-![AI House](/images/posts/2025/2025_10_31_ai_house.png)
+<img src="/images/posts/2025/2025_10_31_ai_house.png" alt="AI House" style="display: block; margin-left: auto; margin-right: auto;">
 
-![AI House](/images/posts/2025/2025_10_31_ai_house_panel.png)
+<img src="/images/posts/2025/2025_10_31_ai_house_panel.png" alt="AI House panel discussion" style="display: block; margin-left: auto; margin-right: auto;">
 
 ### Tools updates
 
