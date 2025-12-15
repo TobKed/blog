@@ -14,6 +14,12 @@ Below you'll find a mix of articles, links, and resources, some of which tie int
 
 ## Some thoughts
 
+AI house google meetup
+
+<https://luma.com/fwnm7zp8>
+
+AI House Amsterdam - Learn how to get the most out of AI coding assistants with Google
+
 ______________________________________________________________________
 
 ## Articles

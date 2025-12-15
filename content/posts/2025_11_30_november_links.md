@@ -4,17 +4,13 @@ Category: summary
 Tags: python, blog, podcast, series, aggregate, summary, month, 2025
 Slug: 2025-november-links
 Summary: Interesting stuff from the month
-Header_Cover: /images/posts/2025/2025_xx_xx.jpg
+Header_Cover: /images/posts/2025/2025_11_xx.jpg
 Status: draft
 
 # November 2025
 
 Time for another monthly post sharing some of the IT discoveries that crossed my path lately.
 Below you'll find a mix of articles, links, and resources, some of which tie into my current activities and areas of interest.
-
-## Some thoughts
-
-______________________________________________________________________
 
 ## Articles
 
@@ -62,8 +58,6 @@ ______________________________________________________________________
 
 > I learned that having the courage to expose the ambiguity makes you look smarter.
 
-## Productivity
-
 ## AI
 
 ### [5 things to try with Gemini 3 Pro in Gemini CLI - Google Developers Blog](https://developers.googleblog.com/en/5-things-to-try-with-gemini-3-pro-in-gemini-cli/)
@@ -97,8 +91,6 @@ ______________________________________________________________________
 ### [10 Smart Performance Hacks For Faster Python Code | The PyCharm Blog](https://blog.jetbrains.com/pycharm/2025/11/10-smart-performance-hacks-for-faster-python-code/)
 
 > Learn practical optimization hacks, from data structures to built-in modules, that boost speed, reduce overhead, and keep your Python code clean.
-
-## Django
 
 ## Python libraries
 
@@ -134,13 +126,13 @@ PyWhatKit is a popular Python library for automating tasks related to WhatsApp a
 
 > This codelab provides instructions to set up n8n on Google Cloud Run. n8n is an open-source workflow automation tool that allows users to connect different applications and services to automate repetitive tasks.
 
-### [Build your first AI Agent with Gemini, n8n and Google Cloud Run](https://www.philschmid.de/n8n-cloud-run-gemini)
-
-> Learn how to deploy n8n on Google Cloud Run with PostgreSQL and create an AI Agent using Google Gemini 2.5.
-
 ### [Deploy n8n on Cloud Run | Google Cloud Blog](https://cloud.google.com/blog/topics/developers-practitioners/deploy-n8n-on-cloud-run)
 
 > With just a few commands, you can deploy n8n to Cloud Run and have it up and running, ready to supercharge your business with AI workflows that can manage spreadsheets, read and draft emails, and more.
+
+### [Build your first AI Agent with Gemini, n8n and Google Cloud Run](https://www.philschmid.de/n8n-cloud-run-gemini)
+
+> Learn how to deploy n8n on Google Cloud Run with PostgreSQL and create an AI Agent using Google Gemini 2.5.
 
 ### [Host GitHub runners with Cloud Run worker pools - Google Cloud Documentation](https://cloud.google.com/run/docs/tutorials/github-runner)
 
