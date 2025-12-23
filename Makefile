@@ -86,3 +86,7 @@ resize_images: ## resize images in scripts/resize_photos/input
 .PHONY: generate_post
 generate_post: ## generate a new post
 	$(PY) scripts/generate_post.py
+
+.PHONY: mprocs
+mprocs: ## run procs with serve and regenerate
+	mprocs

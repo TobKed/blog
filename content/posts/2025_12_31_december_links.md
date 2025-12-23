@@ -20,6 +20,8 @@ AI house google meetup
 
 AI House Amsterdam - Learn how to get the most out of AI coding assistants with Google
 
+<https://github.com/pvolok/mprocs>
+
 ______________________________________________________________________
 
 ## Articles
