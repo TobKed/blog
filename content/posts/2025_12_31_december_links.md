@@ -14,13 +14,23 @@ Below you'll find a mix of articles, links, and resources, some of which tie int
 
 ## Some thoughts
 
-AI house google meetup
+### AI House: Learning with Google
 
-<https://luma.com/fwnm7zp8>
+I recently checked out the [AI House event](https://luma.com/fwnm7zp8), which focused on **getting the most out of AI coding assistants with Google**.
+It's fascinating to see how the ecosystem is evolving and how we can leverage these tools more effectively in our daily workflows.
+I am currently exploring the **Antigravity** IDE, so it was interesting to get some first-hand tips straight from Google.
 
-AI House Amsterdam - Learn how to get the most out of AI coding assistants with Google
+<img src="{static}/images/posts/2025/2025_12_ai_house_1.jpg" alt="AI House" style="display: block; margin-left: auto; margin-right: auto;">
 
-<https://github.com/pvolok/mprocs>
+<img src="{static}/images/posts/2025/2025_12_ai_house_2.jpg" alt="AI House" style="display: block; margin-left: auto; margin-right: auto;">
+
+### Tool [pvolok/mprocs](https://github.com/pvolok/mprocs)
+
+> TUI for running multiple processes
+
+I found this nifty tool for managing development environments where you need to run several commands simultaneously—like backend servers, frontend builders, and watchers—within a single terminal window.
+
+I’ve started using it in my blog's Makefile to run the server and handle content hot-reloading, which makes local debugging much smoother.
 
 ______________________________________________________________________
 
