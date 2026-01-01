@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+            <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <title>Changing history in Git</title>
+
+            <link href="https://blog.tobked.dev//feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="ups and downs Full Atom Feed" />
+            <link href="https://blog.tobked.dev//feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="ups and downs Full RSS Feed" />
+        <!-- Bootstrap Core CSS -->
+        <link href="https://blog.tobked.dev/theme/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link href="https://blog.tobked.dev/theme/css/clean-blog.min.css" rel="stylesheet">
+
+        <!-- Code highlight color scheme -->
+            <link href="https://blog.tobked.dev/theme/css/code_blocks/github.css" rel="stylesheet">
+
+            <!-- CSS specified by the user -->
+            <link href="https://blog.tobked.dev/css/main.css" rel="stylesheet">
+
+        <!-- Custom Fonts -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+
+        <meta name="description" content="Fix mistakes and clean git repository">
+
+        <meta name="author" content="Tobiasz Kedzierski">
+
+        <meta name="tags" content="git">
+        <meta name="tags" content="vcs">
+
+	                <meta property="og:locale" content="">
+		<meta property="og:site_name" content="ups and downs">
+
+	<meta property="og:type" content="article">
+            <meta property="article:author" content="https://blog.tobked.dev/author/tobiasz-kedzierski">
+	<meta property="og:url" content="https://blog.tobked.dev/git-history">
+	<meta property="og:title" content="Changing history in Git">
+	<meta property="article:published_time" content="2019-08-19 00:00:00+02:00">
+            <meta property="og:description" content="Fix mistakes and clean git repository">
+
+            <meta property="og:image" content="https://blog.tobked.dev/images/poli_photo_by_julia_kaczorowska_edit.png">
+</head>
+
+<body class="article-git-history">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="https://blog.tobked.dev/">ups and downs</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+
+                            <li><a href="https://blog.tobked.dev/pages/about-me">about me</a></li>
+                            <li><a href="https://blog.tobked.dev/pages/links">links</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+        <header class="intro-header" style="background-image: url('https://blog.tobked.dev/images/poli_photo_by_julia_kaczorowska_edit.png')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="post-heading">
+                        <h1>Changing history in Git</h1>
+                        <span class="meta">Posted by
+                                <a href="https://blog.tobked.dev/author/tobiasz-kedzierski">Tobiasz Kedzierski</a>
+                             on 19.08.2019
+                        </span>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    <!-- Post Content -->
+    <article>
+        <h2 id="changing-history">Changing history</h2>
+<p>Many times when working with Git you want change something in the history and Git is great about that.
+I strongly recomend to read <a href="https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History">Git Tools - Rewriting History</a>.
+You can find there information how to use <code>git ammend</code> and <code>git rebase --interactive</code> (<code>git rebase -i</code>) commands.
+By using them you can change the last commit, the order of the commits, the messages or modify files in a commit,
+squash together or split them apart, or remove some of them entirely.</p>
+<h3 id="what-and-why">What and why?</h3>
+<p>I wanted to present how I rewrite history, which commands do I use and how do I configure Git for it.</p>
+<h3 id="setting-up-git">Setting up Git</h3>
+<p>Here are some Git settings which are useful during rewriting history:</p>
+<ul>
+<li><code>git config --global merge.ff false</code></li>
+</ul>
+<blockquote>
+<p>By default, Git does not create an extra merge commit when merging a commit that is a descendant of the current commit. Instead, the tip of the current branch is fast-forwarded. When set to false, this variable tells Git to create an extra merge commit in such a case (equivalent to giving the --no-ff option from the command line)."</p>
+<p>-- <cite><a href="https://git-scm.com/docs/git-config#Documentation/git-config.txt-mergeff">merge.ff - Git documentation</a></cite></p>
+</blockquote>
+<ul>
+<li><code>git config --global rebase.autostash true</code></li>
+</ul>
+<blockquote>
+<p>"When set to true, automatically create a temporary stash entry before the operation begins, and apply it after the operation ends. This means that you can run rebase on a dirty worktree. However, use with care: the final stash application after a successful rebase might result in non-trivial conflicts."</p>
+<p>-- <cite><a href="https://git-scm.com/docs/git-config#Documentation/git-config.txt-rebaseautoStash">rebase.autostash - Git documentation</a></cite></p>
+</blockquote>
+<ul>
+<li><code>git config --global rebase.autosquash true</code>\
+  this one is very important because it is useful for <code>fixups</code> which I use a lot.</li>
+</ul>
+<blockquote>
+<p>"If set to true enable --autosquash option by default."</p>
+<p>-- <cite><a href="https://git-scm.com/docs/git-config#Documentation/git-config.txt-rebaseautoSquash">rebase.autosquash - Git documentation</a></cite></p>
+</blockquote>
+<h3 id="amending">Amending</h3>
+<p>As the previously mentioned article says, amending is used for changing the last commit. You do it by adding changes to the staging area and executing:</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>commit<span class="w"> </span>--amend
+</code></pre></div>
+
+<p>It loads previous command message where you can make changes. After saving the message it makes it your new last commit. Be careful because amending changes SHA1 of the commit.
+I use it a lot but usually I don't want to edit the message, hence one of my most favorite command:</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>commit<span class="w"> </span>--amend<span class="w"> </span>--no-edit
+</code></pre></div>
+
+<h3 id="interactive-rebasing">Interactive rebasing</h3>
+<p>I will not discuss interactive rebasing in details due the fact that it has a great description in the Git documentation so I hope you are already familiar with it.
+A <code>git rebase -i</code> as a parameter takes the parent of the last commit to be edited.
+Usually I don't mind to performing interactive rebasing on all commits on a given branch so to do this I pass as a parameter the parent branch e.g.</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>rebase<span class="w"> </span>-i<span class="w"> </span>master
+</code></pre></div>
+
+<h3 id="fixup">Fixup</h3>
+<p>You made a few commits already but you found there is a bug in the second commit.
+It will be much more convenient to fix this second commit than to create another one.
+You can do this by making a commit with changes and then, during interactive rebasing you can choose the <code>f</code> or <code>fixup</code> action for the fixup commit and move it in the todo list below the commit you want to fix.</p>
+<p>It can be done even better by using my other favourite command, the <code>git commit --fixup</code>.
+As an argument it takes the SHA1 of commit to be fixed-up.
+Initially, a commit will be added and the message will be the same as the message of the commit to be fixed-up with the suffix <code>fixup!</code>.
+During interactive rebasing, this commit will be put in order after the commit to be fixed-up with option <code>fixup</code>, so it saves a little bit of your time and energy for reordering and editing it manually.
+My workflow for fixup usually looks like that:</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>add<span class="w"> </span>-u
+git<span class="w"> </span>commit<span class="w"> </span>--fixup<span class="w"> </span>bas341d
+git<span class="w"> </span>rebase<span class="w"> </span>-i<span class="w"> </span>master<span class="w">   </span><span class="c1"># add --autosquash when rebase.autosquash is not set to true</span>
+</code></pre></div>
+
+<p>The important thing is that for making it without adding the <code>--autosquash</code> argument you should set <code>rebase.autosquash</code> in configuration to <em>true</em> (as I mentioned in <b>Setting up Git</b> section).
+In case you want to edit the commit message you can use <code>git commit --squash</code> as well.</p>
+<p><br></p>
+<hr>
+<h4 id="sources">Sources:</h4>
+<ul>
+<li><a href="https://git-scm.com/">Git homepage</a></li>
+<li><a href="https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History">Git Tools - Rewriting History</a></li>
+<li><a href="https://git-scm.com/docs/git-config#Documentation/git-config.txt-mergeff">merge.ff - Git documentation</a></li>
+<li><a href="https://git-scm.com/docs/git-config#Documentation/git-config.txt-rebaseautoStash">rebase.autostash - Git documentation</a></li>
+<li><a href="https://git-scm.com/docs/git-config#Documentation/git-config.txt-rebaseautoSquash">rebase.autosquash - Git documentation</a></li>
+<li><a href="https://www.praqma.com/stories/git-autostash/">Git autostash - praqma.com</a></li>
+<li><a href="https://thoughtbot.com/blog/autosquashing-git-commits">Auto-squashing - thoughtbot</a></li>
+</ul>
+    </article>
+
+        <div class="tags">
+            <p>tags: <a href="https://blog.tobked.dev/tag/git">git</a>, <a href="https://blog.tobked.dev/tag/vcs">vcs</a></p>
+        </div>
+
+    <hr>
+
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                            <li>
+                                <a href="https://tobked.dev">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-user fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/tobiaszkedzierski/?locale=en_US">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/TobKed">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://blog.tobked.dev/feeds/all.rss.xml">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                    </ul>
+<p class="copyright text-muted">
+    Blog powered by <a href="http://getpelican.com">Pelican</a>,
+    which takes great advantage of <a href="http://python.org">Python</a>. <br />
+    Main page header photo by <a href="https://juliakaczorowska.pl/">Julia Kaczorowska</a> (other by me). <br />
+        &copy;  Tobiasz Kedzierski
+</p>                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://blog.tobked.dev/theme/js/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://blog.tobked.dev/theme/js/bootstrap.min.js"></script>
+
+        <!-- Custom Theme JavaScript -->
+        <script src="https://blog.tobked.dev/theme/js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
