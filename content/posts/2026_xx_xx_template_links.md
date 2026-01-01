@@ -1,13 +1,13 @@
-Title: Month summary - {Month} 2025
-Date: 2025-12-31
+Title: Month summary - {Month} 2026
+Date: 2026-12-31
 Category: summary
-Tags: python, blog, podcast, series, aggregate, summary, month, 2025
-Slug: 2025-{month}-links
+Tags: python, blog, podcast, series, aggregate, summary, month, 2026
+Slug: 2026-{month}-links
 Summary: Interesting stuff from the month
-Header_Cover: /images/posts/2025/2025_xx_xx.jpg
+Header_Cover: /images/posts/2026/2026_xx_xx.jpg
 Status: draft
 
-# {Month} 2025
+# {Month} 2026
 
 Time for another monthly post sharing some of the IT discoveries that crossed my path lately.
 Below you'll find a mix of articles, links, and resources, some of which tie into my current activities and areas of interest.

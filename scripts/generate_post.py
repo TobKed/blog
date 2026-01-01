@@ -9,7 +9,7 @@ project_root/
 │   └── generate_post.py  (this script)
 └── content/
     └── posts/
-        ├── 2025_xx_xx_template_links.md (default template)
+        ├── 2026_xx_xx_template_links.md (default template)
         └── ... (other posts and generated output)
 """
 
@@ -22,14 +22,14 @@ from typing import Dict, Optional, Tuple
 
 # --- Configuration ---
 # Default template filename (relative to content/posts)
-DEFAULT_TEMPLATE_FILENAME = "2025_xx_xx_template_links.md"
+DEFAULT_TEMPLATE_FILENAME = "2026_xx_xx_template_links.md"
 # Default subdirectory within the project for templates and posts
 DEFAULT_CONTENT_DIR = Path("content") / "posts"
 # Default year (used if --year is not provided). None means use current year.
-DEFAULT_YEAR_FALLBACK: Optional[int] = 2025
+DEFAULT_YEAR_FALLBACK: Optional[int] = 2026
 # Default template year (used for finding/replacing placeholders if different
 # from target year - typically should match the year in the template filename)
-TEMPLATE_PLACEHOLDER_YEAR: int = 2025
+TEMPLATE_PLACEHOLDER_YEAR: int = 2026
 # ---------------------
 
 # --- Type Hint Alias ---
@@ -113,7 +113,7 @@ def generate_filename(
         month_name_lower: The lowercase full name of the month.
 
     Returns:
-        The generated filename string (e.g., "2025_05_31_may_links.md").
+        The generated filename string (e.g., "2026_05_31_may_links.md").
     """
     return f"{year}_{month_num:02d}_{last_day_num:02d}_{month_name_lower}_links.md"
 
