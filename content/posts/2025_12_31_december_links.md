@@ -78,6 +78,14 @@ The article explains why the author prefers Protocol Buffers over JSON for APIs,
 
 > Master version control with strategies, workflows, and habits that separate junior devs from seasoned pros.
 
+### [What Actually Makes You Senior – Terrible Software](https://terriblesoftware.org/2025/11/25/what-actually-makes-you-senior/)
+
+> The one skill that separates senior engineers from everyone else isn't technical. It's the ability to take ambiguous problems and make them concrete.Retry
+
+### [Burnout ≠ Working Too Much – Terrible Software](https://terriblesoftware.org/2024/12/20/burnout-%e2%89%a0-working-too-much/)
+
+> Burnout often stems from a lack of purpose and agency, not just workload. Empowering teams with meaningful tasks and autonomy fosters motivation and connection to their work.
+
 ## AI
 
 ### [GitHub - addyosmani/gemini-cli-tips](https://github.com/addyosmani/gemini-cli-tips)
@@ -142,13 +150,19 @@ Anthropic is likened to Apple in the 2010s, focusing on a cohesive ecosystem rat
 
 > Vibe Coding Isn’t Just a Vibe
 
+### [Keep the Robots Out of the Gym | Daniel Miessler](https://danielmiessler.com/blog/keep-the-robots-out-of-the-gym)
+
+> We have to be very careful about what we ask AI to help us with
+
 ## Python
 
 ### [Modern Python monorepo for Apache Airflow Ⓡ — Part 1 - Jare Potiuk](https://medium.com/apache-airflow/modern-python-monorepo-for-apache-airflow-part-1-1fe84863e1e1)
 
 > Modern Python monorepo for Apache Airflow Ⓡ — Part 1 Part 1. Pains of big modular Python projects This series of blog posts post describes the journey of devex and development and packaging …
 
-## Django
+### [Django vs. FastAPI, An Honest Comparison](https://www.david-dahan.com/blog/comparing-fastapi-and-django)
+
+> After many years of working with Django, I decided to take a closer and more serious look at FastAPI.
 
 ### [🚀 How To Deploy Django 6 On Ubuntu VPS - VPS Hosting Blog | Dedicated Servers | Reseller Hosting](https://blog.radwebhosting.com/deploy-django-6-on-ubuntu-vps/)
 
