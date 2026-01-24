@@ -5,7 +5,7 @@ Tags: python, blog, podcast, series, aggregate, summary, month, 2025
 Slug: 2025-december-links
 Summary: Interesting stuff from the month
 Header_Cover: /images/posts/2025/2025_12_xx.jpg
-Status: draft
+Status: published
 
 # December 2025
 
@@ -241,16 +241,6 @@ Anthropic is likened to Apple in the 2010s, focusing on a cohesive ecosystem rat
 > Welcome to The Agent Factory, a podcast that goes beyond the hype and dives into building production ready AI agents. Join hosts Shir Meir Lador and Ivan as they help developers navigate the world of agentic AI.
 
 ## Videos
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
-
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
-
-> Playback on other websites has been disabled by the video owner. [Watch on YouTube](https://www.youtube.com/watch?v=VIDEO_ID)
 
 ### [Episode 1709 Scott Adams: Today I Explain How To Persuade Putin And, Separately, Cure Your Laziness](https://www.youtube.com/live/y5ZkIDUuHAM)
 
