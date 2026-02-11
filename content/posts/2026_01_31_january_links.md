@@ -70,6 +70,22 @@ The article explores the reasons behind Markdown's success, emphasizing its comm
 
 > The page is a personal reflection on the author's experiences and achievements in 2025. It covers various aspects of their life, including personal growth, professional accomplishments, and community involvement.
 
+### [Technical Blogging Lessons Learned - Write that blog!](https://writethatblog.substack.com/p/technical-blogging-lessons-learned)
+
+> Expert tech bloggers share their top tips for others
+
+### [Mental Models: The Best Way to Make Intelligent Decisions (~100 Models Explained)](https://fs.blog/mental-models/)
+
+> The smartest people in the world use mental models to make intelligent decisions, avoid stupidity, and increase productivity. Let's take a look at how ...
+
+### [everything is a ralph loop](https://ghuntley.com/loop/)
+
+> The page provides detailed information about various companies and their data collection practices, including the types of data collected, cookie durations, and storage methods. It lists companies such as Weborama, Readpeak Oy, Jivox Corporation, and many others, detailing the data they collect, such as IP addresses, device characteristics, browsing data, and location data.
+
+### [The Long Now of the Web: Inside the Internet Archive’s Fight Against Forgetting | HackerNoon](https://hackernoon.com/the-long-now-of-the-web-inside-the-internet-archives-fight-against-forgetting)
+
+> A deep dive into the Internet Archive's custom tech stack.
+
 ## Productivity
 
 ### [The Napoleon Technique: Postponing Things to Increase Productivity – Effectiviology](https://effectiviology.com/napoleon/)
@@ -98,25 +114,13 @@ The article explores the reasons behind Markdown's success, emphasizing its comm
 
 > Integrate Claude Code into your development workflow
 
-#### AI generated summary
-
-The course 'Claude Code in Action' offers a comprehensive guide to using Claude Code, an AI assistant, to streamline development tasks. It covers file manipulation, command execution, code analysis, context management, and integration with external services, providing tools to automate and enhance development workflows.
-
 ### [The Agent Skills Directory](https://skills.sh/)
 
 > Discover and install skills for AI agents.
 
-#### AI generated summary
-
-The Open Agent Skills Ecosystem offers reusable capabilities for AI agents, installable with a single command to enhance procedural knowledge.
-
 ### [Free Claude Code Course | Learn AI for Non-Technical People](https://ccforeveryone.com/)
 
 > Learn Claude Code IN Claude Code! Free Claude Code course for beginners - no coding experience required. No videos, just doing.
-
-#### AI generated summary
-
-This page offers a free course for learning Claude Code, an AI tool, through interactive, hands-on lessons. It is designed for non-technical users and requires no prior coding experience.
 
 ### [Developer’s guide to multi-agent patterns in ADK - Google Developers Blog](https://developers.googleblog.com/en/developers-guide-to-multi-agent-patterns-in-adk/)
 
@@ -176,10 +180,6 @@ This article explores the security risks of storing secrets in environment varia
 
 ## Python
 
-### [The Python Coding Stack | Stephen Gruppetta | Substack](https://www.thepythoncodingstack.com/p/python-enums-constantshttps://www.youtube.com/watch?v=zjKUX7sHEGI)
-
-> I write the articles I wish I had when I was learning Python programming
-
 ### [A different way to think about Python API Clients - Paul writes software](https://paulwrites.software/articles/python-api-clients)
 
 > The one frustration I keep seeing again and again with APIs is the client integration story.
@@ -194,9 +194,9 @@ This article explores the security risks of storing secrets in environment varia
 
 > Some notes on starting to use Django
 
-### [GitHub - FarhanAliRaza/django-repl: Run django in the browser](https://github.com/FarhanAliRaza/django-repl)
+### [GitHub - FarhanAliRaza/django-repl](https://github.com/FarhanAliRaza/django-repl)
 
-> Run django in the browser. Contribute to FarhanAliRaza/django-repl development by creating an account on GitHub.
+> Run django in the browser.
 
 ## Python libraries
 
@@ -204,7 +204,7 @@ This article explores the security risks of storing secrets in environment varia
 
 > FastOpenAPI is a library for generating and integrating OpenAPI schemas using Pydantic v2 and various frameworks (AioHttp, Django, Falcon, Flask, Quart, Sanic, Starlette, Tornado).
 
-### [GitHub - sparckles/Robyn: Robyn is a Super Fast Async Python Web Framework with a Rust runtime.](https://github.com/sparckles/robyn)
+### [GitHub - sparckles/Robyn](https://github.com/sparckles/robyn)
 
 > Robyn is a Super Fast Async Python Web Framework with a Rust runtime.
 
@@ -214,7 +214,7 @@ This article explores the security risks of storing secrets in environment varia
 
 > The blog post provides a detailed guide on migrating from Celery to Django Tasks. It outlines the necessary configuration changes in the settings.py file, such as removing CELERY\_ prefixed settings and installing django-tasks.
 
-### [GitHub - FarhanAliRaza/django-bolt: Rust-powered API framework for Django achieving 60k+ RPS. Uses Actix Web for HTTP, PyO3 for Python bridging, msgspec for serialization. Decorator-based routing with built-in auth and middleware.](https://github.com/FarhanAliRaza/django-bolt)
+### [GitHub - FarhanAliRaza/django-bolt](https://github.com/FarhanAliRaza/django-bolt)
 
 > Rust-powered API framework for Django achieving 60k+ RPS. Uses Actix Web for HTTP, PyO3 for Python bridging, msgspec for serialization. Decorator-based routing with built-in auth and middleware. - FarhanAliRaza/django-bolt
 
@@ -236,7 +236,7 @@ This article explores the security risks of storing secrets in environment varia
 
 > Notes on writing this site's new, mildly cursed, and fun static site generator in (mostly) POSIX shell.
 
-### [GitHub - Quenary/tugtainer: An application for automated Docker container updates with a web UI](https://github.com/Quenary/tugtainer)
+### [GitHub - Quenary/tugtainer](https://github.com/Quenary/tugtainer)
 
 > An application for automated Docker container updates with a web UI - Quenary/tugtainer
 
@@ -252,45 +252,11 @@ This article explores the security risks of storing secrets in environment varia
 
 ## Other stuff
 
-### [Technical Blogging Lessons Learned - Write that blog!](https://writethatblog.substack.com/p/technical-blogging-lessons-learned)
-
-> Expert tech bloggers share their top tips for others
-
-#### AI generated summary
-
-This blog post explores the unpredictability of blogging success, urging writers to focus on topics they are passionate about and to publish regularly. It emphasizes the importance of handling criticism constructively and maintaining authenticity in writing.
-
-### [Mental Models: The Best Way to Make Intelligent Decisions (~100 Models Explained)](https://fs.blog/mental-models/)
-
-> The smartest people in the world use mental models to make intelligent decisions, avoid stupidity, and increase productivity. Let's take a look at how ...
-
-#### AI generated summary
-
-This page explores mental models that aid in comprehending complex systems and decision-making. It delves into systems behavior, niches, self-preservation, replication, cooperation, hierarchy, incentives, and energy conservation, emphasizing their roles in various contexts and the importance of feedback loops and equilibrium.
-
-### [everything is a ralph loop](https://ghuntley.com/loop/)
-
-> The page provides detailed information about various companies and their data collection practices, including the types of data collected, cookie durations, and storage methods. It lists companies such as Weborama, Readpeak Oy, Jivox Corporation, and many others, detailing the data they collect, such as IP addresses, device characteristics, browsing data, and location data.
-
-### [The Long Now of the Web: Inside the Internet Archive’s Fight Against Forgetting | HackerNoon](https://hackernoon.com/the-long-now-of-the-web-inside-the-internet-archives-fight-against-forgetting)
-
-> A deep dive into the Internet Archive's custom tech stack.
-
 ### [Loot Drop | 1100+ Failed Startup Case Studies & Ideas to Steal](https://www.loot-drop.io)
 
 > Explore 1100+ failed startups and learn from $40B+ in burned venture capital. Discover why they failed, their market potential, and how to rebuild them with today's tech
 
 ## Videos
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
-
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
-
-> Playback on other websites has been disabled by the video owner. [Watch on YouTube](https://www.youtube.com/watch?v=VIDEO_ID)
 
 ### [My Obsidian And Gemini CLI Workflow - YouTube](https://www.youtube.com/watch?v=JGwFsyyewYc)
 
@@ -392,4 +358,10 @@ This page explores mental models that aid in comprehending complex systems and d
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/tgaKAF_eiOg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [Tiago Forte -  From Chaos to Clarity: My 4-Step Weekly Review System](https://www.youtube.com/watch?v=zjKUX7sHEGI)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/zjKUX7sHEGI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
