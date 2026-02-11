@@ -80,7 +80,7 @@ The article explores the reasons behind Markdown's success, emphasizing its comm
 
 ### [everything is a ralph loop](https://ghuntley.com/loop/)
 
-> The page provides detailed information about various companies and their data collection practices, including the types of data collected, cookie durations, and storage methods. It lists companies such as Weborama, Readpeak Oy, Jivox Corporation, and many others, detailing the data they collect, such as IP addresses, device characteristics, browsing data, and location data.
+> Ralph is an orchestrator pattern where you allocate the array with the required backing specifications and then give it a goal then looping the goal.
 
 ### [The Long Now of the Web: Inside the Internet Archive’s Fight Against Forgetting | HackerNoon](https://hackernoon.com/the-long-now-of-the-web-inside-the-internet-archives-fight-against-forgetting)
 
