@@ -12,10 +12,6 @@ Status: draft
 Time for another monthly post sharing some of the IT discoveries that crossed my path lately.
 Below you'll find a mix of articles, links, and resources, some of which tie into my current activities and areas of interest.
 
-## Some thoughts
-
-______________________________________________________________________
-
 ## Articles
 
 ### [The challenges of soft delete | atlas9](https://atlas9.dev/blog/soft-delete.html)
@@ -42,7 +38,9 @@ The article explores the reasons behind Markdown's success, emphasizing its comm
 
 ### [Ukryte Perełki: Mało Znane Funkcje Bash](https://slicker.me/bash/perelki.htm)
 
-> The article explores lesser-known features of the Bash shell that can significantly enhance productivity in the command line. It covers various advanced techniques such as brace expansion for creating complex file structures, parameter expansion for string manipulation, process substitution for treating command output as files, and the powerful test command with double brackets for pattern matching and logical operations. Additionally, it discusses here strings and documents for multi-line input, command grouping and subshells for execution control, history expansion for efficient command reuse, array manipulation, job control for background processes, and extended globbing for pattern matching.
+#### AI generated summary
+
+> The article explores lesser-known features of the Bash shell that can significantly enhance productivity in the command line.
 
 ### [Why You Should Prepare for a Layoff, Even If You Think You're Safe](https://alifeengineered.substack.com/p/why-you-should-prepare-for-a-layoff)
 
@@ -60,7 +58,7 @@ The article explores the reasons behind Markdown's success, emphasizing its comm
 
 > The annual window most people miss.
 
-### [\</> htmx ~ Building Critical Infrastructure with htmx: Network Automation for the Paris 2024 Olympics](https://htmx.org/essays/paris-2024-olympics-htmx-network-automation/)
+### [Building Critical Infrastructure with htmx: Network Automation for the Paris 2024 Olympics](https://htmx.org/essays/paris-2024-olympics-htmx-network-automation/)
 
 > Building critical software infrastructure with htmx, and how the simplification induced by this approach is interesting for AI-assisted development.
 
@@ -70,13 +68,13 @@ The article explores the reasons behind Markdown's success, emphasizing its comm
 
 ### [2025 - My year in review · Better Simple](https://www.better-simple.com/personal/2025/12/30/my-year-in-review/)
 
-> The page is a personal reflection on the author's experiences and achievements in 2025. It covers various aspects of their life, including personal growth, professional accomplishments, and community involvement. The author discusses their physical health, highlighting the need to improve flexibility and cardio. They reflect on their involvement with Djangonaut Space, emphasizing the importance of governance and community building. The author also shares their experiences at DjangoCon US, including speaking engagements and community interactions. Additionally, they discuss the progress of the Django Debug Toolbar and Django Commons, highlighting key achievements and future goals. The author concludes with insights from their role on the Django Steering Council, focusing on governance and community support.
+> The page is a personal reflection on the author's experiences and achievements in 2025. It covers various aspects of their life, including personal growth, professional accomplishments, and community involvement.
 
 ## Productivity
 
 ### [The Napoleon Technique: Postponing Things to Increase Productivity – Effectiviology](https://effectiviology.com/napoleon/)
 
-> The Napoleon technique is a productivity strategy that involves delaying action on tasks that may resolve themselves without immediate intervention. Originating from Napoleon's practice of leaving letters unopened for weeks, this technique helps conserve resources like time and energy by filtering out tasks that don't require immediate attention. It can be applied in various scenarios, such as delaying responses to non-urgent emails or minor technical issues, to see if they resolve on their own. The technique encourages thoughtful communication and initiative among others. However, it is crucial to weigh the potential positive and negative outcomes before implementation, ensuring it is not used as a means of procrastination or avoidance of unpleasant information. The technique is best suited for minor, non-urgent matters and routine tasks, where the risk of negative outcomes is low. To implement it effectively, one can set clear deadlines and criteria for postponement, avoiding common pitfalls like the ostrich effect, procrastination, and Parkinson's law.
+> The Napoleon technique is a productivity strategy that involves delaying action on tasks that may resolve themselves without immediate intervention.
 
 ## AI
 
@@ -86,11 +84,11 @@ The article explores the reasons behind Markdown's success, emphasizing its comm
 
 ### [LLM predictions for 2026, shared with Oxide and Friends](https://simonwillison.net/2026/Jan/8/llm-predictions-for-2026/)
 
-> The article discusses Simon Willison's predictions for the tech industry in 2026, shared during the Oxide and Friends podcast. Key predictions include the undeniable ability of LLMs to write good code, the resolution of sandboxing issues, a potential 'Challenger disaster' for coding agent security, and an outstanding breeding season for Kākāpō parrots. In three years, the Jevons paradox for software engineering will resolve, and a new browser may be built using AI-assisted coding. In six years, typing code by hand will become obsolete, akin to punch cards, as AI-assisted programming becomes more prevalent.
+> The article discusses Simon Willison's predictions for the tech industry in 2026, shared during the Oxide and Friends podcast.
 
 ### [How AI Impacts Skill Formation](https://www.anthropic.com/research/AI-assistance-coding-skills)
 
-> The article discusses the dual impact of AI on productivity and skill acquisition. While AI can enhance productivity in well-developed skills, it may hinder the acquisition of new skills. The study, led by Judy Hanwen Shen and Alex Tamkin, is an initial step in understanding the effects of human-AI collaboration on workers. The research highlights the need for further studies to explore AI's impact on tasks beyond coding, the long-term effects on skill development, and how AI assistance compares to human assistance. The study acknowledges its limitations, including a small sample size and the short-term nature of its assessments. The authors emphasize the importance of considering both productivity gains and long-term expertise development in AI-augmented workplaces.
+> The article discusses the dual impact of AI on productivity and skill acquisition. While AI can enhance productivity in well-developed skills, it may hinder the acquisition of new skills.
 
 ### [OpenClaw — Personal AI Assistant](https://openclaw.ai/)
 
@@ -148,10 +146,6 @@ ScrollMind offers an engaging way to learn AI through bite-sized cards and quizz
 
 > A practical look at Codex vs Claude Code: agents, model choices, costs, and the workflows they enable in real projects.
 
-#### AI generated summary
-
-This article evaluates Codex, Claude Code, and Cursor, focusing on their features, pricing, and user experience. Codex is favored for its pricing efficiency and GitHub integration, though all three are considered strong options.
-
 ### [OpenCode vs Claude Code](https://www.builder.io/blog/opencode-vs-claude-code)
 
 > Is Anthropic's polished CLI better than the open-source alternative? We compare features, the OAuth drama, and why visual context is the missing piece.
@@ -178,7 +172,7 @@ This article explores the security risks of storing secrets in environment varia
 
 ### [Objective-See: LuLu](https://objective-see.org/products/lulu.html)
 
-> LuLu is a free, open-source firewall designed to block unknown outgoing connections on macOS, enhancing privacy and security. It supports macOS 10.15 and later, leveraging Apple's Network Extension framework. The installation involves manual approval of its System Extension and Network Filter. LuLu alerts users to unauthorized outgoing network connections, providing detailed information and options to block or allow them. Users can create, edit, and manage rules for network connections, with options for exporting and importing rules. LuLu's settings allow configuration of rule generation and other preferences.
+> LuLu is a free, open-source firewall designed to block unknown outgoing connections on macOS, enhancing privacy and security.
 
 ## Python
 
@@ -218,7 +212,7 @@ This article explores the security risks of storing secrets in environment varia
 
 ### [Migrating From Celery to Django Tasks | PaulTraylor.net](https://paultraylor.net/blog/2026/migrating-from-celery-to-django-tasks/)
 
-> The blog post provides a detailed guide on migrating from Celery to Django Tasks. It outlines the necessary configuration changes in the settings.py file, such as removing CELERY\_ prefixed settings and installing django-tasks. The post explains how to update task decorators from Celery to Django Tasks and how to handle task queues and periodic tasks using django-crontask. It also covers running tasks using Django's manage.py commands instead of Celery's commands.
+> The blog post provides a detailed guide on migrating from Celery to Django Tasks. It outlines the necessary configuration changes in the settings.py file, such as removing CELERY\_ prefixed settings and installing django-tasks.
 
 ### [GitHub - FarhanAliRaza/django-bolt: Rust-powered API framework for Django achieving 60k+ RPS. Uses Actix Web for HTTP, PyO3 for Python bridging, msgspec for serialization. Decorator-based routing with built-in auth and middleware.](https://github.com/FarhanAliRaza/django-bolt)
 
@@ -256,10 +250,6 @@ This article explores the security risks of storing secrets in environment varia
 
 > Application Design Center provides an AI-powered, canvas-style approach to designing and modifying Terraform application templates, and is now GA.
 
-#### AI generated summary
-
-Google Cloud's Application Design Center is now generally available, providing a visual, AI-powered platform for designing and deploying cloud application infrastructure. It offers full lifecycle management, integrates with CI/CD workflows, and includes features like a library of application templates, AI-powered design, and GitOps integration.
-
 ## Other stuff
 
 ### [Technical Blogging Lessons Learned - Write that blog!](https://writethatblog.substack.com/p/technical-blogging-lessons-learned)
@@ -280,7 +270,7 @@ This page explores mental models that aid in comprehending complex systems and d
 
 ### [everything is a ralph loop](https://ghuntley.com/loop/)
 
-> The page provides detailed information about various companies and their data collection practices, including the types of data collected, cookie durations, and storage methods. It lists companies such as Weborama, Readpeak Oy, Jivox Corporation, and many others, detailing the data they collect, such as IP addresses, device characteristics, browsing data, and location data. The page also specifies whether these companies use cookies or other forms of storage and the duration for which cookies are stored.
+> The page provides detailed information about various companies and their data collection practices, including the types of data collected, cookie durations, and storage methods. It lists companies such as Weborama, Readpeak Oy, Jivox Corporation, and many others, detailing the data they collect, such as IP addresses, device characteristics, browsing data, and location data.
 
 ### [The Long Now of the Web: Inside the Internet Archive’s Fight Against Forgetting | HackerNoon](https://hackernoon.com/the-long-now-of-the-web-inside-the-internet-archives-fight-against-forgetting)
 
