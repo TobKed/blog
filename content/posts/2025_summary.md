@@ -4,7 +4,7 @@ Category: summary
 Tags: summary, year, 2025
 Slug: 2025-summary
 Summary: Ups and downs of 2025
-Header_Cover: /images/posts/2025/2025_11_xx.jpg
+Header_Cover: /images/posts/2025/2025_04_xx.jpg
 Status: draft
 
 # 2025
