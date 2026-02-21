@@ -11,9 +11,9 @@ Status: draft
 
 This year was defined by a new job, deep dives into AI, and a return to in-person community events.
 
-## Started new job
+## Started a new job
 
-In April I started working for [FareHarbor](https://fareharbor.com/) (part of [Booking Holdings](https://www.bookingholdings.com/)).
+In April, I started working for [FareHarbor](https://fareharbor.com/) (part of [Booking Holdings](https://www.bookingholdings.com/)).
 
 ## Conferences and Meetups
 
@@ -34,7 +34,7 @@ In [May]({filename}/posts/2025_05_31_may_links.md), I started experimenting with
 
 By the end of the year, I was diving into [**Antigravity**](https://antigravity.google/), a new AI-powered IDE from Google, which I explored just before the [December AI House event]({filename}/posts/2025_12_31_december_links.md).
 
-I participated in the [10xdevs](https://www.10xdevs.pl/) course, where I got a grasp of how to use AI in my development workflow.
+I participated in the [10xdevs](https://www.10xdevs.pl/) course, where I gained a better grasp of how to use AI in my development workflow.
 
 ## Tools & Workflow
 
@@ -43,7 +43,7 @@ I made some changes to my tools:
 - **terminal**: switched to [Ghostty](https://ghostty.org/) after years with [iTerm2](https://iterm2.com/).
 - **window management**: adopted [Alt-Tab](https://github.com/lwouis/alt-tab-macos) and [Rectangle](https://rectangleapp.com/).
 - **process management**: started using [mprocs](https://github.com/pvolok/mprocs) to manage multiple processes in a single terminal.
-- **file management**: discovered [superfile](https://superfile.dev/) (TUI file manager) and [copyparty](https://github.com/9001/copyparty/) (portable file server) but I am not using them, treating them more as interesting tools.
+- **file management**: discovered [superfile](https://superfile.dev/) (TUI file manager) and [copyparty](https://github.com/9001/copyparty/) (portable file server), but I am not actively using them, treating them more as interesting tools.
 
 ## Inspiration
 
