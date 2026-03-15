@@ -90,3 +90,14 @@ generate_post: ## generate a new post
 .PHONY: mprocs
 mprocs: ## run procs with serve and regenerate
 	mprocs
+
+.PHONY: add-link
+add-link: ## add a link to the current month's post. Usage: make add-link URL="https://..."
+	@if [ -z "$(URL)" ]; then \
+		echo "Error: URL is required. Usage: make add-link URL=\"https://...\""; \
+		exit 1; \
+	fi
+	@POST_PATH=$$($(PY) scripts/blog_automation_2/get_current_month_post.py); \
+	echo "Adding link to $$POST_PATH..."; \
+	source scripts/blog_automation_2/venv/bin/activate && \
+	$(PY) scripts/blog_automation_2/insert_links_tool.py "$$POST_PATH" "$(URL)"
