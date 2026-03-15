@@ -283,3 +283,4 @@ output/*
 # other
 .idea/*
 content/.idea/*
+.worktrees/
