@@ -5,7 +5,7 @@ Tags: python, blog, podcast, series, aggregate, summary, month, 2026
 Slug: 2026-february-links
 Summary: Interesting stuff from the month
 Header_Cover: /images/posts/2026/2026_02_xx.jpg
-Status: draft
+Status: published
 
 # February 2026
 
@@ -88,13 +88,13 @@ The author shares their journey of experiencing burnout due to juggling multiple
 
 ### [How to dump Django ORM data to JSON while debugging?](https://borutzki.github.io/2026/01/25/how-to-dump-django-orm-data-to-json-while-debugging.html)
 
-> The article discusses a method to efficiently debug Django applications by dumping ORM data to JSON. It highlights the use of Django's serializers to export data from the database to a JSON file, which can be particularly useful during testing when databases are ephemeral. The author provides a code snippet to demonstrate how to serialize data from a Django model and write it to a JSON file. This approach allows developers to inspect database contents quickly and apply necessary fixes. The article also includes a test case example to illustrate the process.
+> The article discusses a method to efficiently debug Django applications by dumping ORM data to JSON. It highlights the use of Django's serializers to export data from the database to a JSON file, which can be particularly useful during testing when databases are ephemeral.
 
 ## Tools
 
 ### [The Complete Bash Scripting Course - ysap.sh](https://course.ysap.sh/)
 
-> The Complete Bash Scripting Course is a comprehensive guide to learning Bash scripting, covering topics from beginner to advanced techniques. The course is available for free as a YouTube video, with options to support the creator through subscriptions, Patreon, or donations. It includes detailed chapters on various Bash scripting topics, source code access via GitHub, and community support through a dedicated channel. The course also provides timestamps for each chapter and section, allowing for easy navigation.
+> The Complete Bash Scripting Course is a comprehensive guide to learning Bash scripting, covering topics from beginner to advanced techniques.
 
 ## Other stuff
 
