@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+            <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <title>Brighten your code with Black code formatter.</title>
+
+            <link href="https://blog.tobked.dev//feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="ups and downs Full Atom Feed" />
+            <link href="https://blog.tobked.dev//feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="ups and downs Full RSS Feed" />
+        <!-- Bootstrap Core CSS -->
+        <link href="https://blog.tobked.dev/theme/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link href="https://blog.tobked.dev/theme/css/clean-blog.min.css" rel="stylesheet">
+
+        <!-- Code highlight color scheme -->
+            <link href="https://blog.tobked.dev/theme/css/code_blocks/github.css" rel="stylesheet">
+
+            <!-- CSS specified by the user -->
+            <link href="https://blog.tobked.dev/css/main.css" rel="stylesheet">
+
+        <!-- Custom Fonts -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+
+        <meta name="description" content="Python code formatter">
+
+        <meta name="author" content="Tobiasz Kedzierski">
+
+        <meta name="tags" content="python">
+        <meta name="tags" content="pep8">
+
+	                <meta property="og:locale" content="">
+		<meta property="og:site_name" content="ups and downs">
+
+	<meta property="og:type" content="article">
+            <meta property="article:author" content="https://blog.tobked.dev/author/tobiasz-kedzierski">
+	<meta property="og:url" content="https://blog.tobked.dev/black">
+	<meta property="og:title" content="Brighten your code with Black code formatter.">
+	<meta property="article:published_time" content="2019-10-07 00:00:00+02:00">
+            <meta property="og:description" content="Python code formatter">
+
+            <meta property="og:image" content="https://blog.tobked.dev/images/posts/black-cover.png">
+</head>
+
+<body class="article-black">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="https://blog.tobked.dev/">ups and downs</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+
+                            <li><a href="https://blog.tobked.dev/pages/about-me">about me</a></li>
+                            <li><a href="https://blog.tobked.dev/pages/links">links</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+        <header class="intro-header" style="background-image: url('https://blog.tobked.dev//images/posts/black-cover.png')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="post-heading">
+                        <h1>Brighten your code with Black code formatter.</h1>
+                        <span class="meta">Posted by
+                                <a href="https://blog.tobked.dev/author/tobiasz-kedzierski">Tobiasz Kedzierski</a>
+                             on 07.10.2019
+                        </span>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    <!-- Post Content -->
+    <article>
+        <h2 id="author">Author</h2>
+<p>The author of <strong>Black</strong> is Łukasz Langa, a Pythonista from Białystok, Poland.
+He is a Python core developer and Python 3.8 release manager.</p>
+<h2 id="black">Black</h2>
+<p>A PEP-8 is just a style guide so there are many ways to format the same part of the code and all of them are correct.</p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">GoogleCloudBaseHook</span><span class="p">(</span><span class="n">BaseHook</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">gcp_conn_id</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;google_cloud_default&#39;</span><span class="p">,</span> <span class="n">delegate_to</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">pass</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">GoogleCloudBaseHook</span><span class="p">(</span><span class="n">BaseHook</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span>
+                 <span class="n">gcp_conn_id</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;google_cloud_default&#39;</span><span class="p">,</span>
+                 <span class="n">delegate_to</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">pass</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">GoogleCloudBaseHook</span><span class="p">(</span><span class="n">BaseHook</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">gcp_conn_id</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;google_cloud_default&#39;</span><span class="p">,</span>
+        <span class="n">delegate_to</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">pass</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">GoogleCloudBaseHook</span><span class="p">(</span><span class="n">BaseHook</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">gcp_conn_id</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s1">&#39;google_cloud_default&#39;</span><span class="p">,</span>
+        <span class="n">delegate_to</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">pass</span>
+</code></pre></div>
+
+<p>Linters give information which part of the code violates PEP-8, but they do not give any solutions.
+Usually it is quite easy to fix, but it is annoying and time-consuming.
+Also, the chosen code style leaves space for opinionated discussions which may be avoided.
+A good code formatter can eliminate it.</p>
+<blockquote>
+<p>Black is the uncompromising Python code formatter. By using it, you agree to cede control over minutiae of hand-formatting. In return, Black gives you speed, determinism, and freedom from pycodestyle nagging about formatting. You will save time and mental energy for more important matters.</p>
+<p>-- black documentation</p>
+</blockquote>
+<p><strong>Black</strong> uses a subset of PEP-8 as a code style. When this code style was built every decision was preceded by discussion, supported by solid arguments and concrete parts of PEP-8.
+Under the hood the code is parsed to Concrete Syntax Tree (CST) and Abstract Syntax Tree (AST) so when the file is parsed, the code behaviour remains exactly the same. You can learn more about these concepts from sources listed at the end of text.</p>
+<h4 id="pros">Pros:</h4>
+<ul>
+<li>Fast.</li>
+<li>
+<p>Deterministic.\
+  <em>When run multiple times, result is always the same.</em></p>
+</li>
+<li>
+<p>Saves time during code review.\
+  <em>No more discussions about where the line should be broken.</em></p>
+</li>
+<li>Code reading is easier.\
+  <em>As Uncle Bob said, code is read ten times more often than written. Due to this fact, when code is styled in a consistent way (
+  and Black provides consistent output) it minimizes effort while reading it. You can fully focus on syntax and logic and not on style.</em></li>
+<li>No additional (unneseccary?) refactoring during coding.\
+  <em>During working on some part of code sometimes you may want to change (and sometimes you do it) some adjacent
+  areas which are not well formatted (at least you think they are not). Black gets rid off this additional refactors.</em></li>
+<li>Minimal configuration.</li>
+</ul>
+<h4 id="cons">Cons:</h4>
+<ul>
+<li>Requires Python 3.6+.\
+  <em>Older versions can be formatted but to make it work, the 3.6+ version is required.</em></li>
+<li>Does not touch strings.\
+  <em>Long strings will never be broken, even if they exceed the line length.</em></li>
+<li>Does not touch imports.</li>
+<li>Sometimes it is a <em>PITA</em> to configure it with ISORT (which sorts imports).</li>
+<li>Still in beta.</li>
+</ul>
+<h3 id="using-black">Using Black</h3>
+<h4 id="install-black">Install Black</h4>
+<p>To use it out of the box:</p>
+<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>black
+black<span class="w"> </span><span class="o">{</span>source_file_or_directory<span class="o">}</span>
+</code></pre></div>
+
+<p>Do you want to format Python by using Python? No problem:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">black</span>
+
+<span class="n">black</span><span class="o">.</span><span class="n">format_file_in_place</span><span class="p">(</span>
+    <span class="s2">&quot;path/to/file.py,</span>
+    <span class="n">mode</span><span class="o">=</span><span class="n">black</span><span class="o">.</span><span class="n">FileMode</span><span class="p">(</span><span class="n">line_length</span><span class="o">=</span><span class="mi">110</span><span class="p">),</span>
+    <span class="n">fast</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="n">write_back</span><span class="o">=</span><span class="n">black</span><span class="o">.</span><span class="n">WriteBack</span><span class="o">.</span><span class="n">YES</span><span class="p">,</span>
+<span class="p">)</span>
+</code></pre></div>
+
+<p><br></p>
+<h4 id="pyprojecttoml">pyproject.toml</h4>
+<p>If you need to change sensible defaults you can do it by defining them in <code>pyproject.toml</code> file (this file is described in <nobr>PEP-518</nobr>).</p>
+<p>Example <code>pyproject.toml</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="k">[tool.black]</span>
+<span class="n">line-length</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">88</span>
+<span class="n">target-version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;py37&#39;</span><span class="p">]</span>
+<span class="n">include</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;\.pyi?$&#39;</span>
+<span class="n">exclude</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;&#39;&#39;</span>
+
+<span class="s1">(</span>
+<span class="s1">  /(</span>
+<span class="s1">      \.eggs         # exclude a few common directories in the</span>
+<span class="s1">    | \.git          # root of the project</span>
+<span class="s1">    | \.hg</span>
+<span class="s1">    | \.mypy_cache</span>
+<span class="s1">    | \.tox</span>
+<span class="s1">    | \.venv</span>
+<span class="s1">    | _build</span>
+<span class="s1">    | buck-out</span>
+<span class="s1">    | build</span>
+<span class="s1">    | dist</span>
+<span class="s1">  )/</span>
+<span class="s1">  | foo.py           # also separately exclude a file named foo.py in</span>
+<span class="s1">                     # the root of the project</span>
+<span class="s1">)</span>
+<span class="s1">&#39;&#39;&#39;</span>
+</code></pre></div>
+
+<p><br></p>
+<h4 id="pre-commit">pre-commit</h4>
+<p>If you don't use pre-commit in your projects, you should start using it immediately. Pre-commit framework makes configuring
+pre-commit hooks pleasant and convenient. The hook for <strong>Black</strong> parses files to be committed and if any of them changed during this parsing, the hook fails and prevents the commit to be successful. It means the code was not compliant with the code style.
+The drawback of this is that you have to add formatted files to the staging area and commit them again.</p>
+<p>Example <code>.pre-commit-config.yaml</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">repos</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">repo</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://github.com/ambv/black</span>
+<span class="w">    </span><span class="nt">rev</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">19.3b0</span>
+<span class="w">    </span><span class="nt">hooks</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">black</span>
+<span class="w">        </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Formats python files using black</span>
+<span class="w">        </span><span class="nt">language_version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">python3.6</span>
+</code></pre></div>
+
+<p><br></p>
+<h4 id="pycharmintellij-ide-external-tools">PyCharm/IntelliJ IDE - External Tools</h4>
+<p>In IDE you can define useful external tools available in <code>Tools -&gt; External Tool</code> and under the right-click menu.</p>
+<p><img alt="External Tools with Black" src="https://blog.tobked.dev/images/posts/2019/black-external-tool.png"></p>
+<p><strong>Install black and locate the installation folder.</strong></p>
+<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>black
+which<span class="w"> </span>black
+</code></pre></div>
+
+<p><strong>Set External Tool in IDE.</strong></p>
+<p>On macOS:</p>
+<p><code>PyCharm -&gt; Preferences -&gt; Tools -&gt; External Tools</code></p>
+<p>On Windows / Linux / BSD:</p>
+<p><code>File -&gt; Settings -&gt; Tools -&gt; External Tools</code></p>
+<p><strong>Click the + icon to add a new external tool.</strong></p>
+<p>Official documentation suggests the following values:</p>
+<div class="highlight"><pre><span></span><code><span class="n">Name</span><span class="o">:</span><span class="w"> </span><span class="n">Black</span>
+<span class="n">Description</span><span class="o">:</span><span class="w"> </span><span class="n">Black</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">uncompromising</span><span class="w"> </span><span class="n">Python</span><span class="w"> </span><span class="n">code</span><span class="w"> </span><span class="n">formatter</span><span class="o">.</span>
+<span class="n">Program</span><span class="o">:</span><span class="w"> </span><span class="o">&lt;</span><span class="n">install_location</span><span class="o">&gt;</span><span class="w">  </span>
+<span class="n">Arguments</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;$FilePath$&quot;</span><span class="w">  </span>
+</code></pre></div>
+
+<p>I personally modified them to better suit my needs:</p>
+<p>The version which reads settings from the <code>pyproject.toml</code> is the same as above with an additional <code>Working Directory</code> property:</p>
+<div class="highlight"><pre><span></span><code><span class="nv">Working</span><span class="w"> </span><span class="nv">directory</span><span class="o">:</span><span class="w"> </span><span class="p">$</span><span class="nv">ProjectFileDir</span><span class="p">$</span>
+</code></pre></div>
+
+<p>Version with specific line length:</p>
+<div class="highlight"><pre><span></span><code>Arguments: &quot;$FilePath$&quot; --line-length 110
+</code></pre></div>
+
+<p><br></p>
+<h4 id="file-watcher-in-ide">File-watcher in IDE</h4>
+<p>Run <strong>Black</strong> on every file save:</p>
+<p>Make sure you have the File Watcher plugin installed.
+Go to <code>Preferences or Settings -&gt; Tools -&gt; File Watchers</code> and click + to add a new watcher:</p>
+<div class="highlight"><pre><span></span><code><span class="n">Name</span><span class="o">:</span><span class="w"> </span><span class="n">Black</span>
+<span class="n">File</span><span class="w"> </span><span class="n">type</span><span class="o">:</span><span class="w"> </span><span class="n">Python</span>
+<span class="n">Scope</span><span class="o">:</span><span class="w"> </span><span class="n">Project</span><span class="w"> </span><span class="n">Files</span>
+<span class="n">Program</span><span class="o">:</span><span class="w"> </span><span class="o">&lt;</span><span class="n">install_location</span><span class="o">&gt;</span>
+<span class="n">Arguments</span><span class="o">:</span><span class="w"> </span><span class="n">$FilePath$</span>
+<span class="n">Output</span><span class="w"> </span><span class="n">paths</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">refresh</span><span class="o">:</span><span class="w"> </span><span class="n">$FilePath$</span>
+<span class="n">Working</span><span class="w"> </span><span class="n">directory</span><span class="o">:</span><span class="w"> </span><span class="n">$ProjectFileDir$</span>
+<span class="n">Uncheck</span><span class="w"> </span><span class="s2">&quot;Auto-save edited files to trigger the watcher&quot;</span>
+</code></pre></div>
+
+<p><br></p>
+<h3 id="summary">Summary</h3>
+<p>I hope you will brighten your code with <strong>Black</strong> and make your life easier (and prettier ;) ).</p>
+<p><br></p>
+<hr>
+<h4 id="sources">Sources:</h4>
+<ul>
+<li><a href="https://github.com/psf/black">black</a></li>
+<li><a href="https://black.now.sh/">black playground</a></li>
+<li><a href="https://www.python.org/dev/peps/pep-0008/">PEP 8 - Style Guide for Python Code</a></li>
+<li><a href="https://www.python.org/dev/peps/pep-0518/">PEP 518 - Specifying Minimum Build System Requirements for Python Projects</a></li>
+<li><a href="https://youtu.be/nnKvBwRt72Q">The latest with BLACK, so you can stop worrying about Formatting - Łukasz Langa - PyBay 2019</a></li>
+</ul>
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%"' src="https://www.youtube-nocookie.com/embed/nnKvBwRt72Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<ul>
+<li><a href="https://youtu.be/GymkJlqaD3Q">Paint it black - wdrożenie autoformatera - Marcin Jaroszewski - PyWaw #87</a></li>
+</ul>
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%"' src="https://www.youtube-nocookie.com/embed/GymkJlqaD3Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<ul>
+<li><a href="https://youtu.be/XhWvz4dK4ng">Emily Morehouse-Valcarcel - The AST and Me - PyCon 2018</a></li>
+</ul>
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%"' src="https://www.youtube-nocookie.com/embed/XhWvz4dK4ng" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<ul>
+<li><a href="https://talkpython.fm/episodes/show/152/understanding-and-using-python-s-ast">Understanding and using Python's AST - Episode #152 - talkpython.fm</a></li>
+<li><a href="https://eli.thegreenplace.net/2009/02/16/abstract-vs-concrete-syntax-trees/">Abstract vs. Concrete Syntax Trees - Eli Bendersky's website</a></li>
+<li><a href="http://python3porting.com/fixers.html#the-parse-tree">Extending 2to3 with your own fixers - python3porting</a></li>
+<li><a href="https://tomassetti.me/parsing-in-python/">Parsing In Python: Tools And Libraries - Federico Tomassetti</a></li>
+<li><a href="https://pre-commit.com/">pre-commit</a></li>
+</ul>
+    </article>
+
+        <div class="tags">
+            <p>tags: <a href="https://blog.tobked.dev/tag/python">python</a>, <a href="https://blog.tobked.dev/tag/pep8">pep8</a></p>
+        </div>
+
+    <hr>
+
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                            <li>
+                                <a href="https://tobked.dev">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-user fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/tobiaszkedzierski/?locale=en_US">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/TobKed">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://blog.tobked.dev/feeds/all.rss.xml">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                    </ul>
+<p class="copyright text-muted">
+    Blog powered by <a href="http://getpelican.com">Pelican</a>,
+    which takes great advantage of <a href="http://python.org">Python</a>. <br />
+    Main page header photo by <a href="https://juliakaczorowska.pl/">Julia Kaczorowska</a> (other by me). <br />
+        &copy;  Tobiasz Kedzierski
+</p>                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://blog.tobked.dev/theme/js/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://blog.tobked.dev/theme/js/bootstrap.min.js"></script>
+
+        <!-- Custom Theme JavaScript -->
+        <script src="https://blog.tobked.dev/theme/js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
