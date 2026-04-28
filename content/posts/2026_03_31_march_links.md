@@ -14,9 +14,18 @@ Below you'll find a mix of articles, links, and resources, some of which tie int
 
 ## Some thoughts
 
-https://github.com/cjpais/Handy
+Associate Cloud Engineer Certification.
 
-GCP certification
+I don't use too much google cloud but still this is my cloud provider of choice.
+I got discount for refreshing Associate Cloud Engineer so I spent a few evenings, and it took me 50 minutes to answer 50 questions ans pass.
+It was fun.
+
+https://www.credly.com/badges/61bf527e-9515-4521-9b56-33f2e4472708
+
+
+I wanted to try some speech to text tool and I found pretty cool tool which is open-source and offline. I don't use it extensively but works pretty good, even with polish.
+
+https://github.com/cjpais/Handy
 
 ______________________________________________________________________
 
