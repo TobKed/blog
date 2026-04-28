@@ -14,18 +14,19 @@ Below you'll find a mix of articles, links, and resources, some of which tie int
 
 ## Some thoughts
 
-Associate Cloud Engineer Certification.
+**Associate Cloud Engineer Certification**
 
-I don't use too much google cloud but still this is my cloud provider of choice.
-I got discount for refreshing Associate Cloud Engineer so I spent a few evenings, and it took me 50 minutes to answer 50 questions ans pass.
-It was fun.
+While I don't use Google Cloud heavily on a daily basis, it remains my cloud provider of choice.
+I received a discount to renew my Associate Cloud Engineer certification, so I spent a few evenings refreshing my knowledge. The exam itself took me 50 minutes to answer the 50 questions and pass.
+It was a fun experience!
 
-https://www.credly.com/badges/61bf527e-9515-4521-9b56-33f2e4472708
+[View my Credly badge](https://www.credly.com/badges/61bf527e-9515-4521-9b56-33f2e4472708)
 
+**Handy - Offline speech-to-text**
 
-I wanted to try some speech to text tool and I found pretty cool tool which is open-source and offline. I don't use it extensively but works pretty good, even with polish.
+I wanted to try out a speech-to-text tool and found this really cool option that is open-source and works completely offline. I haven't used it extensively yet, but it performs surprisingly well, even with Polish.
 
-https://github.com/cjpais/Handy
+[cjpais/Handy on GitHub](https://github.com/cjpais/Handy)
 
 ______________________________________________________________________
 
