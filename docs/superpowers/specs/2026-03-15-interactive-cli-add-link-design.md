@@ -79,7 +79,6 @@ Create a new skill that tells Gemini exactly how to handle this request.
      **AI Summary:**
      [Generated description]
 
-     **Tags:** tag1, tag2, tag3
      ```
    - EXPLICITLY ask the user the following questions:
      1. *Is the detected section (`## Section Name`) correct, or should it be changed?*
@@ -88,7 +87,7 @@ Create a new skill that tells Gemini exactly how to handle this request.
 6. **File Modification:**
    - Once the user approves or finishes tweaks, check if the calculated target file exists. (If not, prompt user or create from template).
    - Find the specified `## Section` in the file.
-   - Append the finalized markdown snippet (formatting: Title linked to URL, snippet/summary blockquote, tags) directly under that section.
+   - Append the finalized markdown snippet (formatting: Title linked to URL, snippet/summary blockquote) directly under that section.
    - Exit the task.
 
 ## Data Flow
@@ -101,10 +100,6 @@ Create a new skill that tells Gemini exactly how to handle this request.
 6. Gemini asks the user for approval on the section and the AI summary length.
 7. User reviews and iterates (e.g., "Change section to Python", "Make AI desc shorter", "Looks good").
 8. Upon approval, Gemini injects the markdown under the appropriate `## Section` in the `content/posts/..._links.md` file.
-
-## Deletion of Old Code
-
-Since this replaces the existing tool entirely, we can delete the `scripts/blog_automation_2/` directory and related Python scripts/tests, as Gemini is now orchestrating the whole flow natively.
 
 ## Testing Plan
 
