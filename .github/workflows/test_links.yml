@@ -8,17 +8,17 @@ jobs:
   test-links:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           persist-credentials: false
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: 3.13
       - name: Install requirements
         run: pip install -r scripts/test_links/requirements.txt
       - name: Test links
         run: python scripts/test_links/test_links.py
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: logs
           path: |
