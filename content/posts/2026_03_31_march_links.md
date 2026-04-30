@@ -5,7 +5,7 @@ Tags: python, blog, podcast, series, aggregate, summary, month, 2026
 Slug: 2026-march-links
 Summary: Interesting stuff from the month
 Header_Cover: /images/posts/2026/2026_03_xx.jpg
-Status: draft
+Status: published
 
 # March 2026
 
@@ -23,13 +23,13 @@ It was a fun experience!
 <figure style="text-align: center;">
     <img src="{static}/images/posts/2026/gcp_ace.png"" alt="Google Associate Cloud Engineer" style="display: block; margin-left: auto; margin-right: auto;">
     <figcaption style="font-size: 0.9em; margin-top: 8px; margin-bottom: 12px">
-        <a href="https://www.credly.com/badges/61bf527e-9515-4521-9b56-33f2e4472708">View my Credly badgee</a>
+        <a href="https://www.credly.com/badges/61bf527e-9515-4521-9b56-33f2e4472708">View my Credly badge</a>
     </figcaption>
 </figure>
 
 ### [**Handy - Offline speech-to-text**](https://github.com/cjpais/Handy)
 
-I wanted to try out a speech-to-text tool and found this really cool option that is open-source and works completely offline. I haven't used it extensively but so far it performs surprisingly well, even with Polish.
+I wanted to try out a speech-to-text tool and found this really cool option that is open-source and works completely offline. I use it here and there and it performs surprisingly well, even in Polish.
 
 [cjpais/Handy on GitHub](https://github.com/cjpais/Handy)
 
@@ -64,6 +64,14 @@ ______________________________________________________________________
 ### [The Developer’s Guide to Secure Job Hunting in 2026 • placementist](https://placementist.com/insights/the-developer%E2%80%99s-guide-to-secure-job-hunting-in-2026)
 
 > Is your technical task a malware delivery system? The 2026 candidate's guide to secure job searching.
+
+### [The Self-Hosting Revolution Powered by Mini PCs | TerminalBytes.com](https://terminalbytes.com/post/self-hosting-revolution-mini-pcs/)
+
+> How mini PCs are enabling a quiet revolution in self-hosting, making it practical and affordable to own your digital life
+
+### [Scaling Postgres connections with PgBouncer — PlanetScale](https://planetscale.com/blog/scaling-postgres-connections-with-pgbouncer)
+
+> PgBouncer is the perfect pairing for Postgres's biggest weakness: connection management. Tuning it just right is important to make this work well, and here we cover everything you need to know
 
 ## Productivity
 
@@ -141,17 +149,9 @@ A detailed guide on setting up OpenClaw with security configurations, SSH keys, 
 
 ## Cloud
 
-### [The Self-Hosting Revolution Powered by Mini PCs | TerminalBytes.com](https://terminalbytes.com/post/self-hosting-revolution-mini-pcs/)
-
-> How mini PCs are enabling a quiet revolution in self-hosting, making it practical and affordable to own your digital life
-
 ### [Bucketsquatting is (Finally) Dead – One Cloud Please](https://onecloudplease.com/blog/bucketsquatting-is-finally-dead)
 
 > For a decade, I have been working with AWS and third-party security teams to resolve bucketsquatting / bucketsniping issues in AWS S3. Finally, I am happy to say AWS now has a solution to the problem, and it changes the way you should name your buckets.
-
-### [Scaling Postgres connections with PgBouncer — PlanetScale](https://planetscale.com/blog/scaling-postgres-connections-with-pgbouncer)
-
-> PgBouncer is the perfect pairing for Postgres's biggest weakness: connection management. Tuning it just right is important to make this work well, and here we cover everything you need to know
 
 ## Other stuff
 
