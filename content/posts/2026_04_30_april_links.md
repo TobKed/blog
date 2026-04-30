@@ -20,21 +20,31 @@ ______________________________________________________________________
 
 ### [The unwritten laws of software engineering](https://newsletter.manager.dev/p/the-unwritten-laws-of-software-engineering)
 
-> Last April, I wrote a well-received article about the 13 software engineering laws - Hyrum’s, Conway’s, Zawinski’s, and 10 famous others.
+> But beyond the named laws, there are many unwritten rules every engineer who’s been around for a while just knows. You learn them by breaking things and swearing you’ll never do it again.
 
-#### AI generated summary
+### [Presentation Domain Data Layering](https://martinfowler.com/bliki/PresentationDomainDataLayering.html)
 
-The article outlines seven unwritten laws of software engineering, emphasizing the importance of preparation, testing, and learning from past mistakes to avoid common pitfalls in software projects.
+> The article discusses the common practice of modularizing software into three layers: presentation (UI), domain logic (business logic), and data access.
 
-## Productivity
+### [Ghostty Is Leaving GitHub – Mitchell Hashimoto](https://mitchellh.com/writing/ghostty-leaving-github)
+
+> Mitchell Hashimoto, a long-time GitHub user and the creator of Vagrant, announces that the Ghostty project will be leaving GitHub due to ongoing frustrations with the platform's reliability.
 
 ### [I’m an introvert. This is how I get myself to speak up.](https://newsletter.weskao.com/p/im-an-introvert-this-is-how-i-get-myself-to-speak-up)
 
 > Prepare go-to phrases to insert yourself in meetings, ask a colleague to keep you accountable, and other tactics I personally use to get myself to speak up.
 
+### [Intention is all you need. Why, after many years of writing code… | by Jarek Potiuk | Apr, 2026 | Medium](https://potiuk.com/intention-is-all-you-need-1379ec41a19c)
+
+> Intention is all you need Why, after many years of writing code to automate my maintainer work, I now write English instead — and why the result is better, faster, and more honest.
+
+### [Finding Comfort in the Uncertainty - Annie Vella](https://annievella.com/posts/finding-comfort-in-the-uncertainty/)
+
 #### AI generated summary
 
-Wes Kao shares strategies for introverts to speak up in meetings, including preparing in advance, speaking early, using writing to share ideas, and leveraging remote work advantages. The article emphasizes adapting to environments not designed for introverts and includes personal anecdotes and course testimonials.
+The article reflects on a retreat focused on the future of software development and AI's impact, highlighting the uncertainty and evolving roles in the industry. Key themes include cognitive load, shifting bottlenecks, and the need for a comprehensive ledger to track AI actions.
+
+## Productivity
 
 ## AI
 
@@ -42,35 +52,63 @@ Wes Kao shares strategies for introverts to speak up in meetings, including prep
 
 > Learn how to use Codex CLI to add features to Python projects via the terminal. Master AI-powered coding without needing a browser or IDE plugins.
 
-#### AI generated summary
+### [GitHub - JuliusBrussee/caveman](https://github.com/juliusbrussee/caveman)
 
-Learn how to use Codex CLI, an AI-powered tool, to enhance your Python projects by adding features directly from your terminal. This guide walks you through installation, configuration, and practical application of Codex CLI in a contact book app.
+> 🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman
+
+### [Claude Code Unpacked](https://ccunpacked.dev/)
+
+> What actually happens when you type a message into Claude Code? The agent loop, 50+ tools, multi-agent orchestration, and unreleased features, mapped from source.
+
+### [Learn Cursor IN Cursor! – Cursor for Product Managers](https://www.cursorforpms.com/)
+
+> Learn Cursor AI for PM work through interactive tutorials. Master AI-powered editing, file operations, and automated workflows for product managers.
+
+### [GitHub - affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code)
+
+> The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.
+
+### [Practical guide: organize AI prompts with Obsidian and Templater](https://cosmo-edge.com/organize-ai-prompts-obsidian-templater/)
+
+> Manage AI prompts locally with Obsidian and Templater, build dynamic Markdown templates and custom AI workflows.
+
+### [GitHub - nicobailon/visual-explainer](https://github.com/nicobailon/visual-explainer)
+
+> Agent skill that generates rich HTML pages or slide decks for diagrams, diff reviews, plan audits, data tables, and project recaps.
+
+### [GitHub - obra/superpowers](https://github.com/obra/superpowers)
+
+> An agentic skills framework & software development methodology that works.
+
+### [GitHub - bmad-code-org/BMAD-METHOD](https://github.com/bmad-code-org/BMAD-METHOD)
+
+> Breakthrough Method for Agile Ai Driven Development
+
+### [Claude Code Cheat Sheet](https://cc.storyfox.cz/)
+
+> The most comprehensive Claude Code cheat sheet — keyboard shortcuts, slash commands, CLI flags, MCP servers, memory files, skills, agents, env vars. Auto-updated daily. Printable A4 landscape.
 
 ## Security
 
 ## Python
 
-## Django
-
-## Python libraries
-
 ### [Build a Finite State Machine in Python — Bob Belderbos — Developer Coaching](https://belderbos.dev/blog/build-finite-state-machine-python)
 
 > Learn how finite state machines work by building one from scratch in Python. Guards, hooks, history tracking, and when to reach for a library instead.
 
-#### AI generated summary
+### [Cutting Python Web App Memory Over 31% • Michael Kennedy's Thoughts on Technology](https://mkennedy.codes/posts/cutting-python-web-app-memory-over-31-percent/)
 
-This blog post explores how to build a finite state machine in Python, using both the 'transitions' library and a custom implementation. It covers the basics of FSMs, including transitions, guards, hooks, and context, with a focus on a GitHub pull request workflow.
+> I reduced Python web app memory by 3.2 GB using async workers, import isolation, the Raw+DC database pattern, and disk caching. Detailed before and after numbers for each technique.
 
-## Django libraries
+## Django
 
 ### [Decoupling Your Business Logic from the Django ORM • Buttondown](https://buttondown.com/carlton/archive/decoupling-your-business-logic-from-the-django-orm/)
 
-> Where should I keep my business logic? This is a perennial topic in Django. We can imagine a continuum of cases, with increasing complexity: I begin with my...
+> Where should I keep my business logic? This is a perennial topic in Django.
 
-#### AI generated summary
+## Python libraries
 
-The article explores how to decouple business logic from the Django ORM to manage complexity and improve performance in growing applications. It introduces Mantle, a tool that facilitates this process by enabling type-safe Python classes and efficient ORM queries.
+## Django libraries
 
 ## Go
 
@@ -80,29 +118,29 @@ The article explores how to decouple business logic from the Django ORM to manag
 
 > Customize the look and feel of tmux
 
-#### AI generated summary
-
-This blog post guides users on how to customize tmux to improve usability and aesthetics. It covers changing key bindings, enabling mouse mode, and adjusting visual elements through the `tmux.conf` file. The post provides practical examples and encourages exploring additional resources for advanced customization.
-
-### [GitHub - mayukh4/linux-android: A script that sets up linux on your anroid device via termux · GitHub](https://github.com/mayukh4/linux-android)
+### [GitHub - mayukh4/linux-android](https://github.com/mayukh4/linux-android)
 
 > A script that sets up linux on your anroid device via termux - mayukh4/linux-android
 
-#### AI generated summary
+### [tldraw • very good free whiteboard](https://www.tldraw.com/)
 
-The repository offers a comprehensive guide to transform an old Android phone into a Linux desktop or smart home server using Termux, without requiring root access. It includes scripts for setting up a Linux environment or Home Assistant, with detailed instructions on installation, hardware requirements, and optional features like Wine for Windows app support.
-
-### [Claude Code Cheat Sheet](https://cc.storyfox.cz/)
-
-> The most comprehensive Claude Code cheat sheet — keyboard shortcuts, slash commands, CLI flags, MCP servers, memory files, skills, agents, env vars. Auto-updated daily. Printable A4 landscape.
+> A free and instant virtual whiteboarding with online collaboration. No signup required. Works on all devices: mobile, tablets, and desktop.
 
 #### AI generated summary
 
-This page is a detailed cheat sheet for Claude Code v2.1.121, outlining features, commands, and configurations for efficient use of the software.
+tldraw is a collaborative whiteboarding tool that is free and accessible online, enabling real-time visual content creation and sharing.
+
+### [GitHub - apple/container](https://github.com/apple/container)
+
+> A tool for creating and running Linux containers using lightweight virtual machines on a Mac.
 
 ## Cloud
 
 ## Other stuff
+
+### [The Missing GitHub Status Page](https://mrshu.github.io/github-statuses/)
+
+> This page serves as a mirror for GitHub's status updates, reconstructing platform-wide and per-service uptime from archived status updates.
 
 ## Podcasts
 
@@ -124,19 +162,11 @@ This page is a detailed cheat sheet for Claude Code v2.1.121, outlining features
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/z4AbijUCoKU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-#### AI generated summary
-
-Nick Milo's video provides a quick yet thorough introduction to Obsidian, covering essential features and tips to optimize note-taking. It is ideal for those looking to enhance their personal knowledge management system.
-
 ### [does git 2.54 make pre-commit obsolete? - YouTube](https://www.youtube.com/watch?v=8Jwg_mM9WYc)
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/8Jwg_mM9WYc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-
-#### AI generated summary
-
-This video examines the impact of Git 2.54 on the necessity of using pre-commit, evaluating if the new Git features can replace pre-commit's functionalities.
 
 ### [2/3 IT wypalone. Jesteś w tej grupie? | Ola Kunysz - YouTube](https://www.youtube.com/watch?v=mJGra2QK3mk)
 
@@ -144,9 +174,29 @@ This video examines the impact of Git 2.54 on the necessity of using pre-commit,
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/mJGra2QK3mk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-#### AI generated summary
+### [I replaced my entire stack with Postgres... - YouTube](https://www.youtube.com/watch?v=TdondBmyNXc)
 
-Ola Kunysz's video addresses burnout in the IT sector, highlighting that two-thirds of IT professionals face this issue. It provides insights into recognizing and combating burnout.
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/TdondBmyNXc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [John Doerr: Ideas are easy, execution is everything. - YouTube](https://www.youtube.com/watch?v=4xWGSUZmkIc)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/4xWGSUZmkIc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [Everything Announced at Google Cloud Next in Under 13 Minutes - YouTube](https://www.youtube.com/watch?v=dITPmrhNTzY)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/dITPmrhNTzY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [does git 2.54 make pre-commit obsolete? - YouTube](https://www.youtube.com/watch?v=8Jwg_mM9WYc)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/8Jwg_mM9WYc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ### [I replaced my entire stack with Postgres... - YouTube](https://www.youtube.com/watch?v=TdondBmyNXc)
 
@@ -154,6 +204,6 @@ Ola Kunysz's video addresses burnout in the IT sector, highlighting that two-thi
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/TdondBmyNXc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-#### AI generated summary
+### [Before you continue to YouTube](https://www.youtube.com/live/6eBSHbLKuN0)
 
-The Coding Gopher explains the decision to replace a tech stack with Postgres, highlighting its advantages and challenges. The video also offers resources for learning system design and building software from scratch.
+> The page content primarily consists of a list of languages available for YouTube users, along with a privacy notice regarding the use of cookies and data for service improvement, ad personalization, and audience engagement. Users are given options to accept or reject cookies for personalized content and ads. The page also provides links to manage privacy settings.
