@@ -5,7 +5,7 @@ Tags: python, blog, podcast, series, aggregate, summary, month, 2026
 Slug: 2026-april-links
 Summary: Interesting stuff from the month
 Header_Cover: /images/posts/2026/2026_04_xx.jpg
-Status: draft
+Status: published
 
 # April 2026
 
@@ -46,10 +46,6 @@ The article reflects on a retreat focused on the future of software development 
 
 > Learn how to use Codex CLI to add features to Python projects via the terminal. Master AI-powered coding without needing a browser or IDE plugins.
 
-### [GitHub - JuliusBrussee/caveman](https://github.com/juliusbrussee/caveman)
-
-> 🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman
-
 ### [Claude Code Unpacked](https://ccunpacked.dev/)
 
 > What actually happens when you type a message into Claude Code? The agent loop, 50+ tools, multi-agent orchestration, and unreleased features, mapped from source.
@@ -61,6 +57,10 @@ The article reflects on a retreat focused on the future of software development 
 ### [Practical guide: organize AI prompts with Obsidian and Templater](https://cosmo-edge.com/organize-ai-prompts-obsidian-templater/)
 
 > Manage AI prompts locally with Obsidian and Templater, build dynamic Markdown templates and custom AI workflows.
+
+### [Claude Code Cheat Sheet](https://cc.storyfox.cz/)
+
+> The most comprehensive Claude Code cheat sheet — keyboard shortcuts, slash commands, CLI flags, MCP servers, memory files, skills, agents, env vars. Auto-updated daily. Printable A4 landscape.
 
 ### [GitHub - affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code)
 
@@ -78,9 +78,9 @@ The article reflects on a retreat focused on the future of software development 
 
 > Breakthrough Method for Agile Ai Driven Development
 
-### [Claude Code Cheat Sheet](https://cc.storyfox.cz/)
+### [GitHub - JuliusBrussee/caveman](https://github.com/juliusbrussee/caveman)
 
-> The most comprehensive Claude Code cheat sheet — keyboard shortcuts, slash commands, CLI flags, MCP servers, memory files, skills, agents, env vars. Auto-updated daily. Printable A4 landscape.
+> 🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman
 
 ## Python
 
