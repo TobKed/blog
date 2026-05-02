@@ -12,10 +12,6 @@ Status: draft
 Time for another monthly post sharing some of the IT discoveries that crossed my path lately.
 Below you'll find a mix of articles, links, and resources, some of which tie into my current activities and areas of interest.
 
-## Some thoughts
-
-______________________________________________________________________
-
 ## Articles
 
 ### [The unwritten laws of software engineering](https://newsletter.manager.dev/p/the-unwritten-laws-of-software-engineering)
@@ -44,8 +40,6 @@ ______________________________________________________________________
 
 The article reflects on a retreat focused on the future of software development and AI's impact, highlighting the uncertainty and evolving roles in the industry. Key themes include cognitive load, shifting bottlenecks, and the need for a comprehensive ledger to track AI actions.
 
-## Productivity
-
 ## AI
 
 ### [How to Add Features to a Python Project With Codex CLI – Real Python](https://realpython.com/codex-cli/)
@@ -64,13 +58,13 @@ The article reflects on a retreat focused on the future of software development 
 
 > Learn Cursor AI for PM work through interactive tutorials. Master AI-powered editing, file operations, and automated workflows for product managers.
 
-### [GitHub - affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code)
-
-> The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.
-
 ### [Practical guide: organize AI prompts with Obsidian and Templater](https://cosmo-edge.com/organize-ai-prompts-obsidian-templater/)
 
 > Manage AI prompts locally with Obsidian and Templater, build dynamic Markdown templates and custom AI workflows.
+
+### [GitHub - affaan-m/everything-claude-code](https://github.com/affaan-m/everything-claude-code)
+
+> The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.
 
 ### [GitHub - nicobailon/visual-explainer](https://github.com/nicobailon/visual-explainer)
 
@@ -88,8 +82,6 @@ The article reflects on a retreat focused on the future of software development 
 
 > The most comprehensive Claude Code cheat sheet — keyboard shortcuts, slash commands, CLI flags, MCP servers, memory files, skills, agents, env vars. Auto-updated daily. Printable A4 landscape.
 
-## Security
-
 ## Python
 
 ### [Build a Finite State Machine in Python — Bob Belderbos — Developer Coaching](https://belderbos.dev/blog/build-finite-state-machine-python)
@@ -106,12 +98,6 @@ The article reflects on a retreat focused on the future of software development 
 
 > Where should I keep my business logic? This is a perennial topic in Django.
 
-## Python libraries
-
-## Django libraries
-
-## Go
-
 ## Tools
 
 ### [Make tmux Pretty and Usable - Ham Vocke](https://hamvocke.com/blog/a-guide-to-customizing-your-tmux-conf/)
@@ -126,15 +112,9 @@ The article reflects on a retreat focused on the future of software development 
 
 > A free and instant virtual whiteboarding with online collaboration. No signup required. Works on all devices: mobile, tablets, and desktop.
 
-#### AI generated summary
-
-tldraw is a collaborative whiteboarding tool that is free and accessible online, enabling real-time visual content creation and sharing.
-
 ### [GitHub - apple/container](https://github.com/apple/container)
 
 > A tool for creating and running Linux containers using lightweight virtual machines on a Mac.
-
-## Cloud
 
 ## Other stuff
 
@@ -142,19 +122,7 @@ tldraw is a collaborative whiteboarding tool that is free and accessible online,
 
 > This page serves as a mirror for GitHub's status updates, reconstructing platform-wide and per-service uptime from archived status updates.
 
-## Podcasts
-
 ## Videos
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
-
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
-
-> Playback on other websites has been disabled by the video owner. [Watch on YouTube](https://www.youtube.com/watch?v=VIDEO_ID)
 
 ### [Give Me 15 Minutes. I'll Teach You  80% of Obsidian - YouTube](https://www.youtube.com/watch?v=z4AbijUCoKU)
 
@@ -204,6 +172,8 @@ tldraw is a collaborative whiteboarding tool that is free and accessible online,
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/TdondBmyNXc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-### [Before you continue to YouTube](https://www.youtube.com/live/6eBSHbLKuN0)
+### [Mastering Claude Code in 30 minutes](https://www.youtube.com/live/6eBSHbLKuN0)
 
-> The page content primarily consists of a list of languages available for YouTube users, along with a privacy notice regarding the use of cookies and data for service improvement, ad personalization, and audience engagement. Users are given options to accept or reject cookies for personalized content and ads. The page also provides links to manage privacy settings.
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/6eBSHbLKuN0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
