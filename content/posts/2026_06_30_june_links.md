@@ -29,6 +29,10 @@ ______________________________________________________________________
 
 John Gruber's article defines 'dickover' as a term for intrusive modal panels on websites and apps that frustrate users with unnecessary interactions, such as cookie permissions or newsletter sign-ups. He argues these are pervasive and disruptive to user experience, distinguishing them from less intrusive 'dickbars'.
 
+### [When Was the Last Time You Did Just One Thing? - A Life Engineered](https://alifeengineered.substack.com/p/when-was-the-last-time-you-did-just)
+
+> Somewhere along the way, single-tasking has become a must-have skill.
+
 ## Productivity
 
 ## AI
