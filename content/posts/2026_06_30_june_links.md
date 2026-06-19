@@ -99,6 +99,12 @@ This article introduces 'django-integrity-policy', a Django package for implemen
 
 ## Tools
 
+### [Kurs n8n po polsku - darmowa wiki | KursN8N.pl](https://kursn8n.pl)
+
+#### AI generated summary
+
+Darmowy kurs i otwarta wiki n8n w języku polskim. Składa się z 9 uporządkowanych modułów prowadzących od całkowitych podstaw konfiguracji, przez integracje, aż po zaawansowane zagadnienia tworzenia agentów AI i utrzymania produkcyjnego.
+
 ### [GitHub - MadAppGang/claudish: Claude Code. Any Model. The most powerful AI coding agent now speaks every language. · GitHub](https://github.com/MadAppGang/claudish)
 
 > Claude Code. Any Model. The most powerful AI coding agent now speaks every language. - MadAppGang/claudish
@@ -131,6 +137,18 @@ mise-en-place is a CLI tool that manages development environments by organizing 
 
 Juha-Matti Santala's blog post provides tips on managing scripts by using namespacing and shebangs for better organization and execution. The author also introduces a custom tool for managing scripts in a version-controlled repository.
 
+### [GitHub - alibaba/open-code-review:](https://github.com/alibaba/open-code-review)
+
+> Open Code Review is an AI-powered code review CLI tool. It originated as Alibaba Group's internal official AI code review assistant. It reads Git diffs, sends changed files to a configurable LLM via an agent with tool-use capabilities, and generates structured review comments with line-level precision.
+
+### [GitHub - luongnv89/claude-howto](https://github.com/luongnv89/claude-howto)
+
+> Master Claude Code in a Weekend. Go from typing `claude` to orchestrating agents, hooks, skills, and MCP servers — with visual tutorials, copy-paste templates, and a guided learning path.
+
+### [GitHub - lfnovo/open-notebook](https://github.com/lfnovo/open-notebook)
+
+> AAn Open Source implementation of Notebook LM with more flexibility and features
+
 ## Cloud
 
 ## Other stuff
@@ -162,6 +180,16 @@ Open Source Ecology develops open source industrial machines and shares designs 
 ## Podcasts
 
 ## Videos
+
+### [Jak zbudowałam markę osobistą i czy było warto • Ola Kunysz • Beyond Code 2024](https://youtu.be/VQsshF7C-4Q)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/VQsshF7C-4Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+#### AI generated summary
+
+In this presentation from the Beyond Code 2024 conference, Ola Kunysz shares her insights on building a personal brand in the IT industry. She discusses the challenges, the dangers of forcing the process, and the risk of burnout while highlighting key lessons learned.
 
 ### [](https://www.youtube.com/watch?v=VIDEO_ID)
 
