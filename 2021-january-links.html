@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+            <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <title>Month summary - January 2021</title>
+
+            <link href="https://blog.tobked.dev//feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="ups and downs Full Atom Feed" />
+            <link href="https://blog.tobked.dev//feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="ups and downs Full RSS Feed" />
+        <!-- Bootstrap Core CSS -->
+        <link href="https://blog.tobked.dev/theme/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link href="https://blog.tobked.dev/theme/css/clean-blog.min.css" rel="stylesheet">
+
+        <!-- Code highlight color scheme -->
+            <link href="https://blog.tobked.dev/theme/css/code_blocks/github.css" rel="stylesheet">
+
+            <!-- CSS specified by the user -->
+            <link href="https://blog.tobked.dev/css/main.css" rel="stylesheet">
+
+        <!-- Custom Fonts -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+
+        <meta name="description" content="Interesting stuff from the month">
+
+        <meta name="author" content="Tobiasz Kedzierski">
+
+        <meta name="tags" content="python">
+        <meta name="tags" content="blog">
+        <meta name="tags" content="podcast">
+        <meta name="tags" content="series">
+        <meta name="tags" content="aggregate">
+        <meta name="tags" content="summary">
+        <meta name="tags" content="month">
+        <meta name="tags" content="2021">
+
+	                <meta property="og:locale" content="">
+		<meta property="og:site_name" content="ups and downs">
+
+	<meta property="og:type" content="article">
+            <meta property="article:author" content="https://blog.tobked.dev/author/tobiasz-kedzierski">
+	<meta property="og:url" content="https://blog.tobked.dev/2021-january-links">
+	<meta property="og:title" content="Month summary - January 2021">
+	<meta property="article:published_time" content="2021-01-31 00:00:00+01:00">
+            <meta property="og:description" content="Interesting stuff from the month">
+
+            <meta property="og:image" content="https://blog.tobked.dev/images/poli_photo_by_julia_kaczorowska_edit.png">
+</head>
+
+<body class="article-2021-january-links">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="https://blog.tobked.dev/">ups and downs</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+
+                            <li><a href="https://blog.tobked.dev/pages/about-me">about me</a></li>
+                            <li><a href="https://blog.tobked.dev/pages/links">links</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+        <header class="intro-header" style="background-image: url('https://blog.tobked.dev/images/poli_photo_by_julia_kaczorowska_edit.png')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="post-heading">
+                        <h1>Month summary - January 2021</h1>
+                        <span class="meta">Posted by
+                                <a href="https://blog.tobked.dev/author/tobiasz-kedzierski">Tobiasz Kedzierski</a>
+                             on 31.01.2021
+                        </span>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    <!-- Post Content -->
+    <article>
+        <h1 id="january-2021">January 2021</h1>
+<p>I am aggregating here some more or less interesting stuff of various IT related materials which I came across this month.
+Some of them are strictly related to the things I did or am currently doing.</p>
+<h2 id="some-thoughts">Some thoughts</h2>
+<p>During this month I worked mostly on system tests for Apache Airflow.
+System tests in Airflow are tests which execute example DAGs and hit real resources, e.g.: Google Cloud Storages and Amazon S3.
+The huge advantage of them is that they can spot bugs which may slip in eventually or find breaking changes in external APIs.
+The fact that they work with real services means that these services have to be enabled, and in some cases provisioned and configured before.
+Cloud services have free tiers but still billing has to be configured and someone has to pay for it eventually.
+This is not something many people will do, but since I am interested in the cloud I wanted to make the running of these tests more convenient.
+It resulted in a repository: <a href="https://github.com/politools/airflow-system-tests">politools/airflow-system-tests</a>.
+The tests are being run on Google Cloud Build which clones Airflow repository and runs system tests within the Breeze environment.
+With one command, plenty of parallel tests may be executed.</p>
+<h2 id="articles">Articles</h2>
+<h3 id="a-simple-and-dynamic-method-for-consistent-productivity"><a href="https://matthewsaltz.wordpress.com/2020/11/24/a-simple-and-dynamic-method-for-consistent-productivity/">A Simple and Dynamic Method for Consistent Productivity</a></h3>
+<blockquote>
+<p>About a month ago I started a new system that I really like, and I hope I will stay with it.</p>
+</blockquote>
+<h3 id="doing-python-development-under-mac-os"><a href="https://peter-whittaker.com/install-python-MacOS">Doing Python development under Mac OS</a></h3>
+<blockquote>
+<p>Easy-peasy. Right?</p>
+</blockquote>
+<h3 id="the-7-types-of-rest-that-every-person-needs"><a href="https://ideas.ted.com/the-7-types-of-rest-that-every-person-needs/">The 7 types of rest that every person needs</a></h3>
+<blockquote>
+<p>This post is part of TED’s “How to Be a Better Human” series, each of which contains a piece of helpful advice from people in the TED community.</p>
+</blockquote>
+<h3 id="system-design-101"><a href="https://stanete.com/system-design-101">System Design 101</a></h3>
+<blockquote>
+<p>Why is it so important to design our services so they have no state? Specially if they are running somewhere on a server.</p>
+</blockquote>
+<h3 id="20-months-in-2k-hours-spent-and-200k-lost-a-story-about-resilience-and-the-sunk-cost-fallacy"><a href="https://medium.com/swlh/20-months-in-2k-hours-spent-and-200k-lost-a-story-about-resilience-and-the-sunk-cost-fallacy-69fd4f61ef59">20 Months in, 2K Hours Spent and 200K € Lost. A Story About Resilience and the Sunk Cost Fallacy</a></h3>
+<blockquote>
+<p>TL;DR: It can be really hard to know if we’re just resilient or falling for the sunk cost fallacy.</p>
+</blockquote>
+<h3 id="time-awareness-or-how-i-found-time-for-life-while-working-remotely"><a href="https://timeawareness.substack.com/p/time-awareness-and-remote-work">Time Awareness or How I Found Time for Life While Working Remotely</a></h3>
+<blockquote>
+<p>I quickly found out that not having a context switch between the office and home forced me into non-healthy behaviors like giving work all the available time.</p>
+</blockquote>
+<h3 id="10-powerful-life-skills-for-the-new-decade"><a href="https://neilkakkar.com/powerful-life-skills.html">10 Powerful Life Skills for the New Decade</a></h3>
+<blockquote>
+<p>Over the past few years, I’ve noticed certain skills in people I admire, from Paul Graham, Vitalik Buterin, to Ender Wiggin.</p>
+</blockquote>
+<h3 id="equal-pay-for-equal-work"><a href="https://dusted.codes/equal-pay-for-equal-work">Equal pay for equal work</a></h3>
+<blockquote>
+<p>Remote work is on the rise, the economy is on a decline and businesses are re-structuring themselves around what many consider the new normal.</p>
+</blockquote>
+<h3 id="pipenv-requests-author-kenneth-reitz-interview"><a href="https://evrone.com/kenneth-reitz-interview">Pipenv &amp; Requests Author Kenneth Reitz Interview</a></h3>
+<blockquote>
+<p>Kenneth Reitz: “Encapsulating concepts is better than extrapolating complexity.”</p>
+</blockquote>
+<h3 id="sekurak-konta-trumpa-zbanowane-we-wszystkich-istotnych-serwisach-spoecznosciowych"><a href="https://sekurak.pl/konta-trumpa-zbanowane-we-wszystkich-istotnych-serwisach-spolecznosciowych-amazon-apple-google-blokuje-parlera-cenzura-na-niespotykana-dotad-skale-czy-normalnosc/">Sekurak: Konta Trumpa zbanowane we wszystkich istotnych serwisach społecznościowych</a></h3>
+<blockquote>
+<p>Amazon/Apple/Google blokuje Parlera. Cenzura na niespotykaną dotąd skalę czy normalność?</p>
+</blockquote>
+<h3 id="tech-companies-are-profiling-us-from-before-birth"><a href="https://thereader.mitpress.mit.edu/tech-companies-are-profiling-us-from-before-birth/">Tech Companies Are Profiling Us From Before Birth</a></h3>
+<blockquote>
+<p>Children today are the very first generation of citizens to be datafied from before birth. The social and political consequences of this historical transformation have yet to be seen.</p>
+</blockquote>
+<h3 id="with-the-death-of-cash-privacy-faces-a-deeply-uncertain-future"><a href="https://hackernoon.com/with-the-death-of-cash-privacy-faces-a-deeply-uncertain-future-l8c344v">With the Death of Cash, Privacy Faces a Deeply Uncertain Future</a></h3>
+<blockquote>
+<p>The Coming Death of Cash and the Battle for the Future of Money. In One Future We have a Private, Anonymous Alternative to Cash but in the Black Mirror Future the Money in Your Pocket Knows Everything About You.</p>
+</blockquote>
+<h3 id="degoogling-my-life"><a href="https://thefiringneuron.com/2021/01/17/degoogling-my-life/">Degoogling my life</a></h3>
+<blockquote>
+<p>Privacy is a human right, when so much of our life is lived online. In my opinion, the two most evil companies on the planet with a blatant disregard for privacy because it is so fundamental to their business model are: Facebook (and by extension, WhatsApp and Instagram) and Google.</p>
+</blockquote>
+<h3 id="forget-about-smart-goals-5-unconventional-goal-setting-methods-to-try-instead"><a href="https://blog.doist.com/unconventional-goal-setting/">Forget About SMART Goals: 5 Unconventional Goal Setting Methods to Try Instead</a></h3>
+<blockquote>
+<p>Traditional goal setting didn’t work for you last year? Try on something new...</p>
+</blockquote>
+<h3 id="why-senior-engineers-get-nothing-done"><a href="https://swizec.com/blog/why-senior-engineers-get-nothing-done">Why senior engineers get nothing done</a></h3>
+<blockquote>
+<p>Remember when you started your job, how was it?</p>
+</blockquote>
+<h3 id="burned-out-and-fantasizing-about-a-big-life-reset-start-here"><a href="https://blog.doist.com/burnout-career-life-reset/">Burned Out and Fantasizing About a Big Life Reset? Start Here</a></h3>
+<blockquote>
+<p>Honest (and realistic) advice from those who’ve been there.</p>
+</blockquote>
+<h3 id="5-tips-to-speed-up-your-docker-image-build"><a href="https://vsupalov.com/5-tips-to-speed-up-docker-build">5 Tips to Speed up Your Docker Image Build</a></h3>
+<blockquote>
+<p>Are your Docker builds taking forever? Docker can be a valuable part of your tool belt, or a constant source of annoyance.</p>
+</blockquote>
+<h2 id="python">Python</h2>
+<h3 id="5-javascript-things-you-should-knowunderstand-as-a-python-developer"><a href="https://zanderle.com/musings/2021/1/5-javascript-things-you-should-knowithunderstand-as-a-python-developer/">5 JavaScript things you should know/understand as a Python Developer</a></h3>
+<blockquote>
+<p>Modern JavaScript is in many ways very similar to Python. But it's also very different.</p>
+</blockquote>
+<h3 id="web-authentication-methods-compared"><a href="https://testdriven.io/blog/web-authentication-methods/">Web Authentication Methods Compared</a></h3>
+<blockquote>
+<p>In this article, we'll look at the most commonly used methods for handling web authentication from the perspective of a Python web developer.</p>
+</blockquote>
+<h2 id="django">Django</h2>
+<h3 id="7-concepts-you-should-know-to-get-a-job-as-a-django-developer"><a href="https://justdjango.com/blog/7-concepts-to-get-a-job/">7 concepts you should know to get a job as a Django developer</a></h3>
+<blockquote>
+<p>In this post I'm going to explain the most important concepts you should know to get a job as a Django developer.</p>
+</blockquote>
+<h2 id="tools">Tools</h2>
+<h3 id="peterwhittakermydotfiles"><a href="https://github.com/PeterWhittaker/myDotFiles">PeterWhittaker/myDotFiles</a></h3>
+<blockquote>
+<p>Peter Whittaker dot files</p>
+</blockquote>
+<h3 id="docker-buildkit-faster-builds-new-features-and-now-its-stable"><a href="https://pythonspeed.com/articles/docker-buildkit">Docker BuildKit: faster builds, new features, and now it’s stable</a></h3>
+<blockquote>
+<p>Over the past few years the Docker developers have been working on a new backend for building images, BuildKit.</p>
+</blockquote>
+<h3 id="gcpsketchnote"><a href="https://github.com/priyankavergadia/GCPSketchnote">GCPSketchnote</a></h3>
+<blockquote>
+<p>GCPSketchnote</p>
+</blockquote>
+<h3 id="dockerfile-best-practices"><a href="https://github.com/hexops/dockerfile">Dockerfile best practices </a></h3>
+<blockquote>
+<p>This repository has best-practices for writing Dockerfiles that I (@slimsag) have quite painfully learned over the years both from my personal projects and from my work @sourcegraph.</p>
+</blockquote>
+<h3 id="rsync-time-backup"><a href="https://github.com/laurent22/rsync-time-backup">rsync-time-backup</a></h3>
+<blockquote>
+<p>This script offers Time Machine-style backup using rsync. It creates incremental backups of files and directories to the destination of your choice. The backups are structured in a way that makes it easy to recover any file at any point in time.</p>
+</blockquote>
+<h3 id="joplin"><a href="https://github.com/laurent22/joplin">Joplin</a></h3>
+<blockquote>
+<p>Joplin - an open source note taking and to-do application with synchronization capabilities for Windows, macOS, Linux, Android and iOS.</p>
+</blockquote>
+<h3 id="jenv"><a href="https://github.com/jenv/jenv">jenv</a></h3>
+<blockquote>
+<p>Master your Java Environment with jenv.</p>
+</blockquote>
+<h2 id="other-stuff">Other stuff</h2>
+<h3 id="minimal-safe-bash-script-template"><a href="https://betterdev.blog/minimal-safe-bash-script-template/">Minimal safe Bash script template</a></h3>
+<blockquote>
+<p>The opposite of "it's like riding a bike" is "it's like programming in bash".</p>
+</blockquote>
+<h2 id="videos">Videos</h2>
+<h3 id="speeding-up-your-docker-image-build-vladislav-supalov-pyconline-au-2020"><a href="https://www.youtube.com/watch?v=-LSiF8RNM1g">"Speeding up Your Docker Image Build" - Vladislav Supalov (PyConline AU 2020)</a></h3>
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/-LSiF8RNM1g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<h3 id="ittalk-2020"><a href="https://www.youtube.com/watch?v=jfOGnsPkNiw">IT.talk 2020</a></h3>
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/jfOGnsPkNiw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+    </article>
+
+        <div class="tags">
+            <p>tags: <a href="https://blog.tobked.dev/tag/python">python</a>, <a href="https://blog.tobked.dev/tag/blog">blog</a>, <a href="https://blog.tobked.dev/tag/podcast">podcast</a>, <a href="https://blog.tobked.dev/tag/series">series</a>, <a href="https://blog.tobked.dev/tag/aggregate">aggregate</a>, <a href="https://blog.tobked.dev/tag/summary">summary</a>, <a href="https://blog.tobked.dev/tag/month">month</a>, <a href="https://blog.tobked.dev/tag/2021">2021</a></p>
+        </div>
+
+    <hr>
+
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                            <li>
+                                <a href="https://tobked.dev">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-user fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/tobiaszkedzierski/?locale=en_US">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/TobKed">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://blog.tobked.dev/feeds/all.rss.xml">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                    </ul>
+<p class="copyright text-muted">
+    Blog powered by <a href="http://getpelican.com">Pelican</a>,
+    which takes great advantage of <a href="http://python.org">Python</a>. <br />
+    Main page header photo by <a href="https://juliakaczorowska.pl/">Julia Kaczorowska</a> (other by me). <br />
+        &copy;  Tobiasz Kedzierski
+</p>                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://blog.tobked.dev/theme/js/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://blog.tobked.dev/theme/js/bootstrap.min.js"></script>
+
+        <!-- Custom Theme JavaScript -->
+        <script src="https://blog.tobked.dev/theme/js/clean-blog.min.js"></script>
+
+</body>
+
+</html>

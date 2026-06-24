@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+            <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <title>Month summary - May 2023</title>
+
+            <link href="https://blog.tobked.dev//feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="ups and downs Full Atom Feed" />
+            <link href="https://blog.tobked.dev//feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="ups and downs Full RSS Feed" />
+        <!-- Bootstrap Core CSS -->
+        <link href="https://blog.tobked.dev/theme/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link href="https://blog.tobked.dev/theme/css/clean-blog.min.css" rel="stylesheet">
+
+        <!-- Code highlight color scheme -->
+            <link href="https://blog.tobked.dev/theme/css/code_blocks/github.css" rel="stylesheet">
+
+            <!-- CSS specified by the user -->
+            <link href="https://blog.tobked.dev/css/main.css" rel="stylesheet">
+
+        <!-- Custom Fonts -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+
+        <meta name="description" content="Interesting stuff from the month">
+
+        <meta name="author" content="Tobiasz Kedzierski">
+
+        <meta name="tags" content="python">
+        <meta name="tags" content="blog">
+        <meta name="tags" content="podcast">
+        <meta name="tags" content="series">
+        <meta name="tags" content="aggregate">
+        <meta name="tags" content="summary">
+        <meta name="tags" content="month">
+        <meta name="tags" content="2023">
+
+	                <meta property="og:locale" content="">
+		<meta property="og:site_name" content="ups and downs">
+
+	<meta property="og:type" content="article">
+            <meta property="article:author" content="https://blog.tobked.dev/author/tobiasz-kedzierski">
+	<meta property="og:url" content="https://blog.tobked.dev/2023-may-links">
+	<meta property="og:title" content="Month summary - May 2023">
+	<meta property="article:published_time" content="2023-05-31 00:00:00+02:00">
+            <meta property="og:description" content="Interesting stuff from the month">
+
+            <meta property="og:image" content="https://blog.tobked.dev/images/posts/2023/2023_05_xx.jpg">
+</head>
+
+<body class="article-2023-may-links">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="https://blog.tobked.dev/">ups and downs</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+
+                            <li><a href="https://blog.tobked.dev/pages/about-me">about me</a></li>
+                            <li><a href="https://blog.tobked.dev/pages/links">links</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+        <header class="intro-header" style="background-image: url('https://blog.tobked.dev//images/posts/2023/2023_05_xx.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="post-heading">
+                        <h1>Month summary - May 2023</h1>
+                        <span class="meta">Posted by
+                                <a href="https://blog.tobked.dev/author/tobiasz-kedzierski">Tobiasz Kedzierski</a>
+                             on 31.05.2023
+                        </span>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    <!-- Post Content -->
+    <article>
+        <h1 id="may-2023">May 2023</h1>
+<p>I am aggregating here some more or less interesting stuff of various IT related materials which I came across this month.
+Some of them are strictly related to the things I did or am currently doing.</p>
+<h2 id="some-thoughts">Some thoughts</h2>
+<p>Last month was intensive with Google Cloud-related stuff.
+I heavily used Cloud Run and was able to create a pretty robust and scalable system, which also includes PubSub and Cloud SQL.
+But the most exciting thing for me was learning <a href="https://fluxcd.io/flux/">Flux</a>, which is a GitOps tool that automatically keeps the Kubernetes cluster in sync with the source of configuration (git, of course).
+<a href="https://fluxcd.io/flux/">Flux</a> can not only scan for changes in configuration files but also periodically check if a newer Docker image has become available and update the respective configuration files and cluster accordingly.
+It is an amazing tool, and it was a pleasure to learn it.
+I am extremely excited to use it in my pet projects.</p>
+<h2 id="articles">Articles</h2>
+<h3 id="cli-tricks-every-developer-should-know"><a href="https://github.blog/2023-04-26-cli-tricks-every-developer-should-know/">CLI tricks every developer should know</a></h3>
+<blockquote>
+<p>Learn some tips, tricks, and tools for mastering the command line from GitHub’s own developers.</p>
+</blockquote>
+<h3 id="how-levelsfyi-scaled-to-millions-of-users-with-google-sheets-as-a-backend"><a href="https://www.levels.fyi/blog/scaling-to-millions-with-google-sheets.html">How Levels.fyi scaled to millions of users with Google Sheets as a backend</a></h3>
+<blockquote>
+<p>Our philosophy to scaling is simple, avoid premature optimization.</p>
+</blockquote>
+<h3 id="how-to-answer-tell-me-about-a-time-you-failed-in-a-job-interview"><a href="https://hbr.org/2023/01/how-to-answer-tell-me-about-a-time-you-failed-in-a-job-interview">How to Answer “Tell Me About a Time You Failed” in a Job Interview </a></h3>
+<blockquote>
+<p>Stories of failure can reveal important insights about an applicant’s maturity, resilience, temperament,
+openness to learning, and ability to receive critical feedback — qualities that won’t appear on a resume or cover letter and probably won’t be brought up by the applicant unsolicited.</p>
+</blockquote>
+<h3 id="this-blog-is-hosted-on-my-android-phone"><a href="https://androidblog.a.pinggy.io/">This blog is hosted on my Android phone</a></h3>
+<blockquote>
+<p>This post describes how I turned my Android device into a web server which can be accessed from a public URL, and how you can do it too.</p>
+</blockquote>
+<h3 id="julia-evans-introducing-implement-dns-in-a-weekend"><a href="https://jvns.ca/blog/2023/05/12/introducing-implement-dns-in-a-weekend/">Julia Evans: Introducing "Implement DNS in a Weekend"</a></h3>
+<blockquote>
+<p>Hello! I’m excited to announce a project I’ve been working on for a long time: a free guide to implementing your own DNS resolver in a weekend.</p>
+</blockquote>
+<h3 id="julia-evans-learning-dns-in-10-years"><a href="https://jvns.ca/blog/2023/05/08/new-talk-learning-dns-in-10-years/">Julia Evans: Learning DNS in 10 years</a></h3>
+<blockquote>
+<p>Here’s a keynote I gave at RubyConf Mini last year: Learning DNS in 10 years. It’s about strategies I use to learn hard things. I just noticed that they’d released the video the other day, so I’m just posting it now even though I gave the talk 6 months ag</p>
+</blockquote>
+<h2 id="productivity">Productivity</h2>
+<h3 id="why-engineers-need-to-be-bored"><a href="https://onengineering.substack.com/p/why-engineers-need-to-be-bored">Why engineers need to be bored.</a></h3>
+<blockquote>
+<p>An analysis on boredom in engineering productivity and how it can lead to deeper innovation.</p>
+</blockquote>
+<h2 id="ai">AI</h2>
+<h3 id="complete-guide-to-setup-autogpt-revolutionize-your-task-automation-with-gpt-4"><a href="https://scribe.rip/complete-guide-to-setup-autogpt-revolutionize-your-task-automation-with-gpt-4-39eda5a85821">Complete Guide To Setup AutoGPT &amp; Revolutionize Your Task Automation with GPT-4</a></h3>
+<blockquote>
+<p>Auto-GPT is an experimental open-source project that allows you to define a specific role (e.g., “book market analyst”) and a bunch of goals (e.g., “research the most successful sci-fi novels of 2022”, “summarize them”, “save the summary to a file," etc.) and let GPT-4 automatically create and perform all the necessary tasks that are needed to achieve your goals.</p>
+</blockquote>
+<h2 id="python">Python</h2>
+<h3 id="miguel-grinberg-whats-new-in-sqlalchemy-20"><a href="https://blog.miguelgrinberg.com/post/what-s-new-in-sqlalchemy-2-0">Miguel Grinberg: What's New in SQLAlchemy 2.0?</a></h3>
+<blockquote>
+<p>As with previous software reviews, this is going to be an opinionated overview.</p>
+</blockquote>
+<h3 id="parallel-nested-for-loops-in-python"><a href="https://superfastpython.com/parallel-nested-for-loops-in-python/#Single_Process_Pool_and_Shared_Queue_unbounded">Parallel Nested For-Loops in Python</a></h3>
+<blockquote>
+<p>In this tutorial, you will discover how to change a nested for-loop to be concurrent or parallel in Python with a suite of worked examples.</p>
+</blockquote>
+<h3 id="limiting-concurrency-in-python-asyncio-the-story-of-async-imap_unordered"><a href="https://death.andgravity.com/limit-concurrency">Limiting concurrency in Python asyncio: the story of async imap_unordered()</a></h3>
+<blockquote>
+<p>In this article, we'll look at a few ways of limiting concurrency in asycio, and find out which one is best.</p>
+</blockquote>
+<h3 id="trusted-publishing-how-to-publish-to-pypi-with-github-actions"><a href="https://pgjones.dev/blog/trusted-plublishing-2023/">Trusted Publishing; how to publish to PyPI with Github Actions</a></h3>
+<blockquote>
+<p>PyPI recently introduced Trusted Publishing via a Github action. Allowing for a relatively easy and secure method to publish to PyPI.</p>
+</blockquote>
+<h3 id="how-to-write-tests-that-need-a-lot-of-data"><a href="https://gogognome.nl/how-to-write-tests-that-need-a-lot-of-data.html">How to write tests that need a lot of data?</a></h3>
+<blockquote>
+<p>A couple of techniques tried out by my teammates and I helped us to write clean tests that used a lot of data. In this post I want to share these techniques with you.</p>
+</blockquote>
+<h2 id="django">Django</h2>
+<h3 id="django-docker"><a href="https://github.com/amerkurev/django-docker-template">Django + Docker = ❤️</a></h3>
+<blockquote>
+<p>This simple Django project is an excellent template for your future projects.
+It includes everything you need to quickly set up a quality technology stack and start developing your web application's business logic, skipping all the complex deployment issues at an early stage.</p>
+</blockquote>
+<h2 id="python-libraries">Python libraries</h2>
+<h3 id="atbswp"><a href="https://github.com/rmpr/atbswp">Atbswp</a></h3>
+<blockquote>
+<p>Literally Automate the boring stuff with Python, allows the user to record his mouse and keyboard actions and reproduce them identically as many times as he wants.</p>
+</blockquote>
+<h2 id="tools">Tools</h2>
+<h3 id="devops-with-docker"><a href="https://devopswithdocker.com/">DevOps with Docker</a></h3>
+<blockquote>
+<p>This course provides an introduction to container technologies, with a particular focus on Docker and container orchestration using Docker Compose.</p>
+</blockquote>
+<h3 id="awesome-terraform"><a href="https://github.com/shuaibiyy/awesome-terraform">Awesome Terraform</a></h3>
+<blockquote>
+<p>Curated list of resources on HashiCorp's Terraform.</p>
+</blockquote>
+<h3 id="frogmouth"><a href="https://github.com/Textualize/frogmouth">Frogmouth</a></h3>
+<blockquote>
+<p>A Markdown browser for your terminal</p>
+</blockquote>
+<h3 id="flux"><a href="https://fluxcd.io/flux/">Flux</a></h3>
+<blockquote>
+<p>Flux is a tool for keeping Kubernetes clusters in sync with sources of configuration (like Git repositories), and automating updates to configuration when there is new code to deploy.</p>
+</blockquote>
+<h2 id="cloud">Cloud</h2>
+<h3 id="how-i-design-12-factor-cloud-native-app-on-gcp"><a href="https://medium.com/google-cloud/how-i-design-12-factor-cloud-native-app-on-gcp-e0af4fccb1b0">How I design 12-factor cloud native app on GCP.</a></h3>
+<blockquote>
+<p>The 12-factor methodology is programming language agnostic and works with any combination of backing services.</p>
+</blockquote>
+<h3 id="envoy"><a href="https://github.com/envoyproxy/envoy">Envoy</a></h3>
+<blockquote>
+<p>Envoy is an open source edge and service proxy, designed for cloud-native applications.</p>
+</blockquote>
+<h3 id="kubernetes-network-policy-recipes"><a href="https://github.com/ahmetb/kubernetes-network-policy-recipes">Kubernetes Network Policy Recipes</a></h3>
+<blockquote>
+<p>This repository contains various use cases of Kubernetes Network Policies and sample YAML files to leverage in your setup.
+If you ever wondered how to drop/restrict traffic to applications running on Kubernetes, read on.</p>
+</blockquote>
+<h2 id="other-stuff">Other stuff</h2>
+<h3 id="good-tech-things"><a href="https://www.goodtechthings.com/">Good Tech Things </a></h3>
+<blockquote>
+<p>Good Tech Things are comics, videos, flowcharts, and infographics handcrafted by Forrest Brazeal.</p>
+</blockquote>
+<h3 id="work-chronicles"><a href="https://workchronicles.com/comics/">work chronicles</a></h3>
+<blockquote>
+<p>Unwind from your busy schedule with a smile.</p>
+</blockquote>
+<h2 id="videos">Videos</h2>
+<h3 id="keynote-oh-the-humanity-kate-gregory-c-on-sea-2019"><a href="https://www.youtube.com/watch?v=SzoquBerhUc">KEYNOTE: Oh The Humanity! - Kate Gregory [C++ on Sea 2019]</a></h3>
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/SzoquBerhUc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<h3 id="advanced-git-magic-pauline-vos-full-stack-europe-2022"><a href="https://www.youtube.com/watch?v=9TGdH7CrNyE">Advanced Git Magic - Pauline Vos - Full Stack Europe 2022</a></h3>
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/9TGdH7CrNyE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<h3 id="anais-urlichs-full-gitops-tutorial-getting-started-with-flux-cd"><a href="https://www.youtube.com/watch?v=5u45lXmhgxA">Anais Urlichs: Full GitOps Tutorial: Getting started with Flux CD </a></h3>
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/5u45lXmhgxA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+    </article>
+
+        <div class="tags">
+            <p>tags: <a href="https://blog.tobked.dev/tag/python">python</a>, <a href="https://blog.tobked.dev/tag/blog">blog</a>, <a href="https://blog.tobked.dev/tag/podcast">podcast</a>, <a href="https://blog.tobked.dev/tag/series">series</a>, <a href="https://blog.tobked.dev/tag/aggregate">aggregate</a>, <a href="https://blog.tobked.dev/tag/summary">summary</a>, <a href="https://blog.tobked.dev/tag/month">month</a>, <a href="https://blog.tobked.dev/tag/2023">2023</a></p>
+        </div>
+
+    <hr>
+
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                            <li>
+                                <a href="https://tobked.dev">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-user fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/tobiaszkedzierski/?locale=en_US">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/TobKed">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://blog.tobked.dev/feeds/all.rss.xml">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                    </ul>
+<p class="copyright text-muted">
+    Blog powered by <a href="http://getpelican.com">Pelican</a>,
+    which takes great advantage of <a href="http://python.org">Python</a>. <br />
+    Main page header photo by <a href="https://juliakaczorowska.pl/">Julia Kaczorowska</a> (other by me). <br />
+        &copy;  Tobiasz Kedzierski
+</p>                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://blog.tobked.dev/theme/js/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://blog.tobked.dev/theme/js/bootstrap.min.js"></script>
+
+        <!-- Custom Theme JavaScript -->
+        <script src="https://blog.tobked.dev/theme/js/clean-blog.min.js"></script>
+
+</body>
+
+</html>

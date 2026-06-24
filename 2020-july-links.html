@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+            <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <title>Month summary - July 2020</title>
+
+            <link href="https://blog.tobked.dev//feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="ups and downs Full Atom Feed" />
+            <link href="https://blog.tobked.dev//feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="ups and downs Full RSS Feed" />
+        <!-- Bootstrap Core CSS -->
+        <link href="https://blog.tobked.dev/theme/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link href="https://blog.tobked.dev/theme/css/clean-blog.min.css" rel="stylesheet">
+
+        <!-- Code highlight color scheme -->
+            <link href="https://blog.tobked.dev/theme/css/code_blocks/github.css" rel="stylesheet">
+
+            <!-- CSS specified by the user -->
+            <link href="https://blog.tobked.dev/css/main.css" rel="stylesheet">
+
+        <!-- Custom Fonts -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+
+        <meta name="description" content="Interesting stuff from the month">
+
+        <meta name="author" content="Tobiasz Kedzierski">
+
+        <meta name="tags" content="python">
+        <meta name="tags" content="blog">
+        <meta name="tags" content="podcast">
+        <meta name="tags" content="series">
+        <meta name="tags" content="aggregate">
+        <meta name="tags" content="summary">
+        <meta name="tags" content="month">
+        <meta name="tags" content="2020">
+
+	                <meta property="og:locale" content="">
+		<meta property="og:site_name" content="ups and downs">
+
+	<meta property="og:type" content="article">
+            <meta property="article:author" content="https://blog.tobked.dev/author/tobiasz-kedzierski">
+	<meta property="og:url" content="https://blog.tobked.dev/2020-july-links">
+	<meta property="og:title" content="Month summary - July 2020">
+	<meta property="article:published_time" content="2020-07-31 00:00:00+02:00">
+            <meta property="og:description" content="Interesting stuff from the month">
+
+            <meta property="og:image" content="https://blog.tobked.dev/images/poli_photo_by_julia_kaczorowska_edit.png">
+</head>
+
+<body class="article-2020-july-links">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="https://blog.tobked.dev/">ups and downs</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+
+                            <li><a href="https://blog.tobked.dev/pages/about-me">about me</a></li>
+                            <li><a href="https://blog.tobked.dev/pages/links">links</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+        <header class="intro-header" style="background-image: url('https://blog.tobked.dev/images/poli_photo_by_julia_kaczorowska_edit.png')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="post-heading">
+                        <h1>Month summary - July 2020</h1>
+                        <span class="meta">Posted by
+                                <a href="https://blog.tobked.dev/author/tobiasz-kedzierski">Tobiasz Kedzierski</a>
+                             on 31.07.2020
+                        </span>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    <!-- Post Content -->
+    <article>
+        <h1 id="july-2020">July 2020</h1>
+<p>I am aggregating here some more or less interesting stuff of various IT related materials which I came across this month.
+Some of them are strictly related to the things I did or am currently doing.</p>
+<h2 id="some-thoughts">Some thoughts</h2>
+<p>This month I made a few improvements in the release process of <a href="https://github.com/apache/beam">Apache Beam</a> Python SDK and its CI/CD.
+I connected building source distribution and wheels on GitHub Action with existing release scripts to work in cooperation now.
+This allowed for the separate repository used for package preparation to be deprecated.
+I spent a lot of time working with GitHub Action, therefore I released my own action called <a href="https://github.com/TobKed/github-forks-sync-action">github-forks-sync-action</a>.
+It can be used to synchronise forked repositories with upstream.
+I also made a contribution to <a href="https://github.com/apache/airflow">apache/airflow</a> related to REST API by implementing DagSource endpoint.</p>
+<h2 id="articles">Articles</h2>
+<h3 id="beyond-the-cache-with-python-and-redis"><a href="https://redislabs.com/blog/beyond-the-cache-with-python">Beyond the Cache with Python and Redis</a></h3>
+<blockquote>
+<p>A look at using Redis for caching, sub/pub events, data streaming, as a search engine, and even a primary database.</p>
+</blockquote>
+<h3 id="git-interview-questions"><a href="https://www.git-tower.com/learn/git/faq/git-interview-questions">Git Interview Questions</a></h3>
+<blockquote>
+<p>The essential list of frequently asked questions around Git and Version Control, including answers.</p>
+</blockquote>
+<h3 id="why-you-shouldnt-use-env-variables-for-secret-data"><a href="https://diogomonica.com/2017/03/27/why-you-shouldnt-use-env-variables-for-secret-data/">Why you shouldn't use ENV variables for secret data</a></h3>
+<blockquote>
+<p>The twelve-factor app manifesto recommends that you pass application configs as ENV variables. However, if your application requires a password, SSH private key, TLS Certificate, or any other kind of sensitive data, you shouldn't pass it alongside your configs.</p>
+</blockquote>
+<h3 id="pydev-of-the-week-philip-james"><a href="https://www.blog.pythonlibrary.org/2020/07/06/pydev-of-the-week-philip-james">PyDev of the Week: Philip James</a></h3>
+<blockquote>
+<p>Philip James (@phildini) has spoken at various PyCons and DjangoCons and is the PyDev of the Week!</p>
+</blockquote>
+<h2 id="python">Python</h2>
+<h3 id="pickles-nine-flaws"><a href="https://nedbatchelder.com/blog/202006/pickles_nine_flaws.html">Pickle’s nine flaws</a></h3>
+<blockquote>
+<p>Python’s pickle module is a very convenient way to serialize and de-serialize objects. It needs no schema, and can handle arbitrary Python objects. But it has problems. This post briefly explains the problems.</p>
+</blockquote>
+<h2 id="django">Django</h2>
+<h3 id="invalid-http_host-header-errors-in-django-and-nginx"><a href="https://www.borfast.com/blog/2020/07/06/invalid-http_host-header-errors-in-django-and-nginx">Invalid HTTP_HOST header errors in Django and Nginx</a></h3>
+<blockquote>
+<p>An overview and fix for the common issue of Invalid HTTP_HOST header errors when running behind Nginx.</p>
+</blockquote>
+<h3 id="running-in-production-a-site-to-view-3d-scans-of-cars-with-twinner"><a href="https://runninginproduction.com/podcast/40-a-site-to-view-3d-scans-of-cars-with-twinner">Running in Production: A Site to View 3D Scans of Cars with Twinner</a></h3>
+<blockquote>
+<p>Jesse Hunt talks about building a site with Django that lets you view 3D scans of cars with Twinner. It’s hosted on 2 Heroku hobby Dynos and has been up and running in production since January 2020.</p>
+</blockquote>
+<h3 id="pure-serverless-django-with-django-gcloud-connectors"><a href="https://dev.to/googlecloud/pure-serverless-django-with-django-gcloud-connectors-apo">Pure serverless Django with django-gcloud-connectors</a></h3>
+<blockquote>
+<p>Katie McLaughlin on configuring Django with the non-relational Google Datastore.</p>
+</blockquote>
+<h3 id="django-log-in-with-email-not-username"><a href="https://learndjango.com/tutorials/django-log-in-email-not-username">Django Log In with Email not Username</a></h3>
+<blockquote>
+<p>Update the default username/email/password pattern on login/signup with just email/password using a custom user model and django-allauth.</p>
+</blockquote>
+<h2 id="python-libraries">Python libraries</h2>
+<h3 id="tuna"><a href="https://github.com/nschloe/tuna">tuna</a></h3>
+<blockquote>
+<p>Performance analysis for Python.</p>
+</blockquote>
+<h2 id="tools">Tools</h2>
+<h3 id="awesome-actions"><a href="https://github.com/sdras/awesome-actions">Awesome Actions</a></h3>
+<blockquote>
+<p>A curated list of awesome things related to GitHub Actions.</p>
+</blockquote>
+<h3 id="github-actions-advent-calendar"><a href="https://www.edwardthomson.com/blog/github_actions_advent_calendar.html">GitHub Actions Advent Calendar</a></h3>
+<blockquote>
+<p>During the December 2019 Edward Thomson published an advent calendar of top tips for GitHub Actions.</p>
+</blockquote>
+<h2 id="other-stuff">Other stuff</h2>
+<h3 id="help-message-for-shell-scripts"><a href="https://samizdat.dev/help-message-for-shell-scripts/">Help message for shell scripts</a></h3>
+<blockquote>
+<p>Yeah, there is always a way to show a message using cat (meow) or a bunch of echo calls. But there is a neat trick.</p>
+</blockquote>
+<h3 id="50-ideas-that-changed-my-life"><a href="https://www.perell.com/blog/50-ideas-that-changed-my-life">50 ideas that changed my life</a></h3>
+<blockquote>
+<p>These are my guiding principles and the light of intellectual life of the author. All of them will help you think better, and I hope they inspire curiosity.</p>
+</blockquote>
+<h3 id="git-commit-accepts-several-message-flags-m-to-allow-multiline-commits"><a href="https://www.stefanjudis.com/today-i-learned/git-commit-accepts-several-message-flags-m-to-allow-multiline-commits/">git commit accepts several message flags (-m) to allow multiline commits</a></h3>
+<blockquote>
+<p>When you use git on the command line you might have used the message flag (-m). It allows developers to define commit messages inline when calling git commit.</p>
+</blockquote>
+<h3 id="grpc-episode-75-heroku-podcast-codeish"><a href="https://www.heroku.com/podcasts/codeish/75-grpc">gRPC → Episode 75 - Heroku Podcast codeish</a></h3>
+<blockquote>
+<p>We’ll explore the capabilities of gRPC, a modern way for clients and servers to reliably communicate.</p>
+</blockquote>
+<h2 id="videos">Videos</h2>
+<h3 id="tutorial-katie-mclaughlin-deploying-django-on-serverless-infrastructure-pycon-2020"><a href="https://www.youtube.com/watch?v=oYy9_4fm56o">Tutorial: Katie McLaughlin - Deploying Django on Serverless Infrastructure - PyCon 2020</a></h3>
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%"' src="https://www.youtube-nocookie.com/embed/oYy9_4fm56o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<h3 id="workshop-google-charles-engelke-serverless-python-applications-with-google-cloud-pycon-2020"><a href="https://www.youtube.com/watch?v=4bjX9iKqpXA">Workshop: Google: Charles Engelke - Serverless Python Applications with Google Cloud - PyCon 2020</a></h3>
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%"' src="https://www.youtube-nocookie.com/embed/4bjX9iKqpXA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+    </article>
+
+        <div class="tags">
+            <p>tags: <a href="https://blog.tobked.dev/tag/python">python</a>, <a href="https://blog.tobked.dev/tag/blog">blog</a>, <a href="https://blog.tobked.dev/tag/podcast">podcast</a>, <a href="https://blog.tobked.dev/tag/series">series</a>, <a href="https://blog.tobked.dev/tag/aggregate">aggregate</a>, <a href="https://blog.tobked.dev/tag/summary">summary</a>, <a href="https://blog.tobked.dev/tag/month">month</a>, <a href="https://blog.tobked.dev/tag/2020">2020</a></p>
+        </div>
+
+    <hr>
+
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                            <li>
+                                <a href="https://tobked.dev">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-user fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/tobiaszkedzierski/?locale=en_US">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/TobKed">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://blog.tobked.dev/feeds/all.rss.xml">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                    </ul>
+<p class="copyright text-muted">
+    Blog powered by <a href="http://getpelican.com">Pelican</a>,
+    which takes great advantage of <a href="http://python.org">Python</a>. <br />
+    Main page header photo by <a href="https://juliakaczorowska.pl/">Julia Kaczorowska</a> (other by me). <br />
+        &copy;  Tobiasz Kedzierski
+</p>                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://blog.tobked.dev/theme/js/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://blog.tobked.dev/theme/js/bootstrap.min.js"></script>
+
+        <!-- Custom Theme JavaScript -->
+        <script src="https://blog.tobked.dev/theme/js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
