@@ -17,11 +17,18 @@ Below you'll find a mix of articles, links, and resources, some of which tie int
 miso
 cmux
 [Kubernetes and retiring at the top with Kelsey Hightower - The Pragmatic Engineer](https://www.youtube.com/watch?v=UlXpOGIpITM)
-\[Mitchell Hashimoto’s new way of writing code - The Pragmatic Engineer\]\](https://www.youtube.com/watch?v=WjckELpzLOU)
+[Mitchell Hashimoto’s new way of writing code - The Pragmatic Engineer](https://www.youtube.com/watch?v=WjckELpzLOU)
+[GitHub - DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail)
+
+https://chapp.io
 
 ______________________________________________________________________
 
 ## Articles
+
+### [Now that the robots can build it, someone has to know what to build · chapp.io](https://chapp.io/articles/what-does-success-look-like)
+
+> We took two days to build something real. We spent the first one not building anything.
 
 ### [Daring Fireball: What Is a Dickover?](https://daringfireball.net/2026/05/what_is_a_dickover)
 
@@ -33,7 +40,7 @@ John Gruber's article defines 'dickover' as a term for intrusive modal panels on
 
 > Somewhere along the way, single-tasking has become a must-have skill.
 
-### \[Why Spreading Yourself Thin Feels Like Winning - A Life Engineered\]\](<https://alifeengineered.substack.com/p/why-spreading-yourself-thin-feels>)
+### [Why Spreading Yourself Thin Feels Like Winning - A Life Engineered](https://alifeengineered.substack.com/p/why-spreading-yourself-thin-feels)
 
 > Every commitment you take on is another border you have to defend
 
@@ -49,9 +56,15 @@ John Gruber's article defines 'dickover' as a term for intrusive modal panels on
 
 ## AI
 
-### [GitHub - DietrichGebert/ponytail: Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.](https://github.com/DietrichGebert/ponytail)
+### [Spec-Driven Development (SDD) — best practices (so far) | blog.allegro.tech](https://blog.allegro.tech/2026/06/spec-driven-development-best-practices.html)
 
-> Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.
+> Specification-Driven Development (SDD) is a software development methodology in which the specification is the single source of truth about the system. Code is generated based on that specification.
+
+### [The New SDLC With Vibe Coding | Kaggle](https://www.kaggle.com/whitepaper-the-new-SDLC-with-vibe-coding)
+
+Whitepaper from google
+
+> From ad-hoc prompting to Agentic Engineering
 
 ### [LLMs and performative productivity - Josh Collinsworth](https://joshcollinsworth.com/blog/productivity)
 
@@ -67,19 +80,17 @@ The article explores the difficulties of managing codebases left by 'rockstar' d
 
 ### [How to Keep Your Developer Instincts When AI Writes the Code — Bob Belderbos | Developer & Team Coaching](https://belderbos.dev/blog/dont-delegate-the-friction/)
 
-> AI agents will write your code if you let them. Here's the deliberate practice routine I use to stay technical when AI increasingly writes code for me.
-
 #### AI generated summary
 
 The article emphasizes the importance of maintaining developer instincts and judgment in the AI era by engaging in deliberate practice and embracing friction in coding processes.
 
-### [GitHub - chopratejas/headroom: Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server. · GitHub](https://github.com/chopratejas/headroom)
+### [GitHub - DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail)
 
-> Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server. - chopratejas/headroom
+> Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.
 
-#### AI generated summary
+### [GitHub - chopratejas/headroom](https://github.com/chopratejas/headroom)
 
-Headroom is a context compression tool for AI agents that reduces token usage by compressing inputs before they reach the LLM, offering significant savings and maintaining accuracy.
+> Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server.
 
 ## Security
 
@@ -175,7 +186,7 @@ This page allows users to search the archive of 'unknow.news' newsletters using 
 
 An insightful conversation with Kelsey Hightower reflecting on his impactful career in the Kubernetes ecosystem and his decision to retire at the peak of his professional journey.
 
-### \[Mitchell Hashimoto’s new way of writing code - The Pragmatic Engineer\]\](https://www.youtube.com/watch?v=WjckELpzLOU)
+### [Mitchell Hashimoto’s new way of writing code - The Pragmatic Engineer](https://www.youtube.com/watch?v=WjckELpzLOU)
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/WjckELpzLOU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
