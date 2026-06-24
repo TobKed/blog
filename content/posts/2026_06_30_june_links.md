@@ -16,6 +16,8 @@ Below you'll find a mix of articles, links, and resources, some of which tie int
 
 miso
 cmux
+[Kubernetes and retiring at the top with Kelsey Hightower - The Pragmatic Engineer](https://www.youtube.com/watch?v=UlXpOGIpITM)
+\[Mitchell Hashimoto’s new way of writing code - The Pragmatic Engineer\]\](https://www.youtube.com/watch?v=WjckELpzLOU)
 
 ______________________________________________________________________
 
@@ -161,9 +163,27 @@ This page allows users to search the archive of 'unknow.news' newsletters using 
 
 > Open Source Ecology is an organization focused on developing open source industrial machines that can be made for a fraction of commercial costs. They share their designs online for free, aiming to create an open source economy that increases innovation through open collaboration.
 
-## Podcasts
-
 ## Videos
+
+### [Kubernetes and retiring at the top with Kelsey Hightower - The Pragmatic Engineer](https://www.youtube.com/watch?v=UlXpOGIpITM)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/UlXpOGIpITM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+#### AI generated summary
+
+An insightful conversation with Kelsey Hightower reflecting on his impactful career in the Kubernetes ecosystem and his decision to retire at the peak of his professional journey.
+
+### \[Mitchell Hashimoto’s new way of writing code - The Pragmatic Engineer\]\](https://www.youtube.com/watch?v=WjckELpzLOU)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/WjckELpzLOU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+#### AI generated summary
+
+Mitchell Hashimoto shares his latest insights and innovative approaches to writing code, exploring how new tools and methodologies are shaping the future of software development.
 
 ### [Jak zbudowałam markę osobistą i czy było warto • Ola Kunysz • Beyond Code 2024](https://youtu.be/VQsshF7C-4Q)
 
@@ -174,16 +194,6 @@ This page allows users to search the archive of 'unknow.news' newsletters using 
 #### AI generated summary
 
 In this presentation from the Beyond Code 2024 conference, Ola Kunysz shares her insights on building a personal brand in the IT industry. She discusses the challenges, the dangers of forcing the process, and the risk of burnout while highlighting key lessons learned.
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
-
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
-
-> Playback on other websites has been disabled by the video owner. [Watch on YouTube](https://www.youtube.com/watch?v=VIDEO_ID)
 
 ### [Which Antigravity surface should I use? 2.0 vs CLI vs IDE vs SDK - YouTube](https://www.youtube.com/watch?v=04IqH38SlOI)
 
@@ -254,3 +264,43 @@ The video 'VibeOS - Fully Hallucinated Operating System' presents a creative con
 #### AI generated summary
 
 This video explores how artificial intelligence is used to fight fraud, detailing the methods and technologies involved in detecting and preventing fraudulent activities.
+
+### [Keynote: After the AI Hype – What’s Real, and What’s Next - Richard Campbell - 2026](https://www.youtube.com/watch?v=uWnUnMphmPM)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/uWnUnMphmPM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+#### AI generated summary
+
+Richard Campbell discusses the current state of AI beyond the initial hype, exploring practical applications and what developers can expect in the near future.
+
+### [Claude Code Crash Course For Developers](https://www.youtube.com/watch?v=C2GpeepcmYs)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/C2GpeepcmYs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+#### AI generated summary
+
+A comprehensive tutorial on using Claude to write code, improve developer productivity, and integrate AI seamlessly into development workflows.
+
+### [Kubernetes for SysAdmins | Kelsey Hightower at PuppetConf | Talk & Demo](https://www.youtube.com/watch?v=HlAXp0-M6SY)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/HlAXp0-M6SY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+#### AI generated summary
+
+Kelsey Hightower provides a practical overview and demonstration of Kubernetes tailored specifically for system administrators, highlighting key concepts and operational workflows.
+
+### [What Most Engineers Get Wrong About AI and Career | Kelsey Hightower](https://www.youtube.com/watch?v=tCehFMwjWqM)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/tCehFMwjWqM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+#### AI generated summary
+
+Kelsey Hightower shares his insights on how software engineers should navigate their careers in the age of AI, dispelling common misconceptions and focusing on foundational skills.
