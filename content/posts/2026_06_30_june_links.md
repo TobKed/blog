@@ -52,9 +52,17 @@ John Gruber's article defines 'dickover' as a term for intrusive modal panels on
 
 > Od włączenia zasilania do działającej przestrzeni użytkownika — oprogramowanie układowe (firmware), program ładujący (bootloader), inicjalizacja jądra i init. Koncentracja na x86-64 i UEFI, z uwagami dotyczącymi BIOS/MBR tam, gdzie to istotne.
 
+### [p99 0 ms\* autocomplete for 240 million domain names](https://ruurtjan.com/articles/p99-0ms-autocomplete-for-240-million-domain-names)
+
+> The autocomplete is the main way to navigate Wirewiki, so it should be as complete, accurate and fast as possible. I want it to be instant. Like, next frame instant.
+
 ## Productivity
 
 ## AI
+
+### [Announcing Stack Overflow for Agents](https://stackoverflow.blog/2026/06/10/announcing-stack-overflow-for-agents/)
+
+> If your coding agent has questions, Stack Overflow for Agents has answers, now in beta.
 
 ### [Spec-Driven Development (SDD) — best practices (so far) | blog.allegro.tech](https://blog.allegro.tech/2026/06/spec-driven-development-best-practices.html)
 
@@ -103,6 +111,13 @@ The npm left-pad incident in 2016 involved the removal of the 'left-pad' package
 ## Python
 
 ## Django
+
+### [Django Tasks: Exploring the Built-in Tasks Framework - Real Python](https://realpython.com/django-tasks/)
+
+> Before Django Tasks, you’d reach for Celery, RQ, or Django Q, each with its own API, broker setup, and learning curve.
+> The new framework standardizes the workflow. You define a task with a decorator, enqueue it, and check on it later, all through django.tasks.
+> That single entry point is what’s new, not a full Celery replacement.
+> For production, you still install a third-party backend such as django-tasks-db and run a separate worker.
 
 ## Python libraries
 
