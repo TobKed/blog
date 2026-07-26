@@ -35,6 +35,26 @@ ______________________________________________________________________
 > Writing a design doc forces you to think through important decisions before you waste time on the wrong implementation or paint yourself into a corner.
 > It’s also the best way to coordinate design decisions among teammates and partner teams.
 
+### [A Life Engineered: 5 More Things World-Class Engineers Do That You Don't](https://alifeengineered.substack.com/p/5-more-things-world-class-engineers)
+
+> More of what the truly elite do differently. Copy them.
+
+### [A Life Engineered: 5 Simple Ways to Impress Your Boss](https://alifeengineered.substack.com/p/5-simple-ways-to-impress-your-boss-dc2)
+
+> Simple actions that you can do today that place you in the "stars" category
+
+### [Julia Evans: Learning a few things about running SQLite](https://jvns.ca/blog/2026/07/17/learning-about-running-sqlite/)
+
+> It’s always kind of fun to see how long it takes me to learn sort of basic things about the technologies I’m using.
+
+### [Design Patterns Suck](https://luminousmen.com/post/design-patterns-suck/)
+
+> Design patterns are overrated, overused, and often flat-out unnecessary.
+
+### [Be the Idiot](https://luminousmen.substack.com/p/be-the-idiot)
+
+> Most disasters start as unasked questions - so ask them, even if you feel dumb
+
 ## Productivity
 
 ## AI
@@ -48,6 +68,14 @@ ______________________________________________________________________
 > Trzysta złotych, cztery tygodnie i trzy modele AI.
 > Czy z takiej mieszanki może wyjść coś innego niż głośny jęk zawodu i szybki telefon po chwilówkę?
 > Okazuje się, że tak… na tym biznesie da się nawet zarobić.
+
+### [Building an Intern](https://cra.mr/building-an-intern/)
+
+> I’ve been building Junior for the last four months. The short version: it’s an intern in Slack.
+
+### [Danel Miessler - Kimi K3 Might Have Just Started a Crash of the US Economy](https://danielmiessler.com/blog/kimi-k3-us-economy)
+
+> People don't realize how much the U.S. economy currently depends on U.S. AI lab dominance
 
 ## Security
 
@@ -86,6 +114,10 @@ ______________________________________________________________________
 ## Cloud
 
 ## Other stuff
+
+### [GitHub - EbookFoundation/free-programming-books](https://github.com/EbookFoundation/free-programming-books)
+
+> 📚 Freely available programming books
 
 ## Podcasts
 
