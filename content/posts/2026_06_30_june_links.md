@@ -14,13 +14,42 @@ Below you'll find a mix of articles, links, and resources, some of which tie int
 
 ## Some thoughts
 
-miso
-cmux
-[Kubernetes and retiring at the top with Kelsey Hightower - The Pragmatic Engineer](https://www.youtube.com/watch?v=UlXpOGIpITM)
-[Mitchell Hashimoto’s new way of writing code - The Pragmatic Engineer](https://www.youtube.com/watch?v=WjckELpzLOU)
-[GitHub - DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail)
+### [chapp.io](https://chapp.io)
 
-https://chapp.io
+Kudos to my colleague and former manager Thomas Biesaart for creating his personal website https://chapp.io. I love it.
+
+### [cmux](https://github.com/manaflow-ai/cmux)
+
+I tried [cmux](https://github.com/manaflow-ai/cmux), which is a "Ghostty-based macOS terminal with vertical tabs and notifications for AI coding agents".
+Looks nice and modern—you can feel like a hackerman. I am not saying no, but for my current workflow it is not suitable; I am sticking to my Ghostty and **tmux** configuration for now.
+
+### [ponytail](https://github.com/DietrichGebert/ponytail)
+
+I am often overwhelmed / shocked / disappointed with the amount of code that agents sometimes generate for even the simplest tasks.
+That's why I am testing [ponytail](https://github.com/DietrichGebert/ponytail) - "Makes your AI agent think like the laziest senior dev in the room.".
+And I love the analogy from the project readme:
+
+> You know him. Long ponytail. Oval glasses. Has been at the company longer than the version control. You show him fifty lines; he looks at them, says nothing, and replaces them with one.
+>
+> Ponytail puts him inside your AI agent.
+
+### Kelsey Hightower, Mitchell Hashimoto in The Pragmatic Engineer
+
+I saw a podcast with Kelsey Hightower, the legend of Kubernetes, in my recommendations, but I also got a live, face-to-face recommendation for it, so I felt obligated to watch it in focus.
+Very inspiring, interesting, and uplifting story of career and growth.
+I definitely recommend it as well (also episode whith Mitchell Hashimoto is a must-watch for everyone who enjoys Terraform and Ghostty)
+
+[Kubernetes and retiring at the top with Kelsey Hightower - The Pragmatic Engineer](https://www.youtube.com/watch?v=UlXpOGIpITM)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/UlXpOGIpITM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+[Mitchell Hashimoto’s new way of writing code - The Pragmatic Engineer](https://www.youtube.com/watch?v=WjckELpzLOU)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/WjckELpzLOU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ______________________________________________________________________
 
@@ -56,8 +85,6 @@ John Gruber's article defines 'dickover' as a term for intrusive modal panels on
 
 > The autocomplete is the main way to navigate Wirewiki, so it should be as complete, accurate and fast as possible. I want it to be instant. Like, next frame instant.
 
-## Productivity
-
 ## AI
 
 ### [Announcing Stack Overflow for Agents](https://stackoverflow.blog/2026/06/10/announcing-stack-overflow-for-agents/)
@@ -79,8 +106,6 @@ Whitepaper from google
 > But no matter what the future holds: be careful how you measure your own productivity—and be sure you are measuring it. You can’t trust yourself if you don’t.
 
 ### [Cleaning up after AI rockstar developers - Jesse Skinner](https://www.codingwithjesse.com/blog/rockstar-developers/)
-
-> We've all worked with a rockstar developer. They joined the team years ago, full of energy. They had great ideas about new tech, new paradigms, new...
 
 #### AI generated summary
 
@@ -108,8 +133,6 @@ The article emphasizes the importance of maintaining developer instincts and jud
 
 The npm left-pad incident in 2016 involved the removal of the 'left-pad' package by its creator, Azer Koçulu, after a dispute with Kik Messenger. This caused significant disruption as many projects depended on it. The incident highlighted dependency management issues and led npm to change its policies.
 
-## Python
-
 ## Django
 
 ### [Django Tasks: Exploring the Built-in Tasks Framework - Real Python](https://realpython.com/django-tasks/)
@@ -125,10 +148,6 @@ The npm left-pad incident in 2016 involved the removal of the 'left-pad' package
 
 > AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, and more). Turn any folder of code, SQL schemas, R scripts, shell scripts, docs, papers, images, or videos into a queryable knowledge graph. App code + database schema + infrastructure in one graph.
 
-## Django libraries
-
-## Go
-
 ## Tools
 
 ### [Kurs n8n po polsku - darmowa wiki | KursN8N.pl](https://kursn8n.pl)
@@ -143,7 +162,7 @@ Darmowy kurs i otwarta wiki n8n w języku polskim. Składa się z 9 uporządkowa
 
 ### [GitHub - manaflow-ai/cmux](https://github.com/manaflow-ai/cmux)
 
-> Ghostty-based macOS terminal with vertical tabs and notifications for AI coding agents - manaflow-ai/cmux
+> Ghostty-based macOS terminal with vertical tabs and notifications for AI coding agents
 
 ### [mise](https://mise.jdx.dev/)
 
@@ -207,19 +226,11 @@ An insightful conversation with Kelsey Hightower reflecting on his impactful car
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/WjckELpzLOU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-#### AI generated summary
-
-Mitchell Hashimoto shares his latest insights and innovative approaches to writing code, exploring how new tools and methodologies are shaping the future of software development.
-
 ### [Jak zbudowałam markę osobistą i czy było warto • Ola Kunysz • Beyond Code 2024](https://youtu.be/VQsshF7C-4Q)
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/VQsshF7C-4Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-
-#### AI generated summary
-
-In this presentation from the Beyond Code 2024 conference, Ola Kunysz shares her insights on building a personal brand in the IT industry. She discusses the challenges, the dangers of forcing the process, and the risk of burnout while highlighting key lessons learned.
 
 ### [Which Antigravity surface should I use? 2.0 vs CLI vs IDE vs SDK - YouTube](https://www.youtube.com/watch?v=04IqH38SlOI)
 
@@ -227,19 +238,11 @@ In this presentation from the Beyond Code 2024 conference, Ola Kunysz shares her
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/04IqH38SlOI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-#### AI generated summary
-
-This video compares various antigravity surfaces, including versions 2.0, CLI, IDE, and SDK, to help users choose the best option based on their needs and preferences.
-
 ### [Graphify + Obsidian + Claude Code = CHEAT CODE - YouTube](https://www.youtube.com/watch?v=mWLDn49_8HA)
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/mWLDn49_8HA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-
-#### AI generated summary
-
-Chase introduces a powerful combination of Graphify, Obsidian, and Claude Code to enhance productivity and efficiency, leveraging no-code AI solutions.
 
 ### [How One Man Powers a Global App from a Dutch Cow Barn - YouTube](https://www.youtube.com/watch?v=RS-aRiblQ_8https://codeberg.org/ravachol/kew)
 
@@ -247,19 +250,11 @@ Chase introduces a powerful combination of Graphify, Obsidian, and Claude Code t
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/RS-aRiblQ_8https://codeberg.org/ravachol/kew" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-#### AI generated summary
-
-This video tells the story of a man who successfully operates a global app from a Dutch cow barn, showcasing his innovative approach to overcoming challenges in a unique environment.
-
 ### [Andrej Karpathy: From Vibe Coding to Agentic Engineering w/ Stephanie Zhan - YouTube](https://www.youtube.com/watch?v=96jN2OCOfLs)
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/96jN2OCOfLs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-
-#### AI generated summary
-
-Andrej Karpathy and Stephanie Zhan discuss the shift from vibe coding to agentic engineering, highlighting the changes in coding practices and the influence of agentic engineering in technology.
 
 ### [1.1.6 Michał Leszczyński - \[PL\] \[CVE-2026-9058\] Pełne ominięcie uwierzytelniania w ZUS, e-Sądzie... - YouTube](https://www.youtube.com/watch?v=pMdnS8I18Ts)
 
@@ -267,19 +262,11 @@ Andrej Karpathy and Stephanie Zhan discuss the shift from vibe coding to agentic
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/pMdnS8I18Ts" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-#### AI generated summary
-
-Michał Leszczyński presents a security vulnerability (CVE-2026-9058) that enables bypassing authentication in Polish institutions like ZUS and e-Court.
-
 ### [VibeOS - Fully Hallucinated Operating System - YouTube](https://www.youtube.com/watch?v=z3pV6FHvcgM)
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/z3pV6FHvcgM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-
-#### AI generated summary
-
-The video 'VibeOS - Fully Hallucinated Operating System' presents a creative concept of an operating system, potentially involving AI or virtual environments, available on YouTube.
 
 ### [AI w walce z oszustami - YouTube](https://www.youtube.com/watch?v=eHcwNojjazU)
 
@@ -287,19 +274,11 @@ The video 'VibeOS - Fully Hallucinated Operating System' presents a creative con
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/eHcwNojjazU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-#### AI generated summary
-
-This video explores how artificial intelligence is used to fight fraud, detailing the methods and technologies involved in detecting and preventing fraudulent activities.
-
 ### [Keynote: After the AI Hype – What’s Real, and What’s Next - Richard Campbell - 2026](https://www.youtube.com/watch?v=uWnUnMphmPM)
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/uWnUnMphmPM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-
-#### AI generated summary
-
-Richard Campbell discusses the current state of AI beyond the initial hype, exploring practical applications and what developers can expect in the near future.
 
 ### [Claude Code Crash Course For Developers](https://www.youtube.com/watch?v=C2GpeepcmYs)
 
@@ -307,26 +286,14 @@ Richard Campbell discusses the current state of AI beyond the initial hype, expl
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/C2GpeepcmYs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-#### AI generated summary
-
-A comprehensive tutorial on using Claude to write code, improve developer productivity, and integrate AI seamlessly into development workflows.
-
 ### [Kubernetes for SysAdmins | Kelsey Hightower at PuppetConf | Talk & Demo](https://www.youtube.com/watch?v=HlAXp0-M6SY)
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/HlAXp0-M6SY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-#### AI generated summary
-
-Kelsey Hightower provides a practical overview and demonstration of Kubernetes tailored specifically for system administrators, highlighting key concepts and operational workflows.
-
 ### [What Most Engineers Get Wrong About AI and Career | Kelsey Hightower](https://www.youtube.com/watch?v=tCehFMwjWqM)
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/tCehFMwjWqM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-
-#### AI generated summary
-
-Kelsey Hightower shares his insights on how software engineers should navigate their careers in the age of AI, dispelling common misconceptions and focusing on foundational skills.
