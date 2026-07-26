@@ -16,28 +16,28 @@ Below you'll find a mix of articles, links, and resources, some of which tie int
 
 ### [chapp.io](https://chapp.io)
 
-Kudos to my colleague and former manager Thomas Biesaart for creating his personal website https://chapp.io. I love it.
+My colleague and former manager Thomas Biesaart finally shipped his personal site at [chapp.io](https://chapp.io) It's actually pretty good, worth checking out. Kudos.
 
 ### [cmux](https://github.com/manaflow-ai/cmux)
 
-I tried [cmux](https://github.com/manaflow-ai/cmux), which is a "Ghostty-based macOS terminal with vertical tabs and notifications for AI coding agents".
-Looks nice and modern—you can feel like a hackerman. I am not saying no, but for my current workflow it is not suitable; I am sticking to my Ghostty and **tmux** configuration for now.
+Gave [cmux](https://github.com/manaflow-ai/cmux) a spin. It's a Ghostty-based terminal designed for AI coding agents.
+Looks sleek enough to make you feel like a hackerman, but it doesn't fit my workflow. Sticking to plain Ghostty + **tmux** for now.
 
 ### [ponytail](https://github.com/DietrichGebert/ponytail)
 
-I am often overwhelmed / shocked / disappointed with the amount of code that agents sometimes generate for even the simplest tasks.
-That's why I am testing [ponytail](https://github.com/DietrichGebert/ponytail) - "Makes your AI agent think like the laziest senior dev in the room.".
-And I love the analogy from the project readme:
+AI agents still love generating 50 lines of boilerplate for a one-line fix. It's exhausting.
+Enter [ponytail](https://github.com/DietrichGebert/ponytail)—a tool that makes your AI think like the laziest senior dev in the room. The README analogy is spot on:
 
 > You know him. Long ponytail. Oval glasses. Has been at the company longer than the version control. You show him fifty lines; he looks at them, says nothing, and replaces them with one.
 >
 > Ponytail puts him inside your AI agent.
 
-### Kelsey Hightower, Mitchell Hashimoto in The Pragmatic Engineer
+### Kelsey Hightower & Mitchell Hashimoto in The Pragmatic Engineer
 
-I saw a podcast with Kelsey Hightower, the legend of Kubernetes, in my recommendations, but I also got a live, face-to-face recommendation for it, so I felt obligated to watch it in focus.
-Very inspiring, interesting, and uplifting story of career and growth.
-I definitely recommend it as well (also episode whith Mitchell Hashimoto is a must-watch for everyone who enjoys Terraform and Ghostty)
+The algorithm pushed Kelsey Hightower's podcast at me, and then a real human recommended it face-to-face. I took the hint.
+It’s a genuinely inspiring story about career growth from the Kubernetes legend himself. Highly recommended.
+
+(Also, the episode with Mitchell Hashimoto is mandatory viewing if you care about Terraform or Ghostty.)
 
 [Kubernetes and retiring at the top with Kelsey Hightower - The Pragmatic Engineer](https://www.youtube.com/watch?v=UlXpOGIpITM)
 
@@ -199,10 +199,6 @@ Darmowy kurs i otwarta wiki n8n w języku polskim. Składa się z 9 uporządkowa
 ### [Wyszukiwarka linków z zestawień #unknowNews](https://unknow.news/szukaj/)
 
 > Przeszukaj CAŁE archiwum #unknowNews od 2015 roku do dziś! Wyszukiwanie po tytułach, opisach i adresach URL.
-
-#### AI generated summary
-
-This page allows users to search the archive of 'unknow.news' newsletters using natural language queries. It also invites users to subscribe to the newsletter.
 
 ### [Open Source Ecology](https://www.opensourceecology.org/)
 
