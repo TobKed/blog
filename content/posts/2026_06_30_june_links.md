@@ -5,7 +5,7 @@ Tags: python, blog, podcast, series, aggregate, summary, month, 2026
 Slug: 2026-june-links
 Summary: Interesting stuff from the month
 Header_Cover: /images/posts/2026/2026_06_xx.jpg
-Status: draft
+Status: published
 
 # June 2026
 
@@ -16,7 +16,7 @@ Below you'll find a mix of articles, links, and resources, some of which tie int
 
 ### [chapp.io](https://chapp.io)
 
-My colleague and former manager Thomas Biesaart finally shipped his personal site at [chapp.io](https://chapp.io) It's actually pretty good, worth checking out. Kudos.
+My colleague and former manager Thomas Biesaart finally shipped his personal site at [chapp.io](https://chapp.io) It's actually pretty good, worth checking out!
 
 ### [cmux](https://github.com/manaflow-ai/cmux)
 
@@ -26,7 +26,7 @@ Looks sleek enough to make you feel like a hackerman, but it doesn't fit my work
 ### [ponytail](https://github.com/DietrichGebert/ponytail)
 
 AI agents still love generating 50 lines of boilerplate for a one-line fix. It's exhausting.
-Enter [ponytail](https://github.com/DietrichGebert/ponytail)—a tool that makes your AI think like the laziest senior dev in the room. The README analogy is spot on:
+Testing [ponytail](https://github.com/DietrichGebert/ponytail) — "a tool that makes your AI think like the laziest senior dev in the room". The README analogy is spot on:
 
 > You know him. Long ponytail. Oval glasses. Has been at the company longer than the version control. You show him fifty lines; he looks at them, says nothing, and replaces them with one.
 >
