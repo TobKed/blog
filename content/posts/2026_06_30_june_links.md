@@ -34,7 +34,7 @@ Testing [ponytail](https://github.com/DietrichGebert/ponytail) — "a tool that 
 
 ### Kelsey Hightower & Mitchell Hashimoto in The Pragmatic Engineer
 
-The algorithm pushed Kelsey Hightower's podcast at me, and then a real human recommended it face-to-face. I took the hint.
+The algorithm pushed Kelsey Hightower's podcast at me, and then my collegue [Eduardo](https://eduzen.ar/en/) recommended it to me as well. I took the hint.
 It’s a genuinely inspiring story about career growth from the Kubernetes legend himself. Highly recommended.
 
 (Also, the episode with Mitchell Hashimoto is mandatory viewing if you care about Terraform or Ghostty.)
