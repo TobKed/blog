@@ -43,6 +43,10 @@ ______________________________________________________________________
 
 > Simple actions that you can do today that place you in the "stars" category
 
+### [A Life Engineered: Get Up to Speed Unbelievably Fast: A Practical Guide to Rapid Onboarding](https://alifeengineered.substack.com/p/get-up-to-speed-unbelievably-fast-712)
+
+> A Former Amazon Principal Engineer's Proven System to Master Core Concepts and Make an Immediate Impact.
+
 ### [Julia Evans: Learning a few things about running SQLite](https://jvns.ca/blog/2026/07/17/learning-about-running-sqlite/)
 
 > It’s always kind of fun to see how long it takes me to learn sort of basic things about the technologies I’m using.
@@ -54,6 +58,11 @@ ______________________________________________________________________
 ### [Be the Idiot](https://luminousmen.substack.com/p/be-the-idiot)
 
 > Most disasters start as unasked questions - so ask them, even if you feel dumb
+
+### [Banned Book Library](https://www.richardosgood.com/posts/banned-book-library/)
+
+> This firmware will turn your smart LED light bulb into an open and unencrypted WiFi access point.
+> It runs a small web server which is used to host digital copies of banned or challenged books.
 
 ## Productivity
 
@@ -76,6 +85,18 @@ ______________________________________________________________________
 ### [Danel Miessler - Kimi K3 Might Have Just Started a Crash of the US Economy](https://danielmiessler.com/blog/kimi-k3-us-economy)
 
 > People don't realize how much the U.S. economy currently depends on U.S. AI lab dominance
+
+### [claude-controls-mac](https://ykdojo.github.io/claude-controls-mac/)
+
+> How to set up your spare Mac for Claude Code to fully control - a step-by-step guide.
+
+### [Understanding is the new bottleneck](https://www.geoffreylitt.com/2026/07/02/understanding-is-the-new-bottleneck)
+
+> If we build the right tools, we can now understand the world better than we ever could before.
+
+### [Gist - AI Skill - xplain-diff-html](https://gist.github.com/geoffreylitt/a29df1b5f9865506e8952488eac3d524)
+
+> Please make me a rich, interactive explanation of the specified code change.
 
 ## Security
 
@@ -110,6 +131,14 @@ ______________________________________________________________________
 ### [GitHub - juanmanueldaza/linkedin2md](https://github.com/juanmanueldaza/linkedin2md)
 
 > Convert your LinkedIn data export to clean Markdown + PDF resume. Zero-dep Python CLI.
+
+### [GitHub - hyeonsangjeon/youtube-dl-nas](https://github.com/hyeonsangjeon/youtube-dl-nas)
+
+> Asynchronous WebSocket server for queue-based YouTube downloads with user authentication, optimized for private NAS (Docker-ready, batch & resume support).
+
+### [Evan's Jujutsu Tutorial](https://evmar.github.io/jjtut/)
+
+> [Jujutsu](https://www.jj-vcs.dev/) (from here on, "jj") is a version control system that is both simple and powerful.
 
 ## Cloud
 
