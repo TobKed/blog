@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+            <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <title>Docker on Raspberry Pi 3</title>
+
+            <link href="https://blog.tobked.dev//feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="ups and downs Full Atom Feed" />
+            <link href="https://blog.tobked.dev//feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="ups and downs Full RSS Feed" />
+        <!-- Bootstrap Core CSS -->
+        <link href="https://blog.tobked.dev/theme/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link href="https://blog.tobked.dev/theme/css/clean-blog.min.css" rel="stylesheet">
+
+        <!-- Code highlight color scheme -->
+            <link href="https://blog.tobked.dev/theme/css/code_blocks/github.css" rel="stylesheet">
+
+            <!-- CSS specified by the user -->
+            <link href="https://blog.tobked.dev/css/main.css" rel="stylesheet">
+
+        <!-- Custom Fonts -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+
+        <meta name="description" content="Installing Docker on Raspberry Pi 3">
+
+        <meta name="author" content="Tobiasz Kedzierski">
+
+        <meta name="tags" content="docker">
+        <meta name="tags" content="raspberry">
+        <meta name="tags" content="electronics">
+        <meta name="tags" content="system">
+
+	                <meta property="og:locale" content="">
+		<meta property="og:site_name" content="ups and downs">
+
+	<meta property="og:type" content="article">
+            <meta property="article:author" content="https://blog.tobked.dev/author/tobiasz-kedzierski">
+	<meta property="og:url" content="https://blog.tobked.dev/docker-raspberry">
+	<meta property="og:title" content="Docker on Raspberry Pi 3">
+	<meta property="article:published_time" content="2019-08-06 00:00:00+02:00">
+            <meta property="og:description" content="Installing Docker on Raspberry Pi 3">
+
+            <meta property="og:image" content="https://blog.tobked.dev/images/poli_photo_by_julia_kaczorowska_edit.png">
+</head>
+
+<body class="article-docker-raspberry">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="https://blog.tobked.dev/">ups and downs</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+
+                            <li><a href="https://blog.tobked.dev/pages/about-me">about me</a></li>
+                            <li><a href="https://blog.tobked.dev/pages/links">links</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+        <header class="intro-header" style="background-image: url('https://blog.tobked.dev/images/poli_photo_by_julia_kaczorowska_edit.png')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="post-heading">
+                        <h1>Docker on Raspberry Pi 3</h1>
+                        <span class="meta">Posted by
+                                <a href="https://blog.tobked.dev/author/tobiasz-kedzierski">Tobiasz Kedzierski</a>
+                             on 06.08.2019
+                        </span>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    <!-- Post Content -->
+    <article>
+        <h2 id="docker-on-raspberry-pi-3">Docker on Raspberry Pi 3</h2>
+<h3 id="what-and-why">What and why?</h3>
+<p>Docker is a tool similar to virtual machine but without its performance overhead.
+It allows to create totally separated conteneraized environments which use a host machine kernel.
+So it is as fast as when you run it natively while creating containers or using already built images is a quite easy and pleasant process.
+For more information about Docker, check sources at the bottom of the page.</p>
+<p>Docker is great, so why not use it on Raspberry (RPi)?
+Usually when I play with RPi I break something in the system or SD card stops working, so I have to reinstall the system and go again through the installation steps.
+It is not difficult and there are plenty of tutorials which show how do it.
+I've found that almost everyone of them is different and most don't work from start to end as they are supossed to.
+So to make my life slightly easier I prepared a short description how to set-up RPi and a short python script which installs Docker and docker-compose while I go to the kitchen and prepare hot cup of tea.
+Moreover, this script does not have to be downloaded, just copy-paste one line to the terminal and your earl gray is ready to be brewed.</p>
+<h3 id="setting-up-raspbian">Setting up Raspbian</h3>
+<p>Download <a href="https://www.raspberrypi.org/downloads/raspbian/"><em>Raspbian Buster Lite</em></a> and create a bootable SD-card. For this purpose you can use for e.g. <strong><em>Startup Disk Creator</em></strong> (Ubuntu) or <strong><em>Etcher</em></strong> (Windows, Mac, Linux).</p>
+<p>If you use a headless RPi it is possible to enable SSH and Wi-Fi before the first boot.\
+To enable SSH you have to put an empty file named <code>ssh</code> onto the boot partition without any extension.</p>
+<p>For Wi-Fi you need to define <code>wpa_supplicant.conf</code> (configuration file for Wi-Fi Protected Access client and IEEE 802.1X supplicant) on the boot partition as well.
+This file shall contain credentials for your network.</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># wpa_supplicant.conf</span>
+
+<span class="n">ctrl_interface</span><span class="o">=</span><span class="n">DIR</span><span class="o">=/</span><span class="k">var</span><span class="o">/</span><span class="n">run</span><span class="o">/</span><span class="n">wpa_supplicant</span><span class="w"> </span><span class="n">GROUP</span><span class="o">=</span><span class="n">netdev</span>
+<span class="n">update_config</span><span class="o">=</span><span class="mi">1</span>
+<span class="n">country</span><span class="o">=</span><span class="err">«</span><span class="n">your_ISO</span><span class="o">-</span><span class="mi">3166</span><span class="o">-</span><span class="mi">1</span><span class="n">_two</span><span class="o">-</span><span class="n">letter_country_code</span><span class="err">»</span>
+
+<span class="n">network</span><span class="o">=</span><span class="p">{</span>
+<span class="w">    </span><span class="n">ssid</span><span class="o">=</span><span class="s2">&quot;«your_SSID»&quot;</span>
+<span class="w">    </span><span class="n">psk</span><span class="o">=</span><span class="s2">&quot;«your_PSK»&quot;</span>
+<span class="w">    </span><span class="n">key_mgmt</span><span class="o">=</span><span class="n">WPA</span><span class="o">-</span><span class="n">PSK</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<h3 id="docker-installation">Docker installation</h3>
+<p>Installation is provided by a simple script which executes just 6 shell commands. I will describe each one of them briefly.</p>
+<script src="https://gist.github.com/TobKed/75337ec7b73a0ac59a415b837927e4ee.js"></script>
+
+<p>The meaning of particular commands:</p>
+<ul>
+  <li><code>sudo apt-get update</code>
+  downloads the package lists from the repositories and "updates" them to get information on the newest versions of packages and their dependencies.
+    <ul>
+      <li> <code>sudo</code> - executes command as the superuser.</li>
+      <li> <code>apt-get</code> -  the command-line tool for handling packages.</li>
+      <li> <code>update</code> - option used to re-synchronize the package index files from their sources.</li>
+    </ul>
+  </li>
+  <li> <code>curl -sSL https://get.docker.com | sh</code> 
+    installs docker by executing Docker installation script from an online source.
+    <ul>
+      <li> <code>curl</code> - tool to transfer data from or to a server.
+      <li> <code>--s/--silent</code> - silent or quiet mode. Doesn't show progress meter or error messages.</li>
+      <li> <code>-S/--show-error</code> - when used with -s it makes curl show an error message if it fails.</li>
+      <li> <code>-L/--location</code> - if the server reports that the requested page has moved to a different location (indicated with a Location: header and a 3XX response code), this option will make curl redo the request on the new place.</li>
+      <li> <code>|</code> - pipes '|' send the output of one command as input of another command.</li>
+      <li> <code>sh</code> - Bourne shell.</li>
+    </ul>
+  </li>
+  <li> sudo usermod -aG docker $USER`\
+  adds your user to the docker group which is created during the installation to run docker commands without without prepending sudo (as non-root user)
+    <ul>
+      <li> <code>usermod</code> - modified a user account.</li>
+      <li> <code>--a, --append</code> - adds the user to the supplementary group(s). Use only with the -G option.</li>
+      <li> <code>-G, --groups</code> - a list of supplementary groups.</li>
+      <li> <code>docker</code> - group name.</li>
+      <li> <code>$USER</code> - environmental variable with username.</li>
+    </ul>
+  </li>
+  <li> <code>sudo systemctl enable docker</code>\
+    configures Docker to start on boot
+    <ul>
+      <li> <code>systemctl</code> - may be used to introspect and control the state of the "systemd" system and service manager.</li>
+      <li> <code>enable NAME..., enable PATH...</code> - Enables one or more units or unit instances.</li>
+      <li> <code>docker</code> - deamon process name.</li>
+    </ul>
+  </li>
+  <li> <code>sudo apt-get install -y python3-pip</code>
+    installs package installer for Python 3
+    <ul>
+      <li> <code>install</code> -  this option is followed by one or more packages desired for installation.</li>
+      <li> <code>-y, --yes, --assume-yes</code> automatic yes to prompts. Assume "yes" as answer to all prompts and run non-interactively.</li>
+      <li> <code>python3-pip</code> - Python3 package installer.</li>
+    </ul>
+  </li>
+  <li> <code>sudo pip3 install docker-compose</code>
+    installs docker-compose through Python package installer
+      <ul>
+        <li> <code>pip3</code> - a recursive acronym for "Pip Installs Packages"</li>
+        <li> <code>install</code> - argument for pip3, self-explanatory.</li>
+        <li> <code>docker-compose</code> - name of package to be installed.</li>
+      </ul>  
+  </li>
+</ul>
+
+<p>To run this script you just have to copy-paste the following line in the RPi terminal:</p>
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-sSL<span class="w"> </span>https://gist.githubusercontent.com/TobKed/75337ec7b73a0ac59a415b837927e4ee/raw/docker_on_raspbian.py<span class="w"> </span><span class="p">|</span><span class="w"> </span>python3
+</code></pre></div>
+
+<p>It executes (similar to <code>curl -sSL https://get.docker.com | sh</code>) this script posted on <a href="https://gist.github.com/TobKed/75337ec7b73a0ac59a415b837927e4ee#file-docker_on_raspbian-py">github gist</a>.</p>
+<p>After script successfully finishes you can run subshell as a docker user by executing <code>newgrp docker</code> (<code>newgrp</code> - change the current group ID (GID) during a login session) or restart RPi by <code>sudo shutdown -r now</code> (recommended).</p>
+<p><br></p>
+<hr>
+<h4 id="sources">Sources:</h4>
+<ul>
+  <li><a href="https://www.docker.com/">docker homepage</a></li>
+  <li><a href="https://pythonspeed.com/docker/">Docker packaging guide for Pythond</a></li>
+  <li><a href="https://www.raspberrypi.org/downloads/raspbian/">Raspbian download</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Startup_Disk_Creator">Startup Disk Creator</a></li>
+  <li><a href="https://www.balena.io/etcher/">Etcher</a></li>
+  <li><a href="https://www.raspberrypi.org/documentation/remote-access/ssh/README.md">SSH (Secure Shell) - Raspberry Pi Documentation</a></li>
+  <li><a href="https://www.raspberrypi.org/documentation/configuration/wireless/headless.md">Setting up a Raspberry Pi headless - Raspberry Pi Documentation</a></li>
+  <li><a href="https://www.systutorials.com/docs/linux/man/8-wpa_supplicant/">wpa_supplicant - systutorials.com</a></li>
+  <li><a href="https://www.systutorials.com/docs/linux/man/5-wpa_supplicant.conf/">wpa_supplicant.conf - systutorials.com</a></li>
+  <li><a href="https://raspberrypi.stackexchange.com/questions/10251/prepare-sd-card-for-wifi-on-headless-pi">Prepare SD card for Wifi on Headless Pi - Raspberry Pi Stack Exchangev</a></li>
+  <li><a href="https://linux.die.net/man/8/apt-get">apt-get(8) - Linux man page</a></li>
+  <li><a href="https://linux.die.net/man/1/curl">curl(1) - Linux man page</a></li>
+  <li><a href="https://www.geeksforgeeks.org/piping-in-unix-or-linux/">Piping in Unix or Linux - GeeksforGeeks</a></li>
+  <li><a href="https://www.computerworld.com.au/article/279011/-z_programming_languages_bourne_shell_sh">The A-Z of Programming Languages: Bourne shell, or sh - Computerworld</a></li>
+  <li><a href="https://linux.die.net/man/8/usermod">usermod(8) - Linux man page</a></li>
+  <li><a href="https://docs.docker.com/install/linux/linux-postinstall/#configure-docker-to-start-on-boot">Post-installation steps for Linux - Configure Docker to start on boot - docker.com</a></li>
+  <li><a href="http://man7.org/linux/man-pages/man1/login.1.html#DESCRIPTION">($USER) login(1) - Linux manual page</a></li>
+  <li><a href="https://packages.debian.org/buster/python3-pip"> Details of package python3-pip in buster - Debian</a></li>
+  <li><a href="https://pip.pypa.io/en/stable">pip - The Python Package Installer documentation</a></li>
+  <li><a href="https://pip.pypa.io/en/stable/reference/pip_install/">pip install - The Python Package Installer documentation</a></li>
+  <li><a href="https://pypi.org/project/docker-compose/">docker-compose · PyPI</a></li>
+  <li><a href="https://www.computerhope.com/unix/unewgrp.htm">Linux newgrp command help and examples - computerhope</a></li>
+  <li><a href="https://www.youtube.com/watch?v=3N3n9FzebAA">dotScale 2013 - Solomon Hykes</a>
+    <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+      <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/3N3n9FzebAA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </li>
+  <li><a href="https://www.youtube.com/watch?v=VhabrYF1nms">Building Python apps with Docker - PyTexas</a>
+    <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+      <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/VhabrYF1nms" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </li>
+</ul>
+    </article>
+
+        <div class="tags">
+            <p>tags: <a href="https://blog.tobked.dev/tag/docker">docker</a>, <a href="https://blog.tobked.dev/tag/raspberry">raspberry</a>, <a href="https://blog.tobked.dev/tag/electronics">electronics</a>, <a href="https://blog.tobked.dev/tag/system">system</a></p>
+        </div>
+
+    <hr>
+
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                            <li>
+                                <a href="https://tobked.dev">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-user fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/tobiaszkedzierski/?locale=en_US">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/TobKed">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://blog.tobked.dev/feeds/all.rss.xml">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                    </ul>
+<p class="copyright text-muted">
+    Blog powered by <a href="http://getpelican.com">Pelican</a>,
+    which takes great advantage of <a href="http://python.org">Python</a>. <br />
+    Main page header photo by <a href="https://juliakaczorowska.pl/">Julia Kaczorowska</a> (other by me). <br />
+        &copy;  Tobiasz Kedzierski
+</p>                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://blog.tobked.dev/theme/js/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://blog.tobked.dev/theme/js/bootstrap.min.js"></script>
+
+        <!-- Custom Theme JavaScript -->
+        <script src="https://blog.tobked.dev/theme/js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
