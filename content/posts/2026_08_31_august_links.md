@@ -14,6 +14,8 @@ Below you'll find a mix of articles, links, and resources, some of which tie int
 
 ## Some thoughts
 
+miso
+
 ______________________________________________________________________
 
 ## Articles
@@ -21,6 +23,10 @@ ______________________________________________________________________
 ## Productivity
 
 ## AI
+
+### [Five studies changing how I think about AI in software engineering](https://newsletter.getdx.com/p/five-studies-that-are-changing-how)
+
+> AI compressed the upstream work. What does that mean for everything downstream?
 
 ## Security
 
@@ -43,6 +49,18 @@ ______________________________________________________________________
 ## Podcasts
 
 ## Videos
+
+### [A Life Engineered: Ex-Amazon VP on What Actually Gets You Promoted | Ethan Evans](https://www.youtube.com/watch?v=Gf0pR4_bv-o)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/Gf0pR4_bv-o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [OMH 2025: Grzegorz Wróbel - Homelab dla bezpiecznika - domowy poligon dla pasji, nauki i pracy](https://www.youtube.com/watch?v=YSon1JW5qXM)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/YSon1JW5qXM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ### [](https://www.youtube.com/watch?v=VIDEO_ID)
 

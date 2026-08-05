@@ -5,18 +5,12 @@ Tags: python, blog, podcast, series, aggregate, summary, month, 2026
 Slug: 2026-july-links
 Summary: Interesting stuff from the month
 Header_Cover: /images/posts/2026/2026_07_xx.jpg
-Status: draft
+Status: published
 
 # July 2026
 
 Time for another monthly post sharing some of the IT discoveries that crossed my path lately.
 Below you'll find a mix of articles, links, and resources, some of which tie into my current activities and areas of interest.
-
-## Some thoughts
-
-miso
-
-______________________________________________________________________
 
 ## Articles
 
@@ -64,19 +58,11 @@ ______________________________________________________________________
 > This firmware will turn your smart LED light bulb into an open and unencrypted WiFi access point.
 > It runs a small web server which is used to host digital copies of banned or challenged books.
 
-## Productivity
-
 ## AI
 
 ### [how to build a coding agent: free workshop](https://ghuntley.com/agent/)
 
 > Learning how to build a coding agent is one of the best things you can do for your personal development in 2025, as it teaches you the fundamentals.
-
-### [Dałem trzem AI 300 złotych na inwestycje. Po miesiącu wynik mnie zaskoczył](https://android.com.pl/tech/1039995-inwestowanie-z-ai-czyli-eksperyment/)
-
-> Trzysta złotych, cztery tygodnie i trzy modele AI.
-> Czy z takiej mieszanki może wyjść coś innego niż głośny jęk zawodu i szybki telefon po chwilówkę?
-> Okazuje się, że tak… na tym biznesie da się nawet zarobić.
 
 ### [Building an Intern](https://cra.mr/building-an-intern/)
 
@@ -98,8 +84,6 @@ ______________________________________________________________________
 
 > Please make me a rich, interactive explanation of the specified code change.
 
-## Security
-
 ## Python
 
 ### [Why I wrote PEP 832 -- virtual environment discovery](https://snarky.ca/why-i-wrote-pep-832-virtual-environment-discovery/)
@@ -115,12 +99,6 @@ ______________________________________________________________________
 > The F stands for Field, and they are used to make references to other fields on the model in queries to the database.
 > They can be used on both the read and write side of things.
 > These provide a lot of utility and can help avoid race conditions when saving model changes.
-
-## Python libraries
-
-## Django libraries
-
-## Go
 
 ## Tools
 
@@ -140,23 +118,13 @@ ______________________________________________________________________
 
 > [Jujutsu](https://www.jj-vcs.dev/) (from here on, "jj") is a version control system that is both simple and powerful.
 
-## Cloud
-
 ## Other stuff
 
 ### [GitHub - EbookFoundation/free-programming-books](https://github.com/EbookFoundation/free-programming-books)
 
 > 📚 Freely available programming books
 
-## Podcasts
-
 ## Videos
-
-### [19 Nieoczywistych Sposobów Na Świetne Strony z AI](https://www.youtube.com/watch?v=9OE8IJEJqq8)
-
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/9OE8IJEJqq8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
 
 ### [Google Antigravity Livestream](https://www.youtube.com/watch?v=mfT8qpPNYyg)
 
@@ -176,14 +144,28 @@ ______________________________________________________________________
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/BgE6yfblex0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-### [Twój drugi mózg to notatnik. Jak używać brudnopisu?](https://youtu.be/TpmqGe4rcfg)
-
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/TpmqGe4rcfg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
 ### [4 Ways Slack is Killing Your Business Productivity](https://youtu.be/t_vbaIs7EGo)
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/t_vbaIs7EGo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### 🇵🇱 Polish Corner 🇵🇱
+
+### [Dałem trzem AI 300 złotych na inwestycje. Po miesiącu wynik mnie zaskoczył](https://android.com.pl/tech/1039995-inwestowanie-z-ai-czyli-eksperyment/)
+
+> Trzysta złotych, cztery tygodnie i trzy modele AI.
+> Czy z takiej mieszanki może wyjść coś innego niż głośny jęk zawodu i szybki telefon po chwilówkę?
+> Okazuje się, że tak… na tym biznesie da się nawet zarobić.
+
+### [19 Nieoczywistych Sposobów Na Świetne Strony z AI](https://www.youtube.com/watch?v=9OE8IJEJqq8)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/9OE8IJEJqq8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [Twój drugi mózg to notatnik. Jak używać brudnopisu?](https://youtu.be/TpmqGe4rcfg)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/TpmqGe4rcfg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
