@@ -26,3 +26,11 @@ Status: hidden
 Based a lot on [My (mostly) minimalistic AI setup as a Senior Engineer in Big Tech](https://read.highgrowthengineer.com/p/minimalistic-ai-setup)
 
 ## Videos
+
+## AI Skills, Tools
+
+### [/hallmak](https://www.usehallmark.com/)
+
+> The anti-slop design skill for Claude Code, Cursor, and Codex. Twenty themes with real structural variety, and a 57-gate check before anything ships.
+
+https://github.com/nicobailon/visual-explainer

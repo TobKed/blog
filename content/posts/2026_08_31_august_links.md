@@ -20,6 +20,10 @@ ______________________________________________________________________
 
 ## Articles
 
+### [A Life Engineered: Addition by Subtraction](https://alifeengineered.substack.com/p/addition-by-subtraction)
+
+> This week I'm getting better by doing less.
+
 ## Productivity
 
 ## AI
@@ -27,6 +31,19 @@ ______________________________________________________________________
 ### [Five studies changing how I think about AI in software engineering](https://newsletter.getdx.com/p/five-studies-that-are-changing-how)
 
 > AI compressed the upstream work. What does that mean for everything downstream?
+
+### [Pydantic AI - The Human-in-the-Loop is Tired](https://pydantic.dev/articles/the-human-in-the-loop-is-tired)
+
+> So if you're feeling overwhelmed, destabilized, simultaneously more productive and less happy, know that you're not alone.
+
+### [/hallmak](https://www.usehallmark.com/)
+
+> The anti-slop design skill for Claude Code, Cursor, and Codex. Twenty themes with real structural variety, and a 57-gate check before anything ships.
+
+### {Real Python: CrewAI in Python: Coordinating Teams of AI Agents\](https://realpython.com/crewai-python/)
+
+> CrewAI excels at structured, role-based workflows where each agent has clear responsibilities.
+> It saves you from complex orchestration code by handling task coordination and data flow automatically.
 
 ## Security
 
