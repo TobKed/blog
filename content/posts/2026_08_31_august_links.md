@@ -41,6 +41,10 @@ ______________________________________________________________________
 
 > What a time to be alive. Nay, what a blessing.
 
+### [Shane AAnderson - How to create snippets in LazyVim](https://shaneanderson.id.au/how-to-create-snippets-in-lazyvim.html)
+
+> Took me way too much effort to figure this out and searching for info resulted in a lot of posts with other people asking the same question or outdated information as LazyVim has changed its plugins a bunch of times, hopefully this helps someone else out there.
+
 ## Productivity
 
 ## AI
@@ -57,7 +61,7 @@ ______________________________________________________________________
 
 > The anti-slop design skill for Claude Code, Cursor, and Codex. Twenty themes with real structural variety, and a 57-gate check before anything ships.
 
-### {Real Python: CrewAI in Python: Coordinating Teams of AI Agents\](<https://realpython.com/crewai-python/>)
+### [Real Python: CrewAI in Python: Coordinating Teams of AI Agents](https://realpython.com/crewai-python/)
 
 > CrewAI excels at structured, role-based workflows where each agent has clear responsibilities.
 > It saves you from complex orchestration code by handling task coordination and data flow automatically.
@@ -69,6 +73,14 @@ ______________________________________________________________________
 ### [aftermath - Welcome To The Resistance: Meet The Workers Dodging (And Sabotaging) Their Employer's AI Mandat](https://aftermath.site/ai-resistance-tips-workforce-llm-workers/)
 
 > 'When I copy-edit writing I take an extra twenty minutes to double check, then say I had Claude copy edit it as well. Everyone’s really happy with my performance'
+
+### [AI is removing the middle class of software engineering](https://blog.florianherrengt.com/ai-removing-middle-class-software-engineering.html)
+
+> The people who don't will become much cheaper to hire or get replaced entirely while the money gets funnelled towards an increasingly smaller number of people who can actually be trusted.
+
+### [Claude Blog - Maximizing the value of your Claude Code sessions](https://claude.com/blog/maximizing-the-value-of-your-claude-code-sessions)
+
+> How to run efficient sessions that get the most value from every token.
 
 ## Security
 
@@ -83,6 +95,10 @@ ______________________________________________________________________
 ## Go
 
 ## Tools
+
+### [GitHub - AprilNEA/OpenLogi](https://github.com/AprilNEA/OpenLogi)
+
+> A native, local-first alternative to Logitech Options+, written in Rust 🦀 — remap buttons, DPI, and SmartShift over HID++. No account, no telemetry.
 
 ## Cloud
 
@@ -122,6 +138,38 @@ ______________________________________________________________________
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/17_HcR95YBc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
+### [Matt Pocok - LIVE: Uncle Bob on Software Fundamentals in the Age of AI](https://www.youtube.com/watch?v=zcLPGC-tvgk)
 
-> Playback on other websites has been disabled by the video owner. [Watch on YouTube](https://www.youtube.com/watch?v=VIDEO_ID)
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/zcLPGC-tvgk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [Matt Pocok - /wayfinder: Nothing is too big to plan anymore](https://www.youtube.com/watch?v=F3lL98Pj90o)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/F3lL98Pj90o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [A Life Engineered - Negotiation Expert: How To 3X Your Tech Salary](https://www.youtube.com/watch?v=v87stFQMFNY)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/v87stFQMFNY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [NetworkChuck - I think I might finally switch to Linux](https://www.youtube.com/watch?v=9SDkU5VDQEQ)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/9SDkU5VDQEQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [David Senra - Tobi Lütke: 21 Years of Building Shopify](https://www.youtube.com/watch?v=ZSM2uFnJ5bs)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/ZSM2uFnJ5bs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [Mischa van den Burg - Why Is Everyone Buying This $150 Linux Laptop?](https://www.youtube.com/watch?v=Eor_qf5KCHI)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/Eor_qf5KCHI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
