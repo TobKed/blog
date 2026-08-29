@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+            <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <title>Month summary - October 2020</title>
+
+            <link href="https://blog.tobked.dev//feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="ups and downs Full Atom Feed" />
+            <link href="https://blog.tobked.dev//feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="ups and downs Full RSS Feed" />
+        <!-- Bootstrap Core CSS -->
+        <link href="https://blog.tobked.dev/theme/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link href="https://blog.tobked.dev/theme/css/clean-blog.min.css" rel="stylesheet">
+
+        <!-- Code highlight color scheme -->
+            <link href="https://blog.tobked.dev/theme/css/code_blocks/github.css" rel="stylesheet">
+
+            <!-- CSS specified by the user -->
+            <link href="https://blog.tobked.dev/css/main.css" rel="stylesheet">
+
+        <!-- Custom Fonts -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+
+        <meta name="description" content="Interesting stuff from the month">
+
+        <meta name="author" content="Tobiasz Kedzierski">
+
+        <meta name="tags" content="python">
+        <meta name="tags" content="blog">
+        <meta name="tags" content="podcast">
+        <meta name="tags" content="series">
+        <meta name="tags" content="aggregate">
+        <meta name="tags" content="summary">
+        <meta name="tags" content="month">
+        <meta name="tags" content="2020">
+
+	                <meta property="og:locale" content="">
+		<meta property="og:site_name" content="ups and downs">
+
+	<meta property="og:type" content="article">
+            <meta property="article:author" content="https://blog.tobked.dev/author/tobiasz-kedzierski">
+	<meta property="og:url" content="https://blog.tobked.dev/2020-october-links">
+	<meta property="og:title" content="Month summary - October 2020">
+	<meta property="article:published_time" content="2020-10-31 00:00:00+01:00">
+            <meta property="og:description" content="Interesting stuff from the month">
+
+            <meta property="og:image" content="https://blog.tobked.dev/images/poli_photo_by_julia_kaczorowska_edit.png">
+</head>
+
+<body class="article-2020-october-links">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="https://blog.tobked.dev/">ups and downs</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+
+                            <li><a href="https://blog.tobked.dev/pages/about-me">about me</a></li>
+                            <li><a href="https://blog.tobked.dev/pages/links">links</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+        <header class="intro-header" style="background-image: url('https://blog.tobked.dev/images/poli_photo_by_julia_kaczorowska_edit.png')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="post-heading">
+                        <h1>Month summary - October 2020</h1>
+                        <span class="meta">Posted by
+                                <a href="https://blog.tobked.dev/author/tobiasz-kedzierski">Tobiasz Kedzierski</a>
+                             on 31.10.2020
+                        </span>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    <!-- Post Content -->
+    <article>
+        <h1 id="october-2020">October 2020</h1>
+<p>I am aggregating here some more or less interesting stuff of various IT related materials which I came across this month.
+Some of them are strictly related to the things I did or am currently doing.</p>
+<h2 id="some-thoughts">Some thoughts</h2>
+<p>This month I worked on improving Google Cloud Dataflow within <a href="https://github.com/apache/airflow">Apache Airflow</a> project.
+It was not an easy task since Dataflow is a quite complex service itself and has limited API.
+I helped to introduce operators for <a href="https://github.com/apache/airflow/pull/8553">SQL Queries</a> and <a href="https://github.com/apache/airflow/pull/8550">Flex Templates</a>.
+I successfully added <a href="https://github.com/apache/airflow/pull/11374"><code>drain</code> option when cancelling Dataflow pipelines</a> and helped community with <a href="https://github.com/apache/airflow/pull/10121">Google Cloud Memorystore Memcached Operators</a>.</p>
+<p>I am quite interested in CI and GitHub Actions and I created an action called <a href="https://github.com/TobKed/label-when-approved-action">Label When Approved action</a>. It sets a label on an approved Pull Request and removes it when changes are requested.
+It supports checking if approvals (or change requests) are authored by people with write access to the target repository.
+It was created specifically for <a href="https://github.com/apache/airflow">Apache Airflow</a> where it is used for labeling
+pull requests approved by committers.
+These labels (or equivalent action outputs) are used to optimise the use of CI resources since <a href="https://github.com/apache/airflow/pull/11828">not approved pull requests run only a subset of tests</a>. It was introduced because the number of GitHub Actions jobs running in parallel is limited to 180 for all Apache projects so running full test suite every time seemed to be a waste.
+It was made in cooperation with <a href="https://github.com/potiuk">Jarek Potiuk</a> who is Apache Airflow Commiter and PMC Member. It was also my first time with TypeScript which I enjoyed a lot.</p>
+<p>Meanwhile my blog post about Terraform and Infrastructure as Code was published [IaC]. If you want to know why IaC and Terraform is so popular, feel free to read it: <a href="https://tobiaszkedzierski.medium.com/terraform-tutorial-introduction-to-infrastructure-as-code-dccec643bfdb">Terraform Tutorial: Introduction to Infrastructure as Code</a>.</p>
+<h2 id="articles">Articles</h2>
+<h3 id="a-short-story-for-engineers-link-not-valid-anymore">A Short Story for Engineers (link not valid anymore)</h3>
+<blockquote>
+<p>You don’t have to be an engineer to appreciate this story.</p>
+</blockquote>
+<h3 id="the-red-flag-signs-you-may-be-burning-out-while-working-from-home"><a href="https://www.fastcompany.com/90554935/the-red-flag-signs-you-may-be-burning-out-while-working-from-home">The red-flag signs you may be burning out while working from home</a></h3>
+<blockquote>
+<p>In a remote-work world, setting up clear boundaries is integral to protecting your mental health and personal well-being.</p>
+</blockquote>
+<h3 id="google-updates-android-smartphones-to-listen-to-houses-for-suspect-sounds"><a href="https://www.independent.co.uk/life-style/gadgets-and-tech/google-android-smartphone-update-listen-house-sounds-b906331.html">Google updates Android smartphones to listen to houses for suspect sounds</a></h3>
+<blockquote>
+<p>Google says the update will make it easier for people with hearing issues to be notified of events.</p>
+</blockquote>
+<h3 id="how-to-change-your-brain-with-dr-andrew-huberman-utkarsh"><a href="https://thisten.co/y7qdc/qoLk8j26DKJ0FdUrv5EF4Z4ft3AShasQ8tiEFuYb">How to Change Your Brain With Dr. Andrew Huberman (+ Utkarsh!)</a></h3>
+<blockquote>
+<p>Dr. Huberman is here to school us on all things neuroplasticity---and how we can use it to our advantage through intense focus, mindfulness, and restorative sleep. Enjoy!</p>
+</blockquote>
+<h3 id="git-scraping-track-changes-over-time-by-scraping-to-a-git-repository"><a href="https://simonwillison.net/2020/Oct/9/git-scraping/">Git scraping: track changes over time by scraping to a Git repository</a></h3>
+<blockquote>
+<p>We already have a great tool for efficiently tracking changes to text over time: Git. And GitHub Actions (and other CI systems) make it easy to create a scraper that runs every few minutes, records the current state of a resource and records changes to that resource over time in the commit history.</p>
+</blockquote>
+<h3 id="how-to-take-meeting-notes"><a href="https://barehands.substack.com/p/how-to-take-meeting-notes">How to take meeting notes</a></h3>
+<blockquote>
+<p>Author does not take notes during the meeting. Instead, he takes notes after the meeting and shares tips how to do it.</p>
+</blockquote>
+<h3 id="ill-never-work-the-same-way-again-one-co-founders-remote-work-experiments"><a href="https://www.entrepreneur.com/article/354226">'I'll Never Work The Same Way Again:' One Co-Founder's Remote Work Experiments</a></h3>
+<blockquote>
+<p>There's a lot of talk about structure and boundaries, but there's something to be said for flexibility, and embracing the messiness of your "life's work."</p>
+</blockquote>
+<h3 id="10-tips-from-ceos-on-working-from-home-effectively-and-happily"><a href="https://www.entrepreneur.com/article/347479">10 Tips From CEOs on Working From Home Effectively and Happily</a></h3>
+<blockquote>
+<p>Far beyond getting out of your pajamas, these tips encourage wellness when you are working from home.</p>
+</blockquote>
+<h3 id="how-google-drive-can-make-every-corner-of-your-life-easier"><a href="https://forge.medium.com/how-google-drive-can-make-every-corner-of-your-life-easier-9f3cc1acbb68">How Google Drive Can Make Every Corner of Your Life Easier</a></h3>
+<blockquote>
+<p>The ultimate self-improvement tool is something you already have</p>
+</blockquote>
+<h3 id="why-life-cant-be-simpler"><a href="https://fs.blog/2020/10/why-life-cant-be-simpler/">Why Life Can’t Be Simpler</a></h3>
+<blockquote>
+<p>We’d all like life to be simpler. But we also don’t want to sacrifice our options and capabilities. Tesler’s law of the conservation of complexity, a rule from design, explains why we can’t have both.</p>
+</blockquote>
+<h3 id="you-dont-have-to-use-docker-anymore"><a href="https://towardsdatascience.com/its-time-to-say-goodbye-to-docker-5cfec8eff833">You Don’t Have to Use Docker Anymore</a></h3>
+<blockquote>
+<p>Docker is not the only containerization tool out there and there might just be better alternatives…</p>
+</blockquote>
+<h3 id="how-harvards-star-computer-science-professor-built-a-distance-learning-empire"><a href="https://www.newyorker.com/news/our-local-correspondents/how-harvards-star-computer-science-professor-built-a-distance-learning-empire">How Harvard’s Star Computer-Science Professor Built a Distance-Learning Empire</a></h3>
+<blockquote>
+<p>David Malan, of the hit class CS50, was working to perfect online teaching long before the pandemic. Is his method a model for the future of higher education?</p>
+</blockquote>
+<h3 id="surprising-getattr-recursion"><a href="https://nedbatchelder.com/blog/201010/surprising_getattr_recursion.html">Surprising <strong>getattr</strong> recursion</a></h3>
+<blockquote>
+<p>It’s well-known that you have to be careful in <strong>getattr</strong> not to use an attribute that might be missing. That would cause an infinite recursion.</p>
+</blockquote>
+<h3 id="the-psychology-of-learning-to-code"><a href="https://vasilishynkarenka.com/the-psychology-of-learning-to-code/">The psychology of learning to code</a></h3>
+<blockquote>
+<p>Build a habit of learning, find what you’re obsessed with, and crawl your way through The Suck.</p>
+</blockquote>
+<h3 id="16-everyday-habits-of-highly-productive-people"><a href="https://www.lifehack.org/articles/productivity/16-everyday-habits-highly-productive-people.html">16 Everyday Habits of Highly Productive People</a></h3>
+<blockquote>
+<p>A list of 16 tips and tricks that will help guide you to a more fulfilled life.</p>
+</blockquote>
+<h2 id="django">Django</h2>
+<p><a href="https://www.saaspegasus.com/guides/modern-javascript-for-django-developers/">Modern JavaScript for Django Developers</a></p>
+<blockquote>
+<p>Working with Django in the modern JavaScript ecosystem without giving up the things that make it great</p>
+</blockquote>
+<p><a href="https://www.youtube.com/playlist?list=PLEpW1LzVyQWhqb_OoWtURF5cfKSGof0It">Django Day Copenhagen 2020</a></p>
+<blockquote>
+<p>Videos from Django Day Copenhagen.</p>
+</blockquote>
+<h3 id="a-django-rest-api-in-a-single-file"><a href="https://adamj.eu/tech/2020/10/15/a-single-file-rest-api-in-django">A Django REST API in a Single File</a></h3>
+<blockquote>
+<p>The third in a series of writing Django apps in a single file, following previous posts on synchronous and asynchronous use cases.</p>
+</blockquote>
+<h2 id="tools">Tools</h2>
+<h3 id="triage-party-massively-multi-player-github-triage"><a href="https://github.com/google/triage-party">Triage Party: massively multi-player GitHub triage</a></h3>
+<blockquote>
+<p>Triage Party is a stateless web app to optimize issue and PR triage for large open-source projects using the GitHub API.</p>
+</blockquote>
+<h3 id="terraform-docs"><a href="https://github.com/terraform-docs/terraform-docs">terraform-docs</a></h3>
+<blockquote>
+<p>A utility to generate documentation from Terraform modules in various output formats.</p>
+</blockquote>
+<h3 id="terraformer"><a href="https://github.com/GoogleCloudPlatform/terraformer">terraformer</a></h3>
+<blockquote>
+<p>A CLI tool that generates tf/json and tfstate files based on existing infrastructure (reverse Terraform).</p>
+</blockquote>
+<h3 id="terragrunt"><a href="https://github.com/gruntwork-io/terragrunt">terragrunt</a></h3>
+<blockquote>
+<p>Terragrunt is a thin wrapper for Terraform that provides extra tools for keeping your Terraform configurations DRY, working with multiple Terraform modules, and managing remote state.</p>
+</blockquote>
+<h3 id="terraform-best-practices"><a href="https://github.com/ozbillwang/terraform-best-practices">Terraform Best Practices</a></h3>
+<blockquote>
+<p>Terraform Best Practices for AWS users.</p>
+</blockquote>
+<h3 id="bringing-old-photos-back-to-life"><a href="https://github.com/microsoft/Bringing-Old-Photos-Back-to-Life">Bringing-Old-Photos-Back-to-Life</a></h3>
+<blockquote>
+<p>Old Photo Restoration (Official PyTorch Implementation)</p>
+</blockquote>
+<h3 id="darling"><a href="https://www.darlinghq.org/">Darling</a></h3>
+<blockquote>
+<p>Darling is a translation layer that lets you run macOS software on Linux</p>
+</blockquote>
+<h3 id="qubes-os"><a href="https://www.qubes-os.org/">Qubes OS</a></h3>
+<blockquote>
+<p>Qubes OS is a free and open-source, security-oriented operating system for single-user desktop computing.</p>
+</blockquote>
+<h3 id="tails"><a href="https://tails.boum.org/">Tails</a></h3>
+<blockquote>
+<p>Tails is a portable operating system that protects against surveillance and censorship.</p>
+</blockquote>
+<h3 id="dockle"><a href="https://github.com/goodwithtech/dockle">dockle</a></h3>
+<blockquote>
+<p>Dockle - Container Image Linter for Security, Helping build the Best-Practice Docker Image, Easy to start</p>
+</blockquote>
+<h3 id="trivy"><a href="https://github.com/aquasecurity/trivy">trivy</a></h3>
+<blockquote>
+<p>A Simple and Comprehensive Vulnerability Scanner for Containers and other Artifacts, Suitable for CI.</p>
+</blockquote>
+<h3 id="devops-exercises"><a href="https://github.com/bregman-arie/devops-exercises">devops-exercises</a></h3>
+<blockquote>
+<p>This repo contains questions and exercises on various technical topics, sometimes related to DevOps and SRE</p>
+</blockquote>
+<h3 id="python-cheatsheet"><a href="https://github.com/gto76/python-cheatsheet">python-cheatsheet</a></h3>
+<blockquote>
+<p>Comprehensive Python Cheatshee</p>
+</blockquote>
+<h3 id="boundary-layer"><a href="https://github.com/etsy/boundary-layer">boundary-layer</a></h3>
+<blockquote>
+<p>boundary-layer is a tool for building Airflow DAGs from human-friendly, structured, maintainable yaml configuration.</p>
+</blockquote>
+<h2 id="other-stuff">Other stuff</h2>
+<h3 id="computer-stuff-they-didnt-teach-you-youtube-playlist"><a href="https://www.youtube.com/playlist?list=PL0M0zPgJ3HSesuPIObeUVQNbKqlw5U2Vr">Computer Stuff They Didn't Teach You - youtube playlist</a></h3>
+<blockquote>
+<p>Videos that will help you to fill in the gaps on all those little things that we should have learned in school but no one really sat down and took the time.</p>
+</blockquote>
+<h3 id="terraform-switcher"><a href="https://github.com/warrensbox/terraform-switcher/">terraform-switcher</a></h3>
+<blockquote>
+<p>The tfswitch command line tool lets you switch between different versions of terraform.</p>
+</blockquote>
+<h2 id="videos">Videos</h2>
+<h3 id="on-a-shoe-string-and-a-t2small-scaling-on-a-zero-budget-tom-eastman-pyconline-au-2020"><a href="https://www.youtube.com/watch?v=A-3zc1CABqM">"On a shoe-string and a t2.small: scaling on a [zero] budget." - Tom Eastman (PyConline AU 2020)</a></h3>
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/A-3zc1CABqM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<h3 id="praca-w-korporacji-jakie-ponosimy-szkody-zdrowotne-prof-pawe-januszewicz"><a href="https://www.youtube.com/watch?v=H9CJCVyD6mQ">Praca w korporacji - jakie ponosimy szkody zdrowotne? - prof. Paweł Januszewicz</a></h3>
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/H9CJCVyD6mQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<h3 id="i-used-the-reasonably-secure-qubes-os-for-6-months-and-survived-matty-mcfatty-themattymcfatty"><a href="https://www.youtube.com/watch?v=sbN5Bz3v-uA">I used the reasonably-secure Qubes OS for 6 months and survived - Matty McFatty [@themattymcfatty]</a></h3>
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/sbN5Bz3v-uA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<h3 id="reuven-m-lerner-practical-decorators-pycon-2019"><a href="https://www.youtube.com/watch?v=MjHpMCIvwsY">Reuven M. Lerner - Practical decorators - PyCon 2019</a></h3>
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/MjHpMCIvwsY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+    </article>
+
+        <div class="tags">
+            <p>tags: <a href="https://blog.tobked.dev/tag/python">python</a>, <a href="https://blog.tobked.dev/tag/blog">blog</a>, <a href="https://blog.tobked.dev/tag/podcast">podcast</a>, <a href="https://blog.tobked.dev/tag/series">series</a>, <a href="https://blog.tobked.dev/tag/aggregate">aggregate</a>, <a href="https://blog.tobked.dev/tag/summary">summary</a>, <a href="https://blog.tobked.dev/tag/month">month</a>, <a href="https://blog.tobked.dev/tag/2020">2020</a></p>
+        </div>
+
+    <hr>
+
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                            <li>
+                                <a href="https://tobked.dev">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-user fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/tobiaszkedzierski/?locale=en_US">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/TobKed">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://blog.tobked.dev/feeds/all.rss.xml">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                    </ul>
+<p class="copyright text-muted">
+    Blog powered by <a href="http://getpelican.com">Pelican</a>,
+    which takes great advantage of <a href="http://python.org">Python</a>. <br />
+    Main page header photo by <a href="https://juliakaczorowska.pl/">Julia Kaczorowska</a> (other by me). <br />
+        &copy;  Tobiasz Kedzierski
+</p>                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://blog.tobked.dev/theme/js/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://blog.tobked.dev/theme/js/bootstrap.min.js"></script>
+
+        <!-- Custom Theme JavaScript -->
+        <script src="https://blog.tobked.dev/theme/js/clean-blog.min.js"></script>
+
+</body>
+
+</html>

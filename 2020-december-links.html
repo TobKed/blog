@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+            <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <title>Month summary - December 2020</title>
+
+            <link href="https://blog.tobked.dev//feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="ups and downs Full Atom Feed" />
+            <link href="https://blog.tobked.dev//feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="ups and downs Full RSS Feed" />
+        <!-- Bootstrap Core CSS -->
+        <link href="https://blog.tobked.dev/theme/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link href="https://blog.tobked.dev/theme/css/clean-blog.min.css" rel="stylesheet">
+
+        <!-- Code highlight color scheme -->
+            <link href="https://blog.tobked.dev/theme/css/code_blocks/github.css" rel="stylesheet">
+
+            <!-- CSS specified by the user -->
+            <link href="https://blog.tobked.dev/css/main.css" rel="stylesheet">
+
+        <!-- Custom Fonts -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+
+
+        <meta name="description" content="Interesting stuff from the month">
+
+        <meta name="author" content="Tobiasz Kedzierski">
+
+        <meta name="tags" content="python">
+        <meta name="tags" content="blog">
+        <meta name="tags" content="podcast">
+        <meta name="tags" content="series">
+        <meta name="tags" content="aggregate">
+        <meta name="tags" content="summary">
+        <meta name="tags" content="month">
+        <meta name="tags" content="2020">
+
+	                <meta property="og:locale" content="">
+		<meta property="og:site_name" content="ups and downs">
+
+	<meta property="og:type" content="article">
+            <meta property="article:author" content="https://blog.tobked.dev/author/tobiasz-kedzierski">
+	<meta property="og:url" content="https://blog.tobked.dev/2020-december-links">
+	<meta property="og:title" content="Month summary - December 2020">
+	<meta property="article:published_time" content="2020-12-31 00:00:00+01:00">
+            <meta property="og:description" content="Interesting stuff from the month">
+
+            <meta property="og:image" content="https://blog.tobked.dev/images/poli_photo_by_julia_kaczorowska_edit.png">
+</head>
+
+<body class="article-2020-december-links">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="https://blog.tobked.dev/">ups and downs</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+
+                            <li><a href="https://blog.tobked.dev/pages/about-me">about me</a></li>
+                            <li><a href="https://blog.tobked.dev/pages/links">links</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+        <header class="intro-header" style="background-image: url('https://blog.tobked.dev/images/poli_photo_by_julia_kaczorowska_edit.png')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="post-heading">
+                        <h1>Month summary - December 2020</h1>
+                        <span class="meta">Posted by
+                                <a href="https://blog.tobked.dev/author/tobiasz-kedzierski">Tobiasz Kedzierski</a>
+                             on 31.12.2020
+                        </span>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    <!-- Post Content -->
+    <article>
+        <h1 id="december-2020">December 2020</h1>
+<p>I am aggregating here some more or less interesting stuff of various IT related materials which I came across this month.
+Some of them are strictly related to the things I did or am currently doing.</p>
+<h2 id="some-thoughts">Some thoughts</h2>
+<p>This month was quite limited due to the long Christmas holidays during which I did not spend too much time in front of the computer.</p>
+<p>Some time ago in one of the projects I came across the problem of too long response time on one of the websites. The form on this website is responsible for triggering operations dependent on external APIs.
+The request timeout on Heroku where it is deployed is limited to thirty seconds and apparently, from time to time handling this form exceeds that limit.
+Not only does it spell very poor user experience, it also causes server error when timeout is exceeded and the requested task is only partially completed.</p>
+<p>Inspired by the blog post about <a href="https://blog.miguelgrinberg.com/post/using-celery-with-flask">using Celery with Flask</a>,
+written by a great developer <a href="https://blog.miguelgrinberg.com">Miguel Grinberg</a>, I made something similar in Django.
+The proposed solution is to trigger a long-running task on the website. The task will be performed asynchronously by the Celery worker and a dynamic progress bar will inform about its status.
+In the repository <a href="https://github.com/TobKed/django_celery_progress_bar">django_celery_progress_bar</a> I created a simple Django app with two Celery workers. The first worker called <code>celeryworker</code>  is responsible for executing scheduled periodic tasks,
+while the second one, called <code>celeryworker_highprio</code> is responsible for handling tasks triggered by the web form. The response from the app is returned immediately with initial task status. Then the progress bar updates are handled by a javascript function executed in a loop until it finishes.</p>
+<p><img alt="Progress Bar" src="https://raw.githubusercontent.com/TobKed/django_celery_progress_bar/main/images/progress_bar.gif"></p>
+<p>On another note, I have been tracking my expenditures for many years. At the beginning I used spreadsheets but updating it was cumbersome and inconvenient. To make it more friendly I wrote a web app for it in Flask some time ago: <a href="https://github.com/TobKed/Home-Budgeting-App">Home-Budgeting-App</a>.
+I have used it for a year approximately. I decided to rewrite it to Django to be able to use its powerful admin panel. This is how
+(<a href="https://github.com/TobKed/yet_another_home_budgeting_app">yet_another_home_budgeting_app</a>) was created.</p>
+<h2 id="articles">Articles</h2>
+<h3 id="always-leave-the-code-better-than-you-found-it"><a href="https://letterstoanewdeveloper.com/2020/11/23/always-leave-the-code-better-than-you-found-it/">Always leave the code better than you found it</a></h3>
+<blockquote>
+<p>What are some ways to improve the code when you are in it?</p>
+</blockquote>
+<h3 id="build-the-perfect-productivity-system-with-paper-notebooks-and-digital-tools"><a href="https://zapier.com/blog/digital-and-paper-note-taking-systems/">Build the Perfect Productivity System with Paper Notebooks and Digital Tools</a></h3>
+<blockquote>
+<p>Combine the Bullet Journal and other note-taking methods with your favorite apps</p>
+</blockquote>
+<h3 id="productivity-meaning-concept-formulas-techniques-measurement-and-advantages"><a href="https://www.economicsdiscussion.net/management/productivity-meaning-concept-formulas/32324">Productivity: Meaning, Concept, Formulas, Techniques, Measurement and Advantages</a></h3>
+<blockquote>
+<p>Productivity refers to the physical relationship between the quantity produced (output) and the quantity of resources used in the course of production (input).</p>
+</blockquote>
+<h3 id="how-i-hired-a-freelance-editor-for-my-blog"><a href="https://mtlynch.io/editor/">How I Hired a Freelance Editor for My Blog</a></h3>
+<blockquote>
+<p>“Hey, you had great ideas in that post, but I never read them because your repetitive sentence structure lost my attention, and I closed the tab.” An editor actually can give me that kind of feedback.</p>
+</blockquote>
+<h3 id="laziness-does-not-exist"><a href="https://humanparts.medium.com/laziness-does-not-exist-3af27e312d01">Laziness Does Not Exist</a></h3>
+<blockquote>
+<p>But unseen barriers do</p>
+</blockquote>
+<h3 id="the-complete-guide-to-effective-reading"><a href="https://maartenvandoorn.nl/reading-guide/">The Complete Guide to Effective Reading</a></h3>
+<blockquote>
+<p>Learning is a heavily misunderstood concept.</p>
+</blockquote>
+<h3 id="how-to-prioritize-when-theres-always-more-to-do"><a href="https://blog.doist.com/how-to-prioritize/">How to Prioritize When There’s Always More To Do</a></h3>
+<blockquote>
+<p>Advice for managing life's chaos and focusing on what's important</p>
+</blockquote>
+<h3 id="how-much-i-made-as-a-really-good-engineer-at-facebook"><a href="https://medium.com/@anyengineer/how-much-i-made-as-a-really-good-engineer-at-facebook-9366151b52db">How much I made as a really good Engineer at Facebook</a></h3>
+<blockquote>
+<p>When I moved to US to join Facebook a decade back, I had no idea whether the offer I was given was good or bad.</p>
+</blockquote>
+<h3 id="how-to-make-your-code-reviewer-fall-in-love-with-you"><a href="https://mtlynch.io/code-review-love/">How to Make Your Code Reviewer Fall in Love with You</a></h3>
+<blockquote>
+<p>This article describes best practices for participating in a code review when you’re the author.</p>
+</blockquote>
+<h3 id="warren-buffetts-2-list-strategy-how-to-maximize-your-focus-and-master-your-priorities"><a href="https://jamesclear.com/buffett-focus">Warren Buffett’s “2 List” Strategy: How to Maximize Your Focus and Master Your Priorities</a></h3>
+<blockquote>
+<p>Let's talk about the simple 3-step productivity strategy that Warren Buffett uses to help his employees determine their priorities and actions.</p>
+</blockquote>
+<h3 id="if-you-commit-to-nothing-youll-be-distracted-by-everything"><a href="https://jamesclear.com/mental-toughness-marathon-monks">If You Commit to Nothing, You’ll Be Distracted By Everything</a></h3>
+<blockquote>
+<p>The Kaihogyo is a 1,000 day challenge that takes place over seven years.</p>
+</blockquote>
+<h3 id="this-is-water-overcoming-bias-and-how-to-think-real-good"><a href="https://maartenvandoorn.nl/this-is-water-overcoming-bias-and-how-to-think-real-good/">This Is Water: Overcoming Bias and How to Think Real Good</a></h3>
+<blockquote>
+<p>Once upon a time, there used to be a great and acrimonious debate in philosophy about whether people had “mental imagery” — whether or not people actually see a little picture of an elephant when they think about an elephant.</p>
+</blockquote>
+<h3 id="google-cloud-overrun-how-a-free-trial-experiment-ended-with-a-72000-bill-overnight"><a href="https://www.theregister.com/2020/12/10/google_cloud_over_run/">Google Cloud (over)Run: How a free trial experiment ended with a $72,000 bill overnight</a></h3>
+<blockquote>
+<p>Billing budget? Free plan? All useless when buggy code went into overdrive</p>
+</blockquote>
+<h3 id="shifting-to-a-remote-mindset"><a href="https://increment.com/remote/remote-work-mindset/">Shifting to a remote mindset</a></h3>
+<blockquote>
+<p>On moving away from the in-office default and considering how to achieve what you value.</p>
+</blockquote>
+<h3 id="how-to-think-the-skill-youve-never-been-taught"><a href="https://fs.blog/2015/08/how-to-think/">How to Think: The Skill You’ve Never Been Taught</a></h3>
+<blockquote>
+<p>“I’ve spent my life trying to undo habits—especially habits of thinking. They narrow your interaction with the world. They’re the phrases that come easily to your mind, like: ‘I know what I think,’ or ‘I know what I like,’ or ‘I know what’s going to happen today.’ If you just replace ‘know’ with ‘don’t know,’ then you start to move into the unknown. And that’s where the interesting stuff happens.”
+— Humans of New York</p>
+</blockquote>
+<h2 id="python">Python</h2>
+<h3 id="using-pythons-bisect-module"><a href="https://johnlekberg.com/blog/2020-11-21-stdlib-bisect.html">Using Python's bisect module </a></h3>
+<blockquote>
+<p>The goal of the bisect module is to allow you to efficiently search and update sorted lists.</p>
+</blockquote>
+<h3 id="build-a-flask-microservice-with-openfaas"><a href="https://www.openfaas.com/blog/openfaas-flask/">Build a Flask microservice with OpenFaaS</a></h3>
+<blockquote>
+<p>Which is better Flask or serverless-style Python functions? Why not have both?</p>
+</blockquote>
+<h2 id="tools">Tools</h2>
+<h3 id="ripgrep-rg"><a href="https://github.com/BurntSushi/ripgrep">ripgrep (rg)</a></h3>
+<blockquote>
+<p>ripgrep is a line-oriented search tool that recursively searches your current directory for a regex pattern. By default, ripgrep will respect your .gitignore and automatically skip hidden files/directories and binary files.</p>
+</blockquote>
+<h3 id="todotxt-cli"><a href="https://github.com/todotxt/todo.txt-cli">todo.txt-cli</a></h3>
+<blockquote>
+<p>A simple and extensible shell script for managing your todo.txt file.</p>
+</blockquote>
+<h3 id="fastaighapi"><a href="https://github.com/fastai/ghapi">fastai/ghapi</a></h3>
+<blockquote>
+<p>A delightful and complete interface to GitHub's amazing API</p>
+</blockquote>
+<h3 id="typer"><a href="https://github.com/tiangolo/typer">Typer</a></h3>
+<blockquote>
+<p>Typer, build great CLIs. Easy to code. Based on Python type hints.</p>
+</blockquote>
+<h3 id="diagrams"><a href="https://github.com/mingrammer/diagrams">diagrams</a></h3>
+<blockquote>
+<p>Diagram as Code.</p>
+</blockquote>
+<h2 id="videos">Videos</h2>
+<h3 id="the-art-of-code-dylan-beattie"><a href="https://www.youtube.com/watch?v=6avJHaC3C2U">The Art of Code - Dylan Beattie</a></h3>
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/6avJHaC3C2U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<h3 id="yaml-tips-for-kubernetes"><a href="https://www.youtube.com/watch?v=1rwCkFTjikw">YAML Tips for Kubernetes</a></h3>
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/1rwCkFTjikw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<h3 id="peter-norvig-how-computers-learn"><a href="https://www.youtube.com/watch?v=T1O3ikmTEdA">Peter Norvig: How Computers Learn</a></h3>
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/T1O3ikmTEdA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<h3 id="czy-leci-z-nami-devops-webinar"><a href="https://www.youtube.com/watch?v=UGwayrJiFAA">Czy leci z nami DevOps? Webinar</a></h3>
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/UGwayrJiFAA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<h3 id="djangocon-us-2017-end-to-end-django-on-kubernetes-by-frank-wiles"><a href="https://www.youtube.com/watch?v=4LpaxvKsSlo">DjangoCon US 2017 - End-to-End Django on Kubernetes by Frank Wiles</a></h3>
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/4LpaxvKsSlo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+    </article>
+
+        <div class="tags">
+            <p>tags: <a href="https://blog.tobked.dev/tag/python">python</a>, <a href="https://blog.tobked.dev/tag/blog">blog</a>, <a href="https://blog.tobked.dev/tag/podcast">podcast</a>, <a href="https://blog.tobked.dev/tag/series">series</a>, <a href="https://blog.tobked.dev/tag/aggregate">aggregate</a>, <a href="https://blog.tobked.dev/tag/summary">summary</a>, <a href="https://blog.tobked.dev/tag/month">month</a>, <a href="https://blog.tobked.dev/tag/2020">2020</a></p>
+        </div>
+
+    <hr>
+
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                            <li>
+                                <a href="https://tobked.dev">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-user fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/tobiaszkedzierski/?locale=en_US">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/TobKed">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://blog.tobked.dev/feeds/all.rss.xml">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                    </ul>
+<p class="copyright text-muted">
+    Blog powered by <a href="http://getpelican.com">Pelican</a>,
+    which takes great advantage of <a href="http://python.org">Python</a>. <br />
+    Main page header photo by <a href="https://juliakaczorowska.pl/">Julia Kaczorowska</a> (other by me). <br />
+        &copy;  Tobiasz Kedzierski
+</p>                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://blog.tobked.dev/theme/js/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://blog.tobked.dev/theme/js/bootstrap.min.js"></script>
+
+        <!-- Custom Theme JavaScript -->
+        <script src="https://blog.tobked.dev/theme/js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
