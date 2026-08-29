@@ -1,4 +1,0 @@
----
-aliases:
-  - /category/django-cloud/
----
