@@ -1,12 +1,22 @@
-Title: Month summary - November 2025
-Date: 2025-11-30
-Category: summary
-Tags: python, blog, podcast, series, aggregate, summary, month, 2025
-Slug: 2025-november-links
-Summary: Interesting stuff from the month
-Header_Cover: /images/posts/2025/2025_11_xx.jpg
-Status: published
-
+---
+title: Month summary - November 2025
+date: '2025-11-30'
+tags:
+- python
+- blog
+- podcast
+- series
+- aggregate
+- summary
+- month
+- '2025'
+slug: 2025-november-links
+summary: Interesting stuff from the month
+image: /images/posts/2025/2025_11_xx.jpg
+status: published
+categories:
+- summary
+---
 # November 2025
 
 Time for another monthly post sharing some of the IT discoveries that crossed my path lately.

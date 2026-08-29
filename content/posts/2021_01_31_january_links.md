@@ -1,11 +1,21 @@
-Title: Month summary - January 2021
-Date: 2021-01-31
-Category: summary
-Tags: python, blog, podcast, series, aggregate, summary, month, 2021
-Slug: 2021-january-links
-Summary: Interesting stuff from the month
-Status: published
-
+---
+title: Month summary - January 2021
+date: '2021-01-31'
+tags:
+- python
+- blog
+- podcast
+- series
+- aggregate
+- summary
+- month
+- '2021'
+slug: 2021-january-links
+summary: Interesting stuff from the month
+status: published
+categories:
+- summary
+---
 # January 2021
 
 I am aggregating here some more or less interesting stuff of various IT related materials which I came across this month.

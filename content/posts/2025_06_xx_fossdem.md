@@ -1,12 +1,19 @@
-Title: FOSDEM 2025
-Date: 2025-05-31
-Category: summary
-Tags: fosdem, opensource, brussels, belgium, 2025
-Slug: fosdem-2025
-Summary: My thoughts after FOSSDEM 2025
-Header_Cover: /images/posts/2025/2025_05_fossde.jpg
-Status: draft
-
+---
+title: FOSDEM 2025
+date: '2025-05-31'
+tags:
+- fosdem
+- opensource
+- brussels
+- belgium
+- '2025'
+slug: fosdem-2025
+summary: My thoughts after FOSSDEM 2025
+image: /images/posts/2025/2025_05_fossde.jpg
+status: draft
+categories:
+- summary
+---
 # FOSDEM
 
 https://fosdem.org/2025/schedule/event/fosdem-2025-6827--lightning-talks-/

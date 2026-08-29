@@ -1,11 +1,17 @@
-Title: Flask home monitoring
-Date: 2019-06-23
-Category: Python
-Tags: python, flask, web, camera
-Slug: flask-home-monitoring
-Summary: Flask home monitoring
-Status: draft
-
+---
+title: Flask home monitoring
+date: '2019-06-23'
+tags:
+- python
+- flask
+- web
+- camera
+slug: flask-home-monitoring
+summary: Flask home monitoring
+status: draft
+categories:
+- Python
+---
 ## Flask home monitoring
 
 <br>

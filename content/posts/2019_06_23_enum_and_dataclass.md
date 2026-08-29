@@ -1,11 +1,18 @@
-Title: Enum and dataclass
-Date: 2019-06-23
-Category: Python
-Tags: python, enum, dataclass, data, OOP
-Slug: enum-and-dataclass
-Summary: Few words about enum and dataclass
-Status: published
-
+---
+title: Enum and dataclass
+date: '2019-06-23'
+tags:
+- python
+- enum
+- dataclass
+- data
+- OOP
+slug: enum-and-dataclass
+summary: Few words about enum and dataclass
+status: published
+categories:
+- Python
+---
 ## Enum
 
 > "An enumeration is a set of symbolic names (members) bound to unique, constant values. Within an enumeration, the members can be compared by identity, and the enumeration itself can be iterated over."

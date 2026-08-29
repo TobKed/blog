@@ -1,11 +1,17 @@
-Title: RasbperryPi bluetooth audio receiver
-Date: 2019-08-13
-Category: python
-Tags: RPi, RaspberryPi, raspberry, bluetooth
-Slug: raspberry-bluetooth-audio-receiver
-Summary: Connect old Hi-Fi by bluetooth
-Status: draft
-
+---
+title: RasbperryPi bluetooth audio receiver
+date: '2019-08-13'
+tags:
+- RPi
+- RaspberryPi
+- raspberry
+- bluetooth
+slug: raspberry-bluetooth-audio-receiver
+summary: Connect old Hi-Fi by bluetooth
+status: draft
+categories:
+- python
+---
 ## Bluetooth audio receiver
 
 ### What and why?

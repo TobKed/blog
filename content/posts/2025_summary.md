@@ -1,12 +1,17 @@
-Title: Year summary - 2025
-Date: 2026-01-01
-Category: summary
-Tags: summary, year, 2025
-Slug: 2025-summary
-Summary: Ups and downs of 2025
-Header_Cover: /images/posts/2025/2025_04_xx.jpg
-Status: published
-
+---
+title: Year summary - 2025
+date: '2026-01-01'
+tags:
+- summary
+- year
+- '2025'
+slug: 2025-summary
+summary: Ups and downs of 2025
+image: /images/posts/2025/2025_04_xx.jpg
+status: published
+categories:
+- summary
+---
 # 2025
 
 This year was defined by a new job, deep dives into AI, and a return to in-person community events.

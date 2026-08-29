@@ -1,12 +1,22 @@
-Title: Month summary - April 2026
-Date: 2026-04-30
-Category: summary
-Tags: python, blog, podcast, series, aggregate, summary, month, 2026
-Slug: 2026-april-links
-Summary: Interesting stuff from the month
-Header_Cover: /images/posts/2026/2026_04_xx.jpg
-Status: published
-
+---
+title: Month summary - April 2026
+date: '2026-04-30'
+tags:
+- python
+- blog
+- podcast
+- series
+- aggregate
+- summary
+- month
+- '2026'
+slug: 2026-april-links
+summary: Interesting stuff from the month
+image: /images/posts/2026/2026_04_xx.jpg
+status: published
+categories:
+- summary
+---
 # April 2026
 
 Time for another monthly post sharing some of the IT discoveries that crossed my path lately.

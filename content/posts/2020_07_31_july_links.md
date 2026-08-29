@@ -1,11 +1,21 @@
-Title: Month summary - July 2020
-Date: 2020-07-31
-Category: summary
-Tags: python, blog, podcast, series, aggregate, summary, month, 2020 
-Slug: 2020-july-links
-Summary: Interesting stuff from the month
-Status: published
-
+---
+title: Month summary - July 2020
+date: '2020-07-31'
+tags:
+- python
+- blog
+- podcast
+- series
+- aggregate
+- summary
+- month
+- '2020'
+slug: 2020-july-links
+summary: Interesting stuff from the month
+status: published
+categories:
+- summary
+---
 # July 2020
 
 I am aggregating here some more or less interesting stuff of various IT related materials which I came across this month.

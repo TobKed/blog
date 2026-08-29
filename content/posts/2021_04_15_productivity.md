@@ -1,11 +1,16 @@
-Title: Productivity course
-Date: 2021-12-16
-Category: life
-Tags: life, productivity
-Slug: productivity-course
-Summary: Few words about one month productivity course (Produktywność krok po kroku).
-Status: published
-
+---
+title: Productivity course
+date: '2021-12-16'
+tags:
+- life
+- productivity
+slug: productivity-course
+summary: "Few words about one month productivity course (Produktywno\u015B\u0107 krok\
+  \ po kroku)."
+status: published
+categories:
+- life
+---
 ## Productivity
 
 How did it start? In March, we "celebrated" the one-year anniversary of pandemic in Poland!

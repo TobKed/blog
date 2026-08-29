@@ -1,0 +1,45 @@
+baseURL = 'https://blog.tobked.dev/'
+languageCode = 'en-us'
+title = 'ups and downs'
+theme = 'hugo-theme-cleanwhite'
+defaultContentLanguage = 'en'
+hasCJKLanguage = true
+paginate = 10
+
+[params]
+  header_image = "images/poli_photo_by_julia_kaczorowska_edit.png"
+  author = "Tobiasz Kedzierski"
+  description = "Tobiasz Kedzierski's Blog"
+  keyword = "blog, python, software engineering"
+  slogan = "ups and downs"
+  image_404 = "images/404-bg.jpg"
+  
+  # Social links
+  github = "https://github.com/TobKed"
+  linkedin = "https://www.linkedin.com/in/tobiaszkedzierski/?locale=en_US"
+
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "about me"
+  url = "/about-me/"
+  weight = 2
+
+[[menu.main]]
+  name = "tobked.dev"
+  url = "https://tobked.dev/"
+  weight = 3
+  
+[permalinks]
+  posts = "/:slug/"
+  
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[markup.goldmark.renderer]
+  unsafe = true
+

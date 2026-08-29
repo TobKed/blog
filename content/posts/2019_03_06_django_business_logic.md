@@ -1,11 +1,15 @@
-Title: Business Logic in Django
-Date: 2019-03-06
-Category: Python
-Tags: python, django
-Slug: django-business-logic
-Summary: Where to put business logic in Django?
-Status: draft
-
+---
+title: Business Logic in Django
+date: '2019-03-06'
+tags:
+- python
+- django
+slug: django-business-logic
+summary: Where to put business logic in Django?
+status: draft
+categories:
+- Python
+---
 ## Business logic in Django
 
 Where to put business logic in Django?

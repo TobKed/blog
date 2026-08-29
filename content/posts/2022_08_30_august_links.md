@@ -1,12 +1,22 @@
-Title: Month summary - August 2022
-Date: 2022-08-30
-Category: summary
-Tags: python, blog, podcast, series, aggregate, summary, month, 2022
-Slug: 2022-august-links
-Summary: Interesting stuff from the month
-Status: published
-Header_Cover: /images/posts/2022/2022_08_xx.jpg
-
+---
+title: Month summary - August 2022
+date: '2022-08-30'
+tags:
+- python
+- blog
+- podcast
+- series
+- aggregate
+- summary
+- month
+- '2022'
+slug: 2022-august-links
+summary: Interesting stuff from the month
+status: published
+image: /images/posts/2022/2022_08_xx.jpg
+categories:
+- summary
+---
 # August 2022
 
 I am aggregating here some more or less interesting stuff of various IT related materials which I came across this month.

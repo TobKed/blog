@@ -1,11 +1,22 @@
-Title: Month summary - July 2021
-Date: 2021-07-31
-Category: summary
-Tags: python, blog, podcast, series, aggregate, summary, month, 2021, git
-Slug: 2021-july-links
-Summary: Interesting stuff from the month
-Status: published
-
+---
+title: Month summary - July 2021
+date: '2021-07-31'
+tags:
+- python
+- blog
+- podcast
+- series
+- aggregate
+- summary
+- month
+- '2021'
+- git
+slug: 2021-july-links
+summary: Interesting stuff from the month
+status: published
+categories:
+- summary
+---
 # July 2021
 
 I am aggregating here some more or less interesting stuff of various IT related materials which I came across this month.

@@ -1,12 +1,22 @@
-Title: Month summary - {Month} 2026
-Date: 2026-12-31
-Category: summary
-Tags: python, blog, podcast, series, aggregate, summary, month, 2026
-Slug: 2026-{month}-links
-Summary: Interesting stuff from the month
-Header_Cover: /images/posts/2026/2026_xx_xx.jpg
-Status: draft
-
+---
+title: Month summary - {Month} 2026
+date: '2026-12-31'
+tags:
+- python
+- blog
+- podcast
+- series
+- aggregate
+- summary
+- month
+- '2026'
+slug: 2026-{month}-links
+summary: Interesting stuff from the month
+image: /images/posts/2026/2026_xx_xx.jpg
+status: draft
+categories:
+- summary
+---
 # {Month} 2026
 
 Time for another monthly post sharing some of the IT discoveries that crossed my path lately.

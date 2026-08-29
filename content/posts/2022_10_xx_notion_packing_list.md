@@ -1,12 +1,17 @@
-Title: Notion packing lists
-Date: 2022-10-25
-Category: productivity
-Tags: productivity, tools, notion
-Slug: notion-packing-lists
-Summary: Make packing easier
-Header_Cover: /images/posts/2020/2020_summary.png
-Status: published
-
+---
+title: Notion packing lists
+date: '2022-10-25'
+tags:
+- productivity
+- tools
+- notion
+slug: notion-packing-lists
+summary: Make packing easier
+image: /images/posts/2020/2020_summary.png
+status: published
+categories:
+- productivity
+---
 # Packing - what is the problem here?
 
 From time to time I travel.

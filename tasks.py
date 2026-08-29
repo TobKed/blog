@@ -6,17 +6,13 @@ import shutil
 import sys
 
 from invoke import task
-from invoke.util import cd
-from pelican.server import ComplexHTTPRequestHandler, RootedHTTPServer
 
 CONFIG = {
-    # Local path configuration (can be absolute or relative to tasks.py)
-    "deploy_path": "output",
+    # Local path configuration
+    "deploy_path": "public",
     # Github Pages configuration
     "github_pages_branch": "gh-pages",
     "commit_message": "'Publish site on {}'".format(datetime.date.today().isoformat()),
-    # Port for `serve`
-    "port": 8000,
 }
 
 
@@ -25,40 +21,31 @@ def clean(c):
     """Remove generated files"""
     if os.path.isdir(CONFIG["deploy_path"]):
         shutil.rmtree(CONFIG["deploy_path"])
-        os.makedirs(CONFIG["deploy_path"])
 
 
 @task
 def build(c):
     """Build local version of site"""
-    c.run("pelican -s pelicanconf.py")
+    c.run("hugo")
 
 
 @task
 def rebuild(c):
     """`build` with the delete switch"""
-    c.run("pelican -d -s pelicanconf.py")
+    clean(c)
+    build(c)
 
 
 @task
 def regenerate(c):
     """Automatically regenerate site upon file modification"""
-    c.run("pelican -r -s pelicanconf.py")
+    c.run("hugo server -w")
 
 
 @task
 def serve(c):
-    """Serve site at http://localhost:8000/"""
-
-    class AddressReuseTCPServer(RootedHTTPServer):
-        allow_reuse_address = True
-
-    server = AddressReuseTCPServer(
-        CONFIG["deploy_path"], ("", CONFIG["port"]), ComplexHTTPRequestHandler
-    )
-
-    sys.stderr.write("Serving on port {port} ...\n".format(**CONFIG))
-    server.serve_forever()
+    """Serve site locally"""
+    c.run("hugo server")
 
 
 @task
@@ -71,19 +58,21 @@ def reserve(c):
 @task
 def preview(c):
     """Build production version of site"""
-    c.run("pelican -s publishconf.py")
+    c.run("hugo --minify")
 
 
 @task
 def publish(c):
     """Publish to production via rsync"""
-    c.run("pelican -s publishconf.py")
-    c.run(
-        'rsync --delete --exclude ".DS_Store" -pthrvz -c '
-        "{} {production}:{dest_path}".format(
-            CONFIG["deploy_path"].rstrip("/") + "/", **CONFIG
+    c.run("hugo --minify")
+    # If rsync is still used, this preserves the original logic
+    if "production" in CONFIG and "dest_path" in CONFIG:
+        c.run(
+            'rsync --delete --exclude ".DS_Store" -pthrvz -c '
+            "{} {production}:{dest_path}".format(
+                CONFIG["deploy_path"].rstrip("/") + "/", **CONFIG
+            )
         )
-    )
 
 
 @task

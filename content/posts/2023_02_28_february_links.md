@@ -1,12 +1,22 @@
-Title: February summary - February 2023
-Date: 2023-02-28
-Category: summary
-Tags: python, blog, podcast, series, aggregate, summary, february, 2023
-Slug: 2023-february-links
-Summary: Interesting stuff from the month
-Status: published
-Header_Cover: /images/posts/black-cover.png
-
+---
+title: February summary - February 2023
+date: '2023-02-28'
+tags:
+- python
+- blog
+- podcast
+- series
+- aggregate
+- summary
+- february
+- '2023'
+slug: 2023-february-links
+summary: Interesting stuff from the month
+status: published
+image: /images/posts/black-cover.png
+categories:
+- summary
+---
 # February 2023
 
 I am aggregating here some more or less interesting stuff of various IT related materials which I came across this february.

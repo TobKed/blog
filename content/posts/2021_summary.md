@@ -1,12 +1,17 @@
-Title: Year summary - 2021
-Date: 2022-01-01
-Category: summary
-Tags: summary, year, 2021
-Slug: 2021-summary
-Summary: Ups and downs of 2021
-Header_Cover: /images/posts/2021/summary/2021_summary.jpg
-Status: published
-
+---
+title: Year summary - 2021
+date: '2022-01-01'
+tags:
+- summary
+- year
+- '2021'
+slug: 2021-summary
+summary: Ups and downs of 2021
+image: /images/posts/2021/summary/2021_summary.jpg
+status: published
+categories:
+- summary
+---
 # 2021
 
 Yeah, 2021.

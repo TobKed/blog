@@ -1,12 +1,22 @@
-Title: Month summary - July 2025
-Date: 2025-07-31
-Category: summary
-Tags: python, blog, podcast, series, aggregate, summary, month, 2025
-Slug: 2025-july-links
-Summary: Interesting stuff from the month
-Header_Cover: /images/posts/2025/2025_07_xx.jpg
-Status: published
-
+---
+title: Month summary - July 2025
+date: '2025-07-31'
+tags:
+- python
+- blog
+- podcast
+- series
+- aggregate
+- summary
+- month
+- '2025'
+slug: 2025-july-links
+summary: Interesting stuff from the month
+image: /images/posts/2025/2025_07_xx.jpg
+status: published
+categories:
+- summary
+---
 # July 2025
 
 Time for another monthly post sharing some of the IT discoveries that crossed my path lately.

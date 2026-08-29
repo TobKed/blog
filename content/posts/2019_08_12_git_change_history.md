@@ -1,11 +1,15 @@
-Title: Changing history in Git
-Date: 2019-08-19
-Category: Git
-Tags: git, vcs
-Slug: git-history
-Summary: Fix mistakes and clean git repository
-Status: published
-
+---
+title: Changing history in Git
+date: '2019-08-19'
+tags:
+- git
+- vcs
+slug: git-history
+summary: Fix mistakes and clean git repository
+status: published
+categories:
+- Git
+---
 ## Changing history
 
 Many times when working with Git you want change something in the history and Git is great about that.

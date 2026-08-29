@@ -1,12 +1,22 @@
-Title: Month summary - December 2025
-Date: 2025-12-31
-Category: summary
-Tags: python, blog, podcast, series, aggregate, summary, month, 2025
-Slug: 2025-december-links
-Summary: Interesting stuff from the month
-Header_Cover: /images/posts/2025/2025_12_xx.jpg
-Status: published
-
+---
+title: Month summary - December 2025
+date: '2025-12-31'
+tags:
+- python
+- blog
+- podcast
+- series
+- aggregate
+- summary
+- month
+- '2025'
+slug: 2025-december-links
+summary: Interesting stuff from the month
+image: /images/posts/2025/2025_12_xx.jpg
+status: published
+categories:
+- summary
+---
 # December 2025
 
 Time for another monthly post sharing some of the IT discoveries that crossed my path lately.

@@ -142,12 +142,12 @@ def build_replacements(
     # Uses specific patterns from the template to avoid accidental replacements
     return {
         # Metadata
-        f"Title: Month summary - {{Month}} {tpl_year}": f"Title: Month summary - {month_name_full} {year}",
+        f"title: Month summary - {{Month}} {tpl_year}": f"title: Month summary - {month_name_full} {year}",
         # Using a unique placeholder date in template is safer
-        f"Date: {tpl_year}-12-31": f"Date: {formatted_date}",
-        f"Slug: {tpl_year}-{{month}}-links": f"Slug: {year}-{month_name_lower}-links",
+        f"date: '{tpl_year}-12-31'": f"date: '{formatted_date}'",
+        f"slug: {tpl_year}-{{month}}-links": f"slug: {year}-{month_name_lower}-links",
         # Be specific about the path structure & placeholder year
-        f"Header_Cover: /images/posts/{tpl_year}/{tpl_year}_xx_xx.jpg": f"Header_Cover: /images/posts/{year}/{year}_{month_num:02d}_xx.jpg",
+        f"image: /images/posts/{tpl_year}/{tpl_year}_xx_xx.jpg": f"image: /images/posts/{year}/{year}_{month_num:02d}_xx.jpg",
         # Content Heading
         f"# {{Month}} {tpl_year}": f"# {month_name_full} {year}",
         # Add other specific replacements here if needed

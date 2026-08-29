@@ -1,12 +1,17 @@
-Title: Year summary - 2022
-Date: 2023-01-01
-Category: summary
-Tags: summary, year, 2022
-Slug: 2022-summary
-Summary: Ups and downs of 2022
-Header_Cover: /images/posts/2022/summary/2022_summary.jpg
-Status: published
-
+---
+title: Year summary - 2022
+date: '2023-01-01'
+tags:
+- summary
+- year
+- '2022'
+slug: 2022-summary
+summary: Ups and downs of 2022
+image: /images/posts/2022/summary/2022_summary.jpg
+status: published
+categories:
+- summary
+---
 # 2022
 
 ## Work

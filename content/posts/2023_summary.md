@@ -1,12 +1,17 @@
-Title: Year summary - 2023
-Date: 2024-01-01
-Category: summary
-Tags: summary, year, 2023
-Slug: 2023-summary
-Summary: Ups and downs of 2023
-Header_Cover: /images/posts/2023/2023_08_xx.jpg
-Status: published
-
+---
+title: Year summary - 2023
+date: '2024-01-01'
+tags:
+- summary
+- year
+- '2023'
+slug: 2023-summary
+summary: Ups and downs of 2023
+image: /images/posts/2023/2023_08_xx.jpg
+status: published
+categories:
+- summary
+---
 # 2023
 
 ## Highlights

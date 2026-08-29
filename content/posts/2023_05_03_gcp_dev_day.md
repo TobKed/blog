@@ -1,12 +1,19 @@
-Title: Google Cloud Developer Day Warsaw 2023
-Date: 2023-05-03
-Category: cloud
-Tags: cloud, developer, google, gcp, 2023
-Slug: google-cloud-developer-day-warsaw-2023
-Summary: My notes from Google Cloud Developer Day Warsaw 2023
-Header_Cover: /images/posts/2023/2023_05_gcp_dev_day/2023_05_gcp_dev_day.jpg
-Status: published
-
+---
+title: Google Cloud Developer Day Warsaw 2023
+date: '2023-05-03'
+tags:
+- cloud
+- developer
+- google
+- gcp
+- '2023'
+slug: google-cloud-developer-day-warsaw-2023
+summary: My notes from Google Cloud Developer Day Warsaw 2023
+image: /images/posts/2023/2023_05_gcp_dev_day/2023_05_gcp_dev_day.jpg
+status: published
+categories:
+- cloud
+---
 # Google Cloud Developer Day Warsaw 2023
 
 I attended Google Cloud Developer Day Warsaw 2023 on April 27th, 2023. It was a free event organized by Google Cloud at their [Warsaw Campus](https://www.campus.co/warsaw/).

@@ -1,12 +1,17 @@
-Title: Year summary - 2024
-Date: 2025-01-01
-Category: summary
-Tags: summary, year, 2024
-Slug: 2024-summary
-Summary: Ups and downs of 2024
-Header_Cover: /images/posts/2024/2024_11_xx.jpg
-Status: published
-
+---
+title: Year summary - 2024
+date: '2025-01-01'
+tags:
+- summary
+- year
+- '2024'
+slug: 2024-summary
+summary: Ups and downs of 2024
+image: /images/posts/2024/2024_11_xx.jpg
+status: published
+categories:
+- summary
+---
 # 2024
 
 This year was filled with learning and growth in several key areas.

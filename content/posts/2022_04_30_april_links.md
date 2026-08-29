@@ -1,12 +1,22 @@
-Title: Month summary - April 2022
-Date: 2022-04-30
-Category: summary
-Tags: python, blog, podcast, series, aggregate, summary, month, 2022
-Slug: 2022-april-links
-Summary: Interesting stuff from the month
-Header_Cover: /images/posts/2022/2022_04_xx.jpg
-Status: published
-
+---
+title: Month summary - April 2022
+date: '2022-04-30'
+tags:
+- python
+- blog
+- podcast
+- series
+- aggregate
+- summary
+- month
+- '2022'
+slug: 2022-april-links
+summary: Interesting stuff from the month
+image: /images/posts/2022/2022_04_xx.jpg
+status: published
+categories:
+- summary
+---
 # April 2022
 
 I am aggregating here some more or less interesting stuff of various IT related materials which I came across this month.

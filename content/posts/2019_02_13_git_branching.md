@@ -1,11 +1,16 @@
-Title: Git branching
-Date: 2019-02-13
-Category: Git
-Tags: git, branching, vcs
-Slug: git-branching
-Summary: Git branching
-Status: published
-
+---
+title: Git branching
+date: '2019-02-13'
+tags:
+- git
+- branching
+- vcs
+slug: git-branching
+summary: Git branching
+status: published
+categories:
+- Git
+---
 ## Git branching
 
 I want to present you how do I perform branching. When I develop some feature I am used to create branch for it to separate it from master. When I decide I am satisfied with the changes and some chapter is finished feature branch shall be merged into master. At the beginning I had the problem with merging because when it's done directly it squash commits from feature branch into master.

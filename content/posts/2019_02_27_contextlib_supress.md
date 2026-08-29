@@ -1,11 +1,17 @@
-Title: Handling exceptions with contextlib
-Date: 2019-02-27
-Category: Python
-Tags: python, exception, exceptions, context
-Slug: contextlib-suppress
-Summary: Handling exceptions with contextlib
-Status: published
-
+---
+title: Handling exceptions with contextlib
+date: '2019-02-27'
+tags:
+- python
+- exception
+- exceptions
+- context
+slug: contextlib-suppress
+summary: Handling exceptions with contextlib
+status: published
+categories:
+- Python
+---
 ## Handling exceptions with contextlib.supress()
 
 ```python

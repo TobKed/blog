@@ -1,11 +1,16 @@
-Title: VCR.py
-Date: 2019-08-31
-Category: python
-Tags: python, testing, unittest
-Slug: vcrpy
-Summary: Record HTTP interactions
-Status: draft
-
+---
+title: VCR.py
+date: '2019-08-31'
+tags:
+- python
+- testing
+- unittest
+slug: vcrpy
+summary: Record HTTP interactions
+status: draft
+categories:
+- python
+---
 ## VCR.py
 
 ### What and why?

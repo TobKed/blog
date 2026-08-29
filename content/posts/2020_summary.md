@@ -1,12 +1,17 @@
-Title: Year summary - 2020
-Date: 2021-01-01
-Category: summary
-Tags: summary, year, 2020
-Slug: 2020-summary
-Summary: Ups and downs of 2020
-Header_Cover: /images/posts/2020/2020_summary.png
-Status: published
-
+---
+title: Year summary - 2020
+date: '2021-01-01'
+tags:
+- summary
+- year
+- '2020'
+slug: 2020-summary
+summary: Ups and downs of 2020
+image: /images/posts/2020/2020_summary.png
+status: published
+categories:
+- summary
+---
 # 2020
 
 Last year was extraordinary for obvious reasons.

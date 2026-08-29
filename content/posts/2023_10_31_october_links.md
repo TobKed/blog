@@ -1,12 +1,22 @@
-Title: Month summary - October 2023
-Date: 2023-10-31
-Category: summary
-Tags: python, blog, podcast, series, aggregate, summary, month, 2023
-Slug: 2023-october-links
-Summary: Interesting stuff from the month
-Header_Cover: /images/posts/2023/2023_10_xx.jpg
-Status: published
-
+---
+title: Month summary - October 2023
+date: '2023-10-31'
+tags:
+- python
+- blog
+- podcast
+- series
+- aggregate
+- summary
+- month
+- '2023'
+slug: 2023-october-links
+summary: Interesting stuff from the month
+image: /images/posts/2023/2023_10_xx.jpg
+status: published
+categories:
+- summary
+---
 # October 2023
 
 I am aggregating here some more or less interesting stuff of various IT related materials which I came across this month.

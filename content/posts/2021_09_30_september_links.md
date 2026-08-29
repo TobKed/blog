@@ -1,11 +1,21 @@
-Title: Month summary - September 2021
-Date: 2021-09-30
-Category: summary
-Tags: python, blog, podcast, series, aggregate, summary, month, 2021
-Slug: 2021-september-links
-Summary: Interesting stuff from the month
-Status: published
-
+---
+title: Month summary - September 2021
+date: '2021-09-30'
+tags:
+- python
+- blog
+- podcast
+- series
+- aggregate
+- summary
+- month
+- '2021'
+slug: 2021-september-links
+summary: Interesting stuff from the month
+status: published
+categories:
+- summary
+---
 # September 2021
 
 I am aggregating here some more or less interesting stuff of various IT related materials which I came across this month.

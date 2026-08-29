@@ -1,11 +1,18 @@
-Title: Docker on Raspberry Pi 3
-Date: 2019-08-06
-Category: Docker, Raspberry
-Tags: docker, raspberry, electronics, system
-Slug: docker-raspberry
-Summary: Installing Docker on Raspberry Pi 3
-Status: published
-
+---
+title: Docker on Raspberry Pi 3
+date: '2019-08-06'
+tags:
+- docker
+- raspberry
+- electronics
+- system
+slug: docker-raspberry
+summary: Installing Docker on Raspberry Pi 3
+status: published
+categories:
+- Docker
+- Raspberry
+---
 ## Docker on Raspberry Pi 3
 
 ### What and why?

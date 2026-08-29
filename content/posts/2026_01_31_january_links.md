@@ -1,12 +1,22 @@
-Title: Month summary - January 2026
-Date: 2026-01-31
-Category: summary
-Tags: python, blog, podcast, series, aggregate, summary, month, 2026
-Slug: 2026-january-links
-Summary: Interesting stuff from the month
-Header_Cover: /images/posts/2026/2026_01_xx.jpg
-Status: published
-
+---
+title: Month summary - January 2026
+date: '2026-01-31'
+tags:
+- python
+- blog
+- podcast
+- series
+- aggregate
+- summary
+- month
+- '2026'
+slug: 2026-january-links
+summary: Interesting stuff from the month
+image: /images/posts/2026/2026_01_xx.jpg
+status: published
+categories:
+- summary
+---
 # January 2026
 
 Time for another monthly post sharing some of the IT discoveries that crossed my path lately.

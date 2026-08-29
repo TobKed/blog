@@ -1,12 +1,16 @@
-Title: git: when ignorance is a bliss
-Date: 2024-06-04
-Category: programming
-Tags: git, programming
-Slug: declutter-git-status
-Summary: Focus on what matters: decluterring `git status`
-Header_Cover: /images/posts/2024/2024_06_04_declutter_git_status.jpg
-Status: published
-
+---
+title: 'git: when ignorance is a bliss'
+date: '2024-06-04'
+tags:
+- git
+- programming
+slug: declutter-git-status
+summary: 'Focus on what matters: decluterring `git status`'
+image: /images/posts/2024/2024_06_04_declutter_git_status.jpg
+status: published
+categories:
+- programming
+---
 ## Focus on what matters: decluterring `git status`
 
 The saying "ignorance is bliss" might hold some truth in everyday life, but in the world of **git** version control, a cluttered terminal output can be a major headache.

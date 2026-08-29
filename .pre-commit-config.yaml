@@ -20,7 +20,7 @@ repos:
     - mdformat-tables
     - mdformat-black
     - mdformat_footnote
-    - mdformat_pelican
+    - mdformat-frontmatter
     exclude: |
         (?x)(
             ^output/|

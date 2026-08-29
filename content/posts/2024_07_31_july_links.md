@@ -1,12 +1,22 @@
-Title: Month summary - July 2024
-Date: 2024-07-31
-Category: summary
-Tags: python, blog, podcast, series, aggregate, summary, month, 2024
-Slug: 2024-july-links
-Summary: Interesting stuff from the month
-Header_Cover: /images/posts/2024/2024_07_xx.jpg
-Status: published
-
+---
+title: Month summary - July 2024
+date: '2024-07-31'
+tags:
+- python
+- blog
+- podcast
+- series
+- aggregate
+- summary
+- month
+- '2024'
+slug: 2024-july-links
+summary: Interesting stuff from the month
+image: /images/posts/2024/2024_07_xx.jpg
+status: published
+categories:
+- summary
+---
 # July 2024
 
 I am aggregating here some more or less interesting stuff of various IT related materials which I came across this month.

@@ -1,8 +1,11 @@
-Title: about me
-Date: 2018-12-19
-Category: main
-Tags: welcome
-
+---
+title: about me
+date: '2018-12-19'
+tags:
+- welcome
+categories:
+- main
+---
 ### Why "ups and downs"?
 
 > "The game has its ups and downs, but you can never lose focus of your individual goals and you can't let yourself be beat because of lack of effort."

@@ -1,11 +1,17 @@
-Title: Page Object Pattern in testing Django
-Date: 2019-02-05
-Category: Python
-Tags: python, django, testing, selenium
-Slug: django-page-object-pattern
-Summary: Page Object Pattern in testing Django
-Status: published
-
+---
+title: Page Object Pattern in testing Django
+date: '2019-02-05'
+tags:
+- python
+- django
+- testing
+- selenium
+slug: django-page-object-pattern
+summary: Page Object Pattern in testing Django
+status: published
+categories:
+- Python
+---
 ## Page Object Pattern
 
 Functional testing with usage of selenium is based on giving simple instructions to browser and comparing results with expectations. Generally we start with step by step instructions which element should be located, then what to do with them (click, read or insert value). It's working fine with simple pages but when project is growing and our test suite is getting complex as well and brittle to changes. Some id changed and bam, plenty of tests are not valid anymore. The Page Object Pattern is some special form of facade pattern where the web pages and elements of them are separated from testing procedure and provides nicer API.

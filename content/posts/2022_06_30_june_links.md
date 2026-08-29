@@ -1,12 +1,22 @@
-Title: Month summary - June 2022
-Date: 2022-06-30
-Category: summary
-Tags: python, blog, podcast, series, aggregate, summary, month, 2022
-Slug: 2022-june-links
-Summary: Interesting stuff from the month
-Status: published
-Header_Cover: /images/posts/2022/2022_06_xx.jpg
-
+---
+title: Month summary - June 2022
+date: '2022-06-30'
+tags:
+- python
+- blog
+- podcast
+- series
+- aggregate
+- summary
+- month
+- '2022'
+slug: 2022-june-links
+summary: Interesting stuff from the month
+status: published
+image: /images/posts/2022/2022_06_xx.jpg
+categories:
+- summary
+---
 # June 2022
 
 I am aggregating here some more or less interesting stuff of various IT related materials which I came across this month.

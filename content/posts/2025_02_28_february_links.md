@@ -1,12 +1,22 @@
-Title: Month summary - February 2025
-Date: 2025-02-28
-Category: summary
-Tags: python, blog, podcast, series, aggregate, summary, month, 2025
-Slug: 2025-february-links
-Summary: Interesting stuff from the month
-Header_Cover: /images/posts/2025/2025_02_xx.jpg
-Status: published
-
+---
+title: Month summary - February 2025
+date: '2025-02-28'
+tags:
+- python
+- blog
+- podcast
+- series
+- aggregate
+- summary
+- month
+- '2025'
+slug: 2025-february-links
+summary: Interesting stuff from the month
+image: /images/posts/2025/2025_02_xx.jpg
+status: published
+categories:
+- summary
+---
 # February 2025
 
 Time for another monthly post sharing some of the IT discoveries that crossed my path lately.
