@@ -122,6 +122,10 @@ ______________________________________________________________________
 
 ## Cloud
 
+### [GitHub - floci-io/floci](https://github.com/floci-io/floci)
+
+> Floci is a free, open-source local AWS emulator for development, testing, and CI. It gives you AWS-shaped services on your machine without requiring a cloud account, an auth token, or paid feature gates.
+
 ## Other stuff
 
 ## Podcasts
