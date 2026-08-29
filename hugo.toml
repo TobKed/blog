@@ -48,8 +48,10 @@ buildFuture = true
   last_posts = true
   friends = false
   bookmarks = false
-  # Restores the Pelican theme's typography/colour overrides (static/css/main.css).
-  custom_css = ["css/main.css"]
+  # Pelican-era typography/colour overrides, disabled for now - the theme's own
+  # styling is close enough and main.css mostly restated it. The file is still in
+  # static/css/main.css; uncomment to switch it back on.
+  # custom_css = ["css/main.css"]
   # Appended to the footer copyright line as markdown - used here to keep the
   # photo credit that lived in Pelican's content/html/my_footer.html.
   icp = "Main page header photo by [Julia Kaczorowska](https://juliakaczorowska.pl/) (other photos by me)."

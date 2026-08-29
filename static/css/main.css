@@ -50,7 +50,11 @@ pre {
   background-color: transparent;
   font-size: 12px;
 }
-code {
+/* Inline code only. A bare `code` selector also matches the <code> that Hugo's
+   highlighter nests inside <pre>, and nowrap there collapses the indentation of
+   every code block. Pelican's codehilite did not emit that inner <code>, which
+   is why this only became a problem after the migration. */
+:not(pre) > code {
   white-space: nowrap;
 }
 img {
