@@ -111,8 +111,14 @@ img {
 
 /* --- cover header --- */
 .intro-header {
+  /* Longhand on purpose: the `background:` shorthand resets background-image to
+     none, and because this file is nested under :not([data-theme="dark"]) it
+     outranks the theme's `header.intro-header { background-image: ... }`, which
+     is how each post's cover photo is set. Using the shorthand here blanks the
+     cover on every post page. */
   background-color: #808080;
-  background: no-repeat center center;
+  background-repeat: no-repeat;
+  background-position: center center;
   background-attachment: scroll;
   background-size: cover;
   margin-bottom: 50px;
