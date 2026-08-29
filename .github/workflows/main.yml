@@ -46,7 +46,7 @@ jobs:
       env:
         HUGO_SERVICES_GOOGLEANALYTICS_ID: ${{ secrets.GOOGLE_ANALYTICS }}
     - name: Build search index
-      run: npx -y pagefind --site public
+      run: npx -y pagefind --site public --output-subdir _pagefind
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v4
       with:

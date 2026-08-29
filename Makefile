@@ -30,7 +30,13 @@ serve: ## serve site locally at http://localhost:1313 (with drafts)
 .PHONY: publish
 publish: ## generate using production settings (deploys happen in CI)
 	$(HUGO) --gc --minify
-	npx -y pagefind --site $(OUTPUTDIR)
+	npx -y pagefind --site $(OUTPUTDIR) --output-subdir _pagefind
+
+.PHONY: preview
+preview: publish ## build like production (incl. search index) and serve public/ at :1314
+	# `make serve` renders to memory, so /_pagefind/ does not exist there and the
+	# search page is an empty box. Use this to exercise search locally.
+	cd $(OUTPUTDIR) && $(PY) -m http.server 1314
 
 .PHONY: resize_images
 resize_images: ## resize images in scripts/resize_photos/input

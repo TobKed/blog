@@ -36,4 +36,8 @@ def serve(c):
 def publish(c):
     """Build production version of site (deploys happen in CI)"""
     c.run("hugo --gc --minify")
-    c.run("npx -y pagefind --site {deploy_path}".format(**CONFIG))
+    c.run(
+        "npx -y pagefind --site {deploy_path} --output-subdir _pagefind".format(
+            **CONFIG
+        )
+    )
