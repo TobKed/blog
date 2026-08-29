@@ -1,8 +1,16 @@
-Title: links
-Date: 2018-12-27
-Modified: 2018-02-14
-Category: main
-Tags: python, django, links, bookmarks
+---
+title: links
+slug: links
+date: '2018-12-27'
+modified: '2018-02-14'
+tags:
+  - python
+  - django
+  - links
+  - bookmarks
+categories:
+  - main
+---
 
 ### Books
 

@@ -1,8 +1,15 @@
-Title: AI resources
-Date: 2022-11-16
-Category: main
-Tags: AI
-Status: hidden
+---
+title: AI resources
+slug: ai-resources
+date: '2022-11-16'
+tags:
+  - AI
+categories:
+  - main
+build:
+  list: never
+  render: always
+---
 
 ## Tools & Setup
 

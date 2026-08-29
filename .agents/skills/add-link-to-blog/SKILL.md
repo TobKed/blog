@@ -21,15 +21,32 @@ For each URL provided, fetch its content and extract/generate:
 
 ## 3. Global Duplicate Check
 Before proceeding, you MUST check if the link has already been posted previously on the blog:
-*   Use the `grep_search` tool to search the `content/posts/` directory.
+*   Use the `grep_search` tool to search the `content/post/` directory.
 *   **For standard links:** Search for the core URL (stripping out tracking parameters).
 *   **For YouTube videos:** Search for the specific `VIDEO_ID`.
 *   If a match is found in any file, flag this link as a **DUPLICATE** and note the filename where it was found.
 
 ## 4. Determine Target File
 *   Calculate the current date.
-*   The target filename format is: `content/posts/YYYY_MM_DD_monthname_links.md` (where `DD` is the LAST DAY of the current month, and `monthname` is lowercase, e.g., `content/posts/2026_03_31_march_links.md`).
-*   If the target file doesn't exist, create it with standard frontmatter (`Title: Month summary - Month YYYY`, `Date`, `Category: summary`, `Status: draft`, etc.) and basic section headers.
+*   The target filename format is: `content/post/YYYY_MM_DD_monthname_links.md` (where `DD` is the LAST DAY of the current month, and `monthname` is lowercase, e.g., `content/post/2026_03_31_march_links.md`).
+*   If the target file doesn't exist, generate it with `make generate_post` (or `python scripts/generate_post.py`), which copies `content/post/2026_xx_xx_template_links.md` and fills in the month. Do not hand-write it.
+*   The site is Hugo, so posts use YAML frontmatter delimited by `---`:
+
+```yaml
+---
+draft: true
+title: Month summary - Month YYYY
+date: 'YYYY-MM-DD'
+tags:
+  - python
+  - summary
+slug: YYYY-monthname-links
+summary: Interesting stuff from the month
+image: /images/posts/YYYY/YYYY_MM_xx.jpg
+categories:
+  - summary
+---
+```
 
 ## 5. Categorize (Section)
 Identify which of these standard sections each link best fits into:
@@ -39,7 +56,7 @@ Identify which of these standard sections each link best fits into:
 ## 6. Review Phase
 Before modifying any files, print the drafted information to the user.
 
-**Target File:** `content/posts/YYYY_MM_DD_monthname_links.md`
+**Target File:** `content/post/YYYY_MM_DD_monthname_links.md`
 
 *(For Batch Mode, list these out numbered: 1. 2. 3. ...)*
 **Proposed Section:** `## Section Name`

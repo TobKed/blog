@@ -273,14 +273,19 @@ Temporary Items
 
 # End of https://www.gitignore.io/api/linux,python,pycharm,windows,macos
 
-# pelican theme: https://github.com/gilsondev/pelican-clean-blog/
-pelican-clean-blog/*
+# hugo theme
+themes/*
+!themes/hugo-theme-cleanwhite
 
-# pelican
-output/*
+# hugo output
+public/
+resources/_gen/
 
 
 # other
 .idea/*
 content/.idea/*
 .worktrees/
+
+# hugo build lock
+.hugo_build.lock

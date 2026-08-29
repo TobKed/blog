@@ -151,7 +151,7 @@ def main():
     )
 
     # Initialize components once
-    posts_dir = paths.project_root / "content" / "posts"
+    posts_dir = paths.project_root / "content" / "post"
     link_registry = LinkRegistry(posts_dir)
     link_processor = UrlAnalyser()
 

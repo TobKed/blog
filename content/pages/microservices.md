@@ -1,8 +1,18 @@
-Title: Microservices resources
-Date: 2022-11-16
-Category: main
-Tags: design, sysstem, microservices, architecture
-Status: hidden
+---
+title: Microservices resources
+slug: microservices-resources
+date: '2022-11-16'
+tags:
+  - design
+  - sysstem
+  - microservices
+  - architecture
+categories:
+  - main
+build:
+  list: never
+  render: always
+---
 
 ## Websites
 

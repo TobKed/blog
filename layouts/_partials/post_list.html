@@ -1,0 +1,52 @@
+{{/*
+  Overrides themes/hugo-theme-cleanwhite/layouts/_partials/post_list.html.
+
+  Only change vs. upstream: the post-meta line drops the "Posted by <author>"
+  prefix and shows just the date. Single-author blog, so the name added nothing.
+  The matching edit lives in layouts/post/single.html.
+
+  Re-apply this one edit when updating the theme.
+*/}}
+<!-- post list -->
+<div data-pagefind-ignore="all">
+{{ range $index, $element := $.Paginator.Pages }}
+<div class="post-preview">
+    <a href="{{ .Permalink }}">
+        <h2 class="post-title">
+            {{ .Title }}
+        </h2>
+	{{with .Params.subtitle }}
+        <h3 class="post-subtitle">
+            {{ . }}
+        </h3>
+	{{ end }}
+        <div class="post-content-preview">
+	{{ with .Description }}
+            {{ . }}
+        {{ else }}
+            {{ .Summary | plainify}}
+       {{ end }}
+        </div>
+    </a>
+    <p class="post-meta">
+    {{ if .Params.metadata }}
+        {{ range $index, $element := .Params.metadata }}
+            {{ if .link }}
+                <a href="{{ .link }}">{{ .text }}</a>
+            {{ else }}
+                {{ .text }}
+            {{ end }}
+        {{ end }}
+    {{ else }}
+        {{ .Date.Format "Monday, January 2, 2006" }}
+        <!-- Don't show "Last Modified on" if update happened on the same day. -->
+        {{ if (and (not .Lastmod.IsZero) (not (eq (dateFormat "2006-01-02" .Lastmod) (dateFormat "2006-01-02" .Date)))) }}
+            <br>Last Modified on {{ dateFormat "Monday, January 2, 2006" .Params.LastMod }}
+        {{ end }}
+    {{ end }}
+    </p>
+
+</div>
+<hr>
+{{ end }}
+</div>

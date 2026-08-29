@@ -1,10 +1,18 @@
-Title: Sleep
-Date: 2022-10-15
-Category: productivity
-Tags: sleep, productivity, tools
-Slug: sleep
-Summary: Go sleep
-Status: hidden
+---
+title: Sleep
+date: '2022-10-15'
+tags:
+  - sleep
+  - productivity
+  - tools
+slug: sleep
+summary: Go sleep
+categories:
+  - productivity
+build:
+  list: never
+  render: always
+---
 
 # Sleep
 

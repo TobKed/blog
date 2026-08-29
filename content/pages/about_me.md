@@ -1,7 +1,12 @@
-Title: about me
-Date: 2018-12-19
-Category: main
-Tags: welcome
+---
+title: about me
+slug: about-me
+date: '2018-12-19'
+tags:
+  - welcome
+categories:
+  - main
+---
 
 ### Why "ups and downs"?
 

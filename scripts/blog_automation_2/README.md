@@ -65,26 +65,26 @@ python insert_links_tool.py <path_to_markdown_file> "<url_to_process>"
 
 **Example:**
 ```bash
-python insert_links_tool.py content/posts/my-awesome-post.md "https://example.com/cool-article"
+python insert_links_tool.py content/post/my-awesome-post.md "https://example.com/cool-article"
 ```
 You can also process multiple URLs in one go:
 ```bash
-python insert_links_tool.py content/posts/my-awesome-post.md "https://example.com/article-1" "https://example.com/article-2"
+python insert_links_tool.py content/post/my-awesome-post.md "https://example.com/article-1" "https://example.com/article-2"
 ```
 
 **More Examples:**
 ```bash
 # Insert a single link with verbose output
-python insert_links_tool.py content/posts/2025_05_test.md "https://www.doliver.org/articles/rss-as-a-skill" --verbose
+python insert_links_tool.py content/post/2025_05_test.md "https://www.doliver.org/articles/rss-as-a-skill" --verbose
 
 # Insert multiple links at once
-python insert_links_tool.py content/posts/2025_05_test.md "https://csirmazbendeguz.github.io/2025/04/15/you-dont-need-composite-primary-keys.html" "https://djangochat.com/episodes/michael-kennedy" --verbose
+python insert_links_tool.py content/post/2025_05_test.md "https://csirmazbendeguz.github.io/2025/04/15/you-dont-need-composite-primary-keys.html" "https://djangochat.com/episodes/michael-kennedy" --verbose
 
 # Example with YouTube links
-python insert_links_tool.py content/posts/2025_05_test.md "https://www.youtube.com/watch?v=wz0GQbkrr1Q" "https://adamj.eu/tech/2025/04/07/django-whats-new-5.2/" "https://youtu.be/oP49EHjMTHc" --verbose
+python insert_links_tool.py content/post/2025_05_test.md "https://www.youtube.com/watch?v=wz0GQbkrr1Q" "https://adamj.eu/tech/2025/04/07/django-whats-new-5.2/" "https://youtu.be/oP49EHjMTHc" --verbose
 
 # Example with YouTube playlist and mixed links
-python insert_links_tool.py content/posts/2025_05_test.md "https://www.youtube.com/playlist?list=PL0MRiRrXAvRiSmPn_LDdhDbtZwu6g4xct/" "https://www.youtube.com/watch?v=-Zp5ffZDaRc" "https://m.youtube.com/watch?v=CIBmVXteOcI" "https://den.dev/blog/pihole/" --verbose
+python insert_links_tool.py content/post/2025_05_test.md "https://www.youtube.com/playlist?list=PL0MRiRrXAvRiSmPn_LDdhDbtZwu6g4xct/" "https://www.youtube.com/watch?v=-Zp5ffZDaRc" "https://m.youtube.com/watch?v=CIBmVXteOcI" "https://den.dev/blog/pihole/" --verbose
 ```
 
 ### 2. Bulk Processing
@@ -94,7 +94,7 @@ To process a batch of links from a file, use the `bulk_process_links.py` script.
 1.  Create a markdown file (e.g., `batch_links.md`) with the following format. The first line must specify the target post, followed by the URLs, each on a new line.
 
     ```markdown
-    Target Post: content/posts/my-awesome-post.md
+    Target Post: content/post/my-awesome-post.md
 
     https://example.com/link1
     https://example.com/link2
