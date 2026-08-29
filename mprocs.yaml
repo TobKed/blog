@@ -1,5 +1,0 @@
-procs:
-  regenerate:
-    shell: "make regenerate"
-  serve:
-    shell: "make serve"
