@@ -23,7 +23,9 @@ clean: ## remove the generated files
 
 .PHONY: serve
 serve: ## serve site locally at http://localhost:1313 (with drafts)
-	$(HUGO) server -D
+	# -M renders to memory: without it the server serves public/ from disk, so a
+	# concurrent `make build` overwrites it with production (blog.tobked.dev) URLs.
+	$(HUGO) server -D -M
 
 .PHONY: publish
 publish: ## generate using production settings (deploys happen in CI)

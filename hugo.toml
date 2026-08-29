@@ -4,6 +4,12 @@ defaultContentLanguage = 'en'
 title = 'ups and downs'
 theme = 'hugo-theme-cleanwhite'
 
+# Monthly link posts are dated the last day of the month, so they sit in the
+# future for most of that month. Pelican published them anyway
+# (WITH_FUTURE_DATES defaults to true); without this, un-drafting one mid-month
+# would silently produce nothing.
+buildFuture = true
+
 [pagination]
   pagerSize = 10
 

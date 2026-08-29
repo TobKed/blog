@@ -27,7 +27,9 @@ def build(c):
 @task
 def serve(c):
     """Serve site locally at http://localhost:1313 (with drafts)"""
-    c.run("hugo server -D")
+    # -M renders to memory: without it the server serves public/ from disk, so a
+    # concurrent build overwrites it with production (blog.tobked.dev) URLs.
+    c.run("hugo server -D -M")
 
 
 @task
