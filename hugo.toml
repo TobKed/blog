@@ -57,6 +57,9 @@ buildFuture = true
   [params.social]
     github = "https://github.com/TobKed"
     linkedin = "https://www.linkedin.com/in/tobiaszkedzierski/?locale=en_US"
+    medium = "https://tobiaszkedzierski.medium.com/"
+    # Not a theme-supported network; rendered via the layouts/_partials overrides.
+    credly = "https://www.credly.com/users/tobiasz-kedzierski"
     rss = true
 
   # The theme's nav is built from additional_menus, not [[menu.main]].
