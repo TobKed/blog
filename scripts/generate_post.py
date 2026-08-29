@@ -24,7 +24,7 @@ from typing import Dict, Optional, Tuple
 # Default template filename (relative to content/posts)
 DEFAULT_TEMPLATE_FILENAME = "2026_xx_xx_template_links.md"
 # Default subdirectory within the project for templates and posts
-DEFAULT_CONTENT_DIR = Path("content") / "posts"
+DEFAULT_CONTENT_DIR = Path("content") / "post"
 # Default year (used if --year is not provided). None means use current year.
 DEFAULT_YEAR_FALLBACK: Optional[int] = 2026
 # Default template year (used for finding/replacing placeholders if different
