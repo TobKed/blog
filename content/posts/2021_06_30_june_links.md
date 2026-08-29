@@ -2,20 +2,21 @@
 title: Month summary - June 2021
 date: '2021-06-30'
 tags:
-- python
-- blog
-- podcast
-- series
-- aggregate
-- summary
-- month
-- '2021'
+  - python
+  - blog
+  - podcast
+  - series
+  - aggregate
+  - summary
+  - month
+  - '2021'
 slug: 2021-june-links
 summary: Interesting stuff from the month
 status: published
 categories:
-- summary
+  - summary
 ---
+
 # June 2021
 
 I am aggregating here some more or less interesting stuff of various IT related materials which I came across this month.

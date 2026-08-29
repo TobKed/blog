@@ -2,15 +2,16 @@
 title: VCR.py
 date: '2019-08-31'
 tags:
-- python
-- testing
-- unittest
+  - python
+  - testing
+  - unittest
 slug: vcrpy
 summary: Record HTTP interactions
 status: draft
 categories:
-- python
+  - python
 ---
+
 ## VCR.py
 
 ### What and why?

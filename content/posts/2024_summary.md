@@ -2,16 +2,17 @@
 title: Year summary - 2024
 date: '2025-01-01'
 tags:
-- summary
-- year
-- '2024'
+  - summary
+  - year
+  - '2024'
 slug: 2024-summary
 summary: Ups and downs of 2024
 image: /images/posts/2024/2024_11_xx.jpg
 status: published
 categories:
-- summary
+  - summary
 ---
+
 # 2024
 
 This year was filled with learning and growth in several key areas.
@@ -51,7 +52,7 @@ Second, I validated my five-year experience with Terraform by passing the [Hashi
 In free time I decided to create a personal project: a photoblog.
 I used [Hugo](https://gohugo.io/) and GitHub Actions to create the blog, keeping the source code in a private repository to maintain the privacy of the original-size photos and their metadata.
 My photoblog is now available for viewing at [photos.tobked.dev](https://photos.tobked.dev).
-More about it in [September Summary]({filename}/posts/2024_09_30_september_links.md)
+More about it in [September Summary](%7Bfilename%7D/posts/2024_09_30_september_links.md)
 
 ## Productivity by Heart
 
@@ -67,22 +68,22 @@ This course offered a fresh perspective on productivity and has been a game-chan
 As always, I've kept up with my monthly summaries, where I compile a few sentences about each month, along with any interesting articles, tools, and other materials I've come across.
 Each month, I also add a personal touch with a photo I've taken.
 
-- [January]({filename}/posts/2024_01_31_january_links.md)
-- [February]({filename}/posts/2024_02_29_february_links.md)
-- [March]({filename}/posts/2024_03_31_march_links.md)
-- [April]({filename}/posts/2024_04_30_april_links.md)
-- [May]({filename}/posts/2024_05_31_may_links.md)
-- [June]({filename}/posts/2024_06_30_june_links.md)
-- [July]({filename}/posts/2024_07_31_july_links.md)
-- [August]({filename}/posts/2024_08_31_august_links.md)
-- [September]({filename}/posts/2024_09_30_september_links.md)
-- [October]({filename}/posts/2024_10_31_october_links.md)
-- [November]({filename}/posts/2024_11_30_november_links.md)
-- [December]({filename}/posts/2024_12_31_december_links.md)
+- [January](%7Bfilename%7D/posts/2024_01_31_january_links.md)
+- [February](%7Bfilename%7D/posts/2024_02_29_february_links.md)
+- [March](%7Bfilename%7D/posts/2024_03_31_march_links.md)
+- [April](%7Bfilename%7D/posts/2024_04_30_april_links.md)
+- [May](%7Bfilename%7D/posts/2024_05_31_may_links.md)
+- [June](%7Bfilename%7D/posts/2024_06_30_june_links.md)
+- [July](%7Bfilename%7D/posts/2024_07_31_july_links.md)
+- [August](%7Bfilename%7D/posts/2024_08_31_august_links.md)
+- [September](%7Bfilename%7D/posts/2024_09_30_september_links.md)
+- [October](%7Bfilename%7D/posts/2024_10_31_october_links.md)
+- [November](%7Bfilename%7D/posts/2024_11_30_november_links.md)
+- [December](%7Bfilename%7D/posts/2024_12_31_december_links.md)
 
 I also wrote an additional blog post:
 
-- [git: when ignorance is a bliss]({filename}/posts/2024_06_04_declutter_git_status.md).
+- [git: when ignorance is a bliss](%7Bfilename%7D/posts/2024_06_04_declutter_git_status.md).
 
 ## Summary
 
@@ -95,26 +96,26 @@ I also wrote an additional blog post:
 
 ## Photos
 
-![2024_01]({static}/images/posts/2024/2024_01_xx.jpg)
+![2024_01](%7Bstatic%7D/images/posts/2024/2024_01_xx.jpg)
 
-![2024_02]({static}/images/posts/2024/2024_02_xx.jpg)
+![2024_02](%7Bstatic%7D/images/posts/2024/2024_02_xx.jpg)
 
-![2024_03]({static}/images/posts/2024/2024_03_xx.jpg)
+![2024_03](%7Bstatic%7D/images/posts/2024/2024_03_xx.jpg)
 
-![2024_04]({static}/images/posts/2024/2024_04_xx.jpg)
+![2024_04](%7Bstatic%7D/images/posts/2024/2024_04_xx.jpg)
 
-![2024_05]({static}/images/posts/2024/2024_05_xx.jpg)
+![2024_05](%7Bstatic%7D/images/posts/2024/2024_05_xx.jpg)
 
-![2024_06]({static}/images/posts/2024/2024_06_xx.jpg)
+![2024_06](%7Bstatic%7D/images/posts/2024/2024_06_xx.jpg)
 
-![2024_07]({static}/images/posts/2024/2024_07_xx.jpg)
+![2024_07](%7Bstatic%7D/images/posts/2024/2024_07_xx.jpg)
 
-![2024_08]({static}/images/posts/2024/2024_08_xx.jpg)
+![2024_08](%7Bstatic%7D/images/posts/2024/2024_08_xx.jpg)
 
-![2024_09]({static}/images/posts/2024/2024_09_xx.jpg)
+![2024_09](%7Bstatic%7D/images/posts/2024/2024_09_xx.jpg)
 
-![2024_10]({static}/images/posts/2024/2024_10_xx.jpg)
+![2024_10](%7Bstatic%7D/images/posts/2024/2024_10_xx.jpg)
 
-![2024_11]({static}/images/posts/2024/2024_11_xx.jpg)
+![2024_11](%7Bstatic%7D/images/posts/2024/2024_11_xx.jpg)
 
-![2024_12]({static}/images/posts/2024/2024_12_xx.jpg)
+![2024_12](%7Bstatic%7D/images/posts/2024/2024_12_xx.jpg)

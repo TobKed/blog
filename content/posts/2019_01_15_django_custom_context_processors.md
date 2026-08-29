@@ -2,14 +2,15 @@
 title: Custom context processors in Django
 date: '2019-01-15'
 tags:
-- python
-- django
+  - python
+  - django
 slug: django-custom-context-processors
 summary: Custom context processors in Django
 status: published
 categories:
-- Python
+  - Python
 ---
+
 ## Custom context processors in Django
 
 In order to get the content out of database in the template the best way is usually a template tag (you can write your own template tags). However, when you want a particular variable to be available in the context of every template, creating a custom context processor could be a convenient way to achieve this.

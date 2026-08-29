@@ -2,21 +2,22 @@
 title: Month summary - June 2025
 date: '2025-06-30'
 tags:
-- python
-- blog
-- podcast
-- series
-- aggregate
-- summary
-- month
-- '2025'
+  - python
+  - blog
+  - podcast
+  - series
+  - aggregate
+  - summary
+  - month
+  - '2025'
 slug: 2025-june-links
 summary: Interesting stuff from the month
 image: /images/posts/2025/2025_06_gcp_office_ams.jpg
 status: published
 categories:
-- summary
+  - summary
 ---
+
 # June 2025
 
 Time for another monthly post sharing some of the IT discoveries that crossed my path lately.
@@ -30,7 +31,7 @@ I finally got around to reading ["The Phoenix Project."](https://www.goodreads.c
 
 ### [Google Developer Groups: Meet NotebookLM](https://www.meetup.com/pl-PL/gdg-nl/events/308084364)
 
-I also attended a couple of great local meetups. First, I visited the Google office in Amsterdam for a [Google Developer Groups event on NotebookLM](<(https://www.meetup.com/pl-PL/gdg-nl/events/308084364)>). It was insightful to hear Pablo Felip discuss its applications in education. I'm already familiar with the tool, having used it for my [2024 Summary]({filename}/posts/2024_summary.md), so it was great to see other use cases for it.
+I also attended a couple of great local meetups. First, I visited the Google office in Amsterdam for a [Google Developer Groups event on NotebookLM](<(https://www.meetup.com/pl-PL/gdg-nl/events/308084364)>). It was insightful to hear Pablo Felip discuss its applications in education. I'm already familiar with the tool, having used it for my [2024 Summary](%7Bfilename%7D/posts/2024_summary.md), so it was great to see other use cases for it.
 
 <figure style="text-align: center;">
     <img src="{static}/images/posts/2025/2025_06_gcp_office_ams.jpg" alt="Google Amsterdam Office" style="display: block; margin-left: auto; margin-right: auto;">

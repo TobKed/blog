@@ -2,21 +2,22 @@
 title: Month summary - March 2024
 date: '2024-03-31'
 tags:
-- python
-- blog
-- podcast
-- series
-- aggregate
-- summary
-- month
-- '2024'
+  - python
+  - blog
+  - podcast
+  - series
+  - aggregate
+  - summary
+  - month
+  - '2024'
 slug: 2024-march-links
 summary: Interesting stuff from the month
 image: /images/posts/2024/2024_03_xx.jpg
 status: published
 categories:
-- summary
+  - summary
 ---
+
 # March 2024
 
 I am aggregating here some more or less interesting stuff of various IT related materials which I came across this month.

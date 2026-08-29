@@ -2,11 +2,12 @@
 title: AI resources
 date: '2022-11-16'
 tags:
-- AI
+  - AI
 status: hidden
 categories:
-- main
+  - main
 ---
+
 ## Tools & Setup
 
 _(No resources yet)_

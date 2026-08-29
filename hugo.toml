@@ -13,7 +13,7 @@ paginate = 10
   keyword = "blog, python, software engineering"
   slogan = "ups and downs"
   image_404 = "images/404-bg.jpg"
-  
+
   # Social links
   github = "https://github.com/TobKed"
   linkedin = "https://www.linkedin.com/in/tobiaszkedzierski/?locale=en_US"
@@ -32,14 +32,13 @@ paginate = 10
   name = "tobked.dev"
   url = "https://tobked.dev/"
   weight = 3
-  
+
 [permalinks]
   posts = "/:slug/"
-  
+
 [taxonomies]
   category = "categories"
   tag = "tags"
 
 [markup.goldmark.renderer]
   unsafe = true
-

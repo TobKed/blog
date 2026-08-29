@@ -2,21 +2,22 @@
 title: Month summary - December 2021
 date: '2021-12-31'
 tags:
-- python
-- blog
-- podcast
-- series
-- aggregate
-- summary
-- month
-- '2021'
+  - python
+  - blog
+  - podcast
+  - series
+  - aggregate
+  - summary
+  - month
+  - '2021'
 slug: 2021-december-links
 summary: Interesting stuff from the month
 image: /images/posts/2021/2021_12_xx.jpg
 status: published
 categories:
-- summary
+  - summary
 ---
+
 # December 2021
 
 I am aggregating here some more or less interesting stuff of various IT related materials which I came across this month.
@@ -42,21 +43,21 @@ I had a good time playing with configuration and scripting.
 
 I published two blog posts this month:
 
-- [Productivity course]({filename}/posts/2021_04_15_productivity.md) - this post waited in the queue for a few months to be published
-- [Django application on Google Cloud Platform]({filename}/posts/2021_12_30_django_on_gcp.md) - the idea for this post was born in 2020,
+- [Productivity course](%7Bfilename%7D/posts/2021_04_15_productivity.md) - this post waited in the queue for a few months to be published
+- [Django application on Google Cloud Platform](%7Bfilename%7D/posts/2021_12_30_django_on_gcp.md) - the idea for this post was born in 2020,
   however since so many unexpected things happened last year it was not the highest priority to complete it. I published it successfully this year.
 
 <p></p>
 
 #### Presentation: Terraform
 
-While working on [Django application on Google Cloud Platform]({filename}/posts/2021_12_30_django_on_gcp.md) I spent some
+While working on [Django application on Google Cloud Platform](%7Bfilename%7D/posts/2021_12_30_django_on_gcp.md) I spent some
 time playing with Terraform. Since I like it very much, it led  me to this thought: why not make some small presentation about it?
 I contacted folks from [Brival](https://www.brival.co/), agreed on the date, and it went pretty well in my opinion.
 I not only described some theory but also spun up and tore down some examples of infrastructure on GCP.
 It was pretty nice to meet with people, and I had a good time giving the talk. Cheers and Happy Terraforming.
 
-![Brival Tech Talk - Terraform]({static}/images/posts/2021/brival_tech_talk_terraform.jpg)
+![Brival Tech Talk - Terraform](%7Bstatic%7D/images/posts/2021/brival_tech_talk_terraform.jpg)
 
 ## Articles
 

@@ -2,21 +2,22 @@
 title: Month summary - July 2023
 date: '2023-07-31'
 tags:
-- python
-- blog
-- podcast
-- series
-- aggregate
-- summary
-- month
-- '2023'
+  - python
+  - blog
+  - podcast
+  - series
+  - aggregate
+  - summary
+  - month
+  - '2023'
 slug: 2023-july-links
 summary: Interesting stuff from the month
 image: /images/posts/2023/2023_07_xx.jpg
 status: published
 categories:
-- summary
+  - summary
 ---
+
 # July 2023
 
 I am aggregating here some more or less interesting stuff of various IT related materials which I came across this month.

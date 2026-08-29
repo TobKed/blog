@@ -3,13 +3,14 @@ title: links
 date: '2018-12-27'
 modified: '2018-02-14'
 tags:
-- python
-- django
-- links
-- bookmarks
+  - python
+  - django
+  - links
+  - bookmarks
 categories:
-- main
+  - main
 ---
+
 ### Books
 
 - [Learning Python - Mark Lutz](http://shop.oreilly.com/product/0636920028154.do)

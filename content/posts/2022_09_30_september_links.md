@@ -2,21 +2,22 @@
 title: Month summary - September 2022
 date: '2022-09-30'
 tags:
-- python
-- blog
-- podcast
-- series
-- aggregate
-- summary
-- month
-- '2022'
+  - python
+  - blog
+  - podcast
+  - series
+  - aggregate
+  - summary
+  - month
+  - '2022'
 slug: 2022-september-links
 summary: Interesting stuff from the month
 status: published
 image: /images/posts/2022/2022_09_xx.jpg
 categories:
-- summary
+  - summary
 ---
+
 # September 2022
 
 I am aggregating here some more or less interesting stuff of various IT related materials which I came across this month.

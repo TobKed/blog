@@ -2,21 +2,22 @@
 title: Month summary - December 2022
 date: '2022-12-31'
 tags:
-- python
-- blog
-- podcast
-- series
-- aggregate
-- summary
-- month
-- '2022'
+  - python
+  - blog
+  - podcast
+  - series
+  - aggregate
+  - summary
+  - month
+  - '2022'
 slug: 2022-december-links
 summary: Interesting stuff from the month
 image: /images/posts/2022/2022_12_xx.jpg
 status: published
 categories:
-- summary
+  - summary
 ---
+
 # December 2022
 
 I am aggregating here some more or less interesting stuff of various IT related materials which I came across this month.

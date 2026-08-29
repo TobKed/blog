@@ -2,21 +2,22 @@
 title: Month summary - April 2022
 date: '2022-04-30'
 tags:
-- python
-- blog
-- podcast
-- series
-- aggregate
-- summary
-- month
-- '2022'
+  - python
+  - blog
+  - podcast
+  - series
+  - aggregate
+  - summary
+  - month
+  - '2022'
 slug: 2022-april-links
 summary: Interesting stuff from the month
 image: /images/posts/2022/2022_04_xx.jpg
 status: published
 categories:
-- summary
+  - summary
 ---
+
 # April 2022
 
 I am aggregating here some more or less interesting stuff of various IT related materials which I came across this month.
@@ -39,7 +40,7 @@ After all, I was happy to read on screen in the certification center that I pass
 I am especially proud because it was one of the hardest certification exams so far.
 I learned a lot not only from the technical perspective but also from the business point of view.
 
-![Google Professional Cloud Architect]({static}/images/posts/2022/gcp_pca.png)
+![Google Professional Cloud Architect](%7Bstatic%7D/images/posts/2022/gcp_pca.png)
 
 [Google  Professional Cloud Architect](https://www.credential.net/fc647c87-e199-4dd2-b34e-67dbb7bc3d10#gs.2gfa5j).
 

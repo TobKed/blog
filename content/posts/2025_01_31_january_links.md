@@ -2,21 +2,22 @@
 title: Month summary - January 2025
 date: '2025-01-31'
 tags:
-- python
-- blog
-- podcast
-- series
-- aggregate
-- summary
-- month
-- '2025'
+  - python
+  - blog
+  - podcast
+  - series
+  - aggregate
+  - summary
+  - month
+  - '2025'
 slug: 2025-january-links
 summary: Interesting stuff from the month
 image: /images/posts/2025/2025_01_xx.jpg
 status: published
 categories:
-- summary
+  - summary
 ---
+
 # January 2025
 
 I am aggregating here some more or less interesting stuff of various IT related materials which I came across this month.

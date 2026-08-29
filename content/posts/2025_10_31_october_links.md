@@ -2,21 +2,22 @@
 title: Month summary - October 2025
 date: '2025-10-31'
 tags:
-- python
-- blog
-- podcast
-- series
-- aggregate
-- summary
-- month
-- '2025'
+  - python
+  - blog
+  - podcast
+  - series
+  - aggregate
+  - summary
+  - month
+  - '2025'
 slug: 2025-october-links
 summary: Interesting stuff from the month
 image: /images/posts/2025/2025_10_xx.jpg
 status: published
 categories:
-- summary
+  - summary
 ---
+
 # October 2025
 
 Time for another monthly post sharing some of the IT discoveries that crossed my path lately.

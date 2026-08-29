@@ -2,20 +2,21 @@
 title: Month summary - November 2020
 date: '2020-11-30'
 tags:
-- python
-- blog
-- podcast
-- series
-- aggregate
-- summary
-- month
-- '2020'
+  - python
+  - blog
+  - podcast
+  - series
+  - aggregate
+  - summary
+  - month
+  - '2020'
 slug: 2020-november-links
 summary: Interesting stuff from the month
 status: published
 categories:
-- summary
+  - summary
 ---
+
 # November 2020
 
 I am aggregating here some more or less interesting stuff of various IT related materials which I came across this month.

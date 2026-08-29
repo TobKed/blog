@@ -2,15 +2,16 @@
 title: Async, multithreading and multiprocessing resources
 date: '2022-11-16'
 tags:
-- python
-- async
-- asyncio
-- multithreading
-- multiprocessing
+  - python
+  - async
+  - asyncio
+  - multithreading
+  - multiprocessing
 status: hidden
 categories:
-- main
+  - main
 ---
+
 ## Websites
 
 - [AsyncIO: Why I Hate It](https://charlesleifer.com/blog/asyncio/)

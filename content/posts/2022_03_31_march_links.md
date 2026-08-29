@@ -2,21 +2,22 @@
 title: Month summary - March 2022
 date: '2022-03-31'
 tags:
-- python
-- blog
-- podcast
-- series
-- aggregate
-- summary
-- month
-- '2022'
+  - python
+  - blog
+  - podcast
+  - series
+  - aggregate
+  - summary
+  - month
+  - '2022'
 slug: 2022-march-links
 summary: Interesting stuff from the month
 image: /images/posts/2022/2022_03_xx.jpg
 status: published
 categories:
-- summary
+  - summary
 ---
+
 # March 2022
 
 I am aggregating here some more or less interesting stuff of various IT related materials which I came across this month.

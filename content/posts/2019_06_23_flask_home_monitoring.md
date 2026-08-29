@@ -2,16 +2,17 @@
 title: Flask home monitoring
 date: '2019-06-23'
 tags:
-- python
-- flask
-- web
-- camera
+  - python
+  - flask
+  - web
+  - camera
 slug: flask-home-monitoring
 summary: Flask home monitoring
 status: draft
 categories:
-- Python
+  - Python
 ---
+
 ## Flask home monitoring
 
 <br>

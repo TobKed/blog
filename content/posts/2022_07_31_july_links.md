@@ -2,21 +2,22 @@
 title: Month summary - July 2022
 date: '2022-07-31'
 tags:
-- python
-- blog
-- podcast
-- series
-- aggregate
-- summary
-- month
-- '2022'
+  - python
+  - blog
+  - podcast
+  - series
+  - aggregate
+  - summary
+  - month
+  - '2022'
 slug: 2022-july-links
 summary: Interesting stuff from the month
 status: published
 image: /images/posts/2022/2022_07_xx.jpg
 categories:
-- summary
+  - summary
 ---
+
 # July 2022
 
 I am aggregating here some more or less interesting stuff of various IT related materials which I came across this month.

@@ -2,15 +2,16 @@
 title: Sleep
 date: '2022-10-15'
 tags:
-- sleep
-- productivity
-- tools
+  - sleep
+  - productivity
+  - tools
 slug: sleep
 summary: Go sleep
 status: hidden
 categories:
-- productivity
+  - productivity
 ---
+
 # Sleep
 
 Some notes and resources about sleep

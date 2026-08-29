@@ -2,20 +2,21 @@
 title: Month summary - April 2020
 date: '2020-04-30'
 tags:
-- python
-- blog
-- podcast
-- series
-- aggregate
-- summary
-- month
-- '2020'
+  - python
+  - blog
+  - podcast
+  - series
+  - aggregate
+  - summary
+  - month
+  - '2020'
 slug: 2020-april-links
 summary: Interesting stuff from the month
 status: published
 categories:
-- summary
+  - summary
 ---
+
 # April 2020
 
 I am aggregating here some more or less interesting stuff of various IT related materials which I came across this month.

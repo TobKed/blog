@@ -2,21 +2,22 @@
 title: Month summary - September 2026
 date: '2026-09-30'
 tags:
-- python
-- blog
-- podcast
-- series
-- aggregate
-- summary
-- month
-- '2026'
+  - python
+  - blog
+  - podcast
+  - series
+  - aggregate
+  - summary
+  - month
+  - '2026'
 slug: 2026-september-links
 summary: Interesting stuff from the month
 image: /images/posts/2026/2026_09_xx.jpg
 status: draft
 categories:
-- summary
+  - summary
 ---
+
 # September 2026
 
 Time for another monthly post sharing some of the IT discoveries that crossed my path lately.

@@ -2,17 +2,18 @@
 title: Talk about "Airfow workflows in 5 minutes"
 date: '2020-04-20'
 tags:
-- python
-- airflow
-- video
-- presentation
+  - python
+  - airflow
+  - video
+  - presentation
 slug: pycode-ariflow-presentation
 summary: Lightning talk from PyCode Conference 2019
 status: published
 image: /images/posts/2020/pycode-presentation-2-edit.jpg
 categories:
-- python
+  - python
 ---
+
 # Airfow workflows in 5 minutes
 
 I participated in a PyCode Conference in October 2019.

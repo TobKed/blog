@@ -2,21 +2,22 @@
 title: Month summary - September 2025
 date: '2025-09-30'
 tags:
-- python
-- blog
-- podcast
-- series
-- aggregate
-- summary
-- month
-- '2025'
+  - python
+  - blog
+  - podcast
+  - series
+  - aggregate
+  - summary
+  - month
+  - '2025'
 slug: 2025-september-links
 summary: Interesting stuff from the month
 image: /images/posts/2025/2025_09_xx.jpg
 status: published
 categories:
-- summary
+  - summary
 ---
+
 # September 2025
 
 Time for another monthly post sharing some of the IT discoveries that crossed my path lately.

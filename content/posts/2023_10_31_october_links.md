@@ -2,21 +2,22 @@
 title: Month summary - October 2023
 date: '2023-10-31'
 tags:
-- python
-- blog
-- podcast
-- series
-- aggregate
-- summary
-- month
-- '2023'
+  - python
+  - blog
+  - podcast
+  - series
+  - aggregate
+  - summary
+  - month
+  - '2023'
 slug: 2023-october-links
 summary: Interesting stuff from the month
 image: /images/posts/2023/2023_10_xx.jpg
 status: published
 categories:
-- summary
+  - summary
 ---
+
 # October 2023
 
 I am aggregating here some more or less interesting stuff of various IT related materials which I came across this month.
@@ -28,9 +29,9 @@ This month, I spruced up my [Python API and background workers on Google Cloud P
 It's a neat package with a simple app and all the setup for FastAPI, CloudRun, and PubSub.
 Just a fun little project showcasing Python on Google Cloud – check it out!
 
-By the way, [last month]({filename}/posts/2023_09_30_september_links.md) I gave a lightning talk at PyCon CZ based on this repository.
+By the way, [last month](%7Bfilename%7D/posts/2023_09_30_september_links.md) I gave a lightning talk at PyCon CZ based on this repository.
 
-![PyCon CZ.]({static}/images/posts/2023/2023_09_pyconcz.jpg)
+![PyCon CZ.](%7Bstatic%7D/images/posts/2023/2023_09_pyconcz.jpg)
 
 ## Articles
 

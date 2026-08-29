@@ -2,21 +2,22 @@
 title: Month summary - June 2024
 date: '2024-06-30'
 tags:
-- python
-- blog
-- podcast
-- series
-- aggregate
-- summary
-- month
-- '2024'
+  - python
+  - blog
+  - podcast
+  - series
+  - aggregate
+  - summary
+  - month
+  - '2024'
 slug: 2024-june-links
 summary: Interesting stuff from the month
 image: /images/posts/2024/2024_06_xx.jpg
 status: published
 categories:
-- summary
+  - summary
 ---
+
 # June 2024
 
 I am aggregating here some more or less interesting stuff of various IT related materials which I came across this month.
@@ -30,7 +31,7 @@ This path provided a good foundation for understanding generative AI concepts, r
 The hands-on labs were particularly insightful, showcasing how to leverage the power of Google services to put theory into practice.
 You can see my progress on my Cloud Skills Boost profile [Cloud Skills Boost profile](https://www.cloudskillsboost.google/public_profiles/102aba17-a972-4e32-865b-0e3626420e5a/badges/9465084).
 
-I also published a short blog post about git: [git: when ignorance is a bliss]({filename}/posts/2024_06_04_declutter_git_status.md)
+I also published a short blog post about git: [git: when ignorance is a bliss](%7Bfilename%7D/posts/2024_06_04_declutter_git_status.md)
 
 ## Articles
 

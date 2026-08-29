@@ -2,16 +2,17 @@
 title: Year summary - 2025
 date: '2026-01-01'
 tags:
-- summary
-- year
-- '2025'
+  - summary
+  - year
+  - '2025'
 slug: 2025-summary
 summary: Ups and downs of 2025
 image: /images/posts/2025/2025_04_xx.jpg
 status: published
 categories:
-- summary
+  - summary
 ---
+
 # 2025
 
 This year was defined by a new job, deep dives into AI, and a return to in-person community events.
@@ -24,20 +25,20 @@ In April, I started working for [FareHarbor](https://fareharbor.com/) (part of [
 
 I attended several inspiring events this year, ranging from massive open-source gatherings to smaller local meetups:
 
-- [FOSDEM](https://fosdem.org) - [February]({filename}/posts/2025_02_28_february_links.md)
-- [Creative Coding Amsterdam: May Madness @Mollie](https://www.meetup.com/pl-PL/creative-coding-amsterdam/events/307702713/) - [May]({filename}/posts/2025_05_31_may_links.md)
-- [Google Developer Groups: Meet NotebookLM](https://www.meetup.com/pl-PL/gdg-nl/events/308084364) - [June]({filename}/posts/2025_06_30_june_links.md)
-- [Py.Amsterdam Meetup at Fareharbor](https://www.meetup.com/pl-PL/pyamsterdam/events/307658391) - [June]({filename}/posts/2025_06_30_june_links.md)
-- [AI House: Learn how to get the most out of AI coding assistants with OpenAI](https://luma.com/wkcnkqw5) - [October]({filename}/posts/2025_10_31_october_links.md)
-- [AI House: Learn how to get the most out of AI coding assistants with Google](https://luma.com/fwnm7zp8) - [December]({filename}/posts/2025_12_31_december_links.md)
+- [FOSDEM](https://fosdem.org) - [February](%7Bfilename%7D/posts/2025_02_28_february_links.md)
+- [Creative Coding Amsterdam: May Madness @Mollie](https://www.meetup.com/pl-PL/creative-coding-amsterdam/events/307702713/) - [May](%7Bfilename%7D/posts/2025_05_31_may_links.md)
+- [Google Developer Groups: Meet NotebookLM](https://www.meetup.com/pl-PL/gdg-nl/events/308084364) - [June](%7Bfilename%7D/posts/2025_06_30_june_links.md)
+- [Py.Amsterdam Meetup at Fareharbor](https://www.meetup.com/pl-PL/pyamsterdam/events/307658391) - [June](%7Bfilename%7D/posts/2025_06_30_june_links.md)
+- [AI House: Learn how to get the most out of AI coding assistants with OpenAI](https://luma.com/wkcnkqw5) - [October](%7Bfilename%7D/posts/2025_10_31_october_links.md)
+- [AI House: Learn how to get the most out of AI coding assistants with Google](https://luma.com/fwnm7zp8) - [December](%7Bfilename%7D/posts/2025_12_31_december_links.md)
 
 ## AI
 
 2025 was the year I embraced AI in my development workflow.
 
-In [May]({filename}/posts/2025_05_31_may_links.md), I started experimenting with **blog automation**, using LLMs to parse links and generate descriptions for my monthly posts.
+In [May](%7Bfilename%7D/posts/2025_05_31_may_links.md), I started experimenting with **blog automation**, using LLMs to parse links and generate descriptions for my monthly posts.
 
-By the end of the year, I was diving into [**Antigravity**](https://antigravity.google/), a new AI-powered IDE from Google, which I explored just before the [December AI House event]({filename}/posts/2025_12_31_december_links.md).
+By the end of the year, I was diving into [**Antigravity**](https://antigravity.google/), a new AI-powered IDE from Google, which I explored just before the [December AI House event](%7Bfilename%7D/posts/2025_12_31_december_links.md).
 
 I participated in the [10xdevs](https://www.10xdevs.pl/) course, where I gained a better grasp of how to use AI in my development workflow.
 
@@ -61,18 +62,18 @@ I made some changes to my tools:
 As always, I've kept up with my monthly summaries, where I compile a few sentences about each month, along with any interesting articles, tools, and other materials I've come across.
 Each month, I also add a personal touch with a photo I've taken.
 
-- [January]({filename}/posts/2025_01_31_january_links.md)
-- [February]({filename}/posts/2025_02_28_february_links.md)
-- [March]({filename}/posts/2025_03_31_march_links.md)
-- [April]({filename}/posts/2025_04_30_april_links.md)
-- [May]({filename}/posts/2025_05_31_may_links.md)
-- [June]({filename}/posts/2025_06_30_june_links.md)
-- [July]({filename}/posts/2025_07_31_july_links.md)
-- [August]({filename}/posts/2025_08_31_august_links.md)
-- [September]({filename}/posts/2025_09_30_september_links.md)
-- [October]({filename}/posts/2025_10_31_october_links.md)
-- [November]({filename}/posts/2025_11_30_november_links.md)
-- [December]({filename}/posts/2025_12_31_december_links.md)
+- [January](%7Bfilename%7D/posts/2025_01_31_january_links.md)
+- [February](%7Bfilename%7D/posts/2025_02_28_february_links.md)
+- [March](%7Bfilename%7D/posts/2025_03_31_march_links.md)
+- [April](%7Bfilename%7D/posts/2025_04_30_april_links.md)
+- [May](%7Bfilename%7D/posts/2025_05_31_may_links.md)
+- [June](%7Bfilename%7D/posts/2025_06_30_june_links.md)
+- [July](%7Bfilename%7D/posts/2025_07_31_july_links.md)
+- [August](%7Bfilename%7D/posts/2025_08_31_august_links.md)
+- [September](%7Bfilename%7D/posts/2025_09_30_september_links.md)
+- [October](%7Bfilename%7D/posts/2025_10_31_october_links.md)
+- [November](%7Bfilename%7D/posts/2025_11_30_november_links.md)
+- [December](%7Bfilename%7D/posts/2025_12_31_december_links.md)
 
 ## Summary
 
@@ -80,26 +81,26 @@ Each month, I also add a personal touch with a photo I've taken.
 
 ## Photos
 
-![2025_01]({static}/images/posts/2025/2025_01_xx.jpg)
+![2025_01](%7Bstatic%7D/images/posts/2025/2025_01_xx.jpg)
 
-![2025_02]({static}/images/posts/2025/2025_02_xx.jpg)
+![2025_02](%7Bstatic%7D/images/posts/2025/2025_02_xx.jpg)
 
-![2025_03]({static}/images/posts/2025/2025_03_xx.jpg)
+![2025_03](%7Bstatic%7D/images/posts/2025/2025_03_xx.jpg)
 
-![2025_04]({static}/images/posts/2025/2025_04_xx.jpg)
+![2025_04](%7Bstatic%7D/images/posts/2025/2025_04_xx.jpg)
 
-![2025_05]({static}/images/posts/2025/2025_05_xx.jpg)
+![2025_05](%7Bstatic%7D/images/posts/2025/2025_05_xx.jpg)
 
-![2025_06]({static}/images/posts/2025/2025_06_gcp_office_ams.jpg)
+![2025_06](%7Bstatic%7D/images/posts/2025/2025_06_gcp_office_ams.jpg)
 
-![2025_07]({static}/images/posts/2025/2025_07_xx.jpg)
+![2025_07](%7Bstatic%7D/images/posts/2025/2025_07_xx.jpg)
 
-![2025_08]({static}/images/posts/2025/2025_08_xx.jpg)
+![2025_08](%7Bstatic%7D/images/posts/2025/2025_08_xx.jpg)
 
-![2025_09]({static}/images/posts/2025/2025_09_xx.jpg)
+![2025_09](%7Bstatic%7D/images/posts/2025/2025_09_xx.jpg)
 
-![2025_10]({static}/images/posts/2025/2025_10_xx.jpg)
+![2025_10](%7Bstatic%7D/images/posts/2025/2025_10_xx.jpg)
 
-![2025_11]({static}/images/posts/2025/2025_11_xx.jpg)
+![2025_11](%7Bstatic%7D/images/posts/2025/2025_11_xx.jpg)
 
-![2025_12]({static}/images/posts/2025/2025_12_xx.jpg)
+![2025_12](%7Bstatic%7D/images/posts/2025/2025_12_xx.jpg)

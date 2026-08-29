@@ -2,21 +2,22 @@
 title: Month summary - January 2022
 date: '2022-01-31'
 tags:
-- python
-- blog
-- podcast
-- series
-- aggregate
-- summary
-- month
-- '2022'
+  - python
+  - blog
+  - podcast
+  - series
+  - aggregate
+  - summary
+  - month
+  - '2022'
 slug: 2022-january-links
 summary: Interesting stuff from the month
 image: /images/posts/2022/2022_01_xx.jpg
 status: published
 categories:
-- summary
+  - summary
 ---
+
 # January 2022
 
 I am aggregating here some more or less interesting stuff of various IT related materials which I came across this month.

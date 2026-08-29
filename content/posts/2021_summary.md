@@ -2,16 +2,17 @@
 title: Year summary - 2021
 date: '2022-01-01'
 tags:
-- summary
-- year
-- '2021'
+  - summary
+  - year
+  - '2021'
 slug: 2021-summary
 summary: Ups and downs of 2021
 image: /images/posts/2021/summary/2021_summary.jpg
 status: published
 categories:
-- summary
+  - summary
 ---
+
 # 2021
 
 Yeah, 2021.
@@ -52,7 +53,7 @@ It is interesting to observe how major players solve the same problems in differ
 
 ## Learning, talking
 
-I completed the [Productivity course]({filename}/posts/2021_04_15_productivity.md) which helped and continues to help me
+I completed the [Productivity course](%7Bfilename%7D/posts/2021_04_15_productivity.md) which helped and continues to help me
 improve my time (and life) management.
 
 I also learned how to use this iconic text editor called [Vim](https://www.vim.org/).
@@ -73,40 +74,40 @@ a few sentences about the last month together with articles, tools and other int
 
 2021 summaries:
 
-- [January]({filename}/posts/2021_01_31_january_links.md)
-- [February]({filename}/posts/2021_02_28_february_links.md)
-- [March]({filename}/posts/2021_03_31_march_links.md)
-- [April]({filename}/posts/2021_04_30_april_links.md)
-- [May]({filename}/posts/2021_05_31_may_links.md)
-- [June]({filename}/posts/2021_06_30_june_links.md)
-- [July]({filename}/posts/2021_07_31_july_links.md)
-- [August]({filename}/posts/2021_08_31_august_links.md)
-- [September]({filename}/posts/2021_09_30_september_links.md)
-- [October]({filename}/posts/2021_10_31_october_links.md)
-- [November]({filename}/posts/2021_11_30_november_links.md)
-- [December]({filename}/posts/2021_12_31_december_links.md)
+- [January](%7Bfilename%7D/posts/2021_01_31_january_links.md)
+- [February](%7Bfilename%7D/posts/2021_02_28_february_links.md)
+- [March](%7Bfilename%7D/posts/2021_03_31_march_links.md)
+- [April](%7Bfilename%7D/posts/2021_04_30_april_links.md)
+- [May](%7Bfilename%7D/posts/2021_05_31_may_links.md)
+- [June](%7Bfilename%7D/posts/2021_06_30_june_links.md)
+- [July](%7Bfilename%7D/posts/2021_07_31_july_links.md)
+- [August](%7Bfilename%7D/posts/2021_08_31_august_links.md)
+- [September](%7Bfilename%7D/posts/2021_09_30_september_links.md)
+- [October](%7Bfilename%7D/posts/2021_10_31_october_links.md)
+- [November](%7Bfilename%7D/posts/2021_11_30_november_links.md)
+- [December](%7Bfilename%7D/posts/2021_12_31_december_links.md)
 
 I also wrote two additional blog posts:
 
-- [Productivity course]({filename}/posts/2021_04_15_productivity.md)
-- [Django application on Google Cloud Platform]({filename}/posts/2021_12_30_django_on_gcp.md)
+- [Productivity course](%7Bfilename%7D/posts/2021_04_15_productivity.md)
+- [Django application on Google Cloud Platform](%7Bfilename%7D/posts/2021_12_30_django_on_gcp.md)
 
 ## Photos
 
-![Fixed Gear]({static}/images/posts/2021/summary/010.jpg)
+![Fixed Gear](%7Bstatic%7D/images/posts/2021/summary/010.jpg)
 
-![Forest]({static}/images/posts/2021/summary/020.jpg)
+![Forest](%7Bstatic%7D/images/posts/2021/summary/020.jpg)
 
-![Bieszczady]({static}/images/posts/2021/summary/030.jpg)
+![Bieszczady](%7Bstatic%7D/images/posts/2021/summary/030.jpg)
 
-![Bieszczady]({static}/images/posts/2021/summary/031.jpg)
+![Bieszczady](%7Bstatic%7D/images/posts/2021/summary/031.jpg)
 
-![Bieszczady]({static}/images/posts/2021/summary/032.jpg)
+![Bieszczady](%7Bstatic%7D/images/posts/2021/summary/032.jpg)
 
-![Beskid Wyspowy]({static}/images/posts/2021/summary/040.jpg)
+![Beskid Wyspowy](%7Bstatic%7D/images/posts/2021/summary/040.jpg)
 
-![Beskid Wyspowy]({static}/images/posts/2021/summary/041.jpg)
+![Beskid Wyspowy](%7Bstatic%7D/images/posts/2021/summary/041.jpg)
 
-![Jura]({static}/images/posts/2021/summary/090.jpg)
+![Jura](%7Bstatic%7D/images/posts/2021/summary/090.jpg)
 
-![Sea]({static}/images/posts/2021/summary/099.jpg)
+![Sea](%7Bstatic%7D/images/posts/2021/summary/099.jpg)

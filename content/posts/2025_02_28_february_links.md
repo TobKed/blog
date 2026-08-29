@@ -2,21 +2,22 @@
 title: Month summary - February 2025
 date: '2025-02-28'
 tags:
-- python
-- blog
-- podcast
-- series
-- aggregate
-- summary
-- month
-- '2025'
+  - python
+  - blog
+  - podcast
+  - series
+  - aggregate
+  - summary
+  - month
+  - '2025'
 slug: 2025-february-links
 summary: Interesting stuff from the month
 image: /images/posts/2025/2025_02_xx.jpg
 status: published
 categories:
-- summary
+  - summary
 ---
+
 # February 2025
 
 Time for another monthly post sharing some of the IT discoveries that crossed my path lately.

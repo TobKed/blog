@@ -2,21 +2,22 @@
 title: Month summary - July 2026
 date: '2026-07-31'
 tags:
-- python
-- blog
-- podcast
-- series
-- aggregate
-- summary
-- month
-- '2026'
+  - python
+  - blog
+  - podcast
+  - series
+  - aggregate
+  - summary
+  - month
+  - '2026'
 slug: 2026-july-links
 summary: Interesting stuff from the month
 image: /images/posts/2026/2026_07_xx.jpg
 status: published
 categories:
-- summary
+  - summary
 ---
+
 # July 2026
 
 Time for another monthly post sharing some of the IT discoveries that crossed my path lately.

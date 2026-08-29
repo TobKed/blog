@@ -2,21 +2,22 @@
 title: Month summary - September 2023
 date: '2023-09-30'
 tags:
-- python
-- blog
-- podcast
-- series
-- aggregate
-- summary
-- month
-- '2023'
+  - python
+  - blog
+  - podcast
+  - series
+  - aggregate
+  - summary
+  - month
+  - '2023'
 slug: 2023-september-links
 summary: Interesting stuff from the month
 image: /images/posts/2023/2023_09_xx.jpg
 status: published
 categories:
-- summary
+  - summary
 ---
+
 # September 2023
 
 I am aggregating here some more or less interesting stuff of various IT related materials which I came across this month.
@@ -41,11 +42,11 @@ After practicing my presentation numerous times in my hotel room, I finally step
 
 Overall, it was an incredible experience that allowed me to learn new skills, connect with amazing individuals and showcase my capabilities as a developer. I am grateful for these opportunities and look forward to what the future holds!
 
-![PyCon CZ.]({static}/images/posts/2023/2023_09_pyconcz.jpg)
+![PyCon CZ.](%7Bstatic%7D/images/posts/2023/2023_09_pyconcz.jpg)
 
 I also refreshed my [Google Associate Cloud Engineer certificate](https://www.credential.net/profile/tobiaszkdzierski610060/wallet) and revisited the fundamentals.
 
-![Google Associate Cloud Engineer certficate]({static}/images/posts/2023/2023_09_gcp_ace.png)\]
+![Google Associate Cloud Engineer certficate](%7Bstatic%7D/images/posts/2023/2023_09_gcp_ace.png)\]
 
 ## Articles
 

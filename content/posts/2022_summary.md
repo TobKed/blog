@@ -2,16 +2,17 @@
 title: Year summary - 2022
 date: '2023-01-01'
 tags:
-- summary
-- year
-- '2022'
+  - summary
+  - year
+  - '2022'
 slug: 2022-summary
 summary: Ups and downs of 2022
 image: /images/posts/2022/summary/2022_summary.jpg
 status: published
 categories:
-- summary
+  - summary
 ---
+
 # 2022
 
 ## Work
@@ -37,7 +38,7 @@ I achieved two Google Cloud Platform certificates:
 I presented twice the same presentation: **GitHub Actions: (opinionated) Tips & Tricks**.
 First one in NetGuru and second one in Brival.
 
-![GitHub Actions Tips & Tricks @Brival]({static}/images/posts/2022/2022_10_brival.jpg)
+![GitHub Actions Tips & Tricks @Brival](%7Bstatic%7D/images/posts/2022/2022_10_brival.jpg)
 
 ## Writing
 
@@ -48,45 +49,45 @@ Every month is decorated with picture made by me.
 
 2022 summaries:
 
-- [January]({filename}/posts/2022_01_31_january_links.md)
-- [February]({filename}/posts/2022_02_28_february_links.md)
-- [March]({filename}/posts/2022_03_31_march_links.md)
-- [April]({filename}/posts/2022_04_30_april_links.md)
-- [May]({filename}/posts/2022_05_31_may_links.md)
-- [June]({filename}/posts/2022_06_30_june_links.md)
-- [July]({filename}/posts/2022_07_31_july_links.md)
-- [August]({filename}/posts/2022_08_30_august_links.md)
-- [September]({filename}/posts/2022_09_30_september_links.md)
-- [October]({filename}/posts/2022_10_31_october_links.md)
-- [November]({filename}/posts/2022_11_30_november_links.md)
-- [December]({filename}/posts/2022_12_31_december_links.md)
+- [January](%7Bfilename%7D/posts/2022_01_31_january_links.md)
+- [February](%7Bfilename%7D/posts/2022_02_28_february_links.md)
+- [March](%7Bfilename%7D/posts/2022_03_31_march_links.md)
+- [April](%7Bfilename%7D/posts/2022_04_30_april_links.md)
+- [May](%7Bfilename%7D/posts/2022_05_31_may_links.md)
+- [June](%7Bfilename%7D/posts/2022_06_30_june_links.md)
+- [July](%7Bfilename%7D/posts/2022_07_31_july_links.md)
+- [August](%7Bfilename%7D/posts/2022_08_30_august_links.md)
+- [September](%7Bfilename%7D/posts/2022_09_30_september_links.md)
+- [October](%7Bfilename%7D/posts/2022_10_31_october_links.md)
+- [November](%7Bfilename%7D/posts/2022_11_30_november_links.md)
+- [December](%7Bfilename%7D/posts/2022_12_31_december_links.md)
 
 I also wrote one additional blog posts:
 
-- [Notion packing lists]({filename}/posts/2022_10_xx_notion_packing_list.md)
+- [Notion packing lists](%7Bfilename%7D/posts/2022_10_xx_notion_packing_list.md)
 
 ## Photos
 
-![2022_01]({static}/images/posts/2022/2022_01_xx.jpg)
+![2022_01](%7Bstatic%7D/images/posts/2022/2022_01_xx.jpg)
 
-![2022_02]({static}/images/posts/2022/2022_02_xx.jpg)
+![2022_02](%7Bstatic%7D/images/posts/2022/2022_02_xx.jpg)
 
-![2022_03]({static}/images/posts/2022/2022_03_xx.jpg)
+![2022_03](%7Bstatic%7D/images/posts/2022/2022_03_xx.jpg)
 
-![2022_04]({static}/images/posts/2022/2022_04_xx.jpg)
+![2022_04](%7Bstatic%7D/images/posts/2022/2022_04_xx.jpg)
 
-![2022_05]({static}/images/posts/2022/2022_05_xx.jpg)
+![2022_05](%7Bstatic%7D/images/posts/2022/2022_05_xx.jpg)
 
-![2022_06]({static}/images/posts/2022/2022_06_xx.jpg)
+![2022_06](%7Bstatic%7D/images/posts/2022/2022_06_xx.jpg)
 
-![2022_07]({static}/images/posts/2022/2022_07_xx.jpg)
+![2022_07](%7Bstatic%7D/images/posts/2022/2022_07_xx.jpg)
 
-![2022_08]({static}/images/posts/2022/2022_08_xx.jpg)
+![2022_08](%7Bstatic%7D/images/posts/2022/2022_08_xx.jpg)
 
-![2022_09]({static}/images/posts/2022/2022_09_xx.jpg)
+![2022_09](%7Bstatic%7D/images/posts/2022/2022_09_xx.jpg)
 
-![2022_10]({static}/images/posts/2022/2022_10_xx.jpg)
+![2022_10](%7Bstatic%7D/images/posts/2022/2022_10_xx.jpg)
 
-![2022_11]({static}/images/posts/2022/2022_11_xx.jpg)
+![2022_11](%7Bstatic%7D/images/posts/2022/2022_11_xx.jpg)
 
-![2022_12]({static}/images/posts/2022/2022_12_xx.jpg)
+![2022_12](%7Bstatic%7D/images/posts/2022/2022_12_xx.jpg)

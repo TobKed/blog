@@ -2,16 +2,17 @@
 title: Year summary - 2020
 date: '2021-01-01'
 tags:
-- summary
-- year
-- '2020'
+  - summary
+  - year
+  - '2020'
 slug: 2020-summary
 summary: Ups and downs of 2020
 image: /images/posts/2020/2020_summary.png
 status: published
 categories:
-- summary
+  - summary
 ---
+
 # 2020
 
 Last year was extraordinary for obvious reasons.
@@ -47,7 +48,7 @@ I became interested in improving competencies related to the cloud. Early in Jun
 While studying for the certificate I finished a series of tutorials on Qwiklabs and Coursera platforms.
 It solidified my knowledge about the Google Cloud Platform.
 
-![Google Cloud Associate Engineer]({static}/images/posts/2020/gcp_ace.png)
+![Google Cloud Associate Engineer](%7Bstatic%7D/images/posts/2020/gcp_ace.png)
 
 [Google Cloud Associate Engineer](https://www.credential.net/d47b7596-251f-45ac-8a54-4cf6d8c5a286?key=f4eed8bc7e2f25d6b2a9315f31e1a20dd7cd5ecc93caff78eb55feeafcc6be70).
 
@@ -93,7 +94,7 @@ Additionally, some basic statistics is calculated and results are pushed to Goog
 
 Sample dashboard created in Datastudio with collected data:
 
-![Datastuido dashboard]({static}/images/posts/2020/ga_stats.png)
+![Datastuido dashboard](%7Bstatic%7D/images/posts/2020/ga_stats.png)
 
 ## Writing
 
@@ -102,16 +103,16 @@ with articles, tools and other interesting materials I came across.
 
 2020 summaries:
 
-- [March]({filename}/posts/2020_03_31_march_links.md)
-- [April]({filename}/posts/2020_04_30_april_links.md)
-- [May]({filename}/posts/2020_05_31_may_links.md)
-- [June]({filename}/posts/2020_06_30_june_links.md)
-- [July]({filename}/posts/2020_07_31_july_links.md)
-- [August]({filename}/posts/2020_08_31_august_links.md)
-- [September]({filename}/posts/2020_09_30_september_links.md)
-- [October]({filename}/posts/2020_10_31_october_links.md)
-- [November]({filename}/posts/2020_11_30_november_links.md)
-- [December]({filename}/posts/2020_12_31_december_links.md)
+- [March](%7Bfilename%7D/posts/2020_03_31_march_links.md)
+- [April](%7Bfilename%7D/posts/2020_04_30_april_links.md)
+- [May](%7Bfilename%7D/posts/2020_05_31_may_links.md)
+- [June](%7Bfilename%7D/posts/2020_06_30_june_links.md)
+- [July](%7Bfilename%7D/posts/2020_07_31_july_links.md)
+- [August](%7Bfilename%7D/posts/2020_08_31_august_links.md)
+- [September](%7Bfilename%7D/posts/2020_09_30_september_links.md)
+- [October](%7Bfilename%7D/posts/2020_10_31_october_links.md)
+- [November](%7Bfilename%7D/posts/2020_11_30_november_links.md)
+- [December](%7Bfilename%7D/posts/2020_12_31_december_links.md)
 
 I also wrote a few blog posts that were published on the company website (reposted on Medium):
 
@@ -142,8 +143,8 @@ Learn more about Vipassana on [dhamma.org](https://www.dhamma.org/)
 
 ## Beskidy
 
-![Beskidy photo]({static}/images/posts/2020/beskidy/DSC03290.png)
+![Beskidy photo](%7Bstatic%7D/images/posts/2020/beskidy/DSC03290.png)
 
-![Beskidy photo]({static}/images/posts/2020/beskidy/DSC03307.png)
+![Beskidy photo](%7Bstatic%7D/images/posts/2020/beskidy/DSC03307.png)
 
-![Beskidy photo]({static}/images/posts/2020/beskidy/DSC03339.png)
+![Beskidy photo](%7Bstatic%7D/images/posts/2020/beskidy/DSC03339.png)

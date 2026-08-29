@@ -2,14 +2,15 @@
 title: Model property in Django
 date: '2019-02-03'
 tags:
-- python
-- django
+  - python
+  - django
 slug: django-model-property
 summary: Model property in Django
 status: published
 categories:
-- Python
+  - Python
 ---
+
 ## Model property in Django
 
 When you want to associate field with some function you can override save() method. Another convenient way to do this is to use Python property getter/setter to run some custom code. Important thing is that you don't have to run migrations to do this (if tables are not changed of course)

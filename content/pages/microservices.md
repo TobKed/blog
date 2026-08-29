@@ -2,14 +2,15 @@
 title: Microservices resources
 date: '2022-11-16'
 tags:
-- design
-- sysstem
-- microservices
-- architecture
+  - design
+  - sysstem
+  - microservices
+  - architecture
 status: hidden
 categories:
-- main
+  - main
 ---
+
 ## Websites
 
 ## Books
