@@ -20,6 +20,10 @@ miso
 
 <https://noslopgrenade.com/>
 
+swtichted from alt-tab to BetterCmdTab
+<https://github.com/rokartur/BetterCmdTab>
+
+Tried but not working well with my mx mini
 <https://github.com/AprilNEA/OpenLogi>
 
 <https://www.cliamp.stream/>
@@ -99,6 +103,10 @@ ______________________________________________________________________
 ### [GitHub - AprilNEA/OpenLogi](https://github.com/AprilNEA/OpenLogi)
 
 > A native, local-first alternative to Logitech Options+, written in Rust 🦀 — remap buttons, DPI, and SmartShift over HID++. No account, no telemetry.
+
+### [GitHub - rokartur/BetterCmdTab](https://github.com/rokartur/BetterCmdTab)
+
+> The Cmd+Tab macOS deserves.
 
 ## Cloud
 
