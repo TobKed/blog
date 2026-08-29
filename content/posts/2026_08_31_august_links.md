@@ -49,6 +49,10 @@ ______________________________________________________________________
 
 > Took me way too much effort to figure this out and searching for info resulted in a lot of posts with other people asking the same question or outdated information as LazyVim has changed its plugins a bunch of times, hopefully this helps someone else out there.
 
+### [Building an Omarchy-Inspired Setup on macOS | Christopher Penkin](https://www.penkin.me/development/tools/productivity/configuration/2025/11/28/building-omarchy-inspired-setup-macos.html)
+
+> Learn how to build a keyboard-driven tiling window manager setup on macOS using yabai, sketchybar, and skhd. Inspired by Omarchy's philosophy of minimal aesthetics and instant workspace switching, this guide covers configuration, multi-monitor support, and creating a distraction-free development environment on a MacBook Pro M1.
+
 ## Productivity
 
 ## AI
@@ -85,6 +89,14 @@ ______________________________________________________________________
 ### [Claude Blog - Maximizing the value of your Claude Code sessions](https://claude.com/blog/maximizing-the-value-of-your-claude-code-sessions)
 
 > How to run efficient sessions that get the most value from every token.
+
+### [GitHub - ayghri/i-have-adhd](https://github.com/ayghri/i-have-adhd)
+
+> A skill to stop your coding agent from burying the answer. ADHD-friendly output.
+
+### [GitHub - mattpocock/skills](https://github.com/mattpocock/skills)
+
+> Skills for Real Engineers. Straight from my .agents directory.
 
 ## Security
 
@@ -180,4 +192,34 @@ ______________________________________________________________________
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/Eor_qf5KCHI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [Claude just killed the note-taking app. Here is proof.](https://youtu.be/geIKyDaXwGg)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/geIKyDaXwGg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [The First CLI Tool You'll Use It Every Day](https://youtu.be/JhMkEZenxlU)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/JhMkEZenxlU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [Build A Claude Knowledge Base That Self-Improves!](https://youtu.be/ib74sLgjIBM)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/ib74sLgjIBM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [Nick Milo Reads My Obsidian Vault Like a Doctor](https://youtu.be/PwUGO74DYJQ)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/PwUGO74DYJQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [Stop writing software like it's 1999! - Hannes Lowette - NDC Copenhagen 2026](https://www.youtube.com/watch?v=_1LEFUgHFJI)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/_1LEFUgHFJI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
