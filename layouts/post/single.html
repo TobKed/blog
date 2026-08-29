@@ -33,13 +33,6 @@
                                 {{ end }}
                             {{ end }}
                         {{ else }}
-                            Posted by
-                            {{ if .Params.author }}
-                                {{ .Params.author }}
-                            {{ else }}
-                                    {{ .Site.Title }}
-                            {{ end }}
-                            on
                             {{ .Date.Format "Monday, January 2, 2006" }}
                             {{ if .Site.Params.page_view_counter }}
                                 {{ partial "page_view_counter.html" . }}

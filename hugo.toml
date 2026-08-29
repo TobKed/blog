@@ -22,8 +22,8 @@ buildFuture = true
   category = "categories"
   tag = "tags"
 
-# Pelican's "Posted by Tobiasz Kedzierski on ..." byline; the theme reads .Params.author
-# per page and falls back to the site title, so push it down onto every post.
+# Supplies the per-entry author in the RSS and Atom feeds (layouts/home.*.xml read
+# .Params.author). The visible byline is date-only - see the layouts overrides.
 [[cascade]]
   [cascade.params]
     author = "Tobiasz Kedzierski"
