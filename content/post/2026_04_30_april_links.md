@@ -13,7 +13,6 @@ tags:
 slug: 2026-april-links
 summary: Interesting stuff from the month
 image: /images/posts/2026/2026_04_xx.jpg
-status: published
 categories:
   - summary
 ---

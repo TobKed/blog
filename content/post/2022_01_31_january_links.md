@@ -13,7 +13,6 @@ tags:
 slug: 2022-january-links
 summary: Interesting stuff from the month
 image: /images/posts/2022/2022_01_xx.jpg
-status: published
 categories:
   - summary
 ---

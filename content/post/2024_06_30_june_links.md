@@ -13,7 +13,6 @@ tags:
 slug: 2024-june-links
 summary: Interesting stuff from the month
 image: /images/posts/2024/2024_06_xx.jpg
-status: published
 categories:
   - summary
 ---
@@ -31,7 +30,7 @@ This path provided a good foundation for understanding generative AI concepts, r
 The hands-on labs were particularly insightful, showcasing how to leverage the power of Google services to put theory into practice.
 You can see my progress on my Cloud Skills Boost profile [Cloud Skills Boost profile](https://www.cloudskillsboost.google/public_profiles/102aba17-a972-4e32-865b-0e3626420e5a/badges/9465084).
 
-I also published a short blog post about git: [git: when ignorance is a bliss](%7Bfilename%7D/posts/2024_06_04_declutter_git_status.md)
+I also published a short blog post about git: [git: when ignorance is a bliss](/declutter-git-status/)
 
 ## Articles
 

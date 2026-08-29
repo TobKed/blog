@@ -13,7 +13,6 @@ tags:
 slug: 2023-september-links
 summary: Interesting stuff from the month
 image: /images/posts/2023/2023_09_xx.jpg
-status: published
 categories:
   - summary
 ---
@@ -42,11 +41,11 @@ After practicing my presentation numerous times in my hotel room, I finally step
 
 Overall, it was an incredible experience that allowed me to learn new skills, connect with amazing individuals and showcase my capabilities as a developer. I am grateful for these opportunities and look forward to what the future holds!
 
-![PyCon CZ.](%7Bstatic%7D/images/posts/2023/2023_09_pyconcz.jpg)
+![PyCon CZ.](/images/posts/2023/2023_09_pyconcz.jpg)
 
 I also refreshed my [Google Associate Cloud Engineer certificate](https://www.credential.net/profile/tobiaszkdzierski610060/wallet) and revisited the fundamentals.
 
-![Google Associate Cloud Engineer certficate](%7Bstatic%7D/images/posts/2023/2023_09_gcp_ace.png)\]
+![Google Associate Cloud Engineer certficate](/images/posts/2023/2023_09_gcp_ace.png)\]
 
 ## Articles
 

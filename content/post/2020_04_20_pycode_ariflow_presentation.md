@@ -8,7 +8,6 @@ tags:
   - presentation
 slug: pycode-ariflow-presentation
 summary: Lightning talk from PyCode Conference 2019
-status: published
 image: /images/posts/2020/pycode-presentation-2-edit.jpg
 categories:
   - python

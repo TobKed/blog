@@ -8,7 +8,6 @@ tags:
 slug: 2021-summary
 summary: Ups and downs of 2021
 image: /images/posts/2021/summary/2021_summary.jpg
-status: published
 categories:
   - summary
 ---
@@ -47,13 +46,13 @@ so expanding it with another provider gave me a better understanding of the Clou
 I have a better overview of possibilities which Cloud computing offers and feel much more confident in this field.
 It is interesting to observe how major players solve the same problems in different ways.
 
-<img src="{static}/images/posts/2021/aws-certified-cloud-practitioner.png" alt="AWS Certified Cloud Practitioner" style="display: block; margin-left: auto; margin-right: auto;">
+<img src="/images/posts/2021/aws-certified-cloud-practitioner.png" alt="AWS Certified Cloud Practitioner" style="display: block; margin-left: auto; margin-right: auto;">
 
 [AWS Certified Cloud Practitioner - credly.com](https://www.credly.com/badges/b3b3b1ac-43da-4715-95ca-3c4881c94473/public_url)
 
 ## Learning, talking
 
-I completed the [Productivity course](%7Bfilename%7D/posts/2021_04_15_productivity.md) which helped and continues to help me
+I completed the [Productivity course](/productivity-course/) which helped and continues to help me
 improve my time (and life) management.
 
 I also learned how to use this iconic text editor called [Vim](https://www.vim.org/).
@@ -64,8 +63,8 @@ I gave two presentations:
 - Brival Tech Talk: GIT - tips & tricks
 - Brival internal talk: Terraform and Google Cloud Platform
 
-<img src="{static}/images/posts/2021/brival_tech_talk_git.jpg" alt="Brival Tech Talk - tips & tricks" style="display: block; margin-left: auto; margin-right: auto;">
-<img src="{static}/images/posts/2021/brival_tech_talk_terraform.jpg" alt="Brival Tech Talk - Terraform" style="display: block; margin-left: auto; margin-right: auto;">
+<img src="/images/posts/2021/brival_tech_talk_git.jpg" alt="Brival Tech Talk - tips & tricks" style="display: block; margin-left: auto; margin-right: auto;">
+<img src="/images/posts/2021/brival_tech_talk_terraform.jpg" alt="Brival Tech Talk - Terraform" style="display: block; margin-left: auto; margin-right: auto;">
 
 ## Writing
 
@@ -74,40 +73,40 @@ a few sentences about the last month together with articles, tools and other int
 
 2021 summaries:
 
-- [January](%7Bfilename%7D/posts/2021_01_31_january_links.md)
-- [February](%7Bfilename%7D/posts/2021_02_28_february_links.md)
-- [March](%7Bfilename%7D/posts/2021_03_31_march_links.md)
-- [April](%7Bfilename%7D/posts/2021_04_30_april_links.md)
-- [May](%7Bfilename%7D/posts/2021_05_31_may_links.md)
-- [June](%7Bfilename%7D/posts/2021_06_30_june_links.md)
-- [July](%7Bfilename%7D/posts/2021_07_31_july_links.md)
-- [August](%7Bfilename%7D/posts/2021_08_31_august_links.md)
-- [September](%7Bfilename%7D/posts/2021_09_30_september_links.md)
-- [October](%7Bfilename%7D/posts/2021_10_31_october_links.md)
-- [November](%7Bfilename%7D/posts/2021_11_30_november_links.md)
-- [December](%7Bfilename%7D/posts/2021_12_31_december_links.md)
+- [January](/2021-january-links/)
+- [February](/2021-february-links/)
+- [March](/2021-march-links/)
+- [April](/2021-april-links/)
+- [May](/2021-may-links/)
+- [June](/2021-june-links/)
+- [July](/2021-july-links/)
+- [August](/2021-august-links/)
+- [September](/2021-september-links/)
+- [October](/2021-october-links/)
+- [November](/2021-november-links/)
+- [December](/2021-december-links/)
 
 I also wrote two additional blog posts:
 
-- [Productivity course](%7Bfilename%7D/posts/2021_04_15_productivity.md)
-- [Django application on Google Cloud Platform](%7Bfilename%7D/posts/2021_12_30_django_on_gcp.md)
+- [Productivity course](/productivity-course/)
+- [Django application on Google Cloud Platform](/django_on_gcp/)
 
 ## Photos
 
-![Fixed Gear](%7Bstatic%7D/images/posts/2021/summary/010.jpg)
+![Fixed Gear](/images/posts/2021/summary/010.jpg)
 
-![Forest](%7Bstatic%7D/images/posts/2021/summary/020.jpg)
+![Forest](/images/posts/2021/summary/020.jpg)
 
-![Bieszczady](%7Bstatic%7D/images/posts/2021/summary/030.jpg)
+![Bieszczady](/images/posts/2021/summary/030.jpg)
 
-![Bieszczady](%7Bstatic%7D/images/posts/2021/summary/031.jpg)
+![Bieszczady](/images/posts/2021/summary/031.jpg)
 
-![Bieszczady](%7Bstatic%7D/images/posts/2021/summary/032.jpg)
+![Bieszczady](/images/posts/2021/summary/032.jpg)
 
-![Beskid Wyspowy](%7Bstatic%7D/images/posts/2021/summary/040.jpg)
+![Beskid Wyspowy](/images/posts/2021/summary/040.jpg)
 
-![Beskid Wyspowy](%7Bstatic%7D/images/posts/2021/summary/041.jpg)
+![Beskid Wyspowy](/images/posts/2021/summary/041.jpg)
 
-![Jura](%7Bstatic%7D/images/posts/2021/summary/090.jpg)
+![Jura](/images/posts/2021/summary/090.jpg)
 
-![Sea](%7Bstatic%7D/images/posts/2021/summary/099.jpg)
+![Sea](/images/posts/2021/summary/099.jpg)

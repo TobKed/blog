@@ -13,7 +13,6 @@ tags:
 slug: 2025-june-links
 summary: Interesting stuff from the month
 image: /images/posts/2025/2025_06_gcp_office_ams.jpg
-status: published
 categories:
   - summary
 ---
@@ -31,15 +30,15 @@ I finally got around to reading ["The Phoenix Project."](https://www.goodreads.c
 
 ### [Google Developer Groups: Meet NotebookLM](https://www.meetup.com/pl-PL/gdg-nl/events/308084364)
 
-I also attended a couple of great local meetups. First, I visited the Google office in Amsterdam for a [Google Developer Groups event on NotebookLM](<(https://www.meetup.com/pl-PL/gdg-nl/events/308084364)>). It was insightful to hear Pablo Felip discuss its applications in education. I'm already familiar with the tool, having used it for my [2024 Summary](%7Bfilename%7D/posts/2024_summary.md), so it was great to see other use cases for it.
+I also attended a couple of great local meetups. First, I visited the Google office in Amsterdam for a [Google Developer Groups event on NotebookLM](<(https://www.meetup.com/pl-PL/gdg-nl/events/308084364)>). It was insightful to hear Pablo Felip discuss its applications in education. I'm already familiar with the tool, having used it for my [2024 Summary](/2024-summary/), so it was great to see other use cases for it.
 
 <figure style="text-align: center;">
-    <img src="{static}/images/posts/2025/2025_06_gcp_office_ams.jpg" alt="Google Amsterdam Office" style="display: block; margin-left: auto; margin-right: auto;">
+    <img src="/images/posts/2025/2025_06_gcp_office_ams.jpg" alt="Google Amsterdam Office" style="display: block; margin-left: auto; margin-right: auto;">
     <figcaption style="font-size: 0.9em; margin-top: 8px; margin-bottom: 12px">Google Amsterdam Office</figcaption>
 </figure>
 
 <figure style="text-align: center;">
-    <img src="{static}/images/posts/2025/2025_06_gcp_notebook_lm.jpg" alt="Pablo Felip presenting on NotebookLM" style="display: block; margin-left: auto; margin-right: auto;">
+    <img src="/images/posts/2025/2025_06_gcp_notebook_lm.jpg" alt="Pablo Felip presenting on NotebookLM" style="display: block; margin-left: auto; margin-right: auto;">
     <figcaption style="font-size: 0.9em; margin-top: 8px; margin-bottom: 12px">Pablo Felip presenting on NotebookLM</figcaption>
 </figure>
 
@@ -54,12 +53,12 @@ Later in the month, the [Py Amsterdam meetup](https://www.meetup.com/pl-PL/pyams
 The networking afterward was super nice, and I even ran into someone I had met at the Google event earlier in the month.
 
 <figure style="text-align: center;">
-    <img src="{static}/images/posts/2025/2025_06_pyams_fh_iulia.jpg" alt="Iulia Feroli presenting on Spotify Wrapped" style="display: block; margin-left: auto; margin-right: auto;">
+    <img src="/images/posts/2025/2025_06_pyams_fh_iulia.jpg" alt="Iulia Feroli presenting on Spotify Wrapped" style="display: block; margin-left: auto; margin-right: auto;">
     <figcaption style="font-size: 0.9em; margin-top: 8px; margin-bottom: 12px">Iulia Feroli presenting on Spotify Wrapped</figcaption>
 </figure>
 
 <figure style="text-align: center;">
-    <img src="{static}/images/posts/2025/2025_06_pyams_fh_tyron.jpg" alt="Tyrone Damasceno presenting on AI" style="display: block; margin-left: auto; margin-right: auto;">
+    <img src="/images/posts/2025/2025_06_pyams_fh_tyron.jpg" alt="Tyrone Damasceno presenting on AI" style="display: block; margin-left: auto; margin-right: auto;">
     <figcaption style="font-size: 0.9em; margin-top: 8px; margin-bottom: 12px">Tyrone Damasceno presenting on AI</figcaption>
 </figure>
 

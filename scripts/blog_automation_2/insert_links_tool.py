@@ -38,7 +38,7 @@ def main() -> None:
     markdown_file = validate_markdown_file(paths.project_root / args.markdown_file)
 
     # Initialize link registry with posts directory
-    posts_dir = paths.project_root / "content" / "posts"
+    posts_dir = paths.project_root / "content" / "post"
     link_registry = LinkRegistry(posts_dir)
 
     # Initialize analyser

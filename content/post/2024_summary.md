@@ -8,7 +8,6 @@ tags:
 slug: 2024-summary
 summary: Ups and downs of 2024
 image: /images/posts/2024/2024_11_xx.jpg
-status: published
 categories:
   - summary
 ---
@@ -38,12 +37,12 @@ First, I became a certified [GitHub Actions](https://www.credly.com/badges/6b96a
 Second, I validated my five-year experience with Terraform by passing the [HashiCorp Certification: Terraform Associate (003)](https://www.credly.com/badges/dd230996-5592-4397-9dab-02a5144111b9/public_url) exam.
 
 <a target="\_blank" rel="noopener noreferrer" href="https://www.credly.com/badges/6b96a6c9-28cb-47dd-9dfa-13dd7a37d543">
-    <img src="{static}/images/posts/2024/2024_09_github_actions.png" alt="GitHub Actions Certification" style="display: block; margin-left: auto; margin-right: auto;">
+    <img src="/images/posts/2024/2024_09_github_actions.png" alt="GitHub Actions Certification" style="display: block; margin-left: auto; margin-right: auto;">
 </a>
 <div style="text-align: center"><a target="\_blank" rel="noopener noreferrer" href="https://www.credly.com/badges/6b96a6c9-28cb-47dd-9dfa-13dd7a37d543">GitHub Actions</a></div>
 
 <a target="\_blank" rel="noopener noreferrer" href="https://www.credly.com/badges/dd230996-5592-4397-9dab-02a5144111b9/public_url">
-    <img src="{static}/images/posts/2024/2024_11_terraform_associate.png" alt="HashiCorp Certification: Terraform Associate (003)" style="display: block; margin-left: auto; margin-right: auto;">
+    <img src="/images/posts/2024/2024_11_terraform_associate.png" alt="HashiCorp Certification: Terraform Associate (003)" style="display: block; margin-left: auto; margin-right: auto;">
 </a>
 <div style="text-align: center"><a target="\_blank" rel="noopener noreferrer" href="https://www.credly.com/badges/dd230996-5592-4397-9dab-02a5144111b9/public_url">HashiCorp Certification: Terraform Associate (003)</a></div>
 
@@ -52,7 +51,7 @@ Second, I validated my five-year experience with Terraform by passing the [Hashi
 In free time I decided to create a personal project: a photoblog.
 I used [Hugo](https://gohugo.io/) and GitHub Actions to create the blog, keeping the source code in a private repository to maintain the privacy of the original-size photos and their metadata.
 My photoblog is now available for viewing at [photos.tobked.dev](https://photos.tobked.dev).
-More about it in [September Summary](%7Bfilename%7D/posts/2024_09_30_september_links.md)
+More about it in [September Summary](/2024-september-links/)
 
 ## Productivity by Heart
 
@@ -60,7 +59,7 @@ I also completed the [Productivity By Heart](https://www.productivitybyheart.com
 This course offered a fresh perspective on productivity and has been a game-changer for me.
 
 <a target="\_blank" rel="noopener noreferrer" href="https://credsverse.com/credentials/f51a1f4f-dea2-41a0-a661-fd1c110488fe">
-    <img src="{static}/images/posts/2024/2024_10_productivity_by_heart.png" alt="Productivity By Heart Certification" style="display: block; margin-left: auto; margin-right: auto;">
+    <img src="/images/posts/2024/2024_10_productivity_by_heart.png" alt="Productivity By Heart Certification" style="display: block; margin-left: auto; margin-right: auto;">
 </a>
 
 ## Writing
@@ -68,54 +67,54 @@ This course offered a fresh perspective on productivity and has been a game-chan
 As always, I've kept up with my monthly summaries, where I compile a few sentences about each month, along with any interesting articles, tools, and other materials I've come across.
 Each month, I also add a personal touch with a photo I've taken.
 
-- [January](%7Bfilename%7D/posts/2024_01_31_january_links.md)
-- [February](%7Bfilename%7D/posts/2024_02_29_february_links.md)
-- [March](%7Bfilename%7D/posts/2024_03_31_march_links.md)
-- [April](%7Bfilename%7D/posts/2024_04_30_april_links.md)
-- [May](%7Bfilename%7D/posts/2024_05_31_may_links.md)
-- [June](%7Bfilename%7D/posts/2024_06_30_june_links.md)
-- [July](%7Bfilename%7D/posts/2024_07_31_july_links.md)
-- [August](%7Bfilename%7D/posts/2024_08_31_august_links.md)
-- [September](%7Bfilename%7D/posts/2024_09_30_september_links.md)
-- [October](%7Bfilename%7D/posts/2024_10_31_october_links.md)
-- [November](%7Bfilename%7D/posts/2024_11_30_november_links.md)
-- [December](%7Bfilename%7D/posts/2024_12_31_december_links.md)
+- [January](/2024-january-links/)
+- [February](/2024-february-links/)
+- [March](/2024-march-links/)
+- [April](/2024-april-links/)
+- [May](/2024-may-links/)
+- [June](/2024-june-links/)
+- [July](/2024-july-links/)
+- [August](/2024-august-links/)
+- [September](/2024-september-links/)
+- [October](/2024-october-links/)
+- [November](/2024-november-links/)
+- [December](/2024-december-links/)
 
 I also wrote an additional blog post:
 
-- [git: when ignorance is a bliss](%7Bfilename%7D/posts/2024_06_04_declutter_git_status.md).
+- [git: when ignorance is a bliss](/declutter-git-status/).
 
 ## Summary
 
 2024 was an intensive year, but I've learned a lot. I've compiled my reflections on the year in a podcast, which you can listen to below (made with [NotebookLM](https://notebooklm.google/)).
 
 <audio controls style="width: 100%; margin: 1em 0;">
-    <source src="{static}/audio/2024_IT_Links_and_Reflections.mp3" type="audio/mpeg">
+    <source src="/audio/2024_IT_Links_and_Reflections.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
 </audio>
 
 ## Photos
 
-![2024_01](%7Bstatic%7D/images/posts/2024/2024_01_xx.jpg)
+![2024_01](/images/posts/2024/2024_01_xx.jpg)
 
-![2024_02](%7Bstatic%7D/images/posts/2024/2024_02_xx.jpg)
+![2024_02](/images/posts/2024/2024_02_xx.jpg)
 
-![2024_03](%7Bstatic%7D/images/posts/2024/2024_03_xx.jpg)
+![2024_03](/images/posts/2024/2024_03_xx.jpg)
 
-![2024_04](%7Bstatic%7D/images/posts/2024/2024_04_xx.jpg)
+![2024_04](/images/posts/2024/2024_04_xx.jpg)
 
-![2024_05](%7Bstatic%7D/images/posts/2024/2024_05_xx.jpg)
+![2024_05](/images/posts/2024/2024_05_xx.jpg)
 
-![2024_06](%7Bstatic%7D/images/posts/2024/2024_06_xx.jpg)
+![2024_06](/images/posts/2024/2024_06_xx.jpg)
 
-![2024_07](%7Bstatic%7D/images/posts/2024/2024_07_xx.jpg)
+![2024_07](/images/posts/2024/2024_07_xx.jpg)
 
-![2024_08](%7Bstatic%7D/images/posts/2024/2024_08_xx.jpg)
+![2024_08](/images/posts/2024/2024_08_xx.jpg)
 
-![2024_09](%7Bstatic%7D/images/posts/2024/2024_09_xx.jpg)
+![2024_09](/images/posts/2024/2024_09_xx.jpg)
 
-![2024_10](%7Bstatic%7D/images/posts/2024/2024_10_xx.jpg)
+![2024_10](/images/posts/2024/2024_10_xx.jpg)
 
-![2024_11](%7Bstatic%7D/images/posts/2024/2024_11_xx.jpg)
+![2024_11](/images/posts/2024/2024_11_xx.jpg)
 
-![2024_12](%7Bstatic%7D/images/posts/2024/2024_12_xx.jpg)
+![2024_12](/images/posts/2024/2024_12_xx.jpg)

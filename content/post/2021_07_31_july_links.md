@@ -13,7 +13,6 @@ tags:
   - git
 slug: 2021-july-links
 summary: Interesting stuff from the month
-status: published
 categories:
   - summary
 ---
@@ -28,7 +27,7 @@ Some of them are strictly related to the things I did or am currently doing.
 During my work in the office I found out that many times the use of Git is discussed during quick chats or coffee breaks.
 There is nothing wrong with this, however short discussions do not give space for deeper explanation or analysis.
 I decided that a presentation about Git will fill this gap which resulted in **Brival Tech Talk: GIT - tips & tricks**.
-I've expanded topics from my post on Git: [Changing history in Git](%7Bfilename%7D/posts/2019_08_12_git_change_history.md).
+I've expanded topics from my post on Git: [Changing history in Git](/git-history/).
 
 I talked about:
 
@@ -54,7 +53,7 @@ I spent some significant time reading related articles and documentation.
 I tested commands and concepts in the field as well because the presentation was conducted hand in hand with a live demo.
 I found it helpful.
 
-![Brival Tech Talk - GIT tips & tricks](%7Bstatic%7D/images/posts/2021/brival_tech_talk_git.jpg)
+![Brival Tech Talk - GIT tips & tricks](/images/posts/2021/brival_tech_talk_git.jpg)
 
 ## Articles
 

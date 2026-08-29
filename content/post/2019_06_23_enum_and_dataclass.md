@@ -9,7 +9,6 @@ tags:
   - OOP
 slug: enum-and-dataclass
 summary: Few words about enum and dataclass
-status: published
 categories:
   - Python
 ---

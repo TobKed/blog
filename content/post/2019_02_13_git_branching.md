@@ -7,7 +7,6 @@ tags:
   - vcs
 slug: git-branching
 summary: Git branching
-status: published
 categories:
   - Git
 ---

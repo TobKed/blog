@@ -21,7 +21,7 @@ from pathlib import Path
 from typing import Dict, Optional, Tuple
 
 # --- Configuration ---
-# Default template filename (relative to content/posts)
+# Default template filename (relative to content/post)
 DEFAULT_TEMPLATE_FILENAME = "2026_xx_xx_template_links.md"
 # Default subdirectory within the project for templates and posts
 DEFAULT_CONTENT_DIR = Path("content") / "post"
@@ -146,6 +146,8 @@ def build_replacements(
         # Using a unique placeholder date in template is safer
         f"date: '{tpl_year}-12-31'": f"date: '{formatted_date}'",
         f"slug: {tpl_year}-{{month}}-links": f"slug: {year}-{month_name_lower}-links",
+        # Year tag in the YAML tag list
+        f"  - '{tpl_year}'": f"  - '{year}'",
         # Be specific about the path structure & placeholder year
         f"image: /images/posts/{tpl_year}/{tpl_year}_xx_xx.jpg": f"image: /images/posts/{year}/{year}_{month_num:02d}_xx.jpg",
         # Content Heading
@@ -278,7 +280,7 @@ def main():
 
     print(f"-> Project Root detected as: '{project_root}'")
 
-    # Template path is within content/posts relative to project root
+    # Template path is within content/post relative to project root
     template_path = project_root / DEFAULT_CONTENT_DIR / args.template
 
     # Determine output directory relative to project root
@@ -289,7 +291,7 @@ def main():
             output_dir_path = project_root / output_dir_path
         print(f"-> Using specified output directory: '{output_dir_path}'")
     else:
-        # Default output is content/posts relative to project root
+        # Default output is content/post relative to project root
         output_dir_path = project_root / DEFAULT_CONTENT_DIR
         print(f"-> Using default output directory: '{output_dir_path}'")
 

@@ -13,7 +13,6 @@ tags:
 slug: 2023-october-links
 summary: Interesting stuff from the month
 image: /images/posts/2023/2023_10_xx.jpg
-status: published
 categories:
   - summary
 ---
@@ -29,9 +28,9 @@ This month, I spruced up my [Python API and background workers on Google Cloud P
 It's a neat package with a simple app and all the setup for FastAPI, CloudRun, and PubSub.
 Just a fun little project showcasing Python on Google Cloud – check it out!
 
-By the way, [last month](%7Bfilename%7D/posts/2023_09_30_september_links.md) I gave a lightning talk at PyCon CZ based on this repository.
+By the way, [last month](/2023-september-links/) I gave a lightning talk at PyCon CZ based on this repository.
 
-![PyCon CZ.](%7Bstatic%7D/images/posts/2023/2023_09_pyconcz.jpg)
+![PyCon CZ.](/images/posts/2023/2023_09_pyconcz.jpg)
 
 ## Articles
 

@@ -12,7 +12,6 @@ tags:
   - '2021'
 slug: 2021-april-links
 summary: Interesting stuff from the month
-status: published
 categories:
   - summary
 ---
@@ -26,7 +25,7 @@ Some of them are strictly related to the things I did or am currently doing.
 
 I completed [Architecting with Google Kubernetes Engine](https://www.coursera.org/account/accomplishments/specialization/E452CCSHMMGH) course on [coursera.org](https://www.coursera.org/specializations/architecting-google-kubernetes-engine).
 
-![Datastuido dashboard](%7Bstatic%7D/images/posts/2021/CERTIFICATE_LANDING_PAGE~E452CCSHMMGH.jpeg)
+![Datastuido dashboard](/images/posts/2021/CERTIFICATE_LANDING_PAGE~E452CCSHMMGH.jpeg)
 [Architecting with Google Kubernetes Engine - Certificate](https://www.coursera.org/account/accomplishments/specialization/E452CCSHMMGH)
 
 ## Articles

@@ -6,7 +6,6 @@ tags:
   - productivity
 slug: productivity-course
 summary: "Few words about one month productivity course (Produktywność krok po kroku)."
-status: published
 categories:
   - life
 ---

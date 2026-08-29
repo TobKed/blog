@@ -8,7 +8,6 @@ tags:
   - selenium
 slug: django-page-object-pattern
 summary: Page Object Pattern in testing Django
-status: published
 categories:
   - Python
 ---

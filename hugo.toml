@@ -1,46 +1,109 @@
 baseURL = 'https://blog.tobked.dev/'
-languageCode = 'en-us'
+locale = 'en-us'
+defaultContentLanguage = 'en'
 title = 'ups and downs'
 theme = 'hugo-theme-cleanwhite'
-defaultContentLanguage = 'en'
-hasCJKLanguage = true
-paginate = 10
 
-[params]
-  mainSections = ["posts"]
-  header_image = "images/poli_photo_by_julia_kaczorowska_edit.png"
-  featured_tags = false
-  author = "Tobiasz Kedzierski"
-  description = "Tobiasz Kedzierski's Blog"
-  keyword = "blog, python, software engineering"
-  slogan = "ups and downs"
-  image_404 = "images/404-bg.jpg"
+[pagination]
+  pagerSize = 10
 
-  # Social links
-  github = "https://github.com/TobKed"
-  linkedin = "https://www.linkedin.com/in/tobiaszkedzierski/?locale=en_US"
-
-[[menu.main]]
-  name = "Home"
-  url = "/"
-  weight = 1
-
-[[menu.main]]
-  name = "about me"
-  url = "/about-me/"
-  weight = 2
-
-[[menu.main]]
-  name = "tobked.dev"
-  url = "https://tobked.dev/"
-  weight = 3
-
-[permalinks]
-  post = "/:slug/"
+# Pelican served posts at /<slug> and pages at /pages/<slug>. Keep both.
+[permalinks.page]
+  post = '/:slug/'
+  pages = '/pages/:slug/'
 
 [taxonomies]
   category = "categories"
   tag = "tags"
 
-[markup.goldmark.renderer]
-  unsafe = true
+# Pelican's "Posted by Tobiasz Kedzierski on ..." byline; the theme reads .Params.author
+# per page and falls back to the site title, so push it down onto every post.
+[[cascade]]
+  [cascade.params]
+    author = "Tobiasz Kedzierski"
+  [cascade.target]
+    path = '{/post/**,/pages/**}'
+
+[params]
+  mainSections = ["post"]
+  header_image = "images/poli_photo_by_julia_kaczorowska_edit.png"
+  author = "Tobiasz Kedzierski"
+  SEOTitle = "Tobiasz Kedzierski's blog"
+  description = "Tobiasz Kedzierski's Blog"
+  keyword = "blog, python, software engineering, cloud, django"
+  slogan = ""
+  # The nav lists every category unless this is set; there are 12 of them.
+  omit_categories = true
+  # Sidebar: the post list reserves a column for it, so give it something to show.
+  about_me = true
+  sidebar_about_description = "Software engineer. Python, Django, Go and the cloud. Monthly round-ups of what I read and watch."
+  featured_tags = true
+  featured_condition_size = 8
+  last_posts = true
+  friends = false
+  bookmarks = false
+  # Restores the Pelican theme's typography/colour overrides (static/css/main.css).
+  custom_css = ["css/main.css"]
+  # Appended to the footer copyright line as markdown - used here to keep the
+  # photo credit that lived in Pelican's content/html/my_footer.html.
+  icp = "Main page header photo by [Julia Kaczorowska](https://juliakaczorowska.pl/) (other by me)."
+
+  [params.social]
+    github = "https://github.com/TobKed"
+    linkedin = "https://www.linkedin.com/in/tobiaszkedzierski/?locale=en_US"
+    rss = true
+
+  # The theme's nav is built from additional_menus, not [[menu.main]].
+  [[params.additional_menus]]
+    title = "ABOUT ME"
+    href = "/pages/about-me"
+  [[params.additional_menus]]
+    title = "LINKS"
+    href = "/pages/links"
+  [[params.additional_menus]]
+    title = "TOBKED.DEV"
+    href = "https://tobked.dev"
+
+[services]
+  [services.googleAnalytics]
+    # Set in CI via HUGO_SERVICES_GOOGLEANALYTICS_ID.
+    id = ""
+  [services.rss]
+    limit = 50
+
+# Pelican published feeds/all.rss.xml and feeds/all.atom.xml - keep those URLs
+# so existing subscribers don't break.
+[mediaTypes]
+  [mediaTypes.'application/atom+xml']
+    suffixes = ['xml']
+
+[outputFormats]
+  [outputFormats.RSS]
+    path = 'feeds'
+    baseName = 'all.rss'
+    rel = 'alternate'
+  [outputFormats.Atom]
+    mediaType = 'application/atom+xml'
+    path = 'feeds'
+    baseName = 'all.atom'
+    isPlainText = false
+    rel = 'alternate'
+
+[outputs]
+  home = ['html', 'rss', 'atom']
+  page = ['html']
+  section = ['html']
+  taxonomy = ['html']
+  term = ['html']
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.highlight]
+    # Pelican used pygments' github style via codehilite.
+    style = 'github'
+    noClasses = true
+    lineNos = false
+  [markup.tableOfContents]
+    startLevel = 1
+    endLevel = 2

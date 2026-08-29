@@ -12,7 +12,6 @@ tags:
   - '2020'
 slug: 2020-july-links
 summary: Interesting stuff from the month
-status: published
 categories:
   - summary
 ---

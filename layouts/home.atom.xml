@@ -1,0 +1,35 @@
+{{- $pages := where site.RegularPages "Section" "post" -}}
+{{- $limit := site.Config.Services.RSS.Limit -}}
+{{- if ge $limit 1 -}}{{- $pages = $pages | first $limit -}}{{- end -}}
+{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ site.Title }}</title>
+  <subtitle>{{ site.Params.description }}</subtitle>
+  <id>{{ site.Home.Permalink }}</id>
+  <link href="{{ site.Home.Permalink }}" rel="alternate" type="text/html" />
+  {{- with .OutputFormats.Get "atom" }}
+  <link href="{{ .Permalink }}" rel="self" type="{{ .MediaType }}" />
+  {{- end }}
+  {{- with $pages }}{{ with index . 0 }}
+  <updated>{{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }}</updated>
+  {{- end }}{{ end }}
+  <author>
+    <name>{{ site.Params.author }}</name>
+  </author>
+  {{- range $pages }}
+  <entry>
+    <title>{{ .Title }}</title>
+    <link href="{{ .Permalink }}" rel="alternate" type="text/html" />
+    <id>{{ .Permalink }}</id>
+    <published>{{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }}</published>
+    <updated>{{ .Lastmod.Format "2006-01-02T15:04:05-07:00" | safeHTML }}</updated>
+    {{- with .Params.author }}
+    <author><name>{{ . }}</name></author>
+    {{- end }}
+    {{- range .Params.tags }}
+    <category term="{{ . }}" />
+    {{- end }}
+    <content type="html">{{ .Content | transform.XMLEscape | safeHTML }}</content>
+  </entry>
+  {{- end }}
+</feed>

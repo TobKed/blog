@@ -12,7 +12,6 @@ tags:
   - '2023'
 slug: 2023-april-links
 summary: Interesting stuff from the month
-status: published
 image: /images/posts/2023/2023_05_gcp_dev_day/2023_05_gcp_dev_day.jpg
 categories:
   - summary
@@ -30,7 +29,7 @@ Some of them are strictly related to the things I did or am currently doing.
 I have seen how different people use Git, and each person has their own way of using it.
 However, I did not see many people using git `rebase interactive` and `fixups`.
 For a long time, I have been thinking about presenting how I use `git rebase`, `git rebase interactive`, and my beloved `fixups`.
-A long time ago, I wrote a short blog post about it ([Changing history in Git](%7Bfilename%7D/posts/2019_08_12_git_change_history.md)), but I felt it was not enough.
+A long time ago, I wrote a short blog post about it ([Changing history in Git](/git-history/)), but I felt it was not enough.
 I wanted to show it in action and explain why I do it.
 Because of that, I decided to prepare a presentation about it.
 I presented it during one of the internal meetings at work, and I think it went well.
@@ -42,10 +41,10 @@ Inspired by [Raymond Hettinger](https://www.youtube.com/playlist?list=PLRVdut2KP
 The presentation is available as a website under my domain: [tobked.dev/git_rebase_interactive](https://tobked.dev/git_rebase_interactive).
 Its source is on my Github: [github.com/TobKed/git_rebase_interactive](https://github.com/TobKed/git_rebase_interactive).
 
-#### [Google Cloud Developer Day Warsaw 2023](%7Bfilename%7D/posts/2023_05_03_gcp_dev_day.md)
+#### [Google Cloud Developer Day Warsaw 2023](/google-cloud-developer-day-warsaw-2023/)
 
 I attended Google Cloud Developer Day Warsaw 2023 on April 27th, 2023. It was a free event organized by Google Cloud at their [Warsaw Campus](https://www.campus.co/warsaw/).
-I wrote more about it in a separate blog post: [Google Cloud Developer Day Warsaw 2023](%7Bfilename%7D/posts/2023_05_03_gcp_dev_day.md).
+I wrote more about it in a separate blog post: [Google Cloud Developer Day Warsaw 2023](/google-cloud-developer-day-warsaw-2023/).
 
 ______________________________________________________________________
 

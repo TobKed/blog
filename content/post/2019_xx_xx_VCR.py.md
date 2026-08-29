@@ -1,4 +1,5 @@
 ---
+draft: true
 title: VCR.py
 date: '2019-08-31'
 tags:
@@ -7,7 +8,6 @@ tags:
   - unittest
 slug: vcrpy
 summary: Record HTTP interactions
-status: draft
 categories:
   - python
 ---

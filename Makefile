@@ -4,8 +4,6 @@ HUGO?=hugo
 BASEDIR=$(CURDIR)
 OUTPUTDIR=$(BASEDIR)/public
 
-GITHUB_PAGES_BRANCH=gh-pages
-
 .DEFAULT_GOAL := help
 
 .PHONY: help
@@ -17,24 +15,20 @@ help:
 
 .PHONY: build
 build: ## build the web site
-	$(HUGO)
+	$(HUGO) --gc
 
 .PHONY: clean
 clean: ## remove the generated files
 	[ ! -d $(OUTPUTDIR) ] || rm -rf $(OUTPUTDIR)
 
 .PHONY: serve
-serve: ## serve site locally (with drafts)
+serve: ## serve site locally at http://localhost:1313 (with drafts)
 	$(HUGO) server -D
 
 .PHONY: publish
-publish: ## generate using production settings
-	$(HUGO) --minify
-
-.PHONY: github
-github: publish ## upload the web site via gh-pages
-	ghp-import -m "Generate Hugo site" -b $(GITHUB_PAGES_BRANCH) $(OUTPUTDIR)
-	git push origin $(GITHUB_PAGES_BRANCH)
+publish: ## generate using production settings (deploys happen in CI)
+	$(HUGO) --gc --minify
+	npx -y pagefind --site $(OUTPUTDIR)
 
 .PHONY: resize_images
 resize_images: ## resize images in scripts/resize_photos/input

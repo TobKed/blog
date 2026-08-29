@@ -1,11 +1,11 @@
 ---
+draft: true
 title: Blogs
 date: '2025-10-05'
 tags:
   - blogs
 slug: blogs
 summary: blogs
-status: draft
 categories:
   - blogs
 ---

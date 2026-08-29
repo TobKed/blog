@@ -7,9 +7,11 @@ tags:
   - tools
 slug: sleep
 summary: Go sleep
-status: hidden
 categories:
   - productivity
+build:
+  list: never
+  render: always
 ---
 
 # Sleep

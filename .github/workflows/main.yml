@@ -8,6 +8,9 @@ on:
     branches:
       - master
 
+env:
+  HUGO_VERSION: '0.165.0'
+
 jobs:
   pre-commit:
     runs-on: ubuntu-latest
@@ -36,10 +39,14 @@ jobs:
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v3
       with:
-        hugo-version: 'latest'
+        hugo-version: ${{ env.HUGO_VERSION }}
         extended: true
     - name: Build
-      run: hugo --minify
+      run: hugo --gc --minify
+      env:
+        HUGO_SERVICES_GOOGLEANALYTICS_ID: ${{ secrets.GOOGLE_ANALYTICS }}
+    - name: Build search index
+      run: npx -y pagefind --site public
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v4
       with:

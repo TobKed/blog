@@ -9,7 +9,7 @@ from test_links_selenium import SeleniumChecker
 
 logger = get_logger("test_links")
 
-URL = "https://tobked.github.io/blog/"
+URL = "https://blog.tobked.dev/"
 
 JSON_OUTPUT = f"invalid_links{SUFFIX_TIMESTAMP}.json"
 

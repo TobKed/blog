@@ -13,7 +13,6 @@ tags:
 slug: 2024-september-links
 summary: Interesting stuff from the month
 image: /images/posts/2024/2024_09_xx.jpg
-status: published
 categories:
   - summary
 ---
@@ -35,12 +34,12 @@ This allowed me to calculate valuable statistics.
 My dedication to mastering GitHub Actions led me to pass a certification exam with minimal preparation, earning the badge of a certified GitHub Actions expert, which I proudly display [here](https://www.credly.com/badges/6b96a6c9-28cb-47dd-9dfa-13dd7a37d543).
 
 <a target="\_blank" rel="noopener noreferrer" href="https://www.credly.com/badges/6b96a6c9-28cb-47dd-9dfa-13dd7a37d543">
-    <img src="{static}/images/posts/2024/2024_09_github_actions.png" alt="GitHub Actions Certification" style="display: block; margin-left: auto; margin-right: auto;">
+    <img src="/images/posts/2024/2024_09_github_actions.png" alt="GitHub Actions Certification" style="display: block; margin-left: auto; margin-right: auto;">
 </a>
 
 Me a while back, full of hair and excitement, giving a presentation on GitHub Actions:
 
-<img src="{static}/images/posts/2022/2022_10_brival.jpg" alt="Brival Tech Talk - tips & tricks" style="display: block; margin-left: auto; margin-right: auto;">
+<img src="/images/posts/2022/2022_10_brival.jpg" alt="Brival Tech Talk - tips & tricks" style="display: block; margin-left: auto; margin-right: auto;">
 
 #### GitHub Action + Hugo = Photoblog
 
@@ -96,7 +95,7 @@ jobs:
 Photo from the [photos.tobked.dev](https://photos.tobked.dev/posts/2024_10_05_circles/):
 
 <a target="\_blank" rel="noopener noreferrer" href="https://photos.tobked.dev/posts/2024_10_05_circles/">
-    <img src="{static}/images/posts/2024/2024_09_photoblog.jpg" alt="photos.tobked.dev photography" style="display: block; margin-left: auto; margin-right: auto;">
+    <img src="/images/posts/2024/2024_09_photoblog.jpg" alt="photos.tobked.dev photography" style="display: block; margin-left: auto; margin-right: auto;">
 </a>
 
 #### tmux

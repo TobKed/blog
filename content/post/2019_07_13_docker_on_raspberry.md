@@ -8,7 +8,6 @@ tags:
   - system
 slug: docker-raspberry
 summary: Installing Docker on Raspberry Pi 3
-status: published
 categories:
   - Docker
   - Raspberry

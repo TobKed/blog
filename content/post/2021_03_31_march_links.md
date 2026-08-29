@@ -12,7 +12,6 @@ tags:
   - '2021'
 slug: 2021-march-links
 summary: Interesting stuff from the month
-status: published
 categories:
   - summary
 ---
@@ -25,7 +24,7 @@ Some of them are strictly related to the things I did or am currently doing.
 ## Some thoughts
 
 The main event of the month was the **[Poductivity step by step (PL: Produktywność krok po kroku)](https://produktywnosckrokpokroku.pl/)** course.
-I wrote more about it in a separate post: [Productivity course](%7Bfilename%7D/posts/2021_04_15_productivity.md)
+I wrote more about it in a separate post: [Productivity course](/productivity-course/)
 
 ## Articles
 

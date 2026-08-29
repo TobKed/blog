@@ -13,7 +13,6 @@ tags:
 slug: 2026-january-links
 summary: Interesting stuff from the month
 image: /images/posts/2026/2026_01_xx.jpg
-status: published
 categories:
   - summary
 ---

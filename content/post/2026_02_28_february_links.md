@@ -13,7 +13,6 @@ tags:
 slug: 2026-february-links
 summary: Interesting stuff from the month
 image: /images/posts/2026/2026_02_xx.jpg
-status: published
 categories:
   - summary
 ---

@@ -1,4 +1,5 @@
 ---
+draft: true
 title: Business Logic in Django
 date: '2019-03-06'
 tags:
@@ -6,7 +7,6 @@ tags:
   - django
 slug: django-business-logic
 summary: Where to put business logic in Django?
-status: draft
 categories:
   - Python
 ---

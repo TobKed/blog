@@ -286,3 +286,6 @@ resources/_gen/
 .idea/*
 content/.idea/*
 .worktrees/
+
+# hugo build lock
+.hugo_build.lock

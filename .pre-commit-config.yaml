@@ -23,7 +23,7 @@ repos:
     - mdformat-frontmatter
     exclude: |
         (?x)(
-            ^output/|
+            ^public/|
             ^themes/|
             ^venv/|
             ^content/post/2019_06_23_enum_and_dataclass.md|

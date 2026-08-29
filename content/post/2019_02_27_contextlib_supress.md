@@ -8,7 +8,6 @@ tags:
   - context
 slug: contextlib-suppress
 summary: Handling exceptions with contextlib
-status: published
 categories:
   - Python
 ---

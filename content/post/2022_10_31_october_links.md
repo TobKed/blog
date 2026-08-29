@@ -13,7 +13,6 @@ tags:
 slug: 2022-october-links
 summary: Interesting stuff from the month
 image: /images/posts/2022/2022_10_xx.jpg
-status: published
 categories:
   - summary
 ---
@@ -32,7 +31,7 @@ I noticed how beneficial it is to give the same presentation multiple times.
 It went significantly better than the first time.
 I was not limited with time and had more freedom in going deeper into details.
 
-![GitHub Actions Tips & Tricks @Brival](%7Bstatic%7D/images/posts/2022/2022_10_brival.jpg)
+![GitHub Actions Tips & Tricks @Brival](/images/posts/2022/2022_10_brival.jpg)
 
 ## Articles
 

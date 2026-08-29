@@ -1,5 +1,6 @@
 ---
 title: about me
+slug: about-me
 date: '2018-12-19'
 tags:
   - welcome

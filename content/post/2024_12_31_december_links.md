@@ -13,7 +13,6 @@ tags:
 slug: 2024-december-links
 summary: Interesting stuff from the month
 image: /images/posts/2024/2024_12_xx.jpg
-status: published
 categories:
   - summary
 ---
@@ -30,7 +29,7 @@ It's always been a great experience, so much so that I wrote an introductory art
 To make sure I'm still up-to-date, I signed up and successfully passed the [HashiCorp Certification: Terraform Associate (003)](https://www.credly.com/badges/dd230996-5592-4397-9dab-02a5144111b9/public_url).
 
 <a target="\_blank" rel="noopener noreferrer" href="https://www.credly.com/badges/dd230996-5592-4397-9dab-02a5144111b9/public_url">
-    <img src="{static}/images/posts/2024/2024_11_terraform_associate.png" alt="HashiCorp Certification: Terraform Associate (003)" style="display: block; margin-left: auto; margin-right: auto;">
+    <img src="/images/posts/2024/2024_11_terraform_associate.png" alt="HashiCorp Certification: Terraform Associate (003)" style="display: block; margin-left: auto; margin-right: auto;">
 </a>
 
 I also ventured into the [`neovim`](https://neovim.io/) (hyperextensible Vim-based text editor) territory, inspired by my workmate [Thiago Bellini](https://github.com/bellini666) and his fantastic setup.

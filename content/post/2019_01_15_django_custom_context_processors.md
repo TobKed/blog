@@ -6,7 +6,6 @@ tags:
   - django
 slug: django-custom-context-processors
 summary: Custom context processors in Django
-status: published
 categories:
   - Python
 ---

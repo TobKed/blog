@@ -13,7 +13,6 @@ tags:
 slug: 2022-december-links
 summary: Interesting stuff from the month
 image: /images/posts/2022/2022_12_xx.jpg
-status: published
 categories:
   - summary
 ---
@@ -30,7 +29,7 @@ Ending year with another certificate in my collection.
 
 [Google Cloud Platform Professional Cloud Developer certificate.](https://www.credential.net/47fe6c30-0530-4291-8f72-93d0bf5d682e)
 
-<img src="{static}/images/posts/2022/summary/gcp_pcd.png" alt="Google Professional Cloud Developer" style="display: block; margin-left: auto; margin-right: auto;">
+<img src="/images/posts/2022/summary/gcp_pcd.png" alt="Google Professional Cloud Developer" style="display: block; margin-left: auto; margin-right: auto;">
 
 ## Articles
 

@@ -1,4 +1,5 @@
 ---
+draft: true
 title: Month summary - {Month} 2026
 date: '2026-12-31'
 tags:
@@ -13,7 +14,6 @@ tags:
 slug: 2026-{month}-links
 summary: Interesting stuff from the month
 image: /images/posts/2026/2026_xx_xx.jpg
-status: draft
 categories:
   - summary
 ---

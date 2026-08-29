@@ -6,7 +6,6 @@ tags:
   - vcs
 slug: git-history
 summary: Fix mistakes and clean git repository
-status: published
 categories:
   - Git
 ---

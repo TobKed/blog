@@ -13,7 +13,6 @@ tags:
 slug: 2025-october-links
 summary: Interesting stuff from the month
 image: /images/posts/2025/2025_10_xx.jpg
-status: published
 categories:
   - summary
 ---
@@ -31,9 +30,9 @@ The highlight of the month was the [AI House OpenAI meetup](https://luma.com/wkc
 
 [Anouk Muis](https://www.linkedin.com/in/anoukmuis/?originalSubdomain=uk) from OpenAI gave a workshop on ChatGPT's Codex, followed by a panel discussion with [Vladislav Tankov](https://www.linkedin.com/in/vladislav-tankov/) (Director of AI at JetBrains) and [Jelmer Borst](https://www.linkedin.com/in/japborst/) (Head of Analytics & AI at Picnic Technologies). It was great to explore practical strategies for effective AI-assisted coding at the new AI House hub.
 
-<img src="{static}/images/posts/2025/2025_10_ai_house_open_ai.jpg" alt="AI House" style="display: block; margin-left: auto; margin-right: auto;">
+<img src="/images/posts/2025/2025_10_ai_house_open_ai.jpg" alt="AI House" style="display: block; margin-left: auto; margin-right: auto;">
 
-<img src="{static}/images/posts/2025/2025_10_ai_house_open_ai_panel.jpg" alt="AI House panel discussion" style="display: block; margin-left: auto; margin-right: auto;">
+<img src="/images/posts/2025/2025_10_ai_house_open_ai_panel.jpg" alt="AI House panel discussion" style="display: block; margin-left: auto; margin-right: auto;">
 
 ### Tools updates
 

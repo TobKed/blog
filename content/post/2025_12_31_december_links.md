@@ -13,7 +13,6 @@ tags:
 slug: 2025-december-links
 summary: Interesting stuff from the month
 image: /images/posts/2025/2025_12_xx.jpg
-status: published
 categories:
   - summary
 ---
@@ -31,9 +30,9 @@ I recently checked out the [AI House event](https://luma.com/fwnm7zp8), which fo
 It's fascinating to see how the ecosystem is evolving and how we can leverage these tools more effectively in our daily workflows.
 I am currently exploring the **Antigravity** IDE, so it was interesting to get some first-hand tips straight from Google.
 
-<img src="{static}/images/posts/2025/2025_12_ai_house_1.jpg" alt="AI House" style="display: block; margin-left: auto; margin-right: auto;">
+<img src="/images/posts/2025/2025_12_ai_house_1.jpg" alt="AI House" style="display: block; margin-left: auto; margin-right: auto;">
 
-<img src="{static}/images/posts/2025/2025_12_ai_house_2.jpg" alt="AI House" style="display: block; margin-left: auto; margin-right: auto;">
+<img src="/images/posts/2025/2025_12_ai_house_2.jpg" alt="AI House" style="display: block; margin-left: auto; margin-right: auto;">
 
 ### Tool [pvolok/mprocs](https://github.com/pvolok/mprocs)
 

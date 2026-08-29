@@ -1,5 +1,6 @@
 ---
 title: Async, multithreading and multiprocessing resources
+slug: async-multithreading-and-multiprocessing-resources
 date: '2022-11-16'
 tags:
   - python
@@ -7,9 +8,11 @@ tags:
   - asyncio
   - multithreading
   - multiprocessing
-status: hidden
 categories:
   - main
+build:
+  list: never
+  render: always
 ---
 
 ## Websites

@@ -7,7 +7,6 @@ tags:
 slug: declutter-git-status
 summary: 'Focus on what matters: decluterring `git status`'
 image: /images/posts/2024/2024_06_04_declutter_git_status.jpg
-status: published
 categories:
   - programming
 ---

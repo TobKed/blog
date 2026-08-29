@@ -13,7 +13,6 @@ tags:
 slug: 2024-january-links
 summary: Interesting stuff from the month
 image: /images/posts/2024/2024_01_xx.jpg
-status: published
 categories:
   - summary
 ---

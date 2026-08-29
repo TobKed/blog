@@ -13,7 +13,6 @@ tags:
 slug: 2024-october-links
 summary: Interesting stuff from the month
 image: /images/posts/2024/2024_10_xx.jpg
-status: published
 categories:
   - summary
 ---
@@ -25,14 +24,14 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ## Some thoughts
 
-In April 2021, I wrote about the [Productivity Step By Step (Produktywność Krok Po Kroku)](%7Bfilename%7D/posts/2021_04_15_productivity.md) course by [Piotr Nabielec](https://www.linkedin.com/in/piotrnabielec/).
+In April 2021, I wrote about the [Productivity Step By Step (Produktywność Krok Po Kroku)](/productivity-course/) course by [Piotr Nabielec](https://www.linkedin.com/in/piotrnabielec/).
 This time, I completed the [Productivity By Heart](https://www.productivitybyheart.com/) course, and I must say, it brought back the creativity spark I felt I had lost along the way.
 The course provided a fresh perspective on productivity and has been a game-changer for me.
 You can find my certification of completion [here](https://credsverse.com/credentials/f51a1f4f-dea2-41a0-a661-fd1c110488fe).
 I’ll be diving into more details about this course in a separate post after going through all the materials once again.
 
 <a target="\_blank" rel="noopener noreferrer" href="https://credsverse.com/credentials/f51a1f4f-dea2-41a0-a661-fd1c110488fe">
-    <img src="{static}/images/posts/2024/2024_10_productivity_by_heart.png" alt="Productivity By Heart Certification" style="display: block; margin-left: auto; margin-right: auto;">
+    <img src="/images/posts/2024/2024_10_productivity_by_heart.png" alt="Productivity By Heart Certification" style="display: block; margin-left: auto; margin-right: auto;">
 </a>
 
 On another note, I've been enhancing my workflow in the terminal.

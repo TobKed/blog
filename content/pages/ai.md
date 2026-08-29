@@ -1,11 +1,14 @@
 ---
 title: AI resources
+slug: ai-resources
 date: '2022-11-16'
 tags:
   - AI
-status: hidden
 categories:
   - main
+build:
+  list: never
+  render: always
 ---
 
 ## Tools & Setup

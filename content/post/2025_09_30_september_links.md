@@ -13,7 +13,6 @@ tags:
 slug: 2025-september-links
 summary: Interesting stuff from the month
 image: /images/posts/2025/2025_09_xx.jpg
-status: published
 categories:
   - summary
 ---

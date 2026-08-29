@@ -1,5 +1,6 @@
 ---
 title: links
+slug: links
 date: '2018-12-27'
 modified: '2018-02-14'
 tags:

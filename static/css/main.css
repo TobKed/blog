@@ -1,3 +1,7 @@
+/* light-mode scope: these rules were written for the old Pelican theme and
+   hardcode light-mode colours. Nesting them under :not([data-theme="dark"])
+   keeps the classic look in light mode and lets the theme own dark mode. */
+html:not([data-theme="dark"]) {
 body {
   font-family: 'Open Sans', 'Lora','Times New Roman',serif;
   font-size: 18px;
@@ -476,4 +480,5 @@ table {
   color: #808080;
   font-style: italic;
   opacity: 0.7;
+}
 }

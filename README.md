@@ -1,25 +1,27 @@
-### [tobked.github.io/blog/](https://tobked.github.io/blog/)
+### [blog.tobked.dev](https://blog.tobked.dev/)
 
 [![Deploy blog to gh-pages](https://github.com/TobKed/blog/actions/workflows/main.yml/badge.svg)](https://github.com/TobKed/blog/actions/workflows/main.yml)
 
-##### Blog made in Pelican
+##### Blog made with Hugo
 
-Pelican
+- https://github.com/gohugoio/hugo
 
-- https://github.com/getpelican/pelican
+used theme (git submodule under `themes/`):
 
-used theme:
+- https://github.com/zhaohuabing/hugo-theme-cleanwhite
 
-- https://github.com/gilsondev/pelican-clean-blog/
+Requires Hugo **extended** 0.146+ (CI pins 0.165.0).
 
 ```bash
-pip install pelican
-pip install Markdown
-pip install ghp-import
+brew install hugo
+git submodule update --init --recursive
 ```
 
 ```bash
-git commit -m <msg>
-git push
-make github
+make serve     # http://localhost:1313, includes drafts
+make build     # build into public/
+make publish   # production build + pagefind search index
 ```
+
+Deployment is automatic: pushing to `master` runs `.github/workflows/main.yml`,
+which builds the site and publishes `public/` to the `gh-pages` branch.

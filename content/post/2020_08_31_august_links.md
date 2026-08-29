@@ -12,7 +12,6 @@ tags:
   - '2020'
 slug: 2020-august-links
 summary: Interesting stuff from the month
-status: published
 categories:
   - summary
 ---

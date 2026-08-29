@@ -13,7 +13,6 @@ tags:
 slug: 2023-january-links
 summary: Interesting stuff from the month
 image: /images/posts/2023/2023_01_xx.jpg
-status: published
 categories:
   - summary
 ---

@@ -13,7 +13,6 @@ tags:
 slug: 2024-july-links
 summary: Interesting stuff from the month
 image: /images/posts/2024/2024_07_xx.jpg
-status: published
 categories:
   - summary
 ---

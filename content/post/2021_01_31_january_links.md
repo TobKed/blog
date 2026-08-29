@@ -12,7 +12,6 @@ tags:
   - '2021'
 slug: 2021-january-links
 summary: Interesting stuff from the month
-status: published
 categories:
   - summary
 ---

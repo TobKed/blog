@@ -13,7 +13,6 @@ tags:
 slug: 2025-april-links
 summary: Interesting stuff from the month
 image: /images/posts/2025/2025_04_xx.jpg
-status: published
 categories:
   - summary
 ---

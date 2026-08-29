@@ -8,7 +8,6 @@ tags:
 slug: 2022-summary
 summary: Ups and downs of 2022
 image: /images/posts/2022/summary/2022_summary.jpg
-status: published
 categories:
   - summary
 ---
@@ -29,16 +28,16 @@ I achieved two Google Cloud Platform certificates:
 - [Google Professional Cloud Architect](https://www.credential.net/fc647c87-e199-4dd2-b34e-67dbb7bc3d10)
 - [Google Professional Cloud Developer](https://www.credential.net/47fe6c30-0530-4291-8f72-93d0bf5d682e)
 
-<img src="{static}/images/posts/2022/summary/gcp_pca.png" alt="Google Professional Cloud Architect" style="display: block; margin-left: auto; margin-right: auto;">
+<img src="/images/posts/2022/summary/gcp_pca.png" alt="Google Professional Cloud Architect" style="display: block; margin-left: auto; margin-right: auto;">
 
-<img src="{static}/images/posts/2022/summary/gcp_pcd.png" alt="Google Professional Cloud Developer" style="display: block; margin-left: auto; margin-right: auto;">
+<img src="/images/posts/2022/summary/gcp_pcd.png" alt="Google Professional Cloud Developer" style="display: block; margin-left: auto; margin-right: auto;">
 
 ## Learning, talking
 
 I presented twice the same presentation: **GitHub Actions: (opinionated) Tips & Tricks**.
 First one in NetGuru and second one in Brival.
 
-![GitHub Actions Tips & Tricks @Brival](%7Bstatic%7D/images/posts/2022/2022_10_brival.jpg)
+![GitHub Actions Tips & Tricks @Brival](/images/posts/2022/2022_10_brival.jpg)
 
 ## Writing
 
@@ -49,45 +48,45 @@ Every month is decorated with picture made by me.
 
 2022 summaries:
 
-- [January](%7Bfilename%7D/posts/2022_01_31_january_links.md)
-- [February](%7Bfilename%7D/posts/2022_02_28_february_links.md)
-- [March](%7Bfilename%7D/posts/2022_03_31_march_links.md)
-- [April](%7Bfilename%7D/posts/2022_04_30_april_links.md)
-- [May](%7Bfilename%7D/posts/2022_05_31_may_links.md)
-- [June](%7Bfilename%7D/posts/2022_06_30_june_links.md)
-- [July](%7Bfilename%7D/posts/2022_07_31_july_links.md)
-- [August](%7Bfilename%7D/posts/2022_08_30_august_links.md)
-- [September](%7Bfilename%7D/posts/2022_09_30_september_links.md)
-- [October](%7Bfilename%7D/posts/2022_10_31_october_links.md)
-- [November](%7Bfilename%7D/posts/2022_11_30_november_links.md)
-- [December](%7Bfilename%7D/posts/2022_12_31_december_links.md)
+- [January](/2022-january-links/)
+- [February](/2022-february-links/)
+- [March](/2022-march-links/)
+- [April](/2022-april-links/)
+- [May](/2022-may-links/)
+- [June](/2022-june-links/)
+- [July](/2022-july-links/)
+- [August](/2022-august-links/)
+- [September](/2022-september-links/)
+- [October](/2022-october-links/)
+- [November](/2022-november-links/)
+- [December](/2022-december-links/)
 
 I also wrote one additional blog posts:
 
-- [Notion packing lists](%7Bfilename%7D/posts/2022_10_xx_notion_packing_list.md)
+- [Notion packing lists](/notion-packing-lists/)
 
 ## Photos
 
-![2022_01](%7Bstatic%7D/images/posts/2022/2022_01_xx.jpg)
+![2022_01](/images/posts/2022/2022_01_xx.jpg)
 
-![2022_02](%7Bstatic%7D/images/posts/2022/2022_02_xx.jpg)
+![2022_02](/images/posts/2022/2022_02_xx.jpg)
 
-![2022_03](%7Bstatic%7D/images/posts/2022/2022_03_xx.jpg)
+![2022_03](/images/posts/2022/2022_03_xx.jpg)
 
-![2022_04](%7Bstatic%7D/images/posts/2022/2022_04_xx.jpg)
+![2022_04](/images/posts/2022/2022_04_xx.jpg)
 
-![2022_05](%7Bstatic%7D/images/posts/2022/2022_05_xx.jpg)
+![2022_05](/images/posts/2022/2022_05_xx.jpg)
 
-![2022_06](%7Bstatic%7D/images/posts/2022/2022_06_xx.jpg)
+![2022_06](/images/posts/2022/2022_06_xx.jpg)
 
-![2022_07](%7Bstatic%7D/images/posts/2022/2022_07_xx.jpg)
+![2022_07](/images/posts/2022/2022_07_xx.jpg)
 
-![2022_08](%7Bstatic%7D/images/posts/2022/2022_08_xx.jpg)
+![2022_08](/images/posts/2022/2022_08_xx.jpg)
 
-![2022_09](%7Bstatic%7D/images/posts/2022/2022_09_xx.jpg)
+![2022_09](/images/posts/2022/2022_09_xx.jpg)
 
-![2022_10](%7Bstatic%7D/images/posts/2022/2022_10_xx.jpg)
+![2022_10](/images/posts/2022/2022_10_xx.jpg)
 
-![2022_11](%7Bstatic%7D/images/posts/2022/2022_11_xx.jpg)
+![2022_11](/images/posts/2022/2022_11_xx.jpg)
 
-![2022_12](%7Bstatic%7D/images/posts/2022/2022_12_xx.jpg)
+![2022_12](/images/posts/2022/2022_12_xx.jpg)

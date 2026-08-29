@@ -13,7 +13,6 @@ tags:
 slug: 2025-january-links
 summary: Interesting stuff from the month
 image: /images/posts/2025/2025_01_xx.jpg
-status: published
 categories:
   - summary
 ---

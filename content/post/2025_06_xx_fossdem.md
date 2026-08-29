@@ -1,4 +1,5 @@
 ---
+draft: true
 title: FOSDEM 2025
 date: '2025-05-31'
 tags:
@@ -10,7 +11,6 @@ tags:
 slug: fosdem-2025
 summary: My thoughts after FOSSDEM 2025
 image: /images/posts/2025/2025_05_fossde.jpg
-status: draft
 categories:
   - summary
 ---

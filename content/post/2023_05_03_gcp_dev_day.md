@@ -10,7 +10,6 @@ tags:
 slug: google-cloud-developer-day-warsaw-2023
 summary: My notes from Google Cloud Developer Day Warsaw 2023
 image: /images/posts/2023/2023_05_gcp_dev_day/2023_05_gcp_dev_day.jpg
-status: published
 categories:
 - cloud
 ---
@@ -55,7 +54,7 @@ While environment variables are the easiest to use, they are not the most secure
 Volume mounts are also not the best practice and sometimes cumbersome to use or even not supported by some services.
 The best way to manage secrets is to use a secret manager within your app so secrets are not exposed to the environment.
 
-I used this approach in my [repository](https://github.com/TobKed/django_on_gcp) and [blog post]({filename}/posts/2021_12_30_django_on_gcp.md) where I showed how to run [Django application on Google Cloud Platform]({filename}/posts/2021_12_30_django_on_gcp.md).
+I used this approach in my [repository](https://github.com/TobKed/django_on_gcp) and [blog post](/django_on_gcp/) where I showed how to run [Django application on Google Cloud Platform](/django_on_gcp/).
 As you can see below, secrets are pulled from [Google Secret Manager](https://cloud.google.com/secret-manager) if the app is running on Google Cloud Platform.
 In my case, they are pulled only during app initialization, so to use the latest secret, you need to restart the app.
 For the sake of simplicity, the secrets with the `latest` tag are used. However, it may not be the best fit for the production environment where we want to pin the version of the secret.
@@ -110,7 +109,7 @@ gcurl='curl -H "Authorization: Bearer $(gcloud auth print-identity-token)" -H "C
 
 At the lounge area, there was a DJ named Rytmik playing some delightful house music. You can check out his music on [soundcloud.com/rytmikmusic](https://soundcloud.com/rytmikmusic) and [mixcloud.com/Rytmik](https://www.mixcloud.com/Rytmik/).
 
-![Rytmik]({static}/images/posts/2023/2023_05_gcp_dev_day/2023_05_gcp_dev_day_rytmik.jpg)
+![Rytmik](/images/posts/2023/2023_05_gcp_dev_day/2023_05_gcp_dev_day_rytmik.jpg)
 
 ### Links
 

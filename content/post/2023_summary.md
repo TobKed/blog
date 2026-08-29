@@ -8,7 +8,6 @@ tags:
 slug: 2023-summary
 summary: Ups and downs of 2023
 image: /images/posts/2023/2023_08_xx.jpg
-status: published
 categories:
   - summary
 ---
@@ -26,10 +25,10 @@ Its source is on my Github: [github.com/TobKed/git_rebase_interactive](https://g
 
 ![git rebase](https://tobked.dev/git_rebase_interactive/img/explain.png)
 
-#### [Google Cloud Developer Day Warsaw 2023](%7Bfilename%7D/posts/2023_05_03_gcp_dev_day.md)
+#### [Google Cloud Developer Day Warsaw 2023](/google-cloud-developer-day-warsaw-2023/)
 
 I attended Google Cloud Developer Day Warsaw 2023 on April 27th, 2023. It was a free event organized by Google Cloud at their [Warsaw Campus](https://www.campus.co/warsaw/).
-I wrote more about it in a separate blog post: [Google Cloud Developer Day Warsaw 2023](%7Bfilename%7D/posts/2023_05_03_gcp_dev_day.md).
+I wrote more about it in a separate blog post: [Google Cloud Developer Day Warsaw 2023](/google-cloud-developer-day-warsaw-2023/).
 
 #### GitOps and [Flux](https://fluxcd.io/flux/)
 
@@ -74,7 +73,7 @@ I have provided an end-to-end working example on Google Cloud that demonstrates 
 After practicing my presentation numerous times in my hotel room, I finally stepped onto the stage and gave it my all.
 It was a personal victory over my fear of public speaking.
 
-![PyCon CZ.](%7Bstatic%7D/images/posts/2023/2023_09_pyconcz.jpg)
+![PyCon CZ.](/images/posts/2023/2023_09_pyconcz.jpg)
 
 [Python API and background workers on Google Cloud Platform repo](https://github.com/TobKed/fastapi_cloudrun_pubsub)
 
@@ -86,22 +85,22 @@ Each month, I add a personal touch with a photo I've taken
 
 2023 summaries:
 
-- [January](%7Bfilename%7D/posts/2023_01_30_january_links.md)
-- [February](%7Bfilename%7D/posts/2023_02_28_february_links.md)
-- [March](%7Bfilename%7D/posts/2023_03_31_march_links.md)
-- [April](%7Bfilename%7D/posts/2023_04_30_april_links.md)
-- [May](%7Bfilename%7D/posts/2023_05_31_may_links.md)
-- [June](%7Bfilename%7D/posts/2023_06_30_june_links.md)
-- [July](%7Bfilename%7D/posts/2023_07_31_july_links.md)
-- [August](%7Bfilename%7D/posts/2023_08_31_august_links.md)
-- [September](%7Bfilename%7D/posts/2023_09_30_september_links.md)
-- [October](%7Bfilename%7D/posts/2023_10_31_october_links.md)
-- [November](%7Bfilename%7D/posts/2023_11_30_november_links.md)
-- [December](%7Bfilename%7D/posts/2023_12_31_december_links.md)
+- [January](/2023-january-links/)
+- [February](/2023-february-links/)
+- [March](/2023-march-links/)
+- [April](/2023-april-links/)
+- [May](/2023-may-links/)
+- [June](/2023-june-links/)
+- [July](/2023-july-links/)
+- [August](/2023-august-links/)
+- [September](/2023-september-links/)
+- [October](/2023-october-links/)
+- [November](/2023-november-links/)
+- [December](/2023-december-links/)
 
 I also wrote one additional blog post:
 
-- [Google Cloud Developer Day Warsaw 2023](%7Bfilename%7D/posts/2023_05_03_gcp_dev_day.md)
+- [Google Cloud Developer Day Warsaw 2023](/google-cloud-developer-day-warsaw-2023/)
 
 ## Summary
 
@@ -110,22 +109,22 @@ I'm excited to see what the next year holds!
 
 ## Photos
 
-![2023_01](%7Bstatic%7D/images/posts/2023/2023_01_xx.jpg)
+![2023_01](/images/posts/2023/2023_01_xx.jpg)
 
-![2023_04](%7Bstatic%7D/images/posts/2023/2023_05_gcp_dev_day/2023_05_gcp_dev_day.jpg)
+![2023_04](/images/posts/2023/2023_05_gcp_dev_day/2023_05_gcp_dev_day.jpg)
 
-![2023_05](%7Bstatic%7D/images/posts/2023/2023_05_xx.jpg)
+![2023_05](/images/posts/2023/2023_05_xx.jpg)
 
-![2023_06](%7Bstatic%7D/images/posts/2023/2023_06_xx.jpg)
+![2023_06](/images/posts/2023/2023_06_xx.jpg)
 
-![2023_07](%7Bstatic%7D/images/posts/2023/2023_07_xx.jpg)
+![2023_07](/images/posts/2023/2023_07_xx.jpg)
 
-![2023_08](%7Bstatic%7D/images/posts/2023/2023_08_xx.jpg)
+![2023_08](/images/posts/2023/2023_08_xx.jpg)
 
-![2023_09](%7Bstatic%7D/images/posts/2023/2023_09_xx.jpg)
+![2023_09](/images/posts/2023/2023_09_xx.jpg)
 
-![2023_10](%7Bstatic%7D/images/posts/2023/2023_10_xx.jpg)
+![2023_10](/images/posts/2023/2023_10_xx.jpg)
 
-![2023_11](%7Bstatic%7D/images/posts/2023/2023_11_xx.jpg)
+![2023_11](/images/posts/2023/2023_11_xx.jpg)
 
-![2023_12](%7Bstatic%7D/images/posts/2023/2023_12_xx.jpg)
+![2023_12](/images/posts/2023/2023_12_xx.jpg)

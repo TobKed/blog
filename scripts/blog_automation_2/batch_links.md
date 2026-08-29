@@ -1,4 +1,4 @@
-Target Post: content/posts/2026_05_31_may_links.md
+Target Post: content/post/2026_05_31_may_links.md
 
 https://daisyui.com/
 https://lit.dev/

@@ -8,7 +8,6 @@ tags:
 slug: notion-packing-lists
 summary: Make packing easier
 image: /images/posts/2020/2020_summary.png
-status: published
 categories:
   - productivity
 ---
@@ -55,14 +54,14 @@ Below are some screenshots with basic demo lists.
 
 #### Main view
 
-<img src="{static}/images/posts/2022/notion_packing_list_screenshot_01.png" alt="Notion Packing List Screenshot 1" style="display: block; margin-left: auto; margin-right: auto;">
+<img src="/images/posts/2022/notion_packing_list_screenshot_01.png" alt="Notion Packing List Screenshot 1" style="display: block; margin-left: auto; margin-right: auto;">
 
 #### Individual lists
 
-<img src="{static}/images/posts/2022/notion_packing_list_screenshot_02.png" alt="Notion Packing List Screenshot 2" style="display: block; margin-left: auto; margin-right: auto;">
+<img src="/images/posts/2022/notion_packing_list_screenshot_02.png" alt="Notion Packing List Screenshot 2" style="display: block; margin-left: auto; margin-right: auto;">
 <br>
 <br>
-<img src="{static}/images/posts/2022/notion_packing_list_screenshot_03.png" alt="Notion Packing List Screenshot 3" style="display: block; margin-left: auto; margin-right: auto;">
+<img src="/images/posts/2022/notion_packing_list_screenshot_03.png" alt="Notion Packing List Screenshot 3" style="display: block; margin-left: auto; margin-right: auto;">
 
 Every time I travel somewhere I open a corresponding view, or create a new one and follow the list by checking checkboxes in the  ‘packed’ column.
 With minimal effort I made some adjustments here and there. Especially after the trips where I forgot something or overpacked. Perfect packing list is on the horizon.

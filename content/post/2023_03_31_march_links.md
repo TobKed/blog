@@ -13,7 +13,6 @@ tags:
 slug: 2023-march-links
 summary: Interesting stuff from the month
 image: /images/posts/2023/2023_03_xx.png
-status: published
 categories:
   - summary
 ---

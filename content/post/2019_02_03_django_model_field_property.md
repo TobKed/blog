@@ -6,7 +6,6 @@ tags:
   - django
 slug: django-model-property
 summary: Model property in Django
-status: published
 categories:
   - Python
 ---

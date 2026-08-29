@@ -13,7 +13,6 @@ tags:
 slug: 2023-november-links
 summary: Interesting stuff from the month
 image: /images/posts/2023/2023_11_xx.jpg
-status: published
 categories:
   - summary
 ---

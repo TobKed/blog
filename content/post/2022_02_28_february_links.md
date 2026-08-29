@@ -13,7 +13,6 @@ tags:
 slug: 2022-february-links
 summary: Interesting stuff from the month
 image: /images/posts/2022/2022_02_xx.jpg
-status: published
 categories:
   - summary
 ---

@@ -49,7 +49,7 @@ There are two main ways to run the tool:
    Create a markdown file (e.g., `batch_links.md`) with the following format:
 
    ```markdown
-   Target Post: content/posts/your-post.md
+   Target Post: content/post/your-post.md
 
    https://example.com/link1
    https://example.com/link2
@@ -65,7 +65,7 @@ There are two main ways to run the tool:
    To insert a single link, run the `insert_links_tool.py` script directly:
 
    ```bash
-   python insert_links_tool.py content/posts/your-post.md "https://example.com/link"
+   python insert_links_tool.py content/post/your-post.md "https://example.com/link"
    ```
 
 # Development Conventions
