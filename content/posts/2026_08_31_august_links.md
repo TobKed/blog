@@ -14,19 +14,17 @@ Below you'll find a mix of articles, links, and resources, some of which tie int
 
 ## Some thoughts
 
-miso
+Communication: Working on my communication skills since everyone is overloaded with lines of text to process.
+TL;DR: short, concise messages, straight to the point. Not necessarily grammatically correct, but better to have some mistakes here and there rather than leaving the impression I copy-pasted some LLM output.
 
-<https://nohello.net/>
+- [nohello.net](https://nohello.net/)
+- [noslopgrenade.com](https://noslopgrenade.com/)
 
-<https://noslopgrenade.com/>
+Having fun with tooling: testing [mise](https://mise.jdx.dev/), which should solve the never-ending struggle with local environments.
+I had some bash scripts here and there to simplify and automate local virtual environments, but looks like `mise` will handle this for me.
 
-swtichted from alt-tab to BetterCmdTab
-<https://github.com/rokartur/BetterCmdTab>
-
-Tried but not working well with my mx mini
-<https://github.com/AprilNEA/OpenLogi>
-
-<https://www.cliamp.stream/>
+Another tool: switched from alt-tab to [BetterCmdTab](https://github.com/rokartur/BetterCmdTab) and it seems to work pretty well. I only had an issue with four Chrome windows—it couldn't see one of them for some reason—but otherwise, it works like a charm.
+I especially like that you can select apps with j-k (viva la vim shortcuts).
 
 ______________________________________________________________________
 
