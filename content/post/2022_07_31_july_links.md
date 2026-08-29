@@ -12,7 +12,7 @@ tags:
   - '2022'
 slug: 2022-july-links
 summary: Interesting stuff from the month
-image: /images/posts/2022/2022_07_xx.jpg
+image: images/posts/2022/2022_07_xx.jpg
 categories:
   - summary
 ---

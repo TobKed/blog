@@ -12,7 +12,7 @@ tags:
   - '2023'
 slug: 2023-april-links
 summary: Interesting stuff from the month
-image: /images/posts/2023/2023_05_gcp_dev_day/2023_05_gcp_dev_day.jpg
+image: images/posts/2023/2023_05_gcp_dev_day/2023_05_gcp_dev_day.jpg
 categories:
   - summary
 ---

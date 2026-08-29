@@ -7,7 +7,7 @@ tags:
   - '2023'
 slug: 2023-summary
 summary: Ups and downs of 2023
-image: /images/posts/2023/2023_08_xx.jpg
+image: images/posts/2023/2023_08_xx.jpg
 categories:
   - summary
 ---

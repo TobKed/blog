@@ -7,7 +7,7 @@ tags:
   - '2025'
 slug: 2025-summary
 summary: Ups and downs of 2025
-image: /images/posts/2025/2025_04_xx.jpg
+image: images/posts/2025/2025_04_xx.jpg
 categories:
   - summary
 ---

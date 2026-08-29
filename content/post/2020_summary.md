@@ -7,7 +7,7 @@ tags:
   - '2020'
 slug: 2020-summary
 summary: Ups and downs of 2020
-image: /images/posts/2020/2020_summary.png
+image: images/posts/2020/2020_summary.png
 categories:
   - summary
 ---

@@ -10,7 +10,7 @@ tags:
   - '2025'
 slug: fosdem-2025
 summary: My thoughts after FOSSDEM 2025
-image: /images/posts/2025/2025_05_fossde.jpg
+image: images/posts/2025/2025_05_fossde.jpg
 categories:
   - summary
 ---

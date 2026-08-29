@@ -12,7 +12,7 @@ tags:
   - '2022'
 slug: 2022-november-links
 summary: Interesting stuff from the month
-image: /images/posts/2022/2022_11_xx.jpg
+image: images/posts/2022/2022_11_xx.jpg
 categories:
   - summary
 ---

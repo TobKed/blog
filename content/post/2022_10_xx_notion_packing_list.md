@@ -7,7 +7,7 @@ tags:
   - notion
 slug: notion-packing-lists
 summary: Make packing easier
-image: /images/posts/2020/2020_summary.png
+image: images/posts/2020/2020_summary.png
 categories:
   - productivity
 ---

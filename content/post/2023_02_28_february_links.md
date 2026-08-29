@@ -12,7 +12,7 @@ tags:
   - '2023'
 slug: 2023-february-links
 summary: Interesting stuff from the month
-image: /images/posts/black-cover.png
+image: images/posts/black-cover.png
 categories:
   - summary
 ---

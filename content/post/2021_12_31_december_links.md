@@ -12,7 +12,7 @@ tags:
   - '2021'
 slug: 2021-december-links
 summary: Interesting stuff from the month
-image: /images/posts/2021/2021_12_xx.jpg
+image: images/posts/2021/2021_12_xx.jpg
 categories:
   - summary
 ---

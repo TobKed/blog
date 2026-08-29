@@ -9,7 +9,7 @@ tags:
 - google
 slug: django_on_gcp
 summary: How to deploy Django app on Google Platform with Terraform
-image: /images/posts/2021/2021_12_xx_django_gcp_terraform.png
+image: images/posts/2021/2021_12_xx_django_gcp_terraform.png
 categories:
 - django
 - cloud
