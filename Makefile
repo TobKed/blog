@@ -15,25 +15,17 @@ help:
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
 	@echo ''
 
-.PHONY: html
-html: ## (re)generate the web site
+.PHONY: build
+build: ## build the web site
 	$(HUGO)
 
 .PHONY: clean
 clean: ## remove the generated files
 	[ ! -d $(OUTPUTDIR) ] || rm -rf $(OUTPUTDIR)
 
-.PHONY: regenerate
-regenerate: ## regenerate files upon modification
-	$(HUGO) server -w
-
 .PHONY: serve
-serve: ## serve site at http://localhost:1313
-	$(HUGO) server
-
-.PHONY: devserver
-devserver: ## serve and regenerate together with drafts
-	$(HUGO) server -D -w
+serve: ## serve site locally (with drafts)
+	$(HUGO) server -D
 
 .PHONY: publish
 publish: ## generate using production settings
