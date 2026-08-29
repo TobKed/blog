@@ -7,7 +7,7 @@ repos:
   -   id: end-of-file-fixer
   -   id: check-yaml
   -   id: check-added-large-files
-      exclude: ^.*\.mp3$
+      exclude: ^.*\.mp3$|^static/images/
   -   id: check-json
 - repo: https://github.com/executablebooks/mdformat
   rev: 0.7.17
@@ -26,6 +26,7 @@ repos:
             ^output/|
             ^themes/|
             ^venv/|
+            ^content/posts/2019_06_23_enum_and_dataclass.md|
             ^content/posts/2019_10_07_black.md|
             ^content/posts/2021_08_31_august_links.md|
             ^content/posts/2021_12_30_django_on_gcp.md|
