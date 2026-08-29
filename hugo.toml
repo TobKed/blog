@@ -42,7 +42,7 @@ buildFuture = true
   omit_categories = true
   # Sidebar: the post list reserves a column for it, so give it something to show.
   about_me = true
-  sidebar_about_description = "Software engineer. Python, Django, Go and the cloud. Monthly round-ups of what I read and watch."
+  sidebar_about_description = "Python, Django, the cloud, and other interesting things — computer-related or not. Mostly monthly round-ups of what I've been doing, reading and watching."
   featured_tags = true
   featured_condition_size = 8
   last_posts = true
@@ -52,7 +52,7 @@ buildFuture = true
   custom_css = ["css/main.css"]
   # Appended to the footer copyright line as markdown - used here to keep the
   # photo credit that lived in Pelican's content/html/my_footer.html.
-  icp = "Main page header photo by [Julia Kaczorowska](https://juliakaczorowska.pl/) (other by me)."
+  icp = "Main page header photo by [Julia Kaczorowska](https://juliakaczorowska.pl/) (other photos by me)."
 
   [params.social]
     github = "https://github.com/TobKed"
