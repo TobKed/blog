@@ -15,197 +15,197 @@ buildFuture = true
 timeout = '300s'
 
 [pagination]
-  pagerSize = 10
+pagerSize = 10
 
 # Pelican served posts at /<slug> and pages at /pages/<slug>. Keep both.
 [permalinks.page]
-  post = '/:slug/'
-  pages = '/pages/:slug/'
+post = '/:slug/'
+pages = '/pages/:slug/'
 
 [taxonomies]
-  category = "categories"
-  tag = "tags"
+category = "categories"
+tag = "tags"
 
 # Supplies the per-entry author in the RSS and Atom feeds (layouts/home.*.xml read
 # .Params.author).
 [[cascade]]
-  [cascade.params]
-    author = "Tobiasz Kedzierski"
-  [cascade.target]
-    path = '{/post/**,/pages/**}'
+[cascade.params]
+author = "Tobiasz Kedzierski"
+[cascade.target]
+path = '{/post/**,/pages/**}'
 
 [params]
-  mainSections = ["post"]
-  rssFullContent = true
-  description = "Tobiasz Kedzierski's Blog"
+mainSections = ["post"]
+rssFullContent = true
+description = "Tobiasz Kedzierski's Blog"
 
-  [params.footer]
-    since = 2018
-    customText = "Main page header photo by <a href=\"https://juliakaczorowska.pl/\">Julia Kaczorowska</a> (other photos by me)."
+[params.footer]
+since = 2018
+customText = "Profile photo by <a href=\"https://juliakaczorowska.pl/\">Julia Kaczorowska</a> (other photos by me)."
 
-  [params.sidebar]
-    compact = false
-    subtitle = """Tobiasz Kedzierski's blog.<br><br>Python, Django, the cloud, and other interesting things — computer-related or not.<br><br>Mostly monthly round-ups of what I've been doing, reading and watching."""
-    avatar = "img/avatar.png"
+[params.sidebar]
+compact = false
+subtitle = """Tobiasz Kedzierski's blog.<br><br>Python, Django, the cloud, and other interesting things — computer-related or not.<br><br>Mostly monthly round-ups of what I've been doing, reading and watching."""
+avatar = "img/avatar.png"
 
-  [params.article]
-    headingAnchor = true
-    toc = true
-    readingTime = true
-    [params.article.list]
-      showTags = true
-    [params.article.license]
-      enabled = false
+[params.article]
+headingAnchor = true
+toc = true
+readingTime = true
+[params.article.list]
+showTags = true
+[params.article.license]
+enabled = false
 
-  [params.colorScheme]
-    toggle = true
-    default = "auto"
+[params.colorScheme]
+toggle = true
+default = "auto"
 
-  [params.comments]
-    enabled = false
+[params.comments]
+enabled = false
 
-  [params.widgets]
-    homepage = [
-      { type = "search" },
-      { type = "archives", params = { limit = 5 } },
-      { type = "categories", params = { limit = 10 } },
-      { type = "tag-cloud", params = { limit = 20 } },
-    ]
-    page = [{ type = "toc" }]
+[params.widgets]
+homepage = [
+  { type = "search" },
+  { type = "archives", params = { limit = 5 } },
+  { type = "categories", params = { limit = 10 } },
+  { type = "tag-cloud", params = { limit = 20 } },
+]
+page = [{ type = "toc" }]
 
 # Stack's nav lives in menu.main; social links in menu.social. Both are ordered
 # by weight - Hugo falls back to alphabetical order when weights are absent.
 [[menu.main]]
-  identifier = "home"
-  name = "Home"
-  url = "/"
-  weight = 10
-  [menu.main.params]
-    icon = "home"
+identifier = "home"
+name = "Home"
+url = "/"
+weight = 10
+[menu.main.params]
+icon = "home"
 [[menu.main]]
-  identifier = "about"
-  name = "About me"
-  url = "/pages/about-me/"
-  weight = 20
-  [menu.main.params]
-    icon = "user"
+identifier = "about"
+name = "About me"
+url = "/pages/about-me/"
+weight = 20
+[menu.main.params]
+icon = "user"
 [[menu.main]]
-  identifier = "links"
-  name = "Links"
-  url = "/pages/links/"
-  weight = 30
-  [menu.main.params]
-    icon = "link"
+identifier = "links"
+name = "Links"
+url = "/pages/links/"
+weight = 30
+[menu.main.params]
+icon = "link"
 [[menu.main]]
-  identifier = "archives"
-  name = "Archives"
-  url = "/archives/"
-  weight = 40
-  [menu.main.params]
-    icon = "archives"
+identifier = "search"
+name = "Search"
+url = "/search/"
+weight = 50
+[menu.main.params]
+icon = "search"
 [[menu.main]]
-  identifier = "search"
-  name = "Search"
-  url = "/search/"
-  weight = 50
-  [menu.main.params]
-    icon = "search"
+identifier = "archives"
+name = "Archives"
+url = "/archives/"
+weight = 40
+[menu.main.params]
+icon = "archives"
 
 [[menu.social]]
-  identifier = "tobked"
-  name = "tobked.dev"
-  url = "https://tobked.dev"
-  weight = 10
-  [menu.social.params]
-    icon = "infinity"
-    newTab = true
+identifier = "tobked"
+name = "tobked.dev"
+url = "https://tobked.dev"
+weight = 10
+[menu.social.params]
+icon = "infinity"
+newTab = true
 [[menu.social]]
-  identifier = "email"
-  name = "Email"
-  url = "mailto:tobiaszkedzierski@gmail.com"
-  weight = 20
-  [menu.social.params]
-    icon = "mail"
+identifier = "email"
+name = "Email"
+url = "mailto:tobiaszkedzierski@gmail.com"
+weight = 20
+[menu.social.params]
+icon = "mail"
 [[menu.social]]
-  identifier = "github"
-  name = "GitHub"
-  url = "https://github.com/TobKed"
-  weight = 25
-  [menu.social.params]
-    icon = "brand-github"
-    newTab = true
+identifier = "github"
+name = "GitHub"
+url = "https://github.com/TobKed"
+weight = 25
+[menu.social.params]
+icon = "brand-github"
+newTab = true
 [[menu.social]]
-  identifier = "linkedin"
-  name = "LinkedIn"
-  url = "https://www.linkedin.com/in/tobiaszkedzierski/?locale=en_US"
-  weight = 30
-  [menu.social.params]
-    icon = "brand-linkedin"
-    newTab = true
+identifier = "linkedin"
+name = "LinkedIn"
+url = "https://www.linkedin.com/in/tobiaszkedzierski/?locale=en_US"
+weight = 30
+[menu.social.params]
+icon = "brand-linkedin"
+newTab = true
 [[menu.social]]
-  identifier = "credly"
-  name = "Credly"
-  url = "https://www.credly.com/users/tobiasz-kedzierski"
-  weight = 40
-  [menu.social.params]
-    icon = "certificate"
-    newTab = true
+identifier = "credly"
+name = "Credly"
+url = "https://www.credly.com/users/tobiasz-kedzierski"
+weight = 40
+[menu.social.params]
+icon = "certificate"
+newTab = true
 [[menu.social]]
-  identifier = "medium"
-  name = "Medium"
-  url = "https://tobiaszkedzierski.medium.com/"
-  weight = 50
-  [menu.social.params]
-    icon = "brand-medium"
-    newTab = true
+identifier = "medium"
+name = "Medium"
+url = "https://tobiaszkedzierski.medium.com/"
+weight = 50
+[menu.social.params]
+icon = "brand-medium"
+newTab = true
 [[menu.social]]
-  identifier = "rss"
-  name = "RSS"
-  url = "/feeds/all.rss.xml"
-  weight = 60
-  [menu.social.params]
-    icon = "rss"
+identifier = "rss"
+name = "RSS"
+url = "/feeds/all.rss.xml"
+weight = 60
+[menu.social.params]
+icon = "rss"
 
 [services]
-  [services.googleAnalytics]
-    # Set in CI via HUGO_SERVICES_GOOGLEANALYTICS_ID.
-    id = ""
-  [services.rss]
-    limit = 50
+[services.googleAnalytics]
+# Set in CI via HUGO_SERVICES_GOOGLEANALYTICS_ID.
+id = ""
+[services.rss]
+limit = 50
 
 # Pelican published feeds/all.rss.xml and feeds/all.atom.xml - keep those URLs
 # so existing subscribers don't break.
 [mediaTypes]
-  [mediaTypes.'application/atom+xml']
-    suffixes = ['xml']
+[mediaTypes.'application/atom+xml']
+suffixes = ['xml']
 
 [outputFormats]
-  [outputFormats.RSS]
-    path = 'feeds'
-    baseName = 'all.rss'
-    rel = 'alternate'
-  [outputFormats.Atom]
-    mediaType = 'application/atom+xml'
-    path = 'feeds'
-    baseName = 'all.atom'
-    isPlainText = false
-    rel = 'alternate'
+[outputFormats.RSS]
+path = 'feeds'
+baseName = 'all.rss'
+rel = 'alternate'
+[outputFormats.Atom]
+mediaType = 'application/atom+xml'
+path = 'feeds'
+baseName = 'all.atom'
+isPlainText = false
+rel = 'alternate'
 
 # content/search.md carries outputs: [html, json] for Stack's built-in search index.
 [outputs]
-  home = ['html', 'rss', 'atom']
-  page = ['html']
-  section = ['html']
-  taxonomy = ['html']
-  term = ['html']
+home = ['html', 'rss', 'atom']
+page = ['html']
+section = ['html']
+taxonomy = ['html']
+term = ['html']
 
 [markup]
-  [markup.goldmark.renderer]
-    unsafe = true
-  [markup.highlight]
-    style = 'github'
-    noClasses = true
-    lineNos = false
-  [markup.tableOfContents]
-    startLevel = 2
-    endLevel = 2
+[markup.goldmark.renderer]
+unsafe = true
+[markup.highlight]
+style = 'github'
+noClasses = true
+lineNos = false
+[markup.tableOfContents]
+startLevel = 2
+endLevel = 2
