@@ -287,6 +287,8 @@ resources/_gen/
 .idea/*
 content/.idea/*
 .worktrees/
+.claude/worktrees/
+.claude/settings.local.json
 
 # hugo build lock
 .hugo_build.lock
