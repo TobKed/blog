@@ -45,8 +45,7 @@ timeout = '300s'
 
   [params.sidebar]
     compact = false
-    emoji = "✏️"
-    subtitle = "Python, Django, the cloud, and other interesting things — computer-related or not. Mostly monthly round-ups of what I've been doing, reading and watching."
+    subtitle = """Tobiasz Kedzierski's blog.<br><br>Python, Django, the cloud, and other interesting things — computer-related or not.<br><br>Mostly monthly round-ups of what I've been doing, reading and watching."""
     avatar = "img/avatar.png"
 
   [params.article]

@@ -1,5 +1,12 @@
 /* Site overrides on top of the theme's SCSS. Imported by the theme's style.scss. */
 
+/* The theme leaves the sidebar blurb on the body line-height, which is tight for
+   a paragraph at that width. The <br> breaks come from the subtitle itself, which
+   layouts/_partials/sidebar/left.html passes through safeHTML. */
+.site-description {
+    line-height: 1.6;
+}
+
 /*
  * The theme renders the social menu as a horizontal strip of bare icons. Stack the
  * items and give them labels instead, so they read like the main menu below them.
