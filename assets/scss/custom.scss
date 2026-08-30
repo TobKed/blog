@@ -1,0 +1,31 @@
+/* Site overrides on top of the theme's SCSS. Imported by the theme's style.scss. */
+
+/*
+ * The theme renders the social menu as a horizontal strip of bare icons. Stack the
+ * items and give them labels instead, so they read like the main menu below them.
+ * The labels themselves come from the layouts/_partials/sidebar/left.html override.
+ */
+.menu-social {
+    flex-direction: column;
+    gap: var(--spacing-xl);
+    font-size: 1.4rem;
+    margin-bottom: var(--spacing-2xl);
+
+    li a {
+        display: inline-flex;
+        align-items: center;
+        gap: var(--menu-icon-separation);
+        color: var(--body-text-color);
+    }
+
+    svg {
+        /* Match the 20px icons of #main-menu rather than the theme's 24px strip. */
+        width: 20px;
+        height: 20px;
+        flex-shrink: 0;
+    }
+
+    span {
+        flex: 1;
+    }
+}

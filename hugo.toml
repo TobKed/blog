@@ -74,55 +74,64 @@ timeout = '300s'
     ]
     page = [{ type = "toc" }]
 
-# Stack's nav lives in menu.main; social links in menu.social.
+# Stack's nav lives in menu.main; social links in menu.social. Both are ordered
+# by weight - Hugo falls back to alphabetical order when weights are absent.
 [[menu.main]]
   identifier = "home"
   name = "Home"
   url = "/"
-  weight = -100
+  weight = 10
   [menu.main.params]
     icon = "home"
 [[menu.main]]
   identifier = "about"
   name = "About me"
   url = "/pages/about-me/"
-  weight = -90
+  weight = 20
   [menu.main.params]
     icon = "user"
 [[menu.main]]
   identifier = "links"
   name = "Links"
   url = "/pages/links/"
-  weight = -80
+  weight = 30
   [menu.main.params]
     icon = "link"
 [[menu.main]]
   identifier = "archives"
   name = "Archives"
   url = "/archives/"
-  weight = -70
+  weight = 40
   [menu.main.params]
     icon = "archives"
 [[menu.main]]
   identifier = "search"
   name = "Search"
   url = "/search/"
-  weight = -65
+  weight = 50
   [menu.main.params]
     icon = "search"
-[[menu.main]]
+
+[[menu.social]]
   identifier = "tobked"
   name = "tobked.dev"
   url = "https://tobked.dev"
-  weight = -60
-  [menu.main.params]
+  weight = 10
+  [menu.social.params]
     icon = "infinity"
     newTab = true
-
+[[menu.social]]
+  identifier = "email"
+  name = "Email"
+  url = "mailto:tobiaszkedzierski@gmail.com"
+  weight = 20
+  [menu.social.params]
+    icon = "mail"
 [[menu.social]]
   identifier = "github"
   name = "GitHub"
   url = "https://github.com/TobKed"
+  weight = 25
   [menu.social.params]
     icon = "brand-github"
     newTab = true
@@ -130,27 +139,31 @@ timeout = '300s'
   identifier = "linkedin"
   name = "LinkedIn"
   url = "https://www.linkedin.com/in/tobiaszkedzierski/?locale=en_US"
+  weight = 30
   [menu.social.params]
-    icon = "link"
-    newTab = true
-[[menu.social]]
-  identifier = "medium"
-  name = "Medium"
-  url = "https://tobiaszkedzierski.medium.com/"
-  [menu.social.params]
-    icon = "link"
+    icon = "brand-linkedin"
     newTab = true
 [[menu.social]]
   identifier = "credly"
   name = "Credly"
   url = "https://www.credly.com/users/tobiasz-kedzierski"
+  weight = 40
   [menu.social.params]
-    icon = "link"
+    icon = "certificate"
+    newTab = true
+[[menu.social]]
+  identifier = "medium"
+  name = "Medium"
+  url = "https://tobiaszkedzierski.medium.com/"
+  weight = 50
+  [menu.social.params]
+    icon = "brand-medium"
     newTab = true
 [[menu.social]]
   identifier = "rss"
   name = "RSS"
   url = "/feeds/all.rss.xml"
+  weight = 60
   [menu.social.params]
     icon = "rss"
 
