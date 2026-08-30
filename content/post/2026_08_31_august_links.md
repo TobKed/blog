@@ -107,6 +107,12 @@ ______________________________________________________________________
 
 > Skills for Real Engineers. Straight from my .agents directory.
 
+### [GitHub - cursor/plugins](https://github.com/cursor/plugins/tree/main/pstack/skills/)
+
+#### AI generated summary
+
+A collection of reusable Cursor agent skills and prompt patterns (architect, TDD, root-cause-fixing, type-system discipline, blast-radius, etc.) that codify practical engineering principles as invokable skills for AI coding agents.
+
 ## Security
 
 ## Python
@@ -235,4 +241,10 @@ ______________________________________________________________________
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/_1LEFUgHFJI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [So I tried Matt's skills...](https://youtu.be/0oXOOlqVu5M)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/0oXOOlqVu5M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
