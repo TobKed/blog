@@ -9,7 +9,7 @@ tags:
 - '2023'
 slug: google-cloud-developer-day-warsaw-2023
 summary: My notes from Google Cloud Developer Day Warsaw 2023
-image: images/posts/2023/2023_05_gcp_dev_day/2023_05_gcp_dev_day.jpg
+image: /images/posts/2023/2023_05_gcp_dev_day/2023_05_gcp_dev_day.jpg
 categories:
 - cloud
 ---

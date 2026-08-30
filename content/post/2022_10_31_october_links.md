@@ -12,7 +12,7 @@ tags:
   - '2022'
 slug: 2022-october-links
 summary: Interesting stuff from the month
-image: images/posts/2022/2022_10_xx.jpg
+image: /images/posts/2022/2022_10_xx.jpg
 categories:
   - summary
 ---

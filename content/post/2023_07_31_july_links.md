@@ -12,7 +12,7 @@ tags:
   - '2023'
 slug: 2023-july-links
 summary: Interesting stuff from the month
-image: images/posts/2023/2023_07_xx.jpg
+image: /images/posts/2023/2023_07_xx.jpg
 categories:
   - summary
 ---

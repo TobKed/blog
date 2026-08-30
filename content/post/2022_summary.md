@@ -7,7 +7,7 @@ tags:
   - '2022'
 slug: 2022-summary
 summary: Ups and downs of 2022
-image: images/posts/2022/summary/2022_summary.jpg
+image: /images/posts/2022/summary/2022_summary.jpg
 categories:
   - summary
 ---

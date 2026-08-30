@@ -12,7 +12,7 @@ tags:
   - '2026'
 slug: 2026-march-links
 summary: Interesting stuff from the month
-image: images/posts/2026/2026_03_xx.jpg
+image: /images/posts/2026/2026_03_xx.jpg
 categories:
   - summary
 ---

@@ -12,7 +12,7 @@ tags:
   - '2024'
 slug: 2024-august-links
 summary: Interesting stuff from the month
-image: images/posts/2024/2024_08_xx.jpg
+image: /images/posts/2024/2024_08_xx.jpg
 categories:
   - summary
 ---

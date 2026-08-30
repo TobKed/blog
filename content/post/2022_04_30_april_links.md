@@ -12,7 +12,7 @@ tags:
   - '2022'
 slug: 2022-april-links
 summary: Interesting stuff from the month
-image: images/posts/2022/2022_04_xx.jpg
+image: /images/posts/2022/2022_04_xx.jpg
 categories:
   - summary
 ---
