@@ -35,7 +35,7 @@ The proposed solution is to trigger a long-running task on the website. The task
 In the repository [django_celery_progress_bar](https://github.com/TobKed/django_celery_progress_bar) I created a simple Django app with two Celery workers. The first worker called `celeryworker`  is responsible for executing scheduled periodic tasks,
 while the second one, called `celeryworker_highprio` is responsible for handling tasks triggered by the web form. The response from the app is returned immediately with initial task status. Then the progress bar updates are handled by a javascript function executed in a loop until it finishes.
 
-![Progress Bar](https://raw.githubusercontent.com/TobKed/django_celery_progress_bar/main/images/progress_bar.gif)
+<img src="https://raw.githubusercontent.com/TobKed/django_celery_progress_bar/main/images/progress_bar.gif" alt="Progress Bar" loading="lazy">
 
 On another note, I have been tracking my expenditures for many years. At the beginning I used spreadsheets but updating it was cumbersome and inconvenient. To make it more friendly I wrote a web app for it in Flask some time ago: [Home-Budgeting-App](https://github.com/TobKed/Home-Budgeting-App).
 I have used it for a year approximately. I decided to rewrite it to Django to be able to use its powerful admin panel. This is how
