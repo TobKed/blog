@@ -7,7 +7,7 @@ tags:
   - '2021'
 slug: 2021-summary
 summary: Ups and downs of 2021
-image: images/posts/2021/summary/2021_summary.jpg
+image: /images/posts/2021/summary/2021_summary.jpg
 categories:
   - summary
 ---

@@ -276,6 +276,7 @@ Temporary Items
 # hugo theme
 themes/*
 !themes/hugo-theme-cleanwhite
+!themes/hugo-theme-stack
 
 # hugo output
 public/
@@ -289,3 +290,6 @@ content/.idea/*
 
 # hugo build lock
 .hugo_build.lock
+
+# Hugo generates this for JS editor support.
+assets/jsconfig.json

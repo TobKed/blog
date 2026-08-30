@@ -13,7 +13,7 @@ tags:
   - '2026'
 slug: 2026-{month}-links
 summary: Interesting stuff from the month
-image: images/posts/2026/2026_xx_xx.jpg
+image: /images/posts/2026/2026_xx_xx.jpg
 categories:
   - summary
 ---
@@ -65,4 +65,4 @@ ______________________________________________________________________
 
 > Playback on other websites has been disabled by the video owner. [Watch on YouTube](https://www.youtube.com/watch?v=VIDEO_ID)
 
-### Polish Corner
+## Polish Corner

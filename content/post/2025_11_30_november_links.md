@@ -12,7 +12,7 @@ tags:
   - '2025'
 slug: 2025-november-links
 summary: Interesting stuff from the month
-image: images/posts/2025/2025_11_xx.jpg
+image: /images/posts/2025/2025_11_xx.jpg
 categories:
   - summary
 ---

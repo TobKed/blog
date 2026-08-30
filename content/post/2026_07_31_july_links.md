@@ -12,7 +12,7 @@ tags:
   - '2026'
 slug: 2026-july-links
 summary: Interesting stuff from the month
-image: images/posts/2026/2026_07_xx.jpg
+image: /images/posts/2026/2026_07_xx.jpg
 categories:
   - summary
 ---
@@ -160,7 +160,7 @@ Below you'll find a mix of articles, links, and resources, some of which tie int
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/t_vbaIs7EGo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-### 🇵🇱 Polish Corner 🇵🇱
+## 🇵🇱 Polish Corner 🇵🇱
 
 ### [Dałem trzem AI 300 złotych na inwestycje. Po miesiącu wynik mnie zaskoczył](https://android.com.pl/tech/1039995-inwestowanie-z-ai-czyli-eksperyment/)
 

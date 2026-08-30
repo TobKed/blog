@@ -12,7 +12,7 @@ tags:
   - '2022'
 slug: 2022-march-links
 summary: Interesting stuff from the month
-image: images/posts/2022/2022_03_xx.jpg
+image: /images/posts/2022/2022_03_xx.jpg
 categories:
   - summary
 ---

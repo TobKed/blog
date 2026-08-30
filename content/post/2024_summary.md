@@ -7,7 +7,7 @@ tags:
   - '2024'
 slug: 2024-summary
 summary: Ups and downs of 2024
-image: images/posts/2024/2024_11_xx.jpg
+image: /images/posts/2024/2024_11_xx.jpg
 categories:
   - summary
 ---

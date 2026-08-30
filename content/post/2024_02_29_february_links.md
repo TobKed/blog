@@ -12,7 +12,7 @@ tags:
   - '2024'
 slug: 2024-february-links
 summary: Interesting stuff from the month
-image: images/posts/2024/2024_02_xx.jpg
+image: /images/posts/2024/2024_02_xx.jpg
 categories:
   - summary
 ---

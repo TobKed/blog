@@ -12,7 +12,7 @@ tags:
   - '2025'
 slug: 2025-march-links
 summary: Interesting stuff from the month
-image: images/posts/2025/2025_03_xx.jpg
+image: /images/posts/2025/2025_03_xx.jpg
 categories:
   - summary
 ---

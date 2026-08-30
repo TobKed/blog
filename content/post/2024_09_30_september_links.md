@@ -12,7 +12,7 @@ tags:
   - '2024'
 slug: 2024-september-links
 summary: Interesting stuff from the month
-image: images/posts/2024/2024_09_xx.jpg
+image: /images/posts/2024/2024_09_xx.jpg
 categories:
   - summary
 ---
