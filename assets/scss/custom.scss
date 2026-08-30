@@ -14,25 +14,28 @@
  */
 .menu-social {
     flex-direction: column;
-    /* Tighter than #main-menu's 25px, so the social links read as one block; the
-       hairline and the wider margin below then separate them from the nav. */
-    gap: var(--spacing-md);
-    font-size: 1.3rem;
-    padding-bottom: var(--spacing-xl);
+    /* Well under #main-menu's 25px, so the social links read as one condensed
+       block; the hairline below then separates them from the nav. */
+    gap: var(--spacing-sm);
+    font-size: 1.25rem;
+    padding-bottom: var(--spacing-lg);
     border-bottom: 1px solid var(--card-separator-color);
-    margin-bottom: var(--spacing-xl);
+    margin-bottom: var(--spacing-lg);
 
     li a {
         display: inline-flex;
         align-items: center;
-        gap: var(--menu-icon-separation);
+        /* Deliberately much tighter than #main-menu's 40px --menu-icon-separation:
+           pulling each label up against its icon is what makes the block read as a
+           condensed list rather than a second nav. */
+        gap: var(--spacing-md);
         color: var(--body-text-color);
     }
 
     svg {
-        /* Match the 20px icons of #main-menu rather than the theme's 24px strip. */
-        width: 20px;
-        height: 20px;
+        /* One step down from #main-menu's 20px, matching the smaller label. */
+        width: 18px;
+        height: 18px;
         flex-shrink: 0;
     }
 
