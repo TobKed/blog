@@ -27,8 +27,8 @@ Below you'll find a mix of articles, links, and resources, some of which tie int
 
 ### Communication
 
-Working on my communication skills, since everyone is already overloaded with the amount of text to process I am trying to keep messages short and straight to the point.
-Not necessarily grammatically correct, but I'd rather leave a few mistakes here and there than put the impression I copy-pasted some LLM output.
+Working on my communication skills: since everyone is already overloaded with the amount of text to process, I am trying to keep messages short and straight to the point.
+Not necessarily grammatically correct, but I'd rather leave a few mistakes here and there than give the impression I copy-pasted some LLM output.
 Some relevant links:
 
 - [nohello.net](https://nohello.net/)
@@ -38,7 +38,7 @@ Some relevant links:
 
 Having fun with tooling: testing [mise](https://mise.jdx.dev/), which should solve the never-ending struggle with local environments.
 
-For example, I had an alias to create Python virtual environments with `v-env <python-version>` (to create virtual env in current `venv` folder), and I overrode `cd` to activate it automatically whenever it spotted one.
+For example, I had an alias to create Python virtual environments with `v-env <python-version>` (which creates the virtual env in a `venv` folder in the current directory), and I overrode `cd` to activate it automatically whenever it spotted one.
 Nothing complicated, and it works well enough, but it looks like `mise` can take that off my hands.
 
 What `mise` can do for you:
@@ -78,8 +78,8 @@ I'll play with it more to see how it behaves, but it looks promising.
 
 I have just switched from [alt-tab](https://alt-tab.app/) (which started limiting functionality for non-paying users) to the fully free and open-source [BetterCmdTab](https://github.com/rokartur/BetterCmdTab), and it seems to work pretty well.
 The only issue I hit was with four Chrome windows open—it couldn't see one of them for some reason, but otherwise it works like a charm.
-I especially like that you can select apps with `j/k` (viva la vim keybindings). S
-mall improvements, but since I spend so much time at the computer, I feel these small improvements compound.
+I especially like that you can select apps with `j/k` (viva la vim keybindings).
+Small improvements, but since I spend so much time at the computer, I feel they compound.
 And tinkering with my setup gives me a lot of joy too.
 
 ______________________________________________________________________
