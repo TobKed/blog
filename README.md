@@ -8,7 +8,7 @@
 
 used theme (git submodule under `themes/`):
 
-- https://github.com/zhaohuabing/hugo-theme-cleanwhite
+- https://github.com/CaiJimmy/hugo-theme-stack
 
 Requires Hugo **extended** 0.146+ (CI pins 0.165.0).
 
