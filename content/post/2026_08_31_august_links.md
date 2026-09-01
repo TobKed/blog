@@ -1,7 +1,7 @@
 ---
 draft: true
 title: Month summary - August 2026
-date: '2026-08-31'
+date: "2026-08-31"
 tags:
   - python
   - blog
@@ -10,7 +10,7 @@ tags:
   - aggregate
   - summary
   - month
-  - '2026'
+  - "2026"
 slug: 2026-august-links
 summary: Interesting stuff from the month
 image: /images/posts/2026/2026_08_xx.jpg
@@ -25,17 +25,59 @@ Below you'll find a mix of articles, links, and resources, some of which tie int
 
 ## Some thoughts
 
-Communication: Working on my communication skills since everyone is overloaded with lines of text to process.
-TL;DR: short, concise messages, straight to the point. Not necessarily grammatically correct, but better to have some mistakes here and there rather than leaving the impression I copy-pasted some LLM output.
+### Communication
+
+Working on my communication skills since everyone is overloaded with lines of text to process.
+Trying to convey short, concise messages, straight to the point.
+Not necessarily grammatically correct, but better to have some mistakes here and there rather than leaving the impression I copy-pasted some LLM output. Some relevant links:
 
 - [nohello.net](https://nohello.net/)
 - [noslopgrenade.com](https://noslopgrenade.com/)
 
-Having fun with tooling: testing [mise](https://mise.jdx.dev/), which should solve the never-ending struggle with local environments.
-I had some bash scripts here and there to simplify and automate local virtual environments, but looks like `mise` will handle this for me.
+### Tooling
 
-Another tool: switched from alt-tab to [BetterCmdTab](https://github.com/rokartur/BetterCmdTab) and it seems to work pretty well. I only had an issue with four Chrome windows—it couldn't see one of them for some reason—but otherwise, it works like a charm.
-I especially like that you can select apps with j-k (viva la vim shortcuts).
+Having fun with tooling: testing [mise](https://mise.jdx.dev/), which should solve the never-ending struggle with local environments.
+
+For example I had aliases to create python virtual environments with `v-env <python-version>` (in `venv` folder) and overwrote `cd` to activate it automatically (if detects `venv` folder).
+It is not very complicated, works good enough but looks like mise can solve it for me.
+
+What `mise` can do for you:
+
+1. Version manager - one config file per project:
+
+```toml
+# mise.toml
+[tools]
+python = "3.12"
+node = "22"
+terraform = "latest"
+```
+
+2. Env manager — replaces direnv:
+
+```toml
+[env]
+DATABASE_URL = "postgres://localhost/dev"
+_.file = ".env"
+_.path = ["./node_modules/.bin"]
+```
+
+3. Task runner — replaces a Makefile-for-scripts:
+
+```toml
+[tasks.test]
+run = "pytest"
+depends = ["lint"]
+```
+
+Then `mise run test`
+
+I will play with it more to figure out how it behaves but looks at least interesting.
+
+#### Better window switcher
+
+I have just switched from [alt-tab](https://alt-tab.app/) (which limited functionality to non-paid users) to fully free and open-sourced [BetterCmdTab](https://github.com/rokartur/BetterCmdTab) and it seems to work pretty well. I only had an issue with four Chrome windows—it couldn't see one of them for some reason—but otherwise, it works like a charm.
+I especially like that you can select apps with j-k (viva la vim shortcuts). Small improvements but since I spent so much time on computer I fell this small improvements compounds. And tinkering my experience also gives me a lot of joy.
 
 ______________________________________________________________________
 
