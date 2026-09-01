@@ -173,24 +173,6 @@ A collection of reusable Cursor agent skills and prompt patterns (architect, TDD
 
 ## Videos
 
-### [A Life Engineered: Ex-Amazon VP on What Actually Gets You Promoted | Ethan Evans](https://www.youtube.com/watch?v=Gf0pR4_bv-o)
-
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/Gf0pR4_bv-o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-### [OMH 2025: Grzegorz Wróbel - Homelab dla bezpiecznika - domowy poligon dla pasji, nauki i pracy](https://www.youtube.com/watch?v=YSon1JW5qXM)
-
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/YSon1JW5qXM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-### [A Life Engineered - How to Learn And Grow Unbelievably Fast](https://www.youtube.com/watch?v=mV-JSdeMSn0)
-
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/mV-JSdeMSn0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
 ### [The future of creativity on the internet in a world with AI](https://www.youtube.com/watch?v=17_HcR95YBc)
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
@@ -209,10 +191,10 @@ A collection of reusable Cursor agent skills and prompt patterns (architect, TDD
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/F3lL98Pj90o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-### [A Life Engineered - Negotiation Expert: How To 3X Your Tech Salary](https://www.youtube.com/watch?v=v87stFQMFNY)
+### [So I tried Matt's skills...](https://youtu.be/0oXOOlqVu5M)
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/v87stFQMFNY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/0oXOOlqVu5M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ### [NetworkChuck - I think I might finally switch to Linux](https://www.youtube.com/watch?v=9SDkU5VDQEQ)
@@ -263,8 +245,28 @@ A collection of reusable Cursor agent skills and prompt patterns (architect, TDD
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/_1LEFUgHFJI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-### [So I tried Matt's skills...](https://youtu.be/0oXOOlqVu5M)
+### [A Life Engineered - How to Learn And Grow Unbelievably Fast](https://www.youtube.com/watch?v=mV-JSdeMSn0)
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/0oXOOlqVu5M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/mV-JSdeMSn0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [A Life Engineered: Ex-Amazon VP on What Actually Gets You Promoted | Ethan Evans](https://www.youtube.com/watch?v=Gf0pR4_bv-o)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/Gf0pR4_bv-o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### [A Life Engineered - Negotiation Expert: How To 3X Your Tech Salary](https://www.youtube.com/watch?v=v87stFQMFNY)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/v87stFQMFNY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+## Polish Corner
+
+### [OMH 2025: Grzegorz Wróbel - Homelab dla bezpiecznika - domowy poligon dla pasji, nauki i pracy](https://www.youtube.com/watch?v=YSon1JW5qXM)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/YSon1JW5qXM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
