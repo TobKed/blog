@@ -30,7 +30,8 @@ make check_links  # report duplicated links across posts
 
 `scripts/check_duplicate_links.py` warns when a URL is repeated within a post or
 across `content/post/*.md`. It also runs as a pre-commit hook, warn-only — it
-prints findings but never blocks a commit. Put `dup-ok` anywhere on a line
+prints findings but never blocks a commit, and it is skipped in CI so it only
+reports on the posts you are actually committing. Put `dup-ok` anywhere on a line
 (e.g. `<!-- dup-ok -->`) to silence an intentional repeat, as the yearly
 summary posts need.
 

@@ -74,13 +74,22 @@ treated as `youtu.be/X`) and only looks at markdown `[text](url)` links, so the
 link + iframe embed pair used for videos is not a duplicate.
 
 It runs as a pre-commit hook in warn-only mode (`--warn`, with `verbose: true`
-so output is shown even though the hook passes) and never blocks a commit;
-`make check_links` runs the same check with a real exit code.
+so output is shown even though the hook passes) and never blocks a commit. The
+hook is skipped in CI (`SKIP: duplicate-links` in `.github/workflows/main.yml`)
+because CI runs `pre-commit --all-files`, which would report every pre-existing
+repeat in the archive instead of the ones you are editing. Locally pre-commit
+passes only the staged posts, so you get the within-file duplicates for those
+files plus any of their links that already appear elsewhere.
+`make check_links` runs the same check by hand, with a real exit code.
 
 When a repeat is intentional — the yearly summary posts deliberately re-link
 monthly content — put `dup-ok` anywhere on that line, normally as an HTML
 comment next to the link: `[mise](https://mise.jdx.dev/) <!-- dup-ok -->`.
-Lines containing `dup-ok` are skipped entirely. Prefer removing the duplicate
+A marked line is left out of the duplicate *report* only — its links still count
+when other posts are checked, so silencing one repeat does not hide that URL from
+the rest of the archive. Note the marker applies to the whole line, so keep it on
+a line whose other links you are also happy to leave unreported.
+Prefer removing the duplicate
 over silencing it; only reach for the marker when both mentions earn their place
 (for example a link in the prose intro that is also catalogued in a section).
 
