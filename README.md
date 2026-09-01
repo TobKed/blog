@@ -25,7 +25,14 @@ git submodule update --init --recursive
 make serve     # http://localhost:1313, includes drafts
 make build     # build into public/
 make publish   # production build + pagefind search index
+make check_links  # report duplicated links across posts
 ```
+
+`scripts/check_duplicate_links.py` warns when a URL is repeated within a post or
+across `content/post/*.md`. It also runs as a pre-commit hook, warn-only — it
+prints findings but never blocks a commit. Put `dup-ok` anywhere on a line
+(e.g. `<!-- dup-ok -->`) to silence an intentional repeat, as the yearly
+summary posts need.
 
 Deployment is automatic: pushing to `master` runs `.github/workflows/main.yml`,
 which builds the site and publishes `public/` to the `gh-pages` branch.

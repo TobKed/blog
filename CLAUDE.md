@@ -22,6 +22,7 @@ Build/serve (via Makefile, wraps `hugo`):
 - `make clean` — remove `public/`
 - `make resize_images` — run `scripts/resize_photos/main.py` (resizes `scripts/resize_photos/input/` → `output/`, max 1024x1024 @ 300dpi)
 - `make generate_post` — run `scripts/generate_post.py` to scaffold a new monthly links post
+- `make check_links` — run `scripts/check_duplicate_links.py` to report duplicated links (see "Duplicate links" below)
 
 Equivalent `invoke` tasks exist in `tasks.py` (`build`, `serve`, `publish`, `clean`) but the Makefile is the primary interface.
 
@@ -63,6 +64,25 @@ Two routes exist for curating these:
 - `scripts/generate_post.py` — scaffolds a new month's post from the template (used by `make generate_post`)
 - `scripts/blog_automation_2/` — CLI tool (`insert_links_tool.py` for a single URL, `bulk_process_links.py` for a batch file) that fetches a URL via `crawl4ai`, uses an LLM (LangChain/OpenAI) to generate title/summary/tags, dedupes against every existing post via `link_registry.py`, and inserts formatted Markdown into the right section of the target post. Core logic lives in `link_processing/`; tests are under `scripts/blog_automation_2/tests/` (run with `PYTHONPATH=. pytest` from that directory, after `pip install -r requirements-dev.txt`).
 - The `add-link-to-blog` skill (see "Agent skills" below; invocable as `/add-link-to-blog`) encodes the same workflow (fetch → dedupe → categorize into a section → ask user to confirm snippet vs. AI summary → append to `content/post/YYYY_MM_DD_monthname_links.md`) for use directly by an agent instead of the scripts above.
+
+### Duplicate links
+
+`scripts/check_duplicate_links.py` reports a URL repeated within a single post or
+across `content/post/*.md`. It compares normalized URLs (host case, `www.`,
+trailing slash, fragment and utm params stripped; `youtube.com/watch?v=X` is
+treated as `youtu.be/X`) and only looks at markdown `[text](url)` links, so the
+link + iframe embed pair used for videos is not a duplicate.
+
+It runs as a pre-commit hook in warn-only mode (`--warn`, with `verbose: true`
+so output is shown even though the hook passes) and never blocks a commit;
+`make check_links` runs the same check with a real exit code.
+
+When a repeat is intentional — the yearly summary posts deliberately re-link
+monthly content — put `dup-ok` anywhere on that line, normally as an HTML
+comment next to the link: `[mise](https://mise.jdx.dev/) <!-- dup-ok -->`.
+Lines containing `dup-ok` are skipped entirely. Prefer removing the duplicate
+over silencing it; only reach for the marker when both mentions earn their place
+(for example a link in the prose intro that is also catalogued in a section).
 
 Both routes converge on the same target-file/section conventions, so when adding links by hand,
 match the existing formatting in a recent `*_links.md` post (standard link vs. YouTube embed block).
