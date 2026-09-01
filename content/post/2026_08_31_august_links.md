@@ -1,5 +1,4 @@
 ---
-draft: true
 title: Month summary - August 2026
 date: "2026-08-31"
 tags:
