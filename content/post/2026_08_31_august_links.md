@@ -263,7 +263,7 @@ A collection of reusable Cursor agent skills and prompt patterns (architect, TDD
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/v87stFQMFNY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-## Polish Corner
+## 🇵🇱 Polish Corner 🇵🇱
 
 ### [OMH 2025: Grzegorz Wróbel - Homelab dla bezpiecznika - domowy poligon dla pasji, nauki i pracy](https://www.youtube.com/watch?v=YSon1JW5qXM)
 
