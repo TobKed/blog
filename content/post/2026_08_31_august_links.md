@@ -27,9 +27,9 @@ Below you'll find a mix of articles, links, and resources, some of which tie int
 
 ### Communication
 
-Working on my communication skills since everyone is overloaded with lines of text to process.
-Trying to convey short, concise messages, straight to the point.
-Not necessarily grammatically correct, but better to have some mistakes here and there rather than leaving the impression I copy-pasted some LLM output. Some relevant links:
+Working on my communication skills, since everyone is already overloaded with the amount of text to process I am trying to keep messages short and straight to the point.
+Not necessarily grammatically correct, but I'd rather leave a few mistakes here and there than put the impression I copy-pasted some LLM output.
+Some relevant links:
 
 - [nohello.net](https://nohello.net/)
 - [noslopgrenade.com](https://noslopgrenade.com/)
@@ -38,8 +38,8 @@ Not necessarily grammatically correct, but better to have some mistakes here and
 
 Having fun with tooling: testing [mise](https://mise.jdx.dev/), which should solve the never-ending struggle with local environments.
 
-For example I had aliases to create python virtual environments with `v-env <python-version>` (in `venv` folder) and overwrote `cd` to activate it automatically (if detects `venv` folder).
-It is not very complicated, works good enough but looks like mise can solve it for me.
+For example, I had an alias to create Python virtual environments with `v-env <python-version>` (to create virtual env in current `venv` folder), and I overrode `cd` to activate it automatically whenever it spotted one.
+Nothing complicated, and it works well enough, but it looks like `mise` can take that off my hands.
 
 What `mise` can do for you:
 
@@ -70,14 +70,17 @@ run = "pytest"
 depends = ["lint"]
 ```
 
-Then `mise run test`
+Then just `mise run test`.
 
-I will play with it more to figure out how it behaves but looks at least interesting.
+I'll play with it more to see how it behaves, but it looks promising.
 
 #### Better window switcher
 
-I have just switched from [alt-tab](https://alt-tab.app/) (which limited functionality to non-paid users) to fully free and open-sourced [BetterCmdTab](https://github.com/rokartur/BetterCmdTab) and it seems to work pretty well. I only had an issue with four Chrome windows—it couldn't see one of them for some reason—but otherwise, it works like a charm.
-I especially like that you can select apps with j-k (viva la vim shortcuts). Small improvements but since I spent so much time on computer I fell this small improvements compounds. And tinkering my experience also gives me a lot of joy.
+I have just switched from [alt-tab](https://alt-tab.app/) (which started limiting functionality for non-paying users) to the fully free and open-source [BetterCmdTab](https://github.com/rokartur/BetterCmdTab), and it seems to work pretty well.
+The only issue I hit was with four Chrome windows open—it couldn't see one of them for some reason, but otherwise it works like a charm.
+I especially like that you can select apps with `j/k` (viva la vim keybindings). S
+mall improvements, but since I spend so much time at the computer, I feel these small improvements compound.
+And tinkering with my setup gives me a lot of joy too.
 
 ______________________________________________________________________
 
@@ -103,8 +106,6 @@ ______________________________________________________________________
 ### [Building an Omarchy-Inspired Setup on macOS | Christopher Penkin](https://www.penkin.me/development/tools/productivity/configuration/2025/11/28/building-omarchy-inspired-setup-macos.html)
 
 > Learn how to build a keyboard-driven tiling window manager setup on macOS using yabai, sketchybar, and skhd. Inspired by Omarchy's philosophy of minimal aesthetics and instant workspace switching, this guide covers configuration, multi-monitor support, and creating a distraction-free development environment on a MacBook Pro M1.
-
-## Productivity
 
 ## AI
 
@@ -155,18 +156,6 @@ ______________________________________________________________________
 
 A collection of reusable Cursor agent skills and prompt patterns (architect, TDD, root-cause-fixing, type-system discipline, blast-radius, etc.) that codify practical engineering principles as invokable skills for AI coding agents.
 
-## Security
-
-## Python
-
-## Django
-
-## Python libraries
-
-## Django libraries
-
-## Go
-
 ## Tools
 
 ### [GitHub - AprilNEA/OpenLogi](https://github.com/AprilNEA/OpenLogi)
@@ -182,10 +171,6 @@ A collection of reusable Cursor agent skills and prompt patterns (architect, TDD
 ### [GitHub - floci-io/floci](https://github.com/floci-io/floci)
 
 > Floci is a free, open-source local AWS emulator for development, testing, and CI. It gives you AWS-shaped services on your machine without requiring a cloud account, an auth token, or paid feature gates.
-
-## Other stuff
-
-## Podcasts
 
 ## Videos
 
