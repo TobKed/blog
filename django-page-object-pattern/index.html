@@ -17,67 +17,67 @@
 <time class=article-time--published datetime=2019-02-05T00:00:00Z>Tuesday, February 5, 2019</time>
 <svg class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg>
 <time class=article-time--reading>2 minutes read</time></div></footer></div></header><aside class=article-toc><details><summary><div class=article-toc-title><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6-6 6"/></svg>
-<span>Table of contents</span></div></summary><nav class=toc-nav><ul><li><a href=#page-object-pattern>Page Object Pattern</a></li></ul></nav></details></aside><section class=article-content><h2 id=page-object-pattern><a href=#page-object-pattern class=header-anchor></a>Page Object Pattern</h2><p>Functional testing with usage of selenium is based on giving simple instructions to browser and comparing results with expectations. Generally we start with step by step instructions which element should be located, then what to do with them (click, read or insert value). It&rsquo;s working fine with simple pages but when project is growing and our test suite is getting complex as well and brittle to changes. Some id changed and bam, plenty of tests are not valid anymore. The Page Object Pattern is some special form of facade pattern where the web pages and elements of them are separated from testing procedure and provides nicer API.</p><h3 id=page-objects-in-action><a href=#page-objects-in-action class=header-anchor></a>Page Objects in action</h3><div class=highlight><pre tabindex=0 style=background-color:#f7f7f7;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-python data-lang=python><span style=display:flex><span><span style=color:#cf222e>from</span> <span style=color:#24292e>selenium</span> <span style=color:#cf222e>import</span> webdriver
-</span></span><span style=display:flex><span><span style=color:#cf222e>from</span> <span style=color:#24292e>django.contrib.staticfiles.testing</span> <span style=color:#cf222e>import</span> StaticLiveServerTestCase
-</span></span><span style=display:flex><span><span style=color:#cf222e>from</span> <span style=color:#24292e>webdriver_manager.chrome</span> <span style=color:#cf222e>import</span> ChromeDriverManager
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#cf222e>class</span> <span style=color:#1f2328>BasePage</span><span style=color:#1f2328>(</span><span style=color:#6639ba>object</span><span style=color:#1f2328>):</span>
-</span></span><span style=display:flex><span>    url <span style=color:#0550ae>=</span> <span style=color:#cf222e>None</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    <span style=color:#cf222e>def</span> <span style=color:#6639ba>__init__</span><span style=color:#1f2328>(</span><span style=color:#6a737d>self</span><span style=color:#1f2328>,</span> driver<span style=color:#1f2328>):</span>
-</span></span><span style=display:flex><span>        <span style=color:#6a737d>self</span><span style=color:#0550ae>.</span>driver <span style=color:#0550ae>=</span> driver
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    <span style=color:#cf222e>def</span> <span style=color:#6639ba>fill_form</span><span style=color:#1f2328>(</span><span style=color:#6a737d>self</span><span style=color:#1f2328>,</span> elem<span style=color:#1f2328>,</span> value<span style=color:#1f2328>):</span>
-</span></span><span style=display:flex><span>        elem<span style=color:#0550ae>.</span>send_keys<span style=color:#1f2328>(</span>value<span style=color:#1f2328>)</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    <span style=color:#cf222e>def</span> <span style=color:#6639ba>fill_form_by_id</span><span style=color:#1f2328>(</span><span style=color:#6a737d>self</span><span style=color:#1f2328>,</span> form_element_id<span style=color:#1f2328>,</span> value<span style=color:#1f2328>):</span>
-</span></span><span style=display:flex><span>        elem <span style=color:#0550ae>=</span> <span style=color:#6a737d>self</span><span style=color:#0550ae>.</span>driver<span style=color:#0550ae>.</span>find_element_by_id<span style=color:#1f2328>(</span>form_element_id<span style=color:#1f2328>)</span>
-</span></span><span style=display:flex><span>        <span style=color:#cf222e>return</span> <span style=color:#6a737d>self</span><span style=color:#0550ae>.</span>fill_form<span style=color:#1f2328>(</span>elem<span style=color:#1f2328>,</span> value<span style=color:#1f2328>)</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    <span style=color:#cf222e>def</span> <span style=color:#6639ba>navigate</span><span style=color:#1f2328>(</span><span style=color:#6a737d>self</span><span style=color:#1f2328>):</span>
-</span></span><span style=display:flex><span>        <span style=color:#6a737d>self</span><span style=color:#0550ae>.</span>driver<span style=color:#0550ae>.</span>get<span style=color:#1f2328>(</span><span style=color:#6a737d>self</span><span style=color:#0550ae>.</span>url<span style=color:#1f2328>)</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#cf222e>class</span> <span style=color:#1f2328>Homepage</span><span style=color:#1f2328>(</span>BasePage<span style=color:#1f2328>):</span>
-</span></span><span style=display:flex><span>    url <span style=color:#0550ae>=</span> <span style=color:#0a3069>&#34;http://localhost:8000&#34;</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    <span style=color:#cf222e>def</span> <span style=color:#6639ba>getLoginform</span><span style=color:#1f2328>(</span><span style=color:#6a737d>self</span><span style=color:#1f2328>):</span>
-</span></span><span style=display:flex><span>        <span style=color:#cf222e>return</span> LogInPage<span style=color:#1f2328>(</span><span style=color:#6a737d>self</span><span style=color:#0550ae>.</span>driver<span style=color:#1f2328>)</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#cf222e>class</span> <span style=color:#1f2328>LogInPage</span><span style=color:#1f2328>(</span>BasePage<span style=color:#1f2328>):</span>
-</span></span><span style=display:flex><span>    url <span style=color:#0550ae>=</span> <span style=color:#0a3069>&#34;http://127.0.0.1:8000/login/&#34;</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    <span style=color:#cf222e>def</span> <span style=color:#6639ba>setUsername</span><span style=color:#1f2328>(</span><span style=color:#6a737d>self</span><span style=color:#1f2328>,</span> username<span style=color:#1f2328>):</span>
-</span></span><span style=display:flex><span>        <span style=color:#6a737d>self</span><span style=color:#0550ae>.</span>fill_form_by_id<span style=color:#1f2328>(</span><span style=color:#0a3069>&#34;id_username&#34;</span><span style=color:#1f2328>,</span> username<span style=color:#1f2328>)</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    <span style=color:#cf222e>def</span> <span style=color:#6639ba>setPassword</span><span style=color:#1f2328>(</span><span style=color:#6a737d>self</span><span style=color:#1f2328>,</span> password<span style=color:#1f2328>):</span>
-</span></span><span style=display:flex><span>        <span style=color:#6a737d>self</span><span style=color:#0550ae>.</span>fill_form_by_id<span style=color:#1f2328>(</span><span style=color:#0a3069>&#34;id_password&#34;</span><span style=color:#1f2328>,</span> password<span style=color:#1f2328>)</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    <span style=color:#cf222e>def</span> <span style=color:#6639ba>submit</span><span style=color:#1f2328>(</span><span style=color:#6a737d>self</span><span style=color:#1f2328>):</span>
-</span></span><span style=display:flex><span>        <span style=color:#6a737d>self</span><span style=color:#0550ae>.</span>driver<span style=color:#0550ae>.</span>find_element_by_id<span style=color:#1f2328>(</span><span style=color:#0a3069>&#34;login_button&#34;</span><span style=color:#1f2328>)</span><span style=color:#0550ae>.</span>click<span style=color:#1f2328>()</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#cf222e>class</span> <span style=color:#1f2328>LogInTest</span><span style=color:#1f2328>(</span>StaticLiveServerTestCase<span style=color:#1f2328>):</span>
-</span></span><span style=display:flex><span>    <span style=color:#cf222e>def</span> <span style=color:#6639ba>setUp</span><span style=color:#1f2328>(</span><span style=color:#6a737d>self</span><span style=color:#1f2328>):</span>
-</span></span><span style=display:flex><span>        chrome_options <span style=color:#0550ae>=</span> webdriver<span style=color:#0550ae>.</span>ChromeOptions<span style=color:#1f2328>()</span>
-</span></span><span style=display:flex><span>        chrome_options<span style=color:#0550ae>.</span>add_argument<span style=color:#1f2328>(</span><span style=color:#0a3069>&#34;--incognito&#34;</span><span style=color:#1f2328>)</span>
-</span></span><span style=display:flex><span>        <span style=color:#6a737d>self</span><span style=color:#0550ae>.</span>browser <span style=color:#0550ae>=</span> webdriver<span style=color:#0550ae>.</span>Chrome<span style=color:#1f2328>(</span>ChromeDriverManager<span style=color:#1f2328>()</span><span style=color:#0550ae>.</span>install<span style=color:#1f2328>())</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    <span style=color:#cf222e>def</span> <span style=color:#6639ba>test_someone_can_login</span><span style=color:#1f2328>(</span><span style=color:#6a737d>self</span><span style=color:#1f2328>):</span>
-</span></span><span style=display:flex><span>        homepage <span style=color:#0550ae>=</span> Homepage<span style=color:#1f2328>(</span><span style=color:#6a737d>self</span><span style=color:#0550ae>.</span>browser<span style=color:#1f2328>)</span>
-</span></span><span style=display:flex><span>        homepage<span style=color:#0550ae>.</span>navigate<span style=color:#1f2328>()</span>
-</span></span><span style=display:flex><span>        signup_form <span style=color:#0550ae>=</span> homepage<span style=color:#0550ae>.</span>getLoginform<span style=color:#1f2328>()</span>
-</span></span><span style=display:flex><span>        signup_form<span style=color:#0550ae>.</span>navigate<span style=color:#1f2328>()</span>
-</span></span><span style=display:flex><span>        signup_form<span style=color:#0550ae>.</span>setUsername<span style=color:#1f2328>(</span><span style=color:#0a3069>&#34;Justin&#34;</span><span style=color:#1f2328>)</span>
-</span></span><span style=display:flex><span>        signup_form<span style=color:#0550ae>.</span>setPassword<span style=color:#1f2328>(</span><span style=color:#0a3069>&#34;Bieber&#34;</span><span style=color:#1f2328>)</span>
-</span></span><span style=display:flex><span>        signup_form<span style=color:#0550ae>.</span>submit<span style=color:#1f2328>()</span>
-</span></span><span style=display:flex><span>        elem <span style=color:#0550ae>=</span> <span style=color:#6a737d>self</span><span style=color:#0550ae>.</span>browser<span style=color:#0550ae>.</span>find_element_by_css_selector<span style=color:#1f2328>(</span><span style=color:#0a3069>&#34;.alert&#34;</span><span style=color:#1f2328>)</span>
-</span></span><span style=display:flex><span>        <span style=color:#6a737d>self</span><span style=color:#0550ae>.</span>assertIsNotNone<span style=color:#1f2328>(</span>elem<span style=color:#1f2328>)</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>    <span style=color:#cf222e>def</span> <span style=color:#6639ba>tearDown</span><span style=color:#1f2328>(</span><span style=color:#6a737d>self</span><span style=color:#1f2328>):</span>
-</span></span><span style=display:flex><span>        <span style=color:#6a737d>self</span><span style=color:#0550ae>.</span>browser<span style=color:#0550ae>.</span>close<span style=color:#1f2328>()</span>
+<span>Table of contents</span></div></summary><nav class=toc-nav><ul><li><a href=#page-object-pattern>Page Object Pattern</a></li></ul></nav></details></aside><section class=article-content><h2 id=page-object-pattern><a href=#page-object-pattern class=header-anchor></a>Page Object Pattern</h2><p>Functional testing with usage of selenium is based on giving simple instructions to browser and comparing results with expectations. Generally we start with step by step instructions which element should be located, then what to do with them (click, read or insert value). It&rsquo;s working fine with simple pages but when project is growing and our test suite is getting complex as well and brittle to changes. Some id changed and bam, plenty of tests are not valid anymore. The Page Object Pattern is some special form of facade pattern where the web pages and elements of them are separated from testing procedure and provides nicer API.</p><h3 id=page-objects-in-action><a href=#page-objects-in-action class=header-anchor></a>Page Objects in action</h3><div class=highlight><pre tabindex=0 class=chroma><code class=language-python data-lang=python><span class=line><span class=cl><span class=kn>from</span> <span class=nn>selenium</span> <span class=kn>import</span> <span class=n>webdriver</span>
+</span></span><span class=line><span class=cl><span class=kn>from</span> <span class=nn>django.contrib.staticfiles.testing</span> <span class=kn>import</span> <span class=n>StaticLiveServerTestCase</span>
+</span></span><span class=line><span class=cl><span class=kn>from</span> <span class=nn>webdriver_manager.chrome</span> <span class=kn>import</span> <span class=n>ChromeDriverManager</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>class</span> <span class=nc>BasePage</span><span class=p>(</span><span class=nb>object</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>    <span class=n>url</span> <span class=o>=</span> <span class=kc>None</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>def</span> <span class=fm>__init__</span><span class=p>(</span><span class=bp>self</span><span class=p>,</span> <span class=n>driver</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>        <span class=bp>self</span><span class=o>.</span><span class=n>driver</span> <span class=o>=</span> <span class=n>driver</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>def</span> <span class=nf>fill_form</span><span class=p>(</span><span class=bp>self</span><span class=p>,</span> <span class=n>elem</span><span class=p>,</span> <span class=n>value</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>        <span class=n>elem</span><span class=o>.</span><span class=n>send_keys</span><span class=p>(</span><span class=n>value</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>def</span> <span class=nf>fill_form_by_id</span><span class=p>(</span><span class=bp>self</span><span class=p>,</span> <span class=n>form_element_id</span><span class=p>,</span> <span class=n>value</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>        <span class=n>elem</span> <span class=o>=</span> <span class=bp>self</span><span class=o>.</span><span class=n>driver</span><span class=o>.</span><span class=n>find_element_by_id</span><span class=p>(</span><span class=n>form_element_id</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=bp>self</span><span class=o>.</span><span class=n>fill_form</span><span class=p>(</span><span class=n>elem</span><span class=p>,</span> <span class=n>value</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>def</span> <span class=nf>navigate</span><span class=p>(</span><span class=bp>self</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>        <span class=bp>self</span><span class=o>.</span><span class=n>driver</span><span class=o>.</span><span class=n>get</span><span class=p>(</span><span class=bp>self</span><span class=o>.</span><span class=n>url</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>class</span> <span class=nc>Homepage</span><span class=p>(</span><span class=n>BasePage</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>    <span class=n>url</span> <span class=o>=</span> <span class=s2>&#34;http://localhost:8000&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>def</span> <span class=nf>getLoginform</span><span class=p>(</span><span class=bp>self</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=n>LogInPage</span><span class=p>(</span><span class=bp>self</span><span class=o>.</span><span class=n>driver</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>class</span> <span class=nc>LogInPage</span><span class=p>(</span><span class=n>BasePage</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>    <span class=n>url</span> <span class=o>=</span> <span class=s2>&#34;http://127.0.0.1:8000/login/&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>def</span> <span class=nf>setUsername</span><span class=p>(</span><span class=bp>self</span><span class=p>,</span> <span class=n>username</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>        <span class=bp>self</span><span class=o>.</span><span class=n>fill_form_by_id</span><span class=p>(</span><span class=s2>&#34;id_username&#34;</span><span class=p>,</span> <span class=n>username</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>def</span> <span class=nf>setPassword</span><span class=p>(</span><span class=bp>self</span><span class=p>,</span> <span class=n>password</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>        <span class=bp>self</span><span class=o>.</span><span class=n>fill_form_by_id</span><span class=p>(</span><span class=s2>&#34;id_password&#34;</span><span class=p>,</span> <span class=n>password</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>def</span> <span class=nf>submit</span><span class=p>(</span><span class=bp>self</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>        <span class=bp>self</span><span class=o>.</span><span class=n>driver</span><span class=o>.</span><span class=n>find_element_by_id</span><span class=p>(</span><span class=s2>&#34;login_button&#34;</span><span class=p>)</span><span class=o>.</span><span class=n>click</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>class</span> <span class=nc>LogInTest</span><span class=p>(</span><span class=n>StaticLiveServerTestCase</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>    <span class=k>def</span> <span class=nf>setUp</span><span class=p>(</span><span class=bp>self</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>        <span class=n>chrome_options</span> <span class=o>=</span> <span class=n>webdriver</span><span class=o>.</span><span class=n>ChromeOptions</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>        <span class=n>chrome_options</span><span class=o>.</span><span class=n>add_argument</span><span class=p>(</span><span class=s2>&#34;--incognito&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=bp>self</span><span class=o>.</span><span class=n>browser</span> <span class=o>=</span> <span class=n>webdriver</span><span class=o>.</span><span class=n>Chrome</span><span class=p>(</span><span class=n>ChromeDriverManager</span><span class=p>()</span><span class=o>.</span><span class=n>install</span><span class=p>())</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>def</span> <span class=nf>test_someone_can_login</span><span class=p>(</span><span class=bp>self</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>        <span class=n>homepage</span> <span class=o>=</span> <span class=n>Homepage</span><span class=p>(</span><span class=bp>self</span><span class=o>.</span><span class=n>browser</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=n>homepage</span><span class=o>.</span><span class=n>navigate</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>        <span class=n>signup_form</span> <span class=o>=</span> <span class=n>homepage</span><span class=o>.</span><span class=n>getLoginform</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>        <span class=n>signup_form</span><span class=o>.</span><span class=n>navigate</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>        <span class=n>signup_form</span><span class=o>.</span><span class=n>setUsername</span><span class=p>(</span><span class=s2>&#34;Justin&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=n>signup_form</span><span class=o>.</span><span class=n>setPassword</span><span class=p>(</span><span class=s2>&#34;Bieber&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=n>signup_form</span><span class=o>.</span><span class=n>submit</span><span class=p>()</span>
+</span></span><span class=line><span class=cl>        <span class=n>elem</span> <span class=o>=</span> <span class=bp>self</span><span class=o>.</span><span class=n>browser</span><span class=o>.</span><span class=n>find_element_by_css_selector</span><span class=p>(</span><span class=s2>&#34;.alert&#34;</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>        <span class=bp>self</span><span class=o>.</span><span class=n>assertIsNotNone</span><span class=p>(</span><span class=n>elem</span><span class=p>)</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=k>def</span> <span class=nf>tearDown</span><span class=p>(</span><span class=bp>self</span><span class=p>):</span>
+</span></span><span class=line><span class=cl>        <span class=bp>self</span><span class=o>.</span><span class=n>browser</span><span class=o>.</span><span class=n>close</span><span class=p>()</span>
 </span></span></code></pre></div><br><hr><h4 id=sources><a href=#sources class=header-anchor></a>Sources:</h4><ul><li><a class=link href=https://justin.abrah.ms/python/selenium-page-object-pattern--the-key-to-maintainable-tests.html target=_blank rel=noopener>Justin Abrahms - Selenium&rsquo;s Page Object Pattern: The Key to Maintainable Tests</a></li></ul></section><footer class="article-meta article-footer"><section class=article-tags><a href=/tags/python/>Python</a>
 <a href=/tags/django/>Django</a>
 <a href=/tags/testing/>Testing</a>
