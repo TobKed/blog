@@ -203,8 +203,7 @@ term = ['html']
 [markup.goldmark.renderer]
 unsafe = true
 [markup.highlight]
-style = 'github'
-noClasses = true
+noClasses = false
 lineNos = false
 [markup.tableOfContents]
 startLevel = 2
