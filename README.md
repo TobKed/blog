@@ -12,8 +12,12 @@ used theme (git submodule under `themes/`):
 
 Requires Hugo **extended** 0.146+ (CI pins 0.165.0).
 
+Hugo is pinned in `mise.toml`, Python in `.python-version`:
+
 ```bash
-brew install hugo
+mise install    # or: brew install hugo
+uv venv
+uv pip install -r requirements.txt
 git submodule update --init --recursive
 ```
 
