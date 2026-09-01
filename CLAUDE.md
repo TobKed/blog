@@ -5,7 +5,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Project overview
 
 Personal blog (blog.tobked.dev) built with [Hugo](https://github.com/gohugoio/hugo). Content is
-Markdown with YAML front matter in `content/`, theme is the `hugo-theme-cleanwhite` git submodule
+Markdown with YAML front matter in `content/`, theme is the `hugo-theme-stack` git submodule
 under `themes/`. Output is generated into `public/` and deployed to the `gh-pages` branch by CI.
 
 Requires Hugo **extended** 0.146 or newer; CI pins 0.165.0.
@@ -74,7 +74,7 @@ YouTube embeds are raw HTML `<div class="videoWrapper">` blocks, which work beca
 
 ## Notes
 
-- `hugo-theme-cleanwhite` (theme) is a git submodule; `git submodule update --init --recursive` if it's missing.
+- `hugo-theme-stack` (theme) is a git submodule; `git submodule update --init --recursive` if it's missing.
 - Agent skills: every agent tool used here looks in a different project directory, so the skill body
   lives once in `.agents/skills/<name>/SKILL.md` (read natively by Codex CLI and Antigravity) and
   `.claude/skills/<name>/SKILL.md` (Claude Code) and `.cursor/skills/<name>/SKILL.md` (Cursor) hold

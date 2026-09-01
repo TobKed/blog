@@ -2,7 +2,7 @@
 
 This is a personal blog created with [Hugo](https://github.com/gohugoio/hugo), a static site
 generator written in Go. The blog content is written in Markdown with YAML front matter and the
-theme is [hugo-theme-cleanwhite](https://github.com/zhaohuabing/hugo-theme-cleanwhite), vendored
+theme is [hugo-theme-stack](https://github.com/CaiJimmy/hugo-theme-stack), vendored
 as a git submodule under `themes/`.
 
 All configuration lives in `hugo.toml`. The content is located in the `content/` directory, with
