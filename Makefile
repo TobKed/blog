@@ -45,3 +45,7 @@ resize_images: ## resize images in scripts/resize_photos/input
 .PHONY: generate_post
 generate_post: ## generate a new post
 	$(PY) scripts/generate_post.py
+
+.PHONY: check_links
+check_links: ## report duplicated links across posts
+	$(PY) scripts/check_duplicate_links.py $(FILES)

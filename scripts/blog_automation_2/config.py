@@ -8,6 +8,7 @@ This module handles:
 - Command line argument parsing
 - Global configuration variables
 """
+
 import argparse
 import logging
 import os

@@ -1,45 +1,45 @@
 repos:
-- repo: https://github.com/pre-commit/pre-commit-hooks
-  rev: v5.0.0
-  hooks:
-  -   id: trailing-whitespace
-      exclude: ^.*\.md$
-  -   id: end-of-file-fixer
-  -   id: check-yaml
-  -   id: check-added-large-files
-      exclude: ^.*\.mp3$|^static/images/
-  -   id: check-json
-- repo: https://github.com/executablebooks/mdformat
-  rev: 0.7.17
-  hooks:
-  - id: mdformat
-    # optional
-    args:
-    - '--number'
-    additional_dependencies:
-    - mdformat-tables
-    - mdformat-black
-    - mdformat_footnote
-    - mdformat-frontmatter
-    exclude: |
-        (?x)(
-            ^public/|
-            ^themes/|
-            ^venv/|
-            ^content/post/2019_06_23_enum_and_dataclass.md|
-            ^content/post/2019_10_07_black.md|
-            ^content/post/2021_08_31_august_links.md|
-            ^content/post/2021_12_30_django_on_gcp.md|
-            ^content/post/2023_05_03_gcp_dev_day.md|
-            ^scripts/blog_automation_2/README.md|
-            ^.agents/skills/
-        )
-- repo: https://github.com/psf/black
-  rev: 25.1.0
-  hooks:
-    - id: black
-- repo: https://github.com/pycqa/isort
-  rev: 6.0.1
-  hooks:
-    - id: isort
-      args: ["--profile", "black", "--filter-files"]
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: trailing-whitespace
+        exclude: ^.*\.md$
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-added-large-files
+        exclude: ^.*\.mp3$|^static/images/
+      - id: check-json
+  - repo: https://github.com/executablebooks/mdformat
+    rev: 0.7.17
+    hooks:
+      - id: mdformat
+        # optional
+        args:
+          - "--number"
+        additional_dependencies:
+          - mdformat-tables
+          - mdformat-black
+          - mdformat_footnote
+          - mdformat-frontmatter
+        exclude: |
+          (?x)(
+              ^public/|
+              ^themes/|
+              ^venv/|
+              ^content/post/2019_06_23_enum_and_dataclass.md|
+              ^content/post/2019_10_07_black.md|
+              ^content/post/2021_08_31_august_links.md|
+              ^content/post/2021_12_30_django_on_gcp.md|
+              ^content/post/2023_05_03_gcp_dev_day.md|
+              ^scripts/blog_automation_2/README.md|
+              ^.agents/skills/
+          )
+  - repo: https://github.com/psf/black
+    rev: 26.5.1
+    hooks:
+      - id: black
+  - repo: https://github.com/pycqa/isort
+    rev: 9.0.1
+    hooks:
+      - id: isort
+        args: ["--profile", "black", "--filter-files"]

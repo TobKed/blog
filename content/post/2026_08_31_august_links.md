@@ -35,7 +35,7 @@ Some relevant links:
 
 ### Tooling
 
-Having fun with tooling: testing [mise](https://mise.jdx.dev/), which should solve the never-ending struggle with local environments.
+Having fun with tooling: testing [mise](https://mise.jdx.dev/) <!-- dup-ok -->, which should solve the never-ending struggle with local environments.
 
 For example, I had an alias to create Python virtual environments with `v-env <python-version>` (which creates the virtual env in a `venv` folder in the current directory), and I overrode `cd` to activate it automatically whenever it spotted one.
 Nothing complicated, and it works well enough, but it looks like `mise` can take that off my hands.
@@ -75,7 +75,7 @@ I'll play with it more to see how it behaves, but it looks promising.
 
 #### Better window switcher
 
-I have just switched from [alt-tab](https://alt-tab.app/) (which started limiting functionality for non-paying users) to the fully free and open-source [BetterCmdTab](https://github.com/rokartur/BetterCmdTab), and it seems to work pretty well.
+I have just switched from [alt-tab](https://alt-tab.app/) (which started limiting functionality for non-paying users) to the fully free and open-source [BetterCmdTab](https://github.com/rokartur/BetterCmdTab) <!-- dup-ok -->, and it seems to work pretty well.
 The only issue I hit was with four Chrome windows open—it couldn't see one of them for some reason, but otherwise it works like a charm.
 I especially like that you can select apps with `j/k` (viva la vim keybindings).
 Small improvements, but since I spend so much time at the computer, I feel they compound.
@@ -183,12 +183,6 @@ A collection of reusable Cursor agent skills and prompt patterns (architect, TDD
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/YSon1JW5qXM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-### [A Life Engineered - Ex-Amazon VP on What Actually Gets You Promoted | Ethan Evans](https://www.youtube.com/watch?v=Gf0pR4_bv-o)
-
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/Gf0pR4_bv-o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ### [A Life Engineered - How to Learn And Grow Unbelievably Fast](https://www.youtube.com/watch?v=mV-JSdeMSn0)

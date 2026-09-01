@@ -3,6 +3,7 @@
 Helper script to bulk process URLs from a markdown file and insert them into a target blog post.
 Generates a report of successfully added and failed/skipped links.
 """
+
 import argparse
 import sys
 from pathlib import Path
