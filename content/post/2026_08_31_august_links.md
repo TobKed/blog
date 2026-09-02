@@ -98,7 +98,7 @@ ______________________________________________________________________
 
 > What a time to be alive. Nay, what a blessing.
 
-### [Shane AAnderson - How to create snippets in LazyVim](https://shaneanderson.id.au/how-to-create-snippets-in-lazyvim.html)
+### [Shane Anderson - How to create snippets in LazyVim](https://shaneanderson.id.au/how-to-create-snippets-in-lazyvim.html)
 
 > Took me way too much effort to figure this out and searching for info resulted in a lot of posts with other people asking the same question or outdated information as LazyVim has changed its plugins a bunch of times, hopefully this helps someone else out there.
 
