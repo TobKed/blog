@@ -5,8 +5,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Project overview
 
 Personal blog (blog.tobked.dev) built with [Hugo](https://github.com/gohugoio/hugo). Content is
-Markdown with YAML front matter in `content/`, theme is the `hugo-theme-stack` git submodule
-under `themes/`. Output is generated into `public/` and deployed to the `gh-pages` branch by CI.
+Markdown with YAML front matter in `content/`, theme is `ups-and-downs` under `themes/` (written
+for this blog, lives in-repo). The previous theme, the `hugo-theme-stack` git submodule, is still
+checked out beside it but unused. Output is generated into `public/` and deployed to the `gh-pages` branch by CI.
 
 Requires Hugo **extended** 0.146 or newer; CI pins 0.165.0. `mise.toml` pins Hugo locally
 (`mise install`); Python is pinned in `.python-version` and managed with `uv`
@@ -39,7 +40,7 @@ broken links (two-phase: fast `requests` pass, then `selenium` re-check of failu
 - `content/post/*.md` — blog posts, filename convention `YYYY_MM_DD_slug.md`; the URL comes from the `slug` front matter field, not the filename
 - `content/pages/*.md` — static pages, served at `/pages/<slug>/`
 - `content/tags/`, `content/categories/` — term stubs that only carry `aliases` redirecting the old Pelican `/tag/<x>` and `/category/<x>` URLs
-- `content/search/_index.md` — the pagefind search page
+- `content/search.md` — the search page; `ups-and-downs` renders it with pagefind, so results only appear in a build that ran `npx pagefind` (`make publish` / `make preview` / CI), not under `make serve`
 - `static/images/`, `static/audio/`, `static/css/` — static assets, copied verbatim to the site root
 - `layouts/home.rss.xml`, `layouts/home.atom.xml` — feeds published at `/feeds/all.rss.xml` and `/feeds/all.atom.xml` (the URLs the Pelican site used)
 - `hugo.toml` — all configuration: permalinks, menus, social links, feeds, highlighting
@@ -76,7 +77,8 @@ YouTube embeds are raw HTML `<div class="videoWrapper">` blocks, which work beca
 
 ## Notes
 
-- `hugo-theme-stack` (theme) is a git submodule; `git submodule update --init --recursive` if it's missing.
+- `themes/ups-and-downs/` is the active theme and is committed to this repo; `themes/hugo-theme-stack` is the old theme, a git submodule (`git submodule update --init --recursive` if it's missing). `.gitignore` ignores `themes/*` and allows those two by name.
+- `layouts/_partials/sidebar/left.html`, `assets/scss/custom.scss` and `static/css/main.css` only apply to `hugo-theme-stack`; `ups-and-downs` ignores them.
 - Agent skills: every agent tool used here looks in a different project directory, so the skill body
   lives once in `.agents/skills/<name>/SKILL.md` (read natively by Codex CLI and Antigravity) and
   `.claude/skills/<name>/SKILL.md` (Claude Code) and `.cursor/skills/<name>/SKILL.md` (Cursor) hold

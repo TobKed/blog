@@ -1,0 +1,10 @@
+<div class="meta">
+    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Mon 02 Jan 2006" }}</time>
+    {{ if site.Params.article.readingTime }}
+        <span class="meta__dot">&middot;</span><span>{{ .ReadingTime }} min read</span>
+    {{ end }}
+    {{ with .GetTerms "tags" }}
+        <span class="meta__dot">&middot;</span>
+        <span class="meta__tags">{{ range . }}<a href="{{ .RelPermalink }}">#{{ .Title | lower }}</a> {{ end }}</span>
+    {{ end }}
+</div>

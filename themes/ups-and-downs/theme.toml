@@ -1,0 +1,4 @@
+name = "Ups and Downs"
+license = "MIT"
+description = "Editorial two-column theme for blog.tobked.dev."
+min_version = "0.146.0"

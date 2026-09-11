@@ -1,0 +1,40 @@
+{{ $posts := where site.RegularPages "Type" "in" site.Params.mainSections }}
+{{ $archives := site.GetPage "/archives" }}
+<aside class="rail">
+    {{ with $posts.GroupByDate "2006" }}
+        <div>
+            <h2>Archives</h2>
+            <div class="rail__years">
+                {{ range first 5 . }}
+                    <a href="{{ with $archives }}{{ .RelPermalink }}{{ end }}#{{ .Key }}">
+                        <span>{{ .Key }}</span>
+                        <span class="rail__count">{{ printf "%02d" (len .Pages) }}</span>
+                    </a>
+                {{ end }}
+                {{ with $archives }}<a class="rail__more" href="{{ .RelPermalink }}">More &rarr;</a>{{ end }}
+            </div>
+        </div>
+    {{ end }}
+
+    {{ with site.Taxonomies.categories }}
+        <div>
+            <h2>Categories</h2>
+            <div class="rail__chips">
+                {{ range first 10 .ByCount }}
+                    <a class="chip" href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
+                {{ end }}
+            </div>
+        </div>
+    {{ end }}
+
+    {{ with site.Taxonomies.tags }}
+        <div>
+            <h2>Tags</h2>
+            <div class="rail__tags">
+                {{ range first 20 .ByCount }}
+                    <a class="taglink" href="{{ .Page.RelPermalink }}">#{{ .Page.Title | lower }}</a>
+                {{ end }}
+            </div>
+        </div>
+    {{ end }}
+</aside>

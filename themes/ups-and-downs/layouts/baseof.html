@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.Lang }}"
+      {{ with site.Params.colorScheme.default }}{{ if ne . "auto" }}data-theme="{{ . }}"{{ end }}{{ end }}>
+<head>
+    {{ partial "head.html" . }}
+</head>
+<body>
+<a class="skip-link" href="#content">Skip to content</a>
+<div class="shell">
+    {{ partial "sidebar.html" . }}
+    <main class="main" id="content">
+        {{ partial "topbar.html" . }}
+        {{ block "main" . }}{{ end }}
+    </main>
+</div>
+{{ $js := resources.Get "js/theme.js" | js.Build (dict "minify" hugo.IsProduction) | fingerprint }}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
+</body>
+</html>

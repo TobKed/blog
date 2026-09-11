@@ -1,0 +1,62 @@
+{{- /* params.sidebar.subtitle is one <br><br>-separated string: the first chunk is
+       the mono tagline, the second sits next to the avatar, the rest follow. */ -}}
+{{- $parts := split (site.Params.sidebar.subtitle | default "") "<br><br>" -}}
+<aside class="side">
+    <div class="side__brand">
+        <div class="side__name">
+            <span class="side__mark">&#8593;&#8595;</span>
+            {{- /* One <h1> per page: the site name owns it on the index, the
+                   article title everywhere else - which is where pagefind and
+                   screen readers look for the page title. */ -}}
+            {{ if .IsHome }}
+                <h1 class="side__title"><a href="{{ site.Home.RelPermalink }}">{{ site.Title }}</a></h1>
+            {{ else }}
+                <p class="side__title"><a href="{{ site.Home.RelPermalink }}">{{ site.Title }}</a></p>
+            {{ end }}
+        </div>
+        {{ with index $parts 0 }}<p class="side__tagline">{{ . | plainify }}</p>{{ end }}
+    </div>
+
+    <div class="side__intro">
+        {{ with site.Params.sidebar.avatar }}
+            {{ with resources.Get . }}
+                <span class="side__avatar"><img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="{{ site.Title }}"></span>
+            {{ end }}
+        {{ end }}
+        {{ with after 1 $parts }}<p class="side__blurb">{{ (index . 0) | safeHTML }}</p>{{ end }}
+    </div>
+
+    {{ range after 2 $parts }}<p class="side__blurb">{{ . | safeHTML }}</p>{{ end }}
+
+    <nav class="side__nav">
+        {{ $page := . }}
+        {{ range site.Menus.main }}
+            {{ $active := or ($page.IsMenuCurrent "main" .) ($page.HasMenuCurrent "main" .) }}
+            {{ $active = or $active (eq $page.RelPermalink .URL) }}
+            <a href="{{ .URL }}" class="{{ if $active }}is-active{{ end }}"
+               {{ if $active }}aria-current="page"{{ end }}
+               {{ if .Params.newTab }}target="_blank" rel="noopener"{{ end }}>{{ .Name }}</a>
+        {{ end }}
+    </nav>
+
+    {{ with site.Menus.social }}
+        <div class="side__social">
+            {{ range . }}
+                <a href="{{ .URL }}" {{ if .Params.newTab }}target="_blank" rel="me noopener"{{ else }}rel="me"{{ end }}>{{ .Name }}</a>
+            {{ end }}
+        </div>
+    {{ end }}
+
+    <div class="side__foot">
+        <p class="side__colophon">
+            {{ with site.Params.footer.since }}&copy; {{ . }}&ndash;{{ now.Year }} {{ site.Title }}<br>{{ end }}
+            {{ with site.Params.footer.customText }}{{ . | safeHTML }}{{ end }}
+        </p>
+        <div class="side__toggles">
+            {{ if site.Params.colorScheme.toggle }}
+                <button class="btn" type="button" id="theme-toggle">Dark mode</button>
+            {{ end }}
+            <button class="btn" type="button" id="photos-toggle" aria-pressed="true">Photos on</button>
+        </div>
+    </div>
+</aside>

@@ -1,0 +1,9 @@
+{{ define "main" }}
+    <div class="plain">
+        <h1 class="plain__title">404</h1>
+        <p class="plain__sub">That page is not here.</p>
+        <div class="prose">
+            <p><a href="{{ site.Home.RelPermalink }}">Back to the index</a>{{ with site.GetPage "/archives" }}, or browse the <a href="{{ .RelPermalink }}">archives</a>{{ end }}.</p>
+        </div>
+    </div>
+{{ end }}

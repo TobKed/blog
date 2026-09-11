@@ -1,0 +1,38 @@
+{{ define "main" }}
+    {{ $posts := where site.RegularPages "Type" "in" site.Params.mainSections }}
+    {{ $paginator := .Paginate $posts }}
+    {{ $rows := $paginator.Pages }}
+    <div class="body">
+        <section class="stream">
+            {{ if eq $paginator.PageNumber 1 }}
+                {{ range first 1 $paginator.Pages }}
+                    {{ $cover := partial "cover-url.html" . }}
+                    {{ $link := .RelPermalink }}
+                    <article class="featured">
+                        <div class="kicker">
+                            {{ with .Params.categories }}<span class="kicker__badge">{{ index . 0 }}</span>{{ end }}
+                            <span>Latest</span>
+                            <span class="kicker__rule"></span>
+                            <span>{{ .Date.Format "01" }}</span>
+                        </div>
+                        {{ with $cover }}
+                            <a class="cover" href="{{ $link }}"><img src="{{ . }}" alt=""></a>
+                        {{ end }}
+                        <h2 class="featured__title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+                        {{ with .Summary }}<p class="featured__summary">{{ . | plainify }}</p>{{ end }}
+                        {{ partial "post-meta.html" . }}
+                    </article>
+                {{ end }}
+                {{ $rows = after 1 $paginator.Pages }}
+            {{ end }}
+
+            <div class="rows">
+                {{ range $rows }}{{ partial "post-row.html" . }}{{ end }}
+            </div>
+
+            {{ partial "pager.html" $paginator }}
+        </section>
+
+        {{ partial "rail.html" . }}
+    </div>
+{{ end }}

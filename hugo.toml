@@ -2,7 +2,7 @@ baseURL = 'https://blog.tobked.dev/'
 locale = 'en-us'
 defaultContentLanguage = 'en'
 title = 'ups and downs'
-theme = 'hugo-theme-stack'
+theme = 'ups-and-downs'
 
 # Monthly link posts are dated the last day of the month, so they sit in the
 # future for most of that month. Pelican published them anyway

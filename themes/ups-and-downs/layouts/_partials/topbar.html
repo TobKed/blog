@@ -1,0 +1,16 @@
+{{ $search := site.GetPage "/search" }}
+<div class="topbar">
+    {{ with $search }}
+        <form class="topbar__search" action="{{ .RelPermalink }}" method="get" role="search">
+            <span class="topbar__slash" aria-hidden="true">/</span>
+            <input id="site-search" type="search" name="q" placeholder="search posts, tags, years" aria-label="Search">
+        </form>
+    {{ else }}
+        <span></span>
+    {{ end }}
+    <span class="topbar__crumb">
+        {{- if .IsHome }}Index
+        {{- else if .IsPage }}{{ with .Params.categories }}{{ index . 0 }}{{ else }}{{ $.Title }}{{ end }}
+        {{- else }}{{ .Title }}{{ end -}}
+    </span>
+</div>
