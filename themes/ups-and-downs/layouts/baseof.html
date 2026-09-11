@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ site.Language.Lang }}"
       data-rail="{{ if eq site.Params.railPosition "below" }}below{{ else }}side{{ end }}"
+      data-photos="{{ if eq site.Params.photos "off" }}off{{ else }}on{{ end }}"
       {{ with site.Params.colorScheme.default }}{{ if ne . "auto" }}data-theme="{{ . }}"{{ end }}{{ end }}>
 <head>
     {{ partial "head.html" . }}

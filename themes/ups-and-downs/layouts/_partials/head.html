@@ -31,7 +31,8 @@
     (function () {
         var t = localStorage.getItem('theme');
         if (t) document.documentElement.setAttribute('data-theme', t);
-        if (localStorage.getItem('photos') === 'off') document.documentElement.setAttribute('data-photos', 'off');
+        var p = localStorage.getItem('photos');
+        if (p) document.documentElement.setAttribute('data-photos', p);
     })();
 </script>
 

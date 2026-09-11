@@ -11,7 +11,7 @@
             <span>{{ .Date.Format "01" }}</span>
         </div>
 
-        {{ with $cover }}<div class="cover"><img src="{{ . }}" alt=""></div>{{ end }}
+        {{ with $cover }}<div class="cover"><img src="{{ . }}" alt="" loading="lazy"></div>{{ end }}
 
         <h1 class="post__title" data-pagefind-meta="title">{{ .Title }}</h1>
         {{ with .Params.summary }}<p class="post__lead">{{ . }}</p>{{ end }}

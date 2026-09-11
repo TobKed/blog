@@ -56,7 +56,8 @@
             {{ if site.Params.colorScheme.toggle }}
                 <button class="btn" type="button" id="theme-toggle">Dark mode</button>
             {{ end }}
-            <button class="btn" type="button" id="photos-toggle" aria-pressed="true">Photos on</button>
+            {{ $photosOn := ne site.Params.photos "off" }}
+            <button class="btn" type="button" id="photos-toggle" aria-pressed="{{ $photosOn }}">Photos {{ if $photosOn }}on{{ else }}off{{ end }}</button>
         </div>
     </div>
 </aside>

@@ -38,6 +38,9 @@ path = '{/post/**,/pages/**}'
 mainSections = ["post"]
 # Where the archives/categories/tags rail sits: "side" or "below" the posts.
 railPosition = "side"
+# Cover images and thumbnails: "on" or "off". Readers can flip it with the
+# Photos button; "off" means the images are never downloaded.
+photos = "on"
 rssFullContent = true
 description = "Tobiasz Kedzierski's Blog"
 

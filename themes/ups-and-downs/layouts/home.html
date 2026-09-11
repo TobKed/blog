@@ -16,7 +16,7 @@
                             <span>{{ .Date.Format "01" }}</span>
                         </div>
                         {{ with $cover }}
-                            <a class="cover" href="{{ $link }}"><img src="{{ . }}" alt=""></a>
+                            <a class="cover" href="{{ $link }}"><img src="{{ . }}" alt="" loading="lazy"></a>
                         {{ end }}
                         <h2 class="featured__title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
                         {{ with .Summary }}<p class="featured__summary">{{ . | plainify }}</p>{{ end }}
