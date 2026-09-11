@@ -62,20 +62,20 @@ enabled = false
 #   toggle   whether the sidebar shows a button for it; a reader who presses it
 #            has their choice remembered in their browser, which then wins
 [params.colorScheme]
-default = "auto"    # "auto" follows the operating system, or force "light" / "dark"
+default = "auto" # "auto" follows the operating system, or force "light" / "dark"
 toggle = true
 
 [params.coverImages]
-default = "shown"   # "shown" or "hidden"; hidden images are never downloaded
+default = "hidden" # "shown" or "hidden"; hidden images are never downloaded
 toggle = true
 
 [params.sidebarIndex]
-default = "below"   # archives/categories/tags "side" of the posts, or "below" them
-toggle = true
+default = "below" # archives/categories/tags "side" of the posts, or "below" them
+toggle = false
 
 [params.postContents]
-default = "inline"  # a post's Contents list "inline" in the post, or at its "side"
-toggle = true       # params.article.toc = false drops the list altogether
+default = "side" # a post's Contents list "inline" in the post, or at its "side"
+toggle = false   # params.article.toc = false drops the list altogether
 
 [params.comments]
 enabled = false
