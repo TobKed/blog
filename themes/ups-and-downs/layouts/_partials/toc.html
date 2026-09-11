@@ -1,0 +1,23 @@
+{{- /* The design's numbered Contents list.
+
+Context:
+  page    Page to read the section list from.
+  variant "inline" (between rules inside the post) or "side" (sticky rail).
+
+A post renders both variants and CSS shows whichever data-toc selects, so the
+sidebar's Contents button can switch between them without a reload.
+*/ -}}
+
+{{- with partial "toc-headings.html" .page }}
+    <nav class="toc toc--{{ $.variant }}" aria-label="Contents" data-pagefind-ignore>
+        <span class="toc__label">Contents</span>
+        <span class="toc__list">
+            {{- range $i, $h := . }}
+                <a href="#{{ $h.ID }}">
+                    <span class="toc__n">{{ printf "%02d" (add $i 1) }}</span>
+                    <span>{{ $h.Title }}</span>
+                </a>
+            {{- end }}
+        </span>
+    </nav>
+{{- end -}}

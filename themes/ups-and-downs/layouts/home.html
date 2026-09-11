@@ -1,0 +1,21 @@
+{{ define "main" }}
+    {{ $paginator := .Paginate (where site.RegularPages "Section" "in" site.MainSections) }}
+    {{ $rows := $paginator.Pages }}
+    <div class="body">
+        <section class="stream">
+            {{ if and (eq $paginator.PageNumber 1) $paginator.Pages }}
+                {{ partial "post-featured.html" (index $paginator.Pages 0) }}
+                {{ $rows = after 1 $paginator.Pages }}
+            {{ end }}
+
+            <div class="rows">
+                {{ range $rows }}{{ partial "post-row.html" . }}{{ end }}
+            </div>
+
+            {{ partial "pager.html" $paginator }}
+        </section>
+
+        {{/* Identical on every page; give it a variant if it ever depends on one. */}}
+        {{ partialCached "rail.html" . }}
+    </div>
+{{ end }}

@@ -1,0 +1,11 @@
+{{- /* The flat list of sections the Contents lists, for a page.
+
+       .Fragments.Headings ignores markup.tableOfContents startLevel and hands
+       back the heading tree, so a post written as one <h1> wrapper plus <h2>
+       sections arrives as a single root. Descend through that wrapper; anything
+       else is already the list we want. */ -}}
+{{- $headings := .Fragments.Headings -}}
+{{- if and (eq (len $headings) 1) (index $headings 0).Headings -}}
+    {{- $headings = (index $headings 0).Headings -}}
+{{- end -}}
+{{- return $headings -}}

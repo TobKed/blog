@@ -1,0 +1,51 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} · {{ site.Title }}{{ end }}</title>
+<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Summary }}{{ . | plainify | truncate 160 }}{{ else }}{{ site.Params.description }}{{ end }}{{ end }}">
+<link rel="canonical" href="{{ .Permalink }}">
+
+{{ range .AlternativeOutputFormats -}}
+    <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink }}" title="{{ site.Title }}">
+{{ end -}}
+{{ if not .IsHome }}{{ range site.Home.AlternativeOutputFormats -}}
+    <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink }}" title="{{ site.Title }}">
+{{ end }}{{ end -}}
+
+{{ with partial "cover-url.html" . }}<meta property="og:image" content="{{ . | absURL }}">{{ end }}
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:title" content="{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }}{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+{{ range slice "css/main.css" "css/syntax.css" }}
+    {{- with resources.Get . }}{{ $css := . | minify | fingerprint }}
+        <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+    {{- end }}
+{{- end }}
+
+{{ with resources.Get "img/favicon.png" }}<link rel="icon" href="{{ .RelPermalink }}">{{ end }}
+
+{{- /* A reader's stored choice only wins where the sidebar still offers the
+       button, so switching a toggle off hands control back to the config.
+       These names are the data-* attributes baseof.html sets. */ -}}
+{{- $restore := slice -}}
+{{- if site.Params.coverImages.toggle }}{{ $restore = $restore | append "photos" }}{{ end -}}
+{{- if site.Params.sidebarIndex.toggle }}{{ $restore = $restore | append "rail" }}{{ end -}}
+{{- if site.Params.postContents.toggle }}{{ $restore = $restore | append "toc" }}{{ end }}
+<script>
+    (function () {
+        var d = document.documentElement;
+        var t = localStorage.getItem('theme');
+        if (t) d.setAttribute('data-theme', t);
+        {{ $restore | jsonify | safeJS }}.forEach(function (k) {
+            var v = localStorage.getItem(k);
+            if (v) d.setAttribute('data-' + k, v);
+        });
+    })();
+</script>
+
+{{ template "_internal/google_analytics.html" . }}

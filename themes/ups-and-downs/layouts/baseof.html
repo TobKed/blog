@@ -1,0 +1,32 @@
+{{- /* The theme's three layout switches. Each comes from a params table whose
+       `default` is set below and whose `toggle` puts a button in the sidebar:
+
+         params.sidebarIndex   -> data-rail     "side"   | "below"
+         params.coverImages    -> data-photos   "on"     | "off"
+         params.postContents   -> data-toc      "inline" | "side"
+
+       CSS reads the attributes, head.html restores a reader's stored override
+       before first paint, and theme.js flips them from the sidebar buttons. */ -}}
+{{- $rail := cond (eq site.Params.sidebarIndex.default "below") "below" "side" -}}
+{{- $photos := cond (eq site.Params.coverImages.default "hidden") "off" "on" -}}
+{{- $toc := cond (eq site.Params.postContents.default "side") "side" "inline" -}}
+<!DOCTYPE html>
+<html lang="{{ site.Language.Lang }}"
+      data-rail="{{ $rail }}" data-photos="{{ $photos }}" data-toc="{{ $toc }}"
+      {{- with site.Params.colorScheme.default }}{{ if ne . "auto" }} data-theme="{{ . }}"{{ end }}{{ end }}>
+<head>
+    {{ partial "head.html" . }}
+</head>
+<body>
+<a class="skip-link" href="#content">Skip to content</a>
+<div class="shell">
+    {{ partial "sidebar.html" . }}
+    <main class="main" id="content">
+        {{ partial "topbar.html" . }}
+        {{ block "main" . }}{{ end }}
+    </main>
+</div>
+{{ $js := resources.Get "js/theme.js" | minify | fingerprint }}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{{ define "main" }}
+    <div class="plain">
+        <h1 class="plain__title">{{ .Title }}</h1>
+        {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
+        <div id="search" class="pagefind-ui"></div>
+        <noscript><p class="search-fallback">Search needs JavaScript.</p></noscript>
+    </div>
+
+    {{/* The index is built by `npx pagefind` after the Hugo build (see the Makefile
+         and CI), so it only exists in a published build - not under `hugo server`. */}}
+    <link href="{{ "_pagefind/pagefind-ui.css" | relURL }}" rel="stylesheet">
+    <script src="{{ "_pagefind/pagefind-ui.js" | relURL }}"
+            onerror="document.getElementById('search').innerHTML='<p class=\'search-fallback\'>No search index in this build. Run <code>make preview</code> to try search locally.</p>'"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', function () {
+            if (typeof PagefindUI === 'undefined') return;
+            var ui = new PagefindUI({ element: '#search', showImages: false, showSubResults: true });
+            var q = new URLSearchParams(location.search).get('q');
+            if (q) ui.triggerSearch(q);
+        });
+    </script>
+{{ end }}

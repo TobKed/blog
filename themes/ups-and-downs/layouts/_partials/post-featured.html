@@ -1,0 +1,16 @@
+{{- /* The lead post at the top of page one of the index. Context: a Page. */ -}}
+{{ $cover := partial "cover-url.html" . }}
+<article class="featured">
+    <div class="kicker">
+        {{ with .Params.categories }}<span class="kicker__badge">{{ index . 0 }}</span>{{ end }}
+        <span>Latest</span>
+        <span class="kicker__rule"></span>
+        <span>{{ .Date.Format "01" }}</span>
+    </div>
+    {{ with $cover }}
+        <a class="cover" href="{{ $.RelPermalink }}"><img src="{{ . }}" alt="" loading="lazy"></a>
+    {{ end }}
+    <h2 class="featured__title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+    {{ with .Summary }}<p class="featured__summary">{{ . | plainify }}</p>{{ end }}
+    {{ partial "post-meta.html" . }}
+</article>

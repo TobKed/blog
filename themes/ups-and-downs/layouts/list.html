@@ -1,0 +1,21 @@
+{{ define "main" }}
+    {{ $paginator := .Paginate .Pages }}
+    <div class="body">
+        <section class="stream">
+            <header class="stream__head">
+                <h1 class="plain__title">{{ .Title }}</h1>
+                <p class="plain__sub">
+                    {{ len .Pages }} post{{ if ne (len .Pages) 1 }}s{{ end }}
+                    {{ with .Params.description }}&middot; {{ . }}{{ end }}
+                </p>
+            </header>
+            {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
+            <div class="rows">
+                {{ range $paginator.Pages }}{{ partial "post-row.html" . }}{{ end }}
+            </div>
+            {{ partial "pager.html" $paginator }}
+        </section>
+        {{/* Identical on every page; give it a variant if it ever depends on one. */}}
+        {{ partialCached "rail.html" . }}
+    </div>
+{{ end }}

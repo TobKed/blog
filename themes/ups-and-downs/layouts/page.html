@@ -1,0 +1,11 @@
+{{ define "main" }}
+    <article class="plain" data-pagefind-body>
+        <h1 class="plain__title" data-pagefind-meta="title">{{ .Title }}</h1>
+        {{ with .Params.summary }}<p class="plain__sub">{{ . }}</p>{{ end }}
+        {{ if and site.Params.article.toc (partial "toc-headings.html" .) }}
+            {{ partial "toc.html" (dict "page" . "variant" "inline") }}
+        {{ end }}
+        <div class="post__gap"></div>
+        <div class="prose">{{ .Content }}</div>
+    </article>
+{{ end }}

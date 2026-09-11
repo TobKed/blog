@@ -1,0 +1,17 @@
+/* Chroma classes (hugo.toml sets markup.highlight.noClasses = false) mapped onto
+   the theme tokens, so highlighting follows light/dark without a second file. */
+.chroma { background: none; }
+.chroma .c, .chroma .ch, .chroma .cm, .chroma .c1, .chroma .cs, .chroma .cp, .chroma .cpf { color: var(--ink-3); font-style: italic; }
+.chroma .k, .chroma .kc, .chroma .kd, .chroma .kn, .chroma .kp, .chroma .kr, .chroma .kt, .chroma .ow { color: var(--alt); }
+.chroma .nf, .chroma .nc, .chroma .nd, .chroma .ne, .chroma .nb, .chroma .bp { color: var(--acc); }
+.chroma .s, .chroma .sa, .chroma .sb, .chroma .sc, .chroma .dl, .chroma .sd, .chroma .s2, .chroma .se,
+.chroma .sh, .chroma .si, .chroma .sx, .chroma .sr, .chroma .s1, .chroma .ss { color: var(--ink-2); }
+.chroma .m, .chroma .mb, .chroma .mf, .chroma .mh, .chroma .mi, .chroma .il, .chroma .mo { color: var(--ink-2); }
+.chroma .na, .chroma .nv, .chroma .vc, .chroma .vg, .chroma .vi, .chroma .nt { color: var(--ink); }
+.chroma .err { color: var(--ink); background: var(--acc-soft); }
+.chroma .gd { color: var(--ink-2); }
+.chroma .gi { color: var(--acc); }
+.chroma .ge { font-style: italic; }
+.chroma .gs { font-weight: 600; }
+.chroma .lnt, .chroma .ln { color: var(--ink-3); }
+.chroma .hl { background: var(--acc-soft); }

@@ -1,0 +1,9 @@
+{{- $url := "" -}}
+{{- with .Params.image -}}
+    {{- with $.Resources.GetMatch . -}}
+        {{- $url = .RelPermalink -}}
+    {{- else -}}
+        {{- $url = . | relURL -}}
+    {{- end -}}
+{{- end -}}
+{{- return $url -}}

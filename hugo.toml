@@ -2,7 +2,7 @@ baseURL = 'https://blog.tobked.dev/'
 locale = 'en-us'
 defaultContentLanguage = 'en'
 title = 'ups and downs'
-theme = 'hugo-theme-stack'
+theme = 'ups-and-downs'
 
 # Monthly link posts are dated the last day of the month, so they sit in the
 # future for most of that month. Pelican published them anyway
@@ -57,9 +57,25 @@ showTags = true
 [params.article.license]
 enabled = false
 
+# The four layout choices the theme offers. Each is one block:
+#   default  what a first-time visitor sees
+#   toggle   whether the sidebar shows a button for it; a reader who presses it
+#            has their choice remembered in their browser, which then wins
 [params.colorScheme]
+default = "auto"    # "auto" follows the operating system, or force "light" / "dark"
 toggle = true
-default = "auto"
+
+[params.coverImages]
+default = "shown"   # "shown" or "hidden"; hidden images are never downloaded
+toggle = true
+
+[params.sidebarIndex]
+default = "below"   # archives/categories/tags "side" of the posts, or "below" them
+toggle = true
+
+[params.postContents]
+default = "inline"  # a post's Contents list "inline" in the post, or at its "side"
+toggle = true       # params.article.toc = false drops the list altogether
 
 [params.comments]
 enabled = false

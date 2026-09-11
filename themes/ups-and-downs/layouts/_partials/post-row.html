@@ -1,0 +1,15 @@
+<a class="row" href="{{ .RelPermalink }}">
+    <span class="row__num">{{ .Date.Format "01" }}</span>
+    <span class="row__thumb">
+        {{ with partial "cover-url.html" . }}<img src="{{ . }}" alt="" loading="lazy">{{ end }}
+    </span>
+    <span class="row__text">
+        {{ with .Params.categories }}<span class="row__cat">{{ index . 0 }}</span>{{ end }}
+        <span class="row__title">{{ .Title }}</span>
+        <span class="row__blurb">{{ .Summary | plainify | truncate 180 }}</span>
+        <span class="row__meta">
+            {{ .Date.Format "Mon 02 Jan 2006" }}
+            {{ if site.Params.article.readingTime }}&middot; {{ .ReadingTime }} min read{{ end }}
+        </span>
+    </span>
+</a>
