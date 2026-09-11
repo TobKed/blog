@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ site.Language.Lang }}"
+      data-rail="{{ if eq site.Params.railPosition "below" }}below{{ else }}side{{ end }}"
       {{ with site.Params.colorScheme.default }}{{ if ne . "auto" }}data-theme="{{ . }}"{{ end }}{{ end }}>
 <head>
     {{ partial "head.html" . }}

@@ -36,6 +36,8 @@ path = '{/post/**,/pages/**}'
 
 [params]
 mainSections = ["post"]
+# Where the archives/categories/tags rail sits: "side" or "below" the posts.
+railPosition = "side"
 rssFullContent = true
 description = "Tobiasz Kedzierski's Blog"
 
