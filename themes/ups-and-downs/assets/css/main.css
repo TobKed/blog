@@ -104,6 +104,23 @@ img { max-width: 100%; height: auto; }
   gap: 28px;
 }
 
+/* Everything the narrow-screen menu button collapses. Wide screens never hide
+   it, so it just carries the sidebar's own column layout. */
+.side__body {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  flex: 1;
+  min-height: 0;
+}
+
+/* Shown only below 980px - see the media query at the end of this file. */
+.side__mhead { display: none; }
+.side__mbrand { display: flex; align-items: baseline; gap: 8px; }
+.side__mtitle { font-size: 20px; font-weight: 600; letter-spacing: -0.015em; }
+.side__menu { display: flex; align-items: center; gap: 8px; }
+.side__mglyph { font-size: 9px; }
+
 .side__brand { display: flex; flex-direction: column; gap: 14px; }
 .side__name { display: flex; align-items: baseline; gap: 10px; }
 .side__mark { font-family: var(--mono); font-size: 11px; letter-spacing: 0.14em; color: var(--acc); }
@@ -197,7 +214,8 @@ img { max-width: 100%; height: auto; }
   border-radius: 2px;
 }
 .btn:hover { border-color: var(--acc); color: var(--acc); }
-.btn[aria-pressed="true"] { border-color: var(--acc); color: var(--acc); }
+.btn[aria-pressed="true"],
+.btn[aria-expanded="true"] { border-color: var(--acc); color: var(--acc); }
 
 /* ---------- main + topbar ---------- */
 
@@ -690,13 +708,48 @@ img { max-width: 100%; height: auto; }
 }
 
 @media (max-width: 980px) {
+  /* The sidebar stops being a column and becomes a sticky bar plus a panel the
+     menu button opens, so a page starts on its own content. --mhead is the bar's
+     height, which the topbar below has to stick clear of. */
+  :root { --mhead: 53px; }
+
   .shell { grid-template-columns: minmax(0, 1fr); }
   .side {
     position: static;
     min-height: 0;
     border-right: none;
+    padding: 0;
+    gap: 0;
+    z-index: 20;
+  }
+  .side__mhead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    height: var(--mhead);
+    padding: 0 20px;
+    position: sticky;
+    top: 0;
+    background: var(--bg);
     border-bottom: 1px solid var(--rule);
   }
+  .side__body { display: none; }
+  [data-menu="open"] .side__body {
+    display: flex;
+    gap: 22px;
+    padding: 20px 20px 26px;
+    border-bottom: 1px solid var(--rule);
+  }
+  /* Repeated by .side__mhead, or too long to stand between it and the nav. */
+  .side__brand, .side__intro, .side__blurb { display: none; }
+
+  .topbar { top: var(--mhead); padding: 14px 20px; }
+  .main { padding-bottom: 56px; }
+  .stream { padding: 0 20px; }
+  .featured { padding: 26px 0 32px; }
+  .post, .plain { padding: 26px 20px 0; }
+
   .row { grid-template-columns: 92px minmax(0, 1fr); gap: 16px; }
   [data-photos="off"] .row { grid-template-columns: minmax(0, 1fr); }
   .row__num { display: none; }
@@ -709,12 +762,9 @@ img { max-width: 100%; height: auto; }
   .row { grid-template-columns: minmax(0, 1fr); }
   .row__thumb { display: none; }
   .rail { padding: 28px 20px; }
-  .stream { padding: 0 20px; }
-  .topbar { padding: 14px 20px; }
   /* The label is decorative; keeping it would push the topbar - and with it the
      whole main column - wider than the viewport. */
   .topbar__crumb { display: none; }
-  .post, .plain { padding: 28px 20px 0; }
   .adjacent { grid-template-columns: 1fr; }
   .adjacent a.is-next { text-align: left; }
   .archive-list li { grid-template-columns: minmax(0, 1fr); gap: 2px; }
