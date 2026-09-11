@@ -116,7 +116,7 @@ ______________________________________________________________________
 
 > So if you're feeling overwhelmed, destabilized, simultaneously more productive and less happy, know that you're not alone.
 
-### [/hallmak](https://www.usehallmark.com/)
+### [/hallmark](https://www.usehallmark.com/)
 
 > The anti-slop design skill for Claude Code, Cursor, and Codex. Twenty themes with real structural variety, and a 57-gate check before anything ships.
 
