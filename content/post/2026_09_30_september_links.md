@@ -79,6 +79,12 @@ ______________________________________________________________________
 
 ## Tools
 
+### [GitHub - securo-finance/securo](https://github.com/securo-finance/securo)
+
+#### AI generated summary
+
+Securo is an open-source, privacy-first personal finance manager designed to run on your own infrastructure. It offers features like multi-account management, auto-categorization, recurring transactions, bank syncing via various providers, and optional self-hosted AI agents for interacting with your financial data.
+
 ### [Headscale](https://headscale.net/stable/)
 
 > "Headscale's goal is to provide self-hosters and hobbyists with an open-source server they can use for their projects and labs."
