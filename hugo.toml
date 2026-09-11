@@ -51,7 +51,7 @@ description = "Tobiasz Kedzierski's Blog"
 theme = true
 photos = true
 rail = false
-contents = false
+toc = false
 
 [params.footer]
 since = 2018

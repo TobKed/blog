@@ -1,28 +1,10 @@
 {{ define "main" }}
-    {{ $posts := where site.RegularPages "Type" "in" site.Params.mainSections }}
-    {{ $paginator := .Paginate $posts }}
+    {{ $paginator := .Paginate (where site.RegularPages "Section" "in" site.MainSections) }}
     {{ $rows := $paginator.Pages }}
     <div class="body">
         <section class="stream">
-            {{ if eq $paginator.PageNumber 1 }}
-                {{ range first 1 $paginator.Pages }}
-                    {{ $cover := partial "cover-url.html" . }}
-                    {{ $link := .RelPermalink }}
-                    <article class="featured">
-                        <div class="kicker">
-                            {{ with .Params.categories }}<span class="kicker__badge">{{ index . 0 }}</span>{{ end }}
-                            <span>Latest</span>
-                            <span class="kicker__rule"></span>
-                            <span>{{ .Date.Format "01" }}</span>
-                        </div>
-                        {{ with $cover }}
-                            <a class="cover" href="{{ $link }}"><img src="{{ . }}" alt="" loading="lazy"></a>
-                        {{ end }}
-                        <h2 class="featured__title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-                        {{ with .Summary }}<p class="featured__summary">{{ . | plainify }}</p>{{ end }}
-                        {{ partial "post-meta.html" . }}
-                    </article>
-                {{ end }}
+            {{ if and (eq $paginator.PageNumber 1) $paginator.Pages }}
+                {{ partial "post-featured.html" (index $paginator.Pages 0) }}
                 {{ $rows = after 1 $paginator.Pages }}
             {{ end }}
 
@@ -33,6 +15,7 @@
             {{ partial "pager.html" $paginator }}
         </section>
 
-        {{ partial "rail.html" . }}
+        {{/* Identical on every page; give it a variant if it ever depends on one. */}}
+        {{ partialCached "rail.html" . }}
     </div>
 {{ end }}

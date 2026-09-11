@@ -15,6 +15,7 @@
             </div>
             {{ partial "pager.html" $paginator }}
         </section>
-        {{ partial "rail.html" . }}
+        {{/* Identical on every page; give it a variant if it ever depends on one. */}}
+        {{ partialCached "rail.html" . }}
     </div>
 {{ end }}

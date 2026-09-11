@@ -65,7 +65,7 @@
                 {{ $below := eq site.Params.railPosition "below" }}
                 <button class="btn" type="button" id="rail-toggle" aria-pressed="{{ $below }}">Index {{ if $below }}below{{ else }}at side{{ end }}</button>
             {{ end }}
-            {{ if site.Params.toggles.contents }}
+            {{ if site.Params.toggles.toc }}
                 {{ $side := eq site.Params.tocPosition "side" }}
                 <button class="btn" type="button" id="toc-toggle" aria-pressed="{{ $side }}">Contents {{ if $side }}at side{{ else }}in post{{ end }}</button>
             {{ end }}

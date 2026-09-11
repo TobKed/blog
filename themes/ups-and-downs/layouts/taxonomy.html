@@ -4,7 +4,7 @@
         <p class="plain__sub">{{ len .Pages }} {{ .Data.Plural }}</p>
         <div class="term-grid">
             {{ range .Pages.ByTitle }}
-                <a class="chip" href="{{ .RelPermalink }}">{{ .Title }} <span style="color:var(--ink-3)">{{ len .Pages }}</span></a>
+                <a class="chip" href="{{ .RelPermalink }}">{{ .Title }} <span class="chip__count">{{ len .Pages }}</span></a>
             {{ end }}
         </div>
         {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}

@@ -1,4 +1,4 @@
-{{ $posts := where site.RegularPages "Type" "in" site.Params.mainSections }}
+{{ $posts := where site.RegularPages "Section" "in" site.MainSections }}
 {{ $archives := site.GetPage "/archives" }}
 <aside class="rail">
     {{ with $posts.GroupByDate "2006" }}

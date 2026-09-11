@@ -1,32 +1,23 @@
-{{- /* The design's numbered Contents list. Takes a dict:
-         page    - the page to read headings from
-         variant - "inline" (inside the post) or "side" (sticky rail)
-       */ -}}
-{{- $headings := partial "toc-headings.html" .page -}}
-{{- if $headings -}}
-    {{- if eq .variant "side" -}}
-        <aside class="toc-side">
-            <h2>Contents</h2>
-            <nav>
-                {{ range $i, $h := $headings }}
-                    <a href="#{{ $h.ID }}">
-                        <span class="toc__n">{{ printf "%02d" (add $i 1) }}</span>
-                        <span>{{ $h.Title }}</span>
-                    </a>
-                {{ end }}
-            </nav>
-        </aside>
-    {{- else -}}
-        <nav class="toc-inline" data-pagefind-ignore>
-            <span class="toc-inline__label">Contents</span>
-            <span class="toc-inline__list">
-                {{ range $i, $h := $headings }}
-                    <a href="#{{ $h.ID }}">
-                        <span class="toc__n">{{ printf "%02d" (add $i 1) }}</span>
-                        <span>{{ $h.Title }}</span>
-                    </a>
-                {{ end }}
-            </span>
-        </nav>
-    {{- end -}}
+{{- /* The design's numbered Contents list.
+
+Context:
+  page    Page to read the section list from.
+  variant "inline" (between rules inside the post) or "side" (sticky rail).
+
+A post renders both variants and CSS shows whichever data-toc selects, so the
+sidebar's Contents button can switch between them without a reload.
+*/ -}}
+
+{{- with partial "toc-headings.html" .page }}
+    <nav class="toc toc--{{ $.variant }}" aria-label="Contents" data-pagefind-ignore>
+        <span class="toc__label">Contents</span>
+        <span class="toc__list">
+            {{- range $i, $h := . }}
+                <a href="#{{ $h.ID }}">
+                    <span class="toc__n">{{ printf "%02d" (add $i 1) }}</span>
+                    <span>{{ $h.Title }}</span>
+                </a>
+            {{- end }}
+        </span>
+    </nav>
 {{- end -}}

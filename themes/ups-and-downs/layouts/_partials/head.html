@@ -21,19 +21,19 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
-{{ $css := resources.Get "css/main.css" | minify | fingerprint }}
-<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
-{{ with resources.Get "css/syntax.css" }}{{ $s := . | minify | fingerprint }}<link rel="stylesheet" href="{{ $s.RelPermalink }}" integrity="{{ $s.Data.Integrity }}">{{ end }}
+{{ range slice "css/main.css" "css/syntax.css" }}
+    {{- with resources.Get . }}{{ $css := . | minify | fingerprint }}
+        <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+    {{- end }}
+{{- end }}
 
 {{ with resources.Get "img/favicon.png" }}<link rel="icon" href="{{ .RelPermalink }}">{{ end }}
 
 {{- /* A stored reader choice only wins where params.toggles still offers the
        button; disabling a toggle hands control back to the config. */ -}}
 {{- $keys := slice -}}
-{{- range slice "photos" "rail" "contents" -}}
-    {{- if index site.Params.toggles . -}}
-        {{- $keys = $keys | append (cond (eq . "contents") "toc" .) -}}
-    {{- end -}}
+{{- range slice "photos" "rail" "toc" -}}
+    {{- if index site.Params.toggles . }}{{ $keys = $keys | append . }}{{ end -}}
 {{- end }}
 <script>
     (function () {

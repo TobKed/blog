@@ -1,5 +1,5 @@
 {{ define "main" }}
-    {{ $posts := where site.RegularPages "Type" "in" site.Params.mainSections }}
+    {{ $posts := where site.RegularPages "Section" "in" site.MainSections }}
     <div class="plain">
         <h1 class="plain__title">{{ .Title }}</h1>
         <p class="plain__sub">{{ len $posts }} posts</p>

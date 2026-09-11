@@ -1,0 +1,21 @@
+# Theme defaults. Hugo merges these under the site's own configuration, so a
+# site only has to set what it wants to change.
+
+[params]
+railPosition = "side"
+photos = "on"
+tocPosition = "inline"
+
+[params.article]
+toc = true
+readingTime = true
+headingAnchor = true
+
+[params.colorScheme]
+default = "auto"
+
+[params.toggles]
+theme = true
+photos = true
+rail = false
+toc = false

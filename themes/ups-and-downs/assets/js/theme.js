@@ -48,7 +48,7 @@
   });
 
   // Highlight the section the reader is in, as the design's side Contents shows.
-  var links = [].slice.call(document.querySelectorAll('.toc-side nav a'));
+  var links = [].slice.call(document.querySelectorAll('.toc--side a'));
   if (links.length) {
     var targets = links.map(function (a) {
       return document.getElementById(decodeURIComponent(a.getAttribute('href').slice(1)));

@@ -1,9 +1,13 @@
+{{- /* The data-* attributes are the theme's layout switches: CSS reads them,
+       head.html restores any reader override before first paint, and theme.js
+       flips them from the sidebar buttons. */ -}}
+{{- $rail := cond (eq site.Params.railPosition "below") "below" "side" -}}
+{{- $photos := cond (eq site.Params.photos "off") "off" "on" -}}
+{{- $toc := cond (eq site.Params.tocPosition "side") "side" "inline" -}}
 <!DOCTYPE html>
 <html lang="{{ site.Language.Lang }}"
-      data-rail="{{ if eq site.Params.railPosition "below" }}below{{ else }}side{{ end }}"
-      data-photos="{{ if eq site.Params.photos "off" }}off{{ else }}on{{ end }}"
-      data-toc="{{ if eq site.Params.tocPosition "side" }}side{{ else }}inline{{ end }}"
-      {{ with site.Params.colorScheme.default }}{{ if ne . "auto" }}data-theme="{{ . }}"{{ end }}{{ end }}>
+      data-rail="{{ $rail }}" data-photos="{{ $photos }}" data-toc="{{ $toc }}"
+      {{- with site.Params.colorScheme.default }}{{ if ne . "auto" }} data-theme="{{ . }}"{{ end }}{{ end }}>
 <head>
     {{ partial "head.html" . }}
 </head>
@@ -16,7 +20,7 @@
         {{ block "main" . }}{{ end }}
     </main>
 </div>
-{{ $js := resources.Get "js/theme.js" | js.Build (dict "minify" hugo.IsProduction) | fingerprint }}
+{{ $js := resources.Get "js/theme.js" | minify | fingerprint }}
 <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
 </body>
 </html>
