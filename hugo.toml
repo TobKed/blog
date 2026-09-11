@@ -70,12 +70,12 @@ default = "shown"   # "shown" or "hidden"; hidden images are never downloaded
 toggle = true
 
 [params.sidebarIndex]
-default = "side"    # archives/categories/tags "side" of the posts, or "below" them
-toggle = false
+default = "below"   # archives/categories/tags "side" of the posts, or "below" them
+toggle = true
 
 [params.postContents]
 default = "inline"  # a post's Contents list "inline" in the post, or at its "side"
-toggle = false      # params.article.toc = false drops the list altogether
+toggle = true       # params.article.toc = false drops the list altogether
 
 [params.comments]
 enabled = false
