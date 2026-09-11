@@ -49,3 +49,7 @@ generate_post: ## generate a new post
 .PHONY: check_links
 check_links: ## report duplicated links across posts
 	$(PY) scripts/check_duplicate_links.py $(FILES)
+
+.PHONY: check_theme
+check_theme: ## theme regression checks against a running `make preview`
+	node scripts/check_mobile.mjs $(URL)
