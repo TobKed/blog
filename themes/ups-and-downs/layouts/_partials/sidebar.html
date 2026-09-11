@@ -52,12 +52,23 @@
             {{ with site.Params.footer.since }}&copy; {{ . }}&ndash;{{ now.Year }} {{ site.Title }}<br>{{ end }}
             {{ with site.Params.footer.customText }}{{ . | safeHTML }}{{ end }}
         </p>
+        {{- /* params.toggles decides which of these reader controls exist. */ -}}
         <div class="side__toggles">
-            {{ if site.Params.colorScheme.toggle }}
+            {{ if site.Params.toggles.theme }}
                 <button class="btn" type="button" id="theme-toggle">Dark mode</button>
             {{ end }}
-            {{ $photosOn := ne site.Params.photos "off" }}
-            <button class="btn" type="button" id="photos-toggle" aria-pressed="{{ $photosOn }}">Photos {{ if $photosOn }}on{{ else }}off{{ end }}</button>
+            {{ if site.Params.toggles.photos }}
+                {{ $on := ne site.Params.photos "off" }}
+                <button class="btn" type="button" id="photos-toggle" aria-pressed="{{ $on }}">Photos {{ if $on }}on{{ else }}off{{ end }}</button>
+            {{ end }}
+            {{ if site.Params.toggles.rail }}
+                {{ $below := eq site.Params.railPosition "below" }}
+                <button class="btn" type="button" id="rail-toggle" aria-pressed="{{ $below }}">Index {{ if $below }}below{{ else }}at side{{ end }}</button>
+            {{ end }}
+            {{ if site.Params.toggles.contents }}
+                {{ $side := eq site.Params.tocPosition "side" }}
+                <button class="btn" type="button" id="toc-toggle" aria-pressed="{{ $side }}">Contents {{ if $side }}at side{{ else }}in post{{ end }}</button>
+            {{ end }}
         </div>
     </div>
 </aside>

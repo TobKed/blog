@@ -21,20 +21,53 @@
     syncTheme();
   }
 
-  var photoBtn = document.getElementById('photos-toggle');
-  if (photoBtn) {
-    var syncPhotos = function () {
-      var on = root.getAttribute('data-photos') !== 'off';
-      photoBtn.textContent = on ? 'Photos on' : 'Photos off';
-      photoBtn.setAttribute('aria-pressed', String(on));
+  // Buttons that flip a data-* attribute on <html> and remember the choice.
+  // The matching restore-on-load lives inline in head.html, before first paint.
+  [
+    { id: 'photos-toggle', attr: 'data-photos', key: 'photos', on: 'on', off: 'off',
+      label: function (v) { return 'Photos ' + v; } },
+    { id: 'rail-toggle', attr: 'data-rail', key: 'rail', on: 'below', off: 'side',
+      label: function (v) { return v === 'below' ? 'Index below' : 'Index at side'; } },
+    { id: 'toc-toggle', attr: 'data-toc', key: 'toc', on: 'side', off: 'inline',
+      label: function (v) { return v === 'side' ? 'Contents at side' : 'Contents in post'; } }
+  ].forEach(function (t) {
+    var btn = document.getElementById(t.id);
+    if (!btn) return;
+    var sync = function () {
+      var v = root.getAttribute(t.attr);
+      btn.textContent = t.label(v);
+      btn.setAttribute('aria-pressed', String(v === t.on));
     };
-    photoBtn.addEventListener('click', function () {
-      var on = root.getAttribute('data-photos') === 'off';
-      root.setAttribute('data-photos', on ? 'on' : 'off');
-      localStorage.setItem('photos', on ? 'on' : 'off');
-      syncPhotos();
+    btn.addEventListener('click', function () {
+      var next = root.getAttribute(t.attr) === t.on ? t.off : t.on;
+      root.setAttribute(t.attr, next);
+      localStorage.setItem(t.key, next);
+      sync();
     });
-    syncPhotos();
+    sync();
+  });
+
+  // Highlight the section the reader is in, as the design's side Contents shows.
+  var links = [].slice.call(document.querySelectorAll('.toc-side nav a'));
+  if (links.length) {
+    var targets = links.map(function (a) {
+      return document.getElementById(decodeURIComponent(a.getAttribute('href').slice(1)));
+    });
+    var queued = false;
+    var spy = function () {
+      queued = false;
+      var i = 0;
+      for (var n = 0; n < targets.length; n++) {
+        if (targets[n] && targets[n].getBoundingClientRect().top <= 100) i = n;
+      }
+      links.forEach(function (a, n) { a.classList.toggle('is-current', n === i); });
+    };
+    addEventListener('scroll', function () {
+      if (queued) return;
+      queued = true;
+      requestAnimationFrame(spy);
+    }, { passive: true });
+    spy();
   }
 
   // The "/" glyph next to the search box advertises this shortcut.

@@ -27,12 +27,23 @@
 
 {{ with resources.Get "img/favicon.png" }}<link rel="icon" href="{{ .RelPermalink }}">{{ end }}
 
+{{- /* A stored reader choice only wins where params.toggles still offers the
+       button; disabling a toggle hands control back to the config. */ -}}
+{{- $keys := slice -}}
+{{- range slice "photos" "rail" "contents" -}}
+    {{- if index site.Params.toggles . -}}
+        {{- $keys = $keys | append (cond (eq . "contents") "toc" .) -}}
+    {{- end -}}
+{{- end }}
 <script>
     (function () {
+        var d = document.documentElement;
         var t = localStorage.getItem('theme');
-        if (t) document.documentElement.setAttribute('data-theme', t);
-        var p = localStorage.getItem('photos');
-        if (p) document.documentElement.setAttribute('data-photos', p);
+        if (t) d.setAttribute('data-theme', t);
+        {{ $keys | jsonify | safeJS }}.forEach(function (k) {
+            var v = localStorage.getItem(k);
+            if (v) d.setAttribute('data-' + k, v);
+        });
     })();
 </script>
 

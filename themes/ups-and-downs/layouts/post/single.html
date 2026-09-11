@@ -1,55 +1,54 @@
 {{ define "main" }}
     {{ $cover := partial "cover-url.html" . }}
-    <article class="post" data-pagefind-body>
-        <div class="kicker">
-            {{ with .Params.categories }}<span class="kicker__badge">{{ index . 0 }}</span>{{ end }}
-            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Mon 02 Jan 2006" }}</time>
-            {{ if site.Params.article.readingTime }}
-                <span class="meta__dot">&middot;</span><span>{{ .ReadingTime }} min read</span>
-            {{ end }}
-            <span class="kicker__rule"></span>
-            <span>{{ .Date.Format "01" }}</span>
-        </div>
-
-        {{ with $cover }}<div class="cover"><img src="{{ . }}" alt="" loading="lazy"></div>{{ end }}
-
-        <h1 class="post__title" data-pagefind-meta="title">{{ .Title }}</h1>
-        {{ with .Params.summary }}<p class="post__lead">{{ . }}</p>{{ end }}
-
-        {{ if and site.Params.article.toc .Fragments.Headings }}
-            <details class="toc" open>
-                <summary>Contents</summary>
-                <nav>{{ .TableOfContents }}</nav>
-            </details>
-        {{ end }}
-
-        <hr class="post__rule">
-
-        <div class="prose">{{ .Content }}</div>
-
-        {{ with .GetTerms "tags" }}
-            <div class="post__tags">
-                {{ range . }}<a class="chip" href="{{ .RelPermalink }}">#{{ .Title | lower }}</a>{{ end }}
+    {{ $toc := and site.Params.article.toc (partial "toc-headings.html" .) }}
+    <div class="postgrid">
+        {{ if $toc }}{{ partial "toc.html" (dict "page" . "variant" "side") }}{{ end }}
+        <article class="post" data-pagefind-body>
+            <div class="kicker">
+                {{ with .Params.categories }}<span class="kicker__badge">{{ index . 0 }}</span>{{ end }}
+                <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Mon 02 Jan 2006" }}</time>
+                {{ if site.Params.article.readingTime }}
+                    <span class="meta__dot">&middot;</span><span>{{ .ReadingTime }} min read</span>
+                {{ end }}
+                <span class="kicker__rule"></span>
+                <span>{{ .Date.Format "01" }}</span>
             </div>
-        {{ end }}
 
-        {{ $older := .PrevInSection }}
-        {{ $newer := .NextInSection }}
-        {{ if or $older $newer }}
-            <nav class="adjacent">
-                {{ with $older }}
-                    <a href="{{ .RelPermalink }}">
-                        <span class="adjacent__dir">&larr; Previous</span>
-                        <span class="adjacent__title">{{ .Title }}</span>
-                    </a>
-                {{ else }}<span></span>{{ end }}
-                {{ with $newer }}
-                    <a class="is-next" href="{{ .RelPermalink }}">
-                        <span class="adjacent__dir">Next &rarr;</span>
-                        <span class="adjacent__title">{{ .Title }}</span>
-                    </a>
-                {{ else }}<span></span>{{ end }}
-            </nav>
-        {{ end }}
-    </article>
+            {{ with $cover }}<div class="cover"><img src="{{ . }}" alt="" loading="lazy"></div>{{ end }}
+
+            <h1 class="post__title" data-pagefind-meta="title">{{ .Title }}</h1>
+            {{ with .Params.summary }}<p class="post__lead">{{ . }}</p>{{ end }}
+
+            {{ if $toc }}{{ partial "toc.html" (dict "page" . "variant" "inline") }}{{ end }}
+
+            <div class="post__gap"></div>
+
+            <div class="prose">{{ .Content }}</div>
+
+            {{ with .GetTerms "tags" }}
+                <div class="post__tags">
+                    {{ range . }}<a class="chip" href="{{ .RelPermalink }}">#{{ .Title | lower }}</a>{{ end }}
+                </div>
+            {{ end }}
+
+            {{ $older := .PrevInSection }}
+            {{ $newer := .NextInSection }}
+            {{ if or $older $newer }}
+                <nav class="adjacent">
+                    {{ with $older }}
+                        <a href="{{ .RelPermalink }}">
+                            <span class="adjacent__dir">&larr; Previous</span>
+                            <span class="adjacent__title">{{ .Title }}</span>
+                        </a>
+                    {{ else }}<span></span>{{ end }}
+                    {{ with $newer }}
+                        <a class="is-next" href="{{ .RelPermalink }}">
+                            <span class="adjacent__dir">Next &rarr;</span>
+                            <span class="adjacent__title">{{ .Title }}</span>
+                        </a>
+                    {{ else }}<span></span>{{ end }}
+                </nav>
+            {{ end }}
+        </article>
+    </div>
 {{ end }}

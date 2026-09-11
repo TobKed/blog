@@ -41,8 +41,17 @@ railPosition = "side"
 # Cover images and thumbnails: "on" or "off". Readers can flip it with the
 # Photos button; "off" means the images are never downloaded.
 photos = "on"
+# Where a post's Contents list sits: "inline" (in the post) or "side".
+tocPosition = "inline"
 rssFullContent = true
 description = "Tobiasz Kedzierski's Blog"
+
+# Which reader controls the sidebar shows.
+[params.toggles]
+theme = true
+photos = true
+rail = false
+contents = false
 
 [params.footer]
 since = 2018
