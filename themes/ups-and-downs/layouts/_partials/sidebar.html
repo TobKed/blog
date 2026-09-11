@@ -40,10 +40,10 @@
                     <span class="side__avatar"><img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="{{ site.Title }}"></span>
                 {{ end }}
             {{ end }}
-            {{ with after 1 $parts }}<p class="side__blurb">{{ (index . 0) | safeHTML }}</p>{{ end }}
+            {{ if gt (len $parts) 1 }}<p class="side__blurb">{{ (index $parts 1) | safeHTML }}</p>{{ end }}
         </div>
 
-        {{ range after 2 $parts }}<p class="side__blurb">{{ . | safeHTML }}</p>{{ end }}
+        {{ if gt (len $parts) 2 }}{{ range after 2 $parts }}<p class="side__blurb">{{ . | safeHTML }}</p>{{ end }}{{ end }}
 
         <nav class="side__nav">
             {{ $page := . }}

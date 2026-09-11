@@ -1,9 +1,14 @@
 {{ define "main" }}
+    {{- /* Terms can exist with nothing listable under them - a page carrying the
+           tag but built with `build.list: never` still creates the term. Those
+           chips lead to an empty "0 posts" page, so leave them out. */ -}}
+    {{ $terms := slice }}
+    {{ range .Pages.ByTitle }}{{ if .Pages }}{{ $terms = $terms | append . }}{{ end }}{{ end }}
     <div class="plain">
         <h1 class="plain__title">{{ .Title }}</h1>
-        <p class="plain__sub">{{ len .Pages }} {{ .Data.Plural }}</p>
+        <p class="plain__sub">{{ len $terms }} {{ .Data.Plural }}</p>
         <div class="term-grid">
-            {{ range .Pages.ByTitle }}
+            {{ range $terms }}
                 <a class="chip" href="{{ .RelPermalink }}">{{ .Title }} <span class="chip__count">{{ len .Pages }}</span></a>
             {{ end }}
         </div>

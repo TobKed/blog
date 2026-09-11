@@ -16,22 +16,24 @@
         </div>
     {{ end }}
 
-    {{ with site.Taxonomies.categories }}
+    {{- /* where ... "Count" "gt" 0 drops terms whose only pages are unlisted
+           (`build.list: never`), which otherwise link to an empty term page. */ -}}
+    {{ with where site.Taxonomies.categories.ByCount "Count" "gt" 0 }}
         <div>
             <h2>Categories</h2>
             <div class="rail__chips">
-                {{ range first 10 .ByCount }}
+                {{ range first 10 . }}
                     <a class="chip" href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
                 {{ end }}
             </div>
         </div>
     {{ end }}
 
-    {{ with site.Taxonomies.tags }}
+    {{ with where site.Taxonomies.tags.ByCount "Count" "gt" 0 }}
         <div>
             <h2>Tags</h2>
             <div class="rail__tags">
-                {{ range first 20 .ByCount }}
+                {{ range first 20 . }}
                     <a class="taglink" href="{{ .Page.RelPermalink }}">#{{ .Page.Title | lower }}</a>
                 {{ end }}
             </div>

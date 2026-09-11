@@ -8,9 +8,11 @@
     {{ else }}
         <span></span>
     {{ end }}
+    {{- /* A post is placed by its category; anything else - a static page, a
+           term - is better named by its own title. /pages/links/ read "MAIN". */ -}}
     <span class="topbar__crumb">
         {{- if .IsHome }}Index
-        {{- else if .IsPage }}{{ with .Params.categories }}{{ index . 0 }}{{ else }}{{ $.Title }}{{ end }}
+        {{- else if and .IsPage (in site.MainSections .Section) }}{{ with .Params.categories }}{{ index . 0 }}{{ else }}{{ $.Title }}{{ end }}
         {{- else }}{{ .Title }}{{ end -}}
     </span>
 </div>

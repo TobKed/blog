@@ -10,10 +10,6 @@ theme = 'ups-and-downs'
 # would silently produce nothing.
 buildFuture = true
 
-# One post embeds a remote animated GIF; Stack's image render hook resizes it to
-# three widths, which blows the default 60s per-page render timeout.
-timeout = '300s'
-
 [pagination]
 pagerSize = 10
 
@@ -36,7 +32,6 @@ path = '{/post/**,/pages/**}'
 
 [params]
 mainSections = ["post"]
-rssFullContent = true
 description = "Tobiasz Kedzierski's Blog"
 
 [params.footer]
@@ -44,7 +39,6 @@ since = 2018
 customText = "Profile photo by <a href=\"https://juliakaczorowska.pl/\">Julia Kaczorowska</a> (other photos by me)."
 
 [params.sidebar]
-compact = false
 subtitle = """Tobiasz Kedzierski's blog.<br><br>Python, Django, the cloud, and other interesting things — computer-related or not.<br><br>Mostly monthly round-ups of what I've been doing, reading and watching."""
 avatar = "img/avatar.png"
 
@@ -52,10 +46,6 @@ avatar = "img/avatar.png"
 headingAnchor = true
 toc = true
 readingTime = true
-[params.article.list]
-showTags = true
-[params.article.license]
-enabled = false
 
 # The four layout choices the theme offers. Each is one block:
 #   default  what a first-time visitor sees
@@ -77,55 +67,32 @@ toggle = false
 default = "side" # a post's Contents list "inline" in the post, or at its "side"
 toggle = false   # params.article.toc = false drops the list altogether
 
-[params.comments]
-enabled = false
-
-[params.widgets]
-homepage = [
-  { type = "search" },
-  { type = "archives", params = { limit = 5 } },
-  { type = "categories", params = { limit = 10 } },
-  { type = "tag-cloud", params = { limit = 20 } },
-]
-page = [{ type = "toc" }]
-
-# Stack's nav lives in menu.main; social links in menu.social. Both are ordered
-# by weight - Hugo falls back to alphabetical order when weights are absent.
+# Ordered by weight; Hugo falls back to alphabetical order when weights are absent.
 [[menu.main]]
 identifier = "home"
 name = "Home"
 url = "/"
 weight = 10
-[menu.main.params]
-icon = "home"
 [[menu.main]]
 identifier = "about"
 name = "About me"
 url = "/pages/about-me/"
 weight = 20
-[menu.main.params]
-icon = "user"
 [[menu.main]]
 identifier = "links"
 name = "Links"
 url = "/pages/links/"
 weight = 30
-[menu.main.params]
-icon = "link"
 [[menu.main]]
 identifier = "search"
 name = "Search"
 url = "/search/"
 weight = 50
-[menu.main.params]
-icon = "search"
 [[menu.main]]
 identifier = "archives"
 name = "Archives"
 url = "/archives/"
 weight = 40
-[menu.main.params]
-icon = "archives"
 
 [[menu.social]]
 identifier = "tobked"
@@ -133,22 +100,18 @@ name = "tobked.dev"
 url = "https://tobked.dev"
 weight = 10
 [menu.social.params]
-icon = "infinity"
 newTab = true
 [[menu.social]]
 identifier = "email"
 name = "Email"
 url = "mailto:tobiaszkedzierski@gmail.com"
 weight = 20
-[menu.social.params]
-icon = "mail"
 [[menu.social]]
 identifier = "github"
 name = "GitHub"
 url = "https://github.com/TobKed"
 weight = 25
 [menu.social.params]
-icon = "brand-github"
 newTab = true
 [[menu.social]]
 identifier = "linkedin"
@@ -156,7 +119,6 @@ name = "LinkedIn"
 url = "https://www.linkedin.com/in/tobiaszkedzierski/?locale=en_US"
 weight = 30
 [menu.social.params]
-icon = "brand-linkedin"
 newTab = true
 [[menu.social]]
 identifier = "credly"
@@ -164,7 +126,6 @@ name = "Credly"
 url = "https://www.credly.com/users/tobiasz-kedzierski"
 weight = 40
 [menu.social.params]
-icon = "certificate"
 newTab = true
 [[menu.social]]
 identifier = "medium"
@@ -172,15 +133,12 @@ name = "Medium"
 url = "https://tobiaszkedzierski.medium.com/"
 weight = 50
 [menu.social.params]
-icon = "brand-medium"
 newTab = true
 [[menu.social]]
 identifier = "rss"
 name = "RSS"
 url = "/feeds/all.rss.xml"
 weight = 60
-[menu.social.params]
-icon = "rss"
 
 [services]
 [services.googleAnalytics]

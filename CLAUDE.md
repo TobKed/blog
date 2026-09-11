@@ -74,6 +74,7 @@ YouTube embeds are raw HTML `<div class="videoWrapper">` blocks, which work beca
 
 - `scripts/resize_photos/` — Pillow-based image resizer, `input/` → `output/`; resized files are copied by hand into `static/images/posts/YYYY/`
 - `scripts/test_links/` — link checker described above under Commands
+- `scripts/check_mobile.mjs` — `make check_theme`, run against a serving `make preview`. Drives headless Chrome over CDP (no dependencies; needs Node 22+ for the built-in `WebSocket`) to assert the theme's layout rules at a 390px phone viewport and at desktop: no horizontal overflow, covers not downloaded while hidden, the mobile menu opens on tap, the right Contents variant shows, no blank Contents entries or empty taxonomy terms. Exits non-zero on failure. Device emulation is used because Chrome will not size a window below ~900px.
 
 ## Notes
 

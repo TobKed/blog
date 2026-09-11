@@ -1,6 +1,11 @@
 (function () {
   var root = document.documentElement;
 
+  // Blocked storage throws on write; the toggle should still flip the page.
+  function remember(key, value) {
+    try { localStorage.setItem(key, value); } catch (e) {}
+  }
+
   function effectiveTheme() {
     return root.getAttribute('data-theme') ||
       (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
@@ -14,7 +19,7 @@
     themeBtn.addEventListener('click', function () {
       var next = effectiveTheme() === 'dark' ? 'light' : 'dark';
       root.setAttribute('data-theme', next);
-      localStorage.setItem('theme', next);
+      remember('theme', next);
       syncTheme();
     });
     matchMedia('(prefers-color-scheme: dark)').addEventListener('change', syncTheme);
@@ -41,11 +46,25 @@
     btn.addEventListener('click', function () {
       var next = root.getAttribute(t.attr) === t.on ? t.off : t.on;
       root.setAttribute(t.attr, next);
-      localStorage.setItem(t.key, next);
+      remember(t.key, next);
       sync();
     });
     sync();
   });
+
+  // Covers are shipped as data-src when they start hidden, so nothing is
+  // downloaded until a reader actually asks for photos. One-way: once promoted
+  // the browser has the image, and turning photos off again only hides it.
+  function showPhotos() {
+    if (root.getAttribute('data-photos') !== 'on') return;
+    [].forEach.call(document.querySelectorAll('img[data-src]'), function (img) {
+      img.src = img.getAttribute('data-src');
+      img.removeAttribute('data-src');
+    });
+  }
+  showPhotos();
+  var photosBtn = document.getElementById('photos-toggle');
+  if (photosBtn) photosBtn.addEventListener('click', showPhotos);
 
   // The narrow-screen sidebar. Deliberately not remembered: every page load
   // should open on its own content, which is the point of the bar.

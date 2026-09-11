@@ -1,11 +1,15 @@
 {{- /* The flat list of sections the Contents lists, for a page.
 
-       .Fragments.Headings ignores markup.tableOfContents startLevel and hands
-       back the heading tree, so a post written as one <h1> wrapper plus <h2>
-       sections arrives as a single root. Descend through that wrapper; anything
-       else is already the list we want. */ -}}
+       .Fragments.Headings honours markup.tableOfContents startLevel/endLevel,
+       and hands back a heading tree. A post written as one <h1> wrapper plus
+       <h2> sections arrives as a single root, so descend through that wrapper.
+
+       When a page has no heading inside the configured level range at all -
+       a page written entirely in <h3>, say - Hugo still returns one root, but
+       an empty one. Drop those: a titleless entry renders as a blank link. */ -}}
 {{- $headings := .Fragments.Headings -}}
 {{- if and (eq (len $headings) 1) (index $headings 0).Headings -}}
     {{- $headings = (index $headings 0).Headings -}}
 {{- end -}}
+{{- $headings = where $headings "Title" "!=" "" -}}
 {{- return $headings -}}
