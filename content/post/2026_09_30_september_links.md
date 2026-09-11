@@ -29,6 +29,10 @@ ______________________________________________________________________
 
 ## Articles
 
+### [Double Diamond (design process model) - Wikipedia](<https://en.wikipedia.org/wiki/Double_Diamond_(design_process_model)>)
+
+> "Double Diamond is a design process model popularized by the British Design Council in 2005. The two diamonds represent a process of exploring an issue more widely or deeply (divergent thinking) and then taking focused action (convergent thinking)."
+
 ### [The Mistakes You're Allowed to Make - by Steve Huynh](https://alifeengineered.substack.com/p/the-mistakes-youre-allowed-to-make)
 
 > "If the decision is easy to reverse, make it. If you’re wrong, reverse it. The cost of being wrong on a two-way door is close to nothing."
@@ -52,6 +56,10 @@ ______________________________________________________________________
 ## Productivity
 
 ## AI
+
+### [Opusfived](https://opusfived.dev/)
+
+> "A short interactive comedy about agentic AI assistants that can never just do the thing."
 
 ### [How to protect yourself from workslop](https://www.seangoedecke.com/how-to-protect-yourself-from-workslop/)
 
@@ -97,14 +105,44 @@ Securo is an open-source, privacy-first personal finance manager designed to run
 
 ## Videos
 
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
+### [Geoffrey Litt: Dynamic Documents as Personal Software](https://youtu.be/MccJdr61xnc)
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/MccJdr61xnc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
+#### AI generated summary
 
-> Playback on other websites has been disabled by the video owner. [Watch on YouTube](https://www.youtube.com/watch?v=VIDEO_ID)
+A talk by Geoffrey Litt exploring the concept of dynamic documents and how they can function as customizable, personal software rather than just static text.
+
+### [DEF CON 34 - Hacking AI - Bruce Schneier](https://youtu.be/eEBv0STiYhI)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/eEBv0STiYhI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+#### AI generated summary
+
+Bruce Schneier's DEF CON 34 presentation on the security implications of artificial intelligence and how AI systems can be manipulated, hacked, and defended.
+
+### [DefCon 34 - Stalking the Wily Hacker: 40 years later - Cliff Stoll](https://www.youtube.com/watch?v=656058JxTM0)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/656058JxTM0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+#### AI generated summary
+
+Cliff Stoll reflects on his famous "Cuckoo's Egg" investigation 40 years later, sharing stories and insights from tracking a hacker through the early internet.
+
+### [The Filesystem is Awesome](https://youtu.be/qdS8rxVYFJk)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/qdS8rxVYFJk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+#### AI generated summary
+
+A deep dive into the design, utility, and power of filesystems, explaining why this foundational computer science concept remains an incredibly elegant and versatile tool.
 
 ## 🇵🇱 Polish Corner 🇵🇱

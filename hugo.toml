@@ -56,7 +56,7 @@ default = "auto" # "auto" follows the operating system, or force "light" / "dark
 toggle = true
 
 [params.coverImages]
-default = "hidden" # "shown" or "hidden"; hidden images are never downloaded
+default = "shown" # "shown" or "hidden"; hidden images are never downloaded
 toggle = true
 
 [params.sidebarIndex]
