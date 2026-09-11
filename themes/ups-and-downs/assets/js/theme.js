@@ -47,6 +47,19 @@
     sync();
   });
 
+  // The narrow-screen sidebar. Deliberately not remembered: every page load
+  // should open on its own content, which is the point of the bar.
+  var menuBtn = document.getElementById('menu-toggle');
+  if (menuBtn) {
+    menuBtn.addEventListener('click', function () {
+      var open = root.getAttribute('data-menu') !== 'open';
+      root.setAttribute('data-menu', open ? 'open' : 'closed');
+      menuBtn.setAttribute('aria-expanded', String(open));
+      menuBtn.firstElementChild.textContent = open ? 'Close' : 'Menu';
+      menuBtn.lastElementChild.textContent = open ? '▲' : '▼';
+    });
+  }
+
   // Highlight the section the reader is in, as the design's side Contents shows.
   var links = [].slice.call(document.querySelectorAll('.toc--side a'));
   if (links.length) {

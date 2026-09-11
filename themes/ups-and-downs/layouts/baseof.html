@@ -13,6 +13,7 @@
 <!DOCTYPE html>
 <html lang="{{ site.Language.Lang }}"
       data-rail="{{ $rail }}" data-photos="{{ $photos }}" data-toc="{{ $toc }}"
+      {{- /* data-menu is the narrow-screen sidebar, closed on every page load. */}} data-menu="closed"
       {{- with site.Params.colorScheme.default }}{{ if ne . "auto" }} data-theme="{{ . }}"{{ end }}{{ end }}>
 <head>
     {{ partial "head.html" . }}
