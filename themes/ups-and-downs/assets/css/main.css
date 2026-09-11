@@ -652,7 +652,7 @@ img { max-width: 100%; height: auto; }
 
 /* ---------- rail below ---------- */
 
-/* Chosen in hugo.toml (params.railPosition = "below"), and forced below 1180px
+/* Chosen in hugo.toml (params.sidebarIndex.default = "below"), and forced below 1180px
    where a 250px rail no longer fits beside the stream. */
 [data-rail="below"] .rail {
   position: static;

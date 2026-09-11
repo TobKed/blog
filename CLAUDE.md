@@ -79,7 +79,7 @@ YouTube embeds are raw HTML `<div class="videoWrapper">` blocks, which work beca
 
 - `themes/ups-and-downs/` is the active theme and is committed to this repo; `themes/hugo-theme-stack` is the old theme, a git submodule (`git submodule update --init --recursive` if it's missing). `.gitignore` ignores `themes/*` and allows those two by name.
 - `layouts/_partials/sidebar/left.html`, `assets/scss/custom.scss` and `static/css/main.css` only apply to `hugo-theme-stack`; `ups-and-downs` ignores them.
-- `themes/ups-and-downs/hugo.toml` holds the theme's default params, which Hugo merges under the site's `hugo.toml` — the site only has to set what it changes. The theme's own knobs are `railPosition`, `photos`, `tocPosition` and the `[params.toggles]` table.
+- `themes/ups-and-downs/hugo.toml` holds the theme's default params, which Hugo merges under the site's `hugo.toml` — the site only has to set what it changes. The theme's four layout choices are `[params.colorScheme]`, `[params.coverImages]`, `[params.sidebarIndex]` and `[params.postContents]`; each takes a `default` (what a visitor first sees) and a `toggle` (whether the sidebar offers a button, whose result is remembered per reader).
 - Agent skills: every agent tool used here looks in a different project directory, so the skill body
   lives once in `.agents/skills/<name>/SKILL.md` (read natively by Codex CLI and Antigravity) and
   `.claude/skills/<name>/SKILL.md` (Claude Code) and `.cursor/skills/<name>/SKILL.md` (Cursor) hold

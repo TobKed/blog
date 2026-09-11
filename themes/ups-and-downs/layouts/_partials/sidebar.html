@@ -52,21 +52,22 @@
             {{ with site.Params.footer.since }}&copy; {{ . }}&ndash;{{ now.Year }} {{ site.Title }}<br>{{ end }}
             {{ with site.Params.footer.customText }}{{ . | safeHTML }}{{ end }}
         </p>
-        {{- /* params.toggles decides which of these reader controls exist. */ -}}
+        {{- /* One button per layout choice that has toggle = true. Each starts on
+               that choice's default; theme.js relabels it as the reader presses. */ -}}
         <div class="side__toggles">
-            {{ if site.Params.toggles.theme }}
+            {{ if site.Params.colorScheme.toggle }}
                 <button class="btn" type="button" id="theme-toggle">Dark mode</button>
             {{ end }}
-            {{ if site.Params.toggles.photos }}
-                {{ $on := ne site.Params.photos "off" }}
-                <button class="btn" type="button" id="photos-toggle" aria-pressed="{{ $on }}">Photos {{ if $on }}on{{ else }}off{{ end }}</button>
+            {{ if site.Params.coverImages.toggle }}
+                {{ $shown := ne site.Params.coverImages.default "hidden" }}
+                <button class="btn" type="button" id="photos-toggle" aria-pressed="{{ $shown }}">Photos {{ if $shown }}on{{ else }}off{{ end }}</button>
             {{ end }}
-            {{ if site.Params.toggles.rail }}
-                {{ $below := eq site.Params.railPosition "below" }}
+            {{ if site.Params.sidebarIndex.toggle }}
+                {{ $below := eq site.Params.sidebarIndex.default "below" }}
                 <button class="btn" type="button" id="rail-toggle" aria-pressed="{{ $below }}">Index {{ if $below }}below{{ else }}at side{{ end }}</button>
             {{ end }}
-            {{ if site.Params.toggles.toc }}
-                {{ $side := eq site.Params.tocPosition "side" }}
+            {{ if site.Params.postContents.toggle }}
+                {{ $side := eq site.Params.postContents.default "side" }}
                 <button class="btn" type="button" id="toc-toggle" aria-pressed="{{ $side }}">Contents {{ if $side }}at side{{ else }}in post{{ end }}</button>
             {{ end }}
         </div>

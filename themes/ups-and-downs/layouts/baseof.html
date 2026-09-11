@@ -1,9 +1,15 @@
-{{- /* The data-* attributes are the theme's layout switches: CSS reads them,
-       head.html restores any reader override before first paint, and theme.js
-       flips them from the sidebar buttons. */ -}}
-{{- $rail := cond (eq site.Params.railPosition "below") "below" "side" -}}
-{{- $photos := cond (eq site.Params.photos "off") "off" "on" -}}
-{{- $toc := cond (eq site.Params.tocPosition "side") "side" "inline" -}}
+{{- /* The theme's three layout switches. Each comes from a params table whose
+       `default` is set below and whose `toggle` puts a button in the sidebar:
+
+         params.sidebarIndex   -> data-rail     "side"   | "below"
+         params.coverImages    -> data-photos   "on"     | "off"
+         params.postContents   -> data-toc      "inline" | "side"
+
+       CSS reads the attributes, head.html restores a reader's stored override
+       before first paint, and theme.js flips them from the sidebar buttons. */ -}}
+{{- $rail := cond (eq site.Params.sidebarIndex.default "below") "below" "side" -}}
+{{- $photos := cond (eq site.Params.coverImages.default "hidden") "off" "on" -}}
+{{- $toc := cond (eq site.Params.postContents.default "side") "side" "inline" -}}
 <!DOCTYPE html>
 <html lang="{{ site.Language.Lang }}"
       data-rail="{{ $rail }}" data-photos="{{ $photos }}" data-toc="{{ $toc }}"

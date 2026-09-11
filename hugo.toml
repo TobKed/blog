@@ -36,22 +36,8 @@ path = '{/post/**,/pages/**}'
 
 [params]
 mainSections = ["post"]
-# Where the archives/categories/tags rail sits: "side" or "below" the posts.
-railPosition = "side"
-# Cover images and thumbnails: "on" or "off". Readers can flip it with the
-# Photos button; "off" means the images are never downloaded.
-photos = "on"
-# Where a post's Contents list sits: "inline" (in the post) or "side".
-tocPosition = "inline"
 rssFullContent = true
 description = "Tobiasz Kedzierski's Blog"
-
-# Which reader controls the sidebar shows.
-[params.toggles]
-theme = true
-photos = true
-rail = false
-toc = false
 
 [params.footer]
 since = 2018
@@ -71,9 +57,25 @@ showTags = true
 [params.article.license]
 enabled = false
 
+# The four layout choices the theme offers. Each is one block:
+#   default  what a first-time visitor sees
+#   toggle   whether the sidebar shows a button for it; a reader who presses it
+#            has their choice remembered in their browser, which then wins
 [params.colorScheme]
+default = "auto"    # "auto" follows the operating system, or force "light" / "dark"
 toggle = true
-default = "auto"
+
+[params.coverImages]
+default = "shown"   # "shown" or "hidden"; hidden images are never downloaded
+toggle = true
+
+[params.sidebarIndex]
+default = "side"    # archives/categories/tags "side" of the posts, or "below" them
+toggle = false
+
+[params.postContents]
+default = "inline"  # a post's Contents list "inline" in the post, or at its "side"
+toggle = false      # params.article.toc = false drops the list altogether
 
 [params.comments]
 enabled = false

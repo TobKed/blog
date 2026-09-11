@@ -29,18 +29,19 @@
 
 {{ with resources.Get "img/favicon.png" }}<link rel="icon" href="{{ .RelPermalink }}">{{ end }}
 
-{{- /* A stored reader choice only wins where params.toggles still offers the
-       button; disabling a toggle hands control back to the config. */ -}}
-{{- $keys := slice -}}
-{{- range slice "photos" "rail" "toc" -}}
-    {{- if index site.Params.toggles . }}{{ $keys = $keys | append . }}{{ end -}}
-{{- end }}
+{{- /* A reader's stored choice only wins where the sidebar still offers the
+       button, so switching a toggle off hands control back to the config.
+       These names are the data-* attributes baseof.html sets. */ -}}
+{{- $restore := slice -}}
+{{- if site.Params.coverImages.toggle }}{{ $restore = $restore | append "photos" }}{{ end -}}
+{{- if site.Params.sidebarIndex.toggle }}{{ $restore = $restore | append "rail" }}{{ end -}}
+{{- if site.Params.postContents.toggle }}{{ $restore = $restore | append "toc" }}{{ end }}
 <script>
     (function () {
         var d = document.documentElement;
         var t = localStorage.getItem('theme');
         if (t) d.setAttribute('data-theme', t);
-        {{ $keys | jsonify | safeJS }}.forEach(function (k) {
+        {{ $restore | jsonify | safeJS }}.forEach(function (k) {
             var v = localStorage.getItem(k);
             if (v) d.setAttribute('data-' + k, v);
         });
