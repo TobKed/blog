@@ -708,19 +708,28 @@ img { max-width: 100%; height: auto; }
 }
 
 @media (max-width: 980px) {
-  /* The sidebar stops being a column and becomes a sticky bar plus a panel the
-     menu button opens, so a page starts on its own content. --mhead is the bar's
-     height, which the topbar below has to stick clear of. */
+  /* The sidebar stops being a column and becomes a bar plus a panel the menu
+     button opens, so a page starts on its own content. --mhead is the bar's
+     height, which .main has to leave room for. */
   :root { --mhead: 53px; }
 
   .shell { grid-template-columns: minmax(0, 1fr); }
+  /* Fixed rather than sticky: in one column .side is its own grid row, only as
+     tall as the bar, and sticky never escapes its own row - the bar would scroll
+     away on the first swipe. Fixed takes it out of flow, so .main pads for it. */
   .side {
-    position: static;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    max-height: 100dvh;
+    overflow-y: auto;
+    background: var(--bg);
     min-height: 0;
     border-right: none;
     padding: 0;
     gap: 0;
-    z-index: 20;
   }
   .side__mhead {
     display: flex;
@@ -729,9 +738,6 @@ img { max-width: 100%; height: auto; }
     gap: 12px;
     height: var(--mhead);
     padding: 0 20px;
-    position: sticky;
-    top: 0;
-    background: var(--bg);
     border-bottom: 1px solid var(--rule);
   }
   .side__body { display: none; }
@@ -744,8 +750,10 @@ img { max-width: 100%; height: auto; }
   /* Repeated by .side__mhead, or too long to stand between it and the nav. */
   .side__brand, .side__intro, .side__blurb { display: none; }
 
-  .topbar { top: var(--mhead); padding: 14px 20px; }
-  .main { padding-bottom: 56px; }
+  /* One pinned bar is enough on a phone; two stacked ones took a seventh of the
+     screen. The search box scrolls away with the page - the menu has a link. */
+  .topbar { position: static; padding: 14px 20px; }
+  .main { padding: var(--mhead) 0 56px; }
   .stream { padding: 0 20px; }
   .featured { padding: 26px 0 32px; }
   .post, .plain { padding: 26px 20px 0; }
