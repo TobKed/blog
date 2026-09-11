@@ -12,6 +12,8 @@
   --alt-soft: oklch(0.915 0.045 268);
   --serif: 'Newsreader', Georgia, 'Times New Roman', serif;
   --mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  /* Height of the sticky .topbar; what the rail and side Contents stick below. */
+  --topbar-h: 60px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -92,13 +94,20 @@ img { max-width: 100%; height: auto; }
 
 /* ---------- sidebar ---------- */
 
+/* Pinned at top: 0, so anything past one viewport is unreachable without its
+   own scrollbar - the toggles at the bottom were cut off on any window under
+   ~880px tall. min-height keeps .side__foot's margin-top:auto pinning it low. */
 .side {
   position: sticky;
   top: 0;
   align-self: start;
-  padding: 40px 28px 40px 32px;
+  /* Bottom spacing lives on .side__body: a scroll container's own padding-bottom
+     is dropped from its scroll extent, which parks the toggles on the edge. */
+  padding: 40px 28px 0 32px;
   border-right: 1px solid var(--rule);
-  min-height: 100vh;
+  min-height: 100dvh;
+  max-height: 100dvh;
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
   gap: 28px;
@@ -184,9 +193,12 @@ img { max-width: 100%; height: auto; }
 .side__social a { color: var(--ink-2); padding: 3px 0; border-bottom: 1px solid transparent; }
 .side__social a:hover { color: var(--acc); border-bottom-color: var(--acc); }
 
+/* padding-bottom rather than .side's, so it is part of the scrolled content and
+   the toggles do not end up flush against the bottom edge. */
 .side__foot {
   margin-top: auto;
   padding-top: 20px;
+  padding-bottom: 40px;
   display: flex;
   flex-direction: column;
   gap: 14px;
@@ -402,7 +414,7 @@ img { max-width: 100%; height: auto; }
 
 .rail {
   position: sticky;
-  top: 61px;
+  top: var(--topbar-h);
   padding: 36px 36px 36px 28px;
   border-left: 1px solid var(--rule);
   display: flex;
@@ -504,7 +516,7 @@ img { max-width: 100%; height: auto; }
 .toc--side {
   display: block;
   position: sticky;
-  top: 61px;
+  top: var(--topbar-h);
   order: 2;
   padding: 44px 28px 44px 24px;
   border-left: 1px solid var(--rule);
@@ -532,9 +544,11 @@ img { max-width: 100%; height: auto; }
 .toc--inline .toc__list { display: grid; grid-template-columns: minmax(0, 1fr); gap: 2px; }
 .toc--inline a { padding: 3px 0; }
 
-/* Only the variant data-toc names is shown. */
-[data-toc="side"] .toc--inline,
-[data-toc="inline"] .toc--side { display: none; }
+/* Only the variant data-toc names is shown - but only inside .postgrid, which
+   is the one layout that renders both. A .plain page has no side column, so its
+   inline Contents must survive data-toc="side". */
+[data-toc="side"] .postgrid .toc--inline,
+[data-toc="inline"] .postgrid .toc--side { display: none; }
 
 .adjacent {
   display: grid;
@@ -689,7 +703,7 @@ img { max-width: 100%; height: auto; }
 @media (max-width: 860px) {
   [data-toc="side"] .postgrid { grid-template-columns: minmax(0, 1fr); }
   .toc--side { display: none; }
-  [data-toc="side"] .toc--inline { display: grid; }
+  [data-toc="side"] .postgrid .toc--inline { display: grid; }
 }
 
 
@@ -749,6 +763,8 @@ img { max-width: 100%; height: auto; }
   }
   /* Repeated by .side__mhead, or too long to stand between it and the nav. */
   .side__brand, .side__intro, .side__blurb { display: none; }
+  /* .side__body supplies the panel's own bottom padding here. */
+  .side__foot { padding-bottom: 0; }
 
   /* One pinned bar is enough on a phone; two stacked ones took a seventh of the
      screen. The search box scrolls away with the page - the menu has a link. */

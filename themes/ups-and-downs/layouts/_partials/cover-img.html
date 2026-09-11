@@ -1,0 +1,13 @@
+{{- /* The cover <img> for a page, or nothing. Context: a Page.
+
+       When covers are hidden by default the URL is parked in data-src, because
+       display:none does not stop a browser downloading an <img> - the index was
+       fetching every cover it had just hidden. theme.js promotes data-src to
+       src if the reader turns photos back on. */ -}}
+{{- with partial "cover-url.html" . -}}
+    {{- if eq site.Params.coverImages.default "hidden" -}}
+        <img data-src="{{ . }}" alt="" loading="lazy">
+    {{- else -}}
+        <img src="{{ . }}" alt="" loading="lazy">
+    {{- end -}}
+{{- end -}}

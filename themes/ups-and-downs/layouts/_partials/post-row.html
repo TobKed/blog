@@ -1,7 +1,7 @@
 <a class="row" href="{{ .RelPermalink }}">
     <span class="row__num">{{ .Date.Format "01" }}</span>
     <span class="row__thumb">
-        {{ with partial "cover-url.html" . }}<img src="{{ . }}" alt="" loading="lazy">{{ end }}
+        {{ partial "cover-img.html" . }}
     </span>
     <span class="row__text">
         {{ with .Params.categories }}<span class="row__cat">{{ index . 0 }}</span>{{ end }}

@@ -8,7 +8,7 @@
         <span>{{ .Date.Format "01" }}</span>
     </div>
     {{ with $cover }}
-        <a class="cover" href="{{ $.RelPermalink }}"><img src="{{ . }}" alt="" loading="lazy"></a>
+        <a class="cover" href="{{ $.RelPermalink }}">{{ partial "cover-img.html" $ }}</a>
     {{ end }}
     <h2 class="featured__title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
     {{ with .Summary }}<p class="featured__summary">{{ . | plainify }}</p>{{ end }}

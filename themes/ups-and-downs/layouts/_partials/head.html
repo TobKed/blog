@@ -27,7 +27,11 @@
     {{- end }}
 {{- end }}
 
-{{ with resources.Get "img/favicon.png" }}<link rel="icon" href="{{ .RelPermalink }}">{{ end }}
+{{- /* assets/img/favicon.png if a site supplies one, otherwise the avatar it
+       already has - without either, every page 404s on /favicon.ico. */ -}}
+{{- $icon := resources.Get "img/favicon.png" -}}
+{{- if not $icon }}{{ with site.Params.sidebar.avatar }}{{ $icon = resources.Get . }}{{ end }}{{ end -}}
+{{ with $icon }}{{ with .Resize "64x64 png" }}<link rel="icon" href="{{ .RelPermalink }}">{{ end }}{{ end }}
 
 {{- /* A reader's stored choice only wins where the sidebar still offers the
        button, so switching a toggle off hands control back to the config.
@@ -39,12 +43,15 @@
 <script>
     (function () {
         var d = document.documentElement;
-        var t = localStorage.getItem('theme');
-        if (t) d.setAttribute('data-theme', t);
-        {{ $restore | jsonify | safeJS }}.forEach(function (k) {
-            var v = localStorage.getItem(k);
-            if (v) d.setAttribute('data-' + k, v);
-        });
+        // Blocked storage throws on read; the config defaults are a fine fallback.
+        try {
+            var t = localStorage.getItem('theme');
+            if (t) d.setAttribute('data-theme', t);
+            {{ $restore | jsonify | safeJS }}.forEach(function (k) {
+                var v = localStorage.getItem(k);
+                if (v) d.setAttribute('data-' + k, v);
+            });
+        } catch (e) {}
     })();
 </script>
 

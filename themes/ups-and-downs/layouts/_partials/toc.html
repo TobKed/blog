@@ -15,7 +15,9 @@ sidebar's Contents button can switch between them without a reload.
             {{- range $i, $h := . }}
                 <a href="#{{ $h.ID }}">
                     <span class="toc__n">{{ printf "%02d" (add $i 1) }}</span>
-                    <span>{{ $h.Title }}</span>
+                    {{- /* .Title is already-rendered HTML; escaping it again turns
+                           a heading's "&" into a literal "&amp;". */ -}}
+                    <span>{{ $h.Title | safeHTML }}</span>
                 </a>
             {{- end }}
         </span>
