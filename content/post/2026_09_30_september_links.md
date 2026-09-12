@@ -29,15 +29,15 @@ ______________________________________________________________________
 
 ## Articles
 
-### [How we saved 100 terabytes of memory by optimizing 1.1.1.1’s DNS cache | Cloudflare Blog](https://blog.cloudflare.com/dns-cache-memory-optimization-1111/)
+### [Cloudflare Blog: How we saved 100 terabytes of memory by optimizing 1.1.1.1’s DNS cache](https://blog.cloudflare.com/dns-cache-memory-optimization-1111/)
 
 > "Five Rust-level memory optimizations to the DNS cache layout of Big Pineapple cut per-entry memory by 56%, freeing approximately 100 TB of memory across Cloudflare's fleet."
 
-### [Double Diamond (design process model) - Wikipedia](<https://en.wikipedia.org/wiki/Double_Diamond_(design_process_model)>)
+### [Wikipedia: Double Diamond (design process model)](<https://en.wikipedia.org/wiki/Double_Diamond_(design_process_model)>)
 
 > "Double Diamond is a design process model popularized by the British Design Council in 2005. The two diamonds represent a process of exploring an issue more widely or deeply (divergent thinking) and then taking focused action (convergent thinking)."
 
-### [The Mistakes You're Allowed to Make - by Steve Huynh](https://alifeengineered.substack.com/p/the-mistakes-youre-allowed-to-make)
+### [A Life Engineered: The Mistakes You're Allowed to Make](https://alifeengineered.substack.com/p/the-mistakes-youre-allowed-to-make)
 
 > "If the decision is easy to reverse, make it. If you’re wrong, reverse it. The cost of being wrong on a two-way door is close to nothing."
 
@@ -61,7 +61,7 @@ ______________________________________________________________________
 
 ## AI
 
-### [Six Months of Writing Code Exclusively With Agents - exe.dev blog](https://blog.exe.dev/engineering-with-ai)
+### [exe.dev blog: Six Months of Writing Code Exclusively With Agents](https://blog.exe.dev/engineering-with-ai)
 
 > Agentic engineering is working with the agent on the system first: the architecture, interfaces, constraints, and tradeoffs. When the code arrives, I understand what I’m about to own.
 
@@ -69,7 +69,7 @@ ______________________________________________________________________
 
 > "llm-wiki"
 
-### [The AI-Native SDLC playbook | Claude by Anthropic](https://claude.com/blog/the-ai-native-sdlc-playbook)
+### [Claude by Anthropic: The AI-Native SDLC playbook](https://claude.com/blog/the-ai-native-sdlc-playbook)
 
 > "Anthropic's stage-by-stage playbook for the AI-native SDLC: how teams plan, design, build, test, deploy, and maintain software with Claude."
 
@@ -81,7 +81,7 @@ ______________________________________________________________________
 
 > "The core problem with workslop is that the effort involved is asymmetrical, like a denial-of-service attack: it takes almost no effort to produce text with AI, but it still costs effort to read."
 
-### [AI Mania Is Eviscerating Global Decision-Making — Ludicity](https://ludic.mataroa.blog/blog/ai-mania-is-eviscerating-global-decision-making/)
+### [Ludicity: AI Mania Is Eviscerating Global Decision-Making](https://ludic.mataroa.blog/blog/ai-mania-is-eviscerating-global-decision-making/)
 
 > "The world’s organisations have been captured by people in the throes of frothing excitement, and saner people who now live in a state of constant commingled fear and frustration."
 
