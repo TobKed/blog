@@ -125,6 +125,10 @@ Securo is an open-source, privacy-first personal finance manager designed to run
 
 ## Other stuff
 
+### [GitHub - bilawalsidhu/gods-eye-view](https://github.com/bilawalsidhu/gods-eye-view)
+
+> "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe."
+
 ## Podcasts
 
 ## Videos
