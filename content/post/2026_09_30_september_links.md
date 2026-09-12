@@ -29,6 +29,10 @@ ______________________________________________________________________
 
 ## Articles
 
+### [How we saved 100 terabytes of memory by optimizing 1.1.1.1’s DNS cache | Cloudflare Blog](https://blog.cloudflare.com/dns-cache-memory-optimization-1111/)
+
+> "Five Rust-level memory optimizations to the DNS cache layout of Big Pineapple cut per-entry memory by 56%, freeing approximately 100 TB of memory across Cloudflare's fleet."
+
 ### [Double Diamond (design process model) - Wikipedia](<https://en.wikipedia.org/wiki/Double_Diamond_(design_process_model)>)
 
 > "Double Diamond is a design process model popularized by the British Design Council in 2005. The two diamonds represent a process of exploring an issue more widely or deeply (divergent thinking) and then taking focused action (convergent thinking)."
@@ -56,6 +60,18 @@ ______________________________________________________________________
 ## Productivity
 
 ## AI
+
+### [Six Months of Writing Code Exclusively With Agents - exe.dev blog](https://blog.exe.dev/engineering-with-ai)
+
+> Agentic engineering is working with the agent on the system first: the architecture, interfaces, constraints, and tradeoffs. When the code arrives, I understand what I’m about to own.
+
+### [GitHub - karpathy/llm-wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)
+
+> "llm-wiki"
+
+### [The AI-Native SDLC playbook | Claude by Anthropic](https://claude.com/blog/the-ai-native-sdlc-playbook)
+
+> "Anthropic's stage-by-stage playbook for the AI-native SDLC: how teams plan, design, build, test, deploy, and maintain software with Claude."
 
 ### [Opusfived](https://opusfived.dev/)
 
@@ -86,6 +102,14 @@ ______________________________________________________________________
 ## Go
 
 ## Tools
+
+### [GitHub - virgiliojr94/book-to-skill](https://github.com/virgiliojr94/book-to-skill)
+
+> Turn any technical book PDF into a Claude Code skill — ready to study, reference, and use while you work.
+
+### [GitHub - tobi/qmd](https://github.com/tobi/qmd)
+
+> "mini cli search engine for your docs, knowledge bases, meeting notes, whatever. Tracking current sota approaches while being all local"
 
 ### [GitHub - securo-finance/securo](https://github.com/securo-finance/securo)
 

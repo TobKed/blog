@@ -27,6 +27,7 @@ _(No resources yet)_
 - **[nicobailon/visual-explainer](https://github.com/nicobailon/visual-explainer)**: Agent skill that generates rich HTML pages or slide decks for diagrams, diff reviews, plan audits, data tables, and project recaps.
 - **[nutlope/hallmark](https://github.com/nutlope/hallmark)**: Anti-AI-slop design skill for Claude Code, Cursor, and Codex.
 - **[open-gsd/gsd-core](https://github.com/open-gsd/gsd-core)**: Git. Ship. Done - Core framework.
+- **[virgiliojr94/book-to-skill](https://github.com/virgiliojr94/book-to-skill)**: Turn any technical book PDF into a Claude Code skill — ready to study, reference, and use while you work.
 
 ## Websites
 
