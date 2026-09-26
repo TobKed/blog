@@ -29,6 +29,18 @@ ______________________________________________________________________
 
 ## Articles
 
+### [A Life Engineered: Everything Important Is Optional Until It Isn't](https://alifeengineered.substack.com/p/everything-important-is-optional)
+
+#### AI generated summary
+
+A reflection on how we prioritize tasks, warning about the long-term costs of neglecting important but non-urgent responsibilities.
+
+### [A Life Engineered: You're Not Bad at Hard Things](https://alifeengineered.substack.com/p/youre-not-bad-at-hard-things)
+
+#### AI generated summary
+
+Argues that feelings of overwhelm often stem from complexity rather than difficulty, advocating for simplifying our lives and systems instead of seeking easier challenges.
+
 ### [Cloudflare Blog: How we saved 100 terabytes of memory by optimizing 1.1.1.1’s DNS cache](https://blog.cloudflare.com/dns-cache-memory-optimization-1111/)
 
 > "Five Rust-level memory optimizations to the DNS cache layout of Big Pineapple cut per-entry memory by 56%, freeing approximately 100 TB of memory across Cloudflare's fleet."
@@ -60,6 +72,34 @@ ______________________________________________________________________
 ## Productivity
 
 ## AI
+
+### [Armenian AI Company: Code You've Never Read](https://aicompany.am/zine/ai_resistance.html)
+
+> "Nearly every tool a programmer now takes for granted was once dismissed as a shortcut for people who couldn’t do the real thing. The complaints about AI are old—older than the compiler."
+
+### [Google Cloud Blog: How the Open Knowledge Format can improve data sharing](https://cloud.google.com/blog/products/data-analytics/how-the-open-knowledge-format-can-improve-data-sharing/)
+
+#### AI generated summary
+
+Discusses the benefits of the Open Knowledge Format for enhancing data sharing, integration, and interoperability.
+
+### [Dario Amodei: We Must Pace the Frontier](https://darioamodei.com/post/we-must-pace-the-frontier)
+
+> "I have worked on AI for the last twelve years because I believe it could dramatically raise the quality of human life. I believe that AI could cure most major diseases in the next 5–10 years, greatly accelerate economic growth rates, create a world of abundance and empowerment..."
+
+### [PostHog: What happens to engineers when AI writes all the code?](https://newsletter.posthog.com/p/if-ai-writes-all-the-code-whats-left)
+
+> "Engineers aren’t going away. They'll be piloting the product loop. We are plausibly coming to a moment where AI will write all the code."
+
+### [TypeSafe AI Blog: Introducing System One Models & Jev](https://typesafe.ai/blog/introducing-system-one-models-and-jev)
+
+#### AI generated summary
+
+An introduction to System One models and Jev from TypeSafe AI, exploring their capabilities and potential applications.
+
+### [Ron Forbes: Building Your AI Second Brain: A Practical Guide for the Overwhelmed Knowledge Worker](https://www.ronforbes.com/blog/building-your-ai-second-brain)
+
+> "You don't need to be an engineer or AI expert to build a second brain. Start with a 15-minute brain dump, let AI handle the tedious organizing and distilling, and stay in the loop to add your judgment."
 
 ### [exe.dev blog: Six Months of Writing Code Exclusively With Agents](https://blog.exe.dev/engineering-with-ai)
 
@@ -102,6 +142,18 @@ ______________________________________________________________________
 ## Go
 
 ## Tools
+
+### [GitHub - ashwch/946ad983977c9107db7ee9abafeb95bd](https://gist.github.com/ashwch/946ad983977c9107db7ee9abafeb95bd)
+
+#### AI generated summary
+
+A comprehensive guide on how to effectively use Git worktrees, especially in repositories with submodules.
+
+### [WireGuard: fast, modern, secure VPN tunnel](https://www.wireguard.com/)
+
+#### AI generated summary
+
+The official landing page for WireGuard, a modern, highly performant, and secure VPN protocol designed to be simpler and leaner than alternatives like IPsec and OpenVPN.
 
 ### [GitHub - virgiliojr94/book-to-skill](https://github.com/virgiliojr94/book-to-skill)
 
