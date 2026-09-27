@@ -29,6 +29,10 @@ ______________________________________________________________________
 
 ## Articles
 
+### [Thorsten Ball: What I believe about the future of software development](https://thorstenball.com/blog/2026/09/19/what-i-believe-about-the-future-of-software-development/)
+
+> "Code review will die. I mean: it’s already dead. But in the future, humans won’t find a bug or an issue with the code produced by a model, at least not in a reasonable time."
+
 ### [A Life Engineered: Everything Important Is Optional Until It Isn't](https://alifeengineered.substack.com/p/everything-important-is-optional)
 
 #### AI generated summary
@@ -72,6 +76,16 @@ Argues that feelings of overwhelm often stem from complexity rather than difficu
 ## Productivity
 
 ## AI
+
+### [Flavio Copes: How to use Cursor Projects](https://flaviocopes.com/cursor-projects/)
+
+#### AI generated summary
+
+Flavio Copes provides a guide on how to effectively use Cursor's new "Projects" feature, which utilizes a coordinator AI agent to plan tasks, delegate to subagents, and manage shared context instead of using single task-based chats.
+
+### [htmx: Markdown in /src](https://htmx.org/essays/markdown-in-src/)
+
+> "Markdown is becoming source code, not documentation. That Markdown should be checked in to /src, next to the code it produces."
 
 ### [Armenian AI Company: Code You've Never Read](https://aicompany.am/zine/ai_resistance.html)
 
@@ -143,6 +157,10 @@ An introduction to System One models and Jev from TypeSafe AI, exploring their c
 
 ## Tools
 
+### [Freek Van der Herten: A tour of my dotfiles](https://freek.dev/3054-a-tour-of-my-dotfiles)
+
+> "Over the years, I've built up a collection of aliases, shell functions, and CLI tools that make my terminal feel like home. All of it lives in a single repository: my dotfiles."
+
 ### [GitHub - ashwch/946ad983977c9107db7ee9abafeb95bd](https://gist.github.com/ashwch/946ad983977c9107db7ee9abafeb95bd)
 
 #### AI generated summary
@@ -184,6 +202,26 @@ Securo is an open-source, privacy-first personal finance manager designed to run
 ## Podcasts
 
 ## Videos
+
+### [Rails World 2026 Opening Keynote - DHH](https://youtu.be/vDjW_dRyKXY)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/vDjW_dRyKXY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+#### AI generated summary
+
+DHH's opening keynote at Rails World 2026 discusses the era of AI agents, explaining why 37signals has stopped writing handwritten code and how the Rails convention fits into this shift.
+
+### [I Run an AI Civilization in Herdr](https://youtu.be/AL-PQuB2wy0)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/AL-PQuB2wy0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+#### AI generated summary
+
+An intriguing look at "Herdr", a system where hundreds of AI coding agents build software, share knowledge across generations, and simulate an AI civilization.
 
 ### [The New Code — Sean Grove, OpenAI](https://www.youtube.com/watch?v=8rABwKRsec4)
 
