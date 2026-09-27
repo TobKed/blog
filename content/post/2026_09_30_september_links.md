@@ -185,6 +185,36 @@ Securo is an open-source, privacy-first personal finance manager designed to run
 
 ## Videos
 
+### [The New Code — Sean Grove, OpenAI](https://www.youtube.com/watch?v=8rABwKRsec4)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/8rABwKRsec4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+#### AI generated summary
+
+Sean Grove from OpenAI discusses the shift in software development where the primary skill is evolving from writing manual code to precisely communicating intent to AI models.
+
+### [Deepseek just did the impossible](https://youtu.be/MImgH4KMtj8)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/MImgH4KMtj8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+#### AI generated summary
+
+A breakdown of the newly released Deepseek V4.1 Flash model, exploring its capabilities and the implications for the broader AI landscape.
+
+### [Google Replaced The Karpathy's LLM Wiki](https://youtu.be/k4sMSsMzX2g)
+
+<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/k4sMSsMzX2g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+#### AI generated summary
+
+An exploration of Google's Open Knowledge Format (OKF) as a scalable alternative to traditional second-brain systems and its potential to improve large-scale data organization.
+
 ### [Geoffrey Litt: Dynamic Documents as Personal Software](https://youtu.be/MccJdr61xnc)
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
