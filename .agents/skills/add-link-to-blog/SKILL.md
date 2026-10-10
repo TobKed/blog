@@ -81,7 +81,9 @@ Wait for the user's response. Iterate and update the drafts if they request chan
 
 ## 7. Formatting and File Modification
 Locate the confirmed `## Section` in the target file.
-When inserting the markdown, group links by their source prefix (e.g., `A Life Engineered:`). If the section already contains a link with the exact same prefix, insert the new link immediately after the last link in that group so they are grouped together. Otherwise, append the new link at the very end of the section (just before the next section header).
+When inserting the markdown, ensure that grouped links (links sharing the same source prefix like `A Life Engineered:`) are always kept together at the **very end** of the section so they don't dominate the top. 
+- If adding a link that belongs to a group, insert it at the end of that specific group.
+- If adding a standalone link, append it after the existing standalone links but **before** any grouped links at the bottom.
 
 **For Standard Links, use the format chosen by the user:**
 
