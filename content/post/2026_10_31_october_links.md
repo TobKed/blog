@@ -29,10 +29,6 @@ ______________________________________________________________________
 
 ## Articles
 
-### [A Life Engineered: Worth Repeating: The Art of Showing Up](https://alifeengineered.substack.com/p/worth-repeating-the-art-of-showing)
-
-> The fastest way to get things done is to forget the finish line.
-
 ### [wpollock.com: Unix File and Directory Permissions and Modes](https://wpollock.com/AUnix1/FilePermissions.htm)
 
 > Unix and Linux systems (including Mac OS X and other POSIX compliant systems) have a (relatively) simple system for controlling access to files and directories.
@@ -45,18 +41,6 @@ ______________________________________________________________________
 
 > I’m excited about how AI is changing how I work, it has made me more productive and able to get more things done. I’m also frustrated by how much low-effort content is being generated and sprayed across the internet.
 
-### [A Life Engineered: The Mistakes You Can't Take Back](https://alifeengineered.substack.com/p/the-mistakes-you-cant-take-back)
-
-> Most decisions are two-way doors, meaning you can easily reverse them. But some decisions are one-way doors—you can’t take them back.
-
-### [A Life Engineered: Worth Repeating: Are You Accumulating Career Debt?](https://alifeengineered.substack.com/p/worth-repeating-are-you-accumulating)
-
-> Career debt is the accumulation of obsolete skills and missed opportunities, a quiet tax on your future professional mobility.
-
-### [A Life Engineered: Worth Repeating: How I Have Time For Everything](https://alifeengineered.substack.com/p/worth-repeating-how-i-have-time-for)
-
-> Having time for everything isn't about fitting more into your day; it's about ruthlessly eliminating what doesn't matter and fiercely protecting your slack.
-
 ### [The Phoenix Architecture: The Spec Can Come Later](https://aicoding.leaflet.pub/3mwlzitykzc27)
 
 > With AI, we can hack together a prototype first and let the machine help us extract the specification later.
@@ -68,6 +52,22 @@ ______________________________________________________________________
 ### [bobble.tech: Used ThinkPad Buyer's Guide](https://www.bobble.tech/free-stuff/used-thinkpad-buyers-guide)
 
 > Buying a used ThinkPad is one of the best value propositions in computing, provided you know which models have legendary keyboards and which to avoid.
+
+### [A Life Engineered: Worth Repeating: The Art of Showing Up](https://alifeengineered.substack.com/p/worth-repeating-the-art-of-showing)
+
+> The fastest way to get things done is to forget the finish line.
+
+### [A Life Engineered: The Mistakes You Can't Take Back](https://alifeengineered.substack.com/p/the-mistakes-you-cant-take-back)
+
+> Most decisions are two-way doors, meaning you can easily reverse them. But some decisions are one-way doors—you can’t take them back.
+
+### [A Life Engineered: Worth Repeating: Are You Accumulating Career Debt?](https://alifeengineered.substack.com/p/worth-repeating-are-you-accumulating)
+
+> Career debt is the accumulation of obsolete skills and missed opportunities, a quiet tax on your future professional mobility.
+
+### [A Life Engineered: Worth Repeating: How I Have Time For Everything](https://alifeengineered.substack.com/p/worth-repeating-how-i-have-time-for)
+
+> Having time for everything isn't about fitting more into your day; it's about ruthlessly eliminating what doesn't matter and fiercely protecting your slack.
 
 ## Productivity
 

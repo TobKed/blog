@@ -80,7 +80,8 @@ After printing the drafts, **EXPLICITLY ask the user:**
 Wait for the user's response. Iterate and update the drafts if they request changes.
 
 ## 7. Formatting and File Modification
-Locate the confirmed `## Section` in the target file. Append the markdown directly under the section header.
+Locate the confirmed `## Section` in the target file.
+When inserting the markdown, group links by their source prefix (e.g., `A Life Engineered:`). If the section already contains a link with the exact same prefix, insert the new link immediately after the last link in that group so they are grouped together. Otherwise, append the new link at the very end of the section (just before the next section header).
 
 **For Standard Links, use the format chosen by the user:**
 
