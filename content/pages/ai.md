@@ -13,7 +13,7 @@ build:
 
 ## Tools & Setup
 
-_(No resources yet)_
+- **[affaan-m/ECC](https://github.com/affaan-m/ECC)**: The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.
 
 ## Skills
 
@@ -21,6 +21,7 @@ _(No resources yet)_
 - **[JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman)**: 🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman.
 - **[ayghri/i-have-adhd](https://github.com/ayghri/i-have-adhd)**: A skill to stop your coding agent from burying the answer. ADHD-friendly output.
 - **[mattpocock/skills](https://github.com/mattpocock/skills)**: Skills for Real Engineers. Straight from my .agents directory.
+- **[mattpocock/skills/grilling](https://www.skills.sh/mattpocock/skills/grilling)**: Grill the user relentlessly about a plan, decision, or idea. Use when the user wants to stress-test their thinking.
 - **[nicobailon/visual-explainer](https://github.com/nicobailon/visual-explainer)**: Agent skill that generates rich HTML pages or slide decks for diagrams, diff reviews, plan audits, data tables, and project recaps.
 - **[nutlope/hallmark](https://github.com/nutlope/hallmark)**: Anti-AI-slop design skill for Claude Code, Cursor, and Codex.
 - **[obra/superpowers](https://github.com/obra/superpowers)**: An agentic skills framework & software development methodology that works.
