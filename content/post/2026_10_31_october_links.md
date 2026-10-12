@@ -53,6 +53,10 @@ ______________________________________________________________________
 
 > Buying a used ThinkPad is one of the best value propositions in computing, provided you know which models have legendary keyboards and which to avoid.
 
+### [Derek Sivers: Uncommon Sense - live @ WDS](https://sive.rs/wds)
+
+> What you need to avoid is this deathbed regret that you’ve pursued something that someone said you should want instead of what you really want. When you choose the thing that you are most into, that means that you need to optimize for that, and be willing to let go of the others.
+
 ### [A Life Engineered: Worth Repeating: The Art of Showing Up](https://alifeengineered.substack.com/p/worth-repeating-the-art-of-showing)
 
 > The fastest way to get things done is to forget the finish line.
@@ -79,6 +83,10 @@ ______________________________________________________________________
 
 > In 2019 I wrote more than the previous 5 years combined, at least publically.
 
+### [Jacob Tomlinson: Why taking notes still matters](https://jacobtomlinson.dev/posts/2026/why-taking-notes-still-matters/)
+
+> With people moving to AI note takers it feels like the “it’s all in the textbook” approach is being adopted en-masse, but where the textbook for every topic writes itself automatically. Textbooks are great, but notes are great too!
+
 ## AI
 
 ### [ohhfishal: Claude Says....](https://ohhfishal.net/Posts/claude)
@@ -100,6 +108,14 @@ ______________________________________________________________________
 ### [Fatih Arslan: How I manage my agents](https://arslan.io/2026/09/11/how-i-manage-my-agents/)
 
 > By using a simple markdown index, I can maintain a high-level overview of all my active agents, their current state, and the overarching goals they are pursuing.
+
+### [Atlassian: The AI SDLC transformation playbook](https://www.atlassian.com/blog/ai-at-work/ai-sdlc-transformation-playbook)
+
+> The AI-native software development lifecycle (SDLC) goes far beyond having developers adopt coding agents. As less time is spent writing code by hand, coding itself is evolving from a synchronous, single-threaded task into an asynchronous, multi-threaded one.
+
+### [AI 2027: A research-backed AI scenario forecast](https://ai-2027.com/)
+
+> We predict that the impact of superhuman AI over the next decade will be enormous, exceeding that of the Industrial Revolution. We wrote a scenario that represents our best guess about what that might look like.
 
 ## Security
 
