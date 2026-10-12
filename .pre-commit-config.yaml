@@ -43,3 +43,11 @@ repos:
     hooks:
       - id: isort
         args: ["--profile", "black", "--filter-files"]
+  - repo: local
+    hooks:
+      - id: duplicate-links
+        name: duplicate links in posts
+        entry: scripts/check_duplicate_links.py --warn
+        language: script
+        files: ^content/post/.*\.md$
+        verbose: true
