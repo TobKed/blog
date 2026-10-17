@@ -37,14 +37,6 @@ ______________________________________________________________________
 
 > In this post, I’m going to share ten career traps thoughtful people often find themselves ensnared in.
 
-### [Jacob Tomlinson: Writing blog posts while walking the dog](https://jacobtomlinson.dev/posts/2026/writing-blog-posts-while-walking-the-dog/)
-
-> I’m excited about how AI is changing how I work, it has made me more productive and able to get more things done. I’m also frustrated by how much low-effort content is being generated and sprayed across the internet.
-
-### [The Phoenix Architecture: The Spec Can Come Later](https://aicoding.leaflet.pub/3mwlzitykzc27)
-
-> With AI, we can hack together a prototype first and let the machine help us extract the specification later.
-
 ### [Calibre: It’s official: Airline websites are slow, but they don’t have to be](https://calibreapp.com/blog/airline-websites-are-slow)
 
 > Our analysis of 111 airline websites confirms what travelers already know: they are agonizingly slow, but straightforward performance optimizations could change that.
@@ -57,9 +49,29 @@ ______________________________________________________________________
 
 > What you need to avoid is this deathbed regret that you’ve pursued something that someone said you should want instead of what you really want. When you choose the thing that you are most into, that means that you need to optimize for that, and be willing to let go of the others.
 
+### [The Phoenix Architecture: The Spec Can Come Later](https://aicoding.leaflet.pub/3mwlzitykzc27)
+
+> With AI, we can hack together a prototype first and let the machine help us extract the specification later.
+
+### [Jacob Tomlinson: Writing blog posts while walking the dog](https://jacobtomlinson.dev/posts/2026/writing-blog-posts-while-walking-the-dog/)
+
+> I’m excited about how AI is changing how I work, it has made me more productive and able to get more things done. I’m also frustrated by how much low-effort content is being generated and sprayed across the internet.
+
+### [Refactoring English: Anti-Patterns in Software Blogging](https://refactoringenglish.com/blog/anti-patterns-software-blogging/)
+
+> In software development, we collect anti-patterns to recognize common traits that lead to poor outcomes in our software. I thought it would be helpful to do the same for software blogging, so I’ve catalogued the most frequent mistakes I see from beginner bloggers.
+
+### [GitHub - alex/what-happens-when](https://github.com/alex/what-happens-when)
+
+> An attempt to answer the age old interview question "What happens when you type google.com into your browser and press enter?" — covering everything from keyboard interrupts and OS syscalls to DNS, TLS, and rendering engines.
+
 ### [Architecture Weekly: Sharing is (not always) caring. PgBouncer pooling modes in practice](https://www.architecture-weekly.com/p/sharing-is-not-always-caring-pgbouncer)
 
 > When you configure PgBouncer, you need to choose a pooling mode. This choice clearly affects how connection sharing works and, in turn, performance. It also affects which database features will work.
+
+### [Nas: How Does Instagram Instantly Know If Your Username Is Available?](https://itsnas.me/writing/username-availability)
+
+> Type a handle into a signup form and a green tick or a red cross appears almost before you stop typing, checked against a billion names. It isn't one clever database query. It's a debounced client, a Bloom filter that answers 'definitely free' from memory, an index for everything else, and a unique constraint that has the final say.
 
 ### [A Life Engineered: Worth Repeating: The Art of Showing Up](https://alifeengineered.substack.com/p/worth-repeating-the-art-of-showing)
 
@@ -121,6 +133,18 @@ ______________________________________________________________________
 
 > We predict that the impact of superhuman AI over the next decade will be enormous, exceeding that of the Industrial Revolution. We wrote a scenario that represents our best guess about what that might look like.
 
+### [ghuntley.com: If your team is too busy doing their 'normal job' to experiment with AI, you're preparing them to be replaced](https://ghuntley.com/replaced/)
+
+> Artisanal handwritten code is only possible for retired tech executives and as a hobby at home, but it's no longer a way to make money. You can push against the grain and refuse to use AI, but that's just self-harm.
+
+### [The Pragmatic Engineer: The state of the tech industry in 2026](https://newsletter.pragmaticengineer.com/p/the-state-of-the-tech-industry-in)
+
+> Nearly all of the most productive software engineers I’ve met – who were hand-writing code a year ago – no longer write the code by hand and also run several parallel agents. Food for thought: there were more agent-authored PRs in August 2026 on GitHub than human-authored ones!
+
+### [Simon Willison: I built a new feature for my blog using my voice](https://simonw.substack.com/p/i-built-a-new-feature-for-my-blog)
+
+> I shipped a new feature for my blog: the Newsletters page, which offers an index of all of the newsletters I’ve sent out. I built the feature almost entirely using my voice, chatting away to my laptop while I cooked dinner.
+
 ## Security
 
 ## Python
@@ -147,11 +171,19 @@ ______________________________________________________________________
 
 > An ebook reader application supporting PDF, DjVu, EPUB, FB2 and many more formats, running on Cervantes, Kindle, Kobo, PocketBook and Android devices.
 
+### [GitHub - firecracker-microvm/firecracker](https://github.com/firecracker-microvm/firecracker)
+
+> Firecracker is an open source virtualization technology that is purpose-built for creating and managing secure, multi-tenant container and function-based services that provide serverless operational models.
+
 ## Cloud
 
 ## Other stuff
 
 ## Podcasts
+
+### [The Ezra Klein Show: Bill Gates’s Blunt Warning on A.I.](https://www.nytimes.com/2026/09/29/opinion/ezra-klein-podcast-bill-gates.html)
+
+> Current AI alarmism does not go far enough. The idea that the tech industry can effectively self-regulate is insane when facing threats like catastrophic cyberattacks, bioterrorism, and rapid mass job displacement.
 
 ## Videos
 
@@ -161,18 +193,10 @@ ______________________________________________________________________
     <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/zlit6xVbf_o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-#### AI generated summary
-
-A video exploring incredibly cost-effective methods and hardware choices for building a home Network Attached Storage (NAS) system.
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
+### [The Diary Of A CEO: Ex-Google Officer: You Only Have 3 Years Left Before It Hits! - Mo Gawdat](https://youtu.be/RwlgFC6S-OE)
 
 <div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/RwlgFC6S-OE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
-
-> Playback on other websites has been disabled by the video owner. [Watch on YouTube](https://www.youtube.com/watch?v=VIDEO_ID)
 
 ## 🇵🇱 Polish Corner 🇵🇱
