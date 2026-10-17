@@ -81,9 +81,13 @@ Wait for the user's response. Iterate and update the drafts if they request chan
 
 ## 7. Formatting and File Modification
 Locate the confirmed `## Section` in the target file.
-When inserting the markdown, ensure that grouped links (links sharing the same source prefix like `A Life Engineered:`) are always kept together at the **very end** of the section so they don't dominate the top. 
-- If adding a link that belongs to a group, insert it at the end of that specific group.
-- If adding a standalone link, append it after the existing standalone links but **before** any grouped links at the bottom.
+
+When inserting links into a section, adhere to this **internal sorting hierarchy**:
+1. **Standalone / diverse links** appear first.
+2. **Thematic / topic clusters** (e.g., links sharing a specific sub-topic such as writing/blogging craft, note-taking, or database internals) should be kept adjacent to each other. If adding a link that matches an existing topic cluster in that section, place it next to that cluster.
+3. **Publication / source series** (links sharing the same author or source prefix like `A Life Engineered:` or `DEF CON 34:`) must always be grouped together at the **very end** of the section so they don't dominate the top.
+   - If adding a link that belongs to a source series, insert it at the end of that specific series group at the bottom.
+   - If adding a standalone or topic link, append it after the existing standalone/topic links but **before** any source series at the bottom.
 
 **For Standard Links, use the format chosen by the user:**
 

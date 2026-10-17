@@ -57,6 +57,10 @@ ______________________________________________________________________
 
 > What you need to avoid is this deathbed regret that you’ve pursued something that someone said you should want instead of what you really want. When you choose the thing that you are most into, that means that you need to optimize for that, and be willing to let go of the others.
 
+### [Architecture Weekly: Sharing is (not always) caring. PgBouncer pooling modes in practice](https://www.architecture-weekly.com/p/sharing-is-not-always-caring-pgbouncer)
+
+> When you configure PgBouncer, you need to choose a pooling mode. This choice clearly affects how connection sharing works and, in turn, performance. It also affects which database features will work.
+
 ### [A Life Engineered: Worth Repeating: The Art of Showing Up](https://alifeengineered.substack.com/p/worth-repeating-the-art-of-showing)
 
 > The fastest way to get things done is to forget the finish line.
@@ -79,13 +83,13 @@ ______________________________________________________________________
 
 > Modern digital tools make it easy to “capture” information from a wide variety of sources. We know how to snap a picture, type out some notes, record a video, or scan a document. Getting this content from the outside world into the digital world is trivial.
 
-### [Joel Hooks: 🖋 Stop Giving af and Start Writing More](https://joelhooks.com/on-writing-more)
-
-> In 2019 I wrote more than the previous 5 years combined, at least publically.
-
 ### [Jacob Tomlinson: Why taking notes still matters](https://jacobtomlinson.dev/posts/2026/why-taking-notes-still-matters/)
 
 > With people moving to AI note takers it feels like the “it’s all in the textbook” approach is being adopted en-masse, but where the textbook for every topic writes itself automatically. Textbooks are great, but notes are great too!
+
+### [Joel Hooks: 🖋 Stop Giving af and Start Writing More](https://joelhooks.com/on-writing-more)
+
+> In 2019 I wrote more than the previous 5 years combined, at least publically.
 
 ## AI
 
@@ -138,6 +142,10 @@ ______________________________________________________________________
 ### [tinyjs: desktop apps for macOS, Windows, and Linux in ~6 MB](https://tinyjs.app/)
 
 > tinyjs is a tool for building desktop apps with HTML, CSS, and JavaScript, weighing in at a mere ~6 MB without the heavy Chromium overhead.
+
+### [GitHub - koreader/koreader](https://github.com/koreader/koreader)
+
+> An ebook reader application supporting PDF, DjVu, EPUB, FB2 and many more formats, running on Cervantes, Kindle, Kobo, PocketBook and Android devices.
 
 ## Cloud
 
