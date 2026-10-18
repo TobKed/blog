@@ -218,30 +218,20 @@ Ending year with another certificate in my collection.
 
 ### [Moving 17 years of old legacy code and websites into the Cloud - Scott Hanselman at NDC Porto 2022](https://www.youtube.com/watch?v=CVxwsskDzmU)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/CVxwsskDzmU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="CVxwsskDzmU" title="Moving 17 years of old legacy code and websites into the Cloud - Scott Hanselman at NDC Porto 2022">}}
 
 ### [The Forgotten Art of Structured Programming - Kevlin Henney \[C++ on Sea 2019\]](https://www.youtube.com/watch?v=SFv8Wm2HdNM)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/SFv8Wm2HdNM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="SFv8Wm2HdNM" title="The Forgotten Art of Structured Programming - Kevlin Henney \[C++ on Sea 2019\]">}}
 
 ### [Advanced API and Integration Problems & Patterns - Udi Dahan - NDC Oslo 2022 ](https://www.youtube.com/watch?v=vNouCMGP1eE)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/vNouCMGP1eE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="vNouCMGP1eE" title="Advanced API and Integration Problems & Patterns - Udi Dahan - NDC Oslo 2022 ">}}
 
 ### [The Design of Everyday APIs - presented by Lynn Root](https://www.youtube.com/watch?v=bVoM2WLt6Hk)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/bVoM2WLt6Hk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="bVoM2WLt6Hk" title="The Design of Everyday APIs - presented by Lynn Root">}}
 
 ### [Co dopamina i adrenalina robi z programist(k)ą? - Jakub Pilimon - Beyond Code 2022](https://www.youtube.com/watch?v=CfPRrBHLUtY)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/CfPRrBHLUtY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="CfPRrBHLUtY" title="Co dopamina i adrenalina robi z programist(k)ą? - Jakub Pilimon - Beyond Code 2022">}}

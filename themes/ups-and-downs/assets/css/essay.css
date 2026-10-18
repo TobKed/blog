@@ -217,15 +217,6 @@
 
 .prose iframe { max-width: 100%; border: 0; }
 /* The posts' YouTube embeds carry an inline padding-hack; aspect-ratio replaces it. */
-.prose .videoWrapper {
-  position: relative;
-  height: auto !important;
-  padding: 0 !important;
-  aspect-ratio: 16 / 9;
-  background: var(--video-bg);
-}
-.prose .videoWrapper iframe { position: absolute; inset: 0; width: 100%; height: 100% !important; }
-
 /* ---- quotes --------------------------------------------------------------- */
 
 figure.quote { margin-left: 0; margin-right: 0; }

@@ -66,9 +66,11 @@ Two routes exist for curating these:
 - The `add-link-to-blog` skill (see "Agent skills" below; invocable as `/add-link-to-blog`) encodes the same workflow (fetch → dedupe → categorize into a section → ask user to confirm snippet vs. AI summary → append to `content/post/YYYY_MM_DD_monthname_links.md`) for use directly by an agent instead of the scripts above.
 
 Both routes converge on the same target-file/section conventions, so when adding links by hand,
-match the existing formatting in a recent `*_links.md` post (standard link vs. YouTube embed block).
-YouTube embeds are raw HTML `<div class="videoWrapper">` blocks, which work because
-`markup.goldmark.renderer.unsafe` is enabled in `hugo.toml`.
+match the existing formatting in a recent `*_links.md` post (standard link vs. YouTube video).
+YouTube videos use the theme's `{{<youtube-lite id="…" title="…">}}` shortcode: a click-to-play
+preview whose thumbnail is fetched at build time, so no request reaches YouTube until a reader
+presses play. Write it without a space after `{{<` and with typographic quotes in the title;
+mdformat (pre-commit) escapes `{{< ` and `\"`, which breaks the shortcode.
 
 ## Other scripts
 

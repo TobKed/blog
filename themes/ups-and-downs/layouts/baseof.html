@@ -17,7 +17,7 @@
     {{ partial "footer.html" . }}
 </div>
 {{ $js := slice }}
-{{ range slice "js/theme.js" "js/issue.js" "js/essay.js" "js/archive.js" }}{{ with resources.Get . }}{{ $js = $js | append . }}{{ end }}{{ end }}
+{{ range slice "js/theme.js" "js/issue.js" "js/essay.js" "js/archive.js" "js/video.js" }}{{ with resources.Get . }}{{ $js = $js | append . }}{{ end }}{{ end }}
 {{ with $js }}{{ $js := . | resources.Concat "js/bundle.js" | minify | fingerprint }}
 <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
 {{ end }}

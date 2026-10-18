@@ -30,9 +30,7 @@ I also took a trip down memory lane by watching [Python: The Documentary | An or
 
 ### [Python: The Documentary | An origin story](https://www.youtube.com/watch?v=GfH4QL4VqJ0)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/GfH4QL4VqJ0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="GfH4QL4VqJ0" title="Python: The Documentary | An origin story">}}
 
 ______________________________________________________________________
 
@@ -150,9 +148,7 @@ The article announces the release of `django.tasks`, a new feature in Django tha
 
 ### [Jak stworzyć własny serwer MCP bez kodowania (n8n AI poradnik) - YouTube](https://www.youtube.com/watch?v=V8IGB4AfbHE)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/V8IGB4AfbHE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="V8IGB4AfbHE" title="Jak stworzyć własny serwer MCP bez kodowania (n8n AI poradnik) - YouTube">}}
 
 #### AI generated summary
 
@@ -160,21 +156,15 @@ This video tutorial guides viewers on creating an MCP server without coding, uti
 
 ### [Programming for Yourself - Paul Ganssle - YouTube](https://www.youtube.com/watch?v=NNbq-o5HODY)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/NNbq-o5HODY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="NNbq-o5HODY" title="Programming for Yourself - Paul Ganssle - YouTube">}}
 
 ### [Building Your Own Unified AI Assistant Using Claude Code - YouTube](https://www.youtube.com/watch?v=iKwRWwabkEc)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/iKwRWwabkEc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="iKwRWwabkEc" title="Building Your Own Unified AI Assistant Using Claude Code - YouTube">}}
 
 ### [How to Speak - YouTube](https://www.youtube.com/watch?v=Unzc731iCUY)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/Unzc731iCUY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="Unzc731iCUY" title="How to Speak - YouTube">}}
 
 #### AI generated summary
 
@@ -182,9 +172,7 @@ MIT OpenCourseWare (OCW) offers free and open access to educational materials fr
 
 ### [Claude Code - Jak dobrze korzystać? Tutorial: Budujemy fullstack’ową aplikację do booking’u barberów - YouTube](https://www.youtube.com/watch?v=JGOjYFn40xw)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/JGOjYFn40xw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="JGOjYFn40xw" title="Claude Code - Jak dobrze korzystać? Tutorial: Budujemy fullstack’ową aplikację do booking’u barberów - YouTube">}}
 
 #### AI generated summary
 
@@ -192,9 +180,7 @@ A tutorial video on using Claude Code to build a full-stack barber booking appli
 
 ### [How I Setup My Mac Terminal To Make It Amazing - YouTube](https://www.youtube.com/watch?v=oR_B2gQDVf4)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/oR_B2gQDVf4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="oR_B2gQDVf4" title="How I Setup My Mac Terminal To Make It Amazing - YouTube">}}
 
 #### AI generated summary
 
@@ -202,24 +188,16 @@ This video tutorial demonstrates how to configure a Mac terminal using tools lik
 
 ### [Advanced Context Engineering for Agents - YouTube](https://www.youtube.com/watch?v=IS_y40zY-hc)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/IS_y40zY-hc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="IS_y40zY-hc" title="Advanced Context Engineering for Agents - YouTube">}}
 
 ### [Vibes won't cut it — Chris Kelly, Augment Code - YouTube](https://www.youtube.com/watch?v=Dc3qOA9WOnE)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/Dc3qOA9WOnE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="Dc3qOA9WOnE" title="Vibes won't cut it — Chris Kelly, Augment Code - YouTube">}}
 
 ### [Last Lecture Series: “How to Live an Asymmetric Life,” Graham Weaver - YouTube](https://www.youtube.com/watch?v=dZxbVGhpEkI)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/dZxbVGhpEkI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="dZxbVGhpEkI" title="Last Lecture Series: “How to Live an Asymmetric Life,” Graham Weaver - YouTube">}}
 
 ### [Python: The Documentary | An origin story](https://www.youtube.com/watch?v=GfH4QL4VqJ0)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/GfH4QL4VqJ0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="GfH4QL4VqJ0" title="Python: The Documentary | An origin story">}}

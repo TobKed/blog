@@ -270,108 +270,72 @@ This article explores the security risks of storing secrets in environment varia
 
 ### [My Obsidian And Gemini CLI Workflow - YouTube](https://www.youtube.com/watch?v=JGwFsyyewYc)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/JGwFsyyewYc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="JGwFsyyewYc" title="My Obsidian And Gemini CLI Workflow - YouTube">}}
 
 ### [My Top 5 Productivity Apps That Survived Years of Testing - YouTube](https://www.youtube.com/watch?v=t98TMoILzug)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/t98TMoILzug" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="t98TMoILzug" title="My Top 5 Productivity Apps That Survived Years of Testing - YouTube">}}
 
 ### [WRZUCASZ ZDJĘCIA DO INTERNETU? BŁĄD! ZOBACZ JAK DZIAŁA OSINT - YouTube](https://www.youtube.com/watch?v=xl_dw07V4ts)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/xl_dw07V4ts" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="xl_dw07V4ts" title="WRZUCASZ ZDJĘCIA DO INTERNETU? BŁĄD! ZOBACZ JAK DZIAŁA OSINT - YouTube">}}
 
 ### [The $1 Billion Coca-Cola Machine - YouTube](https://www.youtube.com/watch?v=-a29Ygyzc2c)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/-a29Ygyzc2c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="-a29Ygyzc2c" title="The $1 Billion Coca-Cola Machine - YouTube">}}
 
 ### [14 Nieoczywistych Zastosowań NotebookLM, Perplexity i Gemini - YouTube](https://www.youtube.com/watch?v=hAkFRpZjv2c)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/hAkFRpZjv2c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="hAkFRpZjv2c" title="14 Nieoczywistych Zastosowań NotebookLM, Perplexity i Gemini - YouTube">}}
 
 ### [Przestań to robić przed snem. Kradnie zdrowie i kilka lat życia 🫨 - YouTube](https://www.youtube.com/watch?v=8V-j-FHFnjo)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/8V-j-FHFnjo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="8V-j-FHFnjo" title="Przestań to robić przed snem. Kradnie zdrowie i kilka lat życia 🫨 - YouTube">}}
 
 ### [The Philosophy of Software Design – with John Ousterhout - YouTube](https://www.youtube.com/watch?v=lz451zUlF-k)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/lz451zUlF-k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="lz451zUlF-k" title="The Philosophy of Software Design – with John Ousterhout - YouTube">}}
 
 ### [The Brutal Truth About Time Management No One Wants to Hear - YouTube](https://www.youtube.com/watch?v=KTOVuUKIHVw)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/KTOVuUKIHVw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="KTOVuUKIHVw" title="The Brutal Truth About Time Management No One Wants to Hear - YouTube">}}
 
 ### [Bad Estimates Destroy Careers (Here’s What to Say Instead) - YouTube](https://www.youtube.com/watch?v=2-QCqbMsPDc)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/2-QCqbMsPDc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="2-QCqbMsPDc" title="Bad Estimates Destroy Careers (Here’s What to Say Instead) - YouTube">}}
 
 ### [Ex-Google Recruiter Explains Why "Lying" Gets You Hired - YouTube](https://www.youtube.com/watch?v=T__1QViXUxk)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/T__1QViXUxk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="T__1QViXUxk" title="Ex-Google Recruiter Explains Why “Lying” Gets You Hired - YouTube">}}
 
 ### [How to build context systems for AI agents - YouTube](https://www.youtube.com/watch?v=Udx7SLFDsxo)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/Udx7SLFDsxo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="Udx7SLFDsxo" title="How to build context systems for AI agents - YouTube">}}
 
 ### [The Genius System Behind the Uber App’s Real-Time Map - YouTube](https://www.youtube.com/watch?v=gHIs0Mdow8M)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/gHIs0Mdow8M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="gHIs0Mdow8M" title="The Genius System Behind the Uber App’s Real-Time Map - YouTube">}}
 
 ### [Complete Privacy Setup for $0, $5, or $13/Month (You Choose) - YouTube](https://www.youtube.com/watch?v=hQkKdXZiVj4)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/hQkKdXZiVj4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="hQkKdXZiVj4" title="Complete Privacy Setup for $0, $5, or $13/Month (You Choose) - YouTube">}}
 
 ### [Ten Program Uratował Piratów Komputerowych? - YouTube](https://www.youtube.com/watch?v=nM_ir68Ig5I)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/nM_ir68Ig5I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="nM_ir68Ig5I" title="Ten Program Uratował Piratów Komputerowych? - YouTube">}}
 
 ### [Stop coding, start architecting: Google Antigravity + Cloud Run - YouTube](https://www.youtube.com/watch?v=ooHyVrYY_2U)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/ooHyVrYY_2U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="ooHyVrYY_2U" title="Stop coding, start architecting: Google Antigravity + Cloud Run - YouTube">}}
 
 ### [Czy Azja Wschodnia powstrzyma epidemię krótkowzroczności (Dział Zagraniczny Podcast#252) - YouTube](https://www.youtube.com/watch?v=qFKHj8R2bIE)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/qFKHj8R2bIE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="qFKHj8R2bIE" title="Czy Azja Wschodnia powstrzyma epidemię krótkowzroczności (Dział Zagraniczny Podcast#252) - YouTube">}}
 
 ### [The Best Programmer I Know • Daniel Terhorst-North • GOTO 2024 - YouTube](https://www.youtube.com/watch?v=tgaKAF_eiOg)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/tgaKAF_eiOg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="tgaKAF_eiOg" title="The Best Programmer I Know • Daniel Terhorst-North • GOTO 2024 - YouTube">}}
 
 ### [Tiago Forte -  From Chaos to Clarity: My 4-Step Weekly Review System](https://www.youtube.com/watch?v=zjKUX7sHEGI)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/zjKUX7sHEGI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="zjKUX7sHEGI" title="Tiago Forte -  From Chaos to Clarity: My 4-Step Weekly Review System">}}

@@ -190,24 +190,16 @@ This page offers a detailed overview of cardiovascular health management, emphas
 
 ### [You SUCK at Prompting AI (Here's the secret) - YouTube](https://www.youtube.com/watch?v=pwWBcsxEoLk)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/pwWBcsxEoLk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="pwWBcsxEoLk" title="You SUCK at Prompting AI (Here's the secret) - YouTube">}}
 
 ### [I Spent $10,000 Learning How To Talk (Here's What Actually Worked) - YouTube](https://www.youtube.com/watch?v=-JlFfVkTymo)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/-JlFfVkTymo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="-JlFfVkTymo" title="I Spent $10,000 Learning How To Talk (Here's What Actually Worked) - YouTube">}}
 
 ### [no one sees it coming (except Google) - YouTube](https://www.youtube.com/watch?v=LQfSfVFc4Ss)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/LQfSfVFc4Ss" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="LQfSfVFc4Ss" title="no one sees it coming (except Google) - YouTube">}}
 
 ### [The future of Python and AI with Guido van Rossum - YouTube](https://www.youtube.com/watch?v=cMRvgR8EpOE)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/cMRvgR8EpOE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="cMRvgR8EpOE" title="The future of Python and AI with Guido van Rossum - YouTube">}}

@@ -36,9 +36,7 @@ It's one of those tools that just does everything you need without any fuss. For
 
 #### [introducing copyparty, the FOSS file server - YouTube](https://www.youtube.com/watch?v=15_-hgsX2V0)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/15_-hgsX2V0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="15_-hgsX2V0" title="introducing copyparty, the FOSS file server - YouTube">}}
 
 Definitely worth a look if you ever need to share files quickly and efficiently.
 
@@ -189,15 +187,11 @@ This article explains why some classic design patterns, like Singleton and Build
 
 ### [Simon Brown - Software architecture as a contributor to high performing teams - YouTube](https://www.youtube.com/watch?v=-nWY8Jq5mlA)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/-nWY8Jq5mlA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="-nWY8Jq5mlA" title="Simon Brown - Software architecture as a contributor to high performing teams - YouTube">}}
 
 ### [Nie buduj marki osobistej. Ciemne strony działania w społeczności - YouTube](https://www.youtube.com/watch?v=URNzJb4rG0k)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/URNzJb4rG0k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="URNzJb4rG0k" title="Nie buduj marki osobistej. Ciemne strony działania w społeczności - YouTube">}}
 
 <span class="ai-summary"> AI generated summary </span>
 
@@ -205,12 +199,8 @@ This video explores the dark sides of building a personal brand within the searc
 
 ### [I make easier and better decisions each day, because of THIS (so I'm open sourcing it) - YouTube](https://www.youtube.com/watch?v=JOlX4iSBhp8)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/JOlX4iSBhp8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="JOlX4iSBhp8" title="I make easier and better decisions each day, because of THIS (so I'm open sourcing it) - YouTube">}}
 
 ### [introducing copyparty, the FOSS file server - YouTube](https://www.youtube.com/watch?v=15_-hgsX2V0)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/15_-hgsX2V0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="15_-hgsX2V0" title="introducing copyparty, the FOSS file server - YouTube">}}

@@ -29,7 +29,7 @@
     {{- range .Params.tags }}
     <category term="{{ . }}" />
     {{- end }}
-    <content type="html">{{ .Content | transform.XMLEscape | safeHTML }}</content>
+    <content type="html">{{ .Content | replaceRE `(src|href)="/([^/])` (printf `${1}="%s${2}` site.BaseURL) | transform.XMLEscape | safeHTML }}</content>
   </entry>
   {{- end }}
 </feed>

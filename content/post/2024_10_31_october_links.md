@@ -189,12 +189,8 @@ I've added some new tools like:
 
 ### [Podcast Charyzmatyczny:  Ciągle ciężko pracujesz i nadal nic nie masz? | Piotr Nabielec](https://www.youtube.com/watch?v=VKynJ6ZtLsY)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/VKynJ6ZtLsY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="VKynJ6ZtLsY" title="Podcast Charyzmatyczny:  Ciągle ciężko pracujesz i nadal nic nie masz? | Piotr Nabielec">}}
 
 ### [DEF CON 32 - Disenshittify or die! How hackers can seize the means of computation - Cory Doctorow](https://www.youtube.com/watch?v=4EmstuO0Em8)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/4EmstuO0Em8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="4EmstuO0Em8" title="DEF CON 32 - Disenshittify or die! How hackers can seize the means of computation - Cory Doctorow">}}

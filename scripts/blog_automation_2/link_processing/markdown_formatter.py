@@ -2,6 +2,7 @@
 Module for formatting link metadata into markdown strings.
 """
 
+import re
 from abc import ABC, abstractmethod
 from typing import Optional
 
@@ -68,12 +69,14 @@ class YouTubeVideoMarkdownFormatter(BaseMarkdownFormatter):
             )
             section = "Videos"
         elif metadata.video_id:
-            video_id_to_embed = metadata.video_id
+            video_id = metadata.video_id
+            # Typographic quotes: an escaped \" stops mdformat reading the line as a tag.
+            quoted_title = re.sub(r'"([^"]*)"', "\u201c\\1\u201d", title).replace(
+                '"', "\u201d"
+            )
             markdown_string = (
-                f"### [{title}](https://www.youtube.com/watch?v={video_id_to_embed})\n\n"
-                f'<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">\n'
-                f'    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/{video_id_to_embed}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>\n'
-                f"</div>\n\n"
+                f"### [{title}](https://www.youtube.com/watch?v={video_id})\n\n"
+                f'{{{{<youtube-lite id="{video_id}" title="{quoted_title}">}}}}\n\n'
                 f"#### AI generated summary\n\n"
                 f"{analysis_result.brief_summary}"
             )

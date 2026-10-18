@@ -27,10 +27,10 @@
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
 {{- end }}
 
-{{- /* assets/img/favicon.png if a site supplies one, otherwise the avatar it
-       already has - without either, every page 404s on /favicon.ico. */ -}}
+{{- /* assets/img/favicon.png, else params.favicon, else params.avatar - without
+       any, every page 404s on /favicon.ico. */ -}}
 {{- $icon := resources.Get "img/favicon.png" -}}
-{{- if not $icon }}{{ with site.Params.avatar }}{{ $icon = resources.Get . }}{{ end }}{{ end -}}
+{{- if not $icon }}{{ with or site.Params.favicon site.Params.avatar }}{{ $icon = resources.Get . }}{{ end }}{{ end -}}
 {{ with $icon }}{{ with .Resize "64x64 png" }}<link rel="icon" href="{{ .RelPermalink }}">{{ end }}{{ end }}
 
 {{- /* A reader's stored choice only wins where the header still offers the
@@ -50,6 +50,8 @@
             if (p) d.setAttribute('data-photos', p);
             {{- end }}
         } catch (e) {}
+        var t2 = d.getAttribute('data-theme');
+        if (t2 === 'dark' || (!t2 && matchMedia('(prefers-color-scheme: dark)').matches)) d.classList.add('is-dark');
     })();
 </script>
 

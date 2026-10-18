@@ -175,98 +175,66 @@ A collection of reusable Cursor agent skills and prompt patterns (architect, TDD
 
 ### [The future of creativity on the internet in a world with AI](https://www.youtube.com/watch?v=17_HcR95YBc)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/17_HcR95YBc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="17_HcR95YBc" title="The future of creativity on the internet in a world with AI">}}
 
 ### [Matt Pocok - LIVE: Uncle Bob on Software Fundamentals in the Age of AI](https://www.youtube.com/watch?v=zcLPGC-tvgk)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/zcLPGC-tvgk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="zcLPGC-tvgk" title="Matt Pocok - LIVE: Uncle Bob on Software Fundamentals in the Age of AI">}}
 
 ### [Matt Pocok - /wayfinder: Nothing is too big to plan anymore](https://www.youtube.com/watch?v=F3lL98Pj90o)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/F3lL98Pj90o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="F3lL98Pj90o" title="Matt Pocok - /wayfinder: Nothing is too big to plan anymore">}}
 
 ### [So I tried Matt's skills...](https://youtu.be/0oXOOlqVu5M)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/0oXOOlqVu5M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="0oXOOlqVu5M" title="So I tried Matt's skills...">}}
 
 ### [NetworkChuck - I think I might finally switch to Linux](https://www.youtube.com/watch?v=9SDkU5VDQEQ)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/9SDkU5VDQEQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="9SDkU5VDQEQ" title="NetworkChuck - I think I might finally switch to Linux">}}
 
 ### [David Senra - Tobi Lütke: 21 Years of Building Shopify](https://www.youtube.com/watch?v=ZSM2uFnJ5bs)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/ZSM2uFnJ5bs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="ZSM2uFnJ5bs" title="David Senra - Tobi Lütke: 21 Years of Building Shopify">}}
 
 ### [Mischa van den Burg - Why Is Everyone Buying This $150 Linux Laptop?](https://www.youtube.com/watch?v=Eor_qf5KCHI)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/Eor_qf5KCHI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="Eor_qf5KCHI" title="Mischa van den Burg - Why Is Everyone Buying This $150 Linux Laptop?">}}
 
 ### [Claude just killed the note-taking app. Here is proof.](https://youtu.be/geIKyDaXwGg)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/geIKyDaXwGg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="geIKyDaXwGg" title="Claude just killed the note-taking app. Here is proof.">}}
 
 ### [The First CLI Tool You'll Use It Every Day](https://youtu.be/JhMkEZenxlU)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/JhMkEZenxlU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="JhMkEZenxlU" title="The First CLI Tool You'll Use It Every Day">}}
 
 ### [Build A Claude Knowledge Base That Self-Improves!](https://youtu.be/ib74sLgjIBM)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/ib74sLgjIBM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="ib74sLgjIBM" title="Build A Claude Knowledge Base That Self-Improves!">}}
 
 ### [Nick Milo Reads My Obsidian Vault Like a Doctor](https://youtu.be/PwUGO74DYJQ)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/PwUGO74DYJQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="PwUGO74DYJQ" title="Nick Milo Reads My Obsidian Vault Like a Doctor">}}
 
 ### [Stop writing software like it's 1999! - Hannes Lowette - NDC Copenhagen 2026](https://www.youtube.com/watch?v=_1LEFUgHFJI)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/_1LEFUgHFJI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="_1LEFUgHFJI" title="Stop writing software like it's 1999! - Hannes Lowette - NDC Copenhagen 2026">}}
 
 ### [A Life Engineered - How to Learn And Grow Unbelievably Fast](https://www.youtube.com/watch?v=mV-JSdeMSn0)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/mV-JSdeMSn0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="mV-JSdeMSn0" title="A Life Engineered - How to Learn And Grow Unbelievably Fast">}}
 
 ### [A Life Engineered: Ex-Amazon VP on What Actually Gets You Promoted | Ethan Evans](https://www.youtube.com/watch?v=Gf0pR4_bv-o)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/Gf0pR4_bv-o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="Gf0pR4_bv-o" title="A Life Engineered: Ex-Amazon VP on What Actually Gets You Promoted | Ethan Evans">}}
 
 ### [A Life Engineered - Negotiation Expert: How To 3X Your Tech Salary](https://www.youtube.com/watch?v=v87stFQMFNY)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/v87stFQMFNY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="v87stFQMFNY" title="A Life Engineered - Negotiation Expert: How To 3X Your Tech Salary">}}
 
 ## 🇵🇱 Polish Corner 🇵🇱
 
 ### [OMH 2025: Grzegorz Wróbel - Homelab dla bezpiecznika - domowy poligon dla pasji, nauki i pracy](https://www.youtube.com/watch?v=YSon1JW5qXM)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/YSon1JW5qXM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="YSon1JW5qXM" title="OMH 2025: Grzegorz Wróbel - Homelab dla bezpiecznika - domowy poligon dla pasji, nauki i pracy">}}

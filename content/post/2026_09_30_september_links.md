@@ -182,54 +182,36 @@ Securo is an open-source, privacy-first personal finance manager designed to run
 
 ### [Rails World 2026 Opening Keynote - DHH](https://youtu.be/vDjW_dRyKXY)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/vDjW_dRyKXY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="vDjW_dRyKXY" title="Rails World 2026 Opening Keynote - DHH">}}
 
 ### [I Run an AI Civilization in Herdr](https://youtu.be/AL-PQuB2wy0)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/AL-PQuB2wy0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="AL-PQuB2wy0" title="I Run an AI Civilization in Herdr">}}
 
 ### [The New Code — Sean Grove, OpenAI](https://www.youtube.com/watch?v=8rABwKRsec4)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/8rABwKRsec4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="8rABwKRsec4" title="The New Code — Sean Grove, OpenAI">}}
 
 ### [Deepseek just did the impossible](https://youtu.be/MImgH4KMtj8)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/MImgH4KMtj8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="MImgH4KMtj8" title="Deepseek just did the impossible">}}
 
 ### [Google Replaced The Karpathy's LLM Wiki](https://youtu.be/k4sMSsMzX2g)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/k4sMSsMzX2g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="k4sMSsMzX2g" title="Google Replaced The Karpathy's LLM Wiki">}}
 
 ### [Geoffrey Litt: Dynamic Documents as Personal Software](https://youtu.be/MccJdr61xnc)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/MccJdr61xnc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="MccJdr61xnc" title="Geoffrey Litt: Dynamic Documents as Personal Software">}}
 
 ### [The Filesystem is Awesome](https://youtu.be/qdS8rxVYFJk)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/qdS8rxVYFJk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="qdS8rxVYFJk" title="The Filesystem is Awesome">}}
 
 ### [DEF CON 34 - Hacking AI - Bruce Schneier](https://youtu.be/eEBv0STiYhI)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/eEBv0STiYhI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="eEBv0STiYhI" title="DEF CON 34 - Hacking AI - Bruce Schneier">}}
 
 ### [DefCon 34 - Stalking the Wily Hacker: 40 years later - Cliff Stoll](https://www.youtube.com/watch?v=656058JxTM0)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/656058JxTM0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="656058JxTM0" title="DefCon 34 - Stalking the Wily Hacker: 40 years later - Cliff Stoll">}}

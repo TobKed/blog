@@ -1,0 +1,5 @@
+{{- with .Get "id" -}}
+    {{- partial "youtube-lite.html" (dict "id" . "title" ($.Get "title")) -}}
+{{- else -}}
+    {{- errorf "youtube-lite: missing id at %s" .Position -}}
+{{- end -}}

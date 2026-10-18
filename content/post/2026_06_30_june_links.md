@@ -51,15 +51,11 @@ It’s a genuinely inspiring story about career growth from the Kubernetes legen
 
 [Kubernetes and retiring at the top with Kelsey Hightower - The Pragmatic Engineer](https://www.youtube.com/watch?v=UlXpOGIpITM)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/UlXpOGIpITM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="UlXpOGIpITM" title="Kubernetes and retiring at the top with Kelsey Hightower - The Pragmatic Engineer">}}
 
 [Mitchell Hashimoto’s new way of writing code - The Pragmatic Engineer](https://www.youtube.com/watch?v=WjckELpzLOU)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/WjckELpzLOU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="WjckELpzLOU" title="Mitchell Hashimoto’s new way of writing code - The Pragmatic Engineer">}}
 
 ______________________________________________________________________
 
@@ -218,9 +214,7 @@ Darmowy kurs i otwarta wiki n8n w języku polskim. Składa się z 9 uporządkowa
 
 ### [Kubernetes and retiring at the top with Kelsey Hightower - The Pragmatic Engineer](https://www.youtube.com/watch?v=UlXpOGIpITM)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/UlXpOGIpITM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="UlXpOGIpITM" title="Kubernetes and retiring at the top with Kelsey Hightower - The Pragmatic Engineer">}}
 
 #### AI generated summary
 
@@ -228,78 +222,52 @@ An insightful conversation with Kelsey Hightower reflecting on his impactful car
 
 ### [Mitchell Hashimoto’s new way of writing code - The Pragmatic Engineer](https://www.youtube.com/watch?v=WjckELpzLOU)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/WjckELpzLOU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="WjckELpzLOU" title="Mitchell Hashimoto’s new way of writing code - The Pragmatic Engineer">}}
 
 ### [Jak zbudowałam markę osobistą i czy było warto • Ola Kunysz • Beyond Code 2024](https://youtu.be/VQsshF7C-4Q)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/VQsshF7C-4Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="VQsshF7C-4Q" title="Jak zbudowałam markę osobistą i czy było warto • Ola Kunysz • Beyond Code 2024">}}
 
 ### [Which Antigravity surface should I use? 2.0 vs CLI vs IDE vs SDK - YouTube](https://www.youtube.com/watch?v=04IqH38SlOI)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/04IqH38SlOI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="04IqH38SlOI" title="Which Antigravity surface should I use? 2.0 vs CLI vs IDE vs SDK - YouTube">}}
 
 ### [Graphify + Obsidian + Claude Code = CHEAT CODE - YouTube](https://www.youtube.com/watch?v=mWLDn49_8HA)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/mWLDn49_8HA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="mWLDn49_8HA" title="Graphify + Obsidian + Claude Code = CHEAT CODE - YouTube">}}
 
 ### [How One Man Powers a Global App from a Dutch Cow Barn - YouTube](https://www.youtube.com/watch?v=RS-aRiblQ_8https://codeberg.org/ravachol/kew)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/RS-aRiblQ_8https://codeberg.org/ravachol/kew" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="RS-aRiblQ_8https" title="How One Man Powers a Global App from a Dutch Cow Barn - YouTube">}}
 
 ### [Andrej Karpathy: From Vibe Coding to Agentic Engineering w/ Stephanie Zhan - YouTube](https://www.youtube.com/watch?v=96jN2OCOfLs)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/96jN2OCOfLs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="96jN2OCOfLs" title="Andrej Karpathy: From Vibe Coding to Agentic Engineering w/ Stephanie Zhan - YouTube">}}
 
 ### [1.1.6 Michał Leszczyński - \[PL\] \[CVE-2026-9058\] Pełne ominięcie uwierzytelniania w ZUS, e-Sądzie... - YouTube](https://www.youtube.com/watch?v=pMdnS8I18Ts)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/pMdnS8I18Ts" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="pMdnS8I18Ts" title="1.1.6 Michał Leszczyński - \[PL\] \[CVE-2026-9058\] Pełne ominięcie uwierzytelniania w ZUS, e-Sądzie... - YouTube">}}
 
 ### [VibeOS - Fully Hallucinated Operating System - YouTube](https://www.youtube.com/watch?v=z3pV6FHvcgM)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/z3pV6FHvcgM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="z3pV6FHvcgM" title="VibeOS - Fully Hallucinated Operating System - YouTube">}}
 
 ### [AI w walce z oszustami - YouTube](https://www.youtube.com/watch?v=eHcwNojjazU)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/eHcwNojjazU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="eHcwNojjazU" title="AI w walce z oszustami - YouTube">}}
 
 ### [Keynote: After the AI Hype – What’s Real, and What’s Next - Richard Campbell - 2026](https://www.youtube.com/watch?v=uWnUnMphmPM)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/uWnUnMphmPM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="uWnUnMphmPM" title="Keynote: After the AI Hype – What’s Real, and What’s Next - Richard Campbell - 2026">}}
 
 ### [Claude Code Crash Course For Developers](https://www.youtube.com/watch?v=C2GpeepcmYs)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/C2GpeepcmYs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="C2GpeepcmYs" title="Claude Code Crash Course For Developers">}}
 
 ### [Kubernetes for SysAdmins | Kelsey Hightower at PuppetConf | Talk & Demo](https://www.youtube.com/watch?v=HlAXp0-M6SY)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/HlAXp0-M6SY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="HlAXp0-M6SY" title="Kubernetes for SysAdmins | Kelsey Hightower at PuppetConf | Talk & Demo">}}
 
 ### [What Most Engineers Get Wrong About AI and Career | Kelsey Hightower](https://www.youtube.com/watch?v=tCehFMwjWqM)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/tCehFMwjWqM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="tCehFMwjWqM" title="What Most Engineers Get Wrong About AI and Career | Kelsey Hightower">}}

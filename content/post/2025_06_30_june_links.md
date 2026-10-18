@@ -220,39 +220,27 @@ This article explores methods to decompose a Django monolith without adopting mi
 
 ### [AI vs Programmers: 4 Critical Skills You Need To Win the Race - YouTube](https://www.youtube.com/watch?v=Nn08HVq4BHA)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/Nn08HVq4BHA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="Nn08HVq4BHA" title="AI vs Programmers: 4 Critical Skills You Need To Win the Race - YouTube">}}
 
 ### [37 INSANE Linux Commands you NEED to Know in 2025 - YouTube](https://www.youtube.com/watch?v=6P-vjgPx9ww)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/6P-vjgPx9ww" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="6P-vjgPx9ww" title="37 INSANE Linux Commands you NEED to Know in 2025 - YouTube">}}
 
 ### [The Past, Present & Future of Programming Languages • Kevlin Henney • GOTO 2024 - YouTube](https://www.youtube.com/watch?v=0y7IFUYUTgg)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/0y7IFUYUTgg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="0y7IFUYUTgg" title="The Past, Present & Future of Programming Languages • Kevlin Henney • GOTO 2024 - YouTube">}}
 
 ### [Develop Your Development Automation • Jessica Kerr • GOTO 2017 - YouTube](https://www.youtube.com/watch?v=1jb6_Q4_SMk)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/1jb6_Q4_SMk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="1jb6_Q4_SMk" title="Develop Your Development Automation • Jessica Kerr • GOTO 2017 - YouTube">}}
 
 ### [Ola Kunysz - Czy można pracować inaczej? Prosta droga branży IT do wypalenia | Infoshare - YouTube](https://www.youtube.com/watch?v=NQVjOr4K8f0)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/NQVjOr4K8f0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="NQVjOr4K8f0" title="Ola Kunysz - Czy można pracować inaczej? Prosta droga branży IT do wypalenia | Infoshare - YouTube">}}
 
 ### [Andrej Karpathy: Software Is Changing (Again) - YouTube](https://www.youtube.com/watch?v=LCEmiRjPEtQ)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/LCEmiRjPEtQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="LCEmiRjPEtQ" title="Andrej Karpathy: Software Is Changing (Again) - YouTube">}}
 
 <span class="ai-summary"> AI generated summary </span>
 
@@ -260,24 +248,16 @@ Andrej Karpathy's keynote at AI Startup School highlights the transition to 'Sof
 
 ### [MVP & Why We Confuse Building to Learn with Building to Earn • Jeff Patton • YOW! 2018 - YouTube](https://www.youtube.com/watch?v=NzxjEzA0G0o)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/NzxjEzA0G0o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="NzxjEzA0G0o" title="MVP & Why We Confuse Building to Learn with Building to Earn • Jeff Patton • YOW! 2018 - YouTube">}}
 
 ### [Behind The Scenes Of Notion's INSANE Design (w. Notion Team) - YouTube](https://www.youtube.com/watch?v=b00sgRR_Vc0)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/b00sgRR_Vc0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="b00sgRR_Vc0" title="Behind The Scenes Of Notion's INSANE Design (w. Notion Team) - YouTube">}}
 
 ### [Cursor AI - Kurs | Vibe Coding - fullstack'owa aplikacja z AI w 4 krokach! (cz. 1) - YouTube](https://www.youtube.com/watch?v=3jwQu95l6Oc)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/3jwQu95l6Oc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="3jwQu95l6Oc" title="Cursor AI - Kurs | Vibe Coding - fullstack'owa aplikacja z AI w 4 krokach! (cz. 1) - YouTube">}}
 
 ### [Keeping track of architectural-ish decisions in a sustainable way with Juan Saavedra - DCUS 2022 - YouTube](https://www.youtube.com/watch?v=_-0zHdJGTlw)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/_-0zHdJGTlw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="_-0zHdJGTlw" title="Keeping track of architectural-ish decisions in a sustainable way with Juan Saavedra - DCUS 2022 - YouTube">}}

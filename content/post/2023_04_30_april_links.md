@@ -294,12 +294,8 @@ ______________________________________________________________________
 
 ### [#FOSSBack: Wolfgang Gehring – A Vision of FOSS @MercedesBenz](https://www.youtube.com/watch?v=6uHJodpllpA)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/6uHJodpllpA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="6uHJodpllpA" title="#FOSSBack: Wolfgang Gehring – A Vision of FOSS @MercedesBenz">}}
 
 ### [OMH 2021: Służby, wpadki i OSIntowe kwiatki - Kamil Goryń](https://www.youtube.com/watch?v=dlyIeJijh7E)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/dlyIeJijh7E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="dlyIeJijh7E" title="OMH 2021: Służby, wpadki i OSIntowe kwiatki - Kamil Goryń">}}

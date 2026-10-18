@@ -101,7 +101,7 @@ async function session(width, height, mobile) {
 
 const imagesFetched = `performance.getEntriesByType('resource')
   .filter(e => /\\.(png|jpe?g|gif|webp)(\\?|$)/i.test(e.name))
-  .filter(e => !/avatar/.test(e.name)).length`;
+  .filter(e => !/avatar|\\/images\\/youtube\\//.test(e.name)).length`;
 
 console.log(`\nchecking ${BASE}\n`);
 
@@ -167,6 +167,17 @@ const ESSAY = '/enum-and-dataclass/';
   await s.tap('.issue-more');
   check('"Show more" unfolds the section',
     await s.eval(`document.querySelector('.issue-more').getAttribute('aria-expanded') === 'true'`));
+
+  check('no request reaches YouTube before a video is played',
+    await s.eval(`!performance.getEntriesByType('resource').some(e => /youtube|ytimg/.test(new URL(e.name).host))`));
+  await s.eval(`document.querySelector('#videos .yt__box').scrollIntoView({ block: 'center' })`);
+  await s.tap('#videos .yt__box');
+  check('pressing a video preview plays it in place',
+    await s.eval(`!!document.querySelector('#videos .yt.is-playing iframe[src*="youtube-nocookie.com/embed/"]')`));
+  await s.eval(`document.querySelectorAll('#videos .yt__box')[0].scrollIntoView({ block: 'center' })`);
+  await s.tap('#videos .yt__box');
+  check('only one video plays at a time',
+    await s.eval(`document.querySelectorAll('.yt__frame').length === 1`));
 
   await s.go(ESSAY);
   check('essay shows "On this page"', await s.eval(visible('.toc')));

@@ -260,18 +260,12 @@ By the way, [last month](/2023-september-links/) I gave a lightning talk at PyCo
 
 ### ["Design Patterns for Data Pipelines" - Lisa Dusseault (PyBay 2023)](https://www.youtube.com/watch?v=opR44Tu9p1I)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/opR44Tu9p1I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="opR44Tu9p1I" title="“Design Patterns for Data Pipelines” - Lisa Dusseault (PyBay 2023)">}}
 
 ### [Top 6 Most Popular API Architecture Styles](https://www.youtube.com/watch?v=4vLxWqE94l4)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/4vLxWqE94l4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="4vLxWqE94l4" title="Top 6 Most Popular API Architecture Styles">}}
 
 ### [Tmux has forever changed the way I write code.](https://www.youtube.com/watch?v=DzNmUNvnB04)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/DzNmUNvnB04" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="DzNmUNvnB04" title="Tmux has forever changed the way I write code.">}}

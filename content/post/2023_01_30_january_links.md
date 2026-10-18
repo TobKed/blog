@@ -208,42 +208,28 @@ Stamps Back the 5th Moleman documentary.
 From Commodore 64s smuggled across the Iron Curtain to cracked games on cassette tapes sold at flea markets, floppy disk swapping via postal mail, hacked phone booths connected to US BBSes, and copy parties packed to capacity, Stamps Back tells the story of how teenagers in Hungary ignited a computing revolution in the 1980s with illegally copied video games from the West, and began the Hungarian demoscene.
 More info at stampsback.com
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/YUqn1OPxtmE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="YUqn1OPxtmE" title="Stamps Back">}}
 
 ### [Habits of Efficient Developers](https://www.youtube.com/watch?v=9-cyC6O81Bk)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/9-cyC6O81Bk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="9-cyC6O81Bk" title="Habits of Efficient Developers">}}
 
 ### [Scaling Yourself • Scott Hanselman • GOTO 2012](https://www.youtube.com/watch?v=FS1mnISoG7U)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/FS1mnISoG7U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="FS1mnISoG7U" title="Scaling Yourself • Scott Hanselman • GOTO 2012">}}
 
 ### [Devoxx Poland 2016 - Wojciech Seliga - Ten lessons I painfully learnt while moving from software ...](https://www.youtube.com/watch?v=ffXpiFEq1jE)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/ffXpiFEq1jE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="ffXpiFEq1jE" title="Devoxx Poland 2016 - Wojciech Seliga - Ten lessons I painfully learnt while moving from software ...">}}
 
 ### [HackCast S02E08 - Django Community & Django Styleguide](https://www.youtube.com/watch?v=9VfRaPECbpY)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/9VfRaPECbpY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="9VfRaPECbpY" title="HackCast S02E08 - Django Community & Django Styleguide">}}
 
 ### [She hacked a billionaire, a bank and you could be next. Do this now to protect yourself!](https://www.youtube.com/watch?v=8MIIeIa25tE)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/8MIIeIa25tE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="8MIIeIa25tE" title="She hacked a billionaire, a bank and you could be next. Do this now to protect yourself!">}}
 
 ### [Successful, Accomplished, Depressed – A Talk About Performance, Perfectionism, and Burnout in IT](https://www.youtube.com/watch?v=C84h5e9cOZY)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/C84h5e9cOZY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="C84h5e9cOZY" title="Successful, Accomplished, Depressed – A Talk About Performance, Perfectionism, and Burnout in IT">}}

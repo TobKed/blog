@@ -33,7 +33,8 @@ path = '{/post/**,/pages/**}'
 [params]
 mainSections = ["post"]
 description = "Tobiasz Kedzierski's Blog"
-avatar = "img/avatar.png"
+favicon = "img/avatar.png"
+# avatar = "img/avatar.png"  # opt-in: shows the profile photo in the header
 tagline = "Python, Django, the cloud, and other interesting things — computer-related or not. Mostly monthly round-ups of what I've been doing, reading and watching."
 
 [params.footer]

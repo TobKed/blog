@@ -11,14 +11,14 @@
     return root.getAttribute('data-theme') || (darkQuery.matches ? 'dark' : 'light');
   }
 
-  // .is-dark lets CSS pick the sun or moon icon without repeating the media query.
+  // .is-dark (first set in head.html) lets CSS pick the sun or moon icon.
   var themeBtn = document.getElementById('theme-toggle');
   function syncTheme() {
     var dark = effectiveTheme() === 'dark';
     root.classList.toggle('is-dark', dark);
     if (!themeBtn) return;
-    themeBtn.firstElementChild.textContent = dark ? 'Light' : 'Dark';
-    themeBtn.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+    themeBtn.querySelector('.toggle__label').textContent = dark ? 'Light' : 'Dark';
+    themeBtn.title = dark ? 'Switch to light mode' : 'Switch to dark mode';
   }
   if (themeBtn) {
     themeBtn.addEventListener('click', function () {
@@ -47,8 +47,8 @@
   function syncPhotos() {
     var on = root.getAttribute('data-photos') === 'on';
     photoBtns.forEach(function (b) {
-      b.textContent = on ? 'Photos on' : 'Photos off';
       b.setAttribute('aria-pressed', String(on));
+      b.title = on ? 'Hide cover photos' : 'Show cover photos';
     });
   }
   photoBtns.forEach(function (b) {

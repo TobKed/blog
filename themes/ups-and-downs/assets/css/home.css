@@ -450,7 +450,7 @@
 @media (max-width: 640px) {
   .home-wide { display: none; }
 
-  /* "Since 2018 · September 2026" on one line above the title. */
+  /* The month above the title; "Since 2018" moves into the header bar. */
   .home-mast {
     justify-content: center;
     gap: 10px 0;
@@ -462,7 +462,7 @@
     font-size: 11px;
     letter-spacing: 0.08em;
   }
-  .home-mast__side--end::before { content: "\00a0·\00a0"; }
+  .home-mast__side:not(.home-mast__side--end) { display: none; }
   .home-mast__title {
     order: 3;
     flex: 1 1 100%;

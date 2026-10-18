@@ -322,6 +322,7 @@
   color: #16130f;
 }
 .issue-video__title { font-size: 18px; line-height: 1.3; font-weight: 500; }
+.issue-mt { display: none; }
 
 .issue-tags { padding-top: 8px; }
 
@@ -474,6 +475,28 @@
   .issue-video__play { width: 32px; height: 32px; }
   .issue-video__play svg { width: 12px; height: 12px; }
   .issue-video__title { font-size: 17px; }
+  .issue-mt { display: inline; }
+
+  /* Idle: a small thumb beside the title; playing: full-bleed above it. */
+  .issue-video .yt {
+    display: grid;
+    grid-template-columns: 112px minmax(0, 1fr);
+    gap: 3px 14px;
+    width: 100%;
+  }
+  .issue-video .yt__box { grid-row: 1 / 3; width: 112px; height: 63px; aspect-ratio: auto; }
+  .issue-video .yt__play { width: 32px; height: 32px; }
+  .issue-video .yt__play svg { width: 12px; height: 12px; }
+  .issue-video .yt > :not(.yt__box):not(.yt__frame) { grid-column: 2; }
+  .issue-video .issue-video__title { align-self: end; }
+  .issue-video .yt__note { align-self: start; font-size: 10px; }
+  .issue-video .yt.is-playing { grid-template-columns: minmax(0, 1fr); gap: 3px; }
+  .issue-video .yt.is-playing > :not(.yt__box):not(.yt__frame),
+  .issue-video .yt.is-playing > .yt__frame { grid-column: 1; }
+  .issue-video .yt__frame {
+    width: calc(100% + 2 * var(--gutter));
+    margin: 0 calc(-1 * var(--gutter)) 7px;
+  }
 
   .issue-tags { padding-top: 0; }
   .issue-tags .chip { padding: 8px 12px; }

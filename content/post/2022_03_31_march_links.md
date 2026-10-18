@@ -184,12 +184,8 @@ I enjoy figuring out connections between different cloud resources and since I a
 
 ### [Dan Palmer - Scaling Django to 500 apps](https://www.youtube.com/watch?v=NsHo-kThlqI)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/NsHo-kThlqI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="NsHo-kThlqI" title="Dan Palmer - Scaling Django to 500 apps">}}
 
 ### [David Brumley - How the Best Hackers Learn Their Craft](https://www.youtube.com/watch?v=6vj96QetfTg)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/6vj96QetfTg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="6vj96QetfTg" title="David Brumley - How the Best Hackers Learn Their Craft">}}

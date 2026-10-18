@@ -1,0 +1,17 @@
+{{- /* A click-to-play YouTube preview. Context: dict of id, title and optional
+       between (HTML placed under the preview, above the note).
+
+       Rendered as a link to youtu.be so feeds and no-JS readers get an image and
+       a link; video.js swaps it for a <button> and plays in place. Thumbnails are
+       content, so they carry no .photo and ignore the Photos toggle. */ -}}
+{{- $id := .id -}}
+{{- $title := .title | default "YouTube video" -}}
+{{- $thumb := partialCached "youtube-thumb.html" $id $id -}}
+<figure class="yt" data-youtube="{{ $id }}" data-title="{{ $title }}">
+    <a class="yt__box" href="https://youtu.be/{{ $id }}" aria-label="Play: {{ $title }}">
+        {{- with $thumb }}<img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="" loading="lazy">{{ end -}}
+        <span class="yt__play" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="8,5 19,12 8,19"/></svg></span>
+    </a>
+    {{- with .between }}{{ . }}{{ end }}
+    <figcaption class="yt__note">YouTube · plays here</figcaption>
+</figure>

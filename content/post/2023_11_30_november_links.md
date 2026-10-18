@@ -219,12 +219,8 @@ I've also included some interactive examples, so you can try out different curl 
 
 ### [Free software, free society: Richard Stallman at TEDxGeneva 2014](https://www.youtube.com/watch?v=Ag1AKIl_2GM)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/Ag1AKIl_2GM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="Ag1AKIl_2GM" title="Free software, free society: Richard Stallman at TEDxGeneva 2014">}}
 
 ### [Maxime Sanglan-Charlier & Nick Tune — From Domain Boundaries to Software Architecture](https://www.youtube.com/watch?v=mdpV9j3Dc4s)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/mdpV9j3Dc4s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="mdpV9j3Dc4s" title="Maxime Sanglan-Charlier & Nick Tune — From Domain Boundaries to Software Architecture">}}

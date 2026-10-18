@@ -136,54 +136,36 @@ The article reflects on a retreat focused on the future of software development 
 
 ### [Give Me 15 Minutes. I'll Teach You  80% of Obsidian - YouTube](https://www.youtube.com/watch?v=z4AbijUCoKU)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/z4AbijUCoKU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="z4AbijUCoKU" title="Give Me 15 Minutes. I'll Teach You  80% of Obsidian - YouTube">}}
 
 ### [does git 2.54 make pre-commit obsolete? - YouTube](https://www.youtube.com/watch?v=8Jwg_mM9WYc)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/8Jwg_mM9WYc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="8Jwg_mM9WYc" title="does git 2.54 make pre-commit obsolete? - YouTube">}}
 
 ### [2/3 IT wypalone. Jesteś w tej grupie? | Ola Kunysz - YouTube](https://www.youtube.com/watch?v=mJGra2QK3mk)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/mJGra2QK3mk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="mJGra2QK3mk" title="2/3 IT wypalone. Jesteś w tej grupie? | Ola Kunysz - YouTube">}}
 
 ### [I replaced my entire stack with Postgres... - YouTube](https://www.youtube.com/watch?v=TdondBmyNXc)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/TdondBmyNXc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="TdondBmyNXc" title="I replaced my entire stack with Postgres... - YouTube">}}
 
 ### [John Doerr: Ideas are easy, execution is everything. - YouTube](https://www.youtube.com/watch?v=4xWGSUZmkIc)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/4xWGSUZmkIc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="4xWGSUZmkIc" title="John Doerr: Ideas are easy, execution is everything. - YouTube">}}
 
 ### [Everything Announced at Google Cloud Next in Under 13 Minutes - YouTube](https://www.youtube.com/watch?v=dITPmrhNTzY)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/dITPmrhNTzY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="dITPmrhNTzY" title="Everything Announced at Google Cloud Next in Under 13 Minutes - YouTube">}}
 
 ### [does git 2.54 make pre-commit obsolete? - YouTube](https://www.youtube.com/watch?v=8Jwg_mM9WYc)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/8Jwg_mM9WYc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="8Jwg_mM9WYc" title="does git 2.54 make pre-commit obsolete? - YouTube">}}
 
 ### [I replaced my entire stack with Postgres... - YouTube](https://www.youtube.com/watch?v=TdondBmyNXc)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/TdondBmyNXc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="TdondBmyNXc" title="I replaced my entire stack with Postgres... - YouTube">}}
 
 ### [Mastering Claude Code in 30 minutes](https://www.youtube.com/live/6eBSHbLKuN0)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/6eBSHbLKuN0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="6eBSHbLKuN0" title="Mastering Claude Code in 30 minutes">}}

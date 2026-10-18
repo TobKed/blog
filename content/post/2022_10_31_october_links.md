@@ -160,12 +160,8 @@ I was not limited with time and had more freedom in going deeper into details.
 
 ### [Load Testing Kubernetes: How to Optimize Your Cluster Resource Allocation in Production](https://www.youtube.com/watch?v=_l8yIqMpWT0)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/_l8yIqMpWT0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="_l8yIqMpWT0" title="Load Testing Kubernetes: How to Optimize Your Cluster Resource Allocation in Production">}}
 
 ### [An Intro to Load Testing with Locust and Python - Gabriel Boorse](https://www.youtube.com/watch?v=uvs4cq6JCeU)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/uvs4cq6JCeU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="uvs4cq6JCeU" title="An Intro to Load Testing with Locust and Python - Gabriel Boorse">}}

@@ -173,114 +173,76 @@ A detailed guide on setting up OpenClaw with security configurations, SSH keys, 
 
 ### [Claude Code 2.0 Has Arrived (It’s Insane) - YouTube](https://www.youtube.com/watch?v=F4zSxfBe5R0)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/F4zSxfBe5R0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="F4zSxfBe5R0" title="Claude Code 2.0 Has Arrived (It’s Insane) - YouTube">}}
 
 ### [Claude Code Skills Just Got Even Better - YouTube](https://www.youtube.com/watch?v=RAZVk5NPNtE)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/RAZVk5NPNtE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="RAZVk5NPNtE" title="Claude Code Skills Just Got Even Better - YouTube">}}
 
 ### [Claude Code w rękach Product Buildera | LIVE AI Product Heroes x 10xDevs - YouTube](https://www.youtube.com/watch?v=3LbZP0sYmPw)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/3LbZP0sYmPw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="3LbZP0sYmPw" title="Claude Code w rękach Product Buildera | LIVE AI Product Heroes x 10xDevs - YouTube">}}
 
 ### [Head of Claude Code: What happens after coding is solved | Boris Cherny - YouTube](https://www.youtube.com/watch?v=We7BZVKbCVw)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/We7BZVKbCVw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="We7BZVKbCVw" title="Head of Claude Code: What happens after coding is solved | Boris Cherny - YouTube">}}
 
 ### [Vector Search with LLMs - Computerphile - YouTube](https://www.youtube.com/watch?v=YDdKiQNw80c)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/YDdKiQNw80c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="YDdKiQNw80c" title="Vector Search with LLMs - Computerphile - YouTube">}}
 
 ### [AI agent design patterns - YouTube](https://www.youtube.com/watch?v=GDm_uH6VxPY)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/GDm_uH6VxPY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="GDm_uH6VxPY" title="AI agent design patterns - YouTube">}}
 
 ### [The Dangerous Illusion of AI Coding? - Jeremy Howard - YouTube](https://www.youtube.com/watch?v=dHBEQ-Ryo24)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/dHBEQ-Ryo24" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="dHBEQ-Ryo24" title="The Dangerous Illusion of AI Coding? - Jeremy Howard - YouTube">}}
 
 ### [IntelliJ IDEA: The Documentary | An origin story - YouTube](https://www.youtube.com/watch?v=Kourq_Lz03U)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/Kourq_Lz03U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="Kourq_Lz03U" title="IntelliJ IDEA: The Documentary | An origin story - YouTube">}}
 
 ### [From Writing Code to Managing Agents. Most Engineers Aren't Ready | Stanford University, Mihail Eric - YouTube](https://www.youtube.com/watch?v=wEsjK3Smovw)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/wEsjK3Smovw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="wEsjK3Smovw" title="From Writing Code to Managing Agents. Most Engineers Aren't Ready | Stanford University, Mihail Eric - YouTube">}}
 
 ### [Everything We Got Wrong About Research-Plan-Implement -  Dexter Horthy - YouTube](https://www.youtube.com/watch?v=YwZR6tc7qYg)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/YwZR6tc7qYg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="YwZR6tc7qYg" title="Everything We Got Wrong About Research-Plan-Implement -  Dexter Horthy - YouTube">}}
 
 ### [Nicholas Carlini - Black-hat LLMs | \[un\]prompted 2026 - YouTube](https://www.youtube.com/watch?v=1sd26pWhfmg)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/1sd26pWhfmg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="1sd26pWhfmg" title="Nicholas Carlini - Black-hat LLMs | \[un\]prompted 2026 - YouTube">}}
 
 ### [Jak działa Claude Code? Wszystko, co musisz wiedzieć - YouTube](https://www.youtube.com/watch?v=B0yx8k1YcU4)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/B0yx8k1YcU4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="B0yx8k1YcU4" title="Jak działa Claude Code? Wszystko, co musisz wiedzieć - YouTube">}}
 
 ### [The Philosophy of Software Design – with John Ousterhout - YouTube](https://www.youtube.com/watch?v=lz451zUlF-k)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/lz451zUlF-k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="lz451zUlF-k" title="The Philosophy of Software Design – with John Ousterhout - YouTube">}}
 
 ### [Asystent AI, który pracuje gdy śpisz – konfiguracja OpenClaw na VPS krok po kroku - YouTube](https://www.youtube.com/watch?v=DSTUzBXHSuo)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/DSTUzBXHSuo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="DSTUzBXHSuo" title="Asystent AI, który pracuje gdy śpisz – konfiguracja OpenClaw na VPS krok po kroku - YouTube">}}
 
 ### [4 Things That Will Make You an AI-Sweeper - YouTube](https://www.youtube.com/watch?v=0qOTB1gi3ec)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/0qOTB1gi3ec" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="0qOTB1gi3ec" title="4 Things That Will Make You an AI-Sweeper - YouTube">}}
 
 ### [Debugging burnout: jak nie wypalić się w IT i odzyskać satysfakcję z pracy - Ola Kunysz | Infoshare - YouTube](https://www.youtube.com/watch?v=PQd1EmOl4CA)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/PQd1EmOl4CA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="PQd1EmOl4CA" title="Debugging burnout: jak nie wypalić się w IT i odzyskać satysfakcję z pracy - Ola Kunysz | Infoshare - YouTube">}}
 
 ### [AI generated Code or Rewrites violate FOSS-Licences. Talk at FOSS Backstage Berlin - YouTube](https://www.youtube.com/watch?v=xvuiSgXfqc4)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/xvuiSgXfqc4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="xvuiSgXfqc4" title="AI generated Code or Rewrites violate FOSS-Licences. Talk at FOSS Backstage Berlin - YouTube">}}
 
 ### [Python Unplugged on PyTV – Free Online Python Conference](https://www.youtube.com/watch?v=qKkyBhXIJJU)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/qKkyBhXIJJU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="qKkyBhXIJJU" title="Python Unplugged on PyTV – Free Online Python Conference">}}
 
 ### [Life begins at 40: the biological and cultural roots of the midlife crisis | The Royal Society - YouTube](https://www.youtube.com/watch?v=eSWwIQzKsbY)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/eSWwIQzKsbY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="eSWwIQzKsbY" title="Life begins at 40: the biological and cultural roots of the midlife crisis | The Royal Society - YouTube">}}

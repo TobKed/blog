@@ -264,48 +264,32 @@ Anthropic is likened to Apple in the 2010s, focusing on a cohesive ecosystem rat
 
 ### [Why Even Google Engineers Are Relearning Everything | Maddy Zhang - YouTube](https://www.youtube.com/watch?v=7FKNmNYAP-4)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/7FKNmNYAP-4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="7FKNmNYAP-4" title="Why Even Google Engineers Are Relearning Everything | Maddy Zhang - YouTube">}}
 
 ### [#269: Produktywność od środka | Piotr Nabielec - YouTube](https://www.youtube.com/watch?v=U9G-crjVjYs)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/U9G-crjVjYs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="U9G-crjVjYs" title="#269: Produktywność od środka | Piotr Nabielec - YouTube">}}
 
 ### [The Infinite Software Crisis – Jake Nations, Netflix - YouTube](https://www.youtube.com/watch?v=eIoohUmYpGI)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/eIoohUmYpGI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="eIoohUmYpGI" title="The Infinite Software Crisis – Jake Nations, Netflix - YouTube">}}
 
 ### [O ewolucji testowania w Polsce i nadchodzącej rewolucji AI | Gość: Lucjan Stapp | #15 - YouTube](https://www.youtube.com/watch?v=92YvWcwmzqA)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/92YvWcwmzqA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="92YvWcwmzqA" title="O ewolucji testowania w Polsce i nadchodzącej rewolucji AI | Gość: Lucjan Stapp | #15 - YouTube">}}
 
 ### [Are we stuck with the same Desktop UX forever? | Ubuntu Summit 25.10 - YouTube](https://www.youtube.com/watch?v=1fZTOjd_bOQ)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/1fZTOjd_bOQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="1fZTOjd_bOQ" title="Are we stuck with the same Desktop UX forever? | Ubuntu Summit 25.10 - YouTube">}}
 
 ### [AI Expert: We Have 2 Years Before Everything Changes! We Need To Start Protesting! - Tristan Harris - YouTube](https://www.youtube.com/watch?v=BFU1OCkhBwo)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/BFU1OCkhBwo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="BFU1OCkhBwo" title="AI Expert: We Have 2 Years Before Everything Changes! We Need To Start Protesting! - Tristan Harris - YouTube">}}
 
 ### [Nadchodzi era maszyn "świat przyspiesza jak nigdy" || Tomasz Czajka #37 - YouTube](https://www.youtube.com/watch?v=XSBDn5VhTNs)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/XSBDn5VhTNs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="XSBDn5VhTNs" title="Nadchodzi era maszyn “świat przyspiesza jak nigdy” || Tomasz Czajka #37 - YouTube">}}
 
 ### [How Two Programmers Built The Most Complex Automation Game - YouTube](https://www.youtube.com/watch?v=l7HA2HneXU4)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/l7HA2HneXU4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="l7HA2HneXU4" title="How Two Programmers Built The Most Complex Automation Game - YouTube">}}

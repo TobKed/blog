@@ -263,18 +263,12 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ### [Jakub Mrugalski:  Asystent AI z bazą wiedzy w 3 minuty — Claude 3.5 Sonnet](https://www.youtube.com/watch?v=1zBym4evzus)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/1zBym4evzus" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="1zBym4evzus" title="Jakub Mrugalski:  Asystent AI z bazą wiedzy w 3 minuty — Claude 3.5 Sonnet">}}
 
 ### [Continuous Delivery: Yes... Microservices REALLY ARE Technical Debt ](https://www.youtube.com/watch?v=LltDdEw1p9w)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/LltDdEw1p9w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="LltDdEw1p9w" title="Continuous Delivery: Yes... Microservices REALLY ARE Technical Debt ">}}
 
 ### [Docker Image BEST Practices - From 1.2GB to 10MB](https://www.youtube.com/watch?v=m67Mjbx6DMY)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/m67Mjbx6DMY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="m67Mjbx6DMY" title="Docker Image BEST Practices - From 1.2GB to 10MB">}}

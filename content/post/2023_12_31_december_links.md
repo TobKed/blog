@@ -74,12 +74,8 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ### [SREcon19 Europe/Middle East/Africa - Estimating System Performance from First Principles - Simon Eskildsen, Shopify](https://www.youtube.com/watch?v=IxkSlnrRFqc)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/IxkSlnrRFqc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="IxkSlnrRFqc" title="SREcon19 Europe/Middle East/Africa - Estimating System Performance from First Principles - Simon Eskildsen, Shopify">}}
 
 ### [Anthony Shaw -  Beat the rush! Designing effective load tests for your web application \[PyCon AU\]](https://www.youtube.com/watch?v=or3PbMGMz4o)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/or3PbMGMz4o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="or3PbMGMz4o" title="Anthony Shaw -  Beat the rush! Designing effective load tests for your web application \[PyCon AU\]">}}

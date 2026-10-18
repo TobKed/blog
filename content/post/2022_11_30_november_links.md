@@ -226,30 +226,20 @@ I created and maintain small private **kubernetes** cluster on [Google Kubernete
 
 ### [Jakub Nabrdalik - Things that work for me so well I cannot believe you are not using it ](https://www.youtube.com/watch?v=5Er7juSAMXI)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/5Er7juSAMXI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="5Er7juSAMXI" title="Jakub Nabrdalik - Things that work for me so well I cannot believe you are not using it ">}}
 
 ### ["A Hipster History of CORS" by Devdatta Akhawe (Strange Loop 2022)](https://www.youtube.com/watch?v=0YJ-yhoJh2I)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/0YJ-yhoJh2I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="0YJ-yhoJh2I" title="“A Hipster History of CORS” by Devdatta Akhawe (Strange Loop 2022)">}}
 
 ### [PyCon US 2022 - Sam Scott: Why Authorization is Hard](https://www.youtube.com/watch?v=2BN96ON48U8)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/2BN96ON48U8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="2BN96ON48U8" title="PyCon US 2022 - Sam Scott: Why Authorization is Hard">}}
 
 ### [OpenTelemetry: The Vision, Reality, and How to Get Started - Dotan Horovits, Logz.io](https://www.youtube.com/watch?v=qE1ggEmvz2Y)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/qE1ggEmvz2Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="qE1ggEmvz2Y" title="OpenTelemetry: The Vision, Reality, and How to Get Started - Dotan Horovits, Logz.io">}}
 
 ### [When To Use Microservices (And When Not To!) • Sam Newman & Martin Fowler • GOTO 2020](https://www.youtube.com/watch?v=GBTdnfD6s5Q)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/GBTdnfD6s5Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="GBTdnfD6s5Q" title="When To Use Microservices (And When Not To!) • Sam Newman & Martin Fowler • GOTO 2020">}}

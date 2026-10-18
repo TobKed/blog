@@ -207,18 +207,12 @@ I learned a lot not only from the technical perspective but also from the busine
 
 ### [The Missing Semester of Your CS Education - Lecture 4: Data Wrangling (2020)](https://www.youtube.com/watch?v=sz_dsktIjt4)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/sz_dsktIjt4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="sz_dsktIjt4" title="The Missing Semester of Your CS Education - Lecture 4: Data Wrangling (2020)">}}
 
 ### [SysOps/DevOps Online MeetUp #51 - \[#347\] "Jest GIT!" - Michał Wierba](https://www.youtube.com/watch?v=WXOzggTMHck)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/WXOzggTMHck" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="WXOzggTMHck" title="SysOps/DevOps Online MeetUp #51 - \[#347\] “Jest GIT!” - Michał Wierba">}}
 
 ### [Andy Baio: Cut, copy, paste](https://www.youtube.com/watch?v=9tmT80kW9Co)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/9tmT80kW9Co" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="9tmT80kW9Co" title="Andy Baio: Cut, copy, paste">}}

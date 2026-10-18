@@ -2,7 +2,7 @@
 
        Round-ups are written as `## Section` headings over `### [title](url)`
        links, each followed by a quote, an `#### AI generated summary` and its
-       paragraph, or a YouTube embed. The render hooks emit those headings bare
+       paragraph, or a youtube-lite preview. The render hooks emit those headings bare
        for round-ups (no anchor link), which is what the patterns below expect.
 
        Returns:
@@ -47,7 +47,7 @@
         {{- with findRESubmatch `(?s)<h4[^>]*>\s*AI generated summary\s*</h4>(.*)$` $rest 1 }}{{ $summary = index . 0 1 | strings.TrimSpace }}{{ end -}}
 
         {{- $video := "" -}}
-        {{- with findRESubmatch `youtube(?:-nocookie)?\.com/embed/([A-Za-z0-9_-]+)` $rest 1 }}{{ $video = index . 0 1 }}{{ end -}}
+        {{- with findRESubmatch `data-youtube="([A-Za-z0-9_-]+)"` $rest 1 }}{{ $video = index . 0 1 }}{{ end -}}
 
         {{- $kind := "plain" -}}
         {{- if $video }}{{ $kind = "video" }}
