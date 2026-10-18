@@ -16,6 +16,7 @@ EMBED = re.compile(
 )
 LINK = re.compile(r"\[(.+)\]\(<?[^)\s>]+>?\)")
 HTML_LINK = re.compile(r"<a [^>]*>(.+?)</a>")
+MD_ESCAPE = re.compile(r"\\([\\`*_{}\[\]()#+\-.!|<>])")
 
 
 def title_for(text: str, start: int) -> tuple[str, bool]:
@@ -42,6 +43,7 @@ def title_for(text: str, start: int) -> tuple[str, bool]:
 
 
 def shortcode(video_id: str, title: str) -> str:
+    title = MD_ESCAPE.sub(r"\1", title)
     # Typographic quotes: an escaped \" stops mdformat reading the line as a tag.
     title = re.sub(r'"([^"]*)"', "\u201c\\1\u201d", title).replace('"', "\u201d")
     return f'{{{{<youtube-lite id="{video_id}" title="{title}">}}}}'

@@ -76,7 +76,7 @@ mdformat (pre-commit) escapes `{{< ` and `\"`, which breaks the shortcode.
 
 - `scripts/resize_photos/` — Pillow-based image resizer, `input/` → `output/`; resized files are copied by hand into `static/images/posts/YYYY/`
 - `scripts/test_links/` — link checker described above under Commands
-- `scripts/check_mobile.mjs` — `make check_theme`, run against a serving `make preview`. Drives headless Chrome over CDP (no dependencies; needs Node 22+ for the built-in `WebSocket`) to assert the theme's layout rules at a 390px phone viewport and at desktop: no horizontal overflow, covers not downloaded while hidden, the mobile menu opens on tap, the right Contents variant shows, no blank Contents entries or empty taxonomy terms. Exits non-zero on failure. Device emulation is used because Chrome will not size a window below ~900px.
+- `scripts/check_mobile.mjs` — `make check_theme`, run against a serving `make preview`. Drives headless Chrome over CDP (no dependencies; needs Node 22+ for the built-in `WebSocket`) to assert the theme's layout rules at a 390px phone viewport and at desktop: no horizontal overflow, covers not downloaded while hidden, the phone menu opens on tap, round-up Contents and section folding, no request to YouTube before a video is played and only one plays at a time, the essay's "On this page" and Copy buttons, the archive filter, no blank Contents entries or empty taxonomy terms. Exits non-zero on failure. Device emulation is used because Chrome will not size a window below ~900px.
 
 ## Notes
 

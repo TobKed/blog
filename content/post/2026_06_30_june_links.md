@@ -236,9 +236,9 @@ An insightful conversation with Kelsey Hightower reflecting on his impactful car
 
 {{<youtube-lite id="mWLDn49_8HA" title="Graphify + Obsidian + Claude Code = CHEAT CODE - YouTube">}}
 
-### [How One Man Powers a Global App from a Dutch Cow Barn - YouTube](https://www.youtube.com/watch?v=RS-aRiblQ_8https://codeberg.org/ravachol/kew)
+### [How One Man Powers a Global App from a Dutch Cow Barn - YouTube](https://www.youtube.com/watch?v=RS-aRiblQ_8)
 
-{{<youtube-lite id="RS-aRiblQ_8https" title="How One Man Powers a Global App from a Dutch Cow Barn - YouTube">}}
+{{<youtube-lite id="RS-aRiblQ_8" title="How One Man Powers a Global App from a Dutch Cow Barn - YouTube">}}
 
 ### [Andrej Karpathy: From Vibe Coding to Agentic Engineering w/ Stephanie Zhan - YouTube](https://www.youtube.com/watch?v=96jN2OCOfLs)
 
@@ -246,7 +246,7 @@ An insightful conversation with Kelsey Hightower reflecting on his impactful car
 
 ### [1.1.6 Michał Leszczyński - \[PL\] \[CVE-2026-9058\] Pełne ominięcie uwierzytelniania w ZUS, e-Sądzie... - YouTube](https://www.youtube.com/watch?v=pMdnS8I18Ts)
 
-{{<youtube-lite id="pMdnS8I18Ts" title="1.1.6 Michał Leszczyński - \[PL\] \[CVE-2026-9058\] Pełne ominięcie uwierzytelniania w ZUS, e-Sądzie... - YouTube">}}
+{{<youtube-lite id="pMdnS8I18Ts" title="1.1.6 Michał Leszczyński - [PL] [CVE-2026-9058] Pełne ominięcie uwierzytelniania w ZUS, e-Sądzie... - YouTube">}}
 
 ### [VibeOS - Fully Hallucinated Operating System - YouTube](https://www.youtube.com/watch?v=z3pV6FHvcgM)
 

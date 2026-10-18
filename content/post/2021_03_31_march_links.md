@@ -214,8 +214,8 @@ I wrote more about it in a separate post: [Productivity course](/productivity-co
 
 ### [Top 10 Work from Home Productivity Tips \[PART 1\] | The Art of Remote Work Series](https://www.youtube.com/watch?v=ZQV4l7MAxnY)
 
-{{<youtube-lite id="ZQV4l7MAxnY" title="Top 10 Work from Home Productivity Tips \[PART 1\] | The Art of Remote Work Series">}}
+{{<youtube-lite id="ZQV4l7MAxnY" title="Top 10 Work from Home Productivity Tips [PART 1] | The Art of Remote Work Series">}}
 
 ### [TechWorld with Nana - Kubernetes Tutorial for Beginners \[FULL COURSE in 4 Hours\]](https://www.youtube.com/watch?v=X48VuDVv0do)
 
-{{<youtube-lite id="X48VuDVv0do" title="TechWorld with Nana - Kubernetes Tutorial for Beginners \[FULL COURSE in 4 Hours\]">}}
+{{<youtube-lite id="X48VuDVv0do" title="TechWorld with Nana - Kubernetes Tutorial for Beginners [FULL COURSE in 4 Hours]">}}

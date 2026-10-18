@@ -78,4 +78,4 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ### [Anthony Shaw -  Beat the rush! Designing effective load tests for your web application \[PyCon AU\]](https://www.youtube.com/watch?v=or3PbMGMz4o)
 
-{{<youtube-lite id="or3PbMGMz4o" title="Anthony Shaw -  Beat the rush! Designing effective load tests for your web application \[PyCon AU\]">}}
+{{<youtube-lite id="or3PbMGMz4o" title="Anthony Shaw -  Beat the rush! Designing effective load tests for your web application [PyCon AU]">}}

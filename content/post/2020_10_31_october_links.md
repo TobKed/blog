@@ -185,7 +185,7 @@ Meanwhile my blog post about Terraform and Infrastructure as Code was published 
 
 ### ["On a shoe-string and a t2.small: scaling on a \[zero\] budget." - Tom Eastman (PyConline AU 2020)](https://www.youtube.com/watch?v=A-3zc1CABqM)
 
-{{<youtube-lite id="A-3zc1CABqM" title="“On a shoe-string and a t2.small: scaling on a \[zero\] budget.” - Tom Eastman (PyConline AU 2020)">}}
+{{<youtube-lite id="A-3zc1CABqM" title="“On a shoe-string and a t2.small: scaling on a [zero] budget.” - Tom Eastman (PyConline AU 2020)">}}
 
 ### [Praca w korporacji - jakie ponosimy szkody zdrowotne? - prof. Paweł Januszewicz](https://www.youtube.com/watch?v=H9CJCVyD6mQ)
 
@@ -193,7 +193,7 @@ Meanwhile my blog post about Terraform and Infrastructure as Code was published 
 
 ### [I used the reasonably-secure Qubes OS for 6 months and survived - Matty McFatty \[@themattymcfatty\]](https://www.youtube.com/watch?v=sbN5Bz3v-uA)
 
-{{<youtube-lite id="sbN5Bz3v-uA" title="I used the reasonably-secure Qubes OS for 6 months and survived - Matty McFatty \[@themattymcfatty\]">}}
+{{<youtube-lite id="sbN5Bz3v-uA" title="I used the reasonably-secure Qubes OS for 6 months and survived - Matty McFatty [@themattymcfatty]">}}
 
 ### [Reuven M. Lerner - Practical decorators - PyCon 2019](https://www.youtube.com/watch?v=MjHpMCIvwsY)
 

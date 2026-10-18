@@ -213,7 +213,7 @@ A detailed guide on setting up OpenClaw with security configurations, SSH keys, 
 
 ### [Nicholas Carlini - Black-hat LLMs | \[un\]prompted 2026 - YouTube](https://www.youtube.com/watch?v=1sd26pWhfmg)
 
-{{<youtube-lite id="1sd26pWhfmg" title="Nicholas Carlini - Black-hat LLMs | \[un\]prompted 2026 - YouTube">}}
+{{<youtube-lite id="1sd26pWhfmg" title="Nicholas Carlini - Black-hat LLMs | [un]prompted 2026 - YouTube">}}
 
 ### [Jak działa Claude Code? Wszystko, co musisz wiedzieć - YouTube](https://www.youtube.com/watch?v=B0yx8k1YcU4)
 

@@ -211,7 +211,7 @@ I learned a lot not only from the technical perspective but also from the busine
 
 ### [SysOps/DevOps Online MeetUp #51 - \[#347\] "Jest GIT!" - Michał Wierba](https://www.youtube.com/watch?v=WXOzggTMHck)
 
-{{<youtube-lite id="WXOzggTMHck" title="SysOps/DevOps Online MeetUp #51 - \[#347\] “Jest GIT!” - Michał Wierba">}}
+{{<youtube-lite id="WXOzggTMHck" title="SysOps/DevOps Online MeetUp #51 - [#347] “Jest GIT!” - Michał Wierba">}}
 
 ### [Andy Baio: Cut, copy, paste](https://www.youtube.com/watch?v=9tmT80kW9Co)
 

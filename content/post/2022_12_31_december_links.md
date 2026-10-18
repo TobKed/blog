@@ -222,7 +222,7 @@ Ending year with another certificate in my collection.
 
 ### [The Forgotten Art of Structured Programming - Kevlin Henney \[C++ on Sea 2019\]](https://www.youtube.com/watch?v=SFv8Wm2HdNM)
 
-{{<youtube-lite id="SFv8Wm2HdNM" title="The Forgotten Art of Structured Programming - Kevlin Henney \[C++ on Sea 2019\]">}}
+{{<youtube-lite id="SFv8Wm2HdNM" title="The Forgotten Art of Structured Programming - Kevlin Henney [C++ on Sea 2019]">}}
 
 ### [Advanced API and Integration Problems & Patterns - Udi Dahan - NDC Oslo 2022 ](https://www.youtube.com/watch?v=vNouCMGP1eE)
 
