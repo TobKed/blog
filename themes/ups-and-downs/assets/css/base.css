@@ -210,6 +210,34 @@ button { font: inherit; }
   .issue-toc + .back-top { margin-top: -18px; }
 }
 
+/* ---- cover captions (_partials/cover-caption.html) ------------------------ */
+
+.cover-cap {
+  margin-left: auto;
+  padding: 10px 0 0;
+  text-align: right;
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+  text-wrap: balance;
+}
+.cover-cap a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+.cover-cap a:hover { color: var(--accent); }
+
+/* The latest-issue card and the round-up title overlap the bottom-left of
+   their cover. From 1200px the caption fits in the free space to their
+   right; below that a captioned cover gives up the overlap instead. */
+@media (min-width: 1200px) {
+  .home-cover .cover-cap { max-width: 400px; }
+  .issue-cover .cover-cap { max-width: 240px; }
+}
+@media (max-width: 1199px) {
+  .home-latest:has(.cover-cap) .home-latest__card,
+  .home-latest:has(.cover-cap) .home-latest__head,
+  .issue:has(.issue-cover .cover-cap) .issue-head--overlap { margin-top: 0; }
+}
+
 /* ---- YouTube previews (_partials/youtube-lite.html) ---------------------- */
 
 .yt { display: flex; flex-direction: column; gap: 8px; margin: 0; }
@@ -358,6 +386,8 @@ button { font: inherit; }
   .masthead__avatar img { width: 36px; height: 36px; }
 
   .chip { display: inline-flex; align-items: center; min-height: 44px; }
+  /* Covers run edge to edge on phones; their caption keeps to the gutter. */
+  .cover-cap { padding: 8px var(--gutter) 0; font-size: 11px; }
 
   .masthead__since {
     display: block;

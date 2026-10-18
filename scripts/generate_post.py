@@ -149,7 +149,7 @@ def build_replacements(
         # Year tag in the YAML tag list
         f"  - '{tpl_year}'": f"  - '{year}'",
         # Be specific about the path structure & placeholder year
-        f"image: images/posts/{tpl_year}/{tpl_year}_xx_xx.jpg": f"image: images/posts/{year}/{year}_{month_num:02d}_xx.jpg",
+        f"image: /images/posts/{tpl_year}/{tpl_year}_xx_xx.jpg": f"image: /images/posts/{year}/{year}_{month_num:02d}_xx.jpg",
         # Content Heading
         f"# {{Month}} {tpl_year}": f"# {month_name_full} {year}",
         # Add other specific replacements here if needed

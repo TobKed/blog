@@ -13,6 +13,7 @@ tags:
 slug: 2026-august-links
 summary: Interesting stuff from the month
 image: /images/posts/2026/2026_08_xx.jpg
+image_alt: 'A small motorboat heading along a canal towards a road bridge, with boats and houseboats moored on both banks'
 categories:
   - summary
 ---

@@ -13,6 +13,7 @@ tags:
 slug: 2026-january-links
 summary: Interesting stuff from the month
 image: /images/posts/2026/2026_01_xx.jpg
+image_alt: 'A thick layer of clouds seen from above, lit by low warm light'
 categories:
   - summary
 ---

@@ -11,16 +11,6 @@
   aspect-ratio: 21 / 9;
   object-fit: cover;
 }
-.issue-cover figcaption {
-  display: flex;
-  justify-content: flex-end;
-  padding: 10px 0 0;
-  font-family: var(--mono);
-  font-size: 12px;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
 
 .issue-head {
   position: relative;
@@ -379,7 +369,6 @@
 
   .issue-cover { margin: 0 calc(-1 * var(--gutter)); }
   .issue-cover img { aspect-ratio: 4 / 3; }
-  .issue-cover figcaption { display: none; }
 
   .issue-head {
     gap: 12px;

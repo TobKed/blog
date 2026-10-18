@@ -74,16 +74,6 @@
   aspect-ratio: 3 / 1;
   object-fit: cover;
 }
-.home-cover figcaption {
-  display: flex;
-  justify-content: flex-end;
-  padding: 10px 0 0;
-  font-family: var(--mono);
-  font-size: 12px;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
 
 .home-latest__row {
   display: flex;
@@ -495,7 +485,6 @@
 
   .home-cover { margin: 0 calc(-1 * var(--gutter)); }
   .home-cover img { aspect-ratio: 4 / 3; }
-  .home-cover figcaption { display: none; }
 
   .home-latest__row { display: block; }
   .home-latest__card,

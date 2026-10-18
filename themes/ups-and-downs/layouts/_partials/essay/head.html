@@ -16,5 +16,5 @@
     {{- end }}
 </header>
 {{ with partial "cover-img.html" (dict "page" $p "class" "essay-cover__img" "eager" true) -}}
-    <figure class="essay-cover photo bleed">{{ . }}</figure>
+    <figure class="essay-cover photo bleed">{{ . }}{{ partial "cover-caption.html" $p }}</figure>
 {{- end }}

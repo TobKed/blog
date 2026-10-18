@@ -13,6 +13,7 @@ tags:
 slug: 2026-july-links
 summary: Interesting stuff from the month
 image: /images/posts/2026/2026_07_xx.jpg
+image_alt: 'A dirt path through a green summer forest, with ferns and undergrowth on both sides'
 categories:
   - summary
 ---

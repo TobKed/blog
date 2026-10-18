@@ -19,7 +19,7 @@
                 {{ range . }}{{ $p := . }}
                     <a class="home-back__item" href="{{ .RelPermalink }}">
                         {{ with partial "cover-url.html" . }}
-                            {{ partial "cover-img.html" (dict "page" $p "class" "home-back__img") }}
+                            {{ partial "cover-img.html" (dict "page" $p "class" "home-back__img" "decorative" true) }}
                         {{ else }}
                             <span class="photo home-back__img home-back__ph" aria-hidden="true"></span>
                         {{ end }}
@@ -33,7 +33,7 @@
         {{ end }}
         {{ with .summary }}
             <a class="home-year" href="{{ .RelPermalink }}">
-                {{ partial "cover-img.html" (dict "page" . "class" "home-year__img") }}
+                {{ partial "cover-img.html" (dict "page" . "class" "home-year__img" "decorative" true) }}
                 <span class="home-year__body">
                     <span class="home-year__kicker">Year in review · <span class="home-wide">{{ .Date.Format "Mon" }} </span>{{ .Date.Format "02 Jan 2006" }}{{ if site.Params.article.readingTime }}<span class="home-wide"> · {{ .ReadingTime }} min</span>{{ end }}</span>
                     <span class="home-year__title">{{ replace (.Title | htmlEscape) " - " "&nbsp;— " | safeHTML }}</span>

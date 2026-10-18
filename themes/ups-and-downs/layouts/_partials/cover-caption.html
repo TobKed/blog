@@ -1,0 +1,7 @@
+{{- /* The line under a cover, or nothing: "On the cover: <image_caption>" and
+       "Photo: <image_credit>" (only for someone else's photo), joined by " · ".
+       Context: a Page. Both fields take markdown, so a credit can link out. */ -}}
+{{- $parts := slice -}}
+{{- with .Params.image_caption }}{{ $parts = $parts | append (printf "On the cover: %s" (. | markdownify)) }}{{ end -}}
+{{- with .Params.image_credit }}{{ $parts = $parts | append (printf "Photo: %s" (. | markdownify)) }}{{ end -}}
+{{- with $parts }}<figcaption class="cover-cap">{{ delimit . " · " | safeHTML }}</figcaption>{{ end -}}
