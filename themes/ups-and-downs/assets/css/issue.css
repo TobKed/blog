@@ -322,6 +322,7 @@
   color: #16130f;
 }
 .issue-video__title { font-size: 18px; line-height: 1.3; font-weight: 500; }
+.issue-video__text { display: flex; flex-direction: column; gap: 6px; }
 .issue-mt { display: none; }
 
 .issue-tags { padding-top: 8px; }

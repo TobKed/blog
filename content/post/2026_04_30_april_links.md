@@ -150,9 +150,9 @@ The article reflects on a retreat focused on the future of software development 
 
 {{<youtube-lite id="TdondBmyNXc" title="I replaced my entire stack with Postgres... - YouTube">}}
 
-### [John Doerr: Ideas are easy, execution is everything. - YouTube](https://www.youtube.com/watch?v=4xWGSUZmkIc)
+### [John Doerr: Ideas are easy, execution is everything.](https://scet.berkeley.edu/newton-series-of-the-week-john-doerr/)
 
-{{<youtube-lite id="4xWGSUZmkIc" title="John Doerr: Ideas are easy, execution is everything. - YouTube">}}
+*The video is no longer on YouTube; the link above is Berkeley's write-up of the talk.*
 
 ### [Everything Announced at Google Cloud Next in Under 13 Minutes - YouTube](https://www.youtube.com/watch?v=dITPmrhNTzY)
 

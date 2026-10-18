@@ -157,15 +157,15 @@ Available on pypi:
 
 ### [Adam Haertle: Incydenty duże i bardzo duże, czyli administrator też człowiek](https://www.youtube.com/watch?v=0ifivA7Sy0E)
 
-{{<youtube-lite id="0ifivA7Sy0E" title="Adam Haertle: Incydenty duże i bardzo duże, czyli administrator też człowiek">}}
+*Video no longer available*
 
 ### [CONFidence 2019: "Z kamerą wśród zwierząt, czyli użytkownik kontra technologia" - Adam Haertle](https://www.youtube.com/watch?v=aaxn9g_jOcc)
 
-{{<youtube-lite id="aaxn9g_jOcc" title="CONFidence 2019: “Z kamerą wśród zwierząt, czyli użytkownik kontra technologia” - Adam Haertle">}}
+*Video no longer available*
 
 ### [SECURE 2020 - "Jak kochać to emaile, jak kraść to miliony"](https://www.youtube.com/watch?v=TixPdj4RPuo)
 
-{{<youtube-lite id="TixPdj4RPuo" title="SECURE 2020 - “Jak kochać to emaile, jak kraść to miliony”">}}
+*Video no longer available*
 
 ### ["What You Should Know About Django REST Framework" - Lacey Williams Henschel (PyCascades 2021)](https://www.youtube.com/watch?v=06DJBu1zwoY)
 

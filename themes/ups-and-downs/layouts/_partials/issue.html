@@ -51,9 +51,15 @@
             {{ partial "issue/legend.html" (dict "kinds" $kinds "class" "issue-legend--inline") }}
 
             {{- range $i, $s := $sections }}
-                {{- /* Videos plus bare links (a playlist) still read as a row of video cards. */ -}}
+                {{- /* Videos plus bare links (a playlist) or links with a one-line note (a video
+                       that is gone) still read as a row of video cards. */ -}}
                 {{- $cards := $s.isVideo -}}
-                {{- if and (where $s.items "kind" "video") (not (where (where $s.items "kind" "ne" "video") "body" "ne" "")) }}{{ $cards = true }}{{ end -}}
+                {{- $prose := false -}}
+                {{- range $s.items }}{{ if ne .kind "video" }}
+                    {{- $text := .body | plainify | strings.TrimSpace -}}
+                    {{- if or (ne .kind "plain") (and .body (not $text)) (gt (len $text) 140) }}{{ $prose = true }}{{ end -}}
+                {{- end }}{{ end -}}
+                {{- if and (where $s.items "kind" "video") (not $prose) }}{{ $cards = true }}{{ end -}}
                 {{- $fold := 0 -}}
                 {{- $keep := and site.Params.linkSections.keepFirstOpen (eq $s.id $firstLinks) -}}
                 {{- if and (gt $n 0) (gt $s.count (add $n 1)) (not $cards) (not $keep) }}{{ $fold = $n }}{{ end -}}

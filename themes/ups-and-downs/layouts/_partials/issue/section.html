@@ -26,9 +26,14 @@
         {{- if .video }}
         <div class="issue-video" id="{{ .id }}">{{ partial "youtube-lite.html" (dict "id" .video "title" .title "between" $title) }}</div>
         {{- else }}
+        {{- $note := .body | plainify | htmlUnescape | strings.TrimSpace }}
         <div class="issue-video" id="{{ .id }}">
-            <a class="issue-video__thumb" href="{{ .url }}" target="_blank" rel="noopener" aria-label="{{ .title }}"><span class="issue-video__play"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="8,5 19,12 8,19"></polygon></svg></span></a>
+            <a class="issue-video__thumb" href="{{ .url }}" target="_blank" rel="noopener" aria-label="{{ .title }}">{{ if not $note }}<span class="issue-video__play"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="8,5 19,12 8,19"></polygon></svg></span>{{ end }}</a>
+            {{- with $note }}
+            <div class="issue-video__text">{{ $title }}<p class="yt__note">{{ . }}</p></div>
+            {{- else }}
             {{ $title }}
+            {{- end }}
         </div>
         {{- end }}
         {{- end }}
