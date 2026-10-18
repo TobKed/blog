@@ -32,4 +32,16 @@
   }
   addEventListener('hashchange', reveal);
   reveal();
+
+  // The archive search links to a round-up's link with a text fragment
+  // (#:~:text=), which the browser cannot find in a folded section. The
+  // directive is hidden from location, but not from the navigation entry.
+  var nav = performance.getEntriesByType && performance.getEntriesByType('navigation')[0];
+  var text = nav && /:~:text=([^&,]*)/.exec(nav.name);
+  if (text) {
+    text = decodeURIComponent(text[1]).toLowerCase();
+    [].forEach.call(document.querySelectorAll('.issue-section[data-fold] .is-extra'), function (el) {
+      if (el.textContent.toLowerCase().indexOf(text) !== -1) setOpen(el.closest('.issue-section'), true);
+    });
+  }
 })();
