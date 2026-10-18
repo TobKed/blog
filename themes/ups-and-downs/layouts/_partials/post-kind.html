@@ -1,0 +1,7 @@
+{{- /* "roundup" (the monthly links posts), "summary" (year in review) or
+       "essay" (everything else). Front matter `kind` overrides the slug. */ -}}
+{{- $kind := "essay" -}}
+{{- if strings.HasSuffix .Slug "-links" }}{{ $kind = "roundup" }}
+{{- else if strings.HasSuffix .Slug "-summary" }}{{ $kind = "summary" }}{{ end -}}
+{{- with .Params.kind }}{{ $kind = . }}{{ end -}}
+{{- return $kind -}}

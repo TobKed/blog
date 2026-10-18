@@ -1,0 +1,45 @@
+{{- /* The index leads with the avatar - the giant masthead below it carries the
+       name; every other page carries the wordmark instead. On narrow screens
+       the nav and the photos button move into a panel behind #menu-toggle. */ -}}
+{{- $page := . -}}
+{{- $about := index (where site.Pages "Layout" "about") 0 -}}
+{{- $photosBtn := "" -}}
+{{- if site.Params.coverImages.toggle -}}
+    {{- $on := ne site.Params.coverImages.default "hidden" -}}
+    {{- $photosBtn = printf `<button class="pill js-photos" type="button" aria-pressed="%t">Photos %s</button>` $on (cond $on "on" "off") -}}
+{{- end -}}
+<header class="masthead{{ if .IsHome }} masthead--home{{ end }}">
+    {{ if .IsHome }}
+        {{ with site.Params.avatar }}{{ with resources.Get . }}{{ with .Fill "96x96 webp" }}
+            <a class="masthead__avatar" href="{{ with $about }}{{ .RelPermalink }}{{ else }}{{ site.Home.RelPermalink }}{{ end }}" aria-label="{{ with $about }}{{ .LinkTitle }}{{ else }}{{ site.Title }}{{ end }}">
+                <img src="{{ .RelPermalink }}" width="40" height="40" alt="">
+            </a>
+        {{ end }}{{ end }}{{ end }}
+    {{ else }}
+        <a class="wordmark" href="{{ site.Home.RelPermalink }}">{{ site.Title }}</a>
+    {{ end }}
+
+    <nav class="masthead__nav" id="site-menu" aria-label="Main">
+        {{ range site.Menus.main }}
+            {{ $active := or ($page.IsMenuCurrent "main" .) ($page.HasMenuCurrent "main" .) (eq $page.RelPermalink .URL) }}
+            <a href="{{ .URL }}"{{ if $active }} class="is-active" aria-current="page"{{ end }}
+               {{- if .Params.newTab }} target="_blank" rel="noopener"{{ end }}>{{ .Name }}</a>
+        {{ end }}
+        {{ with $photosBtn }}<span class="masthead__menu-tools">{{ . | safeHTML }}</span>{{ end }}
+    </nav>
+
+    <div class="masthead__tools">
+        {{ if site.Params.colorScheme.toggle }}
+            <button class="pill pill--theme" type="button" id="theme-toggle" aria-label="Switch to dark mode">
+                <span class="pill__text">Dark</span>
+                <svg class="icon-moon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg>
+                <svg class="icon-sun" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="4.5"/><line x1="12" y1="19.5" x2="12" y2="22"/><line x1="2" y1="12" x2="4.5" y2="12"/><line x1="19.5" y1="12" x2="22" y2="12"/><line x1="4.9" y1="4.9" x2="6.7" y2="6.7"/><line x1="17.3" y1="17.3" x2="19.1" y2="19.1"/><line x1="4.9" y1="19.1" x2="6.7" y2="17.3"/><line x1="17.3" y1="6.7" x2="19.1" y2="4.9"/></svg>
+            </button>
+        {{ end }}
+        {{ with $photosBtn }}<span class="masthead__bar-tools">{{ . | safeHTML }}</span>{{ end }}
+        <button class="iconbtn" type="button" id="menu-toggle" aria-expanded="false" aria-controls="site-menu" aria-label="Open menu">
+            <svg class="icon-menu" aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="4" y1="8" x2="20" y2="8"/><line x1="4" y1="16" x2="20" y2="16"/></svg>
+            <svg class="icon-close" aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+        </button>
+    </div>
+</header>

@@ -1,0 +1,361 @@
+/* Cover story. Tokens, type, masthead, colophon and the small shared pieces.
+   Page-specific rules live in home/issue/essay/pages.css. */
+
+:root {
+  --bg: #fbfaf8;
+  --ink: #16130f;
+  --ink-2: #2b2721;
+  --ink-3: #3d3831;
+  --ink-4: #4a453e;
+  --muted: #5c574f;
+  --faint: #8c857a;
+  --dash: #b5aea3;
+  --dash-2: #a39b8f;
+  --rule: #d9d4cc;
+  --rule-btn: #d9d4cc;
+  --rule-soft: #e4dfd6;
+  --rule-strong: #16130f;
+  --rule-heavy: #16130f;
+  --inv-bg: #16130f;
+  --inv-ink: #fbfaf8;
+  --card: #16130f;
+  --card-ink: #fbfaf8;
+  --card-muted: #c9c2b6;
+  --card-sub: #ded8ce;
+  --video-bg: #2a2620;
+  --video-border: transparent;
+  --callout-bg: #f4f1ec;
+  --code-inline: #efebe4;
+  --code-bg: #1c1914;
+  --code-border: transparent;
+  --code-cap-rule: #332e27;
+  --code-btn-rule: #3d372f;
+  --accent: #b8361a;
+
+  --serif: 'Newsreader', Georgia, 'Times New Roman', serif;
+  --mono: 'Spline Sans Mono', ui-monospace, monospace;
+  --gutter: 40px;
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  --bg: #15130f;
+  --ink: #ede8df;
+  --ink-2: #e0d9cd;
+  --ink-3: #cfc8bc;
+  --ink-4: #bdb5a8;
+  --muted: #a39b8f;
+  --faint: #8f877b;
+  --dash: #5a5349;
+  --dash-2: #5a5349;
+  --rule: #3a342c;
+  --rule-btn: #4a433a;
+  --rule-soft: #2c2822;
+  --rule-strong: #6b6358;
+  --rule-heavy: #cfc8bc;
+  --inv-bg: #ede8df;
+  --inv-ink: #15130f;
+  --card: #24201a;
+  --card-ink: #ede8df;
+  --card-muted: #a39b8f;
+  --card-sub: #cfc8bc;
+  --video-bg: #26221c;
+  --video-border: #3a342c;
+  --callout-bg: #1f1c17;
+  --code-inline: #2a261f;
+  --code-bg: #0e0d0b;
+  --code-border: #36312a;
+  --code-cap-rule: #2a261f;
+  --code-btn-rule: #3d372f;
+  --accent: #ef7f5c;
+  color-scheme: dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #15130f;
+    --ink: #ede8df;
+    --ink-2: #e0d9cd;
+    --ink-3: #cfc8bc;
+    --ink-4: #bdb5a8;
+    --muted: #a39b8f;
+    --faint: #8f877b;
+    --dash: #5a5349;
+    --dash-2: #5a5349;
+    --rule: #3a342c;
+    --rule-btn: #4a433a;
+    --rule-soft: #2c2822;
+    --rule-strong: #6b6358;
+    --rule-heavy: #cfc8bc;
+    --inv-bg: #ede8df;
+    --inv-ink: #15130f;
+    --card: #24201a;
+    --card-ink: #ede8df;
+    --card-muted: #a39b8f;
+    --card-sub: #cfc8bc;
+    --video-bg: #26221c;
+    --video-border: #3a342c;
+    --callout-bg: #1f1c17;
+    --code-inline: #2a261f;
+    --code-bg: #0e0d0b;
+    --code-border: #36312a;
+    --code-cap-rule: #2a261f;
+    --code-btn-rule: #3d372f;
+    --accent: #ef7f5c;
+    color-scheme: dark;
+  }
+}
+
+@media (max-width: 640px) {
+  :root { --gutter: 20px; }
+}
+
+/* ---- reset & type -------------------------------------------------------- */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 19px;
+  line-height: 1.55;
+  overflow-wrap: break-word;
+}
+
+a { color: var(--ink); text-decoration: none; }
+a:hover { color: var(--accent); }
+
+img { max-width: 100%; height: auto; }
+
+button { font: inherit; }
+
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 8px;
+  z-index: 100;
+  padding: 8px 14px;
+  background: var(--inv-bg);
+  color: var(--inv-ink);
+  font-family: var(--mono);
+  font-size: 12px;
+}
+.skip-link:focus { left: 8px; }
+
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+/* Elements that break out of .wrap on phones, the design's full-bleed covers. */
+@media (max-width: 640px) {
+  .bleed { margin-left: calc(-1 * var(--gutter)); margin-right: calc(-1 * var(--gutter)); }
+}
+
+.mono {
+  font-family: var(--mono);
+  font-size: 12px;
+}
+
+.eyebrow {
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.display {
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: -0.03em;
+  font-variation-settings: 'opsz' 72;
+}
+
+/* Covers are hidden, not removed, when a reader turns photos off. Anything
+   that is only there as a picture carries .photo. */
+[data-photos="off"] .photo { display: none !important; }
+
+.chips { display: flex; flex-wrap: wrap; gap: 8px; font-family: var(--mono); font-size: 12px; }
+.chip {
+  padding: 6px 12px;
+  border: 1px solid var(--rule-btn);
+  border-radius: 999px;
+}
+
+/* ---- masthead ------------------------------------------------------------ */
+
+.masthead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px 32px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--rule);
+}
+.masthead--home { padding: 20px 0; }
+
+.wordmark {
+  font-style: italic;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1;
+  letter-spacing: -0.035em;
+  font-variation-settings: 'opsz' 72;
+}
+
+.masthead__avatar { display: flex; align-items: center; }
+.masthead__avatar img { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; }
+
+.masthead__nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 28px;
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.masthead__nav a.is-active { color: var(--accent); }
+.masthead__menu-tools { display: none; }
+
+.masthead__tools {
+  display: flex;
+  gap: 8px;
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.pill {
+  min-height: 44px;
+  padding: 0 14px;
+  background: transparent;
+  border: 1px solid var(--rule-btn);
+  border-radius: 999px;
+  font: inherit;
+  color: var(--ink);
+  cursor: pointer;
+}
+.pill[aria-pressed="true"] {
+  background: var(--inv-bg);
+  border-color: var(--inv-bg);
+  color: var(--inv-ink);
+}
+.pill--theme svg { display: none; }
+
+.iconbtn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+}
+.iconbtn .icon-close { display: none; }
+[data-menu="open"] .iconbtn .icon-menu { display: none; }
+[data-menu="open"] .iconbtn .icon-close { display: block; }
+
+@media (max-width: 640px) {
+  .masthead {
+    flex-wrap: wrap;
+    gap: 0 12px;
+    margin: 0 calc(-1 * var(--gutter));
+    padding: 10px 16px 10px 20px;
+  }
+  .masthead--home { padding: 10px 16px 10px 20px; }
+  .wordmark { font-size: 25px; letter-spacing: -0.04em; }
+  .masthead__avatar img { width: 36px; height: 36px; }
+
+  .masthead__tools { gap: 4px; }
+  .masthead__bar-tools { display: none; }
+  .iconbtn { display: flex; }
+
+  .pill--theme {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+  }
+  .pill--theme .pill__text { display: none; }
+  .pill--theme .icon-moon { display: block; }
+  .is-dark .pill--theme .icon-moon { display: none; }
+  .is-dark .pill--theme .icon-sun { display: block; }
+
+  /* The menu panel: closed it takes no room; open it drops under the bar. */
+  .masthead__nav {
+    order: 3;
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+    padding: 8px 4px 12px 0;
+    font-size: 13px;
+  }
+  .masthead__nav a {
+    display: flex;
+    align-items: center;
+    min-height: 48px;
+    border-top: 1px solid var(--rule);
+  }
+  [data-menu="open"] .masthead__nav { display: flex; }
+  .masthead__menu-tools {
+    display: flex;
+    padding-top: 12px;
+    border-top: 1px solid var(--rule);
+  }
+}
+
+/* ---- colophon ------------------------------------------------------------ */
+
+.colophon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 16px 32px;
+  padding: 28px 0 44px;
+  border-top: 1px solid var(--rule);
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--muted);
+}
+.colophon a { color: var(--ink); }
+.colophon a:hover { color: var(--accent); }
+.colophon span a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+.colophon__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+@media (max-width: 640px) {
+  .colophon {
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 40px;
+    padding: 22px 0 36px;
+    font-size: 11px;
+  }
+  .colophon__links { gap: 4px 18px; }
+  .colophon__links a { padding: 6px 0; }
+}

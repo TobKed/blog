@@ -1,0 +1,13 @@
+<footer class="colophon">
+    {{ with site.Menus.social }}
+        <nav class="colophon__links" aria-label="Elsewhere">
+            {{ range . }}
+                <a href="{{ .URL }}" {{ if .Params.newTab }}target="_blank" rel="me noopener"{{ else }}rel="me"{{ end }}>{{ .Name }}</a>
+            {{ end }}
+        </nav>
+    {{ end }}
+    <span>
+        {{- with site.Params.footer.since }}&copy; {{ . }}&ndash;{{ now.Year }}{{ end }}
+        {{- with site.Params.footer.customText }} &middot; {{ . | safeHTML }}{{ end -}}
+    </span>
+</footer>
