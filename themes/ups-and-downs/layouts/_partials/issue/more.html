@@ -5,7 +5,7 @@
 <nav class="issue-more-nav" aria-label="More issues" data-pagefind-ignore>
     {{- with $prev }}
     <a class="issue-adj" href="{{ .RelPermalink }}">
-        {{ partial "cover-img.html" (dict "page" . "class" "issue-adj__cover") }}
+        {{ partial "cover-img.html" (dict "page" . "class" "issue-adj__cover" "decorative" true) }}
         <span class="issue-adj__text">
             <span class="issue-adj__label">← Previous issue</span>
             <span class="issue-adj__title">{{ .Date.Format "January 2006" }}</span>
@@ -22,7 +22,7 @@
             <span class="issue-adj__title">{{ .Date.Format "January 2006" }}</span>
             <span class="issue-adj__date">{{ .Date.Format "Mon 2 Jan" }}{{ if site.Params.article.readingTime }} · {{ .ReadingTime }} min{{ end }}</span>
         </span>
-        {{ partial "cover-img.html" (dict "page" . "class" "issue-adj__cover") }}
+        {{ partial "cover-img.html" (dict "page" . "class" "issue-adj__cover" "decorative" true) }}
     </a>
     {{- else }}
     {{- $month := .Date.AddDate 0 0 (sub 1 .Date.Day) -}}

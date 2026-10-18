@@ -13,6 +13,7 @@ tags:
 slug: 2026-june-links
 summary: Interesting stuff from the month
 image: /images/posts/2026/2026_06_xx.jpg
+image_alt: 'A windmill beyond a quiet river lined with reeds and trees, with geese on the water'
 categories:
   - summary
 ---

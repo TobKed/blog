@@ -1,9 +1,9 @@
 {{ define "main" }}
     <article class="about" data-pagefind-body>
-        {{ with partial "cover-img.html" (dict "page" . "class" "about__img" "alt" (.Params.imageAlt | default "") "eager" true) }}
+        {{ with partial "cover-img.html" (dict "page" . "class" "about__img" "eager" true) }}
             <figure class="about__photo photo bleed">
                 {{ . }}
-                {{ with $.Params.caption }}<figcaption><span>{{ . | markdownify }}</span></figcaption>{{ end }}
+                {{ with $.Params.image_credit }}<figcaption class="cover-cap">Photo by {{ . | markdownify }}</figcaption>{{ end }}
             </figure>
         {{ end }}
 
@@ -39,5 +39,6 @@
 
         {{ partial "about/record.html" . }}
         {{ partial "about/numbers.html" . }}
+        {{ with .Params.footnote }}<p class="about__footnote">{{ . | markdownify }}</p>{{ end }}
     </article>
 {{ end }}

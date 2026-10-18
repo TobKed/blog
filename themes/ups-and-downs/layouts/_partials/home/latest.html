@@ -5,7 +5,7 @@
     {{ with $cover }}
         <figure class="photo home-cover">
             {{ partial "cover-img.html" (dict "page" $ "eager" true) }}
-            <figcaption>Cover · photo by the author</figcaption>
+            {{ partial "cover-caption.html" $ }}
         </figure>
     {{ end }}
     <div class="home-latest__row">

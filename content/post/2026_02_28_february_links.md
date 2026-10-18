@@ -13,6 +13,7 @@ tags:
 slug: 2026-february-links
 summary: Interesting stuff from the month
 image: /images/posts/2026/2026_02_xx.jpg
+image_alt: 'Wooden windmills and dark timber houses beyond flat green meadows cut by narrow water channels, under an overcast sky'
 categories:
   - summary
 ---

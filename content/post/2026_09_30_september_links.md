@@ -13,6 +13,7 @@ tags:
 slug: 2026-september-links
 summary: Interesting stuff from the month
 image: /images/posts/2026/2026_09_xx.jpg
+image_alt: 'Close-up of a flower mosaic in red, orange and purple, with patches of green'
 categories:
   - summary
 ---

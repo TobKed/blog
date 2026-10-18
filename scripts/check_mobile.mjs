@@ -110,6 +110,7 @@ const overflowBy = 'document.documentElement.scrollWidth + " > " + innerWidth';
 const visible = sel => `(()=>{const e=document.querySelector(${JSON.stringify(sel)});
   return !!e && getComputedStyle(e).display !== 'none' && e.getBoundingClientRect().height > 0;})()`;
 const ROUNDUP = '/2026-september-links/';
+const noEmptyCaption = `[...document.querySelectorAll('figcaption')].every(c => c.textContent.trim())`;
 // Visible text smaller than min px, outside the selectors allowed to go lower.
 const smallText = (min, allow = []) => `[...document.querySelectorAll('body *')].filter(e =>
   [...e.childNodes].some(n => n.nodeType === 3 && n.textContent.trim()) && e.getClientRects().length &&
@@ -151,6 +152,7 @@ const ESSAY = '/enum-and-dataclass/';
     await s.go(path);
     const small = await s.eval(smallText(11, ['.issue-badge']));
     check(`no text below 11px on ${path}`, small.length === 0, small.join(', '));
+    check(`no empty figcaption on ${path}`, await s.eval(noEmptyCaption));
   }
 
   await s.go(ESSAY);
@@ -179,6 +181,10 @@ const ESSAY = '/enum-and-dataclass/';
   await s.go('/');
   check('masthead shows the nav and no menu button',
     await s.eval(visible('.masthead__nav')) && !(await s.eval(visible('#menu-toggle'))));
+  check('the latest cover has alt text; back-issue covers beside their month have none',
+    await s.eval(`!!document.querySelector('.home-cover img').alt.trim() &&
+      [...document.querySelectorAll('.home-back__img')].every(i => i.getAttribute('alt') === '')`));
+  check('no empty figcaption on the home page', await s.eval(noEmptyCaption));
   check('current page is underlined, not only coloured',
     await s.eval(`getComputedStyle(document.querySelector('.masthead__nav a.is-active')).textDecorationLine === 'underline'`));
   const photosLabel = `document.querySelector('#photos-toggle .toggle__label').textContent`;
@@ -192,6 +198,10 @@ const ESSAY = '/enum-and-dataclass/';
 
   await s.go(ROUNDUP);
   check('round-up shows its Contents', await s.eval(visible('.issue-toc')));
+  check('the round-up cover has alt text and og:image:alt',
+    await s.eval(`!!document.querySelector('.issue-cover img').alt.trim() &&
+      !!document.querySelector('meta[property="og:image:alt"]')?.content.trim()`));
+  check('no empty figcaption on the round-up', await s.eval(noEmptyCaption));
   check('no Contents entry is blank',
     await s.eval(`![...document.querySelectorAll('.issue-toc a')].some(a => a.getAttribute('href') === '#' || !a.textContent.trim())`));
   check('a long section is folded',

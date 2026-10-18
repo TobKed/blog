@@ -8,6 +8,7 @@ tags:
 slug: 2025-summary
 summary: Ups and downs of 2025
 image: /images/posts/2025/2025_04_xx.jpg
+image_alt: 'Tour boats on a wide city canal at sunset under an orange sky, with brick houses and moored houseboats along both banks'
 categories:
   - summary
 ---

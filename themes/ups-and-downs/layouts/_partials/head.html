@@ -11,7 +11,8 @@
     <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink }}" title="{{ site.Title }}">
 {{ end }}{{ end -}}
 
-{{ with partial "cover-url.html" . }}<meta property="og:image" content="{{ . | absURL }}">{{ end }}
+{{ with partial "cover-url.html" . }}<meta property="og:image" content="{{ . | absURL }}">
+<meta property="og:image:alt" content="{{ $.Params.image_alt | default $.Title }}">{{ end }}
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
 <meta property="og:title" content="{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }}{{ end }}">
 <meta property="og:url" content="{{ .Permalink }}">

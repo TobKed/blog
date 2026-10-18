@@ -27,7 +27,7 @@
                 {{ range $roundups }}
                     {{ $new := eq .RelPermalink $.newest }}
                     <a class="acover{{ if $new }} is-new{{ end }}" href="{{ .RelPermalink }}" aria-label="{{ .Title }}{{ if $new }} (newest){{ end }}" data-kind="roundup" data-title="{{ lower .Title }}">
-                        {{ with partial "cover-img.html" (dict "page" . "class" "acover__img") }}{{ . }}{{ else }}<span class="acover__img acover__blank"></span>{{ end }}
+                        {{ with partial "cover-img.html" (dict "page" . "class" "acover__img" "decorative" true) }}{{ . }}{{ else }}<span class="acover__img acover__blank"></span>{{ end }}
                         <span class="acover__m">{{ .Date.Format "Jan" }}{{ if $new }} · new{{ end }}</span>
                     </a>
                 {{ end }}

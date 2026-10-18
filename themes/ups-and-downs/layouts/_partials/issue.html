@@ -17,7 +17,7 @@
     {{- with $cover }}
     <figure class="issue-cover photo" data-pagefind-ignore>
         {{ partial "cover-img.html" (dict "page" $ "eager" true) }}
-        <figcaption>Cover · photo by the author</figcaption>
+        {{ partial "cover-caption.html" $ }}
     </figure>
     {{- end }}
 

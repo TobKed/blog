@@ -13,6 +13,7 @@ tags:
 slug: 2026-march-links
 summary: Interesting stuff from the month
 image: /images/posts/2026/2026_03_xx.jpg
+image_alt: 'A row of tall, narrow canal houses lit up at dusk, their windows reflected in the water below'
 categories:
   - summary
 ---

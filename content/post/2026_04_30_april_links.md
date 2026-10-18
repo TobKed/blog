@@ -13,6 +13,7 @@ tags:
 slug: 2026-april-links
 summary: Interesting stuff from the month
 image: /images/posts/2026/2026_04_xx.jpg
+image_alt: 'A straight sandy path through a pine forest, with birch trunks at both edges'
 categories:
   - summary
 ---
