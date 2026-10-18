@@ -15,8 +15,7 @@ slug: 2026-{month}-links
 summary: Interesting stuff from the month
 image: /images/posts/2026/2026_xx_xx.jpg
 image_alt: ''  # optional: what the cover shows, for screen readers
-image_caption: ''  # optional: shown as "On the cover: …"
-image_credit: ''  # optional: only for someone else's photo, shown as "Photo: …"
+image_caption: ''  # optional: line under the cover, e.g. where it was taken or "Photo by …"
 categories:
   - summary
 ---

@@ -6,7 +6,7 @@ date: '2018-12-19'
 layout: about
 image: /images/poli_photo_by_julia_kaczorowska_edit.png
 image_alt: Tobiasz Kedzierski at a desk, black and white
-image_credit: '[Julia Kaczorowska](https://juliakaczorowska.pl/)'
+image_caption: 'Photo by [Julia Kaczorowska](https://juliakaczorowska.pl/)'
 footnote: Cover photos are mine unless a post says otherwise.
 tags:
   - welcome

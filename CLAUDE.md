@@ -48,8 +48,8 @@ broken links (two-phase: fast `requests` pass, then `selenium` re-check of failu
 
 YAML, delimited by `---`. Keys in use: `title`, `date`, `slug`, `summary`, `tags`, `categories`,
 `image` (per-post header cover) with optional `image_alt` (alt text; falls back to the title),
-`image_caption` (shown as "On the cover: …") and `image_credit` (only for someone else's photo,
-shown as "Photo: …"), `draft`, and `build` (used on a few pages that must render at
+`image_caption` (the line under the cover, as written; e.g. where it was taken, or "Photo by …"
+for someone else's photo), `draft`, and `build` (used on a few pages that must render at
 their URL but stay out of lists, menus and feeds).
 
 ### Monthly "links" posts
