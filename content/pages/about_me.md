@@ -61,3 +61,6 @@ certifications:
     issuer: GitHub
     url: https://www.credly.com/badges/6b96a6c9-28cb-47dd-9dfa-13dd7a37d543
 ---
+
+I'm a Python and Google Cloud developer: backends in Django and FastAPI, infrastructure in Terraform, and a few contributions to Apache Airflow along the way.
+Away from the keyboard I'm happiest in the mountains — the Beskidy turn up in my year summaries.
