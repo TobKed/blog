@@ -1,7 +1,8 @@
+{{- /* Context: a Pager. */ -}}
 {{ if gt .TotalPages 1 }}
-    <nav class="pager">
-        {{ with .Prev }}<a href="{{ .URL }}">&larr; Newer posts</a>{{ else }}<span></span>{{ end }}
-        <span class="pager__pos">Page {{ .PageNumber }} of {{ .TotalPages }}</span>
-        {{ with .Next }}<a href="{{ .URL }}">Older posts &rarr;</a>{{ else }}<span></span>{{ end }}
+    <nav class="pager" aria-label="Pages">
+        {{ with .Prev }}<a class="pager__link" href="{{ .URL }}" rel="prev">← Newer</a>{{ else }}<span></span>{{ end }}
+        <span class="pager__pos">{{ .PageNumber }} / {{ .TotalPages }}</span>
+        {{ with .Next }}<a class="pager__link" href="{{ .URL }}" rel="next">Older →</a>{{ else }}<span></span>{{ end }}
     </nav>
 {{ end }}

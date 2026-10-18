@@ -1,0 +1,22 @@
+{{- /* The three shortest quotes (skipping one-liners) from a round-up, in issue order. Context: its Page. */ -}}
+{{- $quotes := slice }}{{ $i := 0 -}}
+{{- range (partialCached "roundup.html" . .).sections -}}
+    {{- $section := .name -}}
+    {{- range .items -}}
+        {{- $i = add $i 1 -}}
+        {{- $len := strings.RuneCount .quote -}}
+        {{- if and (eq .kind "quote") (ge $len 25) -}}
+            {{- $quotes = $quotes | append (dict "len" $len "i" $i "text" .quote "url" .url "domain" .domain "section" $section) -}}
+        {{- end -}}
+    {{- end -}}
+{{- end -}}
+{{- with $quotes }}
+    <section class="home-quotes" aria-label="Quoted this month">
+        {{ range sort (first 3 (sort . "len")) "i" }}{{ $q := . }}
+            <figure>
+                <blockquote>“{{ .text }}”</blockquote>
+                <figcaption>{{ with .domain }}<a href="{{ $q.url }}">{{ . }}</a> · {{ end }}{{ .section }}</figcaption>
+            </figure>
+        {{ end }}
+    </section>
+{{- end }}

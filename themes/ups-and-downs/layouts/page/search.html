@@ -1,7 +1,10 @@
 {{ define "main" }}
-    <div class="plain">
-        <h1 class="plain__title">{{ .Title }}</h1>
-        {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
+    <section class="listing-head">
+        <h1 class="listing-head__title display">{{ .Title }}</h1>
+        <p class="listing-head__sub">Every post, round-up link and page on the blog.</p>
+    </section>
+    <div class="listing search-page">
+        {{ with .Content }}<div class="prose listing__intro">{{ . }}</div>{{ end }}
         <div id="search" class="pagefind-ui"></div>
         <noscript><p class="search-fallback">Search needs JavaScript.</p></noscript>
     </div>

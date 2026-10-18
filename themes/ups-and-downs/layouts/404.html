@@ -1,9 +1,13 @@
 {{ define "main" }}
-    <div class="plain">
-        <h1 class="plain__title">404</h1>
-        <p class="plain__sub">That page is not here.</p>
-        <div class="prose">
-            <p><a href="{{ site.Home.RelPermalink }}">Back to the index</a>{{ with site.GetPage "/archives" }}, or browse the <a href="{{ .RelPermalink }}">archives</a>{{ end }}.</p>
-        </div>
+    <section class="listing-head">
+        <h1 class="listing-head__title display">404</h1>
+        <p class="listing-head__sub">That page is not here.</p>
+    </section>
+    <div class="listing">
+        <ul class="listing-links">
+            <li><a href="{{ site.Home.RelPermalink }}">Back to the front page <span aria-hidden="true">→</span></a></li>
+            {{ with site.GetPage "/archives" }}<li><a href="{{ .RelPermalink }}">Browse the archives <span aria-hidden="true">→</span></a></li>{{ end }}
+            {{ with site.GetPage "/search" }}<li><a href="{{ .RelPermalink }}">Search the blog <span aria-hidden="true">→</span></a></li>{{ end }}
+        </ul>
     </div>
 {{ end }}

@@ -1,0 +1,8 @@
+{{- $meta := slice -}}
+{{- with .where }}{{ $meta = $meta | append . }}{{ end -}}
+{{- with .when }}{{ $meta = $meta | append (string .) }}{{ end -}}
+{{- with .image -}}
+    <img {{ if eq site.Params.coverImages.default "hidden" }}data-src{{ else }}src{{ end }}="{{ . | relURL }}" alt="{{ $.alt | default "" }}" class="photo talk__img" loading="lazy">
+{{- end -}}
+<span class="talk__title">{{ .title }}</span>
+{{- with $meta }}<span class="talk__meta">{{ delimit . " · " }}</span>{{ end -}}

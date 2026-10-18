@@ -9,7 +9,7 @@
          lead      first paragraph of the intro, plain text
          intro     everything before the first section, HTML
          sections  [{id, name, count, isVideo, preface (HTML), items}]
-           items   [{title, url, domain, kind ("quote"|"summary"|"video"|"plain"),
+           items   [{id, title, url, domain, kind ("quote"|"summary"|"video"|"plain"),
                      quote (plain), quoteHTML, summary (HTML), video (YouTube id), body (HTML)}]
        Call it through partialCached with the page as the variant key. */ -}}
 {{- $parts := split (string .Content) "<h2 " -}}
@@ -28,6 +28,8 @@
 
     {{- $items := slice -}}
     {{- range after 1 $chunks -}}
+        {{- $hid := "" -}}
+        {{- with findRESubmatch `^[^>]*id="([^"]*)"` . 1 }}{{ $hid = index . 0 1 }}{{ end -}}
         {{- $head := "" -}}
         {{- with findRESubmatch `(?s)^[^>]*>(.*?)</h3>` . 1 }}{{ $head = index . 0 1 }}{{ end -}}
         {{- $rest := replaceRE `(?s)^[^>]*>.*?</h3>` "" . 1 | strings.TrimSpace -}}
@@ -53,6 +55,7 @@
         {{- else if $quoteHTML }}{{ $kind = "quote" }}{{ end -}}
 
         {{- $items = $items | append (dict
+            "id" $hid
             "title" ($head | plainify | htmlUnescape | strings.TrimSpace)
             "url" $url
             "domain" $domain

@@ -1,25 +1,12 @@
-{{- /* The design's numbered Contents list.
-
-Context:
-  page    Page to read the section list from.
-  variant "inline" (between rules inside the post) or "side" (sticky rail).
-
-A post renders both variants and CSS shows whichever data-toc selects, so the
-sidebar's Contents button can switch between them without a reload.
-*/ -}}
-
-{{- with partial "toc-headings.html" .page }}
-    <nav class="toc toc--{{ $.variant }}" aria-label="Contents" data-pagefind-ignore>
-        <span class="toc__label">Contents</span>
-        <span class="toc__list">
-            {{- range $i, $h := . }}
-                <a href="#{{ $h.ID }}">
-                    <span class="toc__n">{{ printf "%02d" (add $i 1) }}</span>
-                    {{- /* .Title is already-rendered HTML; escaping it again turns
-                           a heading's "&" into a literal "&amp;". */ -}}
-                    <span>{{ $h.Title | safeHTML }}</span>
-                </a>
-            {{- end }}
-        </span>
+{{- /* "On this page": a list beside the text on desktop, a row of pills on phones.
+       essay.js moves .is-current along as the reader scrolls. */ -}}
+{{- $items := partial "toc-headings.html" . -}}
+{{- if and site.Params.article.toc (ge (len $items) 2) }}
+    <nav class="toc" aria-labelledby="toc-title" data-pagefind-ignore>
+        <h2 class="toc__title" id="toc-title">On this page</h2>
+        {{- range $i, $h := $items }}
+            {{- /* .title is already-rendered HTML; escaping it again shows "&amp;". */}}
+            <a href="#{{ $h.id }}" class="toc__item{{ if $h.sub }} toc__item--sub{{ end }}{{ if eq $i 0 }} is-current{{ end }}">{{ $h.title | safeHTML }}</a>
+        {{- end }}
     </nav>
 {{- end -}}

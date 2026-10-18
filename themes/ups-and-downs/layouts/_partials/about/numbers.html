@@ -1,0 +1,36 @@
+{{- /* "The blog, by the numbers": counts by kind and posts per year. */ -}}
+{{- $s := partialCached "archive/stats.html" . -}}
+{{- $year := now.Year -}}
+{{- $years := slice -}}
+{{- $max := 1 -}}
+{{- range ($s.pages.GroupByDate "2006").Reverse -}}
+    {{- $years = $years | append (dict "year" .Key "n" (len .Pages)) -}}
+    {{- $max = math.Max $max (len .Pages) -}}
+{{- end -}}
+{{- $label := slice -}}
+{{- range $years }}{{ $label = $label | append (printf "%s %d%s" .year .n (cond (eq .year (string $year)) " so far" "")) }}{{ end -}}
+<section class="numbers">
+    <div class="numbers__text">
+        <h2 class="numbers__title">The blog, by the numbers</h2>
+        <dl class="numbers__stats">
+            <div><dt>posts since {{ $s.since }}</dt><dd>{{ $s.total }}</dd></div>
+            <div><dt>monthly round-ups</dt><dd>{{ $s.roundup }}</dd></div>
+            <div><dt>essays &amp; talks</dt><dd>{{ $s.essay }}</dd></div>
+            <div><dt>year summaries</dt><dd>{{ $s.summary }}</dd></div>
+        </dl>
+    </div>
+    <figure class="numbers__chart">
+        <div class="bars" role="img" aria-label="Posts per year: {{ delimit $label ", " }}">
+            {{ range $years }}
+                <div class="bars__col">
+                    <span class="bars__n">{{ .n }}</span>
+                    <span class="bars__bar{{ if eq .year (string $year) }} is-current{{ end }}" style="--h: {{ div (float .n) $max }}"></span>
+                </div>
+            {{ end }}
+        </div>
+        <div class="bars__years" aria-hidden="true">
+            {{ range $years }}<span><span class="bars__full">{{ .year }}</span><span class="bars__short">’{{ substr .year 2 }}</span></span>{{ end }}
+        </div>
+        <figcaption class="numbers__cap">Posts per year · {{ $year }} so far</figcaption>
+    </figure>
+</section>

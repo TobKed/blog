@@ -33,13 +33,12 @@ path = '{/post/**,/pages/**}'
 [params]
 mainSections = ["post"]
 description = "Tobiasz Kedzierski's Blog"
+avatar = "img/avatar.png"
+tagline = "Python, Django, the cloud, and other interesting things — computer-related or not. Mostly monthly round-ups of what I've been doing, reading and watching."
 
 [params.footer]
 since = 2018
 customText = "Profile photo by <a href=\"https://juliakaczorowska.pl/\">Julia Kaczorowska</a> (other photos by me)."
-
-avatar = "img/avatar.png"
-tagline = "Python, Django, the cloud, and other interesting things — computer-related or not. Mostly monthly round-ups of what I've been doing, reading and watching."
 
 [params.epigraph]
 title = "Why “ups and downs”?"
@@ -99,6 +98,7 @@ url = "https://tobked.dev"
 weight = 10
 [menu.social.params]
 newTab = true
+handle = "personal site"
 [[menu.social]]
 identifier = "email"
 name = "Email"
@@ -125,6 +125,7 @@ url = "https://www.credly.com/users/tobiasz-kedzierski"
 weight = 40
 [menu.social.params]
 newTab = true
+handle = "badges"
 [[menu.social]]
 identifier = "medium"
 name = "Medium"

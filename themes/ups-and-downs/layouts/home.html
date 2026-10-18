@@ -1,1 +1,41 @@
-{{ define "main" }}{{ range first 10 (where site.RegularPages "Section" "post") }}<p><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>{{ end }}{{ end }}
+{{ define "main" }}
+    {{- $posts := (where site.RegularPages "Section" "post").ByDate.Reverse -}}
+    {{- $pager := .Paginate $posts -}}
+    {{- if gt $pager.PageNumber 1 }}
+        {{ partial "home/list.html" $pager }}
+    {{- else -}}
+        {{- $roundups := slice }}{{ $essays := slice }}{{ $summaries := slice -}}
+        {{- range $posts -}}
+            {{- $kind := partial "post-kind.html" . -}}
+            {{- if eq $kind "roundup" }}{{ $roundups = $roundups | append . }}
+            {{- else if eq $kind "summary" }}{{ $summaries = $summaries | append . }}
+            {{- else }}{{ $essays = $essays | append . }}{{ end -}}
+        {{- end -}}
+        {{- $latest := false }}{{ with $roundups }}{{ $latest = index . 0 }}{{ end -}}
+        {{- $summary := false }}{{ with $summaries }}{{ $summary = index . 0 }}{{ end }}
+
+        <div class="home-mast">
+            <span class="home-mast__side">Since {{ site.Params.footer.since }}</span>
+            <h1 class="home-mast__title">{{ site.Title }}</h1>
+            {{ with $latest }}<span class="home-mast__side home-mast__side--end">{{ .Date.Format "January 2006" }}</span>{{ end }}
+        </div>
+        {{ with site.Params.tagline }}<p class="home-tagline">{{ . }}</p>{{ end }}
+
+        {{ with $latest }}
+            {{ partial "home/latest.html" . }}
+            {{ partial "home/quotes.html" . }}
+        {{ end }}
+        {{ partial "home/back-issues.html" (dict "issues" (first 8 (after 1 $roundups)) "latest" $latest "summary" $summary) }}
+        {{ partial "home/essays.html" (first 8 $essays) }}
+
+        {{ with site.Params.epigraph }}{{ with .text }}
+            <section class="home-epigraph">
+                <span class="home-epigraph__label">{{ site.Params.epigraph.title }}</span>
+                <figure class="home-epigraph__fig">
+                    <blockquote>“{{ . }}”</blockquote>
+                    {{ with site.Params.epigraph.cite }}<figcaption>— {{ . }}</figcaption>{{ end }}
+                </figure>
+            </section>
+        {{ end }}{{ end }}
+    {{- end }}
+{{ end }}

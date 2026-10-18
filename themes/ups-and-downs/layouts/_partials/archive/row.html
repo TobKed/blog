@@ -1,0 +1,12 @@
+{{- /* A non-round-up post in the archive list. Context: {page, kind}. */ -}}
+{{- $p := .page -}}
+{{- $label := "Year summary" -}}
+{{- if ne .kind "summary" -}}
+    {{- $label = cond (or (in $p.Params.tags "presentation") (in $p.Params.tags "talk")) "Talk" "Essay" -}}
+    {{- with $p.Params.categories }}{{ $label = printf "%s · %s" $label (index . 0 | title) }}{{ end -}}
+{{- end -}}
+<li class="arow arow--{{ .kind }}" data-kind="{{ .kind }}" data-title="{{ lower $p.Title }}">
+    <a class="arow__title" href="{{ $p.RelPermalink }}">{{ $p.Title }}</a>
+    <time class="arow__date" datetime="{{ $p.Date.Format "2006-01-02" }}">{{ $p.Date.Format "02 Jan" }}</time>
+    <span class="arow__kind">{{ $label }}</span>
+</li>

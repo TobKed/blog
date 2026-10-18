@@ -1,0 +1,37 @@
+{{- /* Context: dict of issues (round-ups before the latest), latest, summary (latest year in review). */ -}}
+{{- $year := "" }}{{ with .latest }}{{ $year = .Date.Year }}{{ end -}}
+{{- if or .issues .summary }}
+    <section class="home-back">
+        {{ with .issues }}
+            <div class="home-back__head">
+                <h2 class="home-h2">Back issues</h2>
+                {{ with site.GetPage "/archives" }}<a class="home-more" href="{{ .RelPermalink }}"><span class="home-wide">All </span>Archives →</a>{{ end }}
+            </div>
+            <div class="home-back__grid">
+                {{ range . }}{{ $p := . }}
+                    <a class="home-back__item" href="{{ .RelPermalink }}">
+                        {{ with partial "cover-url.html" . }}
+                            {{ partial "cover-img.html" (dict "page" $p "class" "home-back__img") }}
+                        {{ else }}
+                            <span class="photo home-back__img home-back__ph" aria-hidden="true"></span>
+                        {{ end }}
+                        <span class="home-back__meta">
+                            <span class="home-back__month">{{ .Date.Format (cond (eq .Date.Year $year) "January" "January 2006") }}</span>
+                            {{ if site.Params.article.readingTime }}<span class="home-back__min">{{ .ReadingTime }} min</span>{{ end }}
+                        </span>
+                    </a>
+                {{ end }}
+            </div>
+        {{ end }}
+        {{ with .summary }}
+            <a class="home-year" href="{{ .RelPermalink }}">
+                {{ partial "cover-img.html" (dict "page" . "class" "home-year__img") }}
+                <span class="home-year__body">
+                    <span class="home-year__kicker">Year in review · <span class="home-wide">{{ .Date.Format "Mon" }} </span>{{ .Date.Format "02 Jan 2006" }}{{ if site.Params.article.readingTime }}<span class="home-wide"> · {{ .ReadingTime }} min</span>{{ end }}</span>
+                    <span class="home-year__title">{{ replace (.Title | htmlEscape) " - " "&nbsp;— " | safeHTML }}</span>
+                    {{ with .Params.summary }}<span class="home-year__sub">{{ . }}</span>{{ end }}
+                </span>
+            </a>
+        {{ end }}
+    </section>
+{{- end }}

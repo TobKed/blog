@@ -1,0 +1,32 @@
+{{- $lang := .Type | default "" -}}
+{{- $repl := and (in (slice "" "python" "py" "python3") $lang) (findRE `(?m)^>>> ?` .Inner 1) -}}
+{{- if $repl }}{{ $lang = $lang | default "python" }}{{ end -}}
+{{- $html := transform.Highlight .Inner ($lang | default "text") .Options -}}
+{{- if $repl -}}
+    {{- /* Chroma has no Python-console lexer: mark the >>> prompts, and treat other
+           unindented, non-comment lines (and the indented lines
+           that continue them) as the interpreter's output. */ -}}
+    {{- $parts := split (string $html) `<span class="line"><span class="cl">` -}}
+    {{- $out := index $parts 0 }}{{ $prevOut := false -}}
+    {{- range after 1 $parts -}}
+        {{- $line := . -}}
+        {{- with findRESubmatch `(?s)^(.*?)(\n?</span></span>(?:</code></pre></div>)?)$` $line 1 -}}
+            {{- $code := index (index . 0) 1 }}{{ $end := index (index . 0) 2 -}}
+            {{- $plain := $code | plainify -}}
+            {{- $isOut := false -}}
+            {{- if hasPrefix $code `<span class="o">&gt;&gt;&gt;</span>` -}}
+                {{- $line = printf `<span class="gp">&gt;&gt;&gt;</span>%s%s` (strings.TrimPrefix `<span class="o">&gt;&gt;&gt;</span>` $code) $end -}}
+            {{- else if eq (strings.TrimSpace $plain) "" -}}
+            {{- else if or (and $prevOut (findRE `^\s` $plain 1)) (not (or (hasPrefix $code `<span class="c`) (findRE `^[\s.]` $plain 1))) -}}
+                {{- $line = printf `<span class="go">%s</span>%s` $plain $end }}{{ $isOut = true -}}
+            {{- end -}}
+            {{- $prevOut = $isOut -}}
+        {{- end -}}
+        {{- $out = printf `%s<span class="line"><span class="cl">%s` $out $line -}}
+    {{- end -}}
+    {{- $html = $out | safeHTML -}}
+{{- end -}}
+<figure class="code">
+    <figcaption class="code__cap"><span class="code__lang">{{ $lang | default "text" }}{{ if $repl }} · repl{{ end }}</span><button type="button" class="code__copy">Copy</button></figcaption>
+    {{ $html }}
+</figure>

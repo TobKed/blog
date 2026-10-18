@@ -1,1 +1,11 @@
-<h{{ .Level }} id="{{ .Anchor }}">{{ .Text }}{{ if site.Params.article.headingAnchor }}<a class="heading-anchor" href="#{{ .Anchor }}" aria-hidden="true" tabindex="-1"></a>{{ end }}</h{{ .Level }}>
+{{- /* The page title is the only <h1>: a `# Heading` the title already contains is
+       dropped, any other is demoted to an <h2>. */ -}}
+{{- $level := .Level -}}
+{{- $skip := false -}}
+{{- if eq $level 1 -}}
+    {{- $level = 2 -}}
+    {{- $skip = strings.Contains (lower (.Page.Title | plainify)) (lower (.PlainText | strings.TrimSpace)) -}}
+{{- end -}}
+{{- if not $skip -}}
+<h{{ $level }} id="{{ .Anchor }}">{{ .Text }}{{ if site.Params.article.headingAnchor }}<a class="heading-anchor" href="#{{ .Anchor }}" aria-hidden="true" tabindex="-1">#</a>{{ end }}</h{{ $level }}>
+{{- end -}}

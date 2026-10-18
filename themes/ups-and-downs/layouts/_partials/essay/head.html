@@ -1,0 +1,20 @@
+{{- /* Title block shared by posts and static pages. Context: dict page, kicker, date (bool). */ -}}
+{{- $p := .page -}}
+<header class="essay-head">
+    <span class="eyebrow essay-head__kicker">{{ .kicker }}</span>
+    <h1 class="essay-head__title display" data-pagefind-meta="title">{{ $p.Title }}</h1>
+    {{- if or $p.Params.summary .date }}
+        <div class="essay-head__row">
+            {{ with $p.Params.summary }}<p class="essay-head__lead">{{ . }}</p>{{ end }}
+            {{- if .date }}
+                <div class="essay-head__meta">
+                    <time datetime="{{ $p.Date.Format "2006-01-02" }}">{{ $p.Date.Format "Mon 2 Jan 2006" }}</time>
+                    {{- if site.Params.article.readingTime }}<span>{{ $p.ReadingTime }} min read</span>{{ end }}
+                </div>
+            {{- end }}
+        </div>
+    {{- end }}
+</header>
+{{ with partial "cover-img.html" (dict "page" $p "class" "essay-cover__img" "eager" true) -}}
+    <figure class="essay-cover photo bleed">{{ . }}</figure>
+{{- end }}

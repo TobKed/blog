@@ -1,1 +1,32 @@
-{{ define "main" }}<h1>{{ .Title }}</h1>{{ range .Pages }}<p><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>{{ end }}{{ end }}
+{{ define "main" }}
+    {{- $n := len .Pages -}}
+    <section class="listing-head">
+        <div class="listing-head__text">
+            {{ with .Data.Singular }}<a class="eyebrow listing-head__kicker" href="{{ $.Parent.RelPermalink }}">{{ . | title }}</a>{{ end }}
+            <h1 class="listing-head__title display">{{ .Title }}</h1>
+        </div>
+        <p class="listing-head__sub">{{ $n }} {{ cond (eq $n 1) "post" "posts" }}{{ with .Pages.ByDate }}{{ if gt $n 1 }} since {{ (index . 0).Date.Year }}{{ end }}{{ end }}.</p>
+    </section>
+    <div class="listing">
+        {{ with .Content }}<div class="prose listing__intro">{{ . }}</div>{{ end }}
+        {{- range .Pages.GroupByDate "2006" }}
+            <section class="listing-year" aria-label="{{ .Key }}">
+                <div class="listing-year__head">
+                    <h2 class="listing-year__title display">{{ .Key }}</h2>
+                    <span class="listing-year__count">{{ len .Pages }} {{ cond (eq (len .Pages) 1) "post" "posts" }}</span>
+                </div>
+                <ul class="listing-rows">
+                    {{- range .Pages }}
+                        {{- $kind := "Page" -}}
+                        {{- if eq .Section "post" }}{{ $kind = index (dict "roundup" "Round-up" "summary" "Year summary" "essay" "Essay") (partial "post-kind.html" .) }}{{ end }}
+                        <li class="listing-row{{ if eq $kind "Essay" }} listing-row--essay{{ end }}">
+                            <time class="listing-row__date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02 Jan" }}</time>
+                            <a class="listing-row__title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+                            <span class="listing-row__kind">{{ $kind }}</span>
+                        </li>
+                    {{- end }}
+                </ul>
+            </section>
+        {{- end }}
+    </div>
+{{ end }}

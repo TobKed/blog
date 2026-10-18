@@ -1,0 +1,39 @@
+{{- /* Previous and next round-up, or a placeholder for the issue being written. */ -}}
+{{- $all := partialCached "issue/roundups.html" site -}}
+{{- $prev := false }}{{ with sort (where $all "Date" "lt" .Date) "Date" "desc" }}{{ $prev = index . 0 }}{{ end -}}
+{{- $next := false }}{{ with sort (where $all "Date" "gt" .Date) "Date" "asc" }}{{ $next = index . 0 }}{{ end -}}
+<nav class="issue-more-nav" aria-label="More issues" data-pagefind-ignore>
+    {{- with $prev }}
+    <a class="issue-adj" href="{{ .RelPermalink }}">
+        {{ partial "cover-img.html" (dict "page" . "class" "issue-adj__cover") }}
+        <span class="issue-adj__text">
+            <span class="issue-adj__label">← Previous issue</span>
+            <span class="issue-adj__title">{{ .Date.Format "January 2006" }}</span>
+            <span class="issue-adj__date">{{ .Date.Format "Mon 2 Jan" }}{{ if site.Params.article.readingTime }} · {{ .ReadingTime }} min{{ end }}</span>
+        </span>
+    </a>
+    {{- else }}
+    <span></span>
+    {{- end }}
+    {{- with $next }}
+    <a class="issue-adj issue-adj--next" href="{{ .RelPermalink }}">
+        <span class="issue-adj__text">
+            <span class="issue-adj__label">Next issue →</span>
+            <span class="issue-adj__title">{{ .Date.Format "January 2006" }}</span>
+            <span class="issue-adj__date">{{ .Date.Format "Mon 2 Jan" }}{{ if site.Params.article.readingTime }} · {{ .ReadingTime }} min{{ end }}</span>
+        </span>
+        {{ partial "cover-img.html" (dict "page" . "class" "issue-adj__cover") }}
+    </a>
+    {{- else }}
+    {{- $month := .Date.AddDate 0 0 (sub 1 .Date.Day) -}}
+    {{- $out := ($month.AddDate 0 2 -1).Format "2 Jan" }}
+    <div class="issue-adj issue-adj--next issue-adj--soon">
+        <span class="issue-adj__text">
+            <span class="issue-adj__label">Next issue<span class="issue-ph"> · out {{ $out }}</span></span>
+            <span class="issue-adj__title">{{ ($month.AddDate 0 1 0).Format "January 2006" }}</span>
+            <span class="issue-adj__date issue-dt">Being written · out {{ $out }}</span>
+        </span>
+        <span class="issue-adj__cover issue-adj__blank photo" aria-hidden="true"></span>
+    </div>
+    {{- end }}
+</nav>

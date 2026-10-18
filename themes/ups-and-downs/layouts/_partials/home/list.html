@@ -1,0 +1,21 @@
+{{- /* Home pages 2 and on: every post, newest first. Context: the Pager. */ -}}
+<section class="home-list">
+    <div class="home-list__head">
+        <h1 class="home-list__title">{{ site.Title }}</h1>
+        <span class="home-list__pos">All posts · page {{ .PageNumber }} of {{ .TotalPages }}</span>
+    </div>
+    <ol class="home-list__items">
+        {{ range .Pages }}
+            {{ $kind := partial "post-kind.html" . }}
+            <li>
+                <a href="{{ .RelPermalink }}">{{ replace (.Title | htmlEscape) " - " "&nbsp;— " | safeHTML }}</a>
+                <span class="home-meta">
+                    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Mon 02 Jan 2006" }}</time> ·
+                    {{ if eq $kind "roundup" }}Round-up{{ else if eq $kind "summary" }}Year in review{{ else }}{{ range first 1 (.GetTerms "categories") }}{{ .LinkTitle }}{{ else }}Essay{{ end }}{{ end }}
+                    {{- if site.Params.article.readingTime }} · {{ .ReadingTime }} min{{ end }}
+                </span>
+            </li>
+        {{ end }}
+    </ol>
+    {{ partial "pager.html" . }}
+</section>
