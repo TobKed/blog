@@ -10,9 +10,13 @@
         {{ with $talks }}
             <div class="record__col">
                 <h3 class="record__head">Talks &amp; open source</h3>
+                {{- /* Only the first talk with an image is the featured card. */}}
+                {{ $featured := false }}
                 {{ range . }}
-                    {{ $inner := partial "about/talk.html" . }}
-                    {{ $class := cond (isset . "image") "talk talk--feature" "talk" }}
+                    {{ $feature := and (isset . "image") (not $featured) }}
+                    {{ if $feature }}{{ $featured = true }}{{ end }}
+                    {{ $inner := partial "about/talk.html" (merge . (dict "image" (cond $feature .image ""))) }}
+                    {{ $class := cond $feature "talk talk--feature" "talk" }}
                     {{ with .url }}
                         <a class="{{ $class }}" href="{{ . | relURL }}">{{ $inner }}</a>
                     {{ else }}
