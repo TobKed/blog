@@ -9,4 +9,5 @@
             <a href="#{{ $h.id }}" class="toc__item{{ if $h.sub }} toc__item--sub{{ end }}{{ if eq $i 0 }} is-current{{ end }}">{{ $h.title | safeHTML }}</a>
         {{- end }}
     </nav>
+    <a class="back-top" href="#top">↑ Back to top</a>
 {{- end -}}

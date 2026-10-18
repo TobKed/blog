@@ -11,7 +11,9 @@
         {{- if $cards }}
         <span class="issue-section__count">{{ $s.count }} {{ cond (eq $s.count 1) "video" "videos" }}{{ if $playable }}<span class="issue-dt"> · play right here</span><span class="issue-mt"> · tap to play</span>{{ end }}</span>
         {{- else if $s.count }}
-        <span class="issue-section__count">{{ $s.count }} {{ cond (eq $s.count 1) "link" "links" }}</span>
+        {{- /* issue.js shows "3 of 15 links" while folded; no-JS readers get every item and the total. */}}
+        {{- $all := printf "%d %s" $s.count (cond (eq $s.count 1) "link" "links") }}
+        <span class="issue-section__count"{{ with $fold }} data-all="{{ $all }}" data-folded="{{ . }} of {{ $all }}"{{ end }}>{{ $all }}</span>
         {{- end }}
     </div>
 

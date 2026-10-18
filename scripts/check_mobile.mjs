@@ -110,6 +110,11 @@ const overflowBy = 'document.documentElement.scrollWidth + " > " + innerWidth';
 const visible = sel => `(()=>{const e=document.querySelector(${JSON.stringify(sel)});
   return !!e && getComputedStyle(e).display !== 'none' && e.getBoundingClientRect().height > 0;})()`;
 const ROUNDUP = '/2026-september-links/';
+// Visible text smaller than min px, outside the selectors allowed to go lower.
+const smallText = (min, allow = []) => `[...document.querySelectorAll('body *')].filter(e =>
+  [...e.childNodes].some(n => n.nodeType === 3 && n.textContent.trim()) && e.getClientRects().length &&
+  !e.closest('.toggle__label[style], [hidden]') && !${JSON.stringify(allow)}.some(a => e.matches(a)) &&
+  parseFloat(getComputedStyle(e).fontSize) < ${min}).map(e => e.className || e.tagName).slice(0, 5)`;
 const ESSAY = '/enum-and-dataclass/';
 
 // ---- phone ----------------------------------------------------------------
@@ -140,11 +145,29 @@ const ESSAY = '/enum-and-dataclass/';
 
   await s.go(ROUNDUP);
   check('round-up shows its Contents', await s.eval(visible('.issue-toc')));
+  check('tags are at least 44px tall',
+    await s.eval(`[...document.querySelectorAll('.issue-tags .chip')].every(c => c.getBoundingClientRect().height >= 44)`));
+  for (const path of ['/', ROUNDUP, ESSAY, '/archives/', '/pages/about-me/']) {
+    await s.go(path);
+    const small = await s.eval(smallText(11, ['.issue-badge']));
+    check(`no text below 11px on ${path}`, small.length === 0, small.join(', '));
+  }
 
   await s.go(ESSAY);
   check('nothing in the essay is wider than the screen',
     await s.eval(`[...document.querySelectorAll('.prose > *')]
       .every(e => e.getBoundingClientRect().width <= innerWidth)`));
+  s.close();
+}
+
+// ---- laptop ---------------------------------------------------------------
+{
+  const s = await session(1366, 768, false);
+  console.log('\n1366x768 (laptop)');
+  await s.go('/');
+  check('latest post kicker and title are above the fold',
+    await s.eval(`['.home-latest .home-kicker', '.home-latest__title'].every(sel =>
+      document.querySelector(sel).getBoundingClientRect().bottom <= innerHeight)`));
   s.close();
 }
 
@@ -156,6 +179,16 @@ const ESSAY = '/enum-and-dataclass/';
   await s.go('/');
   check('masthead shows the nav and no menu button',
     await s.eval(visible('.masthead__nav')) && !(await s.eval(visible('#menu-toggle'))));
+  check('current page is underlined, not only coloured',
+    await s.eval(`getComputedStyle(document.querySelector('.masthead__nav a.is-active')).textDecorationLine === 'underline'`));
+  const photosLabel = `document.querySelector('#photos-toggle .toggle__label').textContent`;
+  const before = await s.eval(photosLabel);
+  await s.tap('#photos-toggle');
+  const after = await s.eval(photosLabel);
+  check('photos button states its value', before === 'Photos on' && after === 'Photos off', `${before} -> ${after}`);
+  await s.tap('#photos-toggle');
+  check('back issues show their date range',
+    await s.eval(`/^[A-Z][a-z]{2}( \\d{4})?( – [A-Z][a-z]{2} \\d{4})?$/.test(document.querySelector('.home-back__range').textContent)`));
 
   await s.go(ROUNDUP);
   check('round-up shows its Contents', await s.eval(visible('.issue-toc')));
@@ -163,10 +196,20 @@ const ESSAY = '/enum-and-dataclass/';
     await s.eval(`![...document.querySelectorAll('.issue-toc a')].some(a => a.getAttribute('href') === '#' || !a.textContent.trim())`));
   check('a long section is folded',
     await s.eval(`[...document.querySelectorAll('.is-extra')].some(e => getComputedStyle(e).display === 'none')`));
+  const foldedCount = `document.querySelector('.issue-section[data-fold] .issue-section__count').textContent`;
+  check('a folded section counts what it shows', / of \d+ links?$/.test(await s.eval(foldedCount)), await s.eval(foldedCount));
   await s.eval(`document.querySelector('.issue-more').scrollIntoView({ block: 'center' })`);
   await s.tap('.issue-more');
   check('"Show more" unfolds the section',
     await s.eval(`document.querySelector('.issue-more').getAttribute('aria-expanded') === 'true'`));
+  check('an unfolded section counts every link', /^\d+ links?$/.test(await s.eval(foldedCount)), await s.eval(foldedCount));
+  check('Contents stays in view while reading',
+    await s.eval(`(()=>{const r=document.querySelector('.issue-toc').getBoundingClientRect(); return r.top >= 0 && r.top < innerHeight;})()`));
+  check('Contents ends with a 44px "Back to top" link to the header',
+    await s.eval(`(()=>{const a=document.querySelector('.issue-toc + .back-top'); return !!a && a.getBoundingClientRect().height >= 44 &&
+      !!document.getElementById(a.getAttribute('href').slice(1));})()`));
+  const smallDesk = await s.eval(smallText(12));
+  check('no text below 12px on the round-up', smallDesk.length === 0, smallDesk.join(', '));
 
   check('no request reaches YouTube before a video is played',
     await s.eval(`!performance.getEntriesByType('resource').some(e => /youtube|ytimg/.test(new URL(e.name).host))`));
@@ -181,6 +224,7 @@ const ESSAY = '/enum-and-dataclass/';
 
   await s.go(ESSAY);
   check('essay shows "On this page"', await s.eval(visible('.toc')));
+  check('"On this page" ends with "Back to top"', await s.eval(visible('.toc + .back-top')));
   check('code blocks carry a Copy button', await s.eval(visible('.code__copy')));
 
   await s.go('/pages/ai-resources/');

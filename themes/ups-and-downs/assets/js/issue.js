@@ -6,13 +6,16 @@
 
   function setOpen(sec, open) {
     var btn = sec.querySelector('.issue-more');
+    var count = sec.querySelector('.issue-section__count');
     sec.classList.toggle('is-open', open);
     btn.setAttribute('aria-expanded', String(open));
     btn.firstElementChild.textContent = open ? 'Show fewer' : btn.getAttribute('data-more');
+    if (count) count.textContent = count.getAttribute(open ? 'data-all' : 'data-folded');
   }
 
   sections.forEach(function (sec) {
     var btn = sec.querySelector('.issue-more');
+    setOpen(sec, false);
     btn.addEventListener('click', function () {
       var open = !sec.classList.contains('is-open');
       setOpen(sec, open);

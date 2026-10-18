@@ -3,8 +3,16 @@
 {{- if or .issues .summary }}
     <section class="home-back">
         {{ with .issues }}
+            {{- $ps := sort . "Date" -}}
+            {{- $a := (index $ps 0).Date -}}
+            {{- $b := (index $ps (sub (len $ps) 1)).Date -}}
+            {{- $range := printf "%s – %s" ($a.Format (cond (eq $a.Year $b.Year) "Jan" "Jan 2006")) ($b.Format "Jan 2006") -}}
+            {{- if eq ($a.Format "200601") ($b.Format "200601") }}{{ $range = $b.Format "Jan 2006" }}{{ end }}
             <div class="home-back__head">
-                <h2 class="home-h2">Back issues</h2>
+                <div class="home-back__title">
+                    <h2 class="home-h2">Back issues</h2>
+                    <span class="home-back__range">{{ $range }}</span>
+                </div>
                 {{ with site.GetPage "/archives" }}<a class="home-more" href="{{ .RelPermalink }}"><span class="home-wide">All </span>Archives →</a>{{ end }}
             </div>
             <div class="home-back__grid">
