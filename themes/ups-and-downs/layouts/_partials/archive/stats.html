@@ -6,6 +6,7 @@
     {{- $k := partial "post-kind.html" . -}}
     {{- $counts = merge $counts (dict $k (add (index $counts $k | default 0) 1)) -}}
 {{- end -}}
-{{- $since := 0 -}}
-{{- with $pages.ByDate }}{{ $since = (index . 0).Date.Year }}{{ end -}}
+{{- /* Month and year of the first post: the site itself is older (params.footer.since). */ -}}
+{{- $since := "" -}}
+{{- with $pages.ByDate }}{{ $since = (index . 0).Date.Format "Jan 2006" }}{{ end -}}
 {{- return merge $counts (dict "pages" $pages "total" (len $pages) "since" $since) -}}
