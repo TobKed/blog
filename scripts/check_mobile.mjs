@@ -105,37 +105,45 @@ const imagesFetched = `performance.getEntriesByType('resource')
 
 console.log(`\nchecking ${BASE}\n`);
 
+const noOverflow = 'document.documentElement.scrollWidth <= innerWidth';
+const overflowBy = 'document.documentElement.scrollWidth + " > " + innerWidth';
+const visible = sel => `(()=>{const e=document.querySelector(${JSON.stringify(sel)});
+  return !!e && getComputedStyle(e).display !== 'none' && e.getBoundingClientRect().height > 0;})()`;
+const ROUNDUP = '/2026-september-links/';
+const ESSAY = '/enum-and-dataclass/';
+
 // ---- phone ----------------------------------------------------------------
 {
   const s = await session(390, 844, true);
   console.log('390x844 (phone)');
 
+  for (const path of ['/', ROUNDUP, ESSAY, '/pages/about-me/', '/archives/', '/tags/']) {
+    await s.go(path);
+    check(`no horizontal overflow on ${path}`, await s.eval(noOverflow), await s.eval(overflowBy));
+  }
+
   await s.go('/');
-  check('no horizontal overflow on the index',
-    await s.eval('document.documentElement.scrollWidth <= innerWidth'),
-    await s.eval('document.documentElement.scrollWidth + " > " + innerWidth'));
   check('covers are not downloaded while photos are hidden',
     await s.eval(`document.documentElement.getAttribute('data-photos') !== 'off' || ${imagesFetched} === 0`),
     `${await s.eval(imagesFetched)} fetched`);
-  check('rows collapse to one column',
-    await s.eval(`!document.querySelector('.row') ||
-      getComputedStyle(document.querySelector('.row')).gridTemplateColumns.split(' ').length === 1`));
+  check('main nav is folded behind the menu button', !(await s.eval(visible('.masthead__nav'))));
 
   await s.tap('#menu-toggle');
   check('menu opens on tap',
-    await s.eval(`document.documentElement.getAttribute('data-menu') === 'open'`));
+    await s.eval(`document.documentElement.getAttribute('data-menu') === 'open'`) &&
+    await s.eval(visible('.masthead__nav')));
   check('menu button reports expanded',
     await s.eval(`document.getElementById('menu-toggle').getAttribute('aria-expanded') === 'true'`));
   await s.tap('#menu-toggle');
   check('menu closes again',
     await s.eval(`document.documentElement.getAttribute('data-menu') === 'closed'`));
 
-  await s.go('/2025-january-links/');
-  check('post shows the inline Contents, not the side rail',
-    await s.eval(`(()=>{const i=document.querySelector('.toc--inline'), d=document.querySelector('.toc--side');
-      return !!i && getComputedStyle(i).display !== 'none' && (!d || getComputedStyle(d).display === 'none');})()`));
-  check('nothing in the post is wider than the screen',
-    await s.eval(`[...document.querySelectorAll('.prose *')]
+  await s.go(ROUNDUP);
+  check('round-up shows its Contents', await s.eval(visible('.issue-toc')));
+
+  await s.go(ESSAY);
+  check('nothing in the essay is wider than the screen',
+    await s.eval(`[...document.querySelectorAll('.prose > *')]
       .every(e => e.getBoundingClientRect().width <= innerWidth)`));
   s.close();
 }
@@ -146,24 +154,33 @@ console.log(`\nchecking ${BASE}\n`);
   console.log('\n1280x820 (desktop)');
 
   await s.go('/');
-  check('sidebar scrolls rather than clipping its own controls',
-    await s.eval(`(()=>{const el=document.querySelector('.side');
-      return getComputedStyle(el).overflowY === 'auto' || el.scrollHeight <= el.clientHeight;})()`));
+  check('masthead shows the nav and no menu button',
+    await s.eval(visible('.masthead__nav')) && !(await s.eval(visible('#menu-toggle'))));
 
-  await s.go('/2025-january-links/');
-  check('post shows the side Contents',
-    await s.eval(`(()=>{const d=document.querySelector('.toc--side');
-      return !!d && getComputedStyle(d).display !== 'none';})()`));
+  await s.go(ROUNDUP);
+  check('round-up shows its Contents', await s.eval(visible('.issue-toc')));
   check('no Contents entry is blank',
-    await s.eval(`document.querySelectorAll('.toc a[href="#"]').length === 0`),
-    `${await s.eval(`document.querySelectorAll('.toc a[href="#"]').length`)} blank`);
+    await s.eval(`![...document.querySelectorAll('.issue-toc a')].some(a => a.getAttribute('href') === '#' || !a.textContent.trim())`));
+  check('a long section is folded',
+    await s.eval(`[...document.querySelectorAll('.is-extra')].some(e => getComputedStyle(e).display === 'none')`));
+  await s.eval(`document.querySelector('.issue-more').scrollIntoView({ block: 'center' })`);
+  await s.tap('.issue-more');
+  check('"Show more" unfolds the section',
+    await s.eval(`document.querySelector('.issue-more').getAttribute('aria-expanded') === 'true'`));
+
+  await s.go(ESSAY);
+  check('essay shows "On this page"', await s.eval(visible('.toc')));
+  check('code blocks carry a Copy button', await s.eval(visible('.code__copy')));
 
   await s.go('/pages/ai-resources/');
-  check('a static page still shows its Contents',
-    await s.eval(`(()=>{const i=document.querySelector('.toc--inline');
-      return !!i && getComputedStyle(i).display !== 'none';})()`));
   check('Contents titles are not double-escaped',
     await s.eval(`![...document.querySelectorAll('.toc a')].some(a => /&(amp|lt|gt);/.test(a.textContent))`));
+
+  await s.go('/archives/');
+  await s.tap('[data-filter="summary"]');
+  check('archive filter narrows the list',
+    await s.eval(`(()=>{const shown=[...document.querySelectorAll('li[data-kind]')].filter(e => e.offsetParent);
+      return shown.length > 0 && shown.every(e => e.dataset.kind === 'summary');})()`));
 
   await s.go('/tags/');
   check('no taxonomy term lists zero posts',
