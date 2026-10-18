@@ -272,7 +272,6 @@ Temporary Items
 
 # hugo theme
 themes/*
-!themes/hugo-theme-stack
 !themes/ups-and-downs
 
 # hugo output

@@ -164,7 +164,6 @@ baseName = 'all.atom'
 isPlainText = false
 rel = 'alternate'
 
-# content/search.md carries outputs: [html, json] for Stack's built-in search index.
 [outputs]
 home = ['html', 'rss', 'atom']
 page = ['html']
