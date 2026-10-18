@@ -1,13 +1,15 @@
-{{- /* The cover <img> for a page, or nothing. Context: a Page.
+{{- /* The cover <img> for a page, or nothing. Context: a Page, or a dict of
+       page, class, alt and eager (skip loading="lazy", for the first cover).
 
        When covers are hidden by default the URL is parked in data-src, because
-       display:none does not stop a browser downloading an <img> - the index was
-       fetching every cover it had just hidden. theme.js promotes data-src to
-       src if the reader turns photos back on. */ -}}
-{{- with partial "cover-url.html" . -}}
-    {{- if eq site.Params.coverImages.default "hidden" -}}
-        <img data-src="{{ . }}" alt="" loading="lazy">
-    {{- else -}}
-        <img src="{{ . }}" alt="" loading="lazy">
-    {{- end -}}
+       display:none does not stop a browser downloading an <img>. theme.js
+       promotes data-src to src if the reader turns photos back on. */ -}}
+{{- $page := . -}}
+{{- $class := "" }}{{ $alt := "" }}{{ $eager := false -}}
+{{- if reflect.IsMap . -}}
+    {{- $page = .page -}}
+    {{- $class = .class | default "" }}{{ $alt = .alt | default "" }}{{ $eager = .eager | default false -}}
+{{- end -}}
+{{- with partial "cover-url.html" $page -}}
+    <img {{ if eq site.Params.coverImages.default "hidden" }}data-src{{ else }}src{{ end }}="{{ . }}" alt="{{ $alt }}" class="photo{{ with $class }} {{ . }}{{ end }}"{{ if not $eager }} loading="lazy"{{ end }}>
 {{- end -}}
