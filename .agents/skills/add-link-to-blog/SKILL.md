@@ -111,13 +111,13 @@ When inserting links into a section, adhere to this **internal sorting hierarchy
 ```markdown
 ### [{Video Title}]({URL})
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/{VIDEO_ID}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="{VIDEO_ID}" title="{Video Title}">}}
 
 #### AI generated summary
 
 {AI Summary}
 ```
+
+In the shortcode's title, write double quotes as typographic “ ” and keep no space after `{{<` - otherwise mdformat escapes it to `{{\<`, which breaks the shortcode.
 
 After writing to the file, verify the write was successful and notify the user.

@@ -144,60 +144,40 @@ I'll write a separate blog post about highlights from this event soon!
 
 ### [GitHub Copilot: the agent awakens](https://www.youtube.com/watch?v=C95drFKy4ss)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/C95drFKy4ss" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="C95drFKy4ss" title="GitHub Copilot: the agent awakens">}}
 
 ### [SWE agents coming to GitHub](https://www.youtube.com/watch?v=VWvV2-XwBMM)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/VWvV2-XwBMM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="VWvV2-XwBMM" title="SWE agents coming to GitHub">}}
 
 ### [Open Source Friday AI edition: Lessons from GitHub Accelerator alumni](https://www.youtube.com/watch?v=9GUsEdOg3IQ)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/9GUsEdOg3IQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="9GUsEdOg3IQ" title="Open Source Friday AI edition: Lessons from GitHub Accelerator alumni">}}
 
 ### [Open Source Summit:Keynote: Linus Torvalds, Creator of Linux & Git, in Conversation with Dirk Hohndel](https://www.youtube.com/watch?v=cPvRIWXNgaM)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/cPvRIWXNgaM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="cPvRIWXNgaM" title="Open Source Summit:Keynote: Linus Torvalds, Creator of Linux & Git, in Conversation with Dirk Hohndel">}}
 
 ### [uv and Django - Managing Django Projects & Dependencies with uv!](https://www.youtube.com/watch?v=hm-rDxSMzSw)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/hm-rDxSMzSw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="hm-rDxSMzSw" title="uv and Django - Managing Django Projects & Dependencies with uv!">}}
 
 ### [Mike Tomala: Bielik to NIE jest Polski ChatGPT! Cała prawda o Polskim Modelu.](https://www.youtube.com/watch?v=ohBDt7YcleI)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/ohBDt7YcleI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="ohBDt7YcleI" title="Mike Tomala: Bielik to NIE jest Polski ChatGPT! Cała prawda o Polskim Modelu.">}}
 
 ### [Krzysztof Tutak: 12 AI może więcej, niż myślimy i mniej niż nam się wydaje | Adam Gospodarczyk](https://www.youtube.com/watch?v=LBG3_L-sbJA)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/LBG3_L-sbJA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="LBG3_L-sbJA" title="Krzysztof Tutak: 12 AI może więcej, niż myślimy i mniej niż nam się wydaje | Adam Gospodarczyk">}}
 
 ### [Jakub Mrugalski - A gdyby tak zrobić startup w weekend? - no-code, AI i odrobina magii | Infoshare](https://www.youtube.com/watch?v=dYzfArtf7qU)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/dYzfArtf7qU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="dYzfArtf7qU" title="Jakub Mrugalski - A gdyby tak zrobić startup w weekend? - no-code, AI i odrobina magii | Infoshare">}}
 
 ### [DjangoCon 2008 Keynote: Cal Henderson: Why I Hate Django](https://www.youtube.com/watch?v=i6Fr65PFqfk)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/i6Fr65PFqfk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="i6Fr65PFqfk" title="DjangoCon 2008 Keynote: Cal Henderson: Why I Hate Django">}}
 
 ### [The Complexity Genie - Armin Ronacher, Vendure Conf 2024](https://www.youtube.com/watch?v=B63n4WeN-Pc)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/B63n4WeN-Pc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="B63n4WeN-Pc" title="The Complexity Genie - Armin Ronacher, Vendure Conf 2024">}}

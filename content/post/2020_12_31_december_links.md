@@ -140,30 +140,20 @@ I have used it for a year approximately. I decided to rewrite it to Django to be
 
 ### [The Art of Code - Dylan Beattie](https://www.youtube.com/watch?v=6avJHaC3C2U)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/6avJHaC3C2U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="6avJHaC3C2U" title="The Art of Code - Dylan Beattie">}}
 
 ### [YAML Tips for Kubernetes](https://www.youtube.com/watch?v=1rwCkFTjikw)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/1rwCkFTjikw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="1rwCkFTjikw" title="YAML Tips for Kubernetes">}}
 
 ### [Peter Norvig: How Computers Learn](https://www.youtube.com/watch?v=T1O3ikmTEdA)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/T1O3ikmTEdA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="T1O3ikmTEdA" title="Peter Norvig: How Computers Learn">}}
 
 ### [Czy leci z nami DevOps? Webinar](https://www.youtube.com/watch?v=UGwayrJiFAA)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/UGwayrJiFAA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="UGwayrJiFAA" title="Czy leci z nami DevOps? Webinar">}}
 
 ### [DjangoCon US 2017 - End-to-End Django on Kubernetes by Frank Wiles](https://www.youtube.com/watch?v=4LpaxvKsSlo)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/4LpaxvKsSlo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="4LpaxvKsSlo" title="DjangoCon US 2017 - End-to-End Django on Kubernetes by Frank Wiles">}}

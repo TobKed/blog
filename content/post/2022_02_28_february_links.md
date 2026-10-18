@@ -98,18 +98,12 @@ It emerged from the discussion on the [issue](https://github.com/TobKed/github-f
 
 ### [Marty Lobdell - Study Less Study Smart](https://www.youtube.com/watch?v=IlU-zDU6aQ0)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/IlU-zDU6aQ0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="IlU-zDU6aQ0" title="Marty Lobdell - Study Less Study Smart">}}
 
 ### [Radoslav Georgiev - Django structure for scale and longevity](https://www.youtube.com/watch?v=yG3ZdxBb1oo)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/yG3ZdxBb1oo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="yG3ZdxBb1oo" title="Radoslav Georgiev - Django structure for scale and longevity">}}
 
 ### [Inside Security - S01E17 | The creator of Curl, Daniel Stenberg, joins the show for an interview](https://www.youtube.com/watch?v=06Xfa2AvQrw)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/06Xfa2AvQrw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="06Xfa2AvQrw" title="Inside Security - S01E17 | The creator of Curl, Daniel Stenberg, joins the show for an interview">}}

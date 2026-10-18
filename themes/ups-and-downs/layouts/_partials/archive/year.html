@@ -1,0 +1,51 @@
+{{- /* One year of the archive. Context: {group, recent, current, newest}.
+       Recent years show round-up covers (with a month-chip twin for when
+       photos are off), older years only the chips. */ -}}
+{{- $key := .group.Key -}}
+{{- $roundups := slice -}}
+{{- $rest := slice -}}
+{{- range .group.Pages -}}
+    {{- $k := partial "post-kind.html" . -}}
+    {{- if eq $k "roundup" }}{{ $roundups = $roundups | append . }}{{ else }}{{ $rest = $rest | append (dict "page" . "kind" $k) }}{{ end -}}
+{{- end -}}
+{{- $roundups = sort $roundups "Date" -}}
+{{- $next := "" -}}
+{{- if .current -}}
+    {{- $m := 1 -}}
+    {{- with last 1 $roundups }}{{ $m = add (int (index . 0).Date.Month) 1 }}{{ end -}}
+    {{- if le $m 12 }}{{ $next = (time.AsTime (printf "%s-%02d-01" $key $m)).Format "Jan" }}{{ end -}}
+{{- end -}}
+{{- $n := len .group.Pages -}}
+<section class="ayear{{ if not .recent }} ayear--older{{ end }}" id="{{ $key }}" aria-labelledby="year-{{ $key }}">
+    <div class="ayear__head">
+        <h2 class="ayear__year" id="year-{{ $key }}">{{ $key }}</h2>
+        <span class="ayear__count">{{ $n }} post{{ if ne $n 1 }}s{{ end }}{{ if .current }} so far{{ end }}</span>
+    </div>
+    <div class="ayear__body">
+        {{ if and .recent (or $roundups $next) }}
+            <div class="acovers photo" data-group>
+                {{ range $roundups }}
+                    {{ $new := eq .RelPermalink $.newest }}
+                    <a class="acover{{ if $new }} is-new{{ end }}" href="{{ .RelPermalink }}" aria-label="{{ .Title }}{{ if $new }} (newest){{ end }}" data-kind="roundup" data-title="{{ lower .Title }}">
+                        {{ with partial "cover-img.html" (dict "page" . "class" "acover__img") }}{{ . }}{{ else }}<span class="acover__img acover__blank"></span>{{ end }}
+                        <span class="acover__m">{{ .Date.Format "Jan" }}{{ if $new }} · new{{ end }}</span>
+                    </a>
+                {{ end }}
+                {{ with $next }}
+                    <span class="acover acover--next" data-kind="roundup" data-title="" data-next>
+                        <span class="acover__img"></span>
+                        <span class="acover__m">{{ . }}</span>
+                    </span>
+                {{ end }}
+            </div>
+            {{ with $roundups }}{{ partial "archive/months.html" (dict "pages" . "alt" true) }}{{ end }}
+        {{ else if $roundups }}
+            {{ partial "archive/months.html" (dict "pages" $roundups) }}
+        {{ end }}
+        {{ with $rest }}
+            <ul class="alist" data-group>
+                {{ range . }}{{ partial "archive/row.html" . }}{{ end }}
+            </ul>
+        {{ end }}
+    </div>
+</section>

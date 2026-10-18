@@ -1,0 +1,5 @@
+{{- $all := slice -}}
+{{- range where site.RegularPages "Section" "post" -}}
+    {{- if eq (partial "post-kind.html" .) "roundup" }}{{ $all = $all | append . }}{{ end -}}
+{{- end -}}
+{{- return $all -}}

@@ -1,0 +1,8 @@
+{{- $q := in .kinds "quote" -}}
+{{- $ai := in .kinds "summary" -}}
+{{- if or $q $ai }}
+<div class="issue-legend {{ .class }}" data-pagefind-ignore>
+    {{- if $q }}<span><span class="issue-legend__q" aria-hidden="true">“</span>Quoted from the source</span>{{ end }}
+    {{- if $ai }}<span><span class="issue-badge" aria-hidden="true">AI</span>AI-generated summary</span>{{ end }}
+</div>
+{{- end -}}

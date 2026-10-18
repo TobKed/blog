@@ -1,0 +1,12 @@
+{{- /* Published posts and their counts by kind, shared by Archives and About.
+       Returns {pages, total, since, roundup, essay, summary}. */ -}}
+{{- $pages := where (where site.RegularPages "Section" "in" site.MainSections) "Draft" false -}}
+{{- $counts := dict "roundup" 0 "essay" 0 "summary" 0 -}}
+{{- range $pages -}}
+    {{- $k := partial "post-kind.html" . -}}
+    {{- $counts = merge $counts (dict $k (add (index $counts $k | default 0) 1)) -}}
+{{- end -}}
+{{- /* Month and year of the first post: the site itself is older (params.footer.since). */ -}}
+{{- $since := "" -}}
+{{- with $pages.ByDate }}{{ $since = (index . 0).Date.Format "Jan 2006" }}{{ end -}}
+{{- return merge $counts (dict "pages" $pages "total" (len $pages) "since" $since) -}}

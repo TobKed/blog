@@ -77,7 +77,8 @@ def test_youtube_video_formatter(youtube_video_metadata, mock_analysis_result):
 
     assert section == "Videos"
     assert "### [Original Title](https://www.youtube.com/watch?v=12345)" in markdown
-    assert 'src="https://www.youtube-nocookie.com/embed/12345"' in markdown
+    assert '{{<youtube-lite id="12345" title="Original Title">}}' in markdown
+    assert "iframe" not in markdown
     assert "Brief summary in a paragraph" in markdown
 
 

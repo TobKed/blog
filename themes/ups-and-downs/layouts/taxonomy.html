@@ -4,14 +4,16 @@
            chips lead to an empty "0 posts" page, so leave them out. */ -}}
     {{ $terms := slice }}
     {{ range .Pages.ByTitle }}{{ if .Pages }}{{ $terms = $terms | append . }}{{ end }}{{ end }}
-    <div class="plain">
-        <h1 class="plain__title">{{ .Title }}</h1>
-        <p class="plain__sub">{{ len $terms }} {{ .Data.Plural }}</p>
-        <div class="term-grid">
+    <section class="listing-head">
+        <h1 class="listing-head__title display">{{ .Title }}</h1>
+        <p class="listing-head__sub">{{ len $terms }} {{ .Data.Plural }}</p>
+    </section>
+    <div class="listing">
+        {{ with .Content }}<div class="prose listing__intro">{{ . }}</div>{{ end }}
+        <div class="chips listing-terms">
             {{ range $terms }}
                 <a class="chip" href="{{ .RelPermalink }}">{{ .Title }} <span class="chip__count">{{ len .Pages }}</span></a>
             {{ end }}
         </div>
-        {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
     </div>
 {{ end }}

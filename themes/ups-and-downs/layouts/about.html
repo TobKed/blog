@@ -1,0 +1,43 @@
+{{ define "main" }}
+    <article class="about" data-pagefind-body>
+        {{ with partial "cover-img.html" (dict "page" . "class" "about__img" "alt" (.Params.imageAlt | default "") "eager" true) }}
+            <figure class="about__photo photo bleed">
+                {{ . }}
+                {{ with $.Params.caption }}<figcaption><span>{{ . | markdownify }}</span></figcaption>{{ end }}
+            </figure>
+        {{ end }}
+
+        <section class="about__intro">
+            <div class="about__main">
+                <span class="about__eyebrow">{{ .Title }}</span>
+                <h1 class="about__name">{{ .Params.name | default .Title }}</h1>
+                {{ with .Params.summary | default site.Params.tagline }}<p class="about__lead">{{ . }}</p>{{ end }}
+                {{ with .Content }}<div class="about__bio">{{ . }}</div>{{ end }}
+            </div>
+            {{ with site.Menus.social }}
+                <aside class="about__elsewhere" aria-labelledby="elsewhere">
+                    <h2 id="elsewhere">Elsewhere</h2>
+                    {{ range . }}
+                        <a href="{{ .URL }}" {{ if .Params.newTab }}target="_blank" rel="me noopener"{{ else }}rel="me"{{ end }}>
+                            <span class="about__link-name">{{ .Name }}</span>
+                            <span class="about__handle">{{ partial "about/handle.html" . }} <span aria-hidden="true">↗</span></span>
+                        </a>
+                    {{ end }}
+                </aside>
+            {{ end }}
+        </section>
+
+        {{ with site.Params.epigraph }}{{ with .text }}
+            <section class="epigraph">
+                {{ with site.Params.epigraph.title }}<span class="epigraph__label">{{ . }}</span>{{ end }}
+                <figure>
+                    <blockquote>“{{ . }}”</blockquote>
+                    {{ with site.Params.epigraph.cite }}<figcaption>— {{ . }}</figcaption>{{ end }}
+                </figure>
+            </section>
+        {{ end }}{{ end }}
+
+        {{ partial "about/record.html" . }}
+        {{ partial "about/numbers.html" . }}
+    </article>
+{{ end }}

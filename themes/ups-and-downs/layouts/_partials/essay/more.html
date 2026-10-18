@@ -1,0 +1,28 @@
+{{- /* Up to three other essays: same first category when there are any, else the latest. */ -}}
+{{- $page := .page -}}
+{{- $essays := slice }}{{ $same := slice -}}
+{{- $inCat := slice }}{{ with $page.GetTerms "categories" }}{{ $inCat = (index . 0).Pages }}{{ end -}}
+{{- range where site.RegularPages "Section" "post" -}}
+    {{- if and (ne .Permalink $page.Permalink) (eq (partial "post-kind.html" .) "essay") -}}
+        {{- $essays = $essays | append . -}}
+        {{- if in $inCat . }}{{ $same = $same | append . }}{{ end -}}
+    {{- end -}}
+{{- end -}}
+{{- $heading := "More essays" -}}
+{{- if $same }}{{ $essays = $same }}{{ $heading = printf "More essays on %s" (title .cat) }}{{ end -}}
+{{- with first 3 $essays }}
+    <section class="more" aria-labelledby="more-title" data-pagefind-ignore>
+        <div class="more__head">
+            <h2 class="more__title display" id="more-title">{{ $heading }}</h2>
+            {{ with site.GetPage "/archives" }}<a class="more__all" href="{{ .RelPermalink }}">All essays →</a>{{ end }}
+        </div>
+        <div class="more__grid">
+            {{- range . }}
+                <a class="more__card" href="{{ .RelPermalink }}">
+                    <span class="more__meta">{{ with .Params.categories }}<span class="more__cat">{{ index . 0 | title }} · </span>{{ end }}{{ .Date.Format "Jan 2006" }}</span>
+                    <span class="more__name">{{ .Title }}</span>
+                </a>
+            {{- end }}
+        </div>
+    </section>
+{{- end }}

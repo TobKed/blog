@@ -1,0 +1,22 @@
+{{- /* The short label beside a social link: the entry's `handle` param, or one
+       derived from its URL (last path segment, else the subdomain or host). */ -}}
+{{- $h := .Params.handle | default "" -}}
+{{- if not $h -}}
+    {{- if hasPrefix .URL "mailto:" }}{{ $h = "write to me" -}}
+    {{- else if hasPrefix .URL "/feeds/" }}{{ $h = "all posts" -}}
+    {{- else -}}
+        {{- with urls.Parse .URL -}}
+            {{- $host := strings.TrimPrefix "www." .Host -}}
+            {{- $path := strings.Trim .Path "/" -}}
+            {{- if $path -}}
+                {{- $h = index (last 1 (split $path "/")) 0 -}}
+                {{- if eq $host "github.com" }}{{ $h = printf "@%s" $h }}{{ end -}}
+            {{- else -}}
+                {{- $labels := split $host "." -}}
+                {{- $h = cond (gt (len $labels) 2) (index $labels 0) $host -}}
+            {{- end -}}
+        {{- end -}}
+        {{- if eq (lower $h) (lower .Name) }}{{ $h = "website" }}{{ end -}}
+    {{- end -}}
+{{- end -}}
+{{- return $h -}}

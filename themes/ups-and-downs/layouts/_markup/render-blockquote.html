@@ -1,0 +1,5 @@
+{{- if eq (partial "post-kind.html" .Page) "roundup" -}}
+<blockquote>{{ .Text }}</blockquote>
+{{- else -}}
+    {{- partial "render/blockquote.html" . -}}
+{{- end -}}

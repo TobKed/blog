@@ -1,0 +1,17 @@
+{{- /* Context: the essays to list, newest first. */ -}}
+{{- with . }}
+    <section class="home-essays">
+        <div class="home-essays__intro">
+            <h2 class="home-h2">Essays &amp; how-tos</h2>
+            <p>Longer pieces on Python, Django, Git, Docker and the cloud.</p>
+        </div>
+        <ol class="home-essays__list">
+            {{ range . }}
+                <li>
+                    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                    <span class="home-meta">{{ range first 1 (.GetTerms "categories") }}{{ .LinkTitle }} · {{ end }}{{ .Date.Format "Jan 2006" }}</span>
+                </li>
+            {{ end }}
+        </ol>
+    </section>
+{{- end }}

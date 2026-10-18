@@ -75,6 +75,4 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ### [37C3 - Breaking "DRM" in Polish trains](https://www.youtube.com/watch?v=XrlrbfGZo2k)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/XrlrbfGZo2k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="XrlrbfGZo2k" title="37C3 - Breaking “DRM” in Polish trains">}}

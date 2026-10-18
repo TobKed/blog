@@ -1,19 +1,29 @@
 {{ define "main" }}
-    {{ $posts := where site.RegularPages "Section" "in" site.MainSections }}
-    <div class="plain">
-        <h1 class="plain__title">{{ .Title }}</h1>
-        <p class="plain__sub">{{ len $posts }} posts</p>
-        {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
-        {{ range $posts.GroupByDate "2006" }}
-            <h2 class="archive-year" id="{{ .Key }}">{{ .Key }}</h2>
-            <ul class="archive-list">
-                {{ range .Pages }}
-                    <li>
-                        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02 Jan" }}</time>
-                        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-                    </li>
-                {{ end }}
-            </ul>
+    {{ $s := partialCached "archive/stats.html" . }}
+    {{ $newest := "" }}
+    {{ range $s.pages }}{{ if and (not $newest) (eq (partial "post-kind.html" .) "roundup") }}{{ $newest = .RelPermalink }}{{ end }}{{ end }}
+    <div class="archive">
+        <div class="archive__head">
+            <h1 class="archive__title">{{ .Title }}</h1>
+            <p class="archive__sum">{{ $s.total }} posts since {{ $s.since }} — {{ $s.roundup }} monthly round-ups, {{ $s.essay }} essays &amp; talks, {{ $s.summary }} year summaries.</p>
+        </div>
+        {{ with .Content }}<div class="archive__intro">{{ . }}</div>{{ end }}
+
+        <div class="archive__bar bleed">
+            <label class="archive__search">
+                <svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg>
+                <input type="search" placeholder="Search titles and links" aria-label="Search the archive" autocomplete="off">
+            </label>
+            <div class="archive__filters" role="group" aria-label="Show">
+                <button type="button" aria-pressed="true" data-filter="">All · {{ $s.total }}</button>
+                <button type="button" aria-pressed="false" data-filter="roundup">Round-ups · {{ $s.roundup }}</button>
+                <button type="button" aria-pressed="false" data-filter="essay"><span class="archive__long">Essays &amp; talks</span><span class="archive__short">Essays</span> · {{ $s.essay }}</button>
+                <button type="button" aria-pressed="false" data-filter="summary">Year summaries · {{ $s.summary }}</button>
+            </div>
+        </div>
+
+        {{ range $i, $g := $s.pages.GroupByDate "2006" }}
+            {{ partial "archive/year.html" (dict "group" $g "recent" (lt $i 3) "current" (eq $g.Key (string now.Year)) "newest" $newest) }}
         {{ end }}
     </div>
 {{ end }}

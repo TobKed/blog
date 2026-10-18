@@ -55,30 +55,20 @@ Below you'll find a mix of articles, links, and resources, some of which tie int
 
 ### [AI to maraton, nie sprint: jak wykorzystać AI, by pracować mądrzej, nie ciężej – Piotr Nabielec](https://www.youtube.com/watch?v=iQDsf32JyzM)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/iQDsf32JyzM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="iQDsf32JyzM" title="AI to maraton, nie sprint: jak wykorzystać AI, by pracować mądrzej, nie ciężej – Piotr Nabielec">}}
 
 ### [How I use LLMs - Andrej Karpathy](https://www.youtube.com/watch?v=EWvNQjAaOHw)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/EWvNQjAaOHw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="EWvNQjAaOHw" title="How I use LLMs - Andrej Karpathy">}}
 
 ### [Co to jest RAG z AI? Proste wyjaśnienie na schematach! Usprawnij firmę dzięki AI! - Mike Tomala](https://www.youtube.com/watch?v=zRGKSy_UhFc)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/zRGKSy_UhFc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="zRGKSy_UhFc" title="Co to jest RAG z AI? Proste wyjaśnienie na schematach! Usprawnij firmę dzięki AI! - Mike Tomala">}}
 
 ### [Jack Dorsey – Tech and Freedom](https://www.youtube.com/watch?v=t-40158eRqo)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/t-40158eRqo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="t-40158eRqo" title="Jack Dorsey – Tech and Freedom">}}
 
 ### [How to use the Alternate Screen in your terminal - You Suck at Programming #047](https://www.youtube.com/watch?v=wr_d44XRHtM)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/wr_d44XRHtM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="wr_d44XRHtM" title="How to use the Alternate Screen in your terminal - You Suck at Programming #047">}}

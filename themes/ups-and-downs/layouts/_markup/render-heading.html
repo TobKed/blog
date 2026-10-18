@@ -1,1 +1,7 @@
-<h{{ .Level }} id="{{ .Anchor }}">{{ .Text }}{{ if site.Params.article.headingAnchor }}<a class="heading-anchor" href="#{{ .Anchor }}" aria-hidden="true" tabindex="-1"></a>{{ end }}</h{{ .Level }}>
+{{- if eq (partial "post-kind.html" .Page) "roundup" -}}
+    {{- /* Round-ups are rebuilt from these by _partials/roundup.html: keep them bare,
+           and drop the `# Month` heading that repeats the title. */ -}}
+    {{- if gt .Level 1 }}<h{{ .Level }} id="{{ .Anchor }}">{{ .Text }}</h{{ .Level }}>{{ end -}}
+{{- else -}}
+    {{- partial "render/heading.html" . -}}
+{{- end -}}

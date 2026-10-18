@@ -1,0 +1,80 @@
+{{- /* A round-up's rendered Content split into its link sections. Context: a Page.
+
+       Round-ups are written as `## Section` headings over `### [title](url)`
+       links, each followed by a quote, an `#### AI generated summary` and its
+       paragraph, or a youtube-lite preview. The render hooks emit those headings bare
+       for round-ups (no anchor link), which is what the patterns below expect.
+
+       Returns:
+         lead      first paragraph of the intro, plain text
+         intro     everything before the first section, HTML
+         sections  [{id, name, count, isVideo, preface (HTML), items}]
+           items   [{id, title, url, domain, kind ("quote"|"summary"|"video"|"plain"),
+                     quote (plain), quoteHTML, summary (HTML), video (YouTube id), body (HTML)}]
+       Call it through partialCached with the page as the variant key. */ -}}
+{{- $parts := split (string .Content) "<h2 " -}}
+{{- $intro := index $parts 0 -}}
+{{- $lead := "" -}}
+{{- with findRESubmatch `(?s)<p>(.*?)</p>` $intro 1 }}{{ $lead = index . 0 1 | plainify | htmlUnescape | strings.TrimSpace }}{{ end -}}
+
+{{- $sections := slice -}}
+{{- range after 1 $parts -}}
+    {{- $id := "" -}}
+    {{- with findRESubmatch `^[^>]*id="([^"]*)"` . 1 }}{{ $id = index . 0 1 }}{{ end -}}
+    {{- $name := "" -}}
+    {{- with findRESubmatch `(?s)^[^>]*>(.*?)</h2>` . 1 }}{{ $name = index . 0 1 | plainify | htmlUnescape | strings.TrimSpace }}{{ end -}}
+    {{- $body := replaceRE `(?s)^[^>]*>.*?</h2>` "" . 1 -}}
+    {{- $chunks := split $body "<h3 " -}}
+
+    {{- $items := slice -}}
+    {{- range after 1 $chunks -}}
+        {{- $hid := "" -}}
+        {{- with findRESubmatch `^[^>]*id="([^"]*)"` . 1 }}{{ $hid = index . 0 1 }}{{ end -}}
+        {{- $head := "" -}}
+        {{- with findRESubmatch `(?s)^[^>]*>(.*?)</h3>` . 1 }}{{ $head = index . 0 1 }}{{ end -}}
+        {{- $rest := replaceRE `(?s)^[^>]*>.*?</h3>` "" . 1 | strings.TrimSpace -}}
+
+        {{- $url := "" -}}
+        {{- with findRESubmatch `href="([^"]*)"` $head 1 }}{{ $url = index . 0 1 | htmlUnescape }}{{ end -}}
+        {{- $domain := "" -}}
+        {{- with $url }}{{ with urls.Parse . }}{{ $domain = strings.TrimPrefix "www." .Host }}{{ end }}{{ end -}}
+
+        {{- $quoteHTML := "" -}}
+        {{- range findRESubmatch `(?s)<blockquote>(.*?)</blockquote>` $rest }}{{ $quoteHTML = print $quoteHTML (index . 1) }}{{ end -}}
+        {{- $quote := strings.Trim ($quoteHTML | plainify | htmlUnescape | strings.TrimSpace) `"“” ` -}}
+
+        {{- $summary := "" -}}
+        {{- with findRESubmatch `(?s)<h4[^>]*>\s*AI generated summary\s*</h4>(.*)$` $rest 1 }}{{ $summary = index . 0 1 | strings.TrimSpace }}{{ end -}}
+
+        {{- $video := "" -}}
+        {{- with findRESubmatch `data-youtube="([A-Za-z0-9_-]+)"` $rest 1 }}{{ $video = index . 0 1 }}{{ end -}}
+
+        {{- $kind := "plain" -}}
+        {{- if $video }}{{ $kind = "video" }}
+        {{- else if $summary }}{{ $kind = "summary" }}
+        {{- else if $quoteHTML }}{{ $kind = "quote" }}{{ end -}}
+
+        {{- $items = $items | append (dict
+            "id" $hid
+            "title" ($head | plainify | htmlUnescape | strings.TrimSpace)
+            "url" $url
+            "domain" $domain
+            "kind" $kind
+            "quote" $quote
+            "quoteHTML" $quoteHTML
+            "summary" $summary
+            "video" $video
+            "body" $rest) -}}
+    {{- end -}}
+
+    {{- $videos := where $items "kind" "video" -}}
+    {{- $sections = $sections | append (dict
+        "id" $id
+        "name" $name
+        "count" (len $items)
+        "isVideo" (and $items (eq (len $videos) (len $items)))
+        "preface" (index $chunks 0 | strings.TrimSpace)
+        "items" $items) -}}
+{{- end -}}
+
+{{- return dict "lead" $lead "intro" $intro "sections" $sections -}}

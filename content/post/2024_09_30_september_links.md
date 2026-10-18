@@ -362,42 +362,28 @@ I'm excited to share some interesting materials I've gone through. Check them ou
 
 ### [How to Negotiate a Big Tech Offer as a Software Engineer - with ‪@RahulPandeyrkp‬](https://www.youtube.com/watch?v=cbngWLr7BC4)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/cbngWLr7BC4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="cbngWLr7BC4" title="How to Negotiate a Big Tech Offer as a Software Engineer - with ‪@RahulPandeyrkp‬">}}
 
 ### [Fireship: Tmux in 100 Seconds](https://www.youtube.com/watch?v=vtB1J_zCv8I)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/vtB1J_zCv8I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="vtB1J_zCv8I" title="Fireship: Tmux in 100 Seconds">}}
 
 ### [NetworkChuck: you need to learn tmux RIGHT NOW!!](https://www.youtube.com/watch?v=nTqu6w2wc68)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/nTqu6w2wc68" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="nTqu6w2wc68" title="NetworkChuck: you need to learn tmux RIGHT NOW!!">}}
 
 ### [NetworkChuck: 18 Weird and Wonderful ways I use Docker](https://www.youtube.com/watch?v=RUqGlWr5LBA)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/RUqGlWr5LBA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="RUqGlWr5LBA" title="NetworkChuck: 18 Weird and Wonderful ways I use Docker">}}
 
 ### [NetworkChuck:  You've been using AI Wrong ](https://www.youtube.com/watch?v=UbDyjIIGaxQ)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/UbDyjIIGaxQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="UbDyjIIGaxQ" title="NetworkChuck:  You've been using AI Wrong ">}}
 
 ### [DjangoCon US: Django & Celery - A love story of async proportions - Hugo Bessa](https://www.youtube.com/watch?v=2GhZWzeipWA)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/2GhZWzeipWA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="2GhZWzeipWA" title="DjangoCon US: Django & Celery - A love story of async proportions - Hugo Bessa">}}
 
 ### [Unsupervised Learning: Introducing Fabric — A Human AI Augmentation Framework](https://www.youtube.com/watch?v=wPEyyigh10g)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/wPEyyigh10g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="wPEyyigh10g" title="Unsupervised Learning: Introducing Fabric — A Human AI Augmentation Framework">}}

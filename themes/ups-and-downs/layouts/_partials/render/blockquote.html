@@ -1,0 +1,32 @@
+{{- if eq .Type "alert" -}}
+<div class="notice notice--{{ .AlertType }}"><span class="notice__label">{{ .AlertTitle | default .AlertType }}</span><div>{{ .Text }}</div></div>
+{{- else -}}
+    {{- /* A last paragraph starting with a dash (`-- <cite>…</cite>`) is the source. */ -}}
+    {{- $body := .Text | string | strings.TrimSpace -}}
+    {{- $cap := "" -}}
+    {{- $parts := split $body "<p>" -}}
+    {{- $last := index $parts (sub (len $parts) 1) -}}
+    {{- with findRESubmatch `(?s)^\s*(?:--|&ndash;|&mdash;|–|—)\s*(.*?)\s*</p>\s*$` $last 1 -}}
+        {{- $cap = index (index . 0) 1 -}}
+        {{- $body = delimit (first (sub (len $parts) 1) $parts) "<p>" | strings.TrimSpace -}}
+    {{- end -}}
+    {{- /* The accent glyph opens the quote, so drop quote marks around a single paragraph. */ -}}
+    {{- with findRESubmatch `(?s)^<p>(?:&ldquo;|“)(.*)(?:&rdquo;|”)</p>$` $body 1 -}}
+        {{- $inner := index (index . 0) 1 -}}
+        {{- if not (or (strings.Contains $inner "<p>") (strings.Contains $inner "&ldquo;") (strings.Contains $inner "“")) }}{{ $body = printf "<p>%s</p>" $inner }}{{ end -}}
+    {{- end -}}
+    {{- if $cap -}}
+        {{- $plain := $cap | plainify | strings.TrimSpace -}}
+        {{- if and (not (strings.Contains $cap "<a")) (findRE `^https?://\S+$` $plain) -}}
+            {{- $cap = printf `<a href="%s">%s</a>` $plain (replaceRE `^https?://(www\.)?` "" $plain) -}}
+        {{- end -}}
+        {{- $cap = replaceRE `>https?://(?:www\.)?([^<]*)<` ">$1<" $cap -}}
+        {{- if not (strings.Contains $cap "<cite") }}{{ $cap = printf "<cite>%s</cite>" $cap }}{{ end -}}
+    {{- end -}}
+<figure class="quote">
+<blockquote class="quote__body"><span class="quote__mark" aria-hidden="true">“</span><div class="quote__text">{{ $body | safeHTML }}</div></blockquote>
+{{- with $cap }}
+<figcaption class="quote__cite">{{ . | safeHTML }}</figcaption>
+{{- end }}
+</figure>
+{{- end -}}

@@ -1,0 +1,28 @@
+{{- $kind := partial "post-kind.html" . -}}
+{{- $cat := "" }}{{ with .Params.categories }}{{ $cat = index . 0 }}{{ end -}}
+{{- $kicker := "Year in review" -}}
+{{- if ne $kind "summary" }}{{ $kicker = "Essay" }}{{ with $cat }}{{ $kicker = printf "Essay · %s" (title .) }}{{ end }}{{ end -}}
+<article class="essay" data-pagefind-body>
+    {{ partial "essay/head.html" (dict "page" . "kicker" $kicker "date" true) }}
+    <div class="essay-body">
+        <aside class="essay-side" data-pagefind-ignore>
+            {{ partial "toc.html" . }}
+            {{- with .Params.tags }}
+                <div class="chips essay-tags">
+                    {{- range $t := . }}
+                        {{- with site.GetPage (printf "/tags/%s" (urlize $t)) }}
+                            <a class="chip" href="{{ .RelPermalink }}">#{{ $t }}</a>
+                        {{- end }}
+                    {{- end }}
+                </div>
+            {{- end }}
+        </aside>
+        <div class="essay-main prose">
+            {{- if and (ne $kind "summary") (.Date.Before (now.AddDate -3 0 0)) }}
+                <p class="notice" data-pagefind-ignore><span class="notice__label">From {{ .Date.Year }}</span><span>Written in {{ .Date.Year }}. The ideas may still hold, but check the current docs for newer details.</span></p>
+            {{- end }}
+            {{ .Content }}
+        </div>
+    </div>
+</article>
+{{ partial "essay/more.html" (dict "page" . "cat" $cat) }}

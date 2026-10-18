@@ -26,7 +26,7 @@
       {{- range .Params.tags }}
       <category>{{ . }}</category>
       {{- end }}
-      <description>{{ .Content | transform.XMLEscape | safeHTML }}</description>
+      <description>{{ .Content | replaceRE `(src|href)="/([^/])` (printf `${1}="%s${2}` site.BaseURL) | transform.XMLEscape | safeHTML }}</description>
     </item>
     {{- end }}
   </channel>

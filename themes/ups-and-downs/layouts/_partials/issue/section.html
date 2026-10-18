@@ -1,0 +1,63 @@
+{{- /* One round-up section. Context: s (from roundup.html), num, cards (show as
+       video cards), fold (0, or how many items stay visible until the reader asks). */ -}}
+{{- $s := .s -}}
+{{- $fold := .fold -}}
+{{- $cards := .cards -}}
+{{- $playable := where $s.items "video" "ne" "" -}}
+{{- $arrow := `<svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="8,7 17,7 17,16"></polyline></svg>` -}}
+<section class="issue-section{{ if $cards }} issue-section--videos{{ end }}" id="{{ $s.id }}"{{ with $fold }} data-fold="{{ . }}"{{ end }}>
+    <div class="issue-section__head">
+        <h2><span class="issue-section__num">{{ printf "%02d" .num }}</span>{{ $s.name }}</h2>
+        {{- if $cards }}
+        <span class="issue-section__count">{{ $s.count }} {{ cond (eq $s.count 1) "video" "videos" }}{{ if $playable }}<span class="issue-dt"> · play right here</span><span class="issue-mt"> · tap to play</span>{{ end }}</span>
+        {{- else if $s.count }}
+        <span class="issue-section__count">{{ $s.count }} {{ cond (eq $s.count 1) "link" "links" }}</span>
+        {{- end }}
+    </div>
+
+    {{- with $s.preface }}
+    <div class="issue-prose">{{ . | safeHTML }}</div>
+    {{- end }}
+
+    {{- if $cards }}
+    <div class="issue-videos">
+        {{- range $s.items }}
+        {{- $title := . | partial "issue/video-title.html" }}
+        {{- if .video }}
+        <div class="issue-video" id="{{ .id }}">{{ partial "youtube-lite.html" (dict "id" .video "title" .title "between" $title) }}</div>
+        {{- else }}
+        <div class="issue-video" id="{{ .id }}">
+            <a class="issue-video__thumb" href="{{ .url }}" target="_blank" rel="noopener" aria-label="{{ .title }}"><span class="issue-video__play"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="8,5 19,12 8,19"></polygon></svg></span></a>
+            {{ $title }}
+        </div>
+        {{- end }}
+        {{- end }}
+    </div>
+    {{- else if $s.items }}
+    <div class="issue-items" id="{{ $s.id }}-items">
+        {{- range $i, $it := $s.items }}
+        <div class="issue-item{{ if and $fold (ge $i $fold) }} is-extra{{ end }}" id="{{ $it.id }}">
+            {{- with $it.domain }}
+            <span class="issue-item__domain">{{ . }}</span>
+            {{- end }}
+            <h3>{{ with $it.url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ $it.title }}{{ $arrow | safeHTML }}</a>{{ else }}{{ $it.title }}{{ end }}</h3>
+            {{- if eq $it.kind "quote" }}
+            {{- $q := replaceRE `^\s*<p>\s*(&ldquo;|&quot;|&#34;|“|")` "<p>" $it.quoteHTML -}}
+            {{- $q = replaceRE `(&rdquo;|&quot;|&#34;|”|")\s*</p>\s*$` "</p>" $q }}
+            <blockquote class="issue-quote"><span class="issue-quote__mark" aria-hidden="true">“</span><div>{{ $q | safeHTML }}</div></blockquote>
+            {{- else if eq $it.kind "summary" }}
+            <div class="issue-ai"><span class="issue-badge" title="AI-generated summary">AI</span><div>{{ $it.summary | safeHTML }}</div></div>
+            {{- else if strings.TrimSpace $it.body }}
+            <div class="issue-prose issue-prose--item">{{ $it.body | safeHTML }}</div>
+            {{- end }}
+        </div>
+        {{- end }}
+    </div>
+    {{- with $fold }}
+    <button type="button" class="issue-more" aria-expanded="false" aria-controls="{{ $s.id }}-items" data-more="Show {{ sub $s.count . }} more in {{ $s.name }}">
+        <span>Show {{ sub $s.count . }} more in {{ $s.name }}</span>
+        <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6,9 12,15 18,9"></polyline></svg>
+    </button>
+    {{- end }}
+    {{- end }}
+</section>

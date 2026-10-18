@@ -1,17 +1,20 @@
-/* Chroma classes (hugo.toml sets markup.highlight.noClasses = false) mapped onto
-   the theme tokens, so highlighting follows light/dark without a second file. */
-.chroma { background: none; }
-.chroma .c, .chroma .ch, .chroma .cm, .chroma .c1, .chroma .cs, .chroma .cp, .chroma .cpf { color: var(--ink-3); font-style: italic; }
-.chroma .k, .chroma .kc, .chroma .kd, .chroma .kn, .chroma .kp, .chroma .kr, .chroma .kt, .chroma .ow { color: var(--alt); }
-.chroma .nf, .chroma .nc, .chroma .nd, .chroma .ne, .chroma .nb, .chroma .bp { color: var(--acc); }
+/* Chroma classes (hugo.toml sets markup.highlight.noClasses = false). Code blocks
+   are dark in both colour schemes, so these colours are fixed. */
+.chroma { color: #ece6dc; background: none; }
+.chroma .k, .chroma .kc, .chroma .kd, .chroma .kn, .chroma .kp, .chroma .kr, .chroma .kt,
+.chroma .ow, .chroma .nt { color: #f2a07b; }
 .chroma .s, .chroma .sa, .chroma .sb, .chroma .sc, .chroma .dl, .chroma .sd, .chroma .s2, .chroma .se,
-.chroma .sh, .chroma .si, .chroma .sx, .chroma .sr, .chroma .s1, .chroma .ss { color: var(--ink-2); }
-.chroma .m, .chroma .mb, .chroma .mf, .chroma .mh, .chroma .mi, .chroma .il, .chroma .mo { color: var(--ink-2); }
-.chroma .na, .chroma .nv, .chroma .vc, .chroma .vg, .chroma .vi, .chroma .nt { color: var(--ink); }
-.chroma .err { color: var(--ink); background: var(--acc-soft); }
-.chroma .gd { color: var(--ink-2); }
-.chroma .gi { color: var(--acc); }
+.chroma .sh, .chroma .si, .chroma .sx, .chroma .sr, .chroma .s1, .chroma .ss { color: #b9d88f; }
+.chroma .m, .chroma .mb, .chroma .mf, .chroma .mh, .chroma .mi, .chroma .il, .chroma .mo { color: #e9c46a; }
+.chroma .c, .chroma .ch, .chroma .cm, .chroma .c1, .chroma .cs, .chroma .cp, .chroma .cpf { color: #9a9285; font-style: italic; }
+.chroma .nf, .chroma .fm, .chroma .nc, .chroma .nb, .chroma .bp, .chroma .nd, .chroma .ne, .chroma .na { color: #8fc3e8; }
+.chroma .gp { color: #7d766b; }
+.chroma .go { color: #c9c2b6; }
+.chroma .gd { color: #f2a07b; }
+.chroma .gi { color: #b9d88f; }
+.chroma .gh, .chroma .gu { color: #8fc3e8; font-weight: 500; }
 .chroma .ge { font-style: italic; }
-.chroma .gs { font-weight: 600; }
-.chroma .lnt, .chroma .ln { color: var(--ink-3); }
-.chroma .hl { background: var(--acc-soft); }
+.chroma .gs { font-weight: 500; }
+.chroma .err { color: inherit; background: none; }
+.chroma .hl { display: block; background: rgba(255, 255, 255, 0.06); }
+.chroma .ln, .chroma .lnt { margin-right: 1em; color: #7d766b; user-select: none; }

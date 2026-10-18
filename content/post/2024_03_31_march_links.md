@@ -144,24 +144,16 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ### [Python Bytes 372: uv - an impressive pip alternative](https://www.youtube.com/watch?v=wcVAjNBaKUU)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/wcVAjNBaKUU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="wcVAjNBaKUU" title="Python Bytes 372: uv - an impressive pip alternative">}}
 
 ### [Python Bytes 373: Changing Directories](https://www.youtube.com/watch?v=AbCuv0wuzP0)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/AbCuv0wuzP0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="AbCuv0wuzP0" title="Python Bytes 373: Changing Directories">}}
 
 ### [DjangoCon US: Keynote: Testing Modern Web Apps Like a Champion with Andrew Knight](https://www.youtube.com/watch?v=Ze62p97coaY)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/Ze62p97coaY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="Ze62p97coaY" title="DjangoCon US: Keynote: Testing Modern Web Apps Like a Champion with Andrew Knight">}}
 
 ### ["Full-Stack Python" (Andy "Pandy" Knight) - PyTexas 2023](https://www.youtube.com/watch?v=ka5KRLUn47s)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/ka5KRLUn47s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="ka5KRLUn47s" title="“Full-Stack Python” (Andy “Pandy” Knight) - PyTexas 2023">}}

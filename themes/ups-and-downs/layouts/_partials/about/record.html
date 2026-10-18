@@ -1,0 +1,46 @@
+{{- /* "On the record": front matter `talks` and `certifications`. */ -}}
+{{- $talks := .Params.talks -}}
+{{- $certs := sort (.Params.certifications | default slice) "year" "desc" -}}
+{{- $credly := "" -}}
+{{- range site.Menus.social }}{{ if strings.Contains .URL "credly.com" }}{{ $credly = .URL }}{{ end }}{{ end -}}
+{{ if or $talks $certs }}
+<section class="record">
+    <h2 class="record__title">On the record</h2>
+    <div class="record__cols">
+        {{ with $talks }}
+            <div class="record__col">
+                <h3 class="record__head">Talks &amp; open source</h3>
+                {{- /* Only the first talk with an image is the featured card. */}}
+                {{ $featured := false }}
+                {{ range . }}
+                    {{ $feature := and (isset . "image") (not $featured) }}
+                    {{ if $feature }}{{ $featured = true }}{{ end }}
+                    {{ $inner := partial "about/talk.html" (merge . (dict "image" (cond $feature .image ""))) }}
+                    {{ $class := cond $feature "talk talk--feature" "talk" }}
+                    {{ with .url }}
+                        <a class="{{ $class }}" href="{{ . | relURL }}">{{ $inner }}</a>
+                    {{ else }}
+                        <div class="{{ $class }}">{{ $inner }}</div>
+                    {{ end }}
+                {{ end }}
+            </div>
+        {{ end }}
+        {{ with $certs }}
+            <div class="record__col">
+                <h3 class="record__head record__head--certs">Certifications</h3>
+                {{ range . }}
+                    {{ $c := . }}
+                    <div class="cert">
+                        <span class="cert__year">{{ .year }}</span>
+                        <span class="cert__body">
+                            {{ with .url }}<a class="cert__name" href="{{ . }}" target="_blank" rel="noopener">{{ $c.name }}</a>{{ else }}<span class="cert__name">{{ $c.name }}</span>{{ end }}
+                            {{ with .issuer }}<span class="cert__issuer">{{ . }}</span>{{ end }}
+                        </span>
+                    </div>
+                {{ end }}
+                {{ with $credly }}<a class="record__more" href="{{ . }}" target="_blank" rel="me noopener">All badges on Credly →</a>{{ end }}
+            </div>
+        {{ end }}
+    </div>
+</section>
+{{ end }}

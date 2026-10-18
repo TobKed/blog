@@ -267,57 +267,39 @@ This page explores the author's minimalist lifestyle of indefinite travel with o
 
 ### [Last Lecture Series: How to Design a Winnable Game – Graham Weaver](https://www.youtube.com/watch?v=0SQor2z2QAU)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/0SQor2z2QAU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="0SQor2z2QAU" title="Last Lecture Series: How to Design a Winnable Game – Graham Weaver">}}
 
 ### [Last Lecture Series: “How to Live an Asymmetric Life,” Graham Weaver](https://www.youtube.com/watch?v=dZxbVGhpEkI)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/dZxbVGhpEkI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="dZxbVGhpEkI" title="Last Lecture Series: “How to Live an Asymmetric Life,” Graham Weaver">}}
 
 ### [Last Lecture Series: “Your Life as the Hero’s Journey,” Graham Weaver](https://www.youtube.com/watch?v=WhkTFEzyqlo)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/WhkTFEzyqlo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="WhkTFEzyqlo" title="Last Lecture Series: “Your Life as the Hero’s Journey,” Graham Weaver">}}
 
 ### [Last Lecture Series: How to Live your Life at Full Power — Graham Weaver](https://www.youtube.com/watch?v=uxoCnxlxpIk)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/uxoCnxlxpIk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="uxoCnxlxpIk" title="Last Lecture Series: How to Live your Life at Full Power — Graham Weaver">}}
 
 ### [The Holy Grail of Neovim Note Taking](https://www.youtube.com/watch?v=5ht8NYkU9wQ)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/5ht8NYkU9wQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="5ht8NYkU9wQ" title="The Holy Grail of Neovim Note Taking">}}
 
 ### [Lecture #9: How to Read so that you _Retain_ Information](https://www.youtube.com/watch?v=uiNB-6SuqVA)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/uiNB-6SuqVA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="uiNB-6SuqVA" title="Lecture #9: How to Read so that you _Retain_ Information">}}
 
 ### [n8n Now Runs My ENTIRE Homelab](https://www.youtube.com/watch?v=budTmdQfXYU)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/budTmdQfXYU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="budTmdQfXYU" title="n8n Now Runs My ENTIRE Homelab">}}
 
 ### [DEF CON 33 - Kill List: Hacking an Assassination Site on the Dark Web - Carl Miller, Chris Monteiro](https://www.youtube.com/watch?v=cYZmRp90hss)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/cYZmRp90hss" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="cYZmRp90hss" title="DEF CON 33 - Kill List: Hacking an Assassination Site on the Dark Web - Carl Miller, Chris Monteiro">}}
 
 ### [What Big Tech Still Gets WRONG about Great Programmers | Casey Muratori](https://www.youtube.com/watch?v=gZ2V5VtwrCw)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/gZ2V5VtwrCw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="gZ2V5VtwrCw" title="What Big Tech Still Gets WRONG about Great Programmers | Casey Muratori">}}
 
 #### AI generated summary
 
@@ -325,36 +307,24 @@ Casey Muratori addresses the common misconceptions held by big tech companies re
 
 ### [AI Slop Is Destroying The Internet](https://www.youtube.com/watch?v=_zfN9wnPvU0)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/_zfN9wnPvU0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="_zfN9wnPvU0" title="AI Slop Is Destroying The Internet">}}
 
 ### [Visualizing transformers and attention | Talk for TNG Big Tech Day '24](https://www.youtube.com/watch?v=KJtZARuO3JY)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/KJtZARuO3JY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="KJtZARuO3JY" title="Visualizing transformers and attention | Talk for TNG Big Tech Day '24">}}
 
 ### [Vibes won't cut it — Chris Kelly, Augment Code](https://www.youtube.com/watch?v=Dc3qOA9WOnE)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/Dc3qOA9WOnE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="Dc3qOA9WOnE" title="Vibes won't cut it — Chris Kelly, Augment Code">}}
 
 ### [Google’s NotebookLM is Getting Even More Powerful](https://www.youtube.com/watch?v=i9kiuGIHlMY)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/i9kiuGIHlMY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="i9kiuGIHlMY" title="Google’s NotebookLM is Getting Even More Powerful">}}
 
 ### [13 Years in QA: Why Traditional QA is Disappearing (And What to Do)](https://www.youtube.com/watch?v=4J53WvB1-4E)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/4J53WvB1-4E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="4J53WvB1-4E" title="13 Years in QA: Why Traditional QA is Disappearing (And What to Do)">}}
 
 ### [The AWS Outage Uncovered Something EVERY Developer Should Know](https://www.youtube.com/watch?v=X2wmzn-tfiQ)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/X2wmzn-tfiQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="X2wmzn-tfiQ" title="The AWS Outage Uncovered Something EVERY Developer Should Know">}}

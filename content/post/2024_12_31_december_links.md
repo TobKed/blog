@@ -182,66 +182,44 @@ So, this month has been about **Terraform**, **neovim**, and **focus**. Onward t
 
 ### [GoGaRuCo 2010 - The Shell Hater's Handbook by: Ryan Tomayko](https://www.youtube.com/watch?v=olH-9b3VJfs)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/olH-9b3VJfs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="olH-9b3VJfs" title="GoGaRuCo 2010 - The Shell Hater's Handbook by: Ryan Tomayko">}}
 
 ### [Power Use of UNIX • Dan North • GOTO 2013](https://www.youtube.com/watch?v=7uwW20odwEk)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/7uwW20odwEk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="7uwW20odwEk" title="Power Use of UNIX • Dan North • GOTO 2013">}}
 
 ### [DEF CON 18 - Jayson E. Street - Deceiving the Heavens to Cross the Sea](https://www.youtube.com/watch?v=n54nXogdD_0)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/n54nXogdD_0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="n54nXogdD_0" title="DEF CON 18 - Jayson E. Street - Deceiving the Heavens to Cross the Sea">}}
 
 ### [This Is IT - Maciej Kawecki: Wojciech Zaremba: Tak będzie wyglądała Nowa Era ludzkości](https://www.youtube.com/watch?v=6QhGUQ5iTdk)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/6QhGUQ5iTdk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="6QhGUQ5iTdk" title="This Is IT - Maciej Kawecki: Wojciech Zaremba: Tak będzie wyglądała Nowa Era ludzkości">}}
 
 ### [How to Become a Great Software Developer — Best Advice from Top-Notch Engineers](https://www.youtube.com/watch?v=suATPK45sjk)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/suATPK45sjk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="suATPK45sjk" title="How to Become a Great Software Developer — Best Advice from Top-Notch Engineers">}}
 
 ### [Piotr Zarzycki, Paweł Srokosz: ScamBook | OMH 2024](https://www.youtube.com/watch?v=AastpuFMHEU)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/AastpuFMHEU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="AastpuFMHEU" title="Piotr Zarzycki, Paweł Srokosz: ScamBook | OMH 2024">}}
 
 ### [Jak podsumować rok i zaplanować kolejny? 🔮 Bezpłatny LIVE Piotra Nabielca #ProductivityByHeart](https://www.youtube.com/watch?v=BlE130jPnDM)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/BlE130jPnDM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="BlE130jPnDM" title="Jak podsumować rok i zaplanować kolejny? 🔮 Bezpłatny LIVE Piotra Nabielca #ProductivityByHeart">}}
 
 ### [How to turn Vim into a powerful and beautiful IDE | Jess Archer, Vimconf 2021](https://www.youtube.com/watch?v=434tljD-5C8)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/434tljD-5C8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="434tljD-5C8" title="How to turn Vim into a powerful and beautiful IDE | Jess Archer, Vimconf 2021">}}
 
 ### [TJ DeVries -  The Only Video You Need to Get Started with Neovim](https://www.youtube.com/watch?v=m8C0Cq9Uv9o)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/m8C0Cq9Uv9o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="m8C0Cq9Uv9o" title="TJ DeVries -  The Only Video You Need to Get Started with Neovim">}}
 
 ### [Henry Misc -  Full Neovim Setup from Scratch in 2025](https://www.youtube.com/watch?v=KYDG3AHgYEs)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/KYDG3AHgYEs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="KYDG3AHgYEs" title="Henry Misc -  Full Neovim Setup from Scratch in 2025">}}
 
 ### [TheVimeagen -  Teaching Neovim From Scratch To A Noob](https://www.youtube.com/watch?v=-ybCiHPWKNA)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/-ybCiHPWKNA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="-ybCiHPWKNA" title="TheVimeagen -  Teaching Neovim From Scratch To A Noob">}}

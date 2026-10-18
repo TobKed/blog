@@ -155,15 +155,11 @@ It is called [gonotes](https://github.com/turbaszek/gonotes) and since I learned
 
 ### [The Internet's Own Boy: The Story of Aaron Swartz](https://www.youtube.com/watch?v=9vz06QO3UkQ)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/9vz06QO3UkQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="9vz06QO3UkQ" title="The Internet's Own Boy: The Story of Aaron Swartz">}}
 
 ### [Modern Continuous Delivery • Ken Mugrage • GOTO 2019](https://www.youtube.com/watch?v=wjF4X9t3FMk)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/wjF4X9t3FMk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="wjF4X9t3FMk" title="Modern Continuous Delivery • Ken Mugrage • GOTO 2019">}}
 
 ### [PyWaw #97](https://www.youtube.com/watch?v=p9suUK4NpY0)
 
@@ -171,12 +167,8 @@ It is called [gonotes](https://github.com/turbaszek/gonotes) and since I learned
 > Sebastian Buczyński: Domain-Driven Design, czyli jak nie zbudować kolejnego potworka
 > Wojciech Rząsa: Mikroserwisy - od HTTP do Kafki
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/p9suUK4NpY0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="p9suUK4NpY0" title="PyWaw #97">}}
 
 ### [PyCon.DE 2017 Thomas Waldmann - The BorgBackup Project](hmttps://www.youtube.com/watch?v=oLFMsP1GMa0)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/oLFMsP1GMa0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="oLFMsP1GMa0" title="PyCon.DE 2017 Thomas Waldmann - The BorgBackup Project">}}

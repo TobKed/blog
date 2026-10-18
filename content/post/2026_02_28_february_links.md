@@ -120,72 +120,48 @@ The author shares their journey of experiencing burnout due to juggling multiple
 
 ### [Anthropic’s philosopher answers your questions](https://www.youtube.com/watch?v=I9aGC6Ui3eE)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/I9aGC6Ui3eE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="I9aGC6Ui3eE" title="Anthropic’s philosopher answers your questions">}}
 
 ### [Modern Python monorepo with uv and prek - Talk Python to Me Ep. 540](https://www.youtube.com/watch?v=SKd78ImNgEo)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/SKd78ImNgEo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="SKd78ImNgEo" title="Modern Python monorepo with uv and prek - Talk Python to Me Ep. 540">}}
 
 ### [Ex-OpenAI Scientist WARNS: "You Have No Idea What's Coming"](https://www.youtube.com/watch?v=79-bApI3GIU)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/79-bApI3GIU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="79-bApI3GIU" title="Ex-OpenAI Scientist WARNS: “You Have No Idea What's Coming”">}}
 
 ### [The AI Safety Expert: These Are The Only 5 Jobs That Will Remain In 2030! - Dr. Roman Yampolskiy](https://www.youtube.com/watch?v=UclrVWafRAI)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/UclrVWafRAI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="UclrVWafRAI" title="The AI Safety Expert: These Are The Only 5 Jobs That Will Remain In 2030! - Dr. Roman Yampolskiy">}}
 
 ### [Porozmawiajmy o chmurze #17 – Kto płaci za Open Source?](https://www.youtube.com/watch?v=DnT_3RafHp8)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/DnT_3RafHp8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="DnT_3RafHp8" title="Porozmawiajmy o chmurze #17 – Kto płaci za Open Source?">}}
 
 ### [900+ hours of Learning Claude Code/Cursor in 10 minutes](https://www.youtube.com/watch?v=iltdFNpl73I)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/iltdFNpl73I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="iltdFNpl73I" title="900+ hours of Learning Claude Code/Cursor in 10 minutes">}}
 
 ### [How Hackers Are Using AI-Steve Sims](https://www.youtube.com/watch?v=1ZfZDEcl0ZI)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/1ZfZDEcl0ZI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="1ZfZDEcl0ZI" title="How Hackers Are Using AI-Steve Sims">}}
 
 ### [4Developers 2025: Michał Sajdak - "Dlaczego hackowanie aplikacji webowych jest proste?"](https://www.youtube.com/watch?v=KsKe8I9yhk4)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/KsKe8I9yhk4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="KsKe8I9yhk4" title="4Developers 2025: Michał Sajdak - “Dlaczego hackowanie aplikacji webowych jest proste?”">}}
 
 ### [10 CLI Tools I'm using alongside Claude Code | Starmorph AI](https://www.youtube.com/watch?v=3NzCBIcIqD0)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/3NzCBIcIqD0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="3NzCBIcIqD0" title="10 CLI Tools I'm using alongside Claude Code | Starmorph AI">}}
 
 ### [#28 Jak zbudować agenta AI, który nie usunie Ci połowy plików? | Jakub Mrugalski](https://www.youtube.com/watch?v=hSbkxztsunQ)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/hSbkxztsunQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="hSbkxztsunQ" title="#28 Jak zbudować agenta AI, który nie usunie Ci połowy plików? | Jakub Mrugalski">}}
 
 ### [The Internet Was Weeks Away From Disaster and No One Knew](https://www.youtube.com/watch?v=aoag03mSuXQ)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/aoag03mSuXQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="aoag03mSuXQ" title="The Internet Was Weeks Away From Disaster and No One Knew">}}
 
 ### [Zbudował "Drugi Mózg" z AI. Czym jest AI Journaling? (gość: Franciszek Georgiew)](https://www.youtube.com/watch?v=BsrLizc-P1c)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/BsrLizc-P1c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="BsrLizc-P1c" title="Zbudował “Drugi Mózg” z AI. Czym jest AI Journaling? (gość: Franciszek Georgiew)">}}

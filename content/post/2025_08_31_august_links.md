@@ -234,15 +234,11 @@ The author shares their experience of learning electronics by building a circuit
 
 ### [Genspark AI: 6 Mega Praktycznych Zastosowań](https://www.youtube.com/watch?v=1o60zrL5GoU)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/1o60zrL5GoU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="1o60zrL5GoU" title="Genspark AI: 6 Mega Praktycznych Zastosowań">}}
 
 ### [Zmień komputer w asystenta (Claude Code 2025 poradnik)](https://www.youtube.com/watch?v=cpvOb10AMaM)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/cpvOb10AMaM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="cpvOb10AMaM" title="Zmień komputer w asystenta (Claude Code 2025 poradnik)">}}
 
 #### AI generated summary
 
@@ -250,29 +246,21 @@ This YouTube video is a guide on how to turn your computer into an assistant usi
 
 ### [Introducing GPT-5](https://www.youtube.com/watch?v=0Uu_VJeVVfo)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/0Uu_VJeVVfo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="0Uu_VJeVVfo" title="Introducing GPT-5">}}
 
 ### [Typing your Python code like a ninja! - Thiago Bellini Ribeiro](https://www.youtube.com/watch?v=DSu483N6H9s)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/DSu483N6H9s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="DSu483N6H9s" title="Typing your Python code like a ninja! - Thiago Bellini Ribeiro">}}
 
 ### [SekurakTV: Jak wygrywać CTF-y 2.0](https://www.youtube.com/live/sZfGuXL2wKQ)
 
 > Zapraszamy na szkolenie z Gynvaelem Coldwindem (szkolenie w języku polskim). Szkolenie potrwa ~4 godziny.
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/sZfGuXL2wKQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="sZfGuXL2wKQ" title="SekurakTV: Jak wygrywać CTF-y 2.0">}}
 
 ### [How to Configure Neovim for Python in 2025](https://www.youtube.com/watch?v=IobijoroGE0)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/IobijoroGE0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="IobijoroGE0" title="How to Configure Neovim for Python in 2025">}}
 
 #### AI generated summary
 
@@ -280,15 +268,11 @@ Henry Misc shares his Neovim setup for Python development, featuring auto-format
 
 ### [I 3D Printed a Kayak in Less Than 24 hours](https://www.youtube.com/watch?v=9DpMkYDCq9Y)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/9DpMkYDCq9Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="9DpMkYDCq9Y" title="I 3D Printed a Kayak in Less Than 24 hours">}}
 
 ### [High School Dropout to Google Principal: Sundas Khalid Makes More from Content Than Her Tech Salary](https://www.youtube.com/watch?v=XvtuW0UN4aA)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/XvtuW0UN4aA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="XvtuW0UN4aA" title="High School Dropout to Google Principal: Sundas Khalid Makes More from Content Than Her Tech Salary">}}
 
 #### AI generated summary
 
@@ -296,21 +280,15 @@ This video tells the inspiring story of Sundas Khalid, who went from being a hig
 
 ### [AI w terminalu – Claude Code Deep Dive](https://www.youtube.com/live/eifcDbiHfFw)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/eifcDbiHfFw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="eifcDbiHfFw" title="AI w terminalu – Claude Code Deep Dive">}}
 
 ### [Andrzej Dragan o sztucznej inteligencji. “Nasza ignorancja przestała być ograniczeniem” | ASP 2025](https://www.youtube.com/watch?v=0D1YCGl_NXM)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/0D1YCGl_NXM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="0D1YCGl_NXM" title="Andrzej Dragan o sztucznej inteligencji. “Nasza ignorancja przestała być ograniczeniem” | ASP 2025">}}
 
 ### [I got the most popular homelab storage server to run on a Pi](https://www.youtube.com/watch?v=XvaXemGDSpk)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/XvaXemGDSpk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="XvaXemGDSpk" title="I got the most popular homelab storage server to run on a Pi">}}
 
 #### AI generated summary
 

@@ -179,12 +179,8 @@ I also published a short blog post about git: [git: when ignorance is a bliss](/
 
 ### [Python Bytes 386](https://www.youtube.com/watch?v=BybkexjbTMY)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/BybkexjbTMY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="BybkexjbTMY" title="Python Bytes 386">}}
 
 ### [Jarek Potiuk – `New` Workflow Orchestrator in town: "Apache Airflow 2.x"](https://www.youtube.com/watch?v=jXmRrChXUrI)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/jXmRrChXUrI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="jXmRrChXUrI" title="Jarek Potiuk – `New` Workflow Orchestrator in town: “Apache Airflow 2.x”">}}

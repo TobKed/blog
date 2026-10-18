@@ -228,48 +228,32 @@ Apparently I already got rid of the t-shirt problem since 98% of my t-shirts are
 
 ### [Luke Smith: Hugo Actually Explained (Websites, Themes, Layouts, and Intro to Scripting)](https://www.youtube.com/watch?v=ZFL09qhKi5I)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/ZFL09qhKi5I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="ZFL09qhKi5I" title="Luke Smith: Hugo Actually Explained (Websites, Themes, Layouts, and Intro to Scripting)">}}
 
 ### [Making Badass Developers - Kathy Sierra (Serious Pony) keynote](https://www.youtube.com/watch?v=FKTxC9pl-WM)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/FKTxC9pl-WM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="FKTxC9pl-WM" title="Making Badass Developers - Kathy Sierra (Serious Pony) keynote">}}
 
 ### [Randy Pausch Last Lecture: Achieving Your Childhood Dreams](https://www.youtube.com/watch?v=ji5_MqicxSo)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/ji5_MqicxSo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="ji5_MqicxSo" title="Randy Pausch Last Lecture: Achieving Your Childhood Dreams">}}
 
 ### [The Conflict and Burnout Survival Guide: Handling When Things Go Wrong](https://www.youtube.com/watch?v=3dyVzWWerXY)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/3dyVzWWerXY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="3dyVzWWerXY" title="The Conflict and Burnout Survival Guide: Handling When Things Go Wrong">}}
 
 ### [Jarek Potiuk: Contributing to Apache Airflow - Starting Your OSS Adventure](https://www.youtube.com/watch?v=Ck_Jc_95jSM)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/Ck_Jc_95jSM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="Ck_Jc_95jSM" title="Jarek Potiuk: Contributing to Apache Airflow - Starting Your OSS Adventure">}}
 
 ### [Jez Humble | Continuous Delivery](https://www.youtube.com/watch?v=skLJuksCRTw)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/skLJuksCRTw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="skLJuksCRTw" title="Jez Humble | Continuous Delivery">}}
 
 ### [ Why Do So Many Programmers Lose Hope? ](https://www.youtube.com/watch?v=NdA6aQR-s4U)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/NdA6aQR-s4U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="NdA6aQR-s4U" title=" Why Do So Many Programmers Lose Hope? ">}}
 
 ### [Jonathan Haidt: Has Social Media Destroyed a Generation?](https://www.youtube.com/watch?v=Ocm_75ivYT0)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/Ocm_75ivYT0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="Ocm_75ivYT0" title="Jonathan Haidt: Has Social Media Destroyed a Generation?">}}

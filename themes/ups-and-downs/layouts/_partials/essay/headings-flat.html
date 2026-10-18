@@ -1,0 +1,7 @@
+{{- /* A .Fragments.Headings tree as a flat, document-ordered slice of {id, title, level}. */ -}}
+{{- $out := slice -}}
+{{- range . -}}
+    {{- if .Title }}{{ $out = $out | append (dict "id" .ID "title" .Title "level" .Level) }}{{ end -}}
+    {{- with .Headings }}{{ $out = $out | append (partial "essay/headings-flat.html" .) }}{{ end -}}
+{{- end -}}
+{{- return $out -}}

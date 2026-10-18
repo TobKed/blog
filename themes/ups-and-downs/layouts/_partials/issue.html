@@ -1,0 +1,72 @@
+{{- /* A monthly round-up, rebuilt from the sections roundup.html parses out. */ -}}
+{{- $r := partialCached "roundup.html" . . -}}
+{{- $n := int (site.Params.linkSections.foldAfter | default 0) -}}
+{{- $total := 0 -}}
+{{- $kinds := slice -}}
+{{- $firstLinks := "" -}}
+{{- $sections := slice -}}
+{{- range $r.sections }}{{ if or .count .preface }}{{ $sections = $sections | append . }}{{ end }}{{ end -}}
+{{- range $sections -}}
+    {{- $total = add $total .count -}}
+    {{- range .items }}{{ $kinds = $kinds | append .kind }}{{ end -}}
+    {{- if and (not $firstLinks) .count (not .isVideo) }}{{ $firstLinks = .id }}{{ end -}}
+{{- end -}}
+{{- $cover := partial "cover-url.html" . -}}
+
+<div class="issue" data-pagefind-body>
+    {{- with $cover }}
+    <figure class="issue-cover photo" data-pagefind-ignore>
+        {{ partial "cover-img.html" (dict "page" $ "eager" true) }}
+        <figcaption>Cover · photo by the author</figcaption>
+    </figure>
+    {{- end }}
+
+    <header class="issue-head{{ with $cover }} issue-head--overlap{{ end }}">
+        <span class="issue-kicker">Month summary<span class="issue-dt"> · Issue of {{ .Date.Format "January 2006" }}</span></span>
+        <h1 data-pagefind-meta="title">{{ replace .Title " - " (printf "%c— " 160) }}</h1>
+        <div class="issue-meta">
+            <span>{{ .Date.Format "Mon 2 Jan 2006" }}</span>
+            {{- if site.Params.article.readingTime }}<span>{{ .ReadingTime }} min read</span>{{ end }}
+            {{- with $total }}<span>{{ . }} {{ cond (eq . 1) "link" "links" }}</span>{{ end }}
+        </div>
+    </header>
+
+    <div class="issue-layout">
+        <aside class="issue-aside" data-pagefind-ignore>
+            {{- with $sections }}
+            <nav class="issue-toc" aria-label="Contents">
+                <h2>Contents</h2>
+                {{- range $i, $s := . }}
+                <a href="#{{ $s.id }}"{{ if eq $i 0 }} class="is-first"{{ end }}><span>{{ $s.name }}</span>{{ with $s.count }}<span class="issue-toc__n">{{ . }}</span>{{ end }}</a>
+                {{- end }}
+            </nav>
+            {{- end }}
+            {{ partial "issue/legend.html" (dict "kinds" $kinds "class" "issue-legend--side") }}
+        </aside>
+
+        <article class="issue-article">
+            {{- with strings.TrimSpace $r.intro }}
+            <div class="issue-intro">{{ . | safeHTML }}</div>
+            {{- end }}
+            {{ partial "issue/legend.html" (dict "kinds" $kinds "class" "issue-legend--inline") }}
+
+            {{- range $i, $s := $sections }}
+                {{- /* Videos plus bare links (a playlist) still read as a row of video cards. */ -}}
+                {{- $cards := $s.isVideo -}}
+                {{- if and (where $s.items "kind" "video") (not (where (where $s.items "kind" "ne" "video") "body" "ne" "")) }}{{ $cards = true }}{{ end -}}
+                {{- $fold := 0 -}}
+                {{- $keep := and site.Params.linkSections.keepFirstOpen (eq $s.id $firstLinks) -}}
+                {{- if and (gt $n 0) (gt $s.count (add $n 1)) (not $cards) (not $keep) }}{{ $fold = $n }}{{ end -}}
+                {{- partial "issue/section.html" (dict "s" $s "num" (add $i 1) "fold" $fold "cards" $cards) -}}
+            {{- end }}
+
+            {{- with .GetTerms "tags" }}
+            <div class="chips issue-tags">
+                {{- range . }}<a class="chip" href="{{ .RelPermalink }}">#{{ lower .LinkTitle }}</a>{{ end -}}
+            </div>
+            {{- end }}
+        </article>
+    </div>
+
+    {{ partial "issue/more.html" . }}
+</div>

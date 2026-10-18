@@ -208,24 +208,16 @@ Some of them are strictly related to the things I did or am currently doing.
 
 ### [Maciej Markiewicz: Software, Security i Efekt motyla | OMH 2023](https://www.youtube.com/watch?v=0Rc1-Qem5HM)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/0Rc1-Qem5HM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="0Rc1-Qem5HM" title="Maciej Markiewicz: Software, Security i Efekt motyla | OMH 2023">}}
 
 ### [unknown: Debugowanie kontenerów w 10 minut - Docker/Podman](https://www.youtube.com/watch?v=vjItpXfzSQA)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/vjItpXfzSQA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="vjItpXfzSQA" title="unknown: Debugowanie kontenerów w 10 minut - Docker/Podman">}}
 
 ### [Paolo Melchiorre: Semantic search with Django, PostgreSQL, & pgvector | POSETTE 2024 ](https://www.youtube.com/watch?v=4hl8LpDKRMw)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/4hl8LpDKRMw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="4hl8LpDKRMw" title="Paolo Melchiorre: Semantic search with Django, PostgreSQL, & pgvector | POSETTE 2024 ">}}
 
 ### [Boiling Frogs 2018 - Krzysztof Kędzierski - Dług techniczny – narzędzie profesjonalisty](https://www.youtube.com/watch?v=PxcQlSUIpjQ)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/PxcQlSUIpjQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="PxcQlSUIpjQ" title="Boiling Frogs 2018 - Krzysztof Kędzierski - Dług techniczny – narzędzie profesjonalisty">}}

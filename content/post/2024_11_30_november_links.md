@@ -182,30 +182,20 @@ You can find the presentations I watched in the video section at the bottom.
 
 ### [HRejterzy: Dramaty wielu polskich firm - dlaczego nie są odporne na ataki hakerskie? Skąd złudzenie, że są?](https://www.youtube.com/watch?v=HBZw2VHhZy0)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/HBZw2VHhZy0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="HBZw2VHhZy0" title="HRejterzy: Dramaty wielu polskich firm - dlaczego nie są odporne na ataki hakerskie? Skąd złudzenie, że są?">}}
 
 ### [Python Bytes 409: We've moved to Hetzner](https://www.youtube.com/watch?v=vg6VLG0jKek)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/vg6VLG0jKek" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="vg6VLG0jKek" title="Python Bytes 409: We've moved to Hetzner">}}
 
 ### [DEF CON 32 - Counter Deception: Defending Yourself in a World Full of Lies - Tom Cross, Greg Conti](https://www.youtube.com/watch?v=gHqDEMrqTjE)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/gHqDEMrqTjE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="gHqDEMrqTjE" title="DEF CON 32 - Counter Deception: Defending Yourself in a World Full of Lies - Tom Cross, Greg Conti">}}
 
 ### [DEF CON 32 - Social Engineering Like you’re Picard - Jayson E Street](https://www.youtube.com/watch?v=kc25CttuDmw)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/kc25CttuDmw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="kc25CttuDmw" title="DEF CON 32 - Social Engineering Like you’re Picard - Jayson E Street">}}
 
 ### [DEF CON 32 - Inside the FBI’s Secret Encrypted Phone Company ‘Anom’ - Joseph Cox](https://www.youtube.com/watch?v=uFyk5UOyNqI)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/uFyk5UOyNqI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="uFyk5UOyNqI" title="DEF CON 32 - Inside the FBI’s Secret Encrypted Phone Company ‘Anom’ - Joseph Cox">}}

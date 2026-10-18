@@ -1,0 +1,31 @@
+{{- /* The latest round-up as the cover story. Context: its Page. */ -}}
+{{- $issue := partialCached "roundup.html" . . -}}
+{{- $cover := partial "cover-url.html" . -}}
+<section class="home-latest{{ if $cover }} home-latest--cover{{ end }}" aria-label="Latest issue">
+    {{ with $cover }}
+        <figure class="photo home-cover">
+            {{ partial "cover-img.html" (dict "page" $ "eager" true) }}
+            <figcaption>Cover · photo by the author</figcaption>
+        </figure>
+    {{ end }}
+    <div class="home-latest__row">
+        <article class="home-latest__card">
+            <div class="home-latest__head">
+                <span class="home-kicker">The cover story · <span class="home-wide">{{ .Date.Format "Mon" }} </span>{{ .Date.Format "02 Jan" }}{{ if site.Params.article.readingTime }} · {{ .ReadingTime }} min{{ end }}</span>
+                <h2 class="home-latest__title"><a href="{{ .RelPermalink }}">{{ replace (.Title | htmlEscape) " - " "&nbsp;— " | safeHTML }}</a></h2>
+            </div>
+            {{ with $issue.lead | default .Params.summary }}<p class="home-latest__lead">{{ . }}</p>{{ end }}
+            <a class="home-latest__btn" href="{{ .RelPermalink }}">Read the issue
+                <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"/><polyline points="14,6 20,12 14,18"/></svg>
+            </a>
+        </article>
+        {{ with where $issue.sections "count" "gt" 0 }}
+            <aside class="home-toc">
+                <h3 class="home-toc__title">In this issue</h3>
+                {{ range . }}
+                    <a href="{{ $.RelPermalink }}#{{ .id }}"><span class="home-toc__n">{{ .count }}</span><span class="home-toc__name">{{ .name }}</span></a>
+                {{ end }}
+            </aside>
+        {{ end }}
+    </div>
+</section>

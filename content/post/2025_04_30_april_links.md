@@ -117,39 +117,27 @@ Below you'll find a mix of articles, links, and resources, some of which tie int
 
 ### [Devoxx: Developer Experience: Building an Environment for Engineering Success by Bas de Groot](https://www.youtube.com/watch?v=wD2pzuCUTRo)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/wD2pzuCUTRo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="wD2pzuCUTRo" title="Devoxx: Developer Experience: Building an Environment for Engineering Success by Bas de Groot">}}
 
 ### [Devoxx: Clean Architecture for Serverless: Business Logic You Can Take Anywhere by Elena van Engelen Maslova](https://www.youtube.com/watch?v=wz0GQbkrr1Q)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/wz0GQbkrr1Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="wz0GQbkrr1Q" title="Devoxx: Clean Architecture for Serverless: Business Logic You Can Take Anywhere by Elena van Engelen Maslova">}}
 
 ### [Devoxx: Programming's Greatest Mistakes by Mark Rendle](https://www.youtube.com/watch?v=mHEVLndYvko)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/mHEVLndYvko" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="mHEVLndYvko" title="Devoxx: Programming's Greatest Mistakes by Mark Rendle">}}
 
 ### [Devoxx: Fail more, learn more! by Sander Mak](https://www.youtube.com/watch?v=YFDBKkEUbE8)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/YFDBKkEUbE8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="YFDBKkEUbE8" title="Devoxx: Fail more, learn more! by Sander Mak">}}
 
 ### [Devoxx: Words as weapons: The dark arts of Prompt Engineering.... by Jeroen Egelmeers](https://www.youtube.com/watch?v=QyRjW5WNzN0)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/QyRjW5WNzN0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="QyRjW5WNzN0" title="Devoxx: Words as weapons: The dark arts of Prompt Engineering.... by Jeroen Egelmeers">}}
 
 ### [Devoxx: How to survive as a developer in the exponential age of AI by Sander Hoogendoorn](https://www.youtube.com/watch?v=DYhbNSGUQKc)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/DYhbNSGUQKc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="DYhbNSGUQKc" title="Devoxx: How to survive as a developer in the exponential age of AI by Sander Hoogendoorn">}}
 
 ### [FOSS Baackstage: Airflow Beach Cleaning – Securing Supply Chain - Jarek Potiuk](https://25.foss-backstage.de/session/airflow-beach-cleaning-securing-supply-chain/)
 
@@ -157,36 +145,24 @@ Below you'll find a mix of articles, links, and resources, some of which tie int
 
 ### [Mariusz Dalewski - Gildia złodziei IT | Infoshare](https://www.youtube.com/watch?v=ulpit1Cf2hM)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/ulpit1Cf2hM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="ulpit1Cf2hM" title="Mariusz Dalewski - Gildia złodziei IT | Infoshare">}}
 
 ### [Confluent Developer: Apache Iceberg™ | What It Is and Why Everyone’s Talking About It](https://www.youtube.com/watch?v=TsmhRZElPvM)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/TsmhRZElPvM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="TsmhRZElPvM" title="Confluent Developer: Apache Iceberg™ | What It Is and Why Everyone’s Talking About It">}}
 
 ### [TechWorld with Nana: Kafka Tutorial for Beginners | Everything you need to get started](https://www.youtube.com/watch?v=QkdkLdMBuL0)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/QkdkLdMBuL0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="QkdkLdMBuL0" title="TechWorld with Nana: Kafka Tutorial for Beginners | Everything you need to get started">}}
 
 ### [ByteMonk: How Big Tech Checks Your Username in Milliseconds ⚡](https://www.youtube.com/watch?v=_l5Q5kKHtR8)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/_l5Q5kKHtR8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="_l5Q5kKHtR8" title="ByteMonk: How Big Tech Checks Your Username in Milliseconds ⚡">}}
 
 ### [Build The Smallest ESP32 Drone You Can Fly with Your Phone! (ESP-FLY)](https://www.youtube.com/watch?v=V_mZsiZcy7s)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/V_mZsiZcy7s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="V_mZsiZcy7s" title="Build The Smallest ESP32 Drone You Can Fly with Your Phone! (ESP-FLY)">}}
 
 ### [Louis Rossmann's Keynote Speech on Right to Repair](https://www.youtube.com/watch?v=2ol3rMem_Eg)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/2ol3rMem_Eg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="2ol3rMem_Eg" title="Louis Rossmann's Keynote Speech on Right to Repair">}}

@@ -33,24 +33,25 @@ path = '{/post/**,/pages/**}'
 [params]
 mainSections = ["post"]
 description = "Tobiasz Kedzierski's Blog"
+favicon = "img/avatar.png"
+# avatar = "img/avatar.png"  # opt-in: shows the profile photo in the header
+tagline = "Python, Django, the cloud, and other interesting things — computer-related or not. Mostly monthly round-ups of what I've been doing, reading and watching."
 
 [params.footer]
 since = 2018
-customText = "Profile photo by <a href=\"https://juliakaczorowska.pl/\">Julia Kaczorowska</a> (other photos by me)."
 
-[params.sidebar]
-subtitle = """Tobiasz Kedzierski's blog.<br><br>Python, Django, the cloud, and other interesting things — computer-related or not.<br><br>Mostly monthly round-ups of what I've been doing, reading and watching."""
-avatar = "img/avatar.png"
+[params.epigraph]
+title = "Why “ups and downs”?"
+text = "The game has its ups and downs, but you can never lose focus of your individual goals and you can't let yourself be beat because of lack of effort."
+cite = "Michael Jordan"
 
 [params.article]
 headingAnchor = true
 toc = true
 readingTime = true
 
-# The four layout choices the theme offers. Each is one block:
-#   default  what a first-time visitor sees
-#   toggle   whether the sidebar shows a button for it; a reader who presses it
-#            has their choice remembered in their browser, which then wins
+# Each takes `default` (what a first-time visitor sees) and `toggle` (whether
+# the header offers a button, whose choice is remembered per reader).
 [params.colorScheme]
 default = "auto" # "auto" follows the operating system, or force "light" / "dark"
 toggle = true
@@ -59,13 +60,9 @@ toggle = true
 default = "shown" # "shown" or "hidden"; hidden images are never downloaded
 toggle = true
 
-[params.sidebarIndex]
-default = "below" # archives/categories/tags "side" of the posts, or "below" them
-toggle = false
-
-[params.postContents]
-default = "side" # a post's Contents list "inline" in the post, or at its "side"
-toggle = false   # params.article.toc = false drops the list altogether
+[params.linkSections]
+foldAfter = 3        # 0 never folds
+keepFirstOpen = true
 
 # Ordered by weight; Hugo falls back to alphabetical order when weights are absent.
 [[menu.main]]
@@ -101,6 +98,7 @@ url = "https://tobked.dev"
 weight = 10
 [menu.social.params]
 newTab = true
+handle = "personal site"
 [[menu.social]]
 identifier = "email"
 name = "Email"
@@ -127,6 +125,7 @@ url = "https://www.credly.com/users/tobiasz-kedzierski"
 weight = 40
 [menu.social.params]
 newTab = true
+handle = "badges"
 [[menu.social]]
 identifier = "medium"
 name = "Medium"

@@ -159,12 +159,8 @@ With one command, plenty of parallel tests may be executed.
 
 ### ["Speeding up Your Docker Image Build" - Vladislav Supalov (PyConline AU 2020)](https://www.youtube.com/watch?v=-LSiF8RNM1g)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/-LSiF8RNM1g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="-LSiF8RNM1g" title="“Speeding up Your Docker Image Build” - Vladislav Supalov (PyConline AU 2020)">}}
 
 ### [IT.talk 2020](https://www.youtube.com/watch?v=jfOGnsPkNiw)
 
-<div class="videoWrapper" style="height:0; padding-bottom:56.25%; padding-top:25px; position:relative" height="0">
-    <iframe style="position:absolute; top:0; width:100%" height="100%" width="100%" src="https://www.youtube-nocookie.com/embed/jfOGnsPkNiw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+{{<youtube-lite id="jfOGnsPkNiw" title="IT.talk 2020">}}

@@ -1,0 +1,14 @@
+{{- /* A YouTube video's thumbnail, fetched at build time and served from this
+       site, so readers make no request to Google until they press play.
+       Context: the video id. Returns an image resource, or "" if both fetches fail. */ -}}
+{{- $img := "" -}}
+{{- range slice "hqdefault" "mqdefault" -}}
+    {{- if not $img -}}
+        {{- $url := printf "https://i.ytimg.com/vi/%s/%s.jpg" $ . -}}
+        {{- with try (resources.GetRemote $url) -}}
+            {{- with .Err }}{{ warnidf "youtube-thumb" "youtube-lite: %s" . }}
+            {{- else with .Value }}{{ $img = .Fill "480x270 Center webp q78" | resources.Copy (printf "images/youtube/%s.webp" $) }}{{ end -}}
+        {{- end -}}
+    {{- end -}}
+{{- end -}}
+{{- return $img -}}
