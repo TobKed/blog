@@ -41,10 +41,26 @@ jobs:
       with:
         hugo-version: ${{ env.HUGO_VERSION }}
         extended: true
+    - name: Restore Hugo cache
+      uses: actions/cache/restore@v6
+      with:
+        path: |
+          ${{ runner.temp }}/hugo_cache
+          resources/_gen
+        key: hugo-${{ github.run_id }}
+        restore-keys: hugo-
     - name: Build
       run: hugo --gc --minify
       env:
+        HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
         HUGO_SERVICES_GOOGLEANALYTICS_ID: ${{ secrets.GOOGLE_ANALYTICS }}
+    - name: Save Hugo cache
+      uses: actions/cache/save@v6
+      with:
+        path: |
+          ${{ runner.temp }}/hugo_cache
+          resources/_gen
+        key: hugo-${{ github.run_id }}
     - name: Build search index
       run: npx -y pagefind --site public --output-subdir _pagefind
     - name: Deploy
