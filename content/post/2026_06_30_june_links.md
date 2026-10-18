@@ -248,9 +248,9 @@ An insightful conversation with Kelsey Hightower reflecting on his impactful car
 
 {{<youtube-lite id="pMdnS8I18Ts" title="1.1.6 Michał Leszczyński - [PL] [CVE-2026-9058] Pełne ominięcie uwierzytelniania w ZUS, e-Sądzie... - YouTube">}}
 
-### [VibeOS - Fully Hallucinated Operating System - YouTube](https://www.youtube.com/watch?v=z3pV6FHvcgM)
+### [VibeOS - Fully Hallucinated Operating System - YouTube](https://www.youtube.com/watch?v=7NfyZhV1dKM)
 
-{{<youtube-lite id="z3pV6FHvcgM" title="VibeOS - Fully Hallucinated Operating System - YouTube">}}
+{{<youtube-lite id="7NfyZhV1dKM" title="VibeOS - Fully Hallucinated Operating System - YouTube">}}
 
 ### [AI w walce z oszustami - YouTube](https://www.youtube.com/watch?v=eHcwNojjazU)
 

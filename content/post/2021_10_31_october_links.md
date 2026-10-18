@@ -91,10 +91,10 @@ Some of them are strictly related to the things I did or am currently doing.
 
 {{<youtube-lite id="dXCh8m4P5Tc" title="Tarun Garg - Design Django models such that your future self will thank you 👋 - DjangoCon US 2021">}}
 
-### [Principles of System Integration](https://www.youtube.com/watch?v=Cv3rQYgM-1I)
+### [Principles of System Integration](https://www.youtube.com/watch?v=hSycD0aK1so)
 
-{{<youtube-lite id="Cv3rQYgM-1I" title="Principles of System Integration">}}
+{{<youtube-lite id="hSycD0aK1so" title="Principles of System Integration">}}
 
-### [Pointers? In my Python? (It's More Likely Than You Think)](https://www.youtube.com/watch?v=xngMG5HDgUU)
+### [Pointers? In my Python? (It's More Likely Than You Think)](https://www.youtube.com/watch?v=Nu6hy1Vgr90)
 
-{{<youtube-lite id="xngMG5HDgUU" title="Pointers? In my Python? (It's More Likely Than You Think)">}}
+{{<youtube-lite id="Nu6hy1Vgr90" title="Pointers? In my Python? (It's More Likely Than You Think)">}}

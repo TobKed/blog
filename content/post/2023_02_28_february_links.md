@@ -78,6 +78,6 @@ Some of them are strictly related to the things I did or am currently doing.
 
 {{<youtube-lite id="m8Icp_Cid5o" title="System Design for Beginners Course">}}
 
-### [Donella (Dana) Meadows - Lecture: Sustainable Systems (Full version)](https://www.youtube.com/watch?v=vJ1STks8MUU)
+### [Donella (Dana) Meadows - Lecture: Sustainable Systems (Full version)](https://www.youtube.com/watch?v=hhSpzQhvFS8)
 
-{{<youtube-lite id="vJ1STks8MUU" title="Donella (Dana) Meadows - Lecture: Sustainable Systems (Full version)">}}
+{{<youtube-lite id="hhSpzQhvFS8" title="Donella (Dana) Meadows - Lecture: Sustainable Systems (Full version)">}}

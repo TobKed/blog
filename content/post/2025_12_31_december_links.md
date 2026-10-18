@@ -290,6 +290,6 @@ Anthropic is likened to Apple in the 2010s, focusing on a cohesive ecosystem rat
 
 {{<youtube-lite id="XSBDn5VhTNs" title="Nadchodzi era maszyn “świat przyspiesza jak nigdy” || Tomasz Czajka #37 - YouTube">}}
 
-### [How Two Programmers Built The Most Complex Automation Game - YouTube](https://www.youtube.com/watch?v=l7HA2HneXU4)
+### [How Two Engineers Created The Most Complex Automation Game - YouTube](https://www.youtube.com/watch?v=RFm5xNL1els)
 
-{{<youtube-lite id="l7HA2HneXU4" title="How Two Programmers Built The Most Complex Automation Game - YouTube">}}
+*The original video is gone; this re-upload can only be watched on YouTube.*
