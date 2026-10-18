@@ -7,5 +7,5 @@
     {{- $skip = strings.Contains (lower (.Page.Title | plainify)) (lower (.PlainText | strings.TrimSpace)) -}}
 {{- end -}}
 {{- if not $skip -}}
-<h{{ $level }} id="{{ .Anchor }}">{{ .Text }}{{ if site.Params.article.headingAnchor }}<a class="heading-anchor" href="#{{ .Anchor }}" aria-hidden="true" tabindex="-1">#</a>{{ end }}</h{{ $level }}>
+<h{{ $level }} id="{{ .Anchor }}">{{ .Text }}{{ if site.Params.article.headingAnchor }}<a class="heading-anchor" href="#{{ .Anchor }}" aria-hidden="true" tabindex="-1" data-pagefind-ignore>#</a>{{ end }}</h{{ $level }}>
 {{- end -}}
