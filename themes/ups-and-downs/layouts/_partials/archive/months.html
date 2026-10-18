@@ -1,9 +1,15 @@
 {{- /* A year's round-ups as month chips. Context: {pages, alt}; alt is the
-       stand-in for the cover grid, shown only while photos are off. */ -}}
+       stand-in for the cover grid, shown only while photos are off.
+       data-links holds the round-up's link titles for the archive search;
+       the cover tiles read it from here, so it ships once. */ -}}
 {{- $n := len .pages -}}
 <div class="amonths{{ if .alt }} amonths--alt{{ end }}" data-group>
     <span class="amonths__note">{{ $n }} round-up{{ if ne $n 1 }}s{{ end }}</span>
     <div class="amonths__grid">
-        {{ range .pages }}<a href="{{ .RelPermalink }}" aria-label="{{ .Title }}" data-kind="roundup" data-title="{{ lower .Title }}">{{ .Date.Format "Jan" }}</a>{{ end }}
+        {{ range .pages }}
+            {{- $links := slice -}}
+            {{- range (partialCached "roundup.html" . .).sections }}{{ range .items }}{{ $links = $links | append (lower .title) }}{{ end }}{{ end -}}
+            <a href="{{ .RelPermalink }}" aria-label="{{ .Title }}" data-kind="roundup" data-title="{{ lower .Title }}" data-links="{{ delimit $links "\n" }}">{{ .Date.Format "Jan" }}</a>
+        {{- end }}
     </div>
 </div>

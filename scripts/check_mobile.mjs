@@ -192,6 +192,14 @@ const ESSAY = '/enum-and-dataclass/';
   check('archive filter narrows the list',
     await s.eval(`(()=>{const shown=[...document.querySelectorAll('li[data-kind]')].filter(e => e.offsetParent);
       return shown.length > 0 && shown.every(e => e.dataset.kind === 'summary');})()`));
+  await s.tap('[data-filter=""]');
+  check('archive search finds round-ups by a link title',
+    await s.eval(`(()=>{const titles=[...document.querySelectorAll('[data-title]')].map(e => e.dataset.title);
+      const q=[...document.querySelectorAll('[data-links]')].flatMap(a => a.dataset.links.split('\\n'))
+        .find(t => t.length > 12 && !titles.some(x => x.includes(t)));
+      const i=document.querySelector('.archive__bar input'); i.value=q; i.dispatchEvent(new Event('input'));
+      const shown=[...document.querySelectorAll('[data-kind]')].filter(e => e.offsetParent);
+      return shown.length > 0 && shown.every(e => (e.getAttribute('href') || '').includes('#:~:text='));})()`));
 
   await s.go('/tags/');
   check('no taxonomy term lists zero posts',
