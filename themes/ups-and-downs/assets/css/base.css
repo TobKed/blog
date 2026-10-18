@@ -218,7 +218,8 @@ button { font: inherit; }
   text-align: right;
   font-family: var(--mono);
   font-size: 12px;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   color: var(--muted);
   text-wrap: balance;
 }

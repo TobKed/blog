@@ -3,7 +3,7 @@
         {{ with partial "cover-img.html" (dict "page" . "class" "about__img" "eager" true) }}
             <figure class="about__photo photo bleed">
                 {{ . }}
-                {{ with $.Params.image_credit }}<figcaption class="cover-cap">Photo by {{ . | markdownify }}</figcaption>{{ end }}
+                {{ partial "cover-caption.html" $ }}
             </figure>
         {{ end }}
 
