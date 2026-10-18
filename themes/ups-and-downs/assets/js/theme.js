@@ -49,6 +49,7 @@
     photoBtns.forEach(function (b) {
       b.setAttribute('aria-pressed', String(on));
       b.title = on ? 'Hide cover photos' : 'Show cover photos';
+      b.querySelector('.toggle__label').textContent = on ? 'Photos on' : 'Photos off';
     });
   }
   photoBtns.forEach(function (b) {

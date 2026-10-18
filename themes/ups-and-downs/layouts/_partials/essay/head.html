@@ -1,6 +1,6 @@
 {{- /* Title block shared by posts and static pages. Context: dict page, kicker, date (bool). */ -}}
 {{- $p := .page -}}
-<header class="essay-head">
+<header class="essay-head" id="top">
     <span class="eyebrow essay-head__kicker">{{ .kicker }}</span>
     <h1 class="essay-head__title display" data-pagefind-meta="title">{{ $p.Title }}</h1>
     {{- if or $p.Params.summary .date }}

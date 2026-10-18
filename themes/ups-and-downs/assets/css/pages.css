@@ -14,7 +14,7 @@
   justify-content: flex-end;
   padding: 10px 0 0;
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--muted);
@@ -273,7 +273,7 @@ a.talk:hover .talk__meta { color: var(--muted); }
     display: block;
     padding: 8px var(--gutter) 0;
     text-align: right;
-    font-size: 10px;
+    font-size: 11px;
   }
 
   .about__intro { flex-direction: column; flex-wrap: nowrap; gap: 36px; padding: 24px 0 36px; }
@@ -323,7 +323,7 @@ a.talk:hover .talk__meta { color: var(--muted); }
   .bars { gap: 8px; height: 170px; }
   .bars__col { gap: 4px; }
   .bars__n,
-  .bars__years { font-size: 10px; }
+  .bars__years { font-size: 11px; }
   .bars__years { gap: 8px; }
   .numbers__cap { font-size: 11px; }
   .bars__full { display: none; }
@@ -470,7 +470,7 @@ a.talk:hover .talk__meta { color: var(--muted); }
 .acover--next .acover__img { border: 1px dashed var(--dash-2); }
 .acover__m {
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -488,7 +488,7 @@ a.talk:hover .talk__meta { color: var(--muted); }
 .amonths__note {
   margin-right: 8px;
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--muted);
@@ -527,7 +527,7 @@ a.talk:hover .talk__meta { color: var(--muted); }
 .arow__kind {
   grid-area: kind;
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--muted);
@@ -571,13 +571,13 @@ a.talk:hover .talk__meta { color: var(--muted); }
 
   .acovers { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px 8px; }
   .acover { gap: 4px; }
-  .acover__m { font-size: 10px; }
+  .acover__m { font-size: 11px; }
 
   .amonths { flex-direction: column; flex-wrap: nowrap; align-items: stretch; gap: 8px; }
   .amonths--alt { display: none; }
   [data-photos="off"] .amonths--alt { display: flex; }
   .amonths__grid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 6px; }
-  .amonths__note { margin-right: 0; font-size: 10px; }
+  .amonths__note { margin-right: 0; font-size: 11px; }
   .amonths__grid a { min-width: 0; min-height: 44px; padding: 0; font-size: 11px; letter-spacing: 0; }
 
   .alist { display: flex; flex-direction: column; gap: 14px; }
@@ -591,7 +591,7 @@ a.talk:hover .talk__meta { color: var(--muted); }
   .arow__title { font-size: 19px; }
   .arow__title::after { content: ""; position: absolute; inset: 0; }
   .arow__date,
-  .arow__kind { font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase; }
+  .arow__kind { font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; }
   .arow__date::after { content: "\00a0·\00a0"; }
   .arow--essay .arow__date { color: var(--accent); }
 }

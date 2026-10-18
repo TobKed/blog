@@ -7,7 +7,7 @@
 {{- $photosBtn := "" -}}
 {{- if site.Params.coverImages.toggle -}}
     {{- $on := ne site.Params.coverImages.default "hidden" -}}
-    {{- $photosBtn = printf `<button class="toggle js-photos" type="button" aria-pressed="%t" title="%s"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="1.5"/><circle cx="9" cy="10" r="1.6"/><polyline points="21,16 15,11 6,19"/></svg>Photos</button>` $on (cond $on "Hide cover photos" "Show cover photos") -}}
+    {{- $photosBtn = printf `<button class="toggle js-photos" type="button" aria-pressed="%t" title="%s"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="1.5"/><circle cx="9" cy="10" r="1.6"/><polyline points="21,16 15,11 6,19"/></svg><span class="toggle__label">Photos %s</span></button>` $on (cond $on "Hide cover photos" "Show cover photos") (cond $on "on" "off") -}}
 {{- end -}}
 <header class="masthead{{ if .IsHome }} masthead--home{{ end }}">
     {{ $avatar := false }}

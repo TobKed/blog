@@ -21,7 +21,7 @@
     </figure>
     {{- end }}
 
-    <header class="issue-head{{ with $cover }} issue-head--overlap{{ end }}">
+    <header class="issue-head{{ with $cover }} issue-head--overlap{{ end }}" id="top">
         <span class="issue-kicker">Month summary<span class="issue-dt"> · Issue of {{ .Date.Format "January 2006" }}</span></span>
         <h1 data-pagefind-meta="title">{{ replace .Title " - " (printf "%c— " 160) }}</h1>
         <div class="issue-meta">
@@ -33,15 +33,18 @@
 
     <div class="issue-layout">
         <aside class="issue-aside" data-pagefind-ignore>
-            {{- with $sections }}
-            <nav class="issue-toc" aria-label="Contents">
-                <h2>Contents</h2>
-                {{- range $i, $s := . }}
-                <a href="#{{ $s.id }}"{{ if eq $i 0 }} class="is-first"{{ end }}><span>{{ $s.name }}</span>{{ with $s.count }}<span class="issue-toc__n">{{ . }}</span>{{ end }}</a>
+            <div class="issue-aside__inner">
+                {{- with $sections }}
+                <nav class="issue-toc" aria-label="Contents">
+                    <h2>Contents</h2>
+                    {{- range $i, $s := . }}
+                    <a href="#{{ $s.id }}"{{ if eq $i 0 }} class="is-first"{{ end }}><span>{{ $s.name }}</span>{{ with $s.count }}<span class="issue-toc__n">{{ . }}</span>{{ end }}</a>
+                    {{- end }}
+                </nav>
+                <a class="back-top" href="#top">↑ Back to top</a>
                 {{- end }}
-            </nav>
-            {{- end }}
-            {{ partial "issue/legend.html" (dict "kinds" $kinds "class" "issue-legend--side") }}
+                {{ partial "issue/legend.html" (dict "kinds" $kinds "class" "issue-legend--side") }}
+            </div>
         </aside>
 
         <article class="issue-article">
