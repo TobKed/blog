@@ -1,6 +1,6 @@
 {{- /* "On the record": front matter `talks` and `certifications`. */ -}}
 {{- $talks := .Params.talks -}}
-{{- $certs := .Params.certifications -}}
+{{- $certs := sort (.Params.certifications | default slice) "year" "desc" -}}
 {{- $credly := "" -}}
 {{- range site.Menus.social }}{{ if strings.Contains .URL "credly.com" }}{{ $credly = .URL }}{{ end }}{{ end -}}
 {{ if or $talks $certs }}

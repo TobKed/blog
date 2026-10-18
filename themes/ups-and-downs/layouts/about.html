@@ -3,7 +3,7 @@
         {{ with partial "cover-img.html" (dict "page" . "class" "about__img" "alt" (.Params.imageAlt | default "") "eager" true) }}
             <figure class="about__photo photo bleed">
                 {{ . }}
-                {{ with $.Params.caption }}<figcaption>{{ . }}</figcaption>{{ end }}
+                {{ with $.Params.caption }}<figcaption><span>{{ . | markdownify }}</span></figcaption>{{ end }}
             </figure>
         {{ end }}
 

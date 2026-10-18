@@ -19,6 +19,8 @@
   text-transform: uppercase;
   color: var(--muted);
 }
+.about__photo figcaption a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+.about__photo figcaption a:hover { color: var(--accent); }
 
 .about__intro {
   display: flex;

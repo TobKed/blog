@@ -39,7 +39,6 @@ tagline = "Python, Django, the cloud, and other interesting things — computer-
 
 [params.footer]
 since = 2018
-customText = "Profile photo by <a href=\"https://juliakaczorowska.pl/\">Julia Kaczorowska</a> (other photos by me)."
 
 [params.epigraph]
 title = "Why “ups and downs”?"
