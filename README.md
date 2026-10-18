@@ -6,9 +6,7 @@
 
 - https://github.com/gohugoio/hugo
 
-used theme (git submodule under `themes/`):
-
-- https://github.com/CaiJimmy/hugo-theme-stack
+Theme: `ups-and-downs`, written for this blog, in-repo under `themes/`.
 
 Requires Hugo **extended** 0.146+ (CI pins 0.165.0).
 
@@ -18,7 +16,6 @@ Hugo is pinned in `mise.toml`, Python in `.python-version`:
 mise install    # or: brew install hugo
 uv venv
 uv pip install -r requirements.txt
-git submodule update --init --recursive
 ```
 
 ```bash

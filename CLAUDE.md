@@ -6,8 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Personal blog (blog.tobked.dev) built with [Hugo](https://github.com/gohugoio/hugo). Content is
 Markdown with YAML front matter in `content/`, theme is `ups-and-downs` under `themes/` (written
-for this blog, lives in-repo). The previous theme, the `hugo-theme-stack` git submodule, is still
-checked out beside it but unused. Output is generated into `public/` and deployed to the `gh-pages` branch by CI.
+for this blog, lives in-repo). Output is generated into `public/` and deployed to the `gh-pages` branch by CI.
 
 Requires Hugo **extended** 0.146 or newer; CI pins 0.165.0. `mise.toml` pins Hugo locally
 (`mise install`); Python is pinned in `.python-version` and managed with `uv`
@@ -41,7 +40,7 @@ broken links (two-phase: fast `requests` pass, then `selenium` re-check of failu
 - `content/pages/*.md` — static pages, served at `/pages/<slug>/`
 - `content/tags/`, `content/categories/` — term stubs that only carry `aliases` redirecting the old Pelican `/tag/<x>` and `/category/<x>` URLs
 - `content/search.md` — the search page; `ups-and-downs` renders it with pagefind, so results only appear in a build that ran `npx pagefind` (`make publish` / `make preview` / CI), not under `make serve`
-- `static/images/`, `static/audio/`, `static/css/` — static assets, copied verbatim to the site root
+- `static/images/`, `static/audio/` — static assets, copied verbatim to the site root
 - `layouts/home.rss.xml`, `layouts/home.atom.xml` — feeds published at `/feeds/all.rss.xml` and `/feeds/all.atom.xml` (the URLs the Pelican site used)
 - `hugo.toml` — all configuration: permalinks, menus, social links, feeds, highlighting
 
@@ -80,8 +79,7 @@ mdformat (pre-commit) escapes `{{< ` and `\"`, which breaks the shortcode.
 
 ## Notes
 
-- `themes/ups-and-downs/` is the active theme and is committed to this repo; `themes/hugo-theme-stack` is the old theme, a git submodule (`git submodule update --init --recursive` if it's missing). `.gitignore` ignores `themes/*` and allows those two by name.
-- `layouts/_partials/sidebar/left.html`, `assets/scss/custom.scss` and `static/css/main.css` only apply to `hugo-theme-stack`; `ups-and-downs` ignores them.
+- `themes/ups-and-downs/` is the theme and is committed to this repo; `.gitignore` ignores `themes/*` and allows it by name.
 - `themes/ups-and-downs/hugo.toml` holds the theme's default params, which Hugo merges under the site's `hugo.toml` — the site only has to set what it changes. `[params.colorScheme]` and `[params.coverImages]` each take a `default` (what a visitor first sees) and a `toggle` (whether the header offers a button, whose result is remembered per reader). `[params.linkSections]` folds long round-up sections: `foldAfter` links stay visible (0 never folds), `keepFirstOpen` leaves the first section whole.
 - The theme tells post kinds apart by slug (`_partials/post-kind.html`): `*-links` is a monthly round-up, `*-summary` a year summary, anything else an essay; front matter `kind` overrides. Round-ups are rendered from `_partials/roundup.html`, which parses their `## Section` / `### [title](url)` structure, so keep new round-ups in that shape. The About page is whichever page sets `layout: about`.
 - Agent skills: every agent tool used here looks in a different project directory, so the skill body
