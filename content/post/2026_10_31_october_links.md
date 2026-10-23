@@ -73,6 +73,10 @@ ______________________________________________________________________
 
 > Type a handle into a signup form and a green tick or a red cross appears almost before you stop typing, checked against a billion names. It isn't one clever database query. It's a debounced client, a Bloom filter that answers 'definitely free' from memory, an index for everything else, and a unique constraint that has the final say.
 
+### [Vice Console: What I Self-Host](https://viceconsole.fyi/blog/2026/10/10/what-i-self-host/)
+
+> So, I “cut the cord” in a different sense, ditching streaming services for self-hosted Jellyfin. Over the course of the next year and a half, Jellyfin opened the door to self-hosting many other services, reducing my dependence on cloud service providers, and providing a welcome stability.
+
 ### [A Life Engineered: Worth Repeating: The Art of Showing Up](https://alifeengineered.substack.com/p/worth-repeating-the-art-of-showing)
 
 > The fastest way to get things done is to forget the finish line.
@@ -88,6 +92,14 @@ ______________________________________________________________________
 ### [A Life Engineered: Worth Repeating: How I Have Time For Everything](https://alifeengineered.substack.com/p/worth-repeating-how-i-have-time-for)
 
 > Having time for everything isn't about fitting more into your day; it's about ruthlessly eliminating what doesn't matter and fiercely protecting your slack.
+
+### [A Life Engineered: On the Death of Amazon’s Writing Culture](https://alifeengineered.substack.com/p/on-the-death-of-amazons-writing-culture)
+
+> With AI, you can trivially produce six pages, no critical thinking required. But that writing process, as described (and prescribed) by Bezos, used to guarantee that the author of a memo would have done the necessary thinking before asking for an hour of everybody’s time. That guarantee has gone.
+
+### [A Life Engineered: You Are What You Read](https://alifeengineered.substack.com/p/you-are-what-you-read)
+
+> A six-page memo worthy of an Amazon presentation would take at least a week to write. Nobody spent a week on something they didn’t care about, so the fact that a document existed at all told you something about the effort that had gone into it. That world has gone. Why? Because now that writing is essentially free, it has lost its underlying value.
 
 ## Productivity
 
@@ -145,6 +157,10 @@ ______________________________________________________________________
 
 > I shipped a new feature for my blog: the Newsletters page, which offers an index of all of the newsletters I’ve sent out. I built the feature almost entirely using my voice, chatting away to my laptop while I cooked dinner.
 
+### [Context First: Superlite: Hand an Agent a Spec, Come Back to Tested Work](https://contextfirst.blog/superlite-hand-an-agent-a-spec/)
+
+> Why I built superlite, an autonomous build workflow for Claude Code that doesn't ask permission every four minutes: how it works, how to use it, and the benchmarks.
+
 ## Security
 
 ## Python
@@ -175,6 +191,14 @@ ______________________________________________________________________
 
 > Firecracker is an open source virtualization technology that is purpose-built for creating and managing secure, multi-tenant container and function-based services that provide serverless operational models.
 
+### [GitHub - virgiliojr94/book-to-skill](https://github.com/virgiliojr94/book-to-skill)
+
+> Turn any technical book, document folder, or collection of sources into a unified agent skill — ready to study, reference, and use while you work in GitHub Copilot CLI, Amp, Claude Code, Codex, Hermes Agent, OpenCode, or OpenClaw.
+
+### [GitHub - mother-of-all-self-hosting/mash-playbook](https://github.com/mother-of-all-self-hosting/mash-playbook)
+
+> MASH (Mother-of-All-Self-Hosting) is an Ansible playbook that helps you self-host services as Docker containers on your own server.
+
 ## Cloud
 
 ## Other stuff
@@ -194,5 +218,17 @@ ______________________________________________________________________
 ### [The Diary Of A CEO: Ex-Google Officer: You Only Have 3 Years Left Before It Hits! - Mo Gawdat](https://youtu.be/RwlgFC6S-OE)
 
 {{<youtube-lite id="RwlgFC6S-OE" title="The Diary Of A CEO: Ex-Google Officer: You Only Have 3 Years Left Before It Hits! - Mo Gawdat">}}
+
+### [Beyond Coding: Why The Best Software Engineers Focus On System Design](https://youtu.be/LeUUxLRdvho)
+
+{{<youtube-lite id="LeUUxLRdvho" title="Beyond Coding: Why The Best Software Engineers Focus On System Design">}}
+
+### [The Pragmatic Engineer: Uber’s AI infra, from the inside](https://youtu.be/MDUYSMJmi8A)
+
+{{<youtube-lite id="MDUYSMJmi8A" title="The Pragmatic Engineer: Uber’s AI infra, from the inside">}}
+
+### [A Life Engineered: What Senior Engineers Are Actually Doing About AI](https://www.youtube.com/watch?v=DF5M5CJi9sM)
+
+{{<youtube-lite id="DF5M5CJi9sM" title="A Life Engineered: What Senior Engineers Are Actually Doing About AI">}}
 
 ## 🇵🇱 Polish Corner 🇵🇱
