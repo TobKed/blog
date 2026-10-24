@@ -163,13 +163,6 @@
 .talk__meta,
 .cert__issuer { font-family: var(--mono); font-size: 12px; color: var(--muted); }
 .talk--feature { gap: 12px; padding: 0 0 18px; }
-.talk--feature .talk__title {
-  font-family: var(--serif);
-  font-size: var(--h4);
-  line-height: 1.15;
-  font-weight: 600;
-  letter-spacing: -0.02em;
-}
 .talk__img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
 a.talk:hover .talk__meta { color: var(--muted); }
 
