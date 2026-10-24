@@ -34,7 +34,14 @@
   --accent: #b8361a;
 
   --serif: 'Newsreader', Georgia, 'Times New Roman', serif;
+  --sans: 'Source Sans 3', 'Segoe UI', system-ui, sans-serif;
   --mono: 'Spline Sans Mono', ui-monospace, monospace;
+  --body: 19px;
+  --lead: calc(var(--body) + 3px);
+  --h1: clamp(44px, 6vw, 80px);
+  --h2: 44px;
+  --h3: 30px;
+  --h4: 22px;
   --gutter: 40px;
   color-scheme: light;
 }
@@ -110,7 +117,7 @@
 }
 
 @media (max-width: 640px) {
-  :root { --gutter: 20px; }
+  :root { --gutter: 20px; --body: 17px; --h2: 36px; --h3: 26px; }
 }
 
 /* ---- reset & type -------------------------------------------------------- */
@@ -123,14 +130,28 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--ink);
-  font-family: var(--serif);
-  font-size: 19px;
-  line-height: 1.55;
+  font-family: var(--sans);
+  font-size: var(--body);
+  line-height: 1.6;
   overflow-wrap: break-word;
 }
 
 a { color: var(--ink); text-decoration: none; }
 a:hover { color: var(--accent); }
+
+/* Links in running text and round-up titles; mono UI stays bare. */
+.prose a:not(.heading-anchor),
+.about__bio a,
+.issue-intro a,
+.issue-prose a,
+.issue-quote a,
+.issue-ai a,
+.issue-item h3 a {
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
 
 img { max-width: 100%; height: auto; }
 
@@ -170,15 +191,14 @@ button { font: inherit; }
 .eyebrow {
   font-family: var(--mono);
   font-size: 12px;
-  font-weight: 500;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
 .display {
+  font-family: var(--serif);
   font-weight: 600;
-  font-style: italic;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.02em;
   font-variation-settings: 'opsz' 72;
 }
 
@@ -274,7 +294,7 @@ button { font: inherit; }
 .yt__note {
   font-family: var(--mono);
   font-size: 12px;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--muted);
 }
@@ -294,11 +314,11 @@ button { font: inherit; }
 .masthead--home { padding: 20px 0; }
 
 .wordmark {
-  font-style: italic;
+  font-family: var(--serif);
   font-weight: 600;
   font-size: 30px;
   line-height: 1;
-  letter-spacing: -0.035em;
+  letter-spacing: -0.02em;
   font-variation-settings: 'opsz' 72;
 }
 
@@ -383,18 +403,18 @@ button { font: inherit; }
     padding: 10px 16px 10px 20px;
   }
   .masthead--home { padding: 10px 16px 10px 20px; }
-  .wordmark { font-size: 25px; letter-spacing: -0.04em; }
+  .wordmark { font-size: 26px; }
   .masthead__avatar img { width: 36px; height: 36px; }
 
   .chip { display: inline-flex; align-items: center; min-height: 44px; }
   /* Covers run edge to edge on phones; their caption keeps to the gutter. */
-  .cover-cap { padding: 8px var(--gutter) 0; font-size: 11px; }
+  .cover-cap { padding: 8px var(--gutter) 0; }
 
   .masthead__since {
     display: block;
     font-family: var(--mono);
-    font-size: 11px;
-    letter-spacing: 0.08em;
+    font-size: 12px;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--muted);
   }
@@ -475,7 +495,6 @@ button { font: inherit; }
     gap: 14px;
     margin-top: 40px;
     padding: 22px 0 36px;
-    font-size: 11px;
   }
   .colophon__links { gap: 4px 18px; }
   .colophon__links a { padding: 6px 0; }
