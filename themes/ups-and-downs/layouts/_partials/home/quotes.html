@@ -14,7 +14,7 @@
     <section class="home-quotes" aria-label="Quoted this month">
         {{ range sort (first 3 (sort . "len")) "i" }}{{ $q := . }}
             <figure>
-                <blockquote>“{{ .text }}”</blockquote>
+                <blockquote><span class="home-quotes__mark" aria-hidden="true">“</span><div>{{ .text }}</div></blockquote>
                 <figcaption>{{ with .domain }}<a href="{{ $q.url }}">{{ . }}</a> · {{ end }}{{ .section }}</figcaption>
             </figure>
         {{ end }}

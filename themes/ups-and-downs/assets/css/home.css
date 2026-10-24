@@ -21,11 +21,11 @@
   flex: 10 1 auto;
   margin: 0;
   text-align: center;
-  font-style: italic;
+  font-family: var(--serif);
   font-weight: 600;
-  font-size: clamp(56px, 9vw, 128px);
-  line-height: 0.88;
-  letter-spacing: -0.045em;
+  font-size: var(--h1);
+  line-height: 0.98;
+  letter-spacing: -0.035em;
   font-variation-settings: 'opsz' 72;
 }
 
@@ -34,7 +34,8 @@
   padding: 0 0 24px;
   max-width: 760px;
   text-align: center;
-  font-size: 21px;
+  font-size: var(--lead);
+  line-height: 1.5;
   color: var(--ink-3);
   text-wrap: balance;
 }
@@ -42,18 +43,18 @@
 .home-kicker {
   font-family: var(--mono);
   font-size: 12px;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--accent);
 }
 
 .home-h2 {
   margin: 0;
+  font-family: var(--serif);
   font-weight: 600;
-  font-style: italic;
-  font-size: 44px;
+  font-size: var(--h2);
   line-height: 1;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.02em;
   font-variation-settings: 'opsz' 72;
 }
 
@@ -95,17 +96,18 @@
 .home-latest__head { display: contents; }
 .home-latest__title {
   margin: 0;
+  font-family: var(--serif);
   font-weight: 600;
-  font-size: clamp(40px, 5vw, 66px);
+  font-size: var(--h2);
   line-height: 1;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.02em;
   font-variation-settings: 'opsz' 72;
   text-wrap: balance;
 }
 .home-latest__lead {
   margin: 0;
-  font-size: 22px;
-  line-height: 1.45;
+  font-size: var(--lead);
+  line-height: 1.5;
   color: var(--ink-3);
   text-wrap: pretty;
 }
@@ -120,8 +122,8 @@
   background: var(--inv-bg);
   color: var(--inv-ink);
   font-family: var(--mono);
-  font-size: 13px;
-  letter-spacing: 0.04em;
+  font-size: 12px;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 .home-latest__btn:hover { color: var(--inv-ink); background: var(--accent); }
@@ -146,8 +148,7 @@
   margin: 0 0 6px;
   font-family: var(--mono);
   font-size: 12px;
-  font-weight: 500;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 .home-toc a {
@@ -159,9 +160,9 @@
 }
 .home-toc__n {
   min-width: 40px;
-  font-size: 26px;
-  font-weight: 600;
-  font-style: italic;
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.06em;
   color: var(--accent);
 }
 .home-toc__name { flex: 1; font-size: 21px; }
@@ -185,11 +186,13 @@
 }
 .home-quotes blockquote {
   margin: 0;
-  font-size: 26px;
-  line-height: 1.3;
-  font-style: italic;
+  display: grid;
+  grid-template-columns: 30px minmax(0, 1fr);
+  font-size: 21px;
+  line-height: 1.45;
   text-wrap: pretty;
 }
+.home-quotes__mark { font-size: 50px; line-height: 0.85; font-weight: 600; color: var(--accent); }
 .home-quotes figcaption {
   font-family: var(--mono);
   font-size: 12px;
@@ -261,7 +264,7 @@
   align-items: baseline;
   gap: 0 8px;
 }
-.home-back__month { font-size: 22px; font-weight: 600; }
+.home-back__month { font-family: var(--serif); font-size: var(--h4); font-weight: 600; letter-spacing: -0.02em; }
 .home-back__min {
   font-family: var(--mono);
   font-size: 12px;
@@ -301,16 +304,17 @@
 .home-year__kicker {
   font-family: var(--mono);
   font-size: 12px;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--card-muted);
 }
 .home-year__title {
-  font-size: 44px;
+  font-family: var(--serif);
+  font-size: var(--h2);
   line-height: 1;
   font-weight: 600;
-  font-style: italic;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.02em;
+  font-variation-settings: 'opsz' 72;
 }
 .home-year__sub { font-size: 20px; color: var(--card-sub); }
 
@@ -347,7 +351,7 @@
   padding: 16px 0;
   border-bottom: 1px solid var(--rule);
 }
-.home-essays__list a { font-size: 21px; font-weight: 500; line-height: 1.3; }
+.home-essays__list a { font-size: 21px; font-weight: 600; line-height: 1.3; }
 
 /* ---- epigraph ----------------------------------------------------------- */
 
@@ -362,7 +366,7 @@
   flex: 1 1 240px;
   font-family: var(--mono);
   font-size: 12px;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--muted);
 }
@@ -375,9 +379,8 @@
 }
 .home-epigraph blockquote {
   margin: 0;
-  font-size: 30px;
-  line-height: 1.3;
-  font-style: italic;
+  font-size: clamp(22px, 2.4vw, 26px);
+  line-height: 1.4;
   text-wrap: pretty;
 }
 .home-epigraph figcaption {
@@ -400,11 +403,11 @@
 }
 .home-list__title {
   margin: 0;
+  font-family: var(--serif);
   font-weight: 600;
-  font-style: italic;
-  font-size: clamp(44px, 6vw, 72px);
-  line-height: 0.95;
-  letter-spacing: -0.04em;
+  font-size: var(--h1);
+  line-height: 0.98;
+  letter-spacing: -0.035em;
   font-variation-settings: 'opsz' 72;
 }
 .home-list__pos {
@@ -424,7 +427,7 @@
   padding: 16px 0;
   border-bottom: 1px solid var(--rule);
 }
-.home-list__items a { flex: 1 1 420px; min-width: 0; font-size: 21px; font-weight: 500; line-height: 1.3; }
+.home-list__items a { flex: 1 1 420px; min-width: 0; font-size: 21px; font-weight: 600; line-height: 1.3; }
 
 .pager {
   display: flex;
@@ -460,28 +463,13 @@
     padding: 28px 0 8px;
     text-align: center;
   }
-  .home-mast__side {
-    flex: 0 0 auto;
-    font-size: 11px;
-    letter-spacing: 0.08em;
-  }
+  .home-mast__side { flex: 0 0 auto; }
   .home-mast__side:not(.home-mast__side--end) { display: none; }
   .home-mast__title {
     order: 3;
     flex: 1 1 100%;
-    font-size: 62px;
-    line-height: 0.9;
-    letter-spacing: -0.05em;
   }
-  .home-tagline {
-    padding: 12px 4px 26px;
-    font-size: 17px;
-    line-height: 1.45;
-  }
-
-  .home-kicker { font-size: 11px; }
-  .home-h2 { font-size: 32px; }
-  .home-meta { font-size: 11px; }
+  .home-tagline { padding: 12px 4px 26px; }
 
   .home-cover { margin: 0 calc(-1 * var(--gutter)); }
   .home-cover img { aspect-ratio: 4 / 3; }
@@ -505,8 +493,6 @@
   }
   .home-latest--cover .home-latest__head { margin-top: -56px; }
   [data-photos="off"] .home-latest--cover .home-latest__head { margin-top: 0; }
-  .home-latest__title { font-size: 36px; }
-  .home-latest__lead { font-size: 18px; }
   .home-latest__btn {
     align-self: stretch;
     justify-content: center;
@@ -515,9 +501,9 @@
   }
 
   .home-toc { padding: 32px 0 8px; }
-  .home-toc__title { margin: 0 0 4px; font-size: 11px; }
+  .home-toc__title { margin: 0 0 4px; }
   .home-toc a { min-height: 44px; padding: 10px 0; }
-  .home-toc__n { min-width: 32px; font-size: 22px; }
+  .home-toc__n { min-width: 32px; }
   .home-toc__name { font-size: 19px; }
 
   .home-quotes {
@@ -528,12 +514,12 @@
     padding: 32px 0;
   }
   .home-quotes figure { gap: 8px; }
-  .home-quotes blockquote { font-size: 22px; }
-  .home-quotes figcaption { font-size: 11px; }
+  .home-quotes blockquote { grid-template-columns: 22px minmax(0, 1fr); font-size: 19px; }
+  .home-quotes__mark { font-size: 40px; }
 
   .home-back { gap: 18px; padding: 36px 0 0; }
   .home-back__head { flex-wrap: nowrap; }
-  .home-more { display: flex; align-items: center; min-height: 44px; font-size: 11px; }
+  .home-more { display: flex; align-items: center; min-height: 44px; white-space: nowrap; }
   .home-back__grid {
     display: flex;
     gap: 14px;
@@ -542,8 +528,6 @@
     padding: 0 var(--gutter) 4px;
   }
   .home-back__item { flex: 0 0 148px; gap: 8px; }
-  .home-back__month { font-size: 18px; }
-  .home-back__min { font-size: 11px; }
   [data-photos="off"] .home-back__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -555,8 +539,6 @@
   .home-year { flex-direction: column; flex-wrap: nowrap; margin-top: 14px; }
   .home-year__img { flex: none; width: 100%; height: auto; aspect-ratio: 16 / 9; }
   .home-year__body { flex: none; gap: 6px; padding: 18px 18px 22px; }
-  .home-year__kicker { font-size: 11px; }
-  .home-year__title { font-size: 30px; }
   .home-year__sub { font-size: 17px; color: var(--card-muted); }
 
   .home-essays {
@@ -579,10 +561,8 @@
     margin-top: 40px;
     padding: 28px 0 0;
   }
-  .home-epigraph__label { flex: none; font-size: 11px; }
+  .home-epigraph__label { flex: none; }
   .home-epigraph__fig { flex: none; }
-  .home-epigraph blockquote { font-size: 24px; }
-  .home-epigraph figcaption { font-size: 11px; }
 
   .home-list { padding: 28px 0 0; }
   .home-list__items a { flex-basis: 100%; font-size: 19px; }

@@ -6,15 +6,13 @@
 .chroma .s, .chroma .sa, .chroma .sb, .chroma .sc, .chroma .dl, .chroma .sd, .chroma .s2, .chroma .se,
 .chroma .sh, .chroma .si, .chroma .sx, .chroma .sr, .chroma .s1, .chroma .ss { color: #b9d88f; }
 .chroma .m, .chroma .mb, .chroma .mf, .chroma .mh, .chroma .mi, .chroma .il, .chroma .mo { color: #e9c46a; }
-.chroma .c, .chroma .ch, .chroma .cm, .chroma .c1, .chroma .cs, .chroma .cp, .chroma .cpf { color: #9a9285; font-style: italic; }
+.chroma .c, .chroma .ch, .chroma .cm, .chroma .c1, .chroma .cs, .chroma .cp, .chroma .cpf { color: #9a9285; }
 .chroma .nf, .chroma .fm, .chroma .nc, .chroma .nb, .chroma .bp, .chroma .nd, .chroma .ne, .chroma .na { color: #8fc3e8; }
 .chroma .gp { color: #948c80; }
 .chroma .go { color: #c9c2b6; }
 .chroma .gd { color: #f2a07b; }
 .chroma .gi { color: #b9d88f; }
-.chroma .gh, .chroma .gu { color: #8fc3e8; font-weight: 500; }
-.chroma .ge { font-style: italic; }
-.chroma .gs { font-weight: 500; }
+.chroma .gh, .chroma .gu { color: #8fc3e8; }
 .chroma .err { color: inherit; background: none; }
 .chroma .hl { display: block; background: rgba(255, 255, 255, 0.06); }
 .chroma .ln, .chroma .lnt { margin-right: 1em; color: #7d766b; user-select: none; }
