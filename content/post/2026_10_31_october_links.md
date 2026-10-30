@@ -165,6 +165,14 @@ ______________________________________________________________________
 
 > Nathen Harvey shares insights from DORA research on AI adoption in software delivery. He explains why AI acts as an amplifier, how the DORA AI Capabilities Model drives outcomes, and why engineering leaders must evolve beyond bottlenecks like code reviews to achieve sustainable productivity, reduce delivery instability, and empower developers without burning out their teams.
 
+### [Cloudflare Blog: Cutting our inference bill by 68% by being obsessive about optimization](https://blog.cloudflare.com/obsessive-inference-optimization/)
+
+> With code quality at high effort, the average review now costs just $0.77, down 68% from the $2.43 it averaged over our two most expensive weeks before we started. Our main goal was to cut costs, but as part of this work we also managed to optimize the reviewer, so that the median review now takes just 1m 32s instead of the 4m 09s it took before.
+
+### [Orestis Ioannou: AI Promised Less Work. I Have Never Worked More.](https://oioannou.com/blog/ai-promised-less-work/)
+
+> Somewhere this year I noticed that I am working more than I ever have, and that it feels heavier than it used to. Not because any single task is harder. Because there are so many more of them, all at once.
+
 ## Security
 
 ## Python
@@ -235,4 +243,12 @@ ______________________________________________________________________
 
 {{<youtube-lite id="DF5M5CJi9sM" title="A Life Engineered: What Senior Engineers Are Actually Doing About AI">}}
 
+### [AI Engineer: AI Writes the Code. So What's Left for Engineers? - Laurie Voss, Arize AI](https://youtu.be/kspZP5BgkEU)
+
+{{<youtube-lite id="kspZP5BgkEU" title="AI Engineer: AI Writes the Code. So What's Left for Engineers? - Laurie Voss, Arize AI">}}
+
 ## 🇵🇱 Polish Corner 🇵🇱
+
+### [Pasja informatyki: Kod produktywności (#2) O pułapce overthinkingu, rola teraźniejszości w pracy i treningu](https://youtu.be/wxjFMQBxUNU)
+
+{{<youtube-lite id="wxjFMQBxUNU" title="Pasja informatyki: Kod produktywności (#2) O pułapce overthinkingu, rola teraźniejszości w pracy i treningu">}}
