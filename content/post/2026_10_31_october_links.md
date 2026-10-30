@@ -161,6 +161,10 @@ ______________________________________________________________________
 
 > Why I built superlite, an autonomous build workflow for Claude Code that doesn't ask permission every four minutes: how it works, how to use it, and the benchmarks.
 
+### [InfoQ: AI is an Amplifier: Scale High Performance, Not Dysfunction](https://www.infoq.com/presentations/dora-ai-adoption-engineering-performance/)
+
+> Nathen Harvey shares insights from DORA research on AI adoption in software delivery. He explains why AI acts as an amplifier, how the DORA AI Capabilities Model drives outcomes, and why engineering leaders must evolve beyond bottlenecks like code reviews to achieve sustainable productivity, reduce delivery instability, and empower developers without burning out their teams.
+
 ## Security
 
 ## Python
