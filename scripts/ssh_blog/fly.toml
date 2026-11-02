@@ -1,0 +1,19 @@
+app = "tobked-ssh-blog"
+primary_region = "fra"
+
+[[services]]
+  internal_port = 2222
+  protocol = "tcp"
+  auto_stop_machines = "stop"
+  auto_start_machines = true
+
+  [services.concurrency]
+    type = "connections"
+    hard_limit = 100
+
+  [[services.ports]]
+    port = 22
+
+[[vm]]
+  size = "shared-cpu-1x"
+  memory = "256mb"

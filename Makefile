@@ -1,5 +1,6 @@
 PY?=python3
 HUGO?=hugo
+FLY?=fly
 
 BASEDIR=$(CURDIR)
 OUTPUTDIR=$(BASEDIR)/public
@@ -53,3 +54,21 @@ check_links: ## report duplicated links across posts
 .PHONY: check_theme
 check_theme: ## theme regression checks against a running `make preview`
 	node scripts/check_mobile.mjs $(URL)
+
+.PHONY: ssh_blog
+ssh_blog: ## serve the blog over SSH at localhost:2222
+	cd scripts/ssh_blog && go run .
+
+.PHONY: ssh_blog_docker
+ssh_blog_docker: ## run the SSH blog in Docker at 127.0.0.1:2222
+	docker build -f scripts/ssh_blog/Dockerfile -t ssh-blog .
+	docker rm -f ssh-blog 2>/dev/null || true
+	docker run -d --name ssh-blog --read-only --cap-drop ALL --security-opt no-new-privileges \
+		-p 127.0.0.1:2222:2222 -v ssh-blog-data:/data ssh-blog
+
+.PHONY: ssh_blog_fly
+ssh_blog_fly: ## deploy the SSH blog to Fly.io (see scripts/ssh_blog/README.md)
+	img=registry.fly.io/tobked-ssh-blog:$$(date +%Y%m%d%H%M%S) && \
+	docker build --platform linux/amd64 -f scripts/ssh_blog/Dockerfile -t $$img . && \
+	$(FLY) auth docker && docker push $$img && \
+	$(FLY) deploy -c scripts/ssh_blog/fly.toml --image $$img --ha=false

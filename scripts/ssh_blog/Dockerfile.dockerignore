@@ -1,0 +1,5 @@
+*
+!scripts/ssh_blog/
+!hugo.toml
+!content/post/
+!content/pages/
