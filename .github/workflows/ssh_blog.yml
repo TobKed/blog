@@ -7,6 +7,7 @@ on:
       - content/post/**
       - content/pages/**
       - hugo.toml
+      - Makefile
       - scripts/ssh_blog/**
       - .github/workflows/ssh_blog.yml
   push:
@@ -16,8 +17,12 @@ on:
       - content/post/**
       - content/pages/**
       - hugo.toml
+      - Makefile
       - scripts/ssh_blog/**
       - .github/workflows/ssh_blog.yml
+
+permissions:
+  contents: read
 
 concurrency:
   group: ssh-blog-${{ github.ref }}
@@ -34,6 +39,8 @@ jobs:
           go-version-file: scripts/ssh_blog/go.mod
           cache-dependency-path: scripts/ssh_blog/go.sum
       - run: go test ./...
+        working-directory: scripts/ssh_blog
+      - run: go run golang.org/x/vuln/cmd/govulncheck@latest ./...
         working-directory: scripts/ssh_blog
 
   deploy:

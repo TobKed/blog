@@ -49,8 +49,9 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 	switch msg := msg.(type) {
 	case tea.WindowSizeMsg:
 		m.list.SetSize(msg.Width, msg.Height)
+		rewrap := msg.Width != m.vp.Width
 		m.vp.Width, m.vp.Height = msg.Width, msg.Height-1
-		if m.reading != nil {
+		if m.reading != nil && rewrap {
 			m.vp.SetContent(m.render(*m.reading))
 		}
 		return m, nil
@@ -127,7 +128,7 @@ func newServer(addr, hostKey string, posts []post) (*ssh.Server, error) {
 	return wish.NewServer(
 		wish.WithAddress(addr),
 		key,
-		wish.WithIdleTimeout(15*time.Minute),
+		wish.WithIdleTimeout(10*time.Minute),
 		wish.WithMaxTimeout(time.Hour),
 		wish.WithMiddleware(
 			bm.Middleware(func(s ssh.Session) (tea.Model, []tea.ProgramOption) {

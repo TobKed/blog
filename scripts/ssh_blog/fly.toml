@@ -8,6 +8,11 @@ primary_region = "fra"
   auto_start_machines = true
   min_machines_running = 0
 
+  [services.concurrency]
+    type = "connections"
+    soft_limit = 150
+    hard_limit = 200
+
   [[services.ports]]
     port = 22
 

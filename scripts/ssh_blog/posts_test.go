@@ -1,6 +1,8 @@
 package main
 
 import (
+	"os"
+	"path/filepath"
 	"strings"
 	"testing"
 )
@@ -10,6 +12,14 @@ func TestToTerminal(t *testing.T) {
 	want := "▶ [A talk](https://youtu.be/abc) and [x](https://blog.tobked.dev/git-history/)"
 	if got != want {
 		t.Fatalf("got %q", got)
+	}
+}
+
+func TestFrontMatterMustOpenFile(t *testing.T) {
+	dir := t.TempDir()
+	os.WriteFile(filepath.Join(dir, "x.md"), []byte("intro\n---\ntitle: x\n---\nbody\n"), 0o644)
+	if _, err := loadDir(dir, "/"); err == nil {
+		t.Fatal("accepted a file without leading front matter")
 	}
 }
 

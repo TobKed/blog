@@ -114,11 +114,11 @@ func loadSite(root string) ([]post, error) {
 	for i := range pages {
 		pages[i].page = true
 		if pages[i].Layout == "about" {
-			pages[i].Body = toTerminal(aboutMarkdown(pages[i], cfg))
+			pages[i].Body = aboutMarkdown(pages[i], cfg)
 		}
 	}
 	sort.SliceStable(pages, func(i, j int) bool { return pages[i].Layout == "about" && pages[j].Layout != "about" })
-	sort.Slice(posts, func(i, j int) bool { return posts[i].Date > posts[j].Date })
+	sort.SliceStable(posts, func(i, j int) bool { return posts[i].Date > posts[j].Date })
 	return append(pages, posts...), nil
 }
 
@@ -134,18 +134,19 @@ func loadDir(dir, urlPrefix string) ([]post, error) {
 		if err != nil {
 			return nil, err
 		}
-		parts := bytes.SplitN(raw, []byte("---\n"), 3)
-		if len(parts) != 3 {
+		rest, ok := bytes.CutPrefix(raw, []byte("---\n"))
+		fm, body, ok2 := bytes.Cut(rest, []byte("\n---\n"))
+		if !ok || !ok2 {
 			return nil, fmt.Errorf("%s: no front matter", f)
 		}
 		var p post
-		if err := yaml.Unmarshal(parts[1], &p); err != nil {
+		if err := yaml.Unmarshal(fm, &p); err != nil {
 			return nil, fmt.Errorf("%s: %w", f, err)
 		}
 		if p.Draft || p.Build.List == "never" {
 			continue
 		}
-		p.Body = toTerminal(string(parts[2]))
+		p.Body = toTerminal(string(body))
 		p.Path = urlPrefix + p.Slug + "/"
 		out = append(out, p)
 	}
