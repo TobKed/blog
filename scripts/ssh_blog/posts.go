@@ -2,6 +2,7 @@ package main
 
 import (
 	"bytes"
+	"cmp"
 	"fmt"
 	"os"
 	"path/filepath"
@@ -9,6 +10,7 @@ import (
 	"sort"
 	"strings"
 
+	"github.com/BurntSushi/toml"
 	"gopkg.in/yaml.v3"
 )
 
@@ -21,7 +23,37 @@ type post struct {
 	Summary string   `yaml:"summary"`
 	Tags    []string `yaml:"tags"`
 	Draft   bool     `yaml:"draft"`
-	Body    string   `yaml:"-"`
+	Build   struct {
+		List string `yaml:"list"`
+	} `yaml:"build"`
+
+	// About page only.
+	Layout string `yaml:"layout"`
+	Name   string `yaml:"name"`
+	Talks  []struct {
+		Title, Where, When, URL string
+	} `yaml:"talks"`
+	Certifications []struct {
+		Year              any
+		Name, Issuer, URL string
+	} `yaml:"certifications"`
+
+	Body string `yaml:"-"`
+	Path string `yaml:"-"` // URL path on the website
+	page bool
+}
+
+type siteConfig struct {
+	Params struct {
+		Tagline  string
+		Epigraph struct{ Title, Text, Cite string }
+	}
+	Menu struct {
+		Social []struct {
+			Name, URL string
+			Weight    int
+		}
+	}
 }
 
 func (p post) day() string { return p.Date[:min(10, len(p.Date))] }
@@ -29,8 +61,13 @@ func (p post) day() string { return p.Date[:min(10, len(p.Date))] }
 // item adapts a post to bubbles' list.DefaultItem.
 type item struct{ p post }
 
-func (i item) Title() string       { return i.p.Title }
-func (i item) Description() string { return i.p.day() + "  " + i.p.Summary }
+func (i item) Title() string { return i.p.Title }
+func (i item) Description() string {
+	if i.p.page {
+		return "page · " + i.p.Path
+	}
+	return i.p.day() + "  " + i.p.Summary
+}
 func (i item) FilterValue() string { return i.p.Title + " " + strings.Join(i.p.Tags, " ") }
 
 var (
@@ -51,12 +88,47 @@ func toTerminal(md string) string {
 	return localLink.ReplaceAllString(md, "]("+siteURL+"/")
 }
 
-func loadPosts(dir string) ([]post, error) {
+func absURL(u string) string {
+	if strings.HasPrefix(u, "/") {
+		return siteURL + u
+	}
+	return u
+}
+
+// loadSite returns the listed pages (About first) followed by posts, newest first.
+func loadSite(root string) ([]post, error) {
+	var cfg siteConfig
+	if _, err := toml.DecodeFile(filepath.Join(root, "hugo.toml"), &cfg); err != nil {
+		return nil, err
+	}
+	sort.SliceStable(cfg.Menu.Social, func(i, j int) bool { return cfg.Menu.Social[i].Weight < cfg.Menu.Social[j].Weight })
+
+	pages, err := loadDir(filepath.Join(root, "content/pages"), "/pages/")
+	if err != nil {
+		return nil, err
+	}
+	posts, err := loadDir(filepath.Join(root, "content/post"), "/")
+	if err != nil {
+		return nil, err
+	}
+	for i := range pages {
+		pages[i].page = true
+		if pages[i].Layout == "about" {
+			pages[i].Body = toTerminal(aboutMarkdown(pages[i], cfg))
+		}
+	}
+	sort.SliceStable(pages, func(i, j int) bool { return pages[i].Layout == "about" && pages[j].Layout != "about" })
+	sort.Slice(posts, func(i, j int) bool { return posts[i].Date > posts[j].Date })
+	return append(pages, posts...), nil
+}
+
+// loadDir reads the published, listed Markdown files in dir.
+func loadDir(dir, urlPrefix string) ([]post, error) {
 	files, err := filepath.Glob(filepath.Join(dir, "*.md"))
 	if err != nil {
 		return nil, err
 	}
-	var posts []post
+	var out []post
 	for _, f := range files {
 		raw, err := os.ReadFile(f)
 		if err != nil {
@@ -70,12 +142,46 @@ func loadPosts(dir string) ([]post, error) {
 		if err := yaml.Unmarshal(parts[1], &p); err != nil {
 			return nil, fmt.Errorf("%s: %w", f, err)
 		}
-		if p.Draft {
+		if p.Draft || p.Build.List == "never" {
 			continue
 		}
 		p.Body = toTerminal(string(parts[2]))
-		posts = append(posts, p)
+		p.Path = urlPrefix + p.Slug + "/"
+		out = append(out, p)
 	}
-	sort.Slice(posts, func(i, j int) bool { return posts[i].Date > posts[j].Date })
-	return posts, nil
+	return out, nil
+}
+
+// aboutMarkdown mirrors the theme's about.html, which builds the page from
+// front matter and hugo.toml rather than the Markdown body.
+func aboutMarkdown(p post, cfg siteConfig) string {
+	var b strings.Builder
+	fmt.Fprintf(&b, "# %s\n\n%s\n\n%s\n\n## Elsewhere\n\n", cmp.Or(p.Name, p.Title), cfg.Params.Tagline, p.Body)
+	for _, s := range cfg.Menu.Social {
+		u := absURL(s.URL)
+		if addr, ok := strings.CutPrefix(u, "mailto:"); ok {
+			u = "`" + addr + "`" // glamour would print an autolinked address twice
+		}
+		fmt.Fprintf(&b, "- **%s** %s\n", s.Name, u)
+	}
+	if e := cfg.Params.Epigraph; e.Text != "" {
+		fmt.Fprintf(&b, "\n## %s\n\n> “%s”\n>\n> — %s\n", e.Title, e.Text, e.Cite)
+	}
+	if len(p.Talks) > 0 {
+		b.WriteString("\n## Talks\n\n")
+		for _, t := range p.Talks {
+			fmt.Fprintf(&b, "- **%s** — %s, %s", t.Title, t.Where, t.When)
+			if t.URL != "" {
+				fmt.Fprintf(&b, " %s", absURL(t.URL))
+			}
+			b.WriteString("\n")
+		}
+	}
+	if len(p.Certifications) > 0 {
+		b.WriteString("\n## Certifications\n\n")
+		for _, c := range p.Certifications {
+			fmt.Fprintf(&b, "- %v **%s** — %s\n", c.Year, c.Name, c.Issuer)
+		}
+	}
+	return b.String()
 }

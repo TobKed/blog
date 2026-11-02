@@ -13,17 +13,40 @@ func TestToTerminal(t *testing.T) {
 	}
 }
 
-func TestLoadRealPosts(t *testing.T) {
-	posts, err := loadPosts("../../content/post")
+func TestLoadRealSite(t *testing.T) {
+	all, err := loadSite("../..")
 	if err != nil {
 		t.Fatal(err)
+	}
+	about := all[0]
+	if about.Path != "/pages/about-me/" || !about.page {
+		t.Fatalf("first entry is %q, want About", about.Title)
+	}
+	for _, want := range []string{"github.com/TobKed", "linkedin.com/in/tobiaszkedzierski", "## Talks", "Terraform Associate", siteURL + "/feeds/all.rss.xml"} {
+		if !strings.Contains(about.Body, want) {
+			t.Errorf("About is missing %q", want)
+		}
+	}
+
+	var posts []post
+	for _, p := range all {
+		if p.Draft || p.Title == "" || strings.Contains(p.Body, "{{<") {
+			t.Errorf("bad entry %q", p.Title)
+		}
+		if p.page {
+			if p.Path == "/pages/sleep/" || p.Path == "/pages/blogs/" {
+				t.Errorf("unlisted or draft page %s is shown", p.Path)
+			}
+			continue
+		}
+		posts = append(posts, p)
 	}
 	if len(posts) < 50 {
 		t.Fatalf("only %d posts", len(posts))
 	}
 	for i, p := range posts {
-		if p.Draft || p.Title == "" || len(p.Date) < 10 || strings.Contains(p.Body, "{{<") {
-			t.Errorf("bad post %q (%s)", p.Title, p.Date)
+		if len(p.Date) < 10 || p.Path != "/"+p.Slug+"/" {
+			t.Errorf("bad post %q (%s, %s)", p.Title, p.Date, p.Path)
 		}
 		if i > 0 && posts[i-1].Date < p.Date {
 			t.Errorf("not sorted at %q", p.Title)

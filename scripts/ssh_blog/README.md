@@ -1,6 +1,7 @@
 # SSH blog
 
-Serves the published posts over SSH as a terminal app. Drafts are skipped.
+Serves the blog over SSH as a terminal app: the About page (with the social links from
+`hugo.toml`), the Links page, then every published post. Drafts and unlisted pages are skipped.
 
 ## Run locally
 
@@ -18,7 +19,7 @@ docker logs ssh-blog     # connections are logged here
 docker rm -f ssh-blog    # stop
 ```
 
-The image holds only the binary and `content/post/`. The server's host key is generated
+The image holds only the binary, `hugo.toml`, `content/post/` and `content/pages/`. The server's host key is generated
 on first start and kept in the `ssh-blog-data` volume, so the fingerprint survives restarts.
 Rebuild after editing posts.
 

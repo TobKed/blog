@@ -53,8 +53,8 @@ func waitFor(t *testing.T, out *syncBuf, want string) {
 
 func TestBrowseAndReadOverSSH(t *testing.T) {
 	posts := []post{
-		{Title: "Newest post", Date: "2026-10-31", Slug: "newest", Body: "Hello from **the body**."},
-		{Title: "Older post", Date: "2020-01-01", Slug: "older", Body: "old"},
+		{Title: "Newest post", Date: "2026-10-31", Path: "/newest/", Body: "Hello from **the body**."},
+		{Title: "Older post", Date: "2020-01-01", Path: "/older/", Body: "old"},
 	}
 	sess, err := dial(t, posts).NewSession()
 	if err != nil {

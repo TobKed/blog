@@ -99,7 +99,11 @@ func (m model) render(p post) string {
 	if !strings.HasPrefix(strings.TrimSpace(md), "# ") {
 		md = "# " + p.Title + "\n\n" + md
 	}
-	md = "*" + p.day() + " · " + siteURL + "/" + p.Slug + "/*\n\n" + md
+	head := siteURL + p.Path
+	if !p.page {
+		head = p.day() + " · " + head
+	}
+	md = "*" + head + "*\n\n" + md
 	out, err := r.Render(md)
 	if err != nil {
 		return err.Error()
@@ -133,15 +137,15 @@ func newServer(addr, hostKey string, posts []post) (*ssh.Server, error) {
 
 func main() {
 	addr := flag.String("addr", "localhost:2222", "listen address")
-	dir := flag.String("content", "../../content/post", "directory with posts")
+	root := flag.String("site", "../..", "blog repo root (hugo.toml, content/)")
 	hostKey := flag.String("host-key", ".host_key/ed25519", "host key path, created if missing")
 	flag.Parse()
 
-	posts, err := loadPosts(*dir)
+	posts, err := loadSite(*root)
 	if err != nil {
 		log.Fatal(err)
 	}
-	log.Printf("loaded %d posts", len(posts))
+	log.Printf("loaded %d pages and posts", len(posts))
 
 	s, err := newServer(*addr, *hostKey, posts)
 	if err != nil {
