@@ -68,3 +68,10 @@ ssh_blog_docker: ## run the SSH blog in Docker at 127.0.0.1:2222
 .PHONY: ssh_blog_share
 ssh_blog_share: ## expose the running SSH blog publicly via bore.pub
 	bore local 2222 --local-host 127.0.0.1 --to bore.pub
+
+.PHONY: ssh_blog_fly
+ssh_blog_fly: ## deploy the SSH blog to Fly.io (see scripts/ssh_blog/README.md)
+	img=registry.fly.io/tobked-ssh-blog:$$(date +%Y%m%d%H%M%S) && \
+	docker build --platform linux/amd64 -f scripts/ssh_blog/Dockerfile -t $$img . && \
+	fly auth docker && docker push $$img && \
+	fly deploy -c scripts/ssh_blog/fly.toml --image $$img

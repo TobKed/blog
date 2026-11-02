@@ -120,9 +120,13 @@ func (m model) View() string {
 }
 
 func newServer(addr, hostKey string, posts []post) (*ssh.Server, error) {
+	key := wish.WithHostKeyPath(hostKey)
+	if pem := os.Getenv("SSH_HOST_KEY"); pem != "" {
+		key = wish.WithHostKeyPEM([]byte(pem))
+	}
 	return wish.NewServer(
 		wish.WithAddress(addr),
-		wish.WithHostKeyPath(hostKey),
+		key,
 		wish.WithIdleTimeout(15*time.Minute),
 		wish.WithMaxTimeout(time.Hour),
 		wish.WithMiddleware(
