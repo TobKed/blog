@@ -1,0 +1,50 @@
+name: Deploy SSH blog to Fly.io
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - content/post/**
+      - content/pages/**
+      - hugo.toml
+      - scripts/ssh_blog/**
+      - .github/workflows/ssh_blog.yml
+  push:
+    branches:
+      - master
+    paths:
+      - content/post/**
+      - content/pages/**
+      - hugo.toml
+      - scripts/ssh_blog/**
+      - .github/workflows/ssh_blog.yml
+
+concurrency:
+  group: ssh-blog-${{ github.ref }}
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-go@v7
+        with:
+          go-version-file: scripts/ssh_blog/go.mod
+          cache-dependency-path: scripts/ssh_blog/go.sum
+      - run: go test ./...
+        working-directory: scripts/ssh_blog
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: [test]
+    if: github.ref == 'refs/heads/master' && github.event_name != 'pull_request'
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: superfly/flyctl-actions/setup-flyctl@ed8efb33836e8b2096c7fd3ba1c8afe303ebbff1  # 1.6
+      - run: make ssh_blog_fly FLY=flyctl
+        env:
+          FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}

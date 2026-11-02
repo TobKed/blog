@@ -1,5 +1,6 @@
 PY?=python3
 HUGO?=hugo
+FLY?=fly
 
 BASEDIR=$(CURDIR)
 OUTPUTDIR=$(BASEDIR)/public
@@ -73,5 +74,5 @@ ssh_blog_share: ## expose the running SSH blog publicly via bore.pub
 ssh_blog_fly: ## deploy the SSH blog to Fly.io (see scripts/ssh_blog/README.md)
 	img=registry.fly.io/tobked-ssh-blog:$$(date +%Y%m%d%H%M%S) && \
 	docker build --platform linux/amd64 -f scripts/ssh_blog/Dockerfile -t $$img . && \
-	fly auth docker && docker push $$img && \
-	fly deploy -c scripts/ssh_blog/fly.toml --image $$img --ha=false
+	$(FLY) auth docker && docker push $$img && \
+	$(FLY) deploy -c scripts/ssh_blog/fly.toml --image $$img --ha=false
