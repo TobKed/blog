@@ -57,3 +57,14 @@ check_theme: ## theme regression checks against a running `make preview`
 .PHONY: ssh_blog
 ssh_blog: ## serve the blog over SSH at localhost:2222 (prototype)
 	cd scripts/ssh_blog && go run .
+
+.PHONY: ssh_blog_docker
+ssh_blog_docker: ## run the SSH blog in Docker at 127.0.0.1:2222
+	docker build -f scripts/ssh_blog/Dockerfile -t ssh-blog .
+	docker rm -f ssh-blog 2>/dev/null || true
+	docker run -d --name ssh-blog --read-only --cap-drop ALL --security-opt no-new-privileges \
+		-p 127.0.0.1:2222:2222 -v ssh-blog-data:/data ssh-blog
+
+.PHONY: ssh_blog_share
+ssh_blog_share: ## expose the running SSH blog publicly via bore.pub
+	bore local 2222 --local-host 127.0.0.1 --to bore.pub
