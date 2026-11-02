@@ -23,24 +23,6 @@ The image holds only the binary, `hugo.toml`, `content/post/` and `content/pages
 on first start and kept in the `ssh-blog-data` volume, so the fingerprint survives restarts.
 Rebuild after editing posts.
 
-## Share with a friend
-
-Needs [bore](https://github.com/ekzhang/bore) (`brew install bore-cli`) and the container running.
-
-```sh
-make ssh_blog_share      # prints "listening at bore.pub:<port>"
-```
-
-Send them `ssh -p <port> bore.pub`; the port changes on every run. Get the fingerprint
-for them to compare on first connect:
-
-```sh
-ssh-keyscan -t ed25519 -p 2222 127.0.0.1 2>/dev/null | ssh-keygen -lf -
-```
-
-The port is public while bore runs: anyone who finds it can read the blog, nothing more
-(no shell, no SFTP, no port forwarding). Ctrl+C stops sharing.
-
 ## Host on Fly.io
 
 About $2/month: the dedicated IPv4 (raw TCP does not work on Fly's shared one). The machine
