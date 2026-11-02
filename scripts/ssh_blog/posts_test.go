@@ -46,7 +46,7 @@ func TestLoadRealSite(t *testing.T) {
 	if about.Path != "/pages/about-me/" || !about.page {
 		t.Fatalf("first entry is %q, want About", about.Title)
 	}
-	for _, want := range []string{"github.com/TobKed", "linkedin.com/in/tobiaszkedzierski", "## Talks", "Terraform Associate", siteURL + "/feeds/all.rss.xml"} {
+	for _, want := range []string{"## Elsewhere", "github.com/TobKed", siteURL + "/feeds/all.rss.xml"} {
 		if !strings.Contains(about.Body, want) {
 			t.Errorf("About is missing %q", want)
 		}
