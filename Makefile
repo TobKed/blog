@@ -74,4 +74,4 @@ ssh_blog_fly: ## deploy the SSH blog to Fly.io (see scripts/ssh_blog/README.md)
 	img=registry.fly.io/tobked-ssh-blog:$$(date +%Y%m%d%H%M%S) && \
 	docker build --platform linux/amd64 -f scripts/ssh_blog/Dockerfile -t $$img . && \
 	fly auth docker && docker push $$img && \
-	fly deploy -c scripts/ssh_blog/fly.toml --image $$img
+	fly deploy -c scripts/ssh_blog/fly.toml --image $$img --ha=false
