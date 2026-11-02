@@ -119,6 +119,8 @@ func newServer(addr, hostKey string, posts []post) (*ssh.Server, error) {
 	return wish.NewServer(
 		wish.WithAddress(addr),
 		wish.WithHostKeyPath(hostKey),
+		wish.WithIdleTimeout(15*time.Minute),
+		wish.WithMaxTimeout(time.Hour),
 		wish.WithMiddleware(
 			bm.Middleware(func(s ssh.Session) (tea.Model, []tea.ProgramOption) {
 				return newModel(posts, bm.MakeRenderer(s)), []tea.ProgramOption{tea.WithAltScreen()}
