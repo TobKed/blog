@@ -56,7 +56,7 @@ check_theme: ## theme regression checks against a running `make preview`
 	node scripts/check_mobile.mjs $(URL)
 
 .PHONY: ssh_blog
-ssh_blog: ## serve the blog over SSH at localhost:2222 (prototype)
+ssh_blog: ## serve the blog over SSH at localhost:2222
 	cd scripts/ssh_blog && go run .
 
 .PHONY: ssh_blog_docker

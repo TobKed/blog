@@ -49,7 +49,8 @@ ssh tobked-ssh-blog.fly.dev
 ```
 
 CI (`.github/workflows/ssh_blog.yml`) runs the tests on PRs and `make ssh_blog_fly` on pushes to
-`master` that touch posts, pages, `hugo.toml` or this folder. It needs a deploy token scoped to the app:
+`master` that touch posts, pages, `hugo.toml`, the `Makefile`, the workflow or this folder. It needs
+a deploy token scoped to the app:
 `fly tokens create deploy -a tobked-ssh-blog | gh secret set FLY_API_TOKEN`.
 
 The image is built locally, so only the files in `Dockerfile.dockerignore` leave the machine.

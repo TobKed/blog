@@ -71,9 +71,8 @@ func (i item) Description() string {
 func (i item) FilterValue() string { return i.p.Title + " " + strings.Join(i.p.Tags, " ") }
 
 var (
-	youtube   = regexp.MustCompile(`\{\{<\s*youtube-lite\b([^>]*)>\}\}`)
-	attr      = regexp.MustCompile(`(\w+)="([^"]*)"`)
-	localLink = regexp.MustCompile(`\]\(/`)
+	youtube = regexp.MustCompile(`\{\{<\s*youtube-lite\b([^>]*)>\}\}`)
+	attr    = regexp.MustCompile(`(\w+)="([^"]*)"`)
 )
 
 // toTerminal rewrites Hugo-only syntax into plain Markdown.
@@ -85,7 +84,7 @@ func toTerminal(md string) string {
 		}
 		return fmt.Sprintf("▶ [%s](https://youtu.be/%s)", a["title"], a["id"])
 	})
-	return localLink.ReplaceAllString(md, "]("+siteURL+"/")
+	return strings.ReplaceAll(md, "](/", "]("+siteURL+"/")
 }
 
 func absURL(u string) string {

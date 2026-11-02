@@ -48,6 +48,8 @@ func (m model) Init() tea.Cmd { return nil }
 func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 	switch msg := msg.(type) {
 	case tea.WindowSizeMsg:
+		// The client picks its size; the views allocate width×height cells.
+		msg.Width, msg.Height = min(msg.Width, 300), min(msg.Height, 150)
 		m.list.SetSize(msg.Width, msg.Height)
 		rewrap := msg.Width != m.vp.Width
 		m.vp.Width, m.vp.Height = msg.Width, msg.Height-1
@@ -97,7 +99,7 @@ func (m model) render(p post) string {
 		return err.Error()
 	}
 	md := p.Body
-	if !strings.HasPrefix(strings.TrimSpace(md), "# ") {
+	if first, _, _ := strings.Cut(strings.TrimSpace(md), "\n"); strings.TrimSpace(first) != "# "+p.Title {
 		md = "# " + p.Title + "\n\n" + md
 	}
 	head := siteURL + p.Path
@@ -120,11 +122,33 @@ func (m model) View() string {
 		" ↑/↓ scroll · q back · %3.0f%%", m.vp.ScrollPercent()*100))
 }
 
+// maxSessions caps concurrent readers (~1.5 MB each) to fit the 256 MB VM; one
+// connection can open many sessions, so Fly's connection limit is not enough.
+var maxSessions = 100
+
+func limitSessions(n int) wish.Middleware {
+	sem := make(chan struct{}, n)
+	return func(next ssh.Handler) ssh.Handler {
+		return func(s ssh.Session) {
+			select {
+			case sem <- struct{}{}:
+				defer func() { <-sem }()
+				next(s)
+			default:
+				wish.Fatalln(s, "Too many readers right now, try again in a minute.")
+			}
+		}
+	}
+}
+
 func newServer(addr, hostKey string, posts []post) (*ssh.Server, error) {
-	key := wish.WithHostKeyPath(hostKey)
+	var key ssh.Option
 	if pem := os.Getenv("SSH_HOST_KEY"); pem != "" {
 		key = wish.WithHostKeyPEM([]byte(pem))
+	} else {
+		key = wish.WithHostKeyPath(hostKey)
 	}
+	// Middlewares run last to first: log, require a pty, limit, then the app.
 	return wish.NewServer(
 		wish.WithAddress(addr),
 		key,
@@ -134,8 +158,9 @@ func newServer(addr, hostKey string, posts []post) (*ssh.Server, error) {
 			bm.Middleware(func(s ssh.Session) (tea.Model, []tea.ProgramOption) {
 				return newModel(posts, bm.MakeRenderer(s)), []tea.ProgramOption{tea.WithAltScreen()}
 			}),
+			limitSessions(maxSessions),
 			activeterm.Middleware(),
-			logging.Middleware(),
+			logging.StructuredMiddleware(), // quotes control characters in client-supplied names
 		),
 	)
 }

@@ -3,8 +3,12 @@ package main
 import (
 	"os"
 	"path/filepath"
+	"regexp"
 	"strings"
 	"testing"
+
+	tea "github.com/charmbracelet/bubbletea"
+	"github.com/charmbracelet/lipgloss"
 )
 
 func TestToTerminal(t *testing.T) {
@@ -12,6 +16,26 @@ func TestToTerminal(t *testing.T) {
 	want := "▶ [A talk](https://youtu.be/abc) and [x](https://blog.tobked.dev/git-history/)"
 	if got != want {
 		t.Fatalf("got %q", got)
+	}
+}
+
+func TestClampsClientWindowSize(t *testing.T) {
+	var m tea.Model = newModel(nil, lipgloss.NewRenderer(nil))
+	m, _ = m.Update(tea.WindowSizeMsg{Width: 8000, Height: 8000})
+	if vp := m.(model).vp; vp.Width != 300 || vp.Height != 149 {
+		t.Fatalf("viewport is %dx%d", vp.Width, vp.Height)
+	}
+}
+
+func TestReaderShowsFrontMatterTitle(t *testing.T) {
+	m := newModel(nil, lipgloss.NewRenderer(nil))
+	m.vp.Width = 80
+	plain := func(p post) string { return regexp.MustCompile(`\x1b\[[0-9;]*m`).ReplaceAllString(m.render(p), "") }
+	if out := plain(post{Title: "Django on GCP", Body: "# Repository with code\n\ntext"}); !strings.Contains(out, "Django on GCP") {
+		t.Errorf("title missing:\n%s", out)
+	}
+	if out := plain(post{Title: "Same", Body: "# Same\n\ntext"}); strings.Count(out, "Same") != 1 {
+		t.Errorf("title repeated:\n%s", out)
 	}
 }
 
