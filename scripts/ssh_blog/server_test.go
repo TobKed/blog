@@ -101,10 +101,31 @@ func TestSessionLimit(t *testing.T) {
 	defer func(n int) { maxSessions = n }(maxSessions)
 	maxSessions = 1
 	c := dial(t, "reader", nil)
-	_, _, first := ptySession(t, c)
-	waitFor(t, first, "\x1b[c") // the app is running and holds the only slot
-	_, _, second := ptySession(t, c)
-	waitFor(t, second, "Too many readers")
+	if _, err := c.NewSession(); err != nil { // never started, still holds the only slot
+		t.Fatal(err)
+	}
+	if _, err := c.NewSession(); err == nil || !strings.Contains(err.Error(), "Too many readers") {
+		t.Fatalf("second session: %v", err)
+	}
+}
+
+func TestLimitsEnv(t *testing.T) {
+	sess, err := dial(t, "reader", nil).NewSession()
+	if err != nil {
+		t.Fatal(err)
+	}
+	if err := sess.Setenv("COLORTERM", "truecolor"); err != nil {
+		t.Fatalf("small env refused: %v", err)
+	}
+	if err := sess.Setenv("BIG", strings.Repeat("x", 300)); err == nil {
+		t.Fatal("oversized env accepted")
+	}
+	for i := 2; i <= 16; i++ {
+		sess.Setenv("V", "1")
+	}
+	if err := sess.Setenv("V", "1"); err == nil {
+		t.Fatal("17th env accepted")
+	}
 }
 
 func TestLogQuotesClientInput(t *testing.T) {

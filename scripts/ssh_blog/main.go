@@ -23,6 +23,7 @@ import (
 	"github.com/charmbracelet/wish/activeterm"
 	bm "github.com/charmbracelet/wish/bubbletea"
 	"github.com/charmbracelet/wish/logging"
+	gossh "golang.org/x/crypto/ssh"
 )
 
 type model struct {
@@ -122,23 +123,50 @@ func (m model) View() string {
 		" ↑/↓ scroll · q back · %3.0f%%", m.vp.ScrollPercent()*100))
 }
 
-// maxSessions caps concurrent readers (~1.5 MB each) to fit the 256 MB VM; one
-// connection can open many sessions, so Fly's connection limit is not enough.
-var maxSessions = 100
+// maxSessions caps open session channels, counted from the moment they open: each
+// can buffer up to 2 MB, and one connection may open many.
+var maxSessions = 50
 
-func limitSessions(n int) wish.Middleware {
-	sem := make(chan struct{}, n)
-	return func(next ssh.Handler) ssh.Handler {
-		return func(s ssh.Session) {
+// limitSessions replaces the default session handler to cap channels and env
+// requests, which the ssh package would otherwise accept without limit.
+func limitSessions(s *ssh.Server) error {
+	sem := make(chan struct{}, maxSessions)
+	s.ChannelHandlers = map[string]ssh.ChannelHandler{
+		"session": func(srv *ssh.Server, conn *gossh.ServerConn, nc gossh.NewChannel, ctx ssh.Context) {
 			select {
 			case sem <- struct{}{}:
 				defer func() { <-sem }()
-				next(s)
+				ssh.DefaultSessionHandler(srv, conn, limitEnv{nc}, ctx)
 			default:
-				wish.Fatalln(s, "Too many readers right now, try again in a minute.")
+				nc.Reject(gossh.ResourceShortage, "Too many readers right now, try again in a minute.")
 			}
-		}
+		},
 	}
+	return nil
+}
+
+type limitEnv struct{ gossh.NewChannel }
+
+func (c limitEnv) Accept() (gossh.Channel, <-chan *gossh.Request, error) {
+	ch, reqs, err := c.NewChannel.Accept()
+	if err != nil {
+		return ch, reqs, err
+	}
+	out := make(chan *gossh.Request)
+	go func() {
+		defer close(out)
+		n := 0
+		for r := range reqs {
+			if r.Type == "env" {
+				if n++; n > 16 || len(r.Payload) > 256 {
+					r.Reply(false, nil)
+					continue
+				}
+			}
+			out <- r
+		}
+	}()
+	return ch, out, nil
 }
 
 func newServer(addr, hostKey string, posts []post) (*ssh.Server, error) {
@@ -148,17 +176,17 @@ func newServer(addr, hostKey string, posts []post) (*ssh.Server, error) {
 	} else {
 		key = wish.WithHostKeyPath(hostKey)
 	}
-	// Middlewares run last to first: log, require a pty, limit, then the app.
+	// Middlewares run last to first: log, require a pty, then the app.
 	return wish.NewServer(
 		wish.WithAddress(addr),
 		key,
 		wish.WithIdleTimeout(10*time.Minute),
 		wish.WithMaxTimeout(time.Hour),
+		limitSessions,
 		wish.WithMiddleware(
 			bm.Middleware(func(s ssh.Session) (tea.Model, []tea.ProgramOption) {
 				return newModel(posts, bm.MakeRenderer(s)), []tea.ProgramOption{tea.WithAltScreen()}
 			}),
-			limitSessions(maxSessions),
 			activeterm.Middleware(),
 			logging.StructuredMiddleware(), // quotes control characters in client-supplied names
 		),
@@ -170,6 +198,9 @@ func main() {
 	root := flag.String("site", "../..", "blog repo root (hugo.toml, content/)")
 	hostKey := flag.String("host-key", ".host_key/ed25519", "host key path, created if missing")
 	flag.Parse()
+	if os.Getenv("FLY_APP_NAME") != "" && os.Getenv("SSH_HOST_KEY") == "" {
+		log.Fatal("SSH_HOST_KEY is not set; refusing to start with a throwaway host key")
+	}
 
 	posts, err := loadSite(*root)
 	if err != nil {

@@ -3,7 +3,7 @@ name: Deploy SSH blog to Fly.io
 on:
   workflow_dispatch:
   pull_request:
-    paths:
+    paths: &paths
       - content/post/**
       - content/pages/**
       - hugo.toml
@@ -13,13 +13,7 @@ on:
   push:
     branches:
       - master
-    paths:
-      - content/post/**
-      - content/pages/**
-      - hugo.toml
-      - Makefile
-      - scripts/ssh_blog/**
-      - .github/workflows/ssh_blog.yml
+    paths: *paths
 
 permissions:
   contents: read
@@ -52,6 +46,8 @@ jobs:
         with:
           persist-credentials: false
       - uses: superfly/flyctl-actions/setup-flyctl@ed8efb33836e8b2096c7fd3ba1c8afe303ebbff1  # 1.6
+        with:
+          version: 0.5.1
       - run: make ssh_blog_fly FLY=flyctl
         env:
           FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}

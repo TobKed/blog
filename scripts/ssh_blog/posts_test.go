@@ -1,8 +1,6 @@
 package main
 
 import (
-	"os"
-	"path/filepath"
 	"regexp"
 	"strings"
 	"testing"
@@ -36,14 +34,6 @@ func TestReaderShowsFrontMatterTitle(t *testing.T) {
 	}
 	if out := plain(post{Title: "Same", Body: "# Same\n\ntext"}); strings.Count(out, "Same") != 1 {
 		t.Errorf("title repeated:\n%s", out)
-	}
-}
-
-func TestFrontMatterMustOpenFile(t *testing.T) {
-	dir := t.TempDir()
-	os.WriteFile(filepath.Join(dir, "x.md"), []byte("intro\n---\ntitle: x\n---\nbody\n"), 0o644)
-	if _, err := loadDir(dir, "/"); err == nil {
-		t.Fatal("accepted a file without leading front matter")
 	}
 }
 

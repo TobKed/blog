@@ -15,5 +15,4 @@ COPY content/pages /site/content/pages
 COPY --from=build --chown=65532:65532 /data /data
 USER 65532:65532
 WORKDIR /data
-EXPOSE 2222
 ENTRYPOINT ["/ssh_blog", "-addr", ":2222", "-site", "/site"]
