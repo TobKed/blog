@@ -1,7 +1,7 @@
 ---
 draft: true
 title: Month summary - October 2026
-date: '2026-10-31'
+date: "2026-10-31"
 tags:
   - python
   - blog
@@ -10,7 +10,7 @@ tags:
   - aggregate
   - summary
   - month
-  - '2026'
+  - "2026"
 slug: 2026-october-links
 summary: Interesting stuff from the month
 image: /images/posts/2026/2026_xx_xx.jpg
@@ -24,6 +24,26 @@ Time for another monthly post sharing some of the IT discoveries that crossed my
 Below you'll find a mix of articles, links, and resources, some of which tie into my current activities and areas of interest.
 
 ## Some thoughts
+
+#### PyCon NL
+
+I always had some excuses to skip PyCon NL but this year I was commited, especially it is very short commute for me. have been to only few PyCons (CZ and PL) and Dutch one I would consider a cozy one. It was hosted in Utrecht, single stage with some workshops aside, few booths and arcade games. THe gold sponsor was sendcloud.com for which I worked previously and they have proper representatives in place. It was pretty cool to see a bunch of folks I shared trenches, I meet also few new ones (sencloud is hiring by the way). I was especially interrested in one senclouder talk given by Thiago Bellini Ribeiro about **Zero-Downtime Multi-Tenancy in Django: From User-centric to Organizations-based Architecture**. Working with decade old monoliths is a struggle and it was insightful take how to tackle it. Especially that I know the codebase.
+
+<https://www.pycon-nl.org/talks/2026/10>
+
+#### Blog redesign
+
+I don't anyone noticed but I redesigned blog again, got more deep into claude design. I got the blog into my taste finally. I made a board with six propsals, choosen one which I liked the most, spent some time wich claude-code and got the hugo template I was kind of happy, but I had feelings something was off. Not many people can give reliable feedback outside: I like, I don't like it. But I knew whom to ask. No one else than my friend Konrad aka Orzech. He gave feedback straight to the point: too many fonts which creates too much noise. It only confirmed by unconcious suspicions. He even suggested some fonts. Took some time with claude design, even made some interactive mockup so I could easily switch between decisions and get isntant visuals how page will look like which made choosing much more easier.
+
+#### Blog posting
+
+I got feedback that links are cool, but there is no personal take. And I agree. My english is not the best, but with AI is not an excuse enymore. I cannot write really good, but in other hand: who cares? Not too many people read it anyway. I write personal notes and helps a lot to clarify thinking. I am doing cool stuff at work and in my free time, why not to write about it. Not for personal branding, not for sharing and views. For fun. Clarified thinking and eternal fame will come later or never. Who cares. I like having fun with computers, tinker my terminal, play with new tools, read it related but also no related articles. Especially now in AI storm and overwhelheming slop flood I decided to work on my writing skills because I think this is pretty, PRETTY important skill to have where anyone can generate infinite lines about any topics while having zero, literally ZERO clue what was just spitted out. But sharing, posting and sometimes I am catching myself reading this and realizing probably even author did not bother to read it, not mentioning understanding it.
+
+- <https://jacobtomlinson.dev/posts/2026/writing-blog-posts-while-walking-the-dog/>
+
+- <https://joelhooks.com/on-writing-more>
+
+  > The idea of a “blog” needs to get over itself. Everybody is treating writing as a “content marketing strategy” and using it to “build a personal brand” which leads to the fundamental flawed idea that everything you post has to be polished to perfection and ready to be consumed.
 
 ______________________________________________________________________
 

@@ -1,7 +1,7 @@
 ---
 draft: true
 title: Month summary - November 2026
-date: '2026-11-30'
+date: "2026-11-30"
 tags:
   - python
   - blog
@@ -10,12 +10,12 @@ tags:
   - aggregate
   - summary
   - month
-  - '2026'
+  - "2026"
 slug: 2026-november-links
 summary: Interesting stuff from the month
 image: /images/posts/2026/2026_11_xx.jpg
-image_alt: ''  # optional: what the cover shows, for screen readers
-image_caption: ''  # optional: line under the cover, e.g. where it was taken or "Photo by …"
+image_alt: "" # optional: what the cover shows, for screen readers
+image_caption: "" # optional: line under the cover, e.g. where it was taken or "Photo by …"
 categories:
   - summary
 ---
@@ -26,6 +26,10 @@ Time for another monthly post sharing some of the IT discoveries that crossed my
 Below you'll find a mix of articles, links, and resources, some of which tie into my current activities and areas of interest.
 
 ## Some thoughts
+
+ssh.blog.tobked.dev
+
+<https://github.com/sharadregoti/sshire>
 
 ______________________________________________________________________
 
