@@ -13,7 +13,7 @@ tags:
   - "2026"
 slug: 2026-october-links
 summary: Interesting stuff from the month
-image: /images/posts/2026/2026_xx_xx.jpg
+image: /images/posts/2026/2026_10_xx.jpg
 categories:
   - summary
 ---
@@ -25,15 +25,15 @@ Below you'll find a mix of articles, links, and resources, some of which tie int
 
 ## Some thoughts
 
-### PyCon NL
+#### PyCon NL
 
 I always had some excuse to skip PyCon NL, but this year I was committed, especially since it's a very short commute for me. I've only been to a few PyCons (CZ and PL), and I'd consider the Dutch one a cozy event. It was hosted in Utrecht: a single stage with some workshops on the side, a few booths, and arcade games. The gold sponsor was Sendcloud, where I worked previously, and they had a great crew there. It was pretty cool to see a bunch of folks I shared the trenches with, and I also met a few new ones (Sendcloud is hiring, by the way). I was especially interested in a Sendclouder talk by Thiago Bellini Ribeiro on [**Zero-Downtime Multi-Tenancy in Django: From User-centric to Organizations-based Architecture**](https://www.pycon-nl.org/talks/2026/10). Working with decade-old monoliths is always a struggle, and it was an insightful take on how to pull off a migration like that, especially since I know that codebase firsthand.
 
-### Blog redesign
+#### Blog redesign
 
 I don't think anyone noticed, but I redesigned the blog again and went deeper into Claude Design. I put together a board with six proposals, chose the one I liked most, and spent some time with `claude-code` turning it into a Hugo template. I was kind of happy with the result, but I had a feeling something was off. Not many people can give reliable feedback beyond "I like it" or "I don't like it." But I knew whom to ask: none other than my friend Konrad, aka Orzech. His feedback was straight to the point: too many fonts, creating too much noise. It immediately confirmed my unconscious suspicions, and he even suggested a few alternatives. I went back and built an interactive mockup so I could easily switch between options and get an instant visual of how the page would look. That made choosing much easier, and I finally got the blog to match my taste.
 
-### Blog posting
+#### Blog posting
 
 I got feedback that the links are cool, but my posts lack a personal take. And I agree. My English isn't the best, though with AI around to help catch rough edges, that's not really an excuse anymore. On the other hand: who cares if my writing isn't great? Not that many people read this anyway. Writing personal notes already helps me a lot to clarify my thinking. I'm doing cool stuff at work and in my free time, so why not write about it? Not for personal branding, not for sharing and views. For fun. Clarified thinking and eternal fame will come later or never. Who cares. I like having fun with computers, tinkering with my terminal, playing with new tools, and reading both IT-related and completely unrelated articles. Especially now, in the middle of the AI storm and an overwhelming flood of slop, I decided to work on my own writing skills. I think it's a pretty, PRETTY important skill to have in a world where anyone can generate infinite lines on any topic while having zero, literally ZERO clue what was just spat out. People still share and post it anyway, and sometimes I catch myself reading something only to realize the author probably didn't even bother reading it themselves, let alone understanding it.
 
@@ -42,8 +42,6 @@ I got feedback that the links are cool, but my posts lack a personal take. And I
 - [Joel Hooks: 🖋 Stop Giving af and Start Writing More](https://joelhooks.com/on-writing-more) <!-- dup-ok -->
 
   > The idea of a “blog” needs to get over itself. Everybody is treating writing as a “content marketing strategy” and using it to “build a personal brand” which leads to the fundamental flawed idea that everything you post has to be polished to perfection and ready to be consumed.
-
-______________________________________________________________________
 
 ## Articles
 
@@ -191,18 +189,6 @@ ______________________________________________________________________
 
 > Somewhere this year I noticed that I am working more than I ever have, and that it feels heavier than it used to. Not because any single task is harder. Because there are so many more of them, all at once.
 
-## Security
-
-## Python
-
-## Django
-
-## Python libraries
-
-## Django libraries
-
-## Go
-
 ## Tools
 
 ### [GitHub - crmne/spotifast](https://github.com/crmne/spotifast)
@@ -221,17 +207,9 @@ ______________________________________________________________________
 
 > Firecracker is an open source virtualization technology that is purpose-built for creating and managing secure, multi-tenant container and function-based services that provide serverless operational models.
 
-### [GitHub - virgiliojr94/book-to-skill](https://github.com/virgiliojr94/book-to-skill)
-
-> Turn any technical book, document folder, or collection of sources into a unified agent skill — ready to study, reference, and use while you work in GitHub Copilot CLI, Amp, Claude Code, Codex, Hermes Agent, OpenCode, or OpenClaw.
-
 ### [GitHub - mother-of-all-self-hosting/mash-playbook](https://github.com/mother-of-all-self-hosting/mash-playbook)
 
 > MASH (Mother-of-All-Self-Hosting) is an Ansible playbook that helps you self-host services as Docker containers on your own server.
-
-## Cloud
-
-## Other stuff
 
 ## Podcasts
 
