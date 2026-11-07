@@ -38,7 +38,7 @@ favicon = "img/avatar.png"
 tagline = "Python, Django, the cloud, and other interesting things — computer-related or not. Mostly monthly round-ups of what I've been doing, reading and watching."
 
 [params.umami]
-websiteId = ""  # TODO: from cloud.umami.is → Website → Edit → Tracking code
+websiteId = "45a083c4-605c-413d-87cb-89c4d1db7200"
 domains = "blog.tobked.dev"
 
 [params.footer]
