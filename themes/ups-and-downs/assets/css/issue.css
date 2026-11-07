@@ -191,6 +191,14 @@
 .issue-prose img { display: block; margin: 0 auto; }
 .issue-prose pre { overflow-x: auto; }
 .issue-prose iframe { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; border: 0; }
+.issue-prose blockquote {
+  margin: 1.2em 0 0;
+  display: grid;
+  grid-template-columns: 26px minmax(0, 1fr);
+  color: var(--ink-3);
+}
+.issue-prose blockquote::before { content: "“"; font-size: 44px; line-height: 0.9; font-weight: 600; color: var(--accent); }
+.issue-prose blockquote p { margin: 0; }
 .issue-prose--item { padding-top: 0; font-size: 18px; line-height: 1.55; color: var(--ink-4); }
 
 .issue-item {
