@@ -34,7 +34,7 @@ Pre-commit (black, isort, mdformat, trailing-whitespace, etc.) runs in CI on eve
 Deployment is handled by GitHub Actions (`.github/workflows/main.yml`): pre-commit checks run
 always; the `build` job runs on push to `master`, builds with Hugo, generates the pagefind index,
 and publishes `public/` to `gh-pages` via `peaceiris/actions-gh-pages` (CNAME `blog.tobked.dev`).
-The `GOOGLE_ANALYTICS` secret is injected as `HUGO_SERVICES_GOOGLEANALYTICS_ID`. A second workflow
+Analytics is cookieless Umami Cloud, configured under `[params.umami]` in `hugo.toml`. A second workflow
 (`test-links` / `scripts/test_links/`) is manually triggered to crawl the live site and check for
 broken links (two-phase: fast `requests` pass, then `selenium` re-check of failures).
 
@@ -96,4 +96,4 @@ If a link is intentionally repeated within `content/post/` (for example, discuss
 - **Agent instructions & skills**:
   - Project-level instructions live once in `AGENTS.md` (and subdirectory `AGENTS.md` files such as `content/pages/AGENTS.md` and `scripts/*/AGENTS.md`). `CLAUDE.md`, `GEMINI.md`, and `.cursorrules` point to `AGENTS.md` so instructions are never duplicated.
   - Every agent tool looks in a different directory for skills, so the skill body lives once in `.agents/skills/<name>/SKILL.md` (read natively by Codex CLI and Antigravity) while `.claude/skills/<name>/SKILL.md` (Claude Code) and `.cursor/skills/<name>/SKILL.md` (Cursor) hold short stubs that carry the frontmatter and point at it. Symlinks are deliberately not used — Claude Code's skill discovery does not follow them. Edit the `.agents/` copy; the stubs only carry frontmatter. `.agents/skills/` is excluded from mdformat in `.pre-commit-config.yaml` so the instruction text is not reformatted.
-- Secrets (OpenAI key, etc.) are loaded via `.env`/`python-dotenv`, consumed by `scripts/blog_automation_2/config.py` (`GOOGLE_ANALYTICS`, `ACCESS_TOKEN` come from CI secrets for deploy).
+- Secrets (OpenAI key, etc.) are loaded via `.env`/`python-dotenv`, consumed by `scripts/blog_automation_2/config.py` (`ACCESS_TOKEN` comes from CI secrets for deploy).

@@ -37,6 +37,10 @@ favicon = "img/avatar.png"
 # avatar = "img/avatar.png"  # opt-in: shows the profile photo in the header
 tagline = "Python, Django, the cloud, and other interesting things — computer-related or not. Mostly monthly round-ups of what I've been doing, reading and watching."
 
+[params.umami]
+websiteId = ""  # TODO: from cloud.umami.is → Website → Edit → Tracking code
+domains = "blog.tobked.dev"
+
 [params.footer]
 since = 2018
 
@@ -140,9 +144,6 @@ url = "/feeds/all.rss.xml"
 weight = 60
 
 [services]
-[services.googleAnalytics]
-# Set in CI via HUGO_SERVICES_GOOGLEANALYTICS_ID.
-id = ""
 [services.rss]
 limit = 50
 

@@ -56,4 +56,6 @@
     })();
 </script>
 
-{{ template "_internal/google_analytics.html" . }}
+{{- with site.Params.umami.websiteId }}
+<script defer src="{{ site.Params.umami.src }}" data-website-id="{{ . }}"{{ with site.Params.umami.domains }} data-domains="{{ . }}"{{ end }}></script>
+{{- end }}
