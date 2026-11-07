@@ -1,5 +1,5 @@
 ---
-title: about me
+title: About me
 name: Tobiasz Kedzierski
 slug: about-me
 date: '2018-12-19'

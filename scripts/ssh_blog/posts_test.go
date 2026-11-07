@@ -50,8 +50,8 @@ func TestLoadRealSite(t *testing.T) {
 		t.Fatal(err)
 	}
 	about := all[0]
-	if about.Path != "/pages/about-me/" || !about.page {
-		t.Fatalf("first entry is %q, want About", about.Title)
+	if about.Path != "/pages/about-me/" || !about.page || about.Title != "About me" {
+		t.Fatalf("first entry is %q (%s), want About me", about.Title, about.Path)
 	}
 	for _, want := range []string{"## Elsewhere", "github.com/TobKed", siteURL + "/feeds/all.rss.xml"} {
 		if !strings.Contains(about.Body, want) {
@@ -135,6 +135,9 @@ func TestNavigateLinksSubpagesAndVimKeys(t *testing.T) {
 	m = press(tea.KeyPressMsg{Code: tea.KeyEnter})
 	if m.sublist == nil || m.reading != nil {
 		t.Fatalf("expected Links sublist to be open, got sublist=%v reading=%v", m.sublist, m.reading)
+	}
+	if !strings.Contains(m.sublist.Title, siteURL+"/pages/links/") {
+		t.Fatalf("Links sublist title %q missing URL", m.sublist.Title)
 	}
 
 	// Navigate to the last subpage with 'G', then first with 'g', then second with 'j'.

@@ -101,6 +101,7 @@ func TestBrowseAndReadOverSSH(t *testing.T) {
 	// Move down to Links, open subpages list, open AI resources, then go back twice.
 	out.Reset()
 	in.Write([]byte("j\r"))
+	waitFor(t, out, "blog.tobked.dev/pages/links/")
 	waitFor(t, out, "AI resources")
 	out.Reset()
 	in.Write([]byte("\r"))

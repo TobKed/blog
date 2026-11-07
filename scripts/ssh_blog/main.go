@@ -58,7 +58,7 @@ func newModel(posts []post) model {
 
 func (m model) open(p post) model {
 	if len(p.subpages) > 0 {
-		sub := newList(m.list.Title+" · "+p.Title, p.subpages, "back")
+		sub := newList(p.Title+" · "+siteURL+p.Path, p.subpages, "back")
 		sub.SetSize(m.list.Width(), m.list.Height())
 		m.sublist = &sub
 		return m
