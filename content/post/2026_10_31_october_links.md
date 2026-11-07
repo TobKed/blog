@@ -14,6 +14,7 @@ tags:
 slug: 2026-october-links
 summary: Interesting stuff from the month
 image: /images/posts/2026/2026_10/2026_10_pycon_nl.jpg
+image_alt: "Illuminated PYCONNL marquee letters on the venue floor in Utrecht"
 categories:
   - summary
 ---
@@ -29,9 +30,37 @@ Below you'll find a mix of articles, links, and resources, some of which tie int
 
 I always had some excuse to skip PyCon NL, but this year I was committed, especially since it's a very short commute for me. I've only been to a few PyCons (CZ and PL), and I'd consider the Dutch one a cozy event. It was hosted in Utrecht: a single stage with some workshops on the side, a few booths, and arcade games. The gold sponsor was [Sendcloud](https://www.sendcloud.com/), where I worked previously, and they had a great crew there. It was pretty cool to see a bunch of folks I shared the trenches with, and I also met a few new ones (**Sendcloud** is hiring, by the way). I was especially interested in a talk by Thiago Bellini Ribeiro (**Sendclouder**) on [**Zero-Downtime Multi-Tenancy in Django: From User-centric to Organizations-based Architecture**](https://www.pycon-nl.org/talks/2026/10). Working with decade-old monoliths is always a struggle, and it was an insightful take on how to pull off a migration like that, especially since I know that codebase firsthand, remembering how coupled everything was to `User`.
 
+<figure style="text-align: center;">
+    <img src="/images/posts/2026/2026_10/2026_10_pyconnl_01.jpg" alt="Thiago Bellini Ribeiro — Zero-Downtime Multi-Tenancy in Django at PyCon NL" style="display: block; margin-left: auto; margin-right: auto;">
+    <figcaption style="font-size: 0.9em; margin-top: 8px; margin-bottom: 12px">
+        Thiago Bellini Ribeiro — Zero-Downtime Multi-Tenancy in Django: From User-Centric to Organizations-Based Architecture
+    </figcaption>
+</figure>
+
 #### Blog redesign
 
 I don't think anyone noticed, but I redesigned the blog again and went deeper into [Claude Design](https://claude.com/product/design). I put together a board with six proposals, chose the one I liked most, and spent some time with `claude-code` turning it into a Hugo template. I was kind of happy with the result, but I still had this itch that something was off. I didn't trust myself anymore: I'd spent too much time working on it and felt I'd lost perspective. I needed outside eyes. Not many people can give reliable feedback beyond "I like it" or "I don't like it." But I knew whom to ask: none other than my friend Konrad, aka Orzech. His feedback was straight to the point: too many fonts, creating too much noise. And he even suggested a few alternatives. I went back and built an interactive mockup so I could easily switch between options and get an instant visual of how the page would look. That made choosing much easier, and I finally got the blog to match my taste.
+
+<figure style="text-align: center;">
+    <img src="/images/posts/2026/2026_10/font_choices_big.png" alt="Three fonts, three jobs — typography decisions board in Claude Design" style="display: block; margin-left: auto; margin-right: auto;">
+    <figcaption style="font-size: 0.9em; margin-top: 8px; margin-bottom: 12px">
+        Three fonts, three jobs — narrowing down the typography decisions after Konrad's feedback
+    </figcaption>
+</figure>
+
+<figure style="text-align: center;">
+    <img src="/images/posts/2026/2026_10/body_font_choices.png" alt="Comparing the same post across five body font candidates" style="display: block; margin-left: auto; margin-right: auto;">
+    <figcaption style="font-size: 0.9em; margin-top: 8px; margin-bottom: 12px">
+        Comparing the same post across five body font candidates
+    </figcaption>
+</figure>
+
+<figure style="text-align: center;">
+    <img src="/images/posts/2026/2026_10/canvas_choices_desktop_and_web.png" alt="Interactive playground mockup for switching fonts and layout options on desktop and mobile" style="display: block; margin-left: auto; margin-right: auto;">
+    <figcaption style="font-size: 0.9em; margin-top: 8px; margin-bottom: 12px">
+        Interactive playground mockup for testing font and layout combinations on desktop and mobile
+    </figcaption>
+</figure>
 
 #### Blog posting
 
