@@ -33,11 +33,17 @@ ssh.blog.tobked.dev
 
 <https://github.com/modem-dev/hunk>
 
+/insights in claude-code
+
 ______________________________________________________________________
 
 ## Articles
 
 ## Productivity
+
+### [Nick Taylor: How I Used Claude Code to Speed Up My Shell Startup by 95%](https://www.nickyt.co/blog/how-i-used-claude-code-to-speed-up-my-shell-startup-by-95percent)
+
+> Dev tooling adds up fast and it's easy to not notice the death by a thousand paper cuts.
 
 ## AI
 
@@ -56,6 +62,26 @@ ______________________________________________________________________
 ### [GitHub - backnotprop/plannotator](https://github.com/backnotprop/plannotator)
 
 > Plannotator is a local, browser-based review surface for AI coding agents: Claude Code, Codex, Copilot CLI, Gemini CLI, OpenCode, Kiro, Droid, Amp, DeepSeek Harness, and Pi.
+
+### [GitHub - goodnight000/api-anything](https://github.com/goodnight000/api-anything)
+
+> Turn any website into an API your agent can call. Learns from the site's own frontend, heals itself when the site changes.
+
+### [DPE Summit 2024: This Year in Uber's AI-Driven Developer Productivity Revolution](https://dpe.org/sessions/ty-smith-adam-huda/this-year-in-ubers-ai-driven-developer-productivity-revolution/)
+
+> Uber has formed a dedicated Developer Platform AI effort that spans many teams to deliver on that mantra.
+
+### [FiguringOutWithAI: Spotify's 90% Token Cut: Sell AI Coding Cost Audits](https://www.figuringoutwithai.com/playbooks/spotify-claude-code-token-cost-audit-playbook-2026)
+
+> Mean bulk-read savings were around a whopping 90%.
+
+### [Langfuse: Open Source LLMOps Stack](https://oss-llmops-stack.com/)
+
+> You can deploy this stack in a matter of minutes via the templates (HELM or docker compose) in your own environment.
+
+### [Langfuse: Launching the Langfuse AI Gateway](https://langfuse.com/changelog/2026-11-04-ai-gateway-public-beta)
+
+> Your application or coding agent sends its OpenAI or Anthropic requests to Langfuse instead of the provider.
 
 ## Security
 
@@ -87,16 +113,20 @@ ______________________________________________________________________
 
 ## Other stuff
 
+### [Safeguard Blog: How to Build a Tiny Data Center at Home: A Secure Homelab Guide](https://safeguard.sh/resources/blog/how-to-build-a-tiny-data-center-at-home-homelab)
+
+> start with one quiet, low power machine (a mini PC or a small used server)
+
 ## Podcasts
 
 ## Videos
 
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
+### [What Claude Code Can Do That You Haven't Tried - Gui Ferreira - NDC Oslo 2026](https://www.youtube.com/watch?v=P3TCZ2xrvbo)
 
-{{<youtube-lite id="VIDEO_ID" title="[](https://www.youtube.com/watch?v=VIDEO_ID)">}}
+{{<youtube-lite id="P3TCZ2xrvbo" title="What Claude Code Can Do That You Haven't Tried - Gui Ferreira - NDC Oslo 2026">}}
 
-### [](https://www.youtube.com/watch?v=VIDEO_ID)
+### [AI-Friendly Code: The Missing Link for Speed with Quality • Adam Tornhill • GOTO Copenhagen 2026](https://www.youtube.com/watch?v=ciRTdOIhNCc)
 
-> Playback on other websites has been disabled by the video owner. [Watch on YouTube](https://www.youtube.com/watch?v=VIDEO_ID)
+{{<youtube-lite id="ciRTdOIhNCc" title="AI-Friendly Code: The Missing Link for Speed with Quality • Adam Tornhill • GOTO Copenhagen 2026">}}
 
 ## 🇵🇱 Polish Corner 🇵🇱
