@@ -1,3 +1,10 @@
 {{- $src := .Destination -}}
 {{- with .Page.Resources.GetMatch .Destination }}{{ $src = .RelPermalink }}{{ end -}}
+{{- if and .IsBlock .Title -}}
+<figure class="post-figure">
+<img src="{{ $src | safeURL }}" alt="{{ .PlainText }}" loading="lazy" decoding="async">
+<figcaption>{{ .Title | markdownify }}</figcaption>
+</figure>
+{{- else -}}
 <img src="{{ $src | safeURL }}" alt="{{ .PlainText }}"{{ with .Title }} title="{{ . }}"{{ end }} loading="lazy" decoding="async">
+{{- end -}}

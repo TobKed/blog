@@ -154,6 +154,8 @@ a:hover { color: var(--accent); }
 }
 
 img { max-width: 100%; height: auto; }
+.post-figure { margin-left: 0; margin-right: 0; }
+.post-figure figcaption { margin-top: 8px; font-size: 0.9em; color: var(--muted); text-align: center; }
 
 button { font: inherit; }
 

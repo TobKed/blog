@@ -172,6 +172,8 @@ taxonomy = ['html']
 term = ['html']
 
 [markup]
+[markup.goldmark.parser]
+wrapStandAloneImageWithinParagraph = false
 [markup.goldmark.renderer]
 unsafe = true
 [markup.highlight]
