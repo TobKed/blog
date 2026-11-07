@@ -30,19 +30,13 @@ I finally got around to reading ["The Phoenix Project."](https://www.goodreads.c
 
 ### [Google Developer Groups: Meet NotebookLM](https://www.meetup.com/pl-PL/gdg-nl/events/308084364)
 
-I also attended a couple of great local meetups. First, I visited the Google office in Amsterdam for a [Google Developer Groups event on NotebookLM](<(https://www.meetup.com/pl-PL/gdg-nl/events/308084364)>). It was insightful to hear Pablo Felip discuss its applications in education. I'm already familiar with the tool, having used it for my [2024 Summary](/2024-summary/), so it was great to see other use cases for it.
+I also attended a couple of great local meetups. First, I visited the Google office in Amsterdam for a [Google Developer Groups event on NotebookLM](https://www.meetup.com/pl-PL/gdg-nl/events/308084364). It was insightful to hear Pablo Felip discuss its applications in education. I'm already familiar with the tool, having used it for my [2024 Summary](/2024-summary/), so it was great to see other use cases for it.
 
-<figure style="text-align: center;">
-    <img src="/images/posts/2025/2025_06_gcp_office_ams.jpg" alt="Google Amsterdam Office" style="display: block; margin-left: auto; margin-right: auto;">
-    <figcaption style="font-size: 0.9em; margin-top: 8px; margin-bottom: 12px">Google Amsterdam Office</figcaption>
-</figure>
+![Google Amsterdam Office](/images/posts/2025/2025_06_gcp_office_ams.jpg "Google Amsterdam Office")
 
-<figure style="text-align: center;">
-    <img src="/images/posts/2025/2025_06_gcp_notebook_lm.jpg" alt="Pablo Felip presenting on NotebookLM" style="display: block; margin-left: auto; margin-right: auto;">
-    <figcaption style="font-size: 0.9em; margin-top: 8px; margin-bottom: 12px">Pablo Felip presenting on NotebookLM</figcaption>
-</figure>
+![Pablo Felip presenting on NotebookLM](/images/posts/2025/2025_06_gcp_notebook_lm.jpg "Pablo Felip presenting on NotebookLM")
 
-###[Py.Amsterdam Meetup at Fareharbor](https://www.meetup.com/pl-PL/pyamsterdam/events/307658391)
+### [Py.Amsterdam Meetup at Fareharbor](https://www.meetup.com/pl-PL/pyamsterdam/events/307658391)
 
 Later in the month, the [Py Amsterdam meetup](https://www.meetup.com/pl-PL/pyamsterdam/events/307658391) was hosted right at [Fareharbor](https://fareharbor.com/), the company I'm currently working for and enjoying a lot. In the past, it was always quite a trip to get to the meetups, but this time I just grabbed my coffee mug and walked one floor up from my desk to participate in the amazing event. There were three great talks:
 
@@ -52,15 +46,9 @@ Later in the month, the [Py Amsterdam meetup](https://www.meetup.com/pl-PL/pyams
 
 The networking afterward was super nice, and I even ran into someone I had met at the Google event earlier in the month.
 
-<figure style="text-align: center;">
-    <img src="/images/posts/2025/2025_06_pyams_fh_iulia.jpg" alt="Iulia Feroli presenting on Spotify Wrapped" style="display: block; margin-left: auto; margin-right: auto;">
-    <figcaption style="font-size: 0.9em; margin-top: 8px; margin-bottom: 12px">Iulia Feroli presenting on Spotify Wrapped</figcaption>
-</figure>
+![Iulia Feroli presenting on Spotify Wrapped](/images/posts/2025/2025_06_pyams_fh_iulia.jpg "Iulia Feroli presenting on Spotify Wrapped")
 
-<figure style="text-align: center;">
-    <img src="/images/posts/2025/2025_06_pyams_fh_tyron.jpg" alt="Tyrone Damasceno presenting on AI" style="display: block; margin-left: auto; margin-right: auto;">
-    <figcaption style="font-size: 0.9em; margin-top: 8px; margin-bottom: 12px">Tyrone Damasceno presenting on AI</figcaption>
-</figure>
+![Tyrone Damasceno presenting on AI](/images/posts/2025/2025_06_pyams_fh_tyron.jpg "Tyrone Damasceno presenting on AI")
 
 ______________________________________________________________________
 

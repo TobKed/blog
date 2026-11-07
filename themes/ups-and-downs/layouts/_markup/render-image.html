@@ -1,3 +1,11 @@
 {{- $src := .Destination -}}
 {{- with .Page.Resources.GetMatch .Destination }}{{ $src = .RelPermalink }}{{ end -}}
+{{- if and .IsBlock .Title -}}
+<figure class="post-figure">
+<img src="{{ $src | safeURL }}" alt="{{ .PlainText }}" loading="lazy" decoding="async">
+{{- /* escape a leading list, heading or quote marker so the caption stays inline */ -}}
+<figcaption>{{ .Title | replaceRE `^([-+*#>])` `\$1` | replaceRE `^(\d+)([.)])` `$1\$2` | markdownify }}</figcaption>
+</figure>
+{{- else -}}
 <img src="{{ $src | safeURL }}" alt="{{ .PlainText }}"{{ with .Title }} title="{{ . }}"{{ end }} loading="lazy" decoding="async">
+{{- end -}}

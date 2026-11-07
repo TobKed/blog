@@ -31,12 +31,7 @@ While I don't use Google Cloud heavily on a daily basis, it remains my cloud pro
 I received a discount to renew my Associate Cloud Engineer certification, so I spent a few evenings refreshing my knowledge. The exam itself took me 50 minutes to answer the 50 questions and pass.
 It was a fun experience!
 
-<figure style="text-align: center;">
-    <img src="/images/posts/2026/gcp_ace.png" alt="Google Associate Cloud Engineer" style="display: block; margin-left: auto; margin-right: auto;">
-    <figcaption style="font-size: 0.9em; margin-top: 8px; margin-bottom: 12px">
-        <a href="https://www.credly.com/badges/61bf527e-9515-4521-9b56-33f2e4472708">View my Credly badge</a>
-    </figcaption>
-</figure>
+![Google Associate Cloud Engineer](/images/posts/2026/gcp_ace.png "[View my Credly badge](https://www.credly.com/badges/61bf527e-9515-4521-9b56-33f2e4472708)")
 
 ### [**Handy - Offline speech-to-text**](https://github.com/cjpais/Handy)
 

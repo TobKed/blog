@@ -189,6 +189,7 @@
 .issue-prose > :last-child { margin-bottom: 0; }
 .issue-prose p { margin: 0 0 0.9em; }
 .issue-prose img { display: block; margin: 0 auto; }
+.issue-prose > img, .issue-prose > figure { margin: 0 auto 0.9em; }
 .issue-prose pre { overflow-x: auto; }
 .issue-prose iframe { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; border: 0; }
 .issue-prose blockquote {
