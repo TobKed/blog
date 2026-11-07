@@ -18,8 +18,8 @@ build:
 
 ## Websites
 
-- **[AsyncIO: Why I Hate It](https://charlesleifer.com/blog/asyncio/)**: Critical look at the design trade-offs and ergonomics of Python's `asyncio`.
 - **[asyncio: a library with too many sharp corners](https://sailor.li/asyncio)**: Common footguns and unexpected behaviors in `asyncio`.
+- **[AsyncIO: Why I Hate It](https://charlesleifer.com/blog/asyncio/)**: Critical look at the design trade-offs and ergonomics of Python's `asyncio`.
 - **[GUI commits: Effective Python Async like a PRO 🐍🔀](https://guicommits.com/effective-python-async-like-a-pro/)**: Practical patterns for writing clean async Python code.
 - **[Limiting concurrency in Python asyncio: the story of async imap_unordered()](https://death.andgravity.com/limit-concurrency)**: Step-by-step walkthrough of bounding concurrent tasks in `asyncio`.
 - **[Michał Klich: asyncio: real world coroutines](https://klichx.dev/2023/08/03/asyncio-real-world-coroutines/)**: Working with coroutines, error handling, retries, and progress tracking in production.

@@ -27,8 +27,11 @@ For each URL provided, fetch its content and extract/generate:
 Before proceeding, you MUST check if the link has already been posted previously on the blog:
 *   Search **both** `content/post/` and `content/pages/`.
 *   **For standard links:** Search for the core URL (stripping out tracking parameters).
-*   **For YouTube videos:** Search for the specific `VIDEO_ID`.
-*   If a match is found in any file in `content/post/` or `content/pages/`, flag this link as a **DUPLICATE** and note the exact filename(s) where it was found.
+*   **For YouTube videos:** Search for the specific `VIDEO_ID` (both in URLs and in `{{<youtube-lite id="VIDEO_ID">}}` shortcodes).
+*   If a match is found in any file in `content/post/` or `content/pages/`, flag this link as a **DUPLICATE** and note the exact filename(s) where it was found:
+    *   A match in `content/post/` means it was already shared in a monthly post (warn before re-adding to a monthly post, though it can still be added to a curated topic page in `content/pages/` if missing there).
+    *   A match in `content/pages/<page>.md` means it is already on that topic page (do not duplicate it on the same topic page).
+    *   *(Note: If a link is intentionally repeated within `content/post/`, such as being discussed in `## Some thoughts` and also listed in a section below, mark the inline mention line with `<!-- dup-ok -->` so `make check_links` skips it.)*
 
 ## 4. Determine Target Files
 ### A. Monthly Post (`content/post/`)
@@ -37,7 +40,7 @@ Before proceeding, you MUST check if the link has already been posted previously
 *   If the target file doesn't exist and the user confirms adding to the monthly post, generate it with `make generate_post` (or `python scripts/generate_post.py`), which copies `content/post/2026_xx_xx_template_links.md` and fills in the month. Do not hand-write it.
 
 ### B. Curated Topic Pages (`content/pages/`)
-*   Read `content/pages/AGENTS.md` to load the current catalog of curated topic pages (`ai.md`, `writing.md`, `async.md`, `microservices.md`, `sleep.md`, etc.), their matching rules, and their `##` sections.
+*   Read `content/pages/AGENTS.md` to load the current catalog of curated topic pages (`ai.md`, `async.md`, `microservices.md`, `python.md`, `sleep.md`, `writing.md`, etc.), their matching rules, and their `##` sections.
 *   Check whether each link fits one or more curated topic pages in `content/pages/`.
 
 ## 5. Categorize (Sections)

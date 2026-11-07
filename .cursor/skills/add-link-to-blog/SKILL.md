@@ -1,6 +1,6 @@
 ---
 name: add-link-to-blog
-description: Adds one or multiple URLs to the current month's blog post draft using specific formatting (including YouTube videos) and sections. Supports both interactive and batch modes. Includes a global duplicate check.
+description: Use when adding one or more URLs or YouTube videos to the blog (monthly round-up posts and/or curated topic pages in content/pages/).
 ---
 
 # Add Link to Blog

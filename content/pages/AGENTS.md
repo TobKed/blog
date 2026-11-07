@@ -1,3 +1,10 @@
+---
+draft: true
+build:
+  list: never
+  render: never
+---
+
 # Topic Pages (`content/pages/`)
 
 This directory contains two kinds of Hugo pages:
