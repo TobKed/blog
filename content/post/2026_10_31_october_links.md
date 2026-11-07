@@ -70,7 +70,7 @@ I got feedback that the links are cool, but my posts lack a personal take. And I
 
 - [Joel Hooks: 🖋 Stop Giving af and Start Writing More](https://joelhooks.com/on-writing-more) <!-- dup-ok -->
 
-> The idea of a “blog” needs to get over itself. Everybody is treating writing as a “content marketing strategy” and using it to “build a personal brand” which leads to the fundamental flawed idea that everything you post has to be polished to perfection and ready to be consumed.
+  > The idea of a “blog” needs to get over itself. Everybody is treating writing as a “content marketing strategy” and using it to “build a personal brand” which leads to the fundamental flawed idea that everything you post has to be polished to perfection and ready to be consumed.
 
 ## Articles
 
