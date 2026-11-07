@@ -77,6 +77,12 @@ func waitFor(t *testing.T, out *syncBuf, want string) {
 func TestBrowseAndReadOverSSH(t *testing.T) {
 	posts := []post{
 		{Title: "Newest post", Date: "2026-10-31", Path: "/newest/", Body: "Hello from **the body**."},
+		{
+			Title: "Links", Path: "/pages/links/", page: true,
+			subpages: []post{
+				{Title: "AI resources", Path: "/pages/ai-resources/", page: true, Body: "Subpage **content** here."},
+			},
+		},
 		{Title: "Older post", Date: "2020-01-01", Path: "/older/", Body: "old"},
 	}
 	sess, in, out := ptySession(t, dial(t, "reader", posts))
@@ -91,6 +97,22 @@ func TestBrowseAndReadOverSSH(t *testing.T) {
 	out.Reset()
 	in.Write([]byte("q")) // back to the list
 	waitFor(t, out, "Older post")
+
+	// Move down to Links, open subpages list, open AI resources, then go back twice.
+	out.Reset()
+	in.Write([]byte("j\r"))
+	waitFor(t, out, "AI resources")
+	out.Reset()
+	in.Write([]byte("\r"))
+	waitFor(t, out, "Subpage")
+	waitFor(t, out, "blog.tobked.dev/pages/ai-resources/")
+	out.Reset()
+	in.Write([]byte("q")) // back to Links subpages
+	waitFor(t, out, "AI resources")
+	out.Reset()
+	in.Write([]byte("q")) // back to main list
+	waitFor(t, out, "Older post")
+
 	in.Write([]byte("q")) // quit
 	if err := sess.Wait(); err != nil {
 		t.Fatalf("session did not exit cleanly: %v", err)

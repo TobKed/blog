@@ -29,21 +29,44 @@ import (
 
 type model struct {
 	list    list.Model
+	sublist *list.Model
 	vp      viewport.Model
 	reading *post
 	dark    bool
 	footer  lipgloss.Style
 }
 
-func newModel(posts []post) model {
+func newList(title string, posts []post, quitHelp string) list.Model {
 	items := make([]list.Item, len(posts))
 	for i, p := range posts {
 		items[i] = item{p}
 	}
 	l := list.New(items, list.NewDefaultDelegate(), 0, 0)
-	l.Title = "blog.tobked.dev"
-	l.KeyMap.Quit = key.NewBinding(key.WithKeys("q", "esc"), key.WithHelp("q", "quit"))
-	return model{list: l, vp: viewport.New(), dark: true, footer: lipgloss.NewStyle().Faint(true)}
+	l.Title = title
+	l.KeyMap.Quit = key.NewBinding(key.WithKeys("q", "esc"), key.WithHelp("q", quitHelp))
+	return l
+}
+
+func newModel(posts []post) model {
+	return model{
+		list:   newList("blog.tobked.dev", posts, "quit"),
+		vp:     viewport.New(),
+		dark:   true,
+		footer: lipgloss.NewStyle().Faint(true),
+	}
+}
+
+func (m model) open(p post) model {
+	if len(p.subpages) > 0 {
+		sub := newList(m.list.Title+" · "+p.Title, p.subpages, "back")
+		sub.SetSize(m.list.Width(), m.list.Height())
+		m.sublist = &sub
+		return m
+	}
+	m.reading = &p
+	m.vp.SetContent(m.render(p))
+	m.vp.GotoTop()
+	return m
 }
 
 func (m model) Init() tea.Cmd { return tea.RequestBackgroundColor }
@@ -60,6 +83,9 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 		// The client picks its size; the views allocate width×height cells.
 		msg.Width, msg.Height = min(msg.Width, 300), min(msg.Height, 150)
 		m.list.SetSize(msg.Width, msg.Height)
+		if m.sublist != nil {
+			m.sublist.SetSize(msg.Width, msg.Height)
+		}
 		rewrap := msg.Width != m.vp.Width()
 		m.vp.SetWidth(msg.Width)
 		m.vp.SetHeight(msg.Height - 1)
@@ -73,6 +99,12 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 			case "q", "esc", "backspace", "left", "h":
 				m.reading = nil
 				return m, nil
+			case "g", "home":
+				m.vp.GotoTop()
+				return m, nil
+			case "G", "end":
+				m.vp.GotoBottom()
+				return m, nil
 			case "ctrl+c":
 				return m, tea.Quit
 			}
@@ -80,12 +112,36 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 			m.vp, cmd = m.vp.Update(msg)
 			return m, cmd
 		}
+		if m.sublist != nil {
+			if m.sublist.FilterState() != list.Filtering {
+				switch msg.String() {
+				case "enter":
+					if it, ok := m.sublist.SelectedItem().(item); ok {
+						m = m.open(it.p)
+					}
+					return m, nil
+				case "q", "backspace":
+					m.sublist = nil
+					return m, nil
+				case "esc":
+					if m.sublist.FilterState() == list.Unfiltered {
+						m.sublist = nil
+						return m, nil
+					}
+				case "left", "h":
+					if m.sublist.Paginator.Page == 0 {
+						m.sublist = nil
+						return m, nil
+					}
+				}
+			}
+			var cmd tea.Cmd
+			*m.sublist, cmd = m.sublist.Update(msg)
+			return m, cmd
+		}
 		if msg.String() == "enter" && m.list.FilterState() != list.Filtering {
 			if it, ok := m.list.SelectedItem().(item); ok {
-				p := it.p
-				m.reading = &p
-				m.vp.SetContent(m.render(p))
-				m.vp.GotoTop()
+				m = m.open(it.p)
 			}
 			return m, nil
 		}
@@ -125,9 +181,12 @@ func (m model) render(p post) string {
 
 func (m model) View() tea.View {
 	s := m.list.View()
+	if m.sublist != nil {
+		s = m.sublist.View()
+	}
 	if m.reading != nil {
 		s = m.vp.View() + "\n" + m.footer.Render(fmt.Sprintf(
-			" ↑/↓ scroll · q back · %3.0f%%", m.vp.ScrollPercent()*100))
+			" ↑/↓/j/k scroll · g/G top/bottom · q/h back · %3.0f%%", m.vp.ScrollPercent()*100))
 	}
 	v := tea.NewView(s)
 	v.AltScreen = true

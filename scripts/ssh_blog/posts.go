@@ -24,7 +24,8 @@ type post struct {
 	Tags    []string `yaml:"tags"`
 	Draft   bool     `yaml:"draft"`
 	Build   struct {
-		List string `yaml:"list"`
+		List   string `yaml:"list"`
+		Render string `yaml:"render"`
 	} `yaml:"build"`
 
 	// About page only.
@@ -38,9 +39,10 @@ type post struct {
 		Name, Issuer, URL string
 	} `yaml:"certifications"`
 
-	Body string `yaml:"-"`
-	Path string `yaml:"-"` // URL path on the website
-	page bool
+	Body     string `yaml:"-"`
+	Path     string `yaml:"-"` // URL path on the website
+	page     bool
+	subpages []post
 }
 
 type siteConfig struct {
@@ -64,6 +66,9 @@ type item struct{ p post }
 func (i item) Title() string { return i.p.Title }
 func (i item) Description() string {
 	if i.p.page {
+		if i.p.Summary != "" {
+			return "page · " + i.p.Path + "  " + i.p.Summary
+		}
 		return "page · " + i.p.Path
 	}
 	return i.p.day() + "  " + i.p.Summary
@@ -71,9 +76,10 @@ func (i item) Description() string {
 func (i item) FilterValue() string { return i.p.Title + " " + strings.Join(i.p.Tags, " ") }
 
 var (
-	youtube = regexp.MustCompile(`\{\{<\s*youtube-lite\b([^>]*)>\}\}`)
-	attr    = regexp.MustCompile(`(\w+)="([^"]*)"`)
-	figure  = regexp.MustCompile(`(?m)^(!\[[^\]]*\]\([^\s)]+) "([^"]*)"\)[ \t]*$`)
+	youtube  = regexp.MustCompile(`\{\{<\s*youtube-lite\b([^>]*)>\}\}`)
+	attr     = regexp.MustCompile(`(\w+)="([^"]*)"`)
+	figure   = regexp.MustCompile(`(?m)^(!\[[^\]]*\]\([^\s)]+) "([^"]*)"\)[ \t]*$`)
+	pageLink = regexp.MustCompile(`\(` + regexp.QuoteMeta(siteURL) + `(/pages/[^)\s]+)\)`)
 )
 
 // toTerminal rewrites Hugo-only syntax into plain Markdown.
@@ -104,18 +110,38 @@ func loadSite(root string) ([]post, error) {
 	}
 	sort.SliceStable(cfg.Menu.Social, func(i, j int) bool { return cfg.Menu.Social[i].Weight < cfg.Menu.Social[j].Weight })
 
-	pages, err := loadDir(filepath.Join(root, "content/pages"), "/pages/")
+	allPages, err := loadDir(filepath.Join(root, "content/pages"), "/pages/")
 	if err != nil {
 		return nil, err
 	}
-	posts, err := loadDir(filepath.Join(root, "content/post"), "/")
+	allPosts, err := loadDir(filepath.Join(root, "content/post"), "/")
 	if err != nil {
 		return nil, err
 	}
-	for i := range pages {
-		pages[i].page = true
-		if pages[i].Layout == "about" {
-			pages[i].Body = aboutMarkdown(pages[i], cfg)
+	byPath := make(map[string]post, len(allPages))
+	for i := range allPages {
+		allPages[i].page = true
+		if allPages[i].Layout == "about" {
+			allPages[i].Body = aboutMarkdown(allPages[i], cfg)
+		}
+		byPath[allPages[i].Path] = allPages[i]
+	}
+	var pages []post
+	for _, p := range allPages {
+		if p.Build.List == "never" {
+			continue
+		}
+		for _, m := range pageLink.FindAllStringSubmatch(p.Body, -1) {
+			if sub, ok := byPath[m[1]]; ok && sub.Build.List == "never" {
+				p.subpages = append(p.subpages, sub)
+			}
+		}
+		pages = append(pages, p)
+	}
+	var posts []post
+	for _, p := range allPosts {
+		if p.Build.List != "never" {
+			posts = append(posts, p)
 		}
 	}
 	sort.SliceStable(pages, func(i, j int) bool { return pages[i].Layout == "about" && pages[j].Layout != "about" })
@@ -123,7 +149,7 @@ func loadSite(root string) ([]post, error) {
 	return append(pages, posts...), nil
 }
 
-// loadDir reads the published, listed Markdown files in dir.
+// loadDir reads the published, rendered Markdown files in dir.
 func loadDir(dir, urlPrefix string) ([]post, error) {
 	files, err := filepath.Glob(filepath.Join(dir, "*.md"))
 	if err != nil {
@@ -144,7 +170,7 @@ func loadDir(dir, urlPrefix string) ([]post, error) {
 		if err := yaml.Unmarshal(fm, &p); err != nil {
 			return nil, fmt.Errorf("%s: %w", f, err)
 		}
-		if p.Draft || p.Build.List == "never" {
+		if p.Draft || p.Build.Render == "never" {
 			continue
 		}
 		p.Body = toTerminal(string(body))

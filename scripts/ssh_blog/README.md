@@ -1,7 +1,7 @@
 # SSH blog
 
 Serves the blog over SSH as a terminal app: the About page (with the social links from
-`hugo.toml`), the Links page, then every published post. Drafts and unlisted pages are skipped.
+`hugo.toml`), the Links page (with its curated topic subpages), then every published post. Drafts are skipped.
 
 ## Run locally
 
