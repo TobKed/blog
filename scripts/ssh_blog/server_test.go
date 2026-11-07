@@ -11,7 +11,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/charmbracelet/log"
+	"charm.land/log/v2"
 	gossh "golang.org/x/crypto/ssh"
 )
 
@@ -81,9 +81,9 @@ func TestBrowseAndReadOverSSH(t *testing.T) {
 	}
 	sess, in, out := ptySession(t, dial(t, "reader", posts))
 
-	// Answer the background-colour and device-attributes queries like a real terminal.
-	waitFor(t, out, "\x1b[c")
-	in.Write([]byte("\x1b]11;rgb:0000/0000/0000\x07\x1b[?62c"))
+	// Answer the background-colour query like a real terminal.
+	waitFor(t, out, "\x1b]11;?")
+	in.Write([]byte("\x1b]11;rgb:0000/0000/0000\x07"))
 	waitFor(t, out, "Older post")
 	in.Write([]byte("\r"))
 	waitFor(t, out, "Hello from")

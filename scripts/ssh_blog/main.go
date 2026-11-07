@@ -13,52 +13,61 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/charmbracelet/bubbles/list"
-	"github.com/charmbracelet/bubbles/viewport"
-	tea "github.com/charmbracelet/bubbletea"
-	"github.com/charmbracelet/glamour"
-	"github.com/charmbracelet/lipgloss"
-	"github.com/charmbracelet/ssh"
-	"github.com/charmbracelet/wish"
-	"github.com/charmbracelet/wish/activeterm"
-	bm "github.com/charmbracelet/wish/bubbletea"
-	"github.com/charmbracelet/wish/logging"
+	"charm.land/bubbles/v2/key"
+	"charm.land/bubbles/v2/list"
+	"charm.land/bubbles/v2/viewport"
+	tea "charm.land/bubbletea/v2"
+	"charm.land/glamour/v2"
+	"charm.land/lipgloss/v2"
+	"charm.land/ssh"
+	"charm.land/wish/v2"
+	"charm.land/wish/v2/activeterm"
+	bm "charm.land/wish/v2/bubbletea"
+	"charm.land/wish/v2/logging"
 	gossh "golang.org/x/crypto/ssh"
 )
 
 type model struct {
-	list     list.Model
-	vp       viewport.Model
-	reading  *post
-	renderer *lipgloss.Renderer
-	footer   lipgloss.Style
+	list    list.Model
+	vp      viewport.Model
+	reading *post
+	dark    bool
+	footer  lipgloss.Style
 }
 
-func newModel(posts []post, r *lipgloss.Renderer) model {
+func newModel(posts []post) model {
 	items := make([]list.Item, len(posts))
 	for i, p := range posts {
 		items[i] = item{p}
 	}
 	l := list.New(items, list.NewDefaultDelegate(), 0, 0)
 	l.Title = "blog.tobked.dev"
-	return model{list: l, renderer: r, footer: r.NewStyle().Faint(true)}
+	l.KeyMap.Quit = key.NewBinding(key.WithKeys("q", "esc"), key.WithHelp("q", "quit"))
+	return model{list: l, vp: viewport.New(), dark: true, footer: lipgloss.NewStyle().Faint(true)}
 }
 
-func (m model) Init() tea.Cmd { return nil }
+func (m model) Init() tea.Cmd { return tea.RequestBackgroundColor }
 
 func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 	switch msg := msg.(type) {
+	case tea.BackgroundColorMsg:
+		m.dark = msg.IsDark()
+		if m.reading != nil {
+			m.vp.SetContent(m.render(*m.reading))
+		}
+		return m, nil
 	case tea.WindowSizeMsg:
 		// The client picks its size; the views allocate width×height cells.
 		msg.Width, msg.Height = min(msg.Width, 300), min(msg.Height, 150)
 		m.list.SetSize(msg.Width, msg.Height)
-		rewrap := msg.Width != m.vp.Width
-		m.vp.Width, m.vp.Height = msg.Width, msg.Height-1
+		rewrap := msg.Width != m.vp.Width()
+		m.vp.SetWidth(msg.Width)
+		m.vp.SetHeight(msg.Height - 1)
 		if m.reading != nil && rewrap {
 			m.vp.SetContent(m.render(*m.reading))
 		}
 		return m, nil
-	case tea.KeyMsg:
+	case tea.KeyPressMsg:
 		if m.reading != nil {
 			switch msg.String() {
 			case "q", "esc", "backspace", "left", "h":
@@ -88,13 +97,12 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 
 func (m model) render(p post) string {
 	style := "light"
-	if m.renderer.HasDarkBackground() {
+	if m.dark {
 		style = "dark"
 	}
 	r, err := glamour.NewTermRenderer(
 		glamour.WithStandardStyle(style),
-		glamour.WithColorProfile(m.renderer.ColorProfile()),
-		glamour.WithWordWrap(min(m.vp.Width, 100)-4),
+		glamour.WithWordWrap(min(m.vp.Width(), 100)-4),
 	)
 	if err != nil {
 		return err.Error()
@@ -115,12 +123,15 @@ func (m model) render(p post) string {
 	return out
 }
 
-func (m model) View() string {
-	if m.reading == nil {
-		return m.list.View()
+func (m model) View() tea.View {
+	s := m.list.View()
+	if m.reading != nil {
+		s = m.vp.View() + "\n" + m.footer.Render(fmt.Sprintf(
+			" ↑/↓ scroll · q back · %3.0f%%", m.vp.ScrollPercent()*100))
 	}
-	return m.vp.View() + "\n" + m.footer.Render(fmt.Sprintf(
-		" ↑/↓ scroll · q back · %3.0f%%", m.vp.ScrollPercent()*100))
+	v := tea.NewView(s)
+	v.AltScreen = true
+	return v
 }
 
 // maxSessions caps open session channels, counted from the moment they open: each
@@ -185,7 +196,7 @@ func newServer(addr, hostKey string, posts []post) (*ssh.Server, error) {
 		limitSessions,
 		wish.WithMiddleware(
 			bm.Middleware(func(s ssh.Session) (tea.Model, []tea.ProgramOption) {
-				return newModel(posts, bm.MakeRenderer(s)), []tea.ProgramOption{tea.WithAltScreen()}
+				return newModel(posts), nil
 			}),
 			activeterm.Middleware(),
 			logging.StructuredMiddleware(), // quotes control characters in client-supplied names

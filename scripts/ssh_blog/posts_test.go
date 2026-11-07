@@ -5,8 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	tea "github.com/charmbracelet/bubbletea"
-	"github.com/charmbracelet/lipgloss"
+	tea "charm.land/bubbletea/v2"
 )
 
 func TestToTerminal(t *testing.T) {
@@ -18,16 +17,16 @@ func TestToTerminal(t *testing.T) {
 }
 
 func TestClampsClientWindowSize(t *testing.T) {
-	var m tea.Model = newModel(nil, lipgloss.NewRenderer(nil))
+	var m tea.Model = newModel(nil)
 	m, _ = m.Update(tea.WindowSizeMsg{Width: 8000, Height: 8000})
-	if vp := m.(model).vp; vp.Width != 300 || vp.Height != 149 {
-		t.Fatalf("viewport is %dx%d", vp.Width, vp.Height)
+	if vp := m.(model).vp; vp.Width() != 300 || vp.Height() != 149 {
+		t.Fatalf("viewport is %dx%d", vp.Width(), vp.Height())
 	}
 }
 
 func TestReaderShowsFrontMatterTitle(t *testing.T) {
-	m := newModel(nil, lipgloss.NewRenderer(nil))
-	m.vp.Width = 80
+	m := newModel(nil)
+	m.vp.SetWidth(80)
 	plain := func(p post) string { return regexp.MustCompile(`\x1b\[[0-9;]*m`).ReplaceAllString(m.render(p), "") }
 	if out := plain(post{Title: "Django on GCP", Body: "# Repository with code\n\ntext"}); !strings.Contains(out, "Django on GCP") {
 		t.Errorf("title missing:\n%s", out)
