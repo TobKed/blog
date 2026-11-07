@@ -13,7 +13,7 @@ tags:
   - "2026"
 slug: 2026-october-links
 summary: Interesting stuff from the month
-image: /images/posts/2026/2026_10_xx.jpg
+image: /images/posts/2026/2026_10/2026_10_pycon_nl.jpg
 categories:
   - summary
 ---
@@ -35,13 +35,13 @@ I don't think anyone noticed, but I redesigned the blog again and went deeper in
 
 #### Blog posting
 
-I got feedback that the links are cool, but my posts lack a personal take. And I agree. My English isn't perfect, though with AI around to help catch rough edges, that's not really an excuse anymore. Writing personal notes already helps me a lot to clarify my thinking, and I'm doing cool stuff at work and in my free time, so why not write about it? Not for personal branding, not for sharing and views. For fun. Clarified thinking and eternal fame will come later or never. Who cares. I like having fun with computers, tinkering with my terminal, playing with new tools, and reading both IT-related and completely unrelated articles. Especially now, in the middle of the AI storm and an overwhelming flood of slop, I want to work on my own writing skills. It feels like an important skill to keep sharp in a world where anyone can generate infinite lines on any topic with zero clue what was just spat out. Sometimes I catch myself reading a post only to realize the author probably didn't even bother reading it themselves, let alone understanding it.
+I got feedback that the links are cool, but my posts lack a personal take. And I agree. My English isn't perfect, though with AI around to help catch rough edges, that's not really an excuse anymore. Writing personal notes already helps a lot to clarify thinking, and I'm doing cool stuff at work and in my free time, so why not write about it? Not for personal branding, not for sharing and views. Just for fun. Clarified thinking and eternal fame will come later or never. Doesn't really matter. I like having fun with computers, tinkering with my terminal, playing with new tools, and reading both IT-related and completely unrelated articles. Especially now, in the middle of the AI storm and an overwhelming flood of slop, I want to work on my own writing skills. It feels like an important skill to keep sharp in a world where anyone can generate infinite lines on any topic with zero clue what was just spat out. Sometimes I catch myself reading a post only to realize the author probably didn't even bother reading it themselves, let alone understanding it. I can write slop all by myself!
 
 - [Jacob Tomlinson: Writing blog posts while walking the dog](https://jacobtomlinson.dev/posts/2026/writing-blog-posts-while-walking-the-dog/) <!-- dup-ok -->
 
 - [Joel Hooks: 🖋 Stop Giving af and Start Writing More](https://joelhooks.com/on-writing-more) <!-- dup-ok -->
 
-  > The idea of a “blog” needs to get over itself. Everybody is treating writing as a “content marketing strategy” and using it to “build a personal brand” which leads to the fundamental flawed idea that everything you post has to be polished to perfection and ready to be consumed.
+> The idea of a “blog” needs to get over itself. Everybody is treating writing as a “content marketing strategy” and using it to “build a personal brand” which leads to the fundamental flawed idea that everything you post has to be polished to perfection and ready to be consumed.
 
 ## Articles
 
