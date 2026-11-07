@@ -30,13 +30,13 @@ I finally got around to reading ["The Phoenix Project."](https://www.goodreads.c
 
 ### [Google Developer Groups: Meet NotebookLM](https://www.meetup.com/pl-PL/gdg-nl/events/308084364)
 
-I also attended a couple of great local meetups. First, I visited the Google office in Amsterdam for a [Google Developer Groups event on NotebookLM](<(https://www.meetup.com/pl-PL/gdg-nl/events/308084364)>). It was insightful to hear Pablo Felip discuss its applications in education. I'm already familiar with the tool, having used it for my [2024 Summary](/2024-summary/), so it was great to see other use cases for it.
+I also attended a couple of great local meetups. First, I visited the Google office in Amsterdam for a [Google Developer Groups event on NotebookLM](https://www.meetup.com/pl-PL/gdg-nl/events/308084364). It was insightful to hear Pablo Felip discuss its applications in education. I'm already familiar with the tool, having used it for my [2024 Summary](/2024-summary/), so it was great to see other use cases for it.
 
 ![Google Amsterdam Office](/images/posts/2025/2025_06_gcp_office_ams.jpg "Google Amsterdam Office")
 
 ![Pablo Felip presenting on NotebookLM](/images/posts/2025/2025_06_gcp_notebook_lm.jpg "Pablo Felip presenting on NotebookLM")
 
-###[Py.Amsterdam Meetup at Fareharbor](https://www.meetup.com/pl-PL/pyamsterdam/events/307658391)
+### [Py.Amsterdam Meetup at Fareharbor](https://www.meetup.com/pl-PL/pyamsterdam/events/307658391)
 
 Later in the month, the [Py Amsterdam meetup](https://www.meetup.com/pl-PL/pyamsterdam/events/307658391) was hosted right at [Fareharbor](https://fareharbor.com/), the company I'm currently working for and enjoying a lot. In the past, it was always quite a trip to get to the meetups, but this time I just grabbed my coffee mug and walked one floor up from my desk to participate in the amazing event. There were three great talks:
 

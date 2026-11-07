@@ -16,6 +16,14 @@ func TestToTerminal(t *testing.T) {
 	}
 }
 
+func TestToTerminalKeepsImageCaption(t *testing.T) {
+	got := toTerminal("![Alt](/a.jpg \"A [link](https://x.org) caption\")\n")
+	want := "![Alt](https://blog.tobked.dev/a.jpg)\n\n*A [link](https://x.org) caption*\n"
+	if got != want {
+		t.Fatalf("got %q", got)
+	}
+}
+
 func TestClampsClientWindowSize(t *testing.T) {
 	var m tea.Model = newModel(nil)
 	m, _ = m.Update(tea.WindowSizeMsg{Width: 8000, Height: 8000})
