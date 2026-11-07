@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: Month summary - October 2026
 date: "2026-10-31"
 tags:
@@ -34,7 +34,7 @@ I always had some excuse to skip PyCon NL, but this year I was committed, especi
 
 #### Blog redesign
 
-I don't think anyone noticed, but I redesigned the blog again and went deeper into [Claude Design](https://claude.com/product/design). I put together a board with six proposals, chose the one I liked most, and spent some time with `claude-code` turning it into a Hugo template. I was kind of happy with the result, but I still had this itch that something was off. I didn't trust myself anymore: I'd spent too much time working on it and felt I'd lost perspective. I needed outside eyes. Not many people can give reliable feedback beyond "I like it" or "I don't like it." But I knew whom to ask: none other than my friend Konrad, aka Orzech. His feedback was straight to the point: too many fonts, creating too much noise. And he even suggested a few alternatives. I went back and built an interactive mockup so I could easily switch between options and get an instant visual of how the page would look. That made choosing much easier, and I finally got the blog to match my taste.
+I don't think anyone noticed, but I redesigned the blog again and went deeper into [Claude Design](https://claude.com/product/design). I put together a board with six proposals, chose the one I liked most, and spent some time with `claude-code` turning it into a Hugo template. I was kind of happy with the result, but I still had this itch that something was off. I didn't trust myself anymore: I'd spent too much time working on it and felt I'd lost perspective. I needed outside eyes. Not many people can give reliable feedback beyond "I like it" or "I don't like it." But I knew whom to ask: none other than my friend [Konrad, aka Orzech](https://h0m3.webd.pl/blog/). His feedback was straight to the point: too many fonts, creating too much noise. And he even suggested a few alternatives. I went back and built an interactive mockup so I could easily switch between options and get an instant visual of how the page would look. That made choosing much easier, and I finally got the blog to match my taste.
 
 ![Three fonts, three jobs — typography decisions board in Claude Design](/images/posts/2026/2026_10/font_choices_big.jpg "Three fonts, three jobs — narrowing down the typography decisions after Konrad's feedback")
 
