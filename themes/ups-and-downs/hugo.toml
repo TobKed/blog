@@ -24,3 +24,9 @@ keepFirstOpen = true
 toc = true            # build the Contents list
 readingTime = true    # show "N min read"
 headingAnchor = true  # add a # link beside each heading
+
+# Cookieless analytics; rendered only when websiteId is set.
+[params.umami]
+src = "https://cloud.umami.is/script.js"
+websiteId = ""
+domains = ""          # comma-separated hostnames to track, e.g. skip localhost

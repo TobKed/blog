@@ -51,7 +51,6 @@ jobs:
       run: hugo --gc --minify
       env:
         HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
-        HUGO_SERVICES_GOOGLEANALYTICS_ID: ${{ secrets.GOOGLE_ANALYTICS }}
     - name: Save Hugo cache
       uses: actions/cache/save@v6
       with:
