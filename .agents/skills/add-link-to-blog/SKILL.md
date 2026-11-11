@@ -22,7 +22,7 @@ python3 .agents/skills/add-link-to-blog/scripts/find_links.py URL [URL ...]
 It prints each URL in its cleaned form (fragments such as `#install` and tracking parameters such as `utm_*` or `si` removed) and lists every `file:line` in `content/post/` and `content/pages/` where it already appears. YouTube links are compared by video ID, so `youtu.be/ID`, `watch?v=ID` and `{{<youtube-lite id="ID">}}` all match. It also flags URLs repeated within the input itself.
 
 - Always write the **cleaned** URL into the blog, so the same page never ends up under two spellings.
-- A hit in `content/post/` means it was already shared in a monthly post: flag it, and propose skipping it unless the user says otherwise.
+- A hit in `content/post/` means it was already shared in a monthly post: skip it and list it under "Not added" (see step 4).
 - A hit in `content/pages/<page>.md` means it is already on that topic page: never add it there again.
 - An input repeated within the batch is silently collapsed to one entry; mention it in one line.
 - If a link is intentionally repeated within `content/post/` (e.g. discussed in `## Some thoughts` and listed below), mark the inline mention line with `<!-- dup-ok -->` so `make check_links` skips it.
@@ -55,19 +55,30 @@ Read `content/pages/AGENTS.md` for the page catalog, the `##` sections of each p
 
 ## 4. Review with the user
 
-Print one compact table covering every link, then short notes only for the links that need a decision:
+Use two tables, so the one the user actually reviews only holds links that will be added.
+
+**Proposals:** every link you plan to add:
 
 | # | Entry title | Monthly post section | Topic page |
 |---|---|---|---|
 | 1 | GitHub - owner/repo | `## AI` | `ai.md` → `## Skills` |
 | 2 | Source: Title | `## Tools` | - |
 
-Below the table, list only:
-- **Duplicates / skipped:** which inputs were already on the blog (with file) or repeated within the batch.
+Below it, short notes only where needed:
 - **Uncertain calls:** a section or topic page you are unsure about, with your recommendation.
 - **Topic page entries:** the proposed `- **[Title](URL)**: one sentence` line for each.
 
-Then ask, in one short list: are the targets and sections right, should the duplicates be skipped, and anything to change. Don't print snippets yet: they come in the next step, where the user sees them in place.
+**Not added:** below the proposals, every link that won't be added, with the reason (omit the table if there are none):
+
+| URL | Reason |
+|---|---|
+| https://github.com/owner/repo | Already in `content/post/2026_11_30_november_links.md:66` |
+| https://example.com/x | Fetch failed (403) |
+| https://youtu.be/ID | Same as #3 above |
+
+Reasons include: already on the blog, repeated within the batch, page unreachable or blocked, nothing usable to quote. This is a report, not a question: don't ask whether to add duplicates anyway, since the answer is almost always no. The user will say so if they want one.
+
+Then ask only whether the proposals' targets and sections are right, and anything to change. Don't print snippets yet: they come in the next step, where the user sees them in place.
 
 ## 5. Show the exact changes, then write
 
@@ -114,3 +125,5 @@ After writing:
 1. `pre-commit run --files <changed files>` must pass. It catches mdformat rewriting a shortcode or list.
 2. Rerun `find_links.py` on the added URLs: each should now appear exactly once per target file.
 3. Report what was added where, in a few lines, and anything skipped.
+
+Leave the changes uncommitted. Don't commit, merge or push, and don't ask about it either: the user commits when they choose, or asks explicitly.
