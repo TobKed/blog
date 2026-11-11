@@ -115,6 +115,10 @@ ______________________________________________________________________
 
 > A self-hosted AI workspace for chat, agents, research, documents, email, notes, calendar, and local model workflows.
 
+### [GitHub - vercel/eve](https://github.com/vercel/eve)
+
+> eve is a filesystem-first framework for durable AI agents. Core agent capabilities live in conventional locations, so projects are easier to inspect, extend, and operate.
+
 ### [Langfuse: Open Source LLMOps Stack](https://oss-llmops-stack.com/)
 
 > You can deploy this stack in a matter of minutes via the templates (HELM or docker compose) in your own environment.
