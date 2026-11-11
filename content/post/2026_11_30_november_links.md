@@ -45,6 +45,10 @@ ______________________________________________________________________
 
 > Dev tooling adds up fast and it's easy to not notice the death by a thousand paper cuts.
 
+### [Daniel Miessler: Your Energy Level Changes How You See the World](https://danielmiessler.com/blog/your-energy-changes-how-you-see-the-world)
+
+> My problems don't change when my energy does; I just see them completely differently
+
 ## AI
 
 ### [Pi: A terminal-based coding agent](https://pi.dev/)
@@ -74,6 +78,42 @@ ______________________________________________________________________
 ### [FiguringOutWithAI: Spotify's 90% Token Cut: Sell AI Coding Cost Audits](https://www.figuringoutwithai.com/playbooks/spotify-claude-code-token-cost-audit-playbook-2026)
 
 > Mean bulk-read savings were around a whopping 90%.
+
+### [Claude Cookbook: Prompting for frontend aesthetics](https://platform.claude.com/cookbook/coding-prompting-for-frontend-aesthetics#the-prompt)
+
+> Claude can generate high-quality frontends, but without guidance it tends toward generic, conservative designs. This guide shows you how to prompt Claude to produce more distinctive, polished output.
+
+### [Claude Blog: How the Claude Code team does code review](https://claude.dev/blog/solving-code-review-at-anthropic/)
+
+> We didn't remove review. But we did move most of the reading to machines, optimized for human time and attention, and invested heavily in making it fast and easy to undo mistakes.
+
+### [Orestis Ioannou: My AI Engineering Setup, 15 Months Later](https://oioannou.com/blog/ai-engineering-setup-15-months-later/)
+
+> Fifteen months later, all my engineering work flows through agents. I can delegate all of the implementation without delegating responsibility for what ships.
+
+### [GitHub - kepano/obsidian-skills](https://github.com/kepano/obsidian-skills)
+
+> Agent skills for Obsidian. Teach your agent to use Obsidian CLI and open formats including Markdown, Bases, JSON Canvas.
+
+### [GitHub - apache/magpie](https://github.com/apache/magpie)
+
+> Magpie is a curated set of skills for the AI agent you already use
+
+### [Moshi: SSH & MOSH Terminal for Claude Code & AI Agents](https://getmoshi.app/)
+
+> Moshi 🐱 is the baby monitor for your AI agents — a terminal built for phones, not shrunken from desktops.
+
+### [GitHub - andyrewlee/awesome-agent-orchestrators](https://github.com/andyrewlee/awesome-agent-orchestrators)
+
+> A curated list of open source and source available tools for orchestrating agents.
+
+### [GitHub - mvschwarz/openrig](https://github.com/mvschwarz/openrig)
+
+> OpenRig is open-source software for building and running your own network of agents. It turns AI coding agents from a pile of terminal sessions into a persistent, organized team.
+
+### [GitHub - odysseus-dev/odysseus](https://github.com/odysseus-dev/odysseus)
+
+> A self-hosted AI workspace for chat, agents, research, documents, email, notes, calendar, and local model workflows.
 
 ### [Langfuse: Open Source LLMOps Stack](https://oss-llmops-stack.com/)
 
@@ -109,6 +149,18 @@ ______________________________________________________________________
 
 > Hunk is an interactive terminal diff viewer for reviewing code changes, built on OpenTUI and Pierre diffs.
 
+### [GitHub - danielmiessler/ULVim](https://github.com/danielmiessler/ULVim)
+
+> ULVim is a stripped-down, super basic, ultra-fast version of Vim. It is not designed to be constantly modified: it is a dependable workhorse you install once and then just use.
+
+### [ntfy: Send push notifications to your phone via PUT/POST](https://ntfy.sh/)
+
+> ntfy (pronounced notify) is a simple HTTP-based pub-sub notification service. It allows you to send notifications to your phone or desktop via scripts from any computer, and/or using a REST API.
+
+### [GitHub - makeplane/plane](https://github.com/makeplane/plane)
+
+> Open-source Jira, Linear, Monday, and ClickUp alternative.
+
 ## Cloud
 
 ## Other stuff
@@ -128,5 +180,13 @@ ______________________________________________________________________
 ### [AI-Friendly Code: The Missing Link for Speed with Quality • Adam Tornhill • GOTO Copenhagen 2026](https://www.youtube.com/watch?v=ciRTdOIhNCc)
 
 {{<youtube-lite id="ciRTdOIhNCc" title="AI-Friendly Code: The Missing Link for Speed with Quality • Adam Tornhill • GOTO Copenhagen 2026">}}
+
+### [you need to use Herdr RIGHT NOW!! - NetworkChuck](https://www.youtube.com/watch?v=9_FzA-J9S2E)
+
+{{<youtube-lite id="9_FzA-J9S2E" title="you need to use Herdr RIGHT NOW!! - NetworkChuck">}}
+
+### [Your Old Prompts Are Making Claude Worse - Lance Martin, Anthropic](https://www.youtube.com/watch?v=ys6YQ2yfBpM)
+
+{{<youtube-lite id="ys6YQ2yfBpM" title="Your Old Prompts Are Making Claude Worse - Lance Martin, Anthropic">}}
 
 ## 🇵🇱 Polish Corner 🇵🇱
