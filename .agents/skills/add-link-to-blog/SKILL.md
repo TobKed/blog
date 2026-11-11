@@ -5,122 +5,110 @@ description: Use when adding one or more URLs or YouTube videos to the blog (mon
 
 # Add Link to Blog Skill
 
-You are a blog curation assistant. Your task is to process one or more provided URLs, extract information, check for duplicates across the entire blog (`content/post/` and `content/pages/`), categorize them for both the current month's post and any matching curated topic pages in `content/pages/`, present options to the user, and write them to the confirmed files.
+You are a blog curation assistant. Take one or more URLs, check them against everything already on the blog, draft entries for the current month's round-up post (and, sparingly, for curated topic pages), get the user's sign-off, then write them.
 
-## 1. Execution Modes
+The user usually pastes a batch of links and wants a quick, scannable review, not an essay per link. Keep every message to the user compact and spend words only where a decision is needed.
 
-*   **Interactive Mode (Single URL):** If the user provides a single URL, process it and ask for choices before writing to any file.
-*   **Batch Mode (Multiple URLs):** If the user provides multiple URLs, process all URLs first, present the drafted details for all of them at once, and ask the user for their choices (targets, sections, and Snippet vs. Summary for standard links) for each link before writing anything.
+## 1. Normalize and dedupe
 
-## 2. Analyze the URLs
-For each URL provided, fetch its content and extract/generate:
-*   **Page Title Formatting:** For standard links, extract the page title and format it so the source/website/author name appears as a prefix followed by a colon (e.g., `Source Name: Title`). For example, `A Life Engineered: {Title}`, `Architecture Weekly: {Title}`, `NetworkChuck: {Title}`, etc. If the source name appears as a suffix in the original title (e.g., `Title - Site Name` or `Title | Site Name`), move it to the front.
-*   **For GitHub links:**
-    *   In monthly posts (`content/post/`): format strictly as `GitHub - user/repo` (do NOT include the repository description or "· GitHub" suffix).
-    *   In topic pages (`content/pages/`): format the bold link text as `user/repo` per `content/pages/AGENTS.md`.
-*   **AI Summary:** For standard links, generate a concise AI Summary that explains *why* the link is interesting. (Do NOT generate an AI summary block for YouTube videos in monthly posts).
-*   **Topic Page Description (if matching a topic page):** A single concise sentence summarizing the resource for `- **[Title](URL)**: Description` in `content/pages/*.md`.
-*   **For standard links:** Extract a 1-2 sentence snippet quoted directly from the main content of the page that is highly representative.
-*   **For YouTube videos:** Extract the `VIDEO_ID` from the URL (e.g., from `?v=VIDEO_ID` or `youtu.be/VIDEO_ID`).
+Run the bundled script on all input URLs first:
 
-## 3. Global Duplicate Check
-Before proceeding, you MUST check if the link has already been posted previously on the blog:
-*   Search **both** `content/post/` and `content/pages/`.
-*   **For standard links:** Search for the core URL (stripping out tracking parameters).
-*   **For YouTube videos:** Search for the specific `VIDEO_ID` (both in URLs and in `{{<youtube-lite id="VIDEO_ID">}}` shortcodes).
-*   If a match is found in any file in `content/post/` or `content/pages/`, flag this link as a **DUPLICATE** and note the exact filename(s) where it was found:
-    *   A match in `content/post/` means it was already shared in a monthly post (warn before re-adding to a monthly post, though it can still be added to a curated topic page in `content/pages/` if missing there).
-    *   A match in `content/pages/<page>.md` means it is already on that topic page (do not duplicate it on the same topic page).
-    *   *(Note: If a link is intentionally repeated within `content/post/`, such as being discussed in `## Some thoughts` and also listed in a section below, mark the inline mention line with `<!-- dup-ok -->` so `make check_links` skips it.)*
-
-## 4. Determine Target Files
-### A. Monthly Post (`content/post/`)
-*   Calculate the current date.
-*   The target filename format is: `content/post/YYYY_MM_DD_monthname_links.md` (where `DD` is the LAST DAY of the current month, and `monthname` is lowercase, e.g., `content/post/2026_03_31_march_links.md`).
-*   If the target file doesn't exist and the user confirms adding to the monthly post, generate it with `make generate_post` (or `python scripts/generate_post.py`), which copies `content/post/2026_xx_xx_template_links.md` and fills in the month. Do not hand-write it.
-
-### B. Curated Topic Pages (`content/pages/`)
-*   Read `content/pages/AGENTS.md` to load the current catalog of curated topic pages (`ai.md`, `async.md`, `microservices.md`, `python.md`, `sleep.md`, `writing.md`, etc.), their matching rules, and their `##` sections.
-*   Check whether each link fits one or more curated topic pages in `content/pages/`.
-
-## 5. Categorize (Sections)
-1. **Monthly Post Section:** Identify which standard section in the monthly post the link best fits into:
-   `## Articles`, `## Productivity`, `## AI`, `## Security`, `## Python`, `## Django`, `## Python libraries`, `## Django libraries`, `## Go`, `## Tools`, `## Cloud`, `## Other stuff`, `## Podcasts`, `## Videos`.
-   *(Note: YouTube links should generally be categorized under `## Videos`, or `## 🇵🇱 Polish Corner 🇵🇱` if in Polish).*
-2. **Topic Page Section (Optional):** If the link matches one or more curated topic pages in `content/pages/AGENTS.md`, identify the target file (e.g., `content/pages/writing.md` or `content/pages/ai.md`) and its specific `## Section` (or `None` if no topic page applies).
-
-## 6. Review Phase
-Before modifying any files, print the drafted information to the user.
-
-*(For Batch Mode, list these out numbered: 1. 2. 3. ...)*
-**Proposed Monthly Post:** `content/post/YYYY_MM_DD_monthname_links.md` → `## Section Name`
-**Proposed Topic Page(s):** `content/pages/<page>.md` → `## Section Name` *(or `None` if no topic page matches)*
-**⚠️ DUPLICATE WARNING:** *[Only print this if the duplicate check found it in `content/post/` or `content/pages/`, specifying the file(s)]*
-
-*If standard link:*
-**Extracted Snippet:** > "[Literal quote from page]"
-**AI Summary:** [Generated description]
-
-*If YouTube link:*
-**Video ID detected:** [VIDEO_ID]
-*(Note: In monthly posts, YouTube videos only use the title and embedded player)*
-
-*If a Topic Page matched:*
-**Topic Page Entry:** `- **[{Title}]({URL})**: {1-sentence description}`
-
-After printing the drafts, **EXPLICITLY ask the user:**
-1. Which target(s) should this link be added to: the **Monthly Post**, the **Topic Page(s)**, or **both**? And are the proposed sections correct?
-2. For each standard link going into the Monthly Post, would you like to use the **Extracted Snippet** OR the **AI Summary**?
-3. For any flagged duplicates, do you still want to add them?
-4. Are you ready for me to write these changes?
-
-Wait for the user's response. Iterate and update the drafts if they request changes.
-
-## 7. Formatting and File Modification
-
-### A. Updating the Monthly Post (`content/post/YYYY_MM_DD_monthname_links.md`)
-If confirmed for the monthly post, locate the confirmed `## Section` in the target file and follow this **internal sorting hierarchy**:
-1. **Standalone / diverse links** appear first.
-2. **Thematic / topic clusters** (e.g., links sharing a specific sub-topic such as writing/blogging craft, note-taking, or database internals) should be kept adjacent to each other. If adding a link that matches an existing topic cluster in that section, place it next to that cluster.
-3. **Publication / source series** (links sharing the same author or source prefix like `A Life Engineered:` or `DEF CON 34:`) must always be grouped together at the **very end** of the section so they don't dominate the top.
-   - If adding a link that belongs to a source series, insert it at the end of that specific series group at the bottom.
-   - If adding a standalone or topic link, append it after the existing standalone/topic links but **before** any source series at the bottom.
-
-**For Standard Links, use the format chosen by the user:**
-
-*If user chose Extracted Snippet:*
-```markdown
-### [{Page Title}]({URL})
-
-> {Extracted Snippet}
+```bash
+python3 .agents/skills/add-link-to-blog/scripts/find_links.py URL [URL ...]
 ```
 
-*If user chose AI Summary:*
+It prints each URL in its cleaned form (fragments such as `#install` and tracking parameters such as `utm_*` or `si` removed) and lists every `file:line` in `content/post/` and `content/pages/` where it already appears. YouTube links are compared by video ID, so `youtu.be/ID`, `watch?v=ID` and `{{<youtube-lite id="ID">}}` all match. It also flags URLs repeated within the input itself.
+
+- Always write the **cleaned** URL into the blog, so the same page never ends up under two spellings.
+- A hit in `content/post/` means it was already shared in a monthly post: flag it, and propose skipping it unless the user says otherwise.
+- A hit in `content/pages/<page>.md` means it is already on that topic page: never add it there again.
+- An input repeated within the batch is silently collapsed to one entry; mention it in one line.
+- If a link is intentionally repeated within `content/post/` (e.g. discussed in `## Some thoughts` and listed below), mark the inline mention line with `<!-- dup-ok -->` so `make check_links` skips it.
+
+## 2. Gather details for each link
+
+**Standard links:**
+- **Title:** prefix with the source so readers can tell who wrote it: `Source Name: Title` (e.g. `Architecture Weekly: {Title}`, `Daniel Miessler: {Title}`). If the source sits at the end of the page title (`Title | Site`), move it to the front. For a product homepage use `Product: tagline` (e.g. `ntfy: Send push notifications to your phone via PUT/POST`).
+- **GitHub repos:** `GitHub - owner/repo` in monthly posts (no description, no "· GitHub" suffix); `owner/repo` on topic pages.
+- **Snippet:** a 1-2 sentence quote, copied **verbatim** from the page, that shows what the link is about. Page fetchers backed by a small model sometimes paraphrase; if a quote looks smoothed over, confirm it against the raw page (`curl -sL URL | grep -F "phrase"`) before using it.
+
+**YouTube videos:**
+- Get the title and channel from oEmbed, which is reliable and needs no browser:
+  `curl -s "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=VIDEO_ID&format=json"`
+- Use the video title as-is. Append ` - Channel` only when the title gives no hint of who made it (a talk title that already names the speaker or event needs nothing).
+
+**AI summaries are opt-in.** Recent posts use snippets exclusively, so default to the snippet and only write a `#### AI generated summary` block when the user asks for one (or when the page has no quotable sentence, in which case say so in the review).
+
+## 3. Choose targets
+
+### Monthly post
+- Target: `content/post/YYYY_MM_DD_monthname_links.md`, where `DD` is the last day of the current month (e.g. `content/post/2026_03_31_march_links.md`).
+- If it doesn't exist, create it with `make generate_post` (or `python scripts/generate_post.py`) rather than by hand, so front matter and section headers match the template.
+- Pick one section: `## Articles`, `## Productivity`, `## AI`, `## Security`, `## Python`, `## Django`, `## Python libraries`, `## Django libraries`, `## Go`, `## Tools`, `## Cloud`, `## Other stuff`, `## Podcasts`, `## Videos`. YouTube goes under `## Videos`, or `## 🇵🇱 Polish Corner 🇵🇱` if in Polish.
+
+### Curated topic pages (be conservative)
+Topic pages are evergreen reference lists, so they should only collect things a reader would still reach for in a year: repositories, tools, skill collections, curated lists, books, and the occasional landmark article or talk. One-off blog posts, news, launch announcements and most videos belong in the monthly post only.
+
+Read `content/pages/AGENTS.md` for the page catalog, the `##` sections of each page and the entry format. Propose a topic page only when the link clearly fits; when in doubt, leave it out and let the user add it.
+
+## 4. Review with the user
+
+Print one compact table covering every link, then short notes only for the links that need a decision:
+
+| # | Entry title | Monthly post section | Topic page |
+|---|---|---|---|
+| 1 | GitHub - owner/repo | `## AI` | `ai.md` → `## Skills` |
+| 2 | Source: Title | `## Tools` | - |
+
+Below the table, list only:
+- **Duplicates / skipped:** which inputs were already on the blog (with file) or repeated within the batch.
+- **Uncertain calls:** a section or topic page you are unsure about, with your recommendation.
+- **Topic page entries:** the proposed `- **[Title](URL)**: one sentence` line for each.
+
+Then ask, in one short list: are the targets and sections right, should the duplicates be skipped, and anything to change. Don't print snippets yet: they come in the next step, where the user sees them in place.
+
+## 5. Show the exact changes, then write
+
+Once the user confirms targets, show the exact Markdown that will be inserted, grouped by file and section, with where it goes (e.g. "after the Nick Taylor entry"). Call out any small judgment calls you made (a dropped fragment, an appended channel name). Write only after the user approves.
+
+### Monthly post formats
+
+Standard link (default):
 ```markdown
-### [{Page Title}]({URL})
+### [{Title}]({URL})
+
+> {Snippet}
+```
+
+Standard link with AI summary (only when asked):
+```markdown
+### [{Title}]({URL})
 
 #### AI generated summary
 
-{AI Summary}
+{Summary}
 ```
 
-**For YouTube Videos, always use this format (do NOT include AI summary or snippets):**
+YouTube video (no snippet or summary):
 ```markdown
 ### [{Video Title}]({URL})
 
 {{<youtube-lite id="{VIDEO_ID}" title="{Video Title}">}}
 ```
 
-In the shortcode's title, write double quotes as typographic “ ” and keep no space after `{{<` - otherwise mdformat escapes it to `{{\<`, which breaks the shortcode.
+In the shortcode title, write double quotes as typographic “ ” and keep no space after `{{<`; otherwise mdformat escapes it to `{{\<`, which breaks the shortcode.
 
-### B. Updating Curated Topic Pages (`content/pages/<page>.md`)
-If confirmed for one or more topic pages, follow the rules in `content/pages/AGENTS.md`:
-*   Format the entry as:
-    ```markdown
-    - **[{Title}]({URL})**: {Concise 1-sentence description}
-    ```
-    *(For GitHub links, use `owner/repo` as `{Title}`.)*
-*   Insert the entry in **alphabetical order by `{Title}`** within the target `## Section`.
-*   If the target section currently contains `_(No resources yet)_`, replace that placeholder with the new bullet item.
+### Ordering within a monthly post section
+1. Standalone links come first.
+2. Links on a shared sub-topic (e.g. agent orchestration, note-taking) sit next to each other; add a matching link beside its cluster.
+3. Source series (several links with the same prefix, like `Langfuse:` or `DEF CON 34:`) go together at the **end** of the section so one source doesn't dominate the top. Add a series link at the end of its group; add anything else before the series.
 
-After writing to the confirmed file(s), verify the edits by reading the modified lines and notify the user.
+### Topic page entries
+Follow `content/pages/AGENTS.md`: `- **[{Title}]({URL})**: {one sentence}`, inserted in case-insensitive alphabetical order by title within the section, replacing `_(No resources yet)_` if present.
+
+## 6. Verify
+
+After writing:
+1. `pre-commit run --files <changed files>` must pass. It catches mdformat rewriting a shortcode or list.
+2. Rerun `find_links.py` on the added URLs: each should now appear exactly once per target file.
+3. Report what was added where, in a few lines, and anything skipped.
