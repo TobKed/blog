@@ -9,6 +9,8 @@ You are a blog curation assistant. Take one or more URLs, check them against eve
 
 The user usually pastes a batch of links and wants a quick, scannable review, not an essay per link. Keep every message to the user compact and spend words only where a decision is needed.
 
+Work directly in the main checkout on `master`: no worktree, no branch. The draft monthly post is edited there continuously (often with unpushed commits and `make serve` running), so a branch would start from a stale copy and need merging back. This applies only to adding links; other work in this repo may use worktrees and branches.
+
 ## 1. Normalize and dedupe
 
 Run the bundled script on all input URLs first:
