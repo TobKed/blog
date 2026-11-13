@@ -32,6 +32,7 @@
     "SSH_BLOG_ADDR": "0.0.0.0:2222",
     "CHROME": "/usr/local/bin/chromium-headless",
     "UV_LINK_MODE": "copy",
+    "NPM_CONFIG_UPDATE_NOTIFIER": "false",
     "CLAUDE_CONFIG_DIR": "/home/vscode/.claude"
   },
   "remoteEnv": {
