@@ -90,12 +90,11 @@ ______________________________________________________________________
     - `"CHROME": "/usr/local/bin/chromium-headless"`
     - `"PLAYWRIGHT_BROWSERS_PATH": "/usr/bin"`
     - `"UV_LINK_MODE": "copy"` (prevents hardlink warnings across volume boundaries)
+    - `"CLAUDE_CONFIG_DIR": "/home/vscode/.claude"` (keeps all Claude Code subscription OAuth tokens and config inside the persistent `blog-dc-claude` volume)
   - `"remoteEnv"`:
     - `"SSH_AUTH_SOCK": ""` (explicitly neutralizes host SSH agent forwarding)
     - `"PATH": "/workspaces/blog/.venv/bin:${containerEnv:PATH}"`
-    - `"OPENAI_API_KEY": "${localEnv:OPENAI_API_KEY}"` (passes `OPENAI_API_KEY` only if explicitly set in the invoking host shell)
-    - `"ANTHROPIC_API_KEY": "${localEnv:ANTHROPIC_API_KEY}"`
-    - `"GEMINI_API_KEY": "${localEnv:GEMINI_API_KEY}"`
+    - `"OPENAI_API_KEY": "${localEnv:OPENAI_API_KEY}"` (passes `OPENAI_API_KEY` for `scripts/blog_automation_2` only if explicitly set in the invoking host shell; `claude` and `gemini` use subscription OAuth persisted in `/home/vscode/.claude` and `/home/vscode/.gemini`)
 - **Lifecycle Hook:**
   - `"postCreateCommand": "bash .devcontainer/post-create.sh"`
 

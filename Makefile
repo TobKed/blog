@@ -1,6 +1,9 @@
 PY?=python3
 HUGO?=hugo
 FLY?=fly
+DEVCONTAINER?=$(shell command -v devcontainer 2>/dev/null || echo "npx -y @devcontainers/cli")
+HUGO_BIND?=127.0.0.1
+SSH_BLOG_ADDR?=localhost:2222
 
 BASEDIR=$(CURDIR)
 OUTPUTDIR=$(BASEDIR)/public
@@ -26,7 +29,7 @@ clean: ## remove the generated files
 serve: ## serve site locally at http://localhost:1313 (with drafts)
 	# -M renders to memory: without it the server serves public/ from disk, so a
 	# concurrent `make build` overwrites it with production (blog.tobked.dev) URLs.
-	$(HUGO) server -D -M
+	$(HUGO) server -D -M --bind $(HUGO_BIND)
 
 .PHONY: publish
 publish: ## generate using production settings (deploys happen in CI)
@@ -57,7 +60,23 @@ check_theme: ## theme regression checks against a running `make preview`
 
 .PHONY: ssh_blog
 ssh_blog: ## serve the blog over SSH at localhost:2222
-	cd scripts/ssh_blog && go run .
+	cd scripts/ssh_blog && go run . -addr $(SSH_BLOG_ADDR)
+
+.PHONY: dc-up
+dc-up: ## build and start the hardened Dev Container
+	$(DEVCONTAINER) up --workspace-folder .
+
+.PHONY: dc-shell
+dc-shell: ## open an interactive shell inside the Dev Container
+	$(DEVCONTAINER) exec --workspace-folder . bash
+
+.PHONY: dc-exec
+dc-exec: ## run a command inside the Dev Container (e.g. make dc-exec CMD="make publish")
+	$(DEVCONTAINER) exec --workspace-folder . $(CMD)
+
+.PHONY: dc-verify
+dc-verify: ## verify security invariants, toolchains, and tests inside the Dev Container
+	$(DEVCONTAINER) exec --workspace-folder . bash .devcontainer/verify.sh
 
 .PHONY: ssh_blog_docker
 ssh_blog_docker: ## run the SSH blog in Docker at 127.0.0.1:2222
