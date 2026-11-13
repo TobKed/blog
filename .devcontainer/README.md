@@ -31,6 +31,17 @@ caches persist in named volumes (`blog-dc-*`) and survive it.
 (`.devcontainer/.bin/`), so terminal multiplexers that detect agents by process name, such as
 herdr, recognise them.
 
+## GitHub Codespaces
+
+When creating the codespace, pick the `blog-codespaces` configuration
+(`.devcontainer/codespaces/devcontainer.json`); the default one only works locally through `make`.
+It uses the same image. Inside, run `make serve`, `claude` and so on directly: the `make dc-*`
+targets and `.devcontainer/verify.sh` are for the local container.
+
+The security model below does not carry over. A codespace holds a GitHub token that can push to
+this repository and `.git` is writable, so an agent there can commit and push. What it can't reach
+is your own machine.
+
 ## Updating versions
 
 | What                   | Bump it in                 | Then, for the container                               |
