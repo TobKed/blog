@@ -294,3 +294,4 @@ assets/jsconfig.json
 
 # SSH blog host key, generated on first run.
 scripts/ssh_blog/.host_key/
+.devcontainer/.bin/

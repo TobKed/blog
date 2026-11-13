@@ -41,7 +41,7 @@ ______________________________________________________________________
 
 - **Base Image:** `mcr.microsoft.com/devcontainers/base:bookworm` (multi-arch `linux/arm64` and `linux/amd64`, provides standard unprivileged `vscode` user with UID/GID `1000`).
 - **System Packages (`apt-get`):**
-  - `chromium`, `chromium-driver`, `fonts-liberation`, `libnss3`, `libatk-bridge2.0-0`, `libdrm2`, `libxkbcommon0`, `libgbm1`, `libasound2` (headless Chromium runtime dependencies for `scripts/check_mobile.mjs`, `scripts/test_links`, and `scripts/blog_automation_2`).
+  - `chromium` (pulls in its own runtime libraries) and `fonts-liberation`, for `scripts/check_mobile.mjs`.
   - `git`, `curl`, `ca-certificates`, `make`, `jq`, `ripgrep`, `unzip`.
 - **Pinned Toolchains (Multi-Arch Aware via `TARGETARCH`):**
   - **Hugo Extended `0.165.0`:** Downloaded from official GitHub release tarball (`hugo_extended_0.165.0_linux-${TARGETARCH}.tar.gz`) into `/usr/local/bin/hugo`.
@@ -75,7 +75,6 @@ ______________________________________________________________________
   - `"mounts"`:
     - `source=blog-dc-venv,target=/workspaces/blog/.venv,type=volume` (isolates root Linux Python virtualenv from macOS host)
     - `source=blog-dc-automation-venv,target=/workspaces/blog/scripts/blog_automation_2/.venv,type=volume`
-    - `source=blog-dc-testlinks-venv,target=/workspaces/blog/scripts/test_links/.venv,type=volume`
     - `source=blog-dc-claude,target=/home/vscode/.claude,type=volume` (persists Claude Code state)
     - `source=blog-dc-gemini,target=/home/vscode/.gemini,type=volume` (persists Gemini CLI state)
     - `source=blog-dc-cache,target=/home/vscode/.cache,type=volume` (persists `uv`, `pre-commit`, and Go build caches)
@@ -88,7 +87,6 @@ ______________________________________________________________________
     - `"HUGO_BIND": "0.0.0.0"`
     - `"SSH_BLOG_ADDR": "0.0.0.0:2222"`
     - `"CHROME": "/usr/local/bin/chromium-headless"`
-    - `"PLAYWRIGHT_BROWSERS_PATH": "/usr/bin"`
     - `"UV_LINK_MODE": "copy"` (prevents hardlink warnings across volume boundaries)
     - `"CLAUDE_CONFIG_DIR": "/home/vscode/.claude"` (keeps all Claude Code subscription OAuth tokens and config inside the persistent `blog-dc-claude` volume)
   - `"remoteEnv"`:
@@ -102,12 +100,11 @@ ______________________________________________________________________
 
 Executed as `vscode` after container creation:
 
-1. Fixes ownership of mounted named volumes (`/workspaces/blog/.venv`, `/workspaces/blog/scripts/blog_automation_2/.venv`, `/workspaces/blog/scripts/test_links/.venv`, `/home/vscode/.claude`, `/home/vscode/.gemini`, `/home/vscode/.cache`) if Docker initialized them as `root`—handled via a pre-seeded directory in the image or `Dockerfile` pre-created mount targets owned by `vscode:vscode` so `root` is never needed at runtime.
-   - *Design detail:* Docker initializes empty named volumes with the ownership and permissions of the target directory inside the image. Therefore, `.devcontainer/Dockerfile` will `mkdir -p` and `chown -R vscode:vscode` all six mount target paths during build time before dropping `root`.
+1. Fixes ownership of mounted named volumes (`/workspaces/blog/.venv`, `/workspaces/blog/scripts/blog_automation_2/.venv`, `/home/vscode/.claude`, `/home/vscode/.gemini`, `/home/vscode/.cache`) if Docker initialized them as `root`—handled via a pre-seeded directory in the image or `Dockerfile` pre-created mount targets owned by `vscode:vscode` so `root` is never needed at runtime.
+   - *Design detail:* Docker initializes empty named volumes with the ownership and permissions of the target directory inside the image. Therefore, `.devcontainer/Dockerfile` will `mkdir -p` and `chown -R vscode:vscode` all five mount target paths during build time before dropping `root`.
 2. Creates and syncs Python virtual environments using `uv`:
-   - Root `.venv`: `uv venv /workspaces/blog/.venv --python 3.13 --allow-existing && uv pip install --python /workspaces/blog/.venv/bin/python -r requirements.txt`
-   - `scripts/blog_automation_2/.venv`: `uv venv /workspaces/blog/scripts/blog_automation_2/.venv --python 3.13 --allow-existing && uv pip install --python /workspaces/blog/scripts/blog_automation_2/.venv/bin/python -r scripts/blog_automation_2/requirements.txt -r scripts/blog_automation_2/requirements-dev.txt`
-   - `scripts/test_links/.venv`: `uv venv /workspaces/blog/scripts/test_links/.venv --python 3.13 --allow-existing && uv pip install --python /workspaces/blog/scripts/test_links/.venv/bin/python -r scripts/test_links/requirements.txt`
+   - Root `.venv`: `uv venv /workspaces/blog/.venv --allow-existing && uv pip install --python /workspaces/blog/.venv/bin/python -r requirements.txt`
+   - `scripts/blog_automation_2/.venv`: `uv venv /workspaces/blog/scripts/blog_automation_2/.venv --allow-existing && uv pip install --python /workspaces/blog/scripts/blog_automation_2/.venv/bin/python -r scripts/blog_automation_2/requirements.txt -r scripts/blog_automation_2/requirements-dev.txt`
 3. Warms up `pre-commit` environments (`pre-commit install-hooks`).
 
 ### 3.4 `Makefile` & Documentation Updates
@@ -158,7 +155,7 @@ ______________________________________________________________________
 
 1. **Named Volume Ownership Without `sudo`:**
    - Because `sudo` is removed from the image for security, `post-create.sh` cannot run `sudo chown`.
-   - *Mitigation:* `.devcontainer/Dockerfile` pre-creates `/workspaces/blog/.venv`, `/workspaces/blog/scripts/blog_automation_2/.venv`, `/workspaces/blog/scripts/test_links/.venv`, `/home/vscode/.claude`, `/home/vscode/.gemini`, and `/home/vscode/.cache` owned by `vscode:vscode` (`1000:1000`) at image build time. Docker copies existing directory ownership into newly created named volumes.
+   - *Mitigation:* `.devcontainer/Dockerfile` pre-creates `/workspaces/blog/.venv`, `/workspaces/blog/scripts/blog_automation_2/.venv`, `/home/vscode/.claude`, `/home/vscode/.gemini`, and `/home/vscode/.cache` owned by `vscode:vscode` (`1000:1000`) at image build time. Docker copies existing directory ownership into newly created named volumes. The two venv directories are also `chmod 777`: on Linux hosts `updateRemoteUserUID` changes the `vscode` UID but re-owns only `/home/vscode`.
 2. **Leftover `.venv` Directories in Bind Mount:**
    - When Docker mounts a named volume onto `/workspaces/blog/.venv`, an empty `.venv/` directory placeholder may be created on the host filesystem if it didn't already exist.
    - *Mitigation:* `.venv` is already listed in `.gitignore`, so Git status and `make build` are unaffected.
@@ -184,12 +181,20 @@ ______________________________________________________________________
    - `[ -z "${SSH_AUTH_SOCK:-}" ]` (SSH agent socket is empty).
    - `[ ! -d /home/vscode/.ssh ]` (no host SSH directory mounted).
 3. **Toolchain Checks:**
-   - `hugo version` reports `v0.165.0` and `+extended`.
-   - `python3 --version` reports `3.13.*`.
+   - `hugo version` reports the version pinned in `mise.toml` and `+extended`.
+   - `python3 --version` matches `.python-version`.
    - `uv --version`, `node --version` (`v22.*`), `go version`, `claude --version`, `gemini --version`, and `/usr/local/bin/chromium-headless --version` all succeed.
 4. **End-to-End Blog Workflows:**
    - `make publish` builds `public/` and indexes Pagefind (`public/_pagefind/`).
    - `make check_links` passes.
-   - `make preview` + `make check_theme` runs headless Chromium mobile/desktop layout assertions and passes.
+   - `public/` served on :1315 (so a running `make preview` doesn't collide) + `make check_theme` runs headless Chromium mobile/desktop layout assertions and passes.
    - `PYTHONPATH=. /workspaces/blog/scripts/blog_automation_2/.venv/bin/pytest scripts/blog_automation_2/tests` passes.
    - `cd scripts/ssh_blog && go test ./...` passes.
+
+______________________________________________________________________
+
+## 7. Decisions
+
+1. **No egress firewall (accepted risk).** An allowlist firewall was tried and dropped: agents in the container add links, so they must fetch arbitrary websites, and any rule that allows that also allows exfiltration. Exposure is limited: the repo is public, there are no SSH keys or git push credentials, and `.env` is going away. The remaining target is the Claude/Gemini OAuth tokens, which can be revoked by logging out.
+2. **No permission-skipping shell aliases.** `claude` and `agy` prompt as usual; prompts are skipped only via `make dc-claude` / `make dc-agy`.
+3. **`scripts/test_links` stays host/CI-only.** Its Selenium checker downloads Chrome for Testing, whose sandbox can't start under `--cap-drop=ALL`, so the container provisions no venv or `chromium-driver` for it.

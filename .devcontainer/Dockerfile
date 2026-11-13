@@ -7,21 +7,14 @@ ARG NODE_MAJOR=22
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-# 1. System packages & Headless Chromium dependencies
+# 1. System packages (chromium pulls in its own runtime libs)
 RUN apt-get update && apt-get install -y --no-install-recommends \
     ca-certificates \
     chromium \
-    chromium-driver \
     curl \
     fonts-liberation \
     git \
     jq \
-    libasound2 \
-    libatk-bridge2.0-0 \
-    libdrm2 \
-    libgbm1 \
-    libnss3 \
-    libxkbcommon0 \
     make \
     ripgrep \
     unzip \
@@ -63,16 +56,17 @@ RUN printf '#!/bin/sh\nexec /usr/bin/chromium --no-sandbox --disable-dev-shm-usa
     > /usr/local/bin/chromium-headless \
     && chmod +x /usr/local/bin/chromium-headless
 
-# 7. Pre-create volume mount directories owned by vscode:vscode so root/sudo is never needed at runtime
+# 7. Pre-create volume mount directories owned by vscode:vscode so root/sudo is never needed at runtime.
+#    The venv dirs are 777: updateRemoteUserUID re-owns only /home/vscode on Linux hosts.
 RUN mkdir -p \
     /workspaces/blog/.venv \
     /workspaces/blog/scripts/blog_automation_2/.venv \
-    /workspaces/blog/scripts/test_links/.venv \
     /home/vscode/.claude \
     /home/vscode/.gemini \
     /home/vscode/.cache \
     /home/vscode/go \
-    && chown -R vscode:vscode /workspaces /home/vscode
+    && chown -R vscode:vscode /workspaces /home/vscode \
+    && chmod 777 /workspaces/blog/.venv /workspaces/blog/scripts/blog_automation_2/.venv
 
 # 8. Install Antigravity CLI (agy) as vscode and symlink to /usr/local/bin/agy
 RUN su - vscode -c "curl -fsSL https://antigravity.google/cli/install.sh | bash" \

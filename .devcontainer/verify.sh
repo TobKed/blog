@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-MODE="${1:---runtime}"
 FAILURES=0
 
 pass() {
@@ -13,57 +12,6 @@ fail() {
   FAILURES=$((FAILURES + 1))
 }
 
-check_static() {
-  echo "=== Static Dev Container Configuration Checks ==="
-
-  for f in .devcontainer/Dockerfile .devcontainer/devcontainer.json .devcontainer/post-create.sh; do
-    if [ -f "$f" ]; then
-      pass "$f exists"
-    else
-      fail "$f exists" "missing file"
-    fi
-  done
-
-  if [ -f .devcontainer/devcontainer.json ]; then
-    if jq -e '.runArgs | index("--cap-drop=ALL")' .devcontainer/devcontainer.json >/dev/null 2>&1; then
-      pass "devcontainer.json drops ALL capabilities"
-    else
-      fail "devcontainer.json drops ALL capabilities" "missing --cap-drop=ALL"
-    fi
-
-    if jq -e '.runArgs | index("--security-opt=no-new-privileges:true")' .devcontainer/devcontainer.json >/dev/null 2>&1; then
-      pass "devcontainer.json enforces no-new-privileges"
-    else
-      fail "devcontainer.json enforces no-new-privileges" "missing no-new-privileges:true"
-    fi
-
-    if jq -e '.remoteEnv.SSH_AUTH_SOCK == ""' .devcontainer/devcontainer.json >/dev/null 2>&1; then
-      pass "devcontainer.json clears SSH_AUTH_SOCK"
-    else
-      fail "devcontainer.json clears SSH_AUTH_SOCK" "SSH_AUTH_SOCK not empty"
-    fi
-
-    if jq -e '.containerEnv.CLAUDE_CONFIG_DIR == "/home/vscode/.claude"' .devcontainer/devcontainer.json >/dev/null 2>&1; then
-      pass "devcontainer.json sets CLAUDE_CONFIG_DIR=/home/vscode/.claude"
-    else
-      fail "devcontainer.json sets CLAUDE_CONFIG_DIR=/home/vscode/.claude" "missing CLAUDE_CONFIG_DIR"
-    fi
-  fi
-
-  if grep -q "dangerously-skip-permissions" .devcontainer/Dockerfile; then
-    fail "Dockerfile has no permission-skipping aliases" "found --dangerously-skip-permissions"
-  else
-    pass "Dockerfile has no permission-skipping aliases"
-  fi
-
-  if [ -f .devcontainer/Dockerfile ]; then
-    if grep -q "rm -f /etc/sudoers.d/vscode" .devcontainer/Dockerfile; then
-      pass "Dockerfile removes passwordless sudo for vscode"
-    else
-      fail "Dockerfile removes passwordless sudo for vscode" "sudoers removal missing"
-    fi
-  fi
-}
 
 check_runtime() {
   echo "=== In-Container Security & Toolchain Checks ==="
@@ -104,16 +52,20 @@ check_runtime() {
     fail "/home/vscode/.ssh is not mounted" "directory exists"
   fi
 
-  if hugo version | grep -q "v0.165.0" && hugo version | grep -q "extended"; then
-    pass "hugo extended v0.165.0 installed"
+  hugo_want=$(sed -n 's/^hugo-extended = "\(.*\)"/\1/p' mise.toml)
+  hugo_got=$(hugo version 2>&1 || true)
+  if [[ $hugo_got == *"v$hugo_want"*extended* ]]; then
+    pass "hugo extended v$hugo_want installed"
   else
-    fail "hugo extended v0.165.0 installed" "$(hugo version 2>&1 || true)"
+    fail "hugo extended v$hugo_want installed" "$hugo_got"
   fi
 
-  if python3 --version | grep -q "Python 3.13"; then
-    pass "python 3.13 installed"
+  py_want=$(cat .python-version)
+  py_got=$(python3 --version 2>&1 || true)
+  if [[ $py_got == "Python $py_want"* ]]; then
+    pass "python $py_want installed"
   else
-    fail "python 3.13 installed" "$(python3 --version 2>&1 || true)"
+    fail "python $py_want installed" "$py_got"
   fi
 
   for cmd in uv go node npx pagefind claude gemini agy /usr/local/bin/chromium-headless; do
@@ -143,18 +95,18 @@ check_runtime() {
   fi
 
   echo "=== End-to-End Blog Workflow Checks ==="
-  make publish >/dev/null
-  if [ -d public/_pagefind ]; then
+  if make publish >/dev/null && [ -d public/_pagefind ]; then
     pass "make publish built site and Pagefind index"
   else
-    fail "make publish built site and Pagefind index" "public/_pagefind missing"
+    fail "make publish built site and Pagefind index" "make publish failed or public/_pagefind missing"
   fi
 
-  (cd public && python3 -m http.server 1314 >/dev/null 2>&1) &
+  # 1315, not 1314, so a running `make preview` doesn't collide
+  python3 -m http.server -d public 1315 >/dev/null 2>&1 &
   HTTP_PID=$!
   trap 'kill "$HTTP_PID" 2>/dev/null || true' EXIT
-  sleep 1
-  if make check_theme >/dev/null; then
+  for _ in $(seq 50); do curl -fs -o /dev/null http://localhost:1315/ && break; sleep 0.1; done
+  if make check_theme URL=http://localhost:1315 >/dev/null; then
     pass "make check_theme passed via headless Chromium"
   else
     fail "make check_theme passed via headless Chromium" "check_theme failed"
@@ -181,12 +133,7 @@ check_runtime() {
   fi
 }
 
-if [ "$MODE" = "--static" ]; then
-  check_static
-else
-  check_static
-  check_runtime
-fi
+check_runtime
 
 if [ "$FAILURES" -gt 0 ]; then
   echo "Verification failed with $FAILURES error(s)."

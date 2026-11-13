@@ -17,7 +17,6 @@
   "mounts": [
     "source=blog-dc-venv,target=/workspaces/blog/.venv,type=volume",
     "source=blog-dc-automation-venv,target=/workspaces/blog/scripts/blog_automation_2/.venv,type=volume",
-    "source=blog-dc-testlinks-venv,target=/workspaces/blog/scripts/test_links/.venv,type=volume",
     "source=blog-dc-claude,target=/home/vscode/.claude,type=volume",
     "source=blog-dc-gemini,target=/home/vscode/.gemini,type=volume",
     "source=blog-dc-cache,target=/home/vscode/.cache,type=volume"
@@ -31,7 +30,6 @@
     "HUGO_BIND": "0.0.0.0",
     "SSH_BLOG_ADDR": "0.0.0.0:2222",
     "CHROME": "/usr/local/bin/chromium-headless",
-    "PLAYWRIGHT_BROWSERS_PATH": "/usr/bin",
     "UV_LINK_MODE": "copy",
     "CLAUDE_CONFIG_DIR": "/home/vscode/.claude"
   },

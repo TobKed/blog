@@ -83,17 +83,23 @@ dc-rebuild: check_docker ## rebuild and recreate the hardened Dev Container
 dc-shell: check_docker ## open an interactive shell inside the Dev Container
 	$(DEVCONTAINER) exec --workspace-folder . bash
 
+# herdr recognises agents by process name, so docker runs via a symlink named after the agent
+define dc_agent
+	@mkdir -p .devcontainer/.bin && ln -sf "$$(command -v docker)" .devcontainer/.bin/$(1)
+	$(DEVCONTAINER) exec --docker-path $(CURDIR)/.devcontainer/.bin/$(1) --workspace-folder . $(1) --dangerously-skip-permissions
+endef
+
 .PHONY: dc-claude
 dc-claude: check_docker ## launch Claude Code (YOLO mode) inside the Dev Container
-	$(DEVCONTAINER) exec --workspace-folder . claude --dangerously-skip-permissions
+	$(call dc_agent,claude)
 
 .PHONY: dc-agy
 dc-agy: check_docker ## launch Antigravity CLI (YOLO mode) inside the Dev Container
-	$(DEVCONTAINER) exec --workspace-folder . agy --dangerously-skip-permissions
+	$(call dc_agent,agy)
 
 .PHONY: dc-exec
 dc-exec: check_docker ## run a command inside the Dev Container (e.g. make dc-exec CMD="make publish")
-	$(DEVCONTAINER) exec --workspace-folder . $(CMD)
+	$(DEVCONTAINER) exec --workspace-folder . bash -lc '$(CMD)'
 
 .PHONY: dc-verify
 dc-verify: check_docker ## verify security invariants, toolchains, and tests inside the Dev Container
