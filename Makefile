@@ -34,7 +34,7 @@ serve: ## serve site locally at http://localhost:1313 (with drafts)
 .PHONY: publish
 publish: ## generate using production settings (deploys happen in CI)
 	$(HUGO) --gc --minify
-	npx -y pagefind --site $(OUTPUTDIR) --output-subdir _pagefind
+	npx -y pagefind@1.6.0 --site $(OUTPUTDIR) --output-subdir _pagefind
 
 .PHONY: preview
 preview: publish ## build like production (incl. search index) and serve public/ at :1314

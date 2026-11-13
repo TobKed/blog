@@ -59,7 +59,7 @@ jobs:
           resources/_gen
         key: hugo-${{ github.run_id }}
     - name: Build search index
-      run: npx -y pagefind --site public --output-subdir _pagefind
+      run: npx -y pagefind@1.6.0 --site public --output-subdir _pagefind
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v4
       with:

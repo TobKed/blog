@@ -24,7 +24,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 RUN curl -fsSL "https://deb.nodesource.com/setup_${NODE_MAJOR}.x" | bash - \
     && apt-get install -y --no-install-recommends nodejs \
     && npm install -g \
-        pagefind \
+        pagefind@1.6.0 \
         @anthropic-ai/claude-code \
         @google/gemini-cli \
     && node /usr/lib/node_modules/@anthropic-ai/claude-code/install.cjs \
