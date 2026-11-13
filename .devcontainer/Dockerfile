@@ -35,6 +35,8 @@ RUN curl -fsSL "https://deb.nodesource.com/setup_${NODE_MAJOR}.x" | bash - \
         pagefind \
         @anthropic-ai/claude-code \
         @google/gemini-cli \
+    && node /usr/lib/node_modules/@anthropic-ai/claude-code/install.cjs \
+    && claude --version \
     && npm cache clean --force \
     && rm -rf /var/lib/apt/lists/*
 
@@ -72,15 +74,15 @@ RUN mkdir -p \
     /home/vscode/go \
     && chown -R vscode:vscode /workspaces /home/vscode
 
-# 8. Strip passwordless sudo from vscode user so runtime processes cannot escalate to root
+# 8. Install Antigravity CLI (agy) as vscode and symlink to /usr/local/bin/agy
+RUN su - vscode -c "curl -fsSL https://antigravity.google/cli/install.sh | bash" \
+    && ln -sf /home/vscode/.local/bin/agy /usr/local/bin/agy \
+    && printf '\nalias claude="claude --dangerously-skip-permissions"\nalias agy="agy --dangerously-skip-permissions"\n' >> /home/vscode/.bashrc \
+    && printf '\nalias claude="claude --dangerously-skip-permissions"\nalias agy="agy --dangerously-skip-permissions"\n' >> /home/vscode/.zshrc
+
+# 9. Strip passwordless sudo from vscode user so runtime processes cannot escalate to root
 RUN rm -f /etc/sudoers.d/vscode \
     && sed -i '/vscode/d' /etc/sudoers
 
 USER vscode
-
-# 9. Install Antigravity CLI (agy) into /home/vscode/.local/bin/agy and configure YOLO mode aliases
-RUN curl -fsSL https://antigravity.google/cli/install.sh | bash \
-    && printf '\nalias claude="claude --dangerously-skip-permissions"\nalias agy="agy --dangerously-skip-permissions"\n' >> /home/vscode/.bashrc \
-    && printf '\nalias claude="claude --dangerously-skip-permissions"\nalias agy="agy --dangerously-skip-permissions"\n' >> /home/vscode/.zshrc
-
 WORKDIR /workspaces/blog

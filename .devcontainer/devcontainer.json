@@ -37,7 +37,7 @@
   },
   "remoteEnv": {
     "SSH_AUTH_SOCK": "",
-    "PATH": "/workspaces/blog/.venv/bin:${containerEnv:PATH}",
+    "PATH": "/home/vscode/.local/bin:/workspaces/blog/.venv/bin:${containerEnv:PATH}",
     "OPENAI_API_KEY": "${localEnv:OPENAI_API_KEY}"
   },
   "postCreateCommand": "bash .devcontainer/post-create.sh"

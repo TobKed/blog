@@ -118,6 +118,18 @@ check_runtime() {
     fi
   done
 
+  if claude --version >/dev/null 2>&1; then
+    pass "claude --version executes cleanly"
+  else
+    fail "claude --version executes cleanly" "execution failed"
+  fi
+
+  if agy --version >/dev/null 2>&1; then
+    pass "agy --version executes cleanly"
+  else
+    fail "agy --version executes cleanly" "execution failed"
+  fi
+
   if /usr/local/bin/chromium-headless --version >/dev/null 2>&1; then
     pass "chromium-headless --version runs under dropped capabilities"
   else
