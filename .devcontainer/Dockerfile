@@ -46,7 +46,7 @@ RUN curl -fsSL "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSI
 # 4. Go toolchain (with GOTOOLCHAIN=auto so go 1.27.3 in scripts/ssh_blog/go.mod works seamlessly)
 RUN curl -fsSL "https://go.dev/dl/go${GO_VERSION}.linux-${TARGETARCH}.tar.gz" \
     | tar -xz -C /usr/local
-ENV PATH="/usr/local/go/bin:/home/vscode/go/bin:${PATH}"
+ENV PATH="/home/vscode/.local/bin:/usr/local/go/bin:/home/vscode/go/bin:${PATH}"
 ENV GOTOOLCHAIN=auto
 
 # 5. uv + Python 3.13
@@ -77,4 +77,8 @@ RUN rm -f /etc/sudoers.d/vscode \
     && sed -i '/vscode/d' /etc/sudoers
 
 USER vscode
+
+# 9. Install Antigravity CLI (agy) into /home/vscode/.local/bin/agy
+RUN curl -fsSL https://antigravity.google/cli/install.sh | bash
+
 WORKDIR /workspaces/blog

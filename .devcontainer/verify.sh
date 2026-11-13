@@ -110,7 +110,7 @@ check_runtime() {
     fail "python 3.13 installed" "$(python3 --version 2>&1 || true)"
   fi
 
-  for cmd in uv go node npx pagefind claude gemini /usr/local/bin/chromium-headless; do
+  for cmd in uv go node npx pagefind claude gemini agy /usr/local/bin/chromium-headless; do
     if command -v "$cmd" >/dev/null 2>&1; then
       pass "$cmd is available"
     else

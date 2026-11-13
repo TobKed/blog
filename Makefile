@@ -78,6 +78,14 @@ dc-rebuild: check_docker ## rebuild and recreate the hardened Dev Container
 dc-shell: check_docker ## open an interactive shell inside the Dev Container
 	$(DEVCONTAINER) exec --workspace-folder . bash
 
+.PHONY: dc-claude
+dc-claude: check_docker ## launch Claude Code interactively inside the Dev Container
+	$(DEVCONTAINER) exec --workspace-folder . claude
+
+.PHONY: dc-agy
+dc-agy: check_docker ## launch Antigravity CLI (agy) interactively inside the Dev Container
+	$(DEVCONTAINER) exec --workspace-folder . agy
+
 .PHONY: dc-exec
 dc-exec: check_docker ## run a command inside the Dev Container (e.g. make dc-exec CMD="make publish")
 	$(DEVCONTAINER) exec --workspace-folder . $(CMD)
