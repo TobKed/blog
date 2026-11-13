@@ -56,16 +56,15 @@ RUN printf '#!/bin/sh\nexec /usr/bin/chromium --no-sandbox --disable-dev-shm-usa
     && chmod +x /usr/local/bin/chromium-headless
 
 # 7. Pre-create volume mount directories owned by vscode:vscode so root/sudo is never needed at runtime.
-#    The venv dirs are 777: updateRemoteUserUID re-owns only /home/vscode on Linux hosts.
+#    The venv dir is 777: updateRemoteUserUID re-owns only /home/vscode on Linux hosts.
 RUN mkdir -p \
     /workspaces/blog/.venv \
-    /workspaces/blog/scripts/blog_automation_2/.venv \
     /home/vscode/.claude \
     /home/vscode/.gemini \
     /home/vscode/.cache \
     /home/vscode/go \
     && chown -R vscode:vscode /workspaces /home/vscode /opt/python \
-    && chmod 777 /workspaces/blog/.venv /workspaces/blog/scripts/blog_automation_2/.venv
+    && chmod 777 /workspaces/blog/.venv
 
 # 8. Install Antigravity CLI (agy) as vscode and symlink to /usr/local/bin/agy
 RUN su - vscode -c "curl -fsSL https://antigravity.google/cli/install.sh | bash" \

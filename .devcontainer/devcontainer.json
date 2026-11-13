@@ -16,7 +16,6 @@
   "workspaceFolder": "/workspaces/blog",
   "mounts": [
     "source=blog-dc-venv,target=/workspaces/blog/.venv,type=volume",
-    "source=blog-dc-automation-venv,target=/workspaces/blog/scripts/blog_automation_2/.venv,type=volume",
     "source=blog-dc-claude,target=/home/vscode/.claude,type=volume",
     "source=blog-dc-gemini,target=/home/vscode/.gemini,type=volume",
     "source=blog-dc-cache,target=/home/vscode/.cache,type=volume",

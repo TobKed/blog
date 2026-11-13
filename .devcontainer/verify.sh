@@ -129,12 +129,6 @@ check_runtime() {
     fail "make check_links passed" "non-zero exit"
   fi
 
-  if PYTHONPATH=scripts/blog_automation_2 /workspaces/blog/scripts/blog_automation_2/.venv/bin/pytest scripts/blog_automation_2/tests >/dev/null; then
-    pass "blog_automation_2 pytest suite passed"
-  else
-    fail "blog_automation_2 pytest suite passed" "pytest failed"
-  fi
-
   if (cd scripts/ssh_blog && go test ./...) >/dev/null; then
     pass "ssh_blog go test passed"
   else
