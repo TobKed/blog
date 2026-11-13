@@ -23,6 +23,7 @@ build:
 - **[How I Hired a Freelance Editor for My Blog](https://mtlynch.io/editor/)**: Michael Lynch on working with an editor to level up technical blog posts.
 - **[Jacob Tomlinson: Writing blog posts while walking the dog](https://jacobtomlinson.dev/posts/2026/writing-blog-posts-while-walking-the-dog/)**: Using voice notes on dog walks to draft authentic blog posts in the age of low-effort AI content.
 - **[Joel Hooks: 🖋 Stop Giving af and Start Writing More](https://joelhooks.com/on-writing-more)**: Why blogs don't need to be treated as polished "content marketing strategies" or personal branding exercises.
+- **[Julian Shapiro: Writing Well Handbook](https://www.julian.com/guide/write/intro)**: Julian Shapiro's handbook of writing tactics for nonfiction books and blogs, drawn from two million words of writing.
 - **[Paul Graham: Write Like You Talk](https://www.paulgraham.com/talk.html)**: The classic essay on keeping writing informal, natural, and conversational.
 - **[Refactoring English: Anti-Patterns in Software Blogging](https://refactoringenglish.com/blog/anti-patterns-software-blogging/)**: Common mistakes beginner software bloggers make and how to avoid them.
 - **[Refactoring English: The Software Essays that Shaped Me](https://refactoringenglish.com/blog/software-essays-that-shaped-me/)**: A curated collection of influential software essays.

@@ -39,9 +39,15 @@ simplified technical english skill, inspired by Karpathy mentioning ASD-STE100
 
 devcontainers, github codespaces
 
+hackertube.org
+
 ______________________________________________________________________
 
 ## Articles
+
+### [Julian Shapiro: Writing Well Handbook](https://www.julian.com/guide/write/intro)
+
+> After two million words, I've honed these writing tactics. This handbook helps you write nonfiction books and blogs
 
 ## Productivity
 
@@ -95,6 +101,10 @@ ______________________________________________________________________
 
 > Fifteen months later, all my engineering work flows through agents. I can delegate all of the implementation without delegating responsibility for what ships.
 
+### [Orestis Ioannou: Building an Internal Company Agent: 5 Things We Got Right and 5 I Would Do Differently](https://oioannou.com/blog/internal-company-agent-lessons/)
+
+> This is not a universal guide to building agents. It is a practical retrospective from building one inside a real company: five things we got right and five I would approach differently today.
+
 ### [GitHub - kepano/obsidian-skills](https://github.com/kepano/obsidian-skills)
 
 > Agent skills for Obsidian. Teach your agent to use Obsidian CLI and open formats including Markdown, Bases, JSON Canvas.
@@ -122,6 +132,14 @@ ______________________________________________________________________
 ### [GitHub - vercel/eve](https://github.com/vercel/eve)
 
 > eve is a filesystem-first framework for durable AI agents. Core agent capabilities live in conventional locations, so projects are easier to inspect, extend, and operate.
+
+### [OpenTelemetry: Inside the LLM Call: GenAI Observability with OpenTelemetry](https://opentelemetry.io/blog/2026/genai-observability/)
+
+> Your AI agent just took 45 seconds to answer a simple question. Was it the model? A slow tool call? A retry loop?
+
+### [Strands Agents: Amazon saves millions by replacing Sonnet 4.6 with Strands Decider](https://strandsagents.com/blog/amazon-saves-millions-replacing-sonnet-with-strands-decider/)
+
+> Two Amazon engineers swapped Claude Sonnet 4.6 for a decision model in one of the world's biggest internal ticketing systems.
 
 ### [Langfuse: Open Source LLMOps Stack](https://oss-llmops-stack.com/)
 
@@ -177,6 +195,10 @@ ______________________________________________________________________
 
 > start with one quiet, low power machine (a mini PC or a small used server)
 
+### [HackerTube: The YouTube videos that Hacker News keeps telling each other to watch](https://hackertube.org/)
+
+> The YouTube videos that Hacker News keeps telling each other to watch.
+
 ## Podcasts
 
 ## Videos
@@ -197,4 +219,36 @@ ______________________________________________________________________
 
 {{<youtube-lite id="ys6YQ2yfBpM" title="Your Old Prompts Are Making Claude Worse - Lance Martin, Anthropic">}}
 
+### [How The #1 AI Engineer in The World Actually Uses AI - Nick Saraev](https://www.youtube.com/watch?v=3wCkFtIz88g)
+
+{{<youtube-lite id="3wCkFtIz88g" title="How The #1 AI Engineer in The World Actually Uses AI - Nick Saraev">}}
+
+### [Pocock vs Pstack vs Osmani: Which Skill Pack Wins? - Rob Shocks](https://www.youtube.com/watch?v=sU9MW8Ycq2M)
+
+{{<youtube-lite id="sU9MW8Ycq2M" title="Pocock vs Pstack vs Osmani: Which Skill Pack Wins? - Rob Shocks">}}
+
+### [The Pragmatic Engineer: Software engineering at Google & CS education with Titus Winters](https://www.youtube.com/watch?v=mQu0zN4IvSI)
+
+{{<youtube-lite id="mQu0zN4IvSI" title="The Pragmatic Engineer: Software engineering at Google & CS education with Titus Winters">}}
+
+### [AI Engineer: Rethinking Claude Code Best Practices — Lydia Hallie, Anthropic](https://www.youtube.com/watch?v=vlfCjWuv4es)
+
+{{<youtube-lite id="vlfCjWuv4es" title="AI Engineer: Rethinking Claude Code Best Practices — Lydia Hallie, Anthropic">}}
+
+### [The Home Repo: The effortless multi-repo agent setup - Matt Pocock](https://www.youtube.com/watch?v=hWe-j78vNpc)
+
+{{<youtube-lite id="hWe-j78vNpc" title="The Home Repo: The effortless multi-repo agent setup - Matt Pocock">}}
+
+### [mattpocock/skills: A complete AI Coding workflow, end-to-end](https://www.youtube.com/watch?v=M6mYodf0dJM)
+
+{{<youtube-lite id="M6mYodf0dJM" title="mattpocock/skills: A complete AI Coding workflow, end-to-end">}}
+
 ## 🇵🇱 Polish Corner 🇵🇱
+
+### [Twój AI Second Brain: jak sensownie zacząć? - Mikołaj Abramczuk](https://www.youtube.com/watch?v=VqYS4ChwLRQ)
+
+{{<youtube-lite id="VqYS4ChwLRQ" title="Twój AI Second Brain: jak sensownie zacząć? - Mikołaj Abramczuk">}}
+
+### [Buduje HOMELAB od ZERA - Co bym kupił? - Michu IT](https://www.youtube.com/watch?v=wKczvgwwFRA)
+
+{{<youtube-lite id="wKczvgwwFRA" title="Buduje HOMELAB od ZERA - Co bym kupił? - Michu IT">}}
