@@ -8,7 +8,7 @@
 
 Theme: `ups-and-downs`, written for this blog, in-repo under `themes/`.
 
-Requires Hugo **extended** 0.146+ (CI pins 0.165.0).
+Requires Hugo **extended** 0.146+ (`mise.toml` pins the version CI uses).
 
 Hugo is pinned in `mise.toml`, Python in `.python-version`:
 

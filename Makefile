@@ -3,6 +3,8 @@ HUGO?=hugo
 FLY?=fly
 DEVCONTAINER?=$(shell command -v devcontainer 2>/dev/null || echo "npx -y @devcontainers/cli")
 HUGO_BIND?=127.0.0.1
+# devcontainer.json mounts it at the same path, so git also works when the checkout is a worktree
+export DC_GIT_COMMON_DIR := $(shell git rev-parse --path-format=absolute --git-common-dir 2>/dev/null)
 SSH_BLOG_ADDR?=localhost:2222
 
 BASEDIR=$(CURDIR)
@@ -76,8 +78,8 @@ dc-stop: check_docker ## stop the running Dev Container
 	if [ -n "$$cid" ]; then docker stop $$cid; else echo "Dev Container is not running."; fi
 
 .PHONY: dc-rebuild
-dc-rebuild: check_docker ## rebuild and recreate the hardened Dev Container
-	$(DEVCONTAINER) up --workspace-folder . --remove-existing-container
+dc-rebuild: check_docker ## rebuild the image without cache (updates the agent CLIs) and recreate the Dev Container
+	$(DEVCONTAINER) up --workspace-folder . --remove-existing-container --build-no-cache
 
 .PHONY: dc-shell
 dc-shell: check_docker ## open an interactive shell inside the Dev Container
@@ -98,8 +100,9 @@ dc-agy: check_docker ## launch Antigravity CLI (YOLO mode) inside the Dev Contai
 	$(call dc_agent,agy)
 
 .PHONY: dc-exec
+dc-exec: export DC_CMD := $(value CMD)
 dc-exec: check_docker ## run a command inside the Dev Container (e.g. make dc-exec CMD="make publish")
-	$(DEVCONTAINER) exec --workspace-folder . bash -lc '$(CMD)'
+	$(DEVCONTAINER) exec --workspace-folder . bash -c "$$DC_CMD"
 
 .PHONY: dc-verify
 dc-verify: check_docker ## verify security invariants, toolchains, and tests inside the Dev Container

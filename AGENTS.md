@@ -8,9 +8,9 @@ Personal blog (blog.tobked.dev) built with [Hugo](https://github.com/gohugoio/hu
 Markdown with YAML front matter in `content/`, theme is `ups-and-downs` under `themes/` (written
 for this blog, lives in-repo). Output is generated into `public/` and deployed to the `gh-pages` branch by CI.
 
-Requires Hugo **extended** 0.146 or newer; CI pins 0.165.0. `mise.toml` pins Hugo locally
-(`mise install`); Python is pinned in `.python-version` and managed with `uv`
-(`uv venv && uv pip install -r requirements.txt`). Both match CI.
+Requires Hugo **extended** 0.146 or newer. `mise.toml` pins the Hugo version (`mise install`), and
+CI and the Dev Container read it from there; Python is pinned in `.python-version` and managed
+with `uv` (`uv venv && uv pip install -r requirements.txt`).
 
 ## Commands
 
