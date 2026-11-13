@@ -37,6 +37,7 @@ It prints each URL in its cleaned form (fragments such as `#install` and trackin
 **YouTube videos:**
 - Get the title and channel from oEmbed, which is reliable and needs no browser:
   `curl -s "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=VIDEO_ID&format=json"`
+- Always write the URL as `https://www.youtube.com/watch?v=VIDEO_ID`, whatever form was pasted (`youtu.be/ID`, `youtube.com/shorts/ID`, `m.youtube.com`, extra parameters such as `si`, `is` or `t`).
 - Use the video title as-is. Append ` - Channel` only when the title gives no hint of who made it (a talk title that already names the speaker or event needs nothing).
 
 **AI summaries are opt-in.** Recent posts use snippets exclusively, so default to the snippet and only write a `#### AI generated summary` block when the user asks for one (or when the page has no quotable sentence, in which case say so in the review).
@@ -104,7 +105,7 @@ Standard link with AI summary (only when asked):
 
 YouTube video (no snippet or summary):
 ```markdown
-### [{Video Title}]({URL})
+### [{Video Title}](https://www.youtube.com/watch?v={VIDEO_ID})
 
 {{<youtube-lite id="{VIDEO_ID}" title="{Video Title}">}}
 ```
