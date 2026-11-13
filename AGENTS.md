@@ -8,9 +8,9 @@ Personal blog (blog.tobked.dev) built with [Hugo](https://github.com/gohugoio/hu
 Markdown with YAML front matter in `content/`, theme is `ups-and-downs` under `themes/` (written
 for this blog, lives in-repo). Output is generated into `public/` and deployed to the `gh-pages` branch by CI.
 
-Requires Hugo **extended** 0.146 or newer; CI pins 0.165.0. `mise.toml` pins Hugo locally
-(`mise install`); Python is pinned in `.python-version` and managed with `uv`
-(`uv venv && uv pip install -r requirements.txt`). Both match CI.
+Requires Hugo **extended** 0.146 or newer. `mise.toml` pins the Hugo version (`mise install`), and
+CI and the Dev Container read it from there; Python is pinned in `.python-version` and managed
+with `uv` (`uv venv && uv pip install -r requirements.txt`).
 
 ## Commands
 
@@ -25,7 +25,8 @@ Build/serve (via Makefile, wraps `hugo`):
 - `make generate_post` — run `scripts/generate_post.py` to scaffold a new monthly links post
 - `make check_links` — run `scripts/check_duplicate_links.py` to report duplicated links across posts in `content/post/`
 - `make check_theme` — run `scripts/check_mobile.mjs` against a running `make preview` to verify mobile/desktop layout and theme regressions
-- `make ssh_blog` — serve the blog over SSH at `localhost:2222` (`cd scripts/ssh_blog && go run .`)
+- `make ssh_blog` — serve the blog over SSH at `localhost:2222` (`cd scripts/ssh_blog && go run . -addr $(SSH_BLOG_ADDR)`)
+- `make dc-up` / `dc-claude` / `dc-agy` / `dc-shell` / `dc-exec CMD="..."` / `dc-verify` / `dc-stop` / `dc-rebuild` — hardened Dev Container for the toolchains and coding agents; see `.devcontainer/README.md` for usage and the security model
 
 Equivalent `invoke` tasks exist in `tasks.py` (`build`, `serve`, `publish`, `clean`) but the Makefile is the primary interface.
 
@@ -70,7 +71,6 @@ Tools, Cloud, Other stuff, Podcasts, Videos).
 Routes for curating these:
 
 - `scripts/generate_post.py` — scaffolds a new month's post from the template (used by `make generate_post`)
-- `scripts/blog_automation_2/` — CLI tool (`insert_links_tool.py` for a single URL, `bulk_process_links.py` for a batch file) that fetches a URL via `crawl4ai`, uses an LLM (LangChain/OpenAI) to generate title/summary/tags, dedupes against every existing post via `link_registry.py`, and inserts formatted Markdown into the right section of the target post. Core logic lives in `link_processing/`; tests are under `scripts/blog_automation_2/tests/` (run with `PYTHONPATH=. pytest` from that directory, after `pip install -r requirements-dev.txt`).
 - The `add-link-to-blog` skill (see "Agent instructions & skills" below; invocable as `/add-link-to-blog`) encodes the workflow (fetch → dedupe across `content/post/` and `content/pages/` → categorize into a monthly post section and any matching curated topic pages in `content/pages/AGENTS.md` → ask user to confirm targets and snippet vs. AI summary → write to the confirmed files) for use directly by an agent.
 
 When adding links by hand, match the existing formatting in a recent `*_links.md` post (standard link vs. YouTube video) and `content/pages/AGENTS.md` (for curated topic pages).
@@ -96,4 +96,4 @@ If a link is intentionally repeated within `content/post/` (for example, discuss
 - **Agent instructions & skills**:
   - Project-level instructions live once in `AGENTS.md` (and subdirectory `AGENTS.md` files such as `content/pages/AGENTS.md` and `scripts/*/AGENTS.md`). `CLAUDE.md`, `GEMINI.md`, and `.cursorrules` point to `AGENTS.md` so instructions are never duplicated.
   - Every agent tool looks in a different directory for skills, so the skill body lives once in `.agents/skills/<name>/SKILL.md` (read natively by Codex CLI and Antigravity) while `.claude/skills/<name>/SKILL.md` (Claude Code) and `.cursor/skills/<name>/SKILL.md` (Cursor) hold short stubs that carry the frontmatter and point at it. Symlinks are deliberately not used — Claude Code's skill discovery does not follow them. Edit the `.agents/` copy; the stubs only carry frontmatter. `.agents/skills/` is excluded from mdformat in `.pre-commit-config.yaml` so the instruction text is not reformatted.
-- Secrets (OpenAI key, etc.) are loaded via `.env`/`python-dotenv`, consumed by `scripts/blog_automation_2/config.py` (`ACCESS_TOKEN` comes from CI secrets for deploy).
+- `ACCESS_TOKEN` for deploy comes from CI secrets.

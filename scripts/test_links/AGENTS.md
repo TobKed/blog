@@ -13,6 +13,8 @@ The script also takes screenshots of the pages it checks with `selenium`, which 
 
 This is a Python script and does not require a formal build process. To run the script, you will need to have Python installed, along with the dependencies listed in `requirements.txt`.
 
+Runs on the host or in CI only, not in the Dev Container (see `.devcontainer/README.md`).
+
 ## Key Commands
 
 - **`pip install -r requirements.txt`**: Installs the required Python dependencies.

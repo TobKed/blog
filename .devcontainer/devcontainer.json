@@ -1,0 +1,45 @@
+{
+  "name": "blog-hardened-devcontainer",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "remoteUser": "vscode",
+  "containerUser": "vscode",
+  "updateRemoteUserUID": true,
+  "runArgs": [
+    "--cap-drop=ALL",
+    "--security-opt=no-new-privileges:true",
+    "--shm-size=1gb"
+  ],
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/blog,type=bind,consistency=cached",
+  "workspaceFolder": "/workspaces/blog",
+  "mounts": [
+    "source=blog-dc-venv,target=/workspaces/blog/.venv,type=volume",
+    "source=blog-dc-claude,target=/home/vscode/.claude,type=volume",
+    "source=blog-dc-gemini,target=/home/vscode/.gemini,type=volume",
+    "source=blog-dc-cache,target=/home/vscode/.cache,type=volume",
+    "source=${localWorkspaceFolder}/.git,target=/workspaces/blog/.git,type=bind,readonly",
+    "source=${localEnv:DC_GIT_COMMON_DIR},target=${localEnv:DC_GIT_COMMON_DIR},type=bind,readonly"
+  ],
+  "appPort": [
+    "127.0.0.1:1313:1313",
+    "127.0.0.1:1314:1314",
+    "127.0.0.1:2222:2222"
+  ],
+  "containerEnv": {
+    "HUGO_BIND": "0.0.0.0",
+    "SSH_BLOG_ADDR": "0.0.0.0:2222",
+    "CHROME": "/usr/local/bin/chromium-headless",
+    "UV_LINK_MODE": "copy",
+    "NPM_CONFIG_UPDATE_NOTIFIER": "false",
+    "NPM_CONFIG_CACHE": "/home/vscode/.cache/npm",
+    "CLAUDE_CONFIG_DIR": "/home/vscode/.claude"
+  },
+  "remoteEnv": {
+    "SSH_AUTH_SOCK": "",
+    "PATH": "/home/vscode/.local/bin:/workspaces/blog/.venv/bin:${containerEnv:PATH}"
+  },
+  "initializeCommand": "test -n \"${localEnv:DC_GIT_COMMON_DIR}\" || { echo 'Start this Dev Container with `make dc-up` (or another make dc-* target), not the devcontainer CLI or the editor: the Makefile supplies the git directory to mount. See .devcontainer/README.md.'; exit 1; }",
+  "postCreateCommand": "bash .devcontainer/post-create.sh"
+}

@@ -1,6 +1,11 @@
 PY?=python3
 HUGO?=hugo
 FLY?=fly
+DEVCONTAINER?=$(shell command -v devcontainer 2>/dev/null || echo "npx -y @devcontainers/cli")
+HUGO_BIND?=127.0.0.1
+# devcontainer.json mounts it at the same path, so git also works when the checkout is a worktree
+export DC_GIT_COMMON_DIR := $(shell git rev-parse --path-format=absolute --git-common-dir 2>/dev/null)
+SSH_BLOG_ADDR?=localhost:2222
 
 BASEDIR=$(CURDIR)
 OUTPUTDIR=$(BASEDIR)/public
@@ -26,12 +31,12 @@ clean: ## remove the generated files
 serve: ## serve site locally at http://localhost:1313 (with drafts)
 	# -M renders to memory: without it the server serves public/ from disk, so a
 	# concurrent `make build` overwrites it with production (blog.tobked.dev) URLs.
-	$(HUGO) server -D -M
+	$(HUGO) server -D -M --bind $(HUGO_BIND)
 
 .PHONY: publish
 publish: ## generate using production settings (deploys happen in CI)
 	$(HUGO) --gc --minify
-	npx -y pagefind --site $(OUTPUTDIR) --output-subdir _pagefind
+	npx -y pagefind@1.6.0 --site $(OUTPUTDIR) --output-subdir _pagefind
 
 .PHONY: preview
 preview: publish ## build like production (incl. search index) and serve public/ at :1314
@@ -57,17 +62,61 @@ check_theme: ## theme regression checks against a running `make preview`
 
 .PHONY: ssh_blog
 ssh_blog: ## serve the blog over SSH at localhost:2222
-	cd scripts/ssh_blog && go run .
+	cd scripts/ssh_blog && go run . -addr $(SSH_BLOG_ADDR)
+
+.PHONY: check_docker
+check_docker:
+	@docker info >/dev/null 2>&1 || { echo "Error: Docker is not running."; exit 1; }
+
+.PHONY: dc-up
+dc-up: check_docker ## build and start the hardened Dev Container
+	$(DEVCONTAINER) up --workspace-folder .
+
+.PHONY: dc-stop
+dc-stop: check_docker ## stop the running Dev Container
+	@cid=$$(docker ps -q --filter "label=devcontainer.local_folder=$(BASEDIR)"); \
+	if [ -n "$$cid" ]; then docker stop $$cid; else echo "Dev Container is not running."; fi
+
+.PHONY: dc-rebuild
+dc-rebuild: check_docker ## rebuild the image without cache (updates the agent CLIs) and recreate the Dev Container
+	$(DEVCONTAINER) up --workspace-folder . --remove-existing-container --build-no-cache
+
+.PHONY: dc-shell
+dc-shell: check_docker ## open an interactive shell inside the Dev Container
+	$(DEVCONTAINER) exec --workspace-folder . bash
+
+# herdr recognises agents by process name, so docker runs via a symlink named after the agent
+define dc_agent
+	@mkdir -p .devcontainer/.bin && ln -sf "$$(command -v docker)" .devcontainer/.bin/$(1)
+	$(DEVCONTAINER) exec --docker-path $(CURDIR)/.devcontainer/.bin/$(1) --workspace-folder . $(1) --dangerously-skip-permissions
+endef
+
+.PHONY: dc-claude
+dc-claude: check_docker ## launch Claude Code (YOLO mode) inside the Dev Container
+	$(call dc_agent,claude)
+
+.PHONY: dc-agy
+dc-agy: check_docker ## launch Antigravity CLI (YOLO mode) inside the Dev Container
+	$(call dc_agent,agy)
+
+.PHONY: dc-exec
+dc-exec: export DC_CMD := $(value CMD)
+dc-exec: check_docker ## run a command inside the Dev Container (e.g. make dc-exec CMD="make publish")
+	$(DEVCONTAINER) exec --workspace-folder . bash -c "$$DC_CMD"
+
+.PHONY: dc-verify
+dc-verify: check_docker ## verify security invariants, toolchains, and tests inside the Dev Container
+	$(DEVCONTAINER) exec --workspace-folder . bash .devcontainer/verify.sh
 
 .PHONY: ssh_blog_docker
-ssh_blog_docker: ## run the SSH blog in Docker at 127.0.0.1:2222
+ssh_blog_docker: check_docker ## run the SSH blog in Docker at 127.0.0.1:2222
 	docker build -f scripts/ssh_blog/Dockerfile -t ssh-blog .
 	docker rm -f ssh-blog 2>/dev/null || true
 	docker run -d --name ssh-blog --read-only --cap-drop ALL --security-opt no-new-privileges \
 		-p 127.0.0.1:2222:2222 -v ssh-blog-data:/data ssh-blog
 
 .PHONY: ssh_blog_fly
-ssh_blog_fly: ## deploy the SSH blog to Fly.io (see scripts/ssh_blog/README.md)
+ssh_blog_fly: check_docker ## deploy the SSH blog to Fly.io (see scripts/ssh_blog/README.md)
 	img=registry.fly.io/tobked-ssh-blog:$$(date +%Y%m%d%H%M%S) && \
 	docker build --platform linux/amd64 -f scripts/ssh_blog/Dockerfile -t $$img . && \
 	$(FLY) auth docker && docker push $$img && \
