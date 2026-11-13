@@ -19,7 +19,9 @@
     "source=blog-dc-automation-venv,target=/workspaces/blog/scripts/blog_automation_2/.venv,type=volume",
     "source=blog-dc-claude,target=/home/vscode/.claude,type=volume",
     "source=blog-dc-gemini,target=/home/vscode/.gemini,type=volume",
-    "source=blog-dc-cache,target=/home/vscode/.cache,type=volume"
+    "source=blog-dc-cache,target=/home/vscode/.cache,type=volume",
+    "source=${localWorkspaceFolder}/.git/hooks,target=/workspaces/blog/.git/hooks,type=bind,readonly",
+    "source=${localWorkspaceFolder}/.git/config,target=/workspaces/blog/.git/config,type=bind,readonly"
   ],
   "appPort": [
     "127.0.0.1:1313:1313",
@@ -35,8 +37,7 @@
   },
   "remoteEnv": {
     "SSH_AUTH_SOCK": "",
-    "PATH": "/home/vscode/.local/bin:/workspaces/blog/.venv/bin:${containerEnv:PATH}",
-    "OPENAI_API_KEY": "${localEnv:OPENAI_API_KEY}"
+    "PATH": "/home/vscode/.local/bin:/workspaces/blog/.venv/bin:${containerEnv:PATH}"
   },
   "postCreateCommand": "bash .devcontainer/post-create.sh"
 }

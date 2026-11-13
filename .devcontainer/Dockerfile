@@ -20,10 +20,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     unzip \
     && rm -rf /var/lib/apt/lists/*
 
-# 2. Node.js 22 LTS + global CLIs (npm, pagefind, claude-code, gemini-cli)
+# 2. Node.js 22 LTS + global CLIs (pagefind, claude-code, gemini-cli)
 RUN curl -fsSL "https://deb.nodesource.com/setup_${NODE_MAJOR}.x" | bash - \
     && apt-get install -y --no-install-recommends nodejs \
-    && npm install -g npm@latest \
     && npm install -g \
         pagefind \
         @anthropic-ai/claude-code \
@@ -45,7 +44,7 @@ ENV PATH="/home/vscode/.local/bin:/usr/local/go/bin:/home/vscode/go/bin:${PATH}"
 ENV GOTOOLCHAIN=auto
 
 # 5. uv + Python 3.13
-COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /usr/local/bin/
+COPY --from=ghcr.io/astral-sh/uv:0.13.8 /uv /uvx /usr/local/bin/
 ENV UV_PYTHON_INSTALL_DIR=/opt/python
 RUN uv python install 3.13 \
     && ln -sf "$(uv python find 3.13)" /usr/local/bin/python3 \
@@ -65,7 +64,7 @@ RUN mkdir -p \
     /home/vscode/.gemini \
     /home/vscode/.cache \
     /home/vscode/go \
-    && chown -R vscode:vscode /workspaces /home/vscode \
+    && chown -R vscode:vscode /workspaces /home/vscode /opt/python \
     && chmod 777 /workspaces/blog/.venv /workspaces/blog/scripts/blog_automation_2/.venv
 
 # 8. Install Antigravity CLI (agy) as vscode and symlink to /usr/local/bin/agy

@@ -46,6 +46,15 @@ check_runtime() {
     fail "SSH_AUTH_SOCK is empty" "SSH_AUTH_SOCK=${SSH_AUTH_SOCK}"
   fi
 
+  # git on the host runs hooks and config-defined commands (core.fsmonitor, core.hooksPath)
+  for f in .git/hooks .git/config; do
+    if [ -w "$f" ]; then
+      fail "$f is read-only" "writable"
+    else
+      pass "$f is read-only"
+    fi
+  done
+
   if [ ! -d /home/vscode/.ssh ]; then
     pass "/home/vscode/.ssh is not mounted"
   else

@@ -64,7 +64,7 @@ ssh_blog: ## serve the blog over SSH at localhost:2222
 
 .PHONY: check_docker
 check_docker:
-	@docker info >/dev/null 2>&1 || { echo "Error: Docker is not running. Please start Docker Desktop first."; exit 1; }
+	@docker info >/dev/null 2>&1 || { echo "Error: Docker is not running."; exit 1; }
 
 .PHONY: dc-up
 dc-up: check_docker ## build and start the hardened Dev Container
