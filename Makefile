@@ -52,6 +52,14 @@ resize_images: ## resize images in scripts/resize_photos/input
 generate_post: ## generate a new post
 	$(PY) scripts/generate_post.py
 
+.PHONY: edit
+edit: ## open the current month's links post in nvim
+	nvim content/post/$$(date +%Y_%m)_*_links.md
+
+.PHONY: edit_prev
+edit_prev: ## open the previous month's links post in nvim
+	nvim content/post/$$(date -v1d -v-1m +%Y_%m 2>/dev/null || date -d "$$(date +%Y-%m-01) -1 month" +%Y_%m)_*_links.md
+
 .PHONY: check_links
 check_links: ## report duplicated links across posts
 	$(PY) scripts/check_duplicate_links.py $(FILES)

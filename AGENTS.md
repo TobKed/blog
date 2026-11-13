@@ -23,6 +23,7 @@ Build/serve (via Makefile, wraps `hugo`):
 - `make clean` — remove `public/`
 - `make resize_images` — run `scripts/resize_photos/main.py` (resizes `scripts/resize_photos/input/` → `output/`, max 1024x1024 @ 300dpi)
 - `make generate_post` — run `scripts/generate_post.py` to scaffold a new monthly links post
+- `make edit` / `make edit_prev` — open the current / previous month's links post in `nvim`
 - `make check_links` — run `scripts/check_duplicate_links.py` to report duplicated links across posts in `content/post/`
 - `make check_theme` — run `scripts/check_mobile.mjs` against a running `make preview` to verify mobile/desktop layout and theme regressions
 - `make ssh_blog` — serve the blog over SSH at `localhost:2222` (`cd scripts/ssh_blog && go run . -addr $(SSH_BLOG_ADDR)`)
