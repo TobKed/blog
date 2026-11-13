@@ -62,31 +62,35 @@ check_theme: ## theme regression checks against a running `make preview`
 ssh_blog: ## serve the blog over SSH at localhost:2222
 	cd scripts/ssh_blog && go run . -addr $(SSH_BLOG_ADDR)
 
+.PHONY: check_docker
+check_docker:
+	@docker info >/dev/null 2>&1 || { echo "Error: Docker is not running. Please start Docker Desktop first."; exit 1; }
+
 .PHONY: dc-up
-dc-up: ## build and start the hardened Dev Container
+dc-up: check_docker ## build and start the hardened Dev Container
 	$(DEVCONTAINER) up --workspace-folder .
 
 .PHONY: dc-shell
-dc-shell: ## open an interactive shell inside the Dev Container
+dc-shell: check_docker ## open an interactive shell inside the Dev Container
 	$(DEVCONTAINER) exec --workspace-folder . bash
 
 .PHONY: dc-exec
-dc-exec: ## run a command inside the Dev Container (e.g. make dc-exec CMD="make publish")
+dc-exec: check_docker ## run a command inside the Dev Container (e.g. make dc-exec CMD="make publish")
 	$(DEVCONTAINER) exec --workspace-folder . $(CMD)
 
 .PHONY: dc-verify
-dc-verify: ## verify security invariants, toolchains, and tests inside the Dev Container
+dc-verify: check_docker ## verify security invariants, toolchains, and tests inside the Dev Container
 	$(DEVCONTAINER) exec --workspace-folder . bash .devcontainer/verify.sh
 
 .PHONY: ssh_blog_docker
-ssh_blog_docker: ## run the SSH blog in Docker at 127.0.0.1:2222
+ssh_blog_docker: check_docker ## run the SSH blog in Docker at 127.0.0.1:2222
 	docker build -f scripts/ssh_blog/Dockerfile -t ssh-blog .
 	docker rm -f ssh-blog 2>/dev/null || true
 	docker run -d --name ssh-blog --read-only --cap-drop ALL --security-opt no-new-privileges \
 		-p 127.0.0.1:2222:2222 -v ssh-blog-data:/data ssh-blog
 
 .PHONY: ssh_blog_fly
-ssh_blog_fly: ## deploy the SSH blog to Fly.io (see scripts/ssh_blog/README.md)
+ssh_blog_fly: check_docker ## deploy the SSH blog to Fly.io (see scripts/ssh_blog/README.md)
 	img=registry.fly.io/tobked-ssh-blog:$$(date +%Y%m%d%H%M%S) && \
 	docker build --platform linux/amd64 -f scripts/ssh_blog/Dockerfile -t $$img . && \
 	$(FLY) auth docker && docker push $$img && \
