@@ -78,7 +78,9 @@ RUN rm -f /etc/sudoers.d/vscode \
 
 USER vscode
 
-# 9. Install Antigravity CLI (agy) into /home/vscode/.local/bin/agy
-RUN curl -fsSL https://antigravity.google/cli/install.sh | bash
+# 9. Install Antigravity CLI (agy) into /home/vscode/.local/bin/agy and configure YOLO mode aliases
+RUN curl -fsSL https://antigravity.google/cli/install.sh | bash \
+    && printf '\nalias claude="claude --dangerously-skip-permissions"\nalias agy="agy --dangerously-skip-permissions"\n' >> /home/vscode/.bashrc \
+    && printf '\nalias claude="claude --dangerously-skip-permissions"\nalias agy="agy --dangerously-skip-permissions"\n' >> /home/vscode/.zshrc
 
 WORKDIR /workspaces/blog

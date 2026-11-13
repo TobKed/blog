@@ -84,12 +84,12 @@ dc-shell: check_docker ## open an interactive shell inside the Dev Container
 	$(DEVCONTAINER) exec --workspace-folder . bash
 
 .PHONY: dc-claude
-dc-claude: check_docker ## launch Claude Code interactively inside the Dev Container
-	$(DEVCONTAINER) exec --workspace-folder . claude
+dc-claude: check_docker ## launch Claude Code (YOLO mode) inside the Dev Container
+	$(DEVCONTAINER) exec --workspace-folder . claude --dangerously-skip-permissions
 
 .PHONY: dc-agy
-dc-agy: check_docker ## launch Antigravity CLI (agy) interactively inside the Dev Container
-	$(DEVCONTAINER) exec --workspace-folder . agy
+dc-agy: check_docker ## launch Antigravity CLI (YOLO mode) inside the Dev Container
+	$(DEVCONTAINER) exec --workspace-folder . agy --dangerously-skip-permissions
 
 .PHONY: dc-exec
 dc-exec: check_docker ## run a command inside the Dev Container (e.g. make dc-exec CMD="make publish")
