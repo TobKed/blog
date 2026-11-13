@@ -27,9 +27,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     unzip \
     && rm -rf /var/lib/apt/lists/*
 
-# 2. Node.js 22 LTS + global CLIs (pagefind, claude-code, gemini-cli)
+# 2. Node.js 22 LTS + global CLIs (npm, pagefind, claude-code, gemini-cli)
 RUN curl -fsSL "https://deb.nodesource.com/setup_${NODE_MAJOR}.x" | bash - \
     && apt-get install -y --no-install-recommends nodejs \
+    && npm install -g npm@latest \
     && npm install -g \
         pagefind \
         @anthropic-ai/claude-code \

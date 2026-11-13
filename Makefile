@@ -70,6 +70,10 @@ check_docker:
 dc-up: check_docker ## build and start the hardened Dev Container
 	$(DEVCONTAINER) up --workspace-folder .
 
+.PHONY: dc-rebuild
+dc-rebuild: check_docker ## rebuild and recreate the hardened Dev Container
+	$(DEVCONTAINER) up --workspace-folder . --remove-existing-container
+
 .PHONY: dc-shell
 dc-shell: check_docker ## open an interactive shell inside the Dev Container
 	$(DEVCONTAINER) exec --workspace-folder . bash
