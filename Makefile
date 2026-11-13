@@ -70,6 +70,11 @@ check_docker:
 dc-up: check_docker ## build and start the hardened Dev Container
 	$(DEVCONTAINER) up --workspace-folder .
 
+.PHONY: dc-stop
+dc-stop: check_docker ## stop the running Dev Container
+	@cid=$$(docker ps -q --filter "label=devcontainer.local_folder=$(BASEDIR)"); \
+	if [ -n "$$cid" ]; then docker stop $$cid; else echo "Dev Container is not running."; fi
+
 .PHONY: dc-rebuild
 dc-rebuild: check_docker ## rebuild and recreate the hardened Dev Container
 	$(DEVCONTAINER) up --workspace-folder . --remove-existing-container
