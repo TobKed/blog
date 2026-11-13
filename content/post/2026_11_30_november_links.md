@@ -31,9 +31,13 @@ ssh.blog.tobked.dev
 
 <https://github.com/sharadregoti/sshire>
 
-<https://github.com/modem-dev/hunk>
+tested [hunk](https://github.com/modem-dev/hunk) but in the end dropped in favor of [diffnav](https://github.com/dlvhdr/diffnav)
 
-/insights in claude-code
+`/insights /goal /simplify` in **claude-code**
+
+simplified technical english skill, inspired by Karpathy mentioning ASD-STE100
+
+devcontainers, github codespaces
 
 ______________________________________________________________________
 
