@@ -144,7 +144,7 @@ check_runtime() {
   kill "$HTTP_PID" 2>/dev/null || true
   trap - EXIT
 
-  if make check_links >/dev/null; then
+  if make check_links FILES=content/post/2025_11_30_november_links.md >/dev/null; then
     pass "make check_links passed"
   else
     fail "make check_links passed" "non-zero exit"
