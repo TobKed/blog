@@ -33,14 +33,21 @@ herdr, recognise them.
 
 ## GitHub Codespaces
 
-When creating the codespace, pick the `blog-codespaces` configuration
-(`.devcontainer/codespaces/devcontainer.json`); the default one only works locally through `make`.
-It uses the same image. Inside, run `make serve`, `claude` and so on directly: the `make dc-*`
-targets and `.devcontainer/verify.sh` are for the local container.
+1. Create the codespace with "New with options".
+2. Select the `blog-codespaces` configuration (`.devcontainer/codespaces/devcontainer.json`).
 
-The security model below does not carry over. A codespace holds a GitHub token that can push to
-this repository and `.git` is writable, so an agent there can commit and push. What it can't reach
-is your own machine.
+The default configuration operates only on your computer, through `make`. The `blog-codespaces`
+configuration uses the same image. In the codespace, run `make serve`, `claude` and the other
+commands directly. The `make dc-*` targets and `.devcontainer/verify.sh` are only for the local
+container.
+
+The security model below does not apply to a codespace:
+
+- A codespace has a GitHub token that can push to this repository.
+- `.git` is writable. Thus an agent in a codespace can commit and push.
+- The container keeps its Linux capabilities. With the capabilities removed, the creation of the
+  codespace failed.
+- An agent in a codespace cannot access your computer.
 
 ## Updating versions
 

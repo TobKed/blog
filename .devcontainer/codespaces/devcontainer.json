@@ -7,8 +7,6 @@
   "remoteUser": "vscode",
   "containerUser": "vscode",
   "runArgs": [
-    "--cap-drop=ALL",
-    "--security-opt=no-new-privileges:true",
     "--shm-size=1gb"
   ],
   "mounts": [
