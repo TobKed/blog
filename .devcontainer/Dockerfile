@@ -76,9 +76,7 @@ RUN mkdir -p \
 
 # 8. Install Antigravity CLI (agy) as vscode and symlink to /usr/local/bin/agy
 RUN su - vscode -c "curl -fsSL https://antigravity.google/cli/install.sh | bash" \
-    && ln -sf /home/vscode/.local/bin/agy /usr/local/bin/agy \
-    && printf '\nalias claude="claude --dangerously-skip-permissions"\nalias agy="agy --dangerously-skip-permissions"\n' >> /home/vscode/.bashrc \
-    && printf '\nalias claude="claude --dangerously-skip-permissions"\nalias agy="agy --dangerously-skip-permissions"\n' >> /home/vscode/.zshrc
+    && ln -sf /home/vscode/.local/bin/agy /usr/local/bin/agy
 
 # 9. Strip passwordless sudo from vscode user so runtime processes cannot escalate to root
 RUN rm -f /etc/sudoers.d/vscode \

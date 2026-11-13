@@ -50,6 +50,12 @@ check_static() {
     fi
   fi
 
+  if grep -q "dangerously-skip-permissions" .devcontainer/Dockerfile; then
+    fail "Dockerfile has no permission-skipping aliases" "found --dangerously-skip-permissions"
+  else
+    pass "Dockerfile has no permission-skipping aliases"
+  fi
+
   if [ -f .devcontainer/Dockerfile ]; then
     if grep -q "rm -f /etc/sudoers.d/vscode" .devcontainer/Dockerfile; then
       pass "Dockerfile removes passwordless sudo for vscode"
