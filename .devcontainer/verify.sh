@@ -34,8 +34,7 @@ for cmd in "uv --version" "go version" "node --version" "npx --version" \
   "claude --version" "gemini --version" "agy --version" "chromium-headless --version" "nvim --version"; do
   check "$cmd runs" $cmd
 done
-check "nvim loads its plugins without errors" bash -c \
-  '[ -z "$(nvim --headless "+lua require(\"oil\"); require(\"mini.pick\"); require(\"render-markdown\")" +qa 2>&1)" ]'
+check "nvim loads its config and plugins without errors" bash -c '[ -z "$(nvim --headless +qa 2>&1)" ]'
 
 echo "=== End-to-End Blog Workflow Checks ==="
 check "make publish built site and Pagefind index" bash -c 'make publish && [ -d public/_pagefind ]'

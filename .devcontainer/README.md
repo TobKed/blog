@@ -34,7 +34,8 @@ herdr, recognise them.
 ## Neovim
 
 `nvim` is the editor (`$EDITOR`) in the container and in a codespace, with the config in
-`.devcontainer/nvim/init.lua`. It renders markdown and reloads files that an agent changes.
+`.devcontainer/nvim/init.lua`. It renders markdown. It reloads a file that an agent changes when you switch
+buffers, go back to the window, or stop typing for 4 seconds.
 `make edit` / `make edit_prev` open the current / previous month's links post in it.
 
 Keys of this setup:
@@ -86,17 +87,26 @@ The security model below does not apply to a codespace:
 
 ## Updating versions
 
-| What                   | Bump it in                    | Then, for the container                               |
-| ---------------------- | ----------------------------- | ----------------------------------------------------- |
-| Hugo                   | `mise.toml`                   | update the two sha256 sums (below), `make dc-rebuild` |
-| Python                 | `.python-version`             | `make dc-rebuild`                                     |
-| Python packages        | `requirements.txt`            | `make dc-rebuild`                                     |
-| Pagefind               | `Makefile`                    | nothing                                               |
-| Go                     | `scripts/ssh_blog/go.mod`     | nothing (Go fetches the toolchain `go.mod` asks for)  |
-| `claude`, `gemini`     | not pinned                    | `make dc-rebuild` installs the latest                 |
-| Node, uv, Go bootstrap | `.devcontainer/Dockerfile`    | `make dc-rebuild`                                     |
-| Neovim                 | `.devcontainer/Dockerfile`    | update the two sha256 sums too, `make dc-rebuild`     |
-| Neovim plugins         | `.devcontainer/nvim/init.lua` | `make dc-rebuild`                                     |
+| What                   | Bump it in                    | Then, for the container                                              |
+| ---------------------- | ----------------------------- | -------------------------------------------------------------------- |
+| Hugo                   | `mise.toml`                   | update the two sha256 sums (below), `make dc-rebuild`                |
+| Python                 | `.python-version`             | `make dc-rebuild`                                                    |
+| Python packages        | `requirements.txt`            | `make dc-rebuild`                                                    |
+| Pagefind               | `Makefile`                    | nothing                                                              |
+| Go                     | `scripts/ssh_blog/go.mod`     | nothing (Go fetches the toolchain `go.mod` asks for)                 |
+| `claude`, `gemini`     | not pinned                    | `make dc-rebuild` installs the latest                                |
+| Node, uv, Go bootstrap | `.devcontainer/Dockerfile`    | `make dc-rebuild`                                                    |
+| Neovim                 | `.devcontainer/Dockerfile`    | update the two sha256 sums (the build prints how), `make dc-rebuild` |
+| Neovim plugins         | `.devcontainer/nvim/init.lua` | set the commit of the new tag (below), `make dc-rebuild`             |
+
+The Neovim plugins are pinned to commits, because a tag can move. To get the commit of a new tag
+(replace `REPO` and `vX.Y.Z`):
+
+```sh
+git ls-remote https://github.com/REPO 'refs/tags/vX.Y.Z' 'refs/tags/vX.Y.Z^{}' | tail -1
+```
+
+Put the commit in `version` and the tag in the comment above `vim.pack.add`.
 
 CI reads Hugo and Python from the same files. `make dc-verify` fails on a Hugo or Python mismatch,
 which means the image is older than the pin: run `make dc-rebuild`.

@@ -63,9 +63,16 @@ ARG NVIM_VERSION=0.12.6
 RUN case "${TARGETARCH}" in \
         amd64) arch=x86_64 sha=474430d53e6264f6d6dd18db42d6dc9df3a1b56ca9e88a325bbf860e1a811d87 ;; \
         arm64) arch=arm64 sha=8f1f64a0bdb97247034038c3823c6cbad5bdf9ecd5751b85494b71c3ee04c815 ;; \
+        *) echo "No Neovim build for TARGETARCH=${TARGETARCH}" >&2; exit 1 ;; \
     esac \
     && curl -fsSL -o /tmp/nvim.tar.gz "https://github.com/neovim/neovim/releases/download/v${NVIM_VERSION}/nvim-linux-${arch}.tar.gz" \
-    && echo "${sha}  /tmp/nvim.tar.gz" | sha256sum -c - \
+    && { echo "${sha}  /tmp/nvim.tar.gz" | sha256sum -c - || { printf '%s\n' "" \
+        "Neovim ${NVIM_VERSION} does not match the sha256 sums pinned in .devcontainer/Dockerfile." \
+        "To update them after a Neovim bump:" \
+        "  1. Run on the host:" \
+        "       curl -fsSL https://api.github.com/repos/neovim/neovim/releases/tags/v${NVIM_VERSION} | grep -E '\"(name|digest)\"' | grep -A1 -E 'linux-(x86_64|arm64)\\.tar\\.gz\"'" \
+        "  2. In step 5b of .devcontainer/Dockerfile, replace the amd64) and arm64) sums with the two it prints." \
+        "  3. Run: make dc-rebuild" ""; exit 1; }; } \
     && mkdir /opt/nvim && tar -xzf /tmp/nvim.tar.gz -C /opt/nvim --strip-components=1 \
     && ln -s /opt/nvim/bin/nvim /usr/local/bin/nvim \
     && rm /tmp/nvim.tar.gz
@@ -96,8 +103,9 @@ RUN rm -f /etc/sudoers.d/vscode \
 
 USER vscode
 
-# 10. Neovim config; the headless start installs its plugins into the image
+# 10. Neovim config; the first headless start installs its plugins into the image.
+#     nvim exits 0 on config errors, so a second start must print nothing.
 COPY --chown=vscode:vscode .devcontainer/nvim/init.lua /home/vscode/.config/nvim/init.lua
-RUN nvim --headless +qa
+RUN nvim --headless +qa && out=$(nvim --headless +qa 2>&1) && [ -z "$out" ] || { echo "$out" >&2; exit 1; }
 
 WORKDIR /workspaces/blog
