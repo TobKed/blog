@@ -1,7 +1,7 @@
 # Dev Container
 
 A hardened container with everything the blog needs (Hugo extended, Python + uv, Go, Node,
-Pagefind, headless Chromium) and the `claude`, `gemini` and `agy` CLIs. It keeps toolchains and
+Pagefind, headless Chromium, Neovim) and the `claude`, `gemini` and `agy` CLIs. It keeps toolchains and
 coding agents off the host: an agent inside sees only this repository, not your `$HOME`.
 
 Needs Docker. The Makefile uses a global `devcontainer` CLI if present, otherwise
@@ -31,6 +31,41 @@ caches persist in named volumes (`blog-dc-*`) and survive it.
 (`.devcontainer/.bin/`), so terminal multiplexers that detect agents by process name, such as
 herdr, recognise them.
 
+## Neovim
+
+`nvim` is the editor (`$EDITOR`) in the container and in a codespace, with the config in
+`.devcontainer/nvim/init.lua`. It renders markdown and reloads files that an agent changes.
+`make edit` / `make edit_prev` open the current / previous month's links post in it.
+
+Keys of this setup:
+
+| Key                      | What it does                                                    |
+| ------------------------ | --------------------------------------------------------------- |
+| `-`                      | file browser (oil) in the folder of the file; `-` again goes up |
+| `Space f` / `Space /`    | find a file by name / search the text of all files              |
+| `gO`                     | list the headings of the markdown file                          |
+| `Ctrl-^`                 | go back to the previous file                                    |
+| `:RenderMarkdown toggle` | show the raw markdown                                           |
+
+In oil, `Enter` opens and `g?` lists its keys; edit the lines to create, rename or delete files,
+then `:w` applies the changes. In the finder, `Ctrl-n` / `Ctrl-p` move, `Enter` opens, `Ctrl-v`
+opens in a split, `Esc` closes.
+
+Other useful keys, built into Neovim:
+
+| Key                     | What it does                                           |
+| ----------------------- | ------------------------------------------------------ |
+| `]]` / `[[`             | next / previous markdown heading                       |
+| `Ctrl-o` / `Ctrl-i`     | back / forward through the cursor positions            |
+| `*`                     | search for the word below the cursor                   |
+| `gg` / `G`              | start / end of the file                                |
+| `u` / `Ctrl-r`          | undo / redo                                            |
+| `.`                     | do the last change again                               |
+| `ciw` / `ci"` / `ci(`   | change a word / the text in quotes / in parentheses    |
+| `Ctrl-w v` / `Ctrl-w s` | split the window vertically / horizontally             |
+| `Ctrl-w w` / `Ctrl-w q` | next window / close the window                         |
+| `:w` / `:q` / `:e!`     | save / quit / discard the changes and reload from disk |
+
 ## GitHub Codespaces
 
 1. Create the codespace with "New with options".
@@ -51,15 +86,17 @@ The security model below does not apply to a codespace:
 
 ## Updating versions
 
-| What                   | Bump it in                 | Then, for the container                               |
-| ---------------------- | -------------------------- | ----------------------------------------------------- |
-| Hugo                   | `mise.toml`                | update the two sha256 sums (below), `make dc-rebuild` |
-| Python                 | `.python-version`          | `make dc-rebuild`                                     |
-| Python packages        | `requirements.txt`         | `make dc-rebuild`                                     |
-| Pagefind               | `Makefile`                 | nothing                                               |
-| Go                     | `scripts/ssh_blog/go.mod`  | nothing (Go fetches the toolchain `go.mod` asks for)  |
-| `claude`, `gemini`     | not pinned                 | `make dc-rebuild` installs the latest                 |
-| Node, uv, Go bootstrap | `.devcontainer/Dockerfile` | `make dc-rebuild`                                     |
+| What                   | Bump it in                    | Then, for the container                               |
+| ---------------------- | ----------------------------- | ----------------------------------------------------- |
+| Hugo                   | `mise.toml`                   | update the two sha256 sums (below), `make dc-rebuild` |
+| Python                 | `.python-version`             | `make dc-rebuild`                                     |
+| Python packages        | `requirements.txt`            | `make dc-rebuild`                                     |
+| Pagefind               | `Makefile`                    | nothing                                               |
+| Go                     | `scripts/ssh_blog/go.mod`     | nothing (Go fetches the toolchain `go.mod` asks for)  |
+| `claude`, `gemini`     | not pinned                    | `make dc-rebuild` installs the latest                 |
+| Node, uv, Go bootstrap | `.devcontainer/Dockerfile`    | `make dc-rebuild`                                     |
+| Neovim                 | `.devcontainer/Dockerfile`    | update the two sha256 sums too, `make dc-rebuild`     |
+| Neovim plugins         | `.devcontainer/nvim/init.lua` | `make dc-rebuild`                                     |
 
 CI reads Hugo and Python from the same files. `make dc-verify` fails on a Hugo or Python mismatch,
 which means the image is older than the pin: run `make dc-rebuild`.
