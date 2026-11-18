@@ -151,6 +151,14 @@ ______________________________________________________________________
 
 > Your application or coding agent sends its OpenAI or Anthropic requests to Langfuse instead of the provider.
 
+### [Ron Forbes: Build Your Personal AI Assistant with Claude Code](https://www.ronforbes.com/blog/build-your-personal-ai-assistant-with-claude-code)
+
+> Build your own AI assistant in 15 minutes. No coding. I'll show you exactly how I went from zero to 2,000+ organized notes.
+
+### [Ron Forbes: Claude Code as Life Coach: How I Use AI + Obsidian for Personal Growth](https://www.ronforbes.com/blog/claude-code-as-life-coach)
+
+> I pointed Claude Code at my Obsidian vault of years of personal notes, and it became an AI life coach—synthesizing patterns I’d missed and helping me realize a childhood dream had run its course.
+
 ## Security
 
 ## Python
@@ -188,6 +196,10 @@ ______________________________________________________________________
 ### [GitHub - makeplane/plane](https://github.com/makeplane/plane)
 
 > Open-source Jira, Linear, Monday, and ClickUp alternative.
+
+### [GitHub - nilbuild/tinyhand](https://github.com/nilbuild/tinyhand)
+
+> A tiny hand on a stick that points at things on your Mac screen.
 
 ## Cloud
 
@@ -244,6 +256,18 @@ ______________________________________________________________________
 ### [mattpocock/skills: A complete AI Coding workflow, end-to-end](https://www.youtube.com/watch?v=M6mYodf0dJM)
 
 {{<youtube-lite id="M6mYodf0dJM" title="mattpocock/skills: A complete AI Coding workflow, end-to-end">}}
+
+### [Why Software Fundamentals Still Matter | Matt Pocock | Total TypeScript & AI Hero Author](https://www.youtube.com/watch?v=n_5EDfJ6-uA)
+
+{{<youtube-lite id="n_5EDfJ6-uA" title="Why Software Fundamentals Still Matter | Matt Pocock | Total TypeScript & AI Hero Author">}}
+
+### [Jonathan Blow — If AI Solved Coding, Why Is My Software Still the Same?](https://www.youtube.com/watch?v=IRK8h67ol7Q)
+
+{{<youtube-lite id="IRK8h67ol7Q" title="Jonathan Blow — If AI Solved Coding, Why Is My Software Still the Same?">}}
+
+### [TinyHand: a tiny hand pointer for your Mac - Kamran Ahmed](https://www.youtube.com/watch?v=5Z7rl13t7V4)
+
+{{<youtube-lite id="5Z7rl13t7V4" title="TinyHand: a tiny hand pointer for your Mac - Kamran Ahmed">}}
 
 ## 🇵🇱 Polish Corner 🇵🇱
 
