@@ -18,9 +18,13 @@ jobs:
       - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1  # v6.3.0
         with:
           python-version-file: .python-version
-      - uses: pre-commit/action@2c7b3805fd2a0fd8c1884dcaebf91fc102a13ecd  # v3.0.1
+      # pre-commit/action uses an unpinned actions/cache inside, which the repository rejects
+      - uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9  # v6.1.0
         with:
-          extra_args: --all-files --show-diff-on-failure --color always
+          path: ~/.cache/pre-commit
+          key: pre-commit-${{ hashFiles('.python-version', '.pre-commit-config.yaml') }}
+      - run: pip install "$(grep -i '^pre-commit==' requirements.txt)"
+      - run: pre-commit run --all-files --show-diff-on-failure --color always
 
   build:
     name: Deploy job
