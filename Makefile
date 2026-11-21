@@ -89,6 +89,18 @@ dc-stop: check_docker ## stop the running Dev Container
 dc-rebuild: check_docker ## rebuild the image without cache (updates the agent CLIs) and recreate the Dev Container
 	$(DEVCONTAINER) up --workspace-folder . --remove-existing-container --build-no-cache
 
+.PHONY: dc-clean
+dc-clean: check_docker ## remove the Dev Container containers and images of all worktrees (keeps the volumes)
+	docker ps -aq --filter label=dev.tobked.blog.devcontainer | xargs -r docker rm -f
+	docker images -q --filter label=dev.tobked.blog.devcontainer | sort -u | xargs -r docker rmi -f
+	rm -rf .devcontainer/.bin
+
+.PHONY: dc-purge
+dc-purge: check_docker ## dc-clean, then delete the blog-dc-* volumes (agent logins, venv, caches)
+	@read -r -p "Delete the blog-dc-* volumes? You must log in to Claude and Gemini again. [y/N] " ans; [ "$$ans" = y ]
+	$(MAKE) dc-clean
+	docker volume ls -q --filter name=^blog-dc- | xargs -r docker volume rm
+
 .PHONY: dc-shell
 dc-shell: check_docker ## open an interactive shell inside the Dev Container
 	$(DEVCONTAINER) exec --workspace-folder . bash

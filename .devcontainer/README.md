@@ -20,13 +20,16 @@ directory to mount from the Makefile.
 | `make dc-verify`         | check the security invariants, toolchains, build and tests     |
 | `make dc-stop`           | stop the container                                             |
 | `make dc-rebuild`        | rebuild the image without cache and recreate the container     |
+| `make dc-clean`          | remove the containers and images of all worktrees              |
+| `make dc-purge`          | `dc-clean`, then delete the volumes (asks first)               |
 
 `make serve`, `make preview` and `make ssh_blog` inside the container are reachable on the host at
 `localhost:1313`, `:1314` and `:2222`. Those host ports are claimed at start, so stop the host
 `make serve` first, and only one container (git worktrees included) runs at a time.
 
 The agent CLIs can't update themselves; `make dc-rebuild` installs their latest. Agent logins and
-caches persist in named volumes (`blog-dc-*`) and survive it.
+caches persist in named volumes (`blog-dc-*`) and survive it and `make dc-clean`; `make dc-purge`
+deletes them.
 `dc-claude` and `dc-agy` run `docker` through a symlink named after the agent
 (`.devcontainer/.bin/`), so terminal multiplexers that detect agents by process name, such as
 herdr, recognise them.

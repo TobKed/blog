@@ -1,5 +1,8 @@
 FROM mcr.microsoft.com/devcontainers/base:bookworm
 
+# `make dc-clean` finds the images and containers of all worktrees by this label
+LABEL dev.tobked.blog.devcontainer=1
+
 ARG TARGETARCH
 
 ENV DEBIAN_FRONTEND=noninteractive
