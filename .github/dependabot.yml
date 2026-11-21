@@ -1,0 +1,32 @@
+version: 2
+
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule: { interval: weekly }
+    cooldown: { default-days: 7 }
+    groups: { actions: { patterns: ["*"] } }
+
+  - package-ecosystem: pre-commit
+    directory: /
+    schedule: { interval: weekly }
+    cooldown: { default-days: 7 }
+    groups: { pre-commit: { patterns: ["*"] } }
+
+  - package-ecosystem: pip
+    directories: [/, /scripts/test_links]
+    schedule: { interval: weekly }
+    cooldown: { default-days: 7 }
+    groups: { pip: { patterns: ["*"] } }
+
+  - package-ecosystem: gomod
+    directory: /scripts/ssh_blog
+    schedule: { interval: weekly }
+    cooldown: { default-days: 7 }
+    groups: { gomod: { patterns: ["*"] } }
+
+  - package-ecosystem: docker
+    directories: [/.devcontainer, /scripts/ssh_blog]
+    schedule: { interval: weekly }
+    cooldown: { default-days: 7 }
+    groups: { docker: { patterns: ["*"] } }

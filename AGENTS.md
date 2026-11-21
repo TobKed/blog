@@ -39,6 +39,8 @@ and publishes `public/` to `gh-pages` via `peaceiris/actions-gh-pages` (CNAME `b
 Analytics is cookieless Umami Cloud, configured under `[params.umami]` in `hugo.toml`. A second workflow
 (`test-links` / `scripts/test_links/`) is manually triggered to crawl the live site and check for
 broken links (two-phase: fast `requests` pass, then `selenium` re-check of failures).
+The repository only allows actions pinned to a full commit SHA: write `uses: owner/repo@<sha>  # vX.Y.Z`.
+Dependabot (`.github/dependabot.yml`) bumps the actions, pre-commit hooks, pip, Go and Docker dependencies weekly.
 
 ## Content structure
 

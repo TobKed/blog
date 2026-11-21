@@ -12,15 +12,19 @@ jobs:
   pre-commit:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803  # v6.1.0
         with:
           persist-credentials: false
-      - uses: actions/setup-python@v6
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1  # v6.3.0
         with:
           python-version-file: .python-version
-      - uses: pre-commit/action@2c7b3805fd2a0fd8c1884dcaebf91fc102a13ecd  # v3.0.1
+      # pre-commit/action uses an unpinned actions/cache inside, which the repository rejects
+      - uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9  # v6.1.0
         with:
-          extra_args: --all-files --show-diff-on-failure --color always
+          path: ~/.cache/pre-commit
+          key: pre-commit-${{ hashFiles('.python-version', '.pre-commit-config.yaml') }}
+      - run: pip install "$(grep -i '^pre-commit==' requirements.txt)"
+      - run: pre-commit run --all-files --show-diff-on-failure --color always
 
   build:
     name: Deploy job
@@ -30,16 +34,16 @@ jobs:
       github.ref == 'refs/heads/master' &&
       github.event_name == 'push'
     steps:
-    - uses: actions/checkout@v6
+    - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803  # v6.1.0
     - name: Read Hugo version from mise.toml
       run: v=$(sed -n 's/^hugo-extended = "\(.*\)"/\1/p' mise.toml) && test -n "$v" && echo "HUGO_VERSION=$v" >> "$GITHUB_ENV"
     - name: Setup Hugo
-      uses: peaceiris/actions-hugo@v3
+      uses: peaceiris/actions-hugo@d1c81a15d4e6dca7086a17b9c2565cb70fd576bf  # v3.3.0
       with:
         hugo-version: ${{ env.HUGO_VERSION }}
         extended: true
     - name: Restore Hugo cache
-      uses: actions/cache/restore@v6
+      uses: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9  # v6.1.0
       with:
         path: |
           ${{ runner.temp }}/hugo_cache
@@ -51,14 +55,14 @@ jobs:
       env:
         HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
     - name: Save Hugo cache
-      uses: actions/cache/save@v6
+      uses: actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9  # v6.1.0
       with:
         path: |
           ${{ runner.temp }}/hugo_cache
           resources/_gen
         key: hugo-${{ github.run_id }}
     - name: Deploy
-      uses: peaceiris/actions-gh-pages@v4
+      uses: peaceiris/actions-gh-pages@84c30a85c19949d7eee79c4ff27748b70285e453  # v4.1.0
       with:
         github_token: ${{ secrets.ACCESS_TOKEN || secrets.GITHUB_TOKEN }}
         publish_dir: ./public
