@@ -29,7 +29,8 @@ directory to mount from the Makefile.
 
 The agent CLIs can't update themselves; `make dc-rebuild` installs their latest. Agent logins and
 caches persist in named volumes (`blog-dc-*`) and survive it and `make dc-clean`; `make dc-purge`
-deletes them.
+deletes them. Neither removes the Docker build cache, which all projects share: run
+`docker builder prune` for it.
 `dc-claude` and `dc-agy` run `docker` through a symlink named after the agent
 (`.devcontainer/.bin/`), so terminal multiplexers that detect agents by process name, such as
 herdr, recognise them.

@@ -96,10 +96,12 @@ dc-clean: check_docker ## remove the Dev Container containers and images of all 
 	rm -rf .devcontainer/.bin
 
 .PHONY: dc-purge
+# exact volume names, so other blog-dc-* volumes (e.g. backups) survive
 dc-purge: check_docker ## dc-clean, then delete the blog-dc-* volumes (agent logins, venv, caches)
-	@read -r -p "Delete the blog-dc-* volumes? You must log in to Claude and Gemini again. [y/N] " ans; [ "$$ans" = y ]
+	@read -r -p "Delete the blog-dc-* volumes? You must log in to Claude and Gemini again. [y/N] " ans; \
+	case "$$ans" in y|Y) ;; *) echo "Aborted."; exit 1 ;; esac
 	$(MAKE) dc-clean
-	docker volume ls -q --filter name=^blog-dc- | xargs -r docker volume rm
+	docker volume ls -q --filter 'name=^blog-dc-(venv|claude|gemini|cache)$$' | xargs -r docker volume rm
 
 .PHONY: dc-shell
 dc-shell: check_docker ## open an interactive shell inside the Dev Container
