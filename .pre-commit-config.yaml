@@ -10,7 +10,7 @@ repos:
         exclude: ^.*\.mp3$|^static/images/|^content/images/
       - id: check-json
   - repo: https://github.com/executablebooks/mdformat
-    rev: 0.7.17
+    rev: 1.0.0
     hooks:
       - id: mdformat
         # optional
@@ -34,11 +34,11 @@ repos:
               ^.agents/skills/
           )
   - repo: https://github.com/psf/black
-    rev: 26.5.1
+    rev: 26.10.1
     hooks:
       - id: black
   - repo: https://github.com/pycqa/isort
-    rev: 9.0.1
+    rev: 9.0.2
     hooks:
       - id: isort
         args: ["--profile", "black", "--filter-files"]
