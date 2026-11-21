@@ -27,7 +27,7 @@ Build/serve (via Makefile, wraps `hugo`):
 - `make check_links` — run `scripts/check_duplicate_links.py` to report duplicated links across posts in `content/post/`
 - `make check_theme` — run `scripts/check_mobile.mjs` against a running `make preview` to verify mobile/desktop layout and theme regressions
 - `make ssh_blog` — serve the blog over SSH at `localhost:2222` (`cd scripts/ssh_blog && go run . -addr $(SSH_BLOG_ADDR)`)
-- `make dc-up` / `dc-claude` / `dc-agy` / `dc-shell` / `dc-exec CMD="..."` / `dc-verify` / `dc-stop` / `dc-rebuild` — hardened Dev Container for the toolchains and coding agents; see `.devcontainer/README.md` for usage and the security model
+- `make dc-up` / `dc-claude` / `dc-agy` / `dc-shell` / `dc-exec CMD="..."` / `dc-verify` / `dc-stop` / `dc-rebuild` / `dc-clean` / `dc-purge` — hardened Dev Container for the toolchains and coding agents; see `.devcontainer/README.md` for usage and the security model
 
 Equivalent `invoke` tasks exist in `tasks.py` (`build`, `serve`, `publish`, `clean`) but the Makefile is the primary interface.
 

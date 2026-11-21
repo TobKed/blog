@@ -74,7 +74,7 @@ ssh_blog: ## serve the blog over SSH at localhost:2222
 
 .PHONY: check_docker
 check_docker:
-	@docker info >/dev/null 2>&1 || { echo "Error: Docker is not running."; exit 1; }
+	@docker version >/dev/null 2>&1 || { echo "Error: Docker is not running."; exit 1; }
 
 .PHONY: dc-up
 dc-up: check_docker ## build and start the hardened Dev Container
@@ -88,6 +88,20 @@ dc-stop: check_docker ## stop the running Dev Container
 .PHONY: dc-rebuild
 dc-rebuild: check_docker ## rebuild the image without cache (updates the agent CLIs) and recreate the Dev Container
 	$(DEVCONTAINER) up --workspace-folder . --remove-existing-container --build-no-cache
+
+.PHONY: dc-clean
+dc-clean: check_docker ## remove the Dev Container containers and images of all worktrees (keeps the volumes)
+	docker ps -aq --filter label=dev.tobked.blog.devcontainer | xargs -r docker rm -f
+	docker images -q --filter label=dev.tobked.blog.devcontainer | sort -u | xargs -r docker rmi -f
+	rm -rf .devcontainer/.bin
+
+.PHONY: dc-purge
+# exact volume names, so other blog-dc-* volumes (e.g. backups) survive
+dc-purge: check_docker ## dc-clean, then delete the blog-dc-* volumes (agent logins, venv, caches)
+	@read -r -p "Delete the blog-dc-* volumes? You must log in to Claude and Gemini again. [y/N] " ans; \
+	case "$$ans" in y|Y) ;; *) echo "Aborted."; exit 1 ;; esac
+	$(MAKE) dc-clean
+	docker volume ls -q --filter 'name=^blog-dc-(venv|claude|gemini|cache)$$' | xargs -r docker volume rm
 
 .PHONY: dc-shell
 dc-shell: check_docker ## open an interactive shell inside the Dev Container
