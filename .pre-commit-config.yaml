@@ -10,7 +10,7 @@ repos:
         exclude: ^.*\.mp3$|^static/images/|^content/images/
       - id: check-json
   - repo: https://github.com/executablebooks/mdformat
-    rev: 1.0.0
+    rev: 0.7.17
     hooks:
       - id: mdformat
         # optional

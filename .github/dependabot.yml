@@ -12,6 +12,9 @@ updates:
     schedule: { interval: weekly }
     cooldown: { default-days: 7 }
     groups: { pre-commit: { patterns: ["*"] } }
+    ignore:
+      # newer mdformat unescapes [ ] in headings, which changes 18 round-up anchor ids
+      - dependency-name: https://github.com/executablebooks/mdformat
 
   - package-ecosystem: pip
     directories: [/, /scripts/test_links]
