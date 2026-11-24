@@ -76,8 +76,13 @@ ssh_blog: ## serve the blog over SSH at localhost:2222
 check_docker:
 	@docker version >/dev/null 2>&1 || { echo "Error: Docker is not running."; exit 1; }
 
+.PHONY: check_dc_ports
+check_dc_ports: check_docker
+	@other=$$(docker ps --filter label=dev.tobked.blog.devcontainer --format '{{.ID}} {{.Label "devcontainer.local_folder"}}' | grep -v " $(BASEDIR)$$"); \
+	[ -z "$$other" ] || { echo "Error: the Dev Container of another checkout holds ports 1313/1314/2222. Stop it first: docker stop <id>"; echo "$$other"; exit 1; }
+
 .PHONY: dc-up
-dc-up: check_docker ## build and start the hardened Dev Container
+dc-up: check_dc_ports ## build and start the hardened Dev Container
 	$(DEVCONTAINER) up --workspace-folder .
 
 .PHONY: dc-stop
@@ -86,8 +91,11 @@ dc-stop: check_docker ## stop the running Dev Container
 	if [ -n "$$cid" ]; then docker stop $$cid; else echo "Dev Container is not running."; fi
 
 .PHONY: dc-rebuild
-dc-rebuild: check_docker ## rebuild the image without cache (updates the agent CLIs) and recreate the Dev Container
+dc-rebuild: check_dc_ports ## rebuild the image without cache (updates the agent CLIs) and recreate the Dev Container
 	$(DEVCONTAINER) up --workspace-folder . --remove-existing-container --build-no-cache
+	# each no-cache rebuild orphans the previous image and its build cache; they filled Docker's disk
+	docker image prune -f --filter label=dev.tobked.blog.devcontainer
+	docker builder prune -f
 
 .PHONY: dc-clean
 dc-clean: check_docker ## remove the Dev Container containers and images of all worktrees (keeps the volumes)
