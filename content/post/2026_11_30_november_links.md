@@ -51,6 +51,14 @@ ______________________________________________________________________
 
 > After two million words, I've honed these writing tactics. This handbook helps you write nonfiction books and blogs
 
+### [Lenny's Newsletter: State of the tech job market: late 2026](https://www.lennysnewsletter.com/p/state-of-the-tech-job-market-late)
+
+> PMs are winning, engineers are plateauing, designers are hurting, and the biggest AI hiring boom isn’t in software
+
+### [Nathan Chadwick: The homelab guide: smart home, media, Tesla, and going off-grid](https://chadd.ie/blog/homelab-guide-smart-home-media-tesla-off-grid)
+
+> Start with the problem, not the rack. A homelab is just a small always-on server plus good habits.
+
 ## Productivity
 
 ### [Nick Taylor: How I Used Claude Code to Speed Up My Shell Startup by 95%](https://www.nickyt.co/blog/how-i-used-claude-code-to-speed-up-my-shell-startup-by-95percent)
@@ -91,6 +99,10 @@ ______________________________________________________________________
 
 > Mean bulk-read savings were around a whopping 90%.
 
+### [Deeds: a new way to measure work done with AI](https://workdeeds.ai/)
+
+> Pull requests show that code changed. Deeds tries to show what got better.
+
 ### [Claude Cookbook: Prompting for frontend aesthetics](https://platform.claude.com/cookbook/coding-prompting-for-frontend-aesthetics#the-prompt)
 
 > Claude can generate high-quality frontends, but without guidance it tends toward generic, conservative designs. This guide shows you how to prompt Claude to produce more distinctive, polished output.
@@ -98,6 +110,10 @@ ______________________________________________________________________
 ### [Claude Blog: How the Claude Code team does code review](https://claude.dev/blog/solving-code-review-at-anthropic/)
 
 > We didn't remove review. But we did move most of the reading to machines, optimized for human time and attention, and invested heavily in making it fast and easy to undo mistakes.
+
+### [Claude Blog: How the Claude Code team thinks about verification](https://claude.dev/blog/how-the-claude-code-team-thinks-about-verification/)
+
+> Verification loops are the building block that lets you delegate more work to Claude. Without them, you can really only run one or two Claudes at a time, because you have to check everything yourself.
 
 ### [Orestis Ioannou: My AI Engineering Setup, 15 Months Later](https://oioannou.com/blog/ai-engineering-setup-15-months-later/)
 
@@ -193,6 +209,10 @@ ______________________________________________________________________
 
 > ntfy (pronounced notify) is a simple HTTP-based pub-sub notification service. It allows you to send notifications to your phone or desktop via scripts from any computer, and/or using a REST API.
 
+### [GitHub - localsend/localsend](https://github.com/localsend/localsend)
+
+> LocalSend is a free, open-source app that allows you to securely share files and messages with nearby devices over your local network without needing an internet connection.
+
 ### [GitHub - makeplane/plane](https://github.com/makeplane/plane)
 
 > Open-source Jira, Linear, Monday, and ClickUp alternative.
@@ -201,6 +221,10 @@ ______________________________________________________________________
 
 > A tiny hand on a stick that points at things on your Mac screen.
 
+### [GitHub - f/textream](https://github.com/f/textream)
+
+> A free teleprompter for Mac, iPhone, and iPad. Built for streamers, interviewers, presenters, and podcasters.
+
 ## Cloud
 
 ## Other stuff
@@ -208,6 +232,10 @@ ______________________________________________________________________
 ### [Safeguard Blog: How to Build a Tiny Data Center at Home: A Secure Homelab Guide](https://safeguard.sh/resources/blog/how-to-build-a-tiny-data-center-at-home-homelab)
 
 > start with one quiet, low power machine (a mini PC or a small used server)
+
+### [Bosscher: What I run on my $10 USD OpenStick homelab](https://blog.bosscher.ch/posts/openstick/)
+
+> For 10 USD you basically get a home server with minimal power usage and zero noise!
 
 ### [HackerTube: The YouTube videos that Hacker News keeps telling each other to watch](https://hackertube.org/)
 
@@ -261,6 +289,10 @@ ______________________________________________________________________
 
 {{<youtube-lite id="n_5EDfJ6-uA" title="Why Software Fundamentals Still Matter | Matt Pocock | Total TypeScript & AI Hero Author">}}
 
+### [How to Actually Code with AI (ft. Matt Pocock) - NetworkChuck](https://www.youtube.com/watch?v=mU8WKII1gpk)
+
+{{<youtube-lite id="mU8WKII1gpk" title="How to Actually Code with AI (ft. Matt Pocock) - NetworkChuck">}}
+
 ### [Jonathan Blow — If AI Solved Coding, Why Is My Software Still the Same?](https://www.youtube.com/watch?v=IRK8h67ol7Q)
 
 {{<youtube-lite id="IRK8h67ol7Q" title="Jonathan Blow — If AI Solved Coding, Why Is My Software Still the Same?">}}
@@ -278,3 +310,7 @@ ______________________________________________________________________
 ### [Buduje HOMELAB od ZERA - Co bym kupił? - Michu IT](https://www.youtube.com/watch?v=wKczvgwwFRA)
 
 {{<youtube-lite id="wKczvgwwFRA" title="Buduje HOMELAB od ZERA - Co bym kupił? - Michu IT">}}
+
+### [devszczepaniak.pl: Czy blogowanie w 2026 roku ma jeszcze sens?](https://devszczepaniak.pl/czy-blogowanie-w-2026-roku-ma-jeszcze-sens/)
+
+> Od momentu upowszechnienia się LLM-ów zasięgi bloga, którego czytasz, spadły o około połowę względem lat sprzed pojawienia się LLM-ów.
